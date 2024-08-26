@@ -168,10 +168,6 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'Status',
               href: 'https://status.texturehq.com',
             },
