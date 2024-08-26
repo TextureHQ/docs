@@ -1,41 +1,20 @@
-# Website
+# Texture
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+These are the docs for [Texture](https://www.texturehq.com), the industry cloud for distributed energy.
 
-### Installation
+They are hosted here: [https://docs.texturehq.com](https://docs.texturehq.com)
 
-```
-$ yarn
-```
+## Contributing
+
+While these docs are created by Texture employees and they are official docs, we are happy to accept pull requests and contributions from the community.
+
+See something that's not quite right? Have a suggestion? Open an issue or submit a PR! Someone from the Texture team will review it and merge it in.
 
 ### Local Development
 
 ```
-$ yarn start
+$ yarn # install dependencies
+$ yarn start # start the local development server
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+This site is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.

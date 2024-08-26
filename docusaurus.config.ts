@@ -96,6 +96,9 @@ const config: Config = {
     }),
   ],
 
+  organizationName: 'texturehq',
+  projectName: 'docs',
+
   presets: [
     [
       'classic',
