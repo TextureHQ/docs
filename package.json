@@ -1,0 +1,71 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.4.0",
+    "@docusaurus/plugin-client-redirects": "^3.4.0",
+    "@docusaurus/preset-classic": "^3.4.0",
+    "@growthbook/growthbook": "^0.36.0",
+    "@growthbook/growthbook-react": "^0.26.0",
+    "@lexical/headless": "^0.16.0",
+    "@lexical/html": "^0.16.0",
+    "@lexical/react": "^0.16.0",
+    "@lexical/rich-text": "^0.16.0",
+    "@mdx-js/react": "^3.0.0",
+    "@payloadcms/richtext-lexical": "^0.11.2",
+    "@phosphor-icons/react": "^2.0.15",
+    "@stoplight/elements": "^8.1.0",
+    "@texturehq/common": "^0.5.0",
+    "axios": "^1.7.4",
+    "buffer": "^6.0.3",
+    "clsx": "^2.0.0",
+    "docusaurus-plugin-sass": "^0.2.5",
+    "fuse.js": "^7.0.0",
+    "lexical": "^0.16.0",
+    "pluralize": "^8.0.0",
+    "prism-react-renderer": "^2.3.0",
+    "process": "^0.11.10",
+    "qs": "^6.12.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.75.0",
+    "swagger-ui-react": "^5.16.2",
+    "swagger-ui-themes": "^3.0.1",
+    "url": "^0.11.3"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.2.1",
+    "@docusaurus/tsconfig": "^3.2.1",
+    "@docusaurus/types": "^3.2.1",
+    "@types/swagger-ui-react": "^4.18.3",
+    "typescript": "~5.2.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

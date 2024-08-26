@@ -1,0 +1,90 @@
+/* features styes */
+
+.wrapper {
+  width: 100%;
+}
+
+.keyResources {
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(24rem,1fr));
+  grid-template-rows: auto;
+  margin-bottom: 6.4rem;
+}
+
+@media (min-width: 72rem) {
+  .keyResources {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+.resourceIcon {
+  padding-bottom: 10px;
+}
+
+.features {
+  padding-top: 20px;
+  grid-column-gap: 2.4rem;
+  grid-row-gap: 2rem;
+  grid-template-columns: repeat(auto-fill,minmax(24rem,1fr));
+  display: grid;
+  grid-template-rows: auto;
+  margin-bottom: 6.4rem;
+}
+
+.card {
+  background-color: hsla(0,0%,100%,0);
+  border: 1px solid #E2E2E2;
+  border-radius: 4px;
+  min-width: 250px;
+  padding: 1.5rem;
+}
+
+.card:hover {
+  border-color: #0C1452;
+}
+
+.card:hover a {
+  text-decoration: none;
+}
+
+.cardInner {
+  display: flex;
+  color: #1B1E21;
+}
+
+.cardInner a {
+  color: #1B1E21
+}
+.cardInner h3 {
+  font-size: 16px;
+}
+.cardInner p {
+  color: #383838;
+  font-size: 14px;
+}
+
+.resourceInner {
+  flex-direction: column;
+}
+
+.featureIcon {
+  padding-right: 24px;
+}
+
+.featureText h3 {
+  font-size: 20px;  
+}
+.featureInner:hover {
+  color: #1B1E21;
+  text-decoration: none;
+}
+
+.iconColumn {
+  width: 64px;
+}
+
+.featureSvg {
+  width: 60px;
+}

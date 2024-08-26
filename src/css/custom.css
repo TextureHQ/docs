@@ -1,0 +1,160 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #444AE1;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-heading-color: #0C1452;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-blockquote-padding-vertical: 1rem;
+  --ifm-navbar-link-color: #0C1452;
+  --ifm-menu-link-padding-horizontal: 1.1rem;
+}
+
+/* h1 sizes */
+.markdown h1:first-child {
+  --ifm-h1-font-size: 2rem;
+}
+
+/* h2 sizes */
+.markdown > h2 {
+  --ifm-h2-font-size: 1.5rem;
+  margin-bottom: calc( var(--ifm-heading-vertical-rhythm-bottom) * var(--ifm-leading) );
+  margin-top: calc(var(--ifm-h2-vertical-rhythm-top) * var(--ifm-leading));
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #9093ed;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: #b2b2b2;
+  --ifm-navbar-background-color: #1F1F1F;
+  --ifm-navbar-link-color: #ffffff;
+}
+
+/* Body */
+[data-theme='dark'] body {
+  background: #121212;
+}
+
+/*  Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'FirsNeue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+@font-face {
+  font-family: 'FirsNeue';
+  src: url('/fonts/TT_Firs_Neue_Variable.woff2') format('woff2');
+}
+h1 {
+  margin-top: 2rem;
+}
+
+/* Body text */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+p {
+  font-family: 'Epilogue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.625
+}
+.markdown > pre, .markdown > ul, .markdown > p {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.markdown > pre, .markdown > ul, .markdown > p  {
+  color: #3c4257;
+}
+html[data-theme='dark'] .markdown > pre, html[data-theme='dark'] .markdown > ul, html[data-theme='dark'] .markdown > p  {
+  color: #ffffff;
+}
+
+
+/* Navbar */
+@media (min-width: 997px) {
+  .navbar__logo {
+    position: relative;
+    bottom: 2.5px;
+  }
+}
+
+/* Full-width hero for Welcome page */
+
+@media (min-width: 997px) {
+  html.docs-doc-id-home\/welcome .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    max-width: none !important;
+  }
+}
+
+html.docs-doc-id-home\/welcome div.theme-doc-markdown header:first-child {
+  display: none;
+}
+
+/* Sidebar */
+nav.menu, .navbar-sidebar {
+  padding-bottom: 3rem;
+}
+.menu__link:hover, .menu__caret:hover {
+  background: none;
+  color: var(--ifm-menu-color-active);
+}
+.menu__link--active:not(.menu__link--sublist) {
+  background: none;
+}
+@media (min-width: 997px) {
+  @supports (scrollbar-gutter: stable) {
+    .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
+      padding: 0 0 4rem 0 !important;
+      scrollbar-gutter: stable;
+    }
+  }
+}
+
+
+.menu__list-item-collapsible {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+[data-theme='dark'] nav {
+  background: #1F1F1F;
+}
+
+/* Blockquotes */
+blockquote {
+  background: #FFE9AD;
+  border-left: var(--ifm-blockquote-border-left-width) solid var(--ifm-blockquote-border-color);
+  box-shadow: var(--ifm-blockquote-shadow);
+  color: var(--ifm-blockquote-color);
+  font-size: var(--ifm-blockquote-font-size);
+  margin: 2rem 0;
+}
+
+.example {
+  background-color: #8ECAFC;
+  border-left: var(--ifm-blockquote-border-left-width) solid var(--ifm-blockquote-border-color);
+  box-shadow: var(--ifm-blockquote-shadow);
+  color: var(--ifm-blockquote-color);
+  font-size: var(--ifm-blockquote-font-size);
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+/* Footer */
+.footer {
+  display: none;
+}
