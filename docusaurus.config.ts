@@ -1,6 +1,3 @@
-import { initConfig } from "@texturehq/common"; // first!
-initConfig();
-
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -38,7 +35,6 @@ const config: Config = {
   },
 
   customFields: {
-    GROWTHBOOK_CLIENT_KEY: process.env.GROWTHBOOK_CLIENT_KEY,
     API_BASE_URL: process.env.API_BASE_URL,
   },
 
