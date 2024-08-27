@@ -1,18 +1,22 @@
-- name: docs
-  type: web
-  runtime: static
-  buildCommand: >-
-    yarn && yarn build
-  staticPublishPath: build
-  pullRequestPreviewsEnabled: true
-  domains:
-    - docs.texturehq.com
-  envVars:
-    - key: NODE_VERSION
-      value: 20.11.1
-    - key: SKIP_INSTALL_DEPS
-      value: "true"
-    - key: GOOGLE_ANALYTICS_TAG
-      value: G-V7MNZSSTE1
-    - key: GROWTHBOOK_CLIENT_KEY
-      value: sdk-3WBkSYoHdyHxTfyb
+---
+
+services:
+  - name: docs
+    type: web
+    runtime: static
+    buildCommand: >-
+      yarn && yarn build
+    staticPublishPath: build
+    previews:
+      generation: automatic
+    domains:
+      - docs.texturehq.com
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
+      - key: SKIP_INSTALL_DEPS
+        value: "true"
+      - key: GOOGLE_ANALYTICS_TAG
+        value: G-V7MNZSSTE1
+      - key: GROWTHBOOK_CLIENT_KEY
+        value: sdk-3WBkSYoHdyHxTfyb
