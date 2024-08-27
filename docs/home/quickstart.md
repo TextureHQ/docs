@@ -35,7 +35,7 @@ Add a profile picture or change your preferences any time in the Settings tab
 
 ## Step 4: Create an Organization
 
-> All new users are given a default Personal organization. This is a great place to create multiple test [Workspaces](https://docs.texture.energy/docs/platform-concepts/workspaces), but is not intended to house Company information or production data. We recommend creating or joining a Company organization for production. 
+> All new users are given a default Personal organization. This is a great place to create multiple test [Workspaces](/docs/platform-concepts/workspaces), but is not intended to house Company information or production data. We recommend creating or joining a Company organization for production.
 
 On the Texture platform, an Organization is generally a company or some other kind of entity that you work for and which has other Members from your team on it.
 
