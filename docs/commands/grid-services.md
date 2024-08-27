@@ -39,7 +39,7 @@ If you do not already have a dedicated support contact, please reach out to us a
 
 Once you have enabled Grid Services for your Organization, you will be able to enroll devices into the Grid Service.
 
-Grid Services have their own enrollment process separate from the device enrollment process for [Enphase](docs/sources/oem/enphase). 
+Grid Services have their own enrollment process separate from the device enrollment process for [Enphase](/docs/sources/oem/enphase).
 
 Texture will automatically enroll your devices into the Grid Services for other manufacturers (e.g. SolarEdge) as they are added via the Connect flow once you have enabled Grid Services for your Organization.
 
