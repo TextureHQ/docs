@@ -1,70 +1,334 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: quickstart
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
 # Quickstart
- 
-## Step 1: Create your account
 
-[Register your account](https://dashboard.texturehq.com/sign-up) with a company or entity specific email address. We strongly recommend avoiding the use of personal email addresses. This helps us create a more secure experience and support associating you with your Organization.
+## Introduction
+This guide will show you how to get started with Texture. First, you will learn how to let your customers connect their devices. Then, we will show you how to use the Texture dashboard to explore data on your customers and their devices.
 
-![Sign Up Screenshot](https://i.giphy.com/fTnNtMJpeGMcjKxJVm.webp)
+## Generate a setup link
 
-## Step 2: Verify your email
+There are three ways to generate a link:
+1. The Texture API
+2. The Texture SDK (Javascript, React, or React Native)
+3. The Texture Dashboard
 
-To ensure that you are not a bad actor, please check your inbox and verify your email address before creating or joining an organization.
+### Texture API and SDK
 
-![Email Verification Screenshot](https://i.ibb.co/rGB5MG7/confirm.png)
+#### Get Your an API Key
+Go to the [Texture Dashboard Developer tab](https://dashboard.texturehq.com/developer) to obtain an API key
 
-## Step 3: Create a profile
+#### Generate a link
 
-Our onboarding flow allows you to add your personal details and set your preferred timezone and metrics. Visit the Settings > User Profile anytime to make adjustments.
+<Tabs>
+<TabItem value="js" label="API (Javascript)">
 
-![Profile Screenshot](https://i.ibb.co/W0zRrsC/profile.png)
+Node v18 + required
 
-Add your personal information 
+```
+#!/usr/bin/env node
 
-![Set Timezone Screenshot](https://i.ibb.co/SnsNHwF/settimezone.png)
+const textureApiUrl = "https://api.texture.energy";
+const apiKey = process.env.TEXTURE_API_KEY || "<your-api-key-goes-here>";
 
-Set your preferred settings 
+console.log(`Using API key: ${apiKey}`);
 
-![Set Profile Screenshot](https://i.ibb.co/Ssf04X5/profile-pic.png)
+// Node v18 has fetch built in
+fetch("https://api.texture.energy/v1/connections", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Texture-Api-Key": apiKey,
+  },
+  body: JSON.stringify({
+    referenceId: "9bb290c8-fe97-46ce-92a8-952823164277",
+    redirectUrl: "http://localhost:8000",
+    tags: ["tag1", "tag2"],
+    clientName: "Energy Demo"
+    customerInfo: {
+      email: "example@example.com",
+      phone: "555-555-0100",
+      firstName: "John",
+      lastName: "Doe",
+    },
+  }),
+})
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error(
+      `Failed to make request: ${response.status}, ${response.statusText}`
+    );
+  })
+  .then((responseJSON) => {
+    console.log(responseJSON);
+  })
+  .catch((error) => {
+    console.error("Failed to make request", error);
+  });
+```
+</TabItem>
 
-Add a profile picture or change your preferences any time in the Settings tab
+<TabItem value="py" label="API (Python)">
+```
+import requests
 
-## Step 4: Create an Organization
+# URL to POST to
+url = "https://api.texture.energy/v1/connections"
 
-> All new users are given a default Personal organization. This is a great place to create multiple test [Workspaces](/docs/platform-concepts/workspaces), but is not intended to house Company information or production data. We recommend creating or joining a Company organization for production.
+# The header to include with the request
+headers = {
+    "Texture-Api-Key": "<your-api-key-goes-here>",
+    "Content-Type": "application/json",
+}
 
-On the Texture platform, an Organization is generally a company or some other kind of entity that you work for and which has other Members from your team on it.
+# JSON body data
+data = {
+    "referenceId": "9bb290c8-fe97-46ce-92a8-952823164277",
+    "redirectUrl": "http://localhost:8000",
+    "tags": ["tag1", "tag2"],
+    "clientName": "Energy Demo",
+    "customerInfo": {
+        "email": "example@example.com",
+        "phone": "555-555-0100",
+        "firstName": "John",
+        "lastName": "Doe",
+    },
+}
 
-To create a new Organization, click your avatar and + Create organization. Visit the Settings > Organization anytime to make adjustments.
+# Make the POST request
+response = requests.post(url, headers=headers, json=data)
 
-![Create An Organization Screenshot](https://i.ibb.co/HCvf29D/create-org.png)
+# Check the response
+if response.status_code == 200:
+    print("Successfully sent POST request.")
+    print("Response:", response.json())
+else:
+    print(f"Failed to send POST request. Status code: {response.status_code}")
+    print("Response:", response.text)
+```
+</TabItem>
 
-You will be asked a series of questions to set your Company preferences.
+<TabItem value="js-sdk" label="JavScript SDK">
 
-![Create Org Questions Screenshot](https://i.ibb.co/3BDRMGR/org-questions.png)
+Install using npm:
+```
+$ npm install @texturehq/connect-sdk
+```
 
-## Step 5: Create a workspace
+Or, install using yarn:
+```
+$ yarn add @texturehq/connect-sdk
+```
 
-Within your Organization you will create specific Workspaces to manage different environments. These workspaces will also house your specific Server (Private) and Connect (Public) API keys.
+Create a button to generate a setup link:
 
-For example, you might have a Workspace for production, staging, and development. Or you may have a Workspace for each member of your team, so everyone can have their own sandbox.
+```
+import { createConnectSession } from "@texturehq/connect-sdk";
 
-To create a new Workspace, navigate to the Dashboard and find the `+ Add workspace`. Name your Workspace whatever you'd like then click Create. You'll see the new Workspace populate on the menu. You can use the dropdown menu to navigate between the various Workspaces.
+const texture = createConnectSession({
+  connectApiKey: "<your-api-key-goes-here>",
+  connectOptions: {
+    referenceId: "9bb290c8-fe97-46ce-92a8-952823164277",
+    clientName: "Name for your application",
+    redirectUrl: "http://localhost:8000",
+    tags: ["tag1", "tag2"],
+    manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
+    customerInfo: {
+      email: "example@example.com",
+      phone: "555-555-0100",
+      firstName: "John",
+      lastName: "Doe",
+    },
+  },
+  onSuccess: ({ scopedKey }) => {
+    // The scopedKey returned is a string that can be used to make requests to Texture API
+    // to retrieve data related to the newly connected account
+  },
+  onError: ({ type, reason }) => {
+    // The error object contains a type and reason
+    // type is identifier for the type of error that occurred
+    // reason is a string that provides more information about the error
+    // type 'popup-blocked' means that the popup window was blocked from opening
+    // type 'popup-closed' means that the popup window was closed before the connection was established
+  },
+});
 
-![Workspace Configuration Screenshot](https://i.ibb.co/YDJsxDy/Screenshot-2024-04-18-at-4-40-21-PM.png)
+document.querySelector("#app").innerHTML = `
+  <div>
+      <button id="texture-connect" type="button">Connect device(s) with Texture</button>
+  </div>
+`;
 
-## Step 6: Invite your team
+const textureConnectButton = document.querySelector("#texture-connect");
+textureConnectButton.addEventListener("click", () =>
+  texture.open({
+    width: 600,
+    height: 800,
+  })
+);
+```
+</TabItem>
 
-Adding your team to Texture will be important for full energy network visibility. You can add team members from the Dashboard through the Invite a Member button or from Settings > Organization > Members 
+<TabItem value="react-sdk" label="React SDK">
 
-From this page, you will see a button to Invite Team Member. Simply add their company issued email address that matches your Organization and click Invite.
+Install using npm:
+```
+$ npm install @texturehq/react-connect-sdk
+```
 
-The invited member will receive an email with instructions to set up their account.
+Or, install using yarn:
+```
+$ yarn add @texturehq/react-connect-sdk
+```
 
-![Team Invitation Process](https://i.ibb.co/MffFvTD/add-members.png)
+Create a button to generate a setup link:
+```
+import { useCreateConnectSession } from "@texturehq/react-connect-sdk";
 
-That’s it! Now you are ready to access Texture’s API and start integration our API Keys into your system. If you run into any issues during our platform onboarding, please reach out to our team [here](https://www.texturehq.com/contact-us).
+function App() {
+  const { open } = useCreateConnectSession({
+    connectApiKey: "<your-api-key-goes-here>",
+    connectOptions: {
+      referenceId: "9bb290c8-fe97-46ce-92a8-952823164277",
+      clientName: "Name for your application",
+      redirectUrl: "http://localhost:8000",
+      tags: ["tag1", "tag2"],
+      manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
+      customerInfo: {
+        email: "example@example.com",
+        phone: "555-555-0100",
+        firstName: "John",
+        lastName: "Doe",
+      },
+    },
+    onSuccess: (session) => {
+      console.log(session);
+    },
+    onError: (error) => {
+      console.log(error);
+    },
+  });
+
+  return (
+    <>
+      <div className="card">
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <button onClick={() => open()}>Open Texture</button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default App;
+```
+</TabItem>
+
+
+<TabItem value="react-native-sdk" label="React Native SDK">
+
+Install using npm:
+```
+$ npm install @texturehq/react-native-connect-sdk
+```
+
+Or, install using yarn:
+```
+$ yarn add @texturehq/react-native-connect-sdk
+```
+
+Create a button to generate a setup link:
+
+To do this, wrap `TextureConnect` around a component, and your component will become a button that opens the Connect flow from your React Native code.
+
+```
+import { TextureConnect } from '@texturehq/react-native-connect-sdk';
+//...
+  return (
+    <GestureHandlerRootView style={styles.container}>
+      <TextureConnect 
+          connectApiKey="<your-api-key-goes-here>"
+          connectOptions={{
+            clientName: 'Texture Connect',
+            referenceId: '123',
+            redirectUrl: 'exp+react-native-example://',
+            manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
+          }}
+          onError={(type, reason) => console.log(type, reason)}
+          onSuccess={(scopedKey) => console.log("Texture Scoped Key", scopedKey)}
+        >
+        <Text>Texture Connect</Text>
+      </TextureConnect>
+      <StatusBar style="auto" />
+    </GestureHandlerRootView>
+  );
+
+```
+</TabItem>
+
+</Tabs>
+
+### Texture Dashboard
+
+1. Go the the [Texture Dashboard](https://dashboard.texturehq.com/home).
+2. Enter the user's information.
+3. Click submit.
+
+![Dashboard Link](../../static/img/quickstart/connect-dashboard.png)
+
+## Customer Device Connect Flow
+
+Once the user follows the link or is prompted to set up their device, they will be guided through the Texture Connect flow. This process is designed to be user-friendly and intuitive. Here's what the user can expect:
+
+
+1. **Welcome Screen**: The user is greeted with a welcome screen that introduces the connection process.
+
+   ![Welcome Screen](../../static/img/quickstart/user-connect-home-screen.png)
+
+2. **User Information**: The user enters their name, contact, and address informaiton.
+
+   ![User Information](../../static/img/quickstart/user-connect-name.png)
+   ![User Address](../../static/img/quickstart/user-connect-address.png)
+
+3. **Device Set Up**: The user selects their device manufacturer, signs into their account, and selects devices to connect.
+
+   ![Device Manufacturer Selection](../../static/img/quickstart/user-connect-manufacturer-select.png)
+   ![Sign In to Device Account](../../static/img/quickstart/user-connect-sign-in.png)
+   ![Enter Device Account Credentials](../../static/img/quickstart/user-connect-account-creds.png)
+   ![Select Devices](../../static/img/quickstart/user-connect-select-device.png)
+
+4. **Success**: The user's device is set up! When they click continue they will be sent to the `redirectUrl` you provided.
+
+   ![Success](../../static/img/quickstart/user-connect-success.png)
+
+
+## Viewing Customer Device Information
+
+Go the the [Texture Dashboard](https://dashboard.texturehq.com/home).
+
+### Customers
+Click "Customers" to see customers that have connected a device.
+
+![Customers](../../static/img/quickstart/dashboard-customers.png)
+
+### Sites
+Click "Sites" to see customer device locations. 
+
+![Sites](../../static/img/quickstart/dashboard-sites.png)
+
+### Devices
+Click "Devices" to see connected customer devices.
+
+![Devices](../../static/img/quickstart/dashboard-devices.png)
+
+Click on the device "Serial Number" to see detailed informaiton about the device.
+
+![Device Details](../../static/img/quickstart/dashboard-device-detail.png)
