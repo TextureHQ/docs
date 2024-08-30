@@ -101,6 +101,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          // Add the following lines for the "Edit" functionality
+          editUrl: 'https://github.com/texturehq/docs/tree/main/',
+          editLocalizedFiles: true,
         },
         blog: {
           showReadingTime: true,

@@ -163,7 +163,7 @@ Fired when a new device is connected to the Texture platform. Includes the follo
 | data.state.gridStatus | The current status of the grid connection |
 | data.state.gridPower | The power currently drawn from or supplied to the grid |
 | data.state.gridEnergy | The energy exchanged with the grid |
-| data.state.createdAt | The timestamp when this state was recorded |
+| data.state.createdAt | The timestamp when this state update happened |
 | data.createdAt | The timestamp when the device was first discovered |
 | data.updatedAt | The timestamp when the device information was last updated |
 
@@ -211,6 +211,39 @@ Fired whenever we get updated data for a device.
     }
 }
 ```
+
+
+| Key | Description |
+| --- | ----------- |
+| type | The type of event, in this case `device.updated` |
+| version | The version of the event type, following semver |
+| key | A unique identifier for the event, essentially a hash of the event data |
+| timestamp | The date and time when the event occurred |
+| data.deviceId | The unique identifier for the device, created by Texture when the device was discovered |
+| data.deviceModel | The model of the device |
+| data.deviceName | The name given to the device, usually by the customer in their manufacturer app |
+| data.manufacturer | The manufacturer of the device |
+| data.deviceType | The type of device (e.g., battery) |
+| data.workspaceId | The ID of the workspace associated with the device |
+| data.organizationId | The ID of the organization associated with the device |
+| data.customer.referenceId | A reference ID for the customer, whatever was supplied by your organization during the device enrollment process |
+| data.state | An object containing the current state of the device |
+| data.state.id | The unique identifier for this state update |
+| data.state.charge | The current charge of the device in Wh (watt-hours) |
+| data.state.chargePercentage | The current charge percentage of the device |
+| data.state.chargingState | The current charging state of the device |
+| data.state.whConsumed | The amount of energy consumed in Wh (watt-hours) |
+| data.state.chargeRate | The current charge rate of the device in W (watts) |
+| data.state.backupReserve | The backup reserve percentage |
+| data.state.gridStatus | The current status of the grid connection |
+| data.state.gridPower | The current power exchange with the grid in W (watts) |
+| data.state.gridEnergy | The energy exchanged with the grid in Wh (watt-hours) |
+| data.state.isStormModeEnabled | Whether storm mode is enabled |
+| data.state.isStormModeActive | Whether storm mode is currently active |
+| data.state.createdAt | The timestamp when this state update occurred (which may be different than the event timestamp if the state was batched and sent slightly delayed which is the case for some OEMs) |
+| data.createdAt | The timestamp when this update was created. This is the timestamp of the request the OEM's API returned, not necessarly the timestamp of when the state was actually updated on the device. For that see `data.state.createdAt` |
+
+Note, the `state` object will differ by device type. For example, a battery will have different state data than an inverter. We have details on these differences [here](/docs/devices/data-models/overview). The above example is for a battery.
 
 The lion's share of these events will be triggered from the Device state updates which we get mostly on 5 or 15 minute intervals from the devices, however we are always looking to get tighter interval telemetry data as well as allow for specifying filters on that data. Stay tuned as we continue to add richer functionality to the filtering data to these events.
 
