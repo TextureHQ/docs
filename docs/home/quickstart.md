@@ -10,7 +10,7 @@ import TabItem from '@theme/TabItem';
 # Quickstart
 
 ## Introduction
-This guide will show you how to get started with Texture. First, you will learn how to let your customers connect their devices. Then, we will show you how to use the Texture dashboard to explore data on your customers and their devices.
+This guide will walk you through the process of generating a link that allows your customers to connect their devices with Texture.
 
 ## Generate a setup link
 
@@ -21,7 +21,7 @@ There are three ways to generate a link:
 
 ### Texture API and SDK
 
-#### Get Your an API Key
+#### Get Your API Key
 Go to the [Texture Dashboard Developer tab](https://dashboard.texturehq.com/developer) to obtain an API key
 
 #### Generate a link
@@ -31,7 +31,7 @@ Go to the [Texture Dashboard Developer tab](https://dashboard.texturehq.com/deve
 
 Node v18 + required
 
-```
+``` javascript
 #!/usr/bin/env node
 
 const textureApiUrl = "https://api.texture.energy";
@@ -77,7 +77,7 @@ fetch("https://api.texture.energy/v1/connections", {
 </TabItem>
 
 <TabItem value="py" label="API (Python)">
-```
+``` python
 import requests
 
 # URL to POST to
@@ -119,18 +119,18 @@ else:
 <TabItem value="js-sdk" label="JavScript SDK">
 
 Install using npm:
-```
+``` bash
 $ npm install @texturehq/connect-sdk
 ```
 
 Or, install using yarn:
-```
+``` bash
 $ yarn add @texturehq/connect-sdk
 ```
 
 Create a button to generate a setup link:
 
-```
+``` javascript
 import { createConnectSession } from "@texturehq/connect-sdk";
 
 const texture = createConnectSession({
@@ -180,17 +180,17 @@ textureConnectButton.addEventListener("click", () =>
 <TabItem value="react-sdk" label="React SDK">
 
 Install using npm:
-```
+``` bash
 $ npm install @texturehq/react-connect-sdk
 ```
 
 Or, install using yarn:
-```
+``` bash
 $ yarn add @texturehq/react-connect-sdk
 ```
 
 Create a button to generate a setup link:
-```
+``` javascript
 import { useCreateConnectSession } from "@texturehq/react-connect-sdk";
 
 function App() {
@@ -236,12 +236,12 @@ export default App;
 <TabItem value="react-native-sdk" label="React Native SDK">
 
 Install using npm:
-```
+``` bash
 $ npm install @texturehq/react-native-connect-sdk
 ```
 
 Or, install using yarn:
-```
+``` bash
 $ yarn add @texturehq/react-native-connect-sdk
 ```
 
@@ -249,7 +249,7 @@ Create a button to generate a setup link:
 
 To do this, wrap `TextureConnect` around a component, and your component will become a button that opens the Connect flow from your React Native code.
 
-```
+``` javascript
 import { TextureConnect } from '@texturehq/react-native-connect-sdk';
 //...
   return (
