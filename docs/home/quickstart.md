@@ -34,13 +34,13 @@ Node v18 + required
 ``` javascript
 #!/usr/bin/env node
 
-const textureApiUrl = "https://api.texture.energy";
+const textureApiUrl = "https://api.texturehq.com";
 const apiKey = process.env.TEXTURE_API_KEY || "<your-api-key-goes-here>";
 
 console.log(`Using API key: ${apiKey}`);
 
 // Node v18 has fetch built in
-fetch("https://api.texture.energy/v1/connections", {
+fetch("https://api.texturehq.com/v1/connections", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -81,7 +81,7 @@ fetch("https://api.texture.energy/v1/connections", {
 import requests
 
 # URL to POST to
-url = "https://api.texture.energy/v1/connections"
+url = "https://api.texturehq.com/v1/connections"
 
 # The header to include with the request
 headers = {
