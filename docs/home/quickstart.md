@@ -278,7 +278,7 @@ import { TextureConnect } from '@texturehq/react-native-connect-sdk';
 
 ### Texture Dashboard
 
-1. Go the the [Texture Dashboard](https://dashboard.texturehq.com/home).
+1. Go to the [Texture Dashboard](https://dashboard.texturehq.com/home).
 2. Enter the user's information.
 3. Click submit.
 
