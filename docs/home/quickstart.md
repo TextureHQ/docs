@@ -293,7 +293,7 @@ Once the user follows the link or is prompted to set up their device, they will 
 
    ![Welcome Screen](../../static/img/quickstart/user-connect-home-screen.png)
 
-2. **User Information**: The user enters their name, contact, and address informaiton.
+2. **User Information**: The user enters their name, contact, and address information.
 
    ![User Information](../../static/img/quickstart/user-connect-name.png)
    ![User Address](../../static/img/quickstart/user-connect-address.png)
