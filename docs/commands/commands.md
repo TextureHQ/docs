@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+toc_max_heading_level: 5
 ---
 
 # Commands
@@ -71,9 +72,11 @@ In addition to the operating mode there are additional parameters you can pass i
 - `maximumBatteryReserve` - Used when specifying `charge` as the desired operating mode. This will be the value the backup reserve is adjusted to or maximum charge to reach. (Defaults to 95%)
 - `enableGridInteraction` - Whether or not the battery should attempt to import from (charging) or export to the grid (discharging). This flag isn't leveraged if `idle` is desired. (Defaults to false)
 
-> **Note:** When specifying `reset` as the desired operating mode, none of the additional parameters are necessary. We will cache the last known operating mode and settings prior to setting other operating modes for up to 24 hours. This is currently only supported for Enphase batteries (specifically those enrolled in [Grid Services](/docs/sources/oem/enphase/#enphase-grid-services)), but we will add support for other manufacturers in the future.
+> **Note:** When specifying `reset` as the desired operating mode, none of the additional parameters are necessary. We will cache the last known operating mode and settings prior to setting other operating modes for up to 24 hours.
 
-Example 1) Discharge the battery, exporting to the grid if possible, otherwise covering home load
+#### Examples
+
+##### Discharge the battery, exporting to the grid if possible
 
 ```js title="POST https://api.texturehq.com/v1/commands/battery/set-operating-mode"
 {
@@ -86,7 +89,9 @@ Example 1) Discharge the battery, exporting to the grid if possible, otherwise c
 }
 ```
 
-Example 2) Charge the battery from excess solar primarily (note: it is still possible the battery may import from the grid)
+##### Charge the battery from excess solar primarily
+
+> **Note:** It is still possible the battery may import from the grid. This is because the battery may not be able to charge from solar alone, or the battery may be configured to import from the grid to charge.
 
 ```js title="POST https://api.texturehq.com/v1/commands/battery/set-operating-mode"
 {
@@ -98,7 +103,7 @@ Example 2) Charge the battery from excess solar primarily (note: it is still pos
 }
 ```
 
-Example 3) Reset the battery to the last known operating mode/settings
+##### Reset the battery to the last known settings (within 24 hours)
 
 ```js title="POST https://api.texturehq.com/v1/commands/battery/set-operating-mode"
 {
@@ -109,6 +114,7 @@ Example 3) Reset the battery to the last known operating mode/settings
 }
 ```
 
+#### Additional Information
 You can further [view the command endpoint and give it a try in our api reference](https://docs.texturehq.com/docs/actions/commands#set-operating-mode).
 
 Under the hood we will primarily use the batteries equivalent “Self Consumption” operating mode when `enableGridInteraction=false`. Reducing reliance or usage of the grid.

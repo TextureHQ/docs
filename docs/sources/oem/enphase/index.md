@@ -79,7 +79,7 @@ https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%
 Once a customer's Enphase system is enrolled in a grid services program, we will be able to control the battery system to optimize for grid services. This means that we will be able to control the battery system to export to the grid during off-peak hours, for example.
 
 There are some caveats or things to be aware of:
-- Commands won't take effect for at least 15 minutes after they are sent.
+- Commands won't take effect for at least 1 minute after they are sent.
 - Commands at maximum will last up to 4 hours.
 - If the target reserve level is reached before the command expires, the battery system will return to its operation mode before the command was sent.
 - The lowest target reserve level that can be set is 10%.
