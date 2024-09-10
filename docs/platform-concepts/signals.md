@@ -9,5 +9,5 @@ Core to the Texture platform is that we
 
 1. Take source data, such as device data, utility bills, meters, and monitors, etc.
 2. We normalize this data and convert it to the standard Texture schema
-3. We also model this data ta create [Sites](./sites), [Customers](./customers), and [Devices](./devices)
+3. We also model this data to create [Sites](./sites), [Customers](./customers), and [Devices](./devices)
 4. We then use signals to enrich this data
