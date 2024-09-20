@@ -157,7 +157,7 @@ console.log(texture.scopedKey);
 
 #### React {#usage-react}
 
-The Texture Connect SDK exposes a `useCreateConnectSession `hook which will handle much of the process for creating a link session.
+The Texture Connect SDK exposes a `useCreateConnectSession` hook which will handle much of the process for creating a link session.
 
 It returns a method called "open" which you can call from your React code whenever you would like to open a pop-up which will guide the user through connecting their device to your application via the Texture platform.
 
@@ -222,6 +222,12 @@ import { TextureConnect } from '@texturehq/react-native-connect-sdk';
             referenceId: '123',
             redirectUrl: 'example://',
             manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
+            customerInfo: {
+                    email: "example@example.com",
+                    phone: "555-555-0100",
+                    firstName: "John",
+                    lastName: "Doe",
+                  },
           }}
           onError={(type, reason) => console.log(type, reason)}
           onSuccess={(scopedKey) => console.log("Texture Scoped Key", scopedKey)}
