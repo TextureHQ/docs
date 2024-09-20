@@ -218,7 +218,7 @@ import { TextureConnect } from '@texturehq/react-native-connect-sdk';
       <TextureConnect
           connectApiKey="<YOUR_CONNECT_API_KEY>"
           connectOptions={{
-            clientName: 'Texture Connect',
+            clientName: 'Name for your application',
             referenceId: '123',
             redirectUrl: 'example://',
             manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
