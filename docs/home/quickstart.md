@@ -116,7 +116,7 @@ else:
 ```
 </TabItem>
 
-<TabItem value="js-sdk" label="JavScript SDK">
+<TabItem value="js-sdk" label="JavaScript SDK">
 
 Install using npm:
 ``` bash
@@ -329,6 +329,6 @@ Click "Devices" to see connected customer devices.
 
 ![Devices](../../static/img/quickstart/dashboard-devices.png)
 
-Click on the device "Serial Number" to see detailed informaiton about the device.
+Click on the device "Serial Number" to see detailed information about the device.
 
 ![Device Details](../../static/img/quickstart/dashboard-device-detail.png)
