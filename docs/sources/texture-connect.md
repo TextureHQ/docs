@@ -241,7 +241,7 @@ import { TextureConnect } from '@texturehq/react-native-connect-sdk';
 
 ### Examples
 
-Check out some examples in our [open source repository](https://github.com/TextureHQ/examples/tree/main/connect/sdk/web).
+Check out some examples in our [open source repository](https://github.com/TextureHQ/examples/tree/main/connect).
 
 > 📘 What if I have the user or device credentials already?
 > 
