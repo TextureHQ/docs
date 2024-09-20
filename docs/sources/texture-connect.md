@@ -161,7 +161,6 @@ The Texture Connect SDK exposes a `useCreateConnectSession` hook which will hand
 
 It returns a method called "open" which you can call from your React code whenever you would like to open a pop-up which will guide the user through connecting their device to your application via the Texture platform.
 
-
 ```jsx
 import { useCreateConnectSession } from "@texturehq/react-connect-sdk";
 
@@ -209,7 +208,6 @@ Wrap `TextureConnect` around a component, and your component will become a butto
 
 It's worth noting you should supply the `redirectUrl` to the `TextureConnect` props via `connectOptions`, this should be the custom URL scheme of your mobile app. e.g: `facebook://`
 
-
 ```jsx
 import { TextureConnect } from '@texturehq/react-native-connect-sdk';
 
@@ -225,11 +223,11 @@ import { TextureConnect } from '@texturehq/react-native-connect-sdk';
             redirectUrl: 'example://',
             manufacturerFilters: { manufacturers: ['honeywell', 'daikin'] },
             customerInfo: {
-                    email: "example@example.com",
-                    phone: "555-555-0100",
-                    firstName: "John",
-                    lastName: "Doe",
-                  },
+              email: "example@example.com",
+              phone: "555-555-0100",
+              firstName: "John",
+              lastName: "Doe",
+            },
           }}
           onError={(type, reason) => console.log(type, reason)}
           onSuccess={(scopedKey) => console.log("Texture Scoped Key", scopedKey)}
