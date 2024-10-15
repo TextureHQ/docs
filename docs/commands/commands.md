@@ -61,7 +61,6 @@ We allow you to set the reserve on a battery. The reserve is the lowest a home b
 The above example will set the battery reserve for this battery to 30% which means that it will not discharge below 30%. It will freely discharge capacity, but once it gets to that 30% threshold, it will act as a passthrough for any energy source upstream (the grid, a solar inverter, and windmill, etc.).
 
 ### Set Operating Mode
-
 With this command you can set a battery to a desired operating mode, for this command these operating modes are `charge`, `discharge`, `idle`, or `reset`.
 
 These are not the typical device operating modes, but fundamental charging states of the battery itself (outside of `reset`). The idea of this command is help influence or prioritize the charging state of the home battery.
@@ -71,8 +70,25 @@ In addition to the operating mode there are additional parameters you can pass i
 - `minimumBatteryReserve` - Used when specifying `discharge` as the desired operating mode. This will be the value the backup reserve is adjusted to or minimum charge to reach. (Defaults to 20%)
 - `maximumBatteryReserve` - Used when specifying `charge` as the desired operating mode. This will be the value the backup reserve is adjusted to or maximum charge to reach. (Defaults to 95%)
 - `enableGridInteraction` - Whether or not the battery should attempt to import from (charging) or export to the grid (discharging). This flag isn't leveraged if `idle` is desired. (Defaults to false)
+- `executionPriority` - The priority for the attempts at setting the operating mode. By default, we will attempt to execute the command via "grid_services" first, if applicable, falling back to "baseline" battery control. To bypass the "grid_services" attempt, set this to an empty array, or specify only ["baseline"]. The "baseline" priority is always attempted last (whether specified or not).
 
 > **Note:** When specifying `reset` as the desired operating mode, none of the additional parameters are necessary. We will cache the last known operating mode and settings prior to setting other operating modes for up to 24 hours.
+
+#### Operating Mode Behavior
+The below table outlines the general strategy and implications of each operating mode in tandem with the `enableGridInteraction` flag.
+
+Generally though, when the `enableGridInteraction` flag is set to `true` a "Time of use" like mode for the given battery is used. When set to `false` a "Self Consumption" like mode is used.
+
+| Desired Operating Mode | Enable Grid Interaction | Battery Strategy | Battery Reserve | Notes 
+|----------------|---------------------------------|--------------------------|-----------------|-----------------|
+| `charge`       | true                            | Time of use              | Adjusted to `maximumBatteryReserve`. | Battery will not import from the grid if it is not authorized to do so. Time of use settings may be updated, if applicable, to simulate off peak hours to stimulate charging
+| `discharge`    | true                            | Time of use              | Adjusted to `minimumBatteryReserve` (if specified), otherwise the batteries current backup reserve is used | Battery will not export to the grid if it is not authorized to do so. Time of use settings may be updated, if applicable, to simulate peak hours to stimulate discharging
+|
+| `charge`       | false                           | Self Consumption         | Adjusted to `maximumBatteryReserve`. | Battery may still import from the grid to charge if capable and solar is insufficient
+| `discharge`    | false                           | Self Consumption         | Adjusted to `minimumBatteryReserve` (if specified), otherwise the batteries current backup reserve is used |
+|
+| `idle`         | N/A                             | Self Consumption / Time of use         | Adjusted to the current charge level of battery | Stategy used depends on value of `enableGridInteraction` flag
+| `reset`        | N/A                             | N/A                      | N/A             | Reset the battery to the last known settings (within 24 hours) |
 
 #### Examples
 
