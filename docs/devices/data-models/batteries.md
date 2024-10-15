@@ -43,6 +43,9 @@ Below is a sample payload from a battery we have on platform. This is a Tesla Po
         "gridStatus": "idle",
         "gridPower": 0,
         "gridEnergy": 0,
+        "strategy": "self_consumption",
+        "isStormModeEnabled": true,
+        "isStormModeActive": false,
         "createdAt": "2024-03-19T14:55:10.493Z"
       },
       "name": "My Home",
@@ -58,11 +61,14 @@ I'll break down each field in the `state` object in detail below:
 - `chargePercentage` - the current charge of the battery as a percentage
 - `chargingState` - the current charging state of the battery. Possible values are `charging`, `discharging`, `idle`, `unknown` indicating whether the battery is charging, discharging, or idle, respectively -- pair this with `gridStatus` to understand whether the battery is charging from the grid, discharging to the grid, or idle
 - `whConsumed` - the total energy consumed by the battery in watt-hours (Wh) since the last state update
-- `chargeRate` - the current charge rate of the battery in watts (W)
+- `chargeRate` - the current charge rate of the battery in watts (W), positive indicates discharging, negative indicates charging
 - `backupReserve` - the current backup reserve of the battery as a percentage -- this is the limit below which the battery will not discharge so it is reserved for backup in case of an emergency
 - `gridStatus` - the current status of the grid. Possible values are `idle`, `exporting`, `importing`, `unknown` indicating the battery is idle, charging from the grid, or discharging to the grid, respectively
-- `gridPower` - the current power flow to/from the grid in watts (W)
+- `gridPower` - the current power flow to/from the grid in watts (W). Postive indicates importing from the grid, negative indicates exporting to the grid
 - `gridEnergy` - the total energy flow to/from the grid in watt-hours (Wh) since the last state update
+- `strategy` - the current strategy of the battery. Possible values are `self_consumption`, `time_of_use`, `backup`, `unknown` indicating the current strategy of the battery
+- `isStormModeEnabled` - Flag indicating whether storm mode is enabled on the battery
+- `isStormModeActive` - Flag indicating whether there is an active storm alert currently
 - `createdAt` - the date the state update was created in ISO 8601 format
 
 
