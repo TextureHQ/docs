@@ -58,7 +58,7 @@ Some details from the above page are also captured in the following sections.
 ### Permission to Export
 Details can be found at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#permission-to-export
 
-In the Tesla App, the customer should be able to see and adjust the following option:
+In the Tesla App, the customer should be able to see and adjust the following option:  
 ![Tesla App, Permission to Export](/img/oem/tesla/tesla-app-permission-to-export.png)
 
 If this option is unavailable or can't be found, the customer should contact Tesla or their installer to enable this feature.
@@ -68,7 +68,7 @@ If it is available, ensure the customer has it enabled or set to "Yes" to allow 
 ### Energy Export Preferences
 Details can be found at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#energy-exports
 
-Assuming the user has permission to export enabled, they should also be able to see and adjust the following option:
+Assuming the user has permission to export enabled, they should also be able to see and adjust the following option:  
 ![Tesla App, Energy Export Preferences](/img/oem/tesla/tesla-app-energy-exports.png)
 
 If this option is unavailable or can't be found, the customer should contact Tesla or their installer to enable this feature.
@@ -78,7 +78,7 @@ If it is available, ensure the customer has it set to "Everything" to allow expo
 ### Grid Charging
 Details can be found at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#grid-charging
 
-In the Tesla App, the customer should be able to see and adjust the following option:
+In the Tesla App, the customer should be able to see and adjust the following option:  
 ![Tesla App, Grid Charging](/img/oem/tesla/tesla-app-grid-charging.png)
 
 Even if the customer doesn't have this option enabled, the battery still will be capable of charging from the grid when it has low energy, assuming of course it is connected to the grid.
