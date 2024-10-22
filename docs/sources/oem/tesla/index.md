@@ -49,6 +49,43 @@ To rectify this situation, direct the user to update the access the Texture appl
 2. They will be prompted to log in, and then can revoke or update access the Texture app has to their account
 3. Afterward, they must go through the Connect flow again to grant the necessary scopes or re-grant access to their account under the new scopes.
 
+## Battery Import/Export Limitations
+Before you can successfully issue a discharge or charge command to a Tesla Powerwall via the Texture Platform, with the intention of exporting or importing energy to or from the grid, you must first ensure that the customers Powerwall is configured to allow this.
+
+Tesla has a page around this on their website located at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings
+
+Some details from the above page are also captured in the following sections.
+
+### Permission to Export
+Details can be found at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#permission-to-export
+
+In the Tesla App, the customer should be able to see and adjust the following option:
+![Tesla App, Permission to Export](/img/oem/tesla/tesla-app-permission-to-export.png)
+
+If this option is unavailable or can't be found, the customer should contact Tesla or their installer to enable this feature.
+
+If it is available, ensure the customer has it enabled or set to "Yes" to allow exporting energy to the grid.
+
+### Energy Export Preferences
+Details can be found at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#energy-exports
+
+Assuming the user has permission to export enabled, they should also be able to see and adjust the following option:
+![Tesla App, Energy Export Preferences](/img/oem/tesla/tesla-app-energy-exports.png)
+
+If this option is unavailable or can't be found, the customer should contact Tesla or their installer to enable this feature.
+
+If it is available, ensure the customer has it set to "Everything" to allow exporting the battery in addition to solar energy to the grid.
+
+### Grid Charging
+Details can be found at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#grid-charging
+
+In the Tesla App, the customer should be able to see and adjust the following option:
+![Tesla App, Grid Charging](/img/oem/tesla/tesla-app-grid-charging.png)
+
+Even if the customer doesn't have this option enabled, the battery still will be capable of charging from the grid when it has low energy, assuming of course it is connected to the grid.
+
+Solar will still be prioritized over grid charging in most cases when set to "Yes", unless there is a financial incentive to charge from the grid or there is insufficient solar energy available.
+
 ## Vehicle Command Execution
 The new Tesla FleetAPI has some additional requirements when it comes to executing commands on vehicles.
 
