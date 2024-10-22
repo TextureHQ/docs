@@ -50,12 +50,11 @@ To rectify this situation, direct the user to update the access the Texture appl
 3. Afterward, they must go through the Connect flow again to grant the necessary scopes or re-grant access to their account under the new scopes.
 
 ## Battery Import/Export Limitations
-Before you can successfully issue a discharge or charge command to a Tesla Powerwall via the Texture Platform, with the intention of exporting or importing energy to or from the grid, you must first ensure that the customers Powerwall is configured to allow this.
+Before you can successfully issue a discharge or charge command to a Tesla Powerwall via the Texture Platform to export or import energy to/from the grid, you must first ensure that the customer's Powerwall is configured to allow this.
 
-Tesla has a page around this on their website located at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings
+Tesla provides detailed information about this in their [Advanced Settings documentation](https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings).
 
 Some details from the above page are also captured in the following sections.
-
 ### Permission to Export
 Details can be found at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#permission-to-export
 
