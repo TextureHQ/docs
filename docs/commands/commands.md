@@ -85,7 +85,7 @@ Generally though, when the `enableGridInteraction` flag is set to `true` a "Time
 | `discharge`    | true                            | Time of use              | Adjusted to `minimumBatteryReserve` (if specified), otherwise the batteries current backup reserve is used | Battery will not export to the grid if it is not authorized to do so. Time of use settings may be updated, if applicable, to simulate peak hours to stimulate discharging
 |
 | `charge`       | false                           | Self Consumption         | Adjusted to `maximumBatteryReserve`. | Battery may still import from the grid to charge if capable and solar is insufficient
-| `discharge`    | false                           | Self Consumption         | Adjusted to `minimumBatteryReserve` (if specified), otherwise the batteries current backup reserve is used |
+| `discharge`    | false                           | Self Consumption         | Adjusted to `minimumBatteryReserve` (if specified), otherwise the batteries current backup reserve is used | Battery may not discharge to cover home load if solar energy is available and sufficient (it may in fact charge the battery)
 |
 | `idle`         | N/A                             | Self Consumption / Time of use         | Adjusted to the current charge level of battery | Stategy used depends on value of `enableGridInteraction` flag
 | `reset`        | N/A                             | N/A                      | N/A             | Reset the battery to the last known settings (within 24 hours) |
