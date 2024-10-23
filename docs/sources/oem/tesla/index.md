@@ -75,6 +75,8 @@ If this option is unavailable or can't be found, the customer should contact Tes
 
 If it is available, ensure the customer has it set to "Everything" to allow exporting the battery in addition to solar energy to the grid.
 
+> **Note**: When sending a discharge command to a battery with the `enableGridInteraction` flag set to true, we will attempt to adjust the export preferences to allow exporting the battery in addition to solar energy to the grid.
+
 ### Grid Charging
 Details can be found at: https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#grid-charging
 
@@ -84,6 +86,8 @@ In the Tesla App, the customer should be able to see and adjust the following op
 Even if the customer doesn't have this option enabled, the battery still will be capable of charging from the grid when it has low energy, assuming of course it is connected to the grid.
 
 Solar will still be prioritized over grid charging in most cases when set to "Yes", unless there is a financial incentive to charge from the grid or there is insufficient solar energy available.
+
+> **Note**: When sending a charge command to a battery with the `enableGridInteraction` flag set to true, we will attempt to adjust the grid charging preferences to allow charging the battery from the grid.
 
 ## Vehicle Command Execution
 The new Tesla FleetAPI has some additional requirements when it comes to executing commands on vehicles.
