@@ -90,6 +90,8 @@ Generally though, when the `enableGridInteraction` flag is set to `true` a "Time
 | `idle`         | N/A                             | Self Consumption / Time of use         | Adjusted to the current charge level of battery | Stategy used depends on value of `enableGridInteraction` flag
 | `reset`        | N/A                             | N/A                      | N/A             | Reset the battery to the last known settings (within 24 hours) |
 
+> **Note:** If the device is enrolled in a grid services program, the table above is likely not applicable in terms of the battery stragies used (we always attempt grid services first by default). The battery will be controlled by the grid services program and typically not override the users current battery settings.
+
 #### Examples
 
 ##### Discharge the battery, exporting to the grid if possible
