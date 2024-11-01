@@ -19,6 +19,8 @@ With Destinations, you can configure your data to go to the right place and in t
 Currently supported destinations:
 
 - [Webhooks](./webhooks.md)
+- [Email](./email.md)
+- [SMS](./sms.md)
 
 **Coming soon**
 
@@ -26,7 +28,6 @@ Currently supported destinations:
 - WebSocket
 - MQTT
 - Kafka
-- Email
 - Push Notifications
 - Snowflake
 - Databricks
