@@ -3,7 +3,7 @@ sidebar_position: 5
 title: Event Types
 ---
 
-import { CommandFailedEvent } from '@site/src/components/EventTypes';
+import { CommandFailedEvent, CommandSucceededEvent, EnrollmentApprovedEvent } from '@site/src/components/EventTypes';
 
 # Event Types
 
@@ -28,36 +28,7 @@ Fired whenever a command run against a device fails.
 ## `command.succeeded`
 
 Fired whenever a command run against a device succeeds.
-
-```js title="Command Succeeded Event"
-{
-    "type": "command.succeeded",
-    "version": "0.0.2",
-    "key": "cc0e387d55ab78fb204c5c2225eff0aa6a9ca3f32a8d5542f75fe9b8bd972d87",
-    "timestamp": "2024-08-22T15:54:52.013Z",
-    "data": {
-        "workspaceId": "cllzcf9xe00066g7dcsxyq1e5",
-        "commandId": "cllzcbw0t00016g7dfua590dd",
-        "deviceId": "cllzcbw0t00016g7dfua590dd",
-        "issuedAt": "2023-09-01T20:48:24.967Z",
-        "executedAt": "2023-09-01T20:48:24.967Z"
-    }
-}
-```
-
-
-| Key | Description |
-| --- | ----------- |
-| type | The type of event, in this case `command.succeeded` |
-| version | The version of the event type, following semver |
-| key | A unique identifier for the event |
-| timestamp | The date and time when the event occurred |
-| data.workspaceId | The ID of the workspace associated with the command |
-| data.commandId | The unique identifier for the command |
-| data.deviceId | The ID of the device on which the command was executed |
-| data.status | The status of the command, in this case "succeeded" |
-| data.issuedAt | The date and time when the command was issued |
-| data.executedAt | The date and time when the command was executed |
+<CommandSucceededEvent />
 
 ## `device.discovered`
 
@@ -255,21 +226,4 @@ in to Grid Services. If you are interested in Grid Services, please reach out to
 
 Fired whenever an enrollment is approved.
 
-```json
-{
-  "type": "enrollment.approved",
-  "version": "0.0.1",
-  "key": "8f7d3b2e1a9c6f4e0d5b8a7c2e1f3d5b8a7c2e1f3d5b8a7c2e1f3d5b8a7c2e1f",
-  "timestamp": "2024-03-20T14:30:00Z",
-  "data": {
-    "workspaceId": "clm2n3o4p5q6r7s8t9u0v1w2x",
-    "organizationId": "cla1b2c3d4e5f6g7h8i9j0k1l",
-    "customer": {
-      "referenceId": "cust-123456-abcdef"
-    },
-    "program": {
-      "manager": "GridCo Energy Services"
-    }
-  }
-}
-```
+<EnrollmentApprovedEvent />
