@@ -1,0 +1,35 @@
+name: test-docs
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+  push:
+    branches:
+      - "main"
+jobs:
+  test-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20.11.1"
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('./packages/logger/yarn.lock') }}
+      - name: Install dependencies
+        run: yarn
+      - name: Check @texturehq/events package version
+        run: >
+            LATEST=(yarn info @texturehq/events -A --json | jq '.data["dist-tags"].latest') \
+            CURRENT=(cat package.json | jq '.dependencies["@texturehq/events"]') \
+            if [ "$LATEST" != "$CURRENT" ]; then
+              echo "The @texturehq/events package is outdated"
+              echo "Latest version: $LATEST"
+              echo "Current version: $CURRENT"
+              exit 1
+            fi
+
