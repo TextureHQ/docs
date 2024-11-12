@@ -3,6 +3,8 @@ sidebar_position: 5
 title: Event Types
 ---
 
+import { CommandFailedEvent } from '@site/src/components/EventTypes';
+
 # Event Types
 
 _We are continually adding more event types as we build out the Texture platform so if there is an event type you would like to see, please let us know._
@@ -21,40 +23,7 @@ We follow the [Standard Webhook Specification](https://www.standardwebhooks.com/
 
 Fired whenever a command run against a device fails.
 
-```js title="Command Failed Event"
-{
-    "type": "command.failed",
-    "version": "0.0.2",
-    "key": "cc0e387d55ab78fb204c5c2225eff0aa6a9ca3f32a8d5542f75fe9b8bd972d87",
-    "timestamp": "2024-08-22T15:54:52.013Z",
-    "data": {
-        "workspaceId": "cllzcf9xe00066g7dcsxyq1e5",
-        "commandId": "cllzcbw0t00016g7dfua590dd",
-        "deviceId": "cllzcbw0t00016g7dfua590dd",
-        "error": {
-            "message": "Failed to execute command"
-        },
-        "issuedAt": "2023-09-01T20:48:24.967Z",
-        "executedAt": "2023-09-01T20:48:24.967Z"
-    }
-}
-```
-
-
-| Key | Description |
-| --- | ----------- |
-| type | The type of event, in this case `command.failed` |
-| version | The version of the event type, following semver |
-| key | A unique identifier for the event |
-| timestamp | The date and time when the event occurred |
-| data.workspaceId | The ID of the workspace associated with the command |
-| data.commandId | The unique identifier for the command |
-| data.deviceId | The ID of the device on which the command was executed |
-| data.status | The status of the command, in this case "failed" |
-| data.error.message | A description of the error that occurred |
-| data.issuedAt | The date and time when the command was issued |
-| data.executedAt | The date and time when the command was executed |
-
+<CommandFailedEvent />
 
 ## `command.succeeded`
 
