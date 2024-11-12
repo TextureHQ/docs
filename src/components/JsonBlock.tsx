@@ -14,5 +14,5 @@ const theme = {
 };
 
 export const JsonBlock = (props: JsonBlockProps) => (
-  <JSONPretty id="json-pretty" data={props.data} theme={theme} />
+  <JSONPretty data={props.data} theme={theme} />
 );
