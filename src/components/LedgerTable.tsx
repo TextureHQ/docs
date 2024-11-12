@@ -5,7 +5,9 @@ interface TableRowProps {
 
 const TableRow = (props: TableRowProps) => (
   <tr>
-    <td><code>{props.value}</code></td>
+    <td>
+      <code>{props.value}</code>
+    </td>
     <td>{props.description}</td>
   </tr>
 );
@@ -15,13 +17,17 @@ interface LedgerTableProps {
 }
 
 export const LedgerTable = (props: LedgerTableProps) => (
-  <table>
-    <thead>
-      <th>Key</th>
-      <th>Description</th>
-    </thead>
+  <table role="table">
+    <tr role="row">
+      <th role="columnheader" scope="col">
+        Key
+      </th>
+      <th role="columnheader" scope="col">
+        Description
+      </th>
+    </tr>
     {Object.keys(props.data).map((key: string) => (
-      <TableRow value={key} description={props.data[key]} />
+      <TableRow key={key} value={key} description={props.data[key]} />
     ))}
   </table>
 );
