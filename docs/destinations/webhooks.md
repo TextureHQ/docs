@@ -40,18 +40,18 @@ When your endpoint receives a Webhook POST request, ensure to:
 2. **Acknowledge receipt:** Respond to the Webhook with a 200 OK status code promptly to acknowledge receipt. If not acknowledged, Texture may attempt to resend the data
 3. **Process data asynchronously:** Given the potential volume of data, it's advisable to process the Webhook data in the background, especially if data processing can be time-consuming
 
-The payload that your endpoint will receive will vary a bit depending on the [Event Type](event-types.md) and the [Device Type](devices/data-models/overview.md).
+The payload that your endpoint will receive will vary a bit depending on the [Event Type](event-types.mdx) and the [Device Type](devices/data-models/overview.md).
 
 However, there are some commonalities that all share:
 
-1. **type:** The flavor of event you are receiving. See more details on the [Event Types](event-types.md) detail page, but this will be a string which looks like `device.created`
+1. **type:** The flavor of event you are receiving. See more details on the [Event Types](event-types.mdx) detail page, but this will be a string which looks like `device.created`
 2. **deviceId:** The id of the device for which this event applies
 3. **organizationId:** The organization for which this payload is relevant. Useful in case you send multiple organization webhooks to the same endpoint
 4. **workspaceId:** The workspace for which this payload is relevant. Useful in case you send webhooks from multiple workspaces to the same endpoint
 
 > 🤔 
 > 
-> You may notice that [Event Types](event-types.md)follow the convention of `noun.verb` to specify what kind of thing it is referring to and what happened to that thing whereas the [Command Types](/docs/commands) follow the convention of `noun:verb` to specify an action to carry out on a device.
+> You may notice that [Event Types](event-types.mdx)follow the convention of `noun.verb` to specify what kind of thing it is referring to and what happened to that thing whereas the [Command Types](/docs/commands) follow the convention of `noun:verb` to specify an action to carry out on a device.
 > 
 > This is intentional! We were thinking of you dear developer when we came up with these conventions . We thought it'd be far easier for you if you could distinguish, at a glance, between the Event and Command without having to clutter up the structure or having to prefix every item with stream or act or something.
 > 
