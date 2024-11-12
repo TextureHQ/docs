@@ -3360,7 +3360,7 @@
     axios "^1.6.7"
     zod "^3.22.4"
 
-"@texturehq/events@^1.2.1":
+"@texturehq/events@1.2.1":
   version "1.2.1"
   resolved "https://npm.pkg.github.com/download/@texturehq/events/1.2.1/9d526ff1c048d7500252468dba208d989d77f133#9d526ff1c048d7500252468dba208d989d77f133"
   integrity sha512-LGsSpLQlWhJuucIBwoebj2G74PfCb6sJX37i6waviqVoMKojWd8MWN/MDMt8Crx+9/Q035AVd9cduHe4CGpQgg==
