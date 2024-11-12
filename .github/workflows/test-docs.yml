@@ -32,10 +32,10 @@ jobs:
         run: >
             LATEST=$(yarn info @texturehq/events -A --json | jq '.data["dist-tags"].latest'); \
             CURRENT=$(cat package.json | jq '.dependencies["@texturehq/events"]'); \
-            if [[ "$LATEST" != "$CURRENT" ]]; then \
-              echo "The @texturehq/events package is outdated"; \
-              echo "Latest version: $LATEST"; \
-              echo "Current version: $CURRENT"; \
-              exit 1; \
+            if [[ "$LATEST" != "$CURRENT" ]]; then
+              echo "The @texturehq/events package is outdated";
+              echo "Latest version: $LATEST";
+              echo "Current version: $CURRENT";
+              exit 1;
             fi
 
