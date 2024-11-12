@@ -1,4 +1,10 @@
 name: test-docs
+permissions:
+  packages: write
+  id-token: write
+  contents: read
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 on:
   workflow_dispatch:
   schedule:
