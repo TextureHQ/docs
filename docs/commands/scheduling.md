@@ -120,12 +120,11 @@ View the full endpoint and schema overview [here](/api#/paths/devices-id--schedu
 | Schedules                        | Endpoint                                               | Schema                            |
 |----------------------------------|--------------------------------------------------------|-----------------------------------|
 | **Get schedules for a device**   | GET /v1/devices/\{deviceId\}/schedules                 | [DeviceSchedule](#deviceschedule) |
+| **Get a schedule for a device**  | GET /v1/devices/\{deviceId\}/schedule/\{scheduleId}    | [DeviceSchedule](#deviceschedule) |
 | **Create a new device schedule** | POST /v1/devices/\{deviceId\}/schedule                 | [DeviceSchedule](#deviceschedule) |
 | **Delete all device schedules**  | DELETE /v1/devices/\{deviceId\}/schedules              | [DeviceSchedule](#deviceschedule) |
+| **Delete a device schedule**     | DELETE /v1/devices/\{deviceId\}/schedule/\{scheduleId} | [DeviceSchedule](#deviceschedule) |
 
-<!--- New Endpoints to be added in the future --->
-<!--- | **Get a schedule for a device**  | GET /v1/devices/\{deviceId\}/schedule/\{scheduleId}    | [DeviceSchedule](#deviceschedule) | --->
-<!--- | **Delete a device schedule**     | DELETE /v1/devices/\{deviceId\}/schedule/\{scheduleId} | [DeviceSchedule](#deviceschedule) | --->
 
 ### Creating schedule
 
@@ -163,7 +162,7 @@ View our complete list of available device operating modes [here](/docs/commands
 
 A `DeviceSchedule`is the common response object type for our Device Scheduling API. The response type is very similar to
 the post body with some enriched information from the database returned as a list of the active or future schedules. 
-The basic layout of the type is described [here](/api#/paths/devices-id--schedules/get) as the response object to the GET Device Schedule endpoint.
+The basic layout of the type is described [here](/api#/paths/devices-id--schedules/get) as the response object to the GET Device Schedules endpoint.
 
 ## Schedules & Rules Notes:
 
