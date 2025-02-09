@@ -1,5 +1,5 @@
 // A generic TypeScript type to flatten a nested object
-export type FlattenObjectKeys<
+type FlattenObjectKeys<
   T extends Record<string, unknown>,
   Key = keyof T
 > = Key extends string
@@ -7,3 +7,12 @@ export type FlattenObjectKeys<
     ? `${Key}.${FlattenObjectKeys<T[Key]>}`
     : Key
   : never;
+
+type Event = {
+  data: Record<string, unknown>;
+};
+
+export type EventLedger<T extends Event> = Record<
+  FlattenObjectKeys<T["data"]>,
+  string
+>;

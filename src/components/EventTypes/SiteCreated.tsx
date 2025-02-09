@@ -1,7 +1,7 @@
 import { SiteCreatedEvent_0_0_1 } from "@texturehq/events";
 import { JsonBlock } from "../JsonBlock";
 import { LedgerTable } from "../LedgerTable";
-import { FlattenObjectKeys } from "../../common/types";
+import { EventLedger } from "../../common/types";
 
 const siteCreatedEvent: SiteCreatedEvent_0_0_1 = {
   type: "site.created",
@@ -22,10 +22,7 @@ const siteCreatedEvent: SiteCreatedEvent_0_0_1 = {
   },
 };
 
-const siteCreateEventLedger: Record<
-  FlattenObjectKeys<SiteCreatedEvent_0_0_1["data"]>,
-  string
-> = {
+const siteCreatedEventLedger: EventLedger<SiteCreatedEvent_0_0_1> = {
   id: "The unique identifier for the site.",
   workspaceId: "The ID of the workspace associated with the site.",
   referenceId: "The reference ID for the site.",
@@ -36,9 +33,9 @@ const siteCreateEventLedger: Record<
   "location.longitude": "The longitude of the geographical coordinates of the site.",
 };
 
-export const SiteCreateEvent = () => (
+export const SiteCreatedEvent = () => (
   <>
     <JsonBlock data={siteCreatedEvent} />
-    <LedgerTable data={siteCreateEventLedger} />
+    <LedgerTable data={siteCreatedEventLedger} />
   </>
 );

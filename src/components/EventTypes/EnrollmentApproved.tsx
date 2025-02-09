@@ -1,6 +1,7 @@
 import { EnrollmentApproved_0_0_1 } from "@texturehq/events";
 import { JsonBlock } from "../JsonBlock";
 import { LedgerTable } from "../LedgerTable";
+import { EventLedger } from "@site/src/common/types";
 
 const enrollmentApprovedEvent: EnrollmentApproved_0_0_1 = {
   type: "enrollment.approved",
@@ -27,14 +28,20 @@ const enrollmentApprovedEvent: EnrollmentApproved_0_0_1 = {
   },
 };
 
-const EnrollmentApprovedEventLedger: Record<
-  keyof EnrollmentApproved_0_0_1["data"],
-  string
-> = {
+const EnrollmentApprovedEventLedger: EventLedger<EnrollmentApproved_0_0_1> = {
   workspaceId: "The ID of the workspace associated with the enrollment.",
   organizationId: "The ID of the organization associated with the enrollment.",
-  customer: "The customer associated with the enrollment.",
-  program: "The program associated with the enrollment.",
+  "customer.id": "The ID of the customer associated with the enrollment.",
+  "customer.workspaceId": "The ID of the workspace associated with the customer.",
+  "customer.organizationId": "The ID of the organization associated with the customer.",
+  "customer.email": "The email address of the customer.",
+  "customer.phone": "The phone number of the customer.",
+  "customer.firstName": "The first name of the customer.",
+  "customer.lastName": "The last name of the customer.",
+  "customer.referenceId": "The reference ID for the customer.",
+  "customer.updatedAt": "The date and time when the customer was last updated.",
+  "customer.createdAt": "The date and time when the customer was created.",
+  "program.manager": "The manager of the program associated with the enrollment.",
 };
 
 export const EnrollmentApprovedEvent = () => (

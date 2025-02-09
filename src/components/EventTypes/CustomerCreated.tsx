@@ -1,7 +1,7 @@
 import { CustomerCreatedEvent_0_0_1 } from "@texturehq/events";
 import { JsonBlock } from "../JsonBlock";
 import { LedgerTable } from "../LedgerTable";
-import { FlattenObjectKeys } from "../../common/types";
+import { EventLedger } from "../../common/types";
 
 const customerCreatedEvent: CustomerCreatedEvent_0_0_1 = {
   type: "customer.created",
@@ -22,10 +22,7 @@ const customerCreatedEvent: CustomerCreatedEvent_0_0_1 = {
   },
 };
 
-const customerCreatedEventLedger: Record<
-  FlattenObjectKeys<CustomerCreatedEvent_0_0_1["data"]>,
-  string
-> = {
+const customerCreatedEventLedger: EventLedger<CustomerCreatedEvent_0_0_1> = {
   id: "The unique identifier for the customer.",
   workspaceId: "The ID of the workspace associated with the customer.",
   referenceId: "The reference ID for the customer.",

@@ -3,7 +3,7 @@ sidebar_position: 5
 title: Event Types
 ---
 
-import { CustomerCreatedEvent, CommandFailedEvent, CommandSucceededEvent, EnrollmentApprovedEvent } from '@site/src/components/EventTypes';
+import { CustomerCreatedEvent, CommandFailedEvent, CommandSucceededEvent, EnrollmentApprovedEvent, SiteCreatedEvent } from '@site/src/components/EventTypes';
 
 # Event Types
 
@@ -224,17 +224,17 @@ Fired whenever a device disconnects from the Texture platform.
 }
 ```
 
-The following events are only available for organizations that have opted 
-in to Grid Services. If you are interested in Grid Services, please reach out to us.
-
 ## `enrollment.approved`
 
 Fired whenever an enrollment is approved.
+
+> This event is only available for organizations that have opted 
+in to Grid Services. If you are interested in Grid Services, please reach out to us.
 
 <EnrollmentApprovedEvent />
 
 ## `site.created`
 
-Fired whenever a customer is created on the Texture platform.
+Fired whenever a site is created on the Texture platform.
 
 <SiteCreatedEvent />

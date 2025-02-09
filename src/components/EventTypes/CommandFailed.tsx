@@ -1,6 +1,7 @@
 import { CommandFailedEvent_0_0_2 } from "@texturehq/events";
 import { JsonBlock } from "../JsonBlock";
 import { LedgerTable } from "../LedgerTable";
+import { EventLedger } from "@site/src/common/types";
 
 const commandFailedEvent: CommandFailedEvent_0_0_2 = {
   type: "command.failed",
@@ -19,11 +20,11 @@ const commandFailedEvent: CommandFailedEvent_0_0_2 = {
   },
 };
 
-const CommandFailedEventLedger: Record<keyof CommandFailedEvent_0_0_2["data"], string> = {
+const CommandFailedEventLedger: EventLedger<CommandFailedEvent_0_0_2> = {
   workspaceId: "The ID of the workspace associated with the command.",
   commandId: "The unique identifier for the command.",
   deviceId: "The ID of the device on which the command was executed.",
-  error: "The error that occurred.",
+  "error.message": "The error that occurred.",
   issuedAt: "The date and time when the command was issued.",
   executedAt: "The date and time when the command was executed.",
 }
