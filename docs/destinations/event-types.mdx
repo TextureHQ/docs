@@ -3,7 +3,7 @@ sidebar_position: 5
 title: Event Types
 ---
 
-import { CommandFailedEvent, CommandSucceededEvent, EnrollmentApprovedEvent } from '@site/src/components/EventTypes';
+import { CustomerCreatedEvent, CommandFailedEvent, CommandSucceededEvent, DeviceDisconnectedEvent, DeviceDiscoveredEvent, DeviceUpdatedEvent, EnrollmentApprovedEvent, SiteCreatedEvent } from '@site/src/components/EventTypes';
 
 # Event Types
 
@@ -18,6 +18,11 @@ We follow the [Standard Webhook Specification](https://www.standardwebhooks.com/
 - All events have a `version` property that indicates the version of the event type. We use semver for versioning.
 - All events have a `key` property that is a unique identifier for the event. The `key` is a hash of the event data and is used to deduplicate events helping you avoid duplicate events.
 
+## `customer.created`
+
+Fired whenever a customer is created on the Texture platform.
+
+<CustomerCreatedEvent />
 
 ## `command.failed`
 
@@ -34,79 +39,7 @@ Fired whenever a command run against a device succeeds.
 
 Fired when a new device is connected to the Texture platform. Includes the following payload:
 
-```js title="Device Discovered Event"
-{
-    "type": "device.discovered",
-    "version": "0.0.1",
-    "key": "cc0e387d55ab78fb204c5c2225eff0aa6a9ca3f32a8d5542f75fe9b8bd972d87",
-    "timestamp": "2024-08-22T15:54:52.013Z",
-    "data": {
-        "deviceId": "cllzcbw0t00016g7dfua590dd",
-        "deviceModel": "ac_powerwall",
-        "deviceType": "battery",
-        "workspaceId": "cllzcf9xe00066g7dcsxyq1e5",
-        "organizationId": "cllzcf78o00036g7d0r4gjry1",
-        "manufacturer": "tesla",
-        "customer": {
-            "referenceId": "c1b1504d-4784-5d90-9459-a512c4789b35",
-        },
-        "site": {
-            "location": {
-                "latitude": 37.7749,
-                "longitude": -122.4194
-            }
-        },
-        "state": {
-            "id": "cltyhxpy406poq4z3zx19y2fs",
-            "charge": 18069.15789473684,
-            "chargePercentage": 59.30925587453832,
-            "chargingState": "charging",
-            "whConsumed": 0,
-            "chargeRate": -2290,
-            "backupReserve": 30,
-            "gridStatus": "idle",
-            "gridPower": 0,
-            "gridEnergy": 0,
-            "isStormModeEnabled": true,
-            "isStormModeActive": false,
-            "createdAt": "2024-03-19T14:55:10.493Z"
-        },
-        "createdAt": "2023-09-01T20:48:24.967Z",
-        "updatedAt": "2023-09-01T20:48:24.967Z"
-    }
-}
-```
-
-| Key | Description |
-| --- | ----------- |
-| type | The type of event, in this case `device.discovered` |
-| version | The version of the event schema, following semver |
-| key | A unique identifier for this event instance |
-| timestamp | The date and time when the event was generated |
-| data.deviceId | The unique identifier for the device in Texture's system |
-| data.deviceModel | The specific model of the device |
-| data.deviceType | The category or type of the device (e.g., `battery`, `inverter`, `vehicle`, etc.) |
-| data.workspaceId | The identifier for the workspace to which this device belongs |
-| data.organizationId | The identifier for the organization to which this device belongs |
-| data.manufacturer | The manufacturer of the device |
-| data.customer.referenceId | An external reference ID for the customer |
-| data.site.location.latitude | The latitude coordinate of the device's location |
-| data.site.location.longitude | The longitude coordinate of the device's location |
-| data.state | The current state of the device, including various metrics |
-| data.state.id | Unique identifier for this state instance |
-| data.state.charge | The current charge of the device in watt-hours |
-| data.state.chargePercentage | The current charge level as a percentage |
-| data.state.chargingState | The current charging status of the device |
-| data.state.whConsumed | The watt-hours consumed by the device |
-| data.state.chargeRate | The rate at which the device is charging or discharging |
-| data.state.backupReserve | The percentage of charge reserved for backup |
-| data.state.gridStatus | The current status of the grid connection |
-| data.state.gridPower | The power currently drawn from or supplied to the grid |
-| data.state.gridEnergy | The energy exchanged with the grid |
-| data.state.createdAt | The timestamp when this state update happened |
-| data.createdAt | The timestamp when the device was first discovered |
-| data.updatedAt | The timestamp when the device information was last updated |
-
+<DeviceDiscoveredEvent />
 
 _Note that when you configure a destination, you can specify which device types are fired for a given destination which can act as a kind of filter. So for example you could say that you want only Battery updates to go to a given webhook and we will filter them for you._
 
@@ -114,74 +47,7 @@ _Note that when you configure a destination, you can specify which device types 
 
 Fired whenever we get updated data for a device.
 
-```js title="Device Updated Event"
-{
-    "type": "device.updated",
-    "version": "0.0.1",
-    "key": "cc0e387d55ab78fb204c5c2225eff0aa6a9ca3f32a8d5542f75fe9b8bd972d87",
-    "timestamp": "2024-08-22T15:54:52.013Z",
-    "data": {
-        "deviceId": "cllzcbw0t00016g7dfua590dd",
-        "deviceModel": "ac_powerwall",
-        "deviceName": "Susie's Powerwall",
-        "manufacturer": "tesla",
-        "deviceType": "battery",
-        "workspaceId": "cllzcf9xe00066g7dcsxyq1e5",
-        "organizationId": "cllzcf78o00036g7d0r4gjry1",
-        "customer": {
-            "referenceId": "c1b1504d-4784-5d90-9459-a512c4789b35",
-        },
-        "state": {
-            "id": "cm05mna4f00bn9dkcm5zylwt0",
-            "charge": 5378,
-            "chargePercentage": 20,
-            "chargingState": "idle",
-            "whConsumed": 0,
-            "chargeRate": 0,
-            "backupReserve": 20,
-            "gridStatus": "importing",
-            "gridPower": 201,
-            "gridEnergy": 17,
-            "isStormModeEnabled": true,
-            "isStormModeActive": false
-            "createdAt": "2024-08-22T18:39:38.479Z",
-        },
-        "createdAt": "2023-09-01T20:48:24.967Z",
-        "updatedAt": "2023-09-01T20:48:24.967Z"
-    }
-}
-```
-
-
-| Key | Description |
-| --- | ----------- |
-| type | The type of event, in this case `device.updated` |
-| version | The version of the event type, following semver |
-| key | A unique identifier for the event, essentially a hash of the event data |
-| timestamp | The date and time when the event occurred |
-| data.deviceId | The unique identifier for the device, created by Texture when the device was discovered |
-| data.deviceModel | The model of the device |
-| data.deviceName | The name given to the device, usually by the customer in their manufacturer app |
-| data.manufacturer | The manufacturer of the device |
-| data.deviceType | The type of device (e.g., battery) |
-| data.workspaceId | The ID of the workspace associated with the device |
-| data.organizationId | The ID of the organization associated with the device |
-| data.customer.referenceId | A reference ID for the customer, whatever was supplied by your organization during the device enrollment process |
-| data.state | An object containing the current state of the device |
-| data.state.id | The unique identifier for this state update |
-| data.state.charge | The current charge of the device in Wh (watt-hours) |
-| data.state.chargePercentage | The current charge percentage of the device |
-| data.state.chargingState | The current charging state of the device |
-| data.state.whConsumed | The amount of energy consumed in Wh (watt-hours) |
-| data.state.chargeRate | The current charge rate of the device in W (watts) |
-| data.state.backupReserve | The backup reserve percentage |
-| data.state.gridStatus | The current status of the grid connection |
-| data.state.gridPower | The current power exchange with the grid in W (watts) |
-| data.state.gridEnergy | The energy exchanged with the grid in Wh (watt-hours) |
-| data.state.isStormModeEnabled | Whether storm mode is enabled |
-| data.state.isStormModeActive | Whether storm mode is currently active |
-| data.state.createdAt | The timestamp when this state update occurred (which may be different than the event timestamp if the state was batched and sent slightly delayed which is the case for some OEMs) |
-| data.createdAt | The timestamp when this update was created. This is the timestamp of the request the OEM's API returned, not necessarly the timestamp of when the state was actually updated on the device. For that see `data.state.createdAt` |
+<DeviceUpdatedEvent />
 
 Note, the `state` object will differ by device type. For example, a battery will have different state data than an inverter. We have details on these differences [here](/docs/devices/data-models/overview). The above example is for a battery.
 
@@ -191,39 +57,19 @@ The lion's share of these events will be triggered from the Device state updates
 
 Fired whenever a device disconnects from the Texture platform.
 
-```js title="Device Disconnected Event"
-{
-    "type": "device.disconnected",
-    "version": "0.0.1",
-    "key": "cc0e387d55ab78fb204c5c2225eff0aa6a9ca3f32a8d5542f75fe9b8bd972d87",
-    "timestamp": "2024-08-22T15:54:52.013Z",
-    "data": {
-        "deviceId": "cllzcbw0t00016g7dfua590dd",
-        "deviceModel": "ac_powerwall",
-        "deviceType": "battery",
-        "workspaceId": "cllzcf9xe00066g7dcsxyq1e5",
-        "organizationId": "cllzcf78o00036g7d0r4gjry1",
-        "manufacturer": "tesla",
-        "customer": {
-            "referenceId": "c1b1504d-4784-5d90-9459-a512c4789b35",
-        },
-        "site": {
-            "location": {
-                "latitude": 37.7749,
-                "longitude": -122.4194
-            }
-        },
-        "createdAt": "2023-09-01T20:48:24.967Z",
-        "updatedAt": "2023-09-01T20:48:24.967Z"
-    }
-}
-```
-
-The following events are only available for organizations that have opted 
-in to Grid Services. If you are interested in Grid Services, please reach out to us.
+<DeviceDisconnectedEvent />
 
 ## `enrollment.approved`
 
 Fired whenever an enrollment is approved.
 
+> This event is only available for organizations that have opted 
+in to Grid Services. If you are interested in Grid Services, please reach out to us.
+
 <EnrollmentApprovedEvent />
+
+## `site.created`
+
+Fired whenever a site is created on the Texture platform.
+
+<SiteCreatedEvent />

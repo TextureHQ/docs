@@ -1,6 +1,7 @@
 import { CommandSucceededEvent_0_0_2 } from "@texturehq/events";
 import { JsonBlock } from "../JsonBlock";
 import { LedgerTable } from "../LedgerTable";
+import { EventLedger } from "@site/src/common/types";
 
 const commandSucceededEvent: CommandSucceededEvent_0_0_2 = {
   type: "command.succeeded",
@@ -16,10 +17,7 @@ const commandSucceededEvent: CommandSucceededEvent_0_0_2 = {
   },
 };
 
-const CommandSucceededEventLedger: Record<
-  keyof CommandSucceededEvent_0_0_2["data"],
-  string
-> = {
+const CommandSucceededEventLedger: EventLedger<CommandSucceededEvent_0_0_2> = {
   workspaceId: "The ID of the workspace associated with the command.",
   commandId: "The unique identifier for the command.",
   deviceId: "The ID of the device on which the command was executed.",
