@@ -58,7 +58,7 @@ interface ApiResponse {
   nextPage: null | number;
 }
 
-const imageBaseUrl = 'https://texturehq.payloadcms.app'
+const imageBaseUrl = 'https://device.cms.texture.energy/'
 
 const SupportedDevicesType: React.FC<SupportedDevicesTypeProps> = ({ type, title, filter }) => {
   const [allDeviceModels, setAllDeviceModels] = useState<DeviceModel[]>([]);
@@ -129,7 +129,7 @@ const SupportedDevicesType: React.FC<SupportedDevicesTypeProps> = ({ type, title
         where: { type: { equals: type } },
         limit: 1000
       }, { addQueryPrefix: true})
-      const response = await fetch(`https://device.cms.texturehq.com/api/device_models${stringifiedQuery}`);
+      const response = await fetch(`https://device.cms.texture.energy/api/device_models${stringifiedQuery}`);
       const data: ApiResponse = await response.json();
       const allDeviceModels = data.docs;
       setAllDeviceModels(allDeviceModels);
