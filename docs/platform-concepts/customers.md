@@ -44,7 +44,7 @@ When you open a Customer in the **Customers** section of the Texture Dashboard, 
    - Key events related to that Customer’s Sites or Devices, like “Device Disconnected” or “Device Updated.”  
 
 5. **Connect Sessions**:  
-   - If the Customer used [Texture Connect](/docs/connect) to onboard their Devices, you can view any open or recent Connect sessions
+   - If the Customer used [Texture Connect](/docs/sources/texture-connect) to onboard their Devices, you can view any open or recent Connect sessions
 
 All these details help you manage your customers’ energy data in one central location.
 
