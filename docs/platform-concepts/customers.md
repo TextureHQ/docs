@@ -23,11 +23,11 @@ A Customer Profile consists of:
 - **Location Data**: if relevant, we store address details (either from Sites or direct Customer records).  
 - **Reference ID**: an optional unique identifier in your system, allowing you to map internal records to the Customer in Texture.
 
-Once associated with a Site, a Customer’s **energy usage** and activity logs become accessible under their profile. If they own multiple Sites (e.g., primary residence and vacation home), Texture aggregates the usage from all those Sites to provide a holistic view.
+Once associated with a Site, a Customer's **energy usage** and activity logs become accessible under their profile. If they own multiple Sites (e.g., primary residence and vacation home), Texture aggregates the usage from all those Sites to provide a holistic view.
 
 ## Dashboard View
 
-When you open a Customer in the **Customers** section of the Texture Dashboard, you’ll see:
+When you open a Customer in the **Customers** section of the Texture Dashboard, you'll see:
 
 1. **Customer Details**:  
    - Name, email, phone  
@@ -38,15 +38,15 @@ When you open a Customer in the **Customers** section of the Texture Dashboard, 
    - An aggregate usage chart that combines data from all their connected Sites and Devices  
 
 3. **Devices**:  
-   - A list of the Customer’s Devices with their real-time status (e.g., a battery’s charge level, a thermostat’s operating mode)  
+   - A list of the Customer's Devices with their real-time status (e.g., a battery's charge level, a thermostat's operating mode)
 
 4. **Activity Feed**:  
-   - Key events related to that Customer’s Sites or Devices, like “Device Disconnected” or “Device Updated.”  
+   - Key events related to that Customer's Sites or Devices, like "Device Disconnected" or "Device Updated."
 
 5. **Connect Sessions**:  
    - If the Customer used [Texture Connect](/docs/sources/texture-connect) to onboard their Devices, you can view any open or recent Connect sessions
 
-All these details help you manage your customers’ energy data in one central location.
+All these details help you manage your customers' energy data in one central location.
 
 ## Managing Customers via API
 
@@ -76,7 +76,7 @@ You can also work with Customers through the **Texture REST API**. Key endpoints
   ```
   Retrieves all Sites associated with that Customer.
 
-When a Customer has been created (or discovered) in Texture, linking Sites and Devices happens automatically if there’s matching location or reference data. You can also manually associate them through the API if you prefer.
+When a Customer has been created (or discovered) in Texture, linking Sites and Devices happens automatically if there's matching location or reference data. You can also manually associate them through the API if you prefer.
 
 ## Example Workflow
 
@@ -84,16 +84,16 @@ When a Customer has been created (or discovered) in Texture, linking Sites and D
    - When a new user is onboarded, you either create a new Customer profile via `POST /customers` or pass their info through a Connect session.
 
 2. **Link Sites & Devices**  
-   - As the user sets up or imports a new Device, Texture checks address/reference data to see if it belongs to an existing Customer. If so, it’s automatically linked.
+   - As the user sets up or imports a new Device, Texture checks address/reference data to see if it belongs to an existing Customer. If so, it's automatically linked.
 
 3. **Aggregate Energy Data**  
-   - Texture continuously syncs usage and state data. The Customer’s Dashboard view updates to show an aggregate of all their Sites/Devices.
+   - Texture continuously syncs usage and state data. The Customer's Dashboard view updates to show an aggregate of all their Sites/Devices.
 
 4. **Monitor Events & Activity**  
-   - Any changes or notable events appear in the Customer’s Activity Feed (e.g., device going offline).
+   - Any changes or notable events appear in the Customer's Activity Feed (e.g., device going offline).
 
 5. **Analyze or Automate**  
-   - You can run analytics or develop automations based on the Customer’s data (like sending them notifications if their device’s battery is low).
+   - You can run analytics or develop automations based on the Customer's data (like sending them notifications if their device's battery is low).
 
 ## Tips & Best Practices
 
