@@ -162,7 +162,7 @@ This modular approach lets you focus on delivering valuable incentives or demand
 - **Testing in Sandbox**: Create a sandbox workspace to trial your Program Instances and Enrollment flows before going live.  
 - **Error Handling**: Check for proper HTTP status codes and `reason` fields in the `eligibility` object when the status is `ineligible` or `rejected`.  
 - **Security**: Ensure you protect your API keys and verify any external references (like manufacturer IDs) to avoid unauthorized enrollments.  
-- **Documentation & SDKs**: Refer to our [API reference](/docs/api) or consult available SDKs to streamline integration.
+- **Documentation**: Refer to our [API reference](/api) for interactive endpoints and payload details.
 
 ---
 
