@@ -6,7 +6,7 @@ sidebar_position: 10
 
 A **Program** is any offering that requires a user to sign up or “enroll.” Common examples include:
 - Demand response initiatives, like [California’s Demand Side Grid Support (DSGS) program](https://www.energy.ca.gov/programs-and-topics/programs/demand-side-grid-support-program)
-- Battery rebate programs provided by utilities (e.g., [Xcel Energy’s Renewable Battery Connect](https://co.my.xcelenergy.com/s/renewable/battery-connect)) or CCAs (e.g. [3CE's Residential Battery Rebate Program](https://3cenergy.org/rebates/residential-battery-rebate-program/))
+- Battery or Thermostat rebate programs provided by utilities, CCAs, or other organizations (e.g. [3CE's Residential Battery Rebate Program](https://3cenergy.org/rebates/residential-battery-rebate-program/))
 - Custom programs that your Organization may create and manage on Texture
 
 From the Texture perspective, these Programs share a common workflow:
