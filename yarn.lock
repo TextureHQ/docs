@@ -3360,10 +3360,10 @@
     axios "^1.6.7"
     zod "^3.22.4"
 
-"@texturehq/events@1.3.1":
-  version "1.3.1"
-  resolved "https://npm.pkg.github.com/download/@texturehq/events/1.3.1/af8678669ebdae935c186559044f28d028c17fe2#af8678669ebdae935c186559044f28d028c17fe2"
-  integrity sha512-6UCJlkcCkU86HN2eBpeWHLTeVssJWO1ryNHSmcLrxSFXr4Otpqwz1tUE03jnc66VyDwX1D1THhFrmf6xFKbTVg==
+"@texturehq/events@1.5.2":
+  version "1.5.2"
+  resolved "https://npm.pkg.github.com/download/@texturehq/events/1.5.2/ae06d2a0cdfa731e5003052d3a9ddc69c0d548be#ae06d2a0cdfa731e5003052d3a9ddc69c0d548be"
+  integrity sha512-S57ry+5SktgVK/FYTqRz4Xg6DTURxbNYMIJDKf1Rd1Y90LOFQhd5zz3vKe40p14ATWXIluWPzKFrCtjyMP578w==
   dependencies:
     "@texturehq/device" "^0.0.5"
     zod "^3.23.8"

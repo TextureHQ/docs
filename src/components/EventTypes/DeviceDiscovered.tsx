@@ -23,6 +23,7 @@ const deviceDiscoveredEvent: DeviceDiscoveredEvent_1_0_0 = {
       displayName: "Powerwall",
     },
     deviceType: "battery",
+    tags: ["battery", "powerwall"],
     customer: {
       id: "cllzcbw0t00016g7dfua590dd",
       email: "bjones@texturehq.com",
@@ -59,6 +60,7 @@ const deviceDiscoveredEventLedger: EventLedger<DeviceDiscoveredEvent_1_0_0> = {
   "deviceModel.slug": "The human-readable identifier of the device model.",
   "deviceModel.displayName": "The display name of the device model.",
   deviceType: "The type of device (e.g. battery).",
+  tags: "An array of tags associated with the device.",
   "customer.id":
     "The unique identifier for the customer associated with the device.",
   "customer.referenceId":
