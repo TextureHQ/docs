@@ -113,7 +113,7 @@ historical or analytic analysis performed over groups of devices to simplify dev
 
 ## Endpoint & schema overview
 
-View the full endpoint and schema overview [here](/api#/paths/devices-id--schedule/post).
+View the full endpoint and schema overview in the [API Reference](/api).
 
 ### Schedule
 
@@ -162,7 +162,7 @@ View our complete list of available device operating modes [here](/docs/commands
 
 A `DeviceSchedule`is the common response object type for our Device Scheduling API. The response type is very similar to
 the post body with some enriched information from the database returned as a list of the active or future schedules. 
-The basic layout of the type is described [here](/api#/paths/devices-id--schedules/get) as the response object to the GET Device Schedules endpoint.
+The basic layout of the type is described in the [API Reference](/api) as the response object to the GET Device Schedules endpoint.
 
 ## Schedules & Rules Notes:
 

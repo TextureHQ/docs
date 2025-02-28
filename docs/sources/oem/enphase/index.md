@@ -39,7 +39,7 @@ The base enphase authorization link for your organization will look like this:
 https://enphase.connect.texturehq.com/<organization-token>
 ```
 
-You can find your organization's unique url (if enabled) programmatically by making a `GET` request to our [organization endpoint with a valid API key](/api#/paths/organization/get).
+You can find your organization's unique url (if enabled) programmatically by making a `GET` request to our [organization endpoint with a valid API key](/api).
 
 The response will contain your organization's base enphase authorization link, if enabled, under the `oemSpecifics.enphase.gridServicesAuthorizationUrl` path in the response.
 
