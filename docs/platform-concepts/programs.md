@@ -16,6 +16,8 @@ From the Texture perspective, these Programs share a common workflow:
 
 Below is an overview of Programs, how to create Program Instances, and how Enrollments (including eligibility checks) work on the Texture Platform.
 
+For more details on Programs and Enrollments, see our more in-depth docs [here](/docs/programs-enrollments/overview.md).
+
 ---
 
 ## What is a Program?
