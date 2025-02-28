@@ -29,6 +29,16 @@ Programs can represent various energy-related initiatives:
 - Virtual power plant (VPP) programs
 - Time-of-use rate programs
 
+### Program Visibility
+
+Programs can be classified by their visibility:
+
+- **Public Programs**: Available to all Texture customers to create instances. Examples include state-run programs like DSGS (California Demand Side Grid Support) that any organization can participate in. Public programs are visible in the program catalog and can be instantiated by any organization through the API or Dashboard.
+
+- **Private Programs**: Specific to a particular customer and only visible to them. These are typically custom programs created for specific organizations like utilities or DERMS providers. Private programs are only accessible to the organizations they were created for and don't appear in the general program catalog.
+
+Texture can help create private programs tailored to specific organizational needs while ensuring they remain visible only to the intended customer.
+
 ### Program States
 
 Programs can be:
@@ -50,6 +60,7 @@ interface Program {
   description: string;      // Description of the program
   states: string[];         // US states where program is available (e.g., ["NY", "NJ"])
   active: boolean;          // Whether program is currently active
+  visibility: string;       // "public" or "private"
   year: number | null;      // Program year (e.g., 2025)
   endTime?: Date;           // When the program ends
 }
@@ -89,7 +100,7 @@ Programs typically follow this lifecycle:
 
 ## API Access
 
-Programs can be accessed and managed through both REST API and GraphQL endpoints.
+Programs can be accessed and managed through REST API endpoints.
 
 ### REST API Endpoints
 
@@ -110,40 +121,6 @@ Programs can be accessed and managed through both REST API and GraphQL endpoints
 | `/programInstances/{instanceId}` | GET | Get a specific program instance |
 | `/programInstances/{instanceId}/enrollments` | GET | List enrollments for a program instance |
 | `/programInstances/{instanceId}/enrollments` | POST | Create enrollment for a program instance |
-
-### GraphQL Operations
-
-#### Queries:
-
-```graphql
-# Get a single program by ID or slug
-program(input: SlugOrIdInput!): Program
-
-# Get all available programs
-programs: [Program!]!
-
-# Get a specific program instance
-programInstance(input: SlugOrIdInput!): ProgramInstance!
-
-# Get all program instances for a workspace
-programInstances(workspaceId: ID!): ProgramInstancePaginatedQueryPayload
-```
-
-#### Mutations:
-
-```graphql
-# Create a new program
-createProgram(input: CreateProgramInput!): Program!
-
-# Update an existing program
-updateProgram(input: UpdateProgramInput!): Program!
-
-# Create a program instance
-createProgramInstance(input: CreateProgramInstanceInput!): ProgramInstance!
-
-# Update a program instance
-updateProgramInstance(input: UpdateProgramInstanceInput!): ProgramInstance!
-```
 
 ## Authentication & Authorization
 
@@ -191,7 +168,6 @@ The Program feature is implemented across different layers:
 
 - **Domain Layer**: Core business logic, database interactions, and data validation
 - **API Layer**: REST endpoints with OpenAPI documentation
-- **GraphQL Layer**: Federated graph queries and mutations
 
 ## Usage Examples
 
@@ -199,7 +175,23 @@ The Program feature is implemented across different layers:
 
 ```typescript
 // Example GET request to /programs
-// Returns all programs available to the organization
+// Returns all programs available to the organization (both public programs and private programs for this organization)
+```
+
+### Creating a Private Program
+
+```typescript
+// Example POST request to /programs (requires admin permissions)
+const privateProgram = {
+  name: "Utility XYZ Battery Peak Shaving Program",
+  slug: "utility-xyz-battery-peak-shaving",
+  description: "Custom battery peak shaving program for Utility XYZ customers",
+  states: ["CA"],
+  active: true,
+  visibility: "private",
+  organizationId: "org_123456",
+  year: 2025
+};
 ```
 
 ### Creating a Program Instance
@@ -223,6 +215,13 @@ const programInstanceData = {
 // Returns all programs available in New York state
 ```
 
+### Viewing Only Public Programs
+
+```typescript
+// Example GET request to /programs?visibility=public
+// Returns only public programs available to all organizations
+```
+
 ## Common Use Cases
 
 ### Utility Demand Response Programs
@@ -231,6 +230,13 @@ const programInstanceData = {
 - Define criteria for customer participation
 - Track enrollments and participation rates
 - Manage customer communication during events
+
+### Custom Private Utility Programs
+
+- Work with Texture to create a private program visible only to your organization
+- Design custom eligibility requirements specific to your service territory
+- Create a white-labeled enrollment experience for your customers
+- Track enrollments and participation specific to your program
 
 ### Rebate Programs
 

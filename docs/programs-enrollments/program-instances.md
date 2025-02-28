@@ -20,6 +20,8 @@ A Program Instance is the concrete implementation of a [Program](./programs.md) 
 - Specific geographic or temporal boundaries
 - Custom terms and conditions
 
+Program Instances can be created from either public Programs (available to all Texture customers) or private Programs (visible only to specific organizations). This allows organizations to either leverage standardized industry programs or work with Texture to create custom programs tailored to their specific needs.
+
 ### Program Instance Lifecycle
 
 Program Instances follow this general lifecycle:
@@ -68,7 +70,7 @@ Program Instance IDs are generated as CUIDs (Collision-resistant Unique Identifi
 
 ## API Access
 
-Program Instances can be managed through both REST API and GraphQL endpoints.
+Program Instances can be managed through REST API endpoints.
 
 ### REST API Endpoints
 

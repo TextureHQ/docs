@@ -106,7 +106,7 @@ The following business rules govern enrollment status transitions:
 
 ## API Access
 
-Enrollments can be accessed and managed through both REST API and GraphQL endpoints.
+Enrollments can be accessed and managed through REST API endpoints.
 
 ### REST API Endpoints
 
@@ -139,7 +139,6 @@ The Enrollment feature is implemented across different layers:
 
 - **Domain Layer**: Core business logic, database interactions, and data validation
 - **API Layer**: REST endpoints with OpenAPI documentation
-- **GraphQL Layer**: Federated graph queries and mutations
 
 ## Usage Examples
 

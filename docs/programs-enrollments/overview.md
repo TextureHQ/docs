@@ -28,8 +28,9 @@ This architecture allows for maximum flexibility while maintaining clear relatio
 - Geographic availability
 - Program type and category
 - Basic eligibility requirements
+- Visibility (public or private)
 
-Programs serve as templates that organizations can instantiate for their specific needs.
+Programs serve as templates that organizations can instantiate for their specific needs. Programs can be public (available to all Texture customers) or private (tailored to specific organizations and only visible to them).
 
 ### Program Instances
 
@@ -53,6 +54,16 @@ Each organization can create multiple instances of the same program, tailored to
 - Maintain program-specific metadata
 - Record the enrollment lifecycle from application to completion
 
+### Texture Onboard
+
+[Texture Onboard](./onboard.md) provides a ready-to-use enrollment solution that:
+
+- Creates hosted enrollment forms automatically for Program Instances
+- Provides a mobile-optimized, conversion-focused customer experience
+- Minimizes required customer input with automated background processing
+- Streamlines downstream integration with partners
+- Requires zero development work to implement
+
 ## Common Workflows
 
 ### Program Creation and Management
@@ -70,6 +81,16 @@ Each organization can create multiple instances of the same program, tailored to
 4. Enrollment status updates through a defined workflow
 5. Organizations manage and track customer participation
 
+### Using Texture Onboard
+
+1. Organization creates a Program Instance with a unique slug
+2. Organization enables Texture Onboard in the dashboard
+3. Organization shares the enrollment URL with potential customers
+4. Customers complete the mobile-optimized enrollment form
+5. Texture automatically processes data and evaluates eligibility
+6. Texture integrates with downstream partners as needed
+7. Enrollment status is updated in real-time
+
 ## Integration Points
 
 The Programs and Enrollments system integrates with:
@@ -86,10 +107,11 @@ To begin working with Programs and Enrollments:
 1. Review the [Programs documentation](./programs.md) to understand available program types
 2. Learn how to create and manage [Program Instances](./program-instances.md) for your organization
 3. Explore the [Enrollments API](./enrollments.md) to manage customer participation
+4. Learn how to use [Texture Onboard](./onboard.md) for zero-code enrollment forms
 
 ## API Access
 
-All components of the Programs and Enrollments system are accessible via both REST API and GraphQL endpoints. See the individual documentation pages for specific endpoint details:
+All components of the Programs and Enrollments system are accessible via REST API endpoints. See the individual documentation pages for specific endpoint details:
 
 - [Programs API](./programs.md#api-access)
 - [Program Instances API](./program-instances.md#api-access)
