@@ -67,8 +67,8 @@ These are not the typical device operating modes, but fundamental charging state
 
 In addition to the operating mode there are additional parameters you can pass in:
 
-- `minimumBatteryReserve` - Used when specifying `discharge` as the desired operating mode. This will be the value the backup reserve is adjusted to or minimum charge to reach. (Defaults to 20%)
-- `maximumBatteryReserve` - Used when specifying `charge` as the desired operating mode. This will be the value the backup reserve is adjusted to or maximum charge to reach. (Defaults to 95%)
+- `minimumBatteryReserve` - Used when specifying `discharge` as the desired operating mode. This will be the value the backup reserve is adjusted to or minimum charge to reach. (Defaults to the current backup reserve of the battery)
+- `maximumBatteryReserve` - Used when specifying `charge` as the desired operating mode. This will be the value the backup reserve is adjusted to or maximum charge to reach. (Defaults to 100%)
 - `enableGridInteraction` - Whether or not the battery should attempt to import from (charging) or export to the grid (discharging). This flag isn't leveraged if `idle` is desired. (Defaults to false)
 - `executionPriority` - The priority for the attempts at setting the operating mode. By default, we will attempt to execute the command via "grid_services" first, if applicable, falling back to "baseline" battery control. To bypass the "grid_services" attempt, set this to an empty array, or specify only ["baseline"]. The "baseline" priority is always attempted last (whether specified or not).
 
@@ -101,7 +101,6 @@ Generally though, when the `enableGridInteraction` flag is set to `true` a "Time
   "deviceId": "clm6r8xuf0003systrvwyfn42",
   "input": {
     "operatingMode": "discharge",
-    "minimumBatteryReserve": 20,
     "enableGridInteraction": true
   }
 }
@@ -115,8 +114,7 @@ Generally though, when the `enableGridInteraction` flag is set to `true` a "Time
 {
   "deviceId": "clm6r8xuf0003systrvwyfn42",
   "input": {
-    "operatingMode": "charge",
-    "maximumBatteryReserve": 100
+    "operatingMode": "charge"
   }
 }
 ```
