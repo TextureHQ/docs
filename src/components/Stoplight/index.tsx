@@ -9,7 +9,7 @@ interface StoplightProps {
 export function Stoplight({ apiDescriptionUrl }: StoplightProps) {
   return (
       <div className={(styles as { stoplight: string }).stoplight}>
-        <API apiDescriptionUrl={apiDescriptionUrl} layout="responsive" router="memory" />
+        <API apiDescriptionUrl={apiDescriptionUrl} layout="responsive" router="hash" />
       </div>
   );
 }

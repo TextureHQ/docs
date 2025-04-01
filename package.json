@@ -27,7 +27,7 @@
     "@mdx-js/react": "^3.0.0",
     "@payloadcms/richtext-lexical": "^0.11.2",
     "@phosphor-icons/react": "^2.0.15",
-    "@stoplight/elements": "^8.1.0",
+    "@stoplight/elements": "^8.5.2",
     "@texturehq/events": "1.5.2",
     "axios": "^1.7.4",
     "buffer": "^6.0.3",
