@@ -2491,21 +2491,21 @@
     micromark-util-character "^1.1.0"
     micromark-util-symbol "^1.0.1"
 
-"@stoplight/elements-core@~8.4.1":
-  version "8.4.1"
-  resolved "https://registry.yarnpkg.com/@stoplight/elements-core/-/elements-core-8.4.1.tgz#bd9666975244225b7dd274481beb045f8fcd6a70"
-  integrity sha512-Ejt8jeoRLkFyFmfS/Q8VS1BoNSrYPT+Zs28RmzURUSZeq+n7+b6F7QQBYvGHzNiZC41VFG/dU7uBQajqs9lo8w==
+"@stoplight/elements-core@^8.5.2":
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/@stoplight/elements-core/-/elements-core-8.5.2.tgz#a8e42421cf61c2bbb93a77acba851d879129c43f"
+  integrity sha512-hr2BxJeSHz3TpoejH088GDwxRikSYT52K/+NFd6FvJDyQDZhlicgqsPwoveUCWZwGpIDppV1dBnuLHj6CncA0g==
   dependencies:
     "@stoplight/http-spec" "^7.1.0"
     "@stoplight/json" "^3.21.0"
     "@stoplight/json-schema-ref-parser" "^9.2.7"
     "@stoplight/json-schema-sampler" "0.3.0"
     "@stoplight/json-schema-tree" "^4.0.0"
-    "@stoplight/json-schema-viewer" "4.16.1"
+    "@stoplight/json-schema-viewer" "4.16.3"
     "@stoplight/markdown-viewer" "^5.7.1"
-    "@stoplight/mosaic" "^1.53.3"
-    "@stoplight/mosaic-code-editor" "^1.53.1"
-    "@stoplight/mosaic-code-viewer" "^1.53.1"
+    "@stoplight/mosaic" "^1.53.4"
+    "@stoplight/mosaic-code-editor" "^1.53.4"
+    "@stoplight/mosaic-code-viewer" "^1.53.4"
     "@stoplight/path" "^1.3.2"
     "@stoplight/react-error-boundary" "^3.0.0"
     "@stoplight/types" "^14.1.1"
@@ -2523,17 +2523,17 @@
     tslib "^2.1.0"
     urijs "^1.19.11"
     util "^0.12.4"
-    xml-formatter "^2.6.1"
+    xml-formatter "^3.6.3"
 
-"@stoplight/elements@^8.1.0":
-  version "8.4.1"
-  resolved "https://registry.yarnpkg.com/@stoplight/elements/-/elements-8.4.1.tgz#8f8642ba7a320e31a95cfc36680e1a1c104a24bf"
-  integrity sha512-IXzIgEouYT9RRnzPcCU3mSWTT1eb5NFCYPRTB7VWnCkeu85Fi8t5ba++PdOwIaAEGcVmfUbIomcz/6S6apuZog==
+"@stoplight/elements@^8.5.2":
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/@stoplight/elements/-/elements-8.5.2.tgz#c84c8fdc9ca3cea0b57a24a4af84e764c5ee2596"
+  integrity sha512-M36IxjakZlhfEhclIYwNBMqyH1svHDoOePHizkp4tc+UvS1Xdv2uKghq/mDuGaUP53ZRD1SkW4HQAIrs3jBctg==
   dependencies:
-    "@stoplight/elements-core" "~8.4.1"
+    "@stoplight/elements-core" "^8.5.2"
     "@stoplight/http-spec" "^7.1.0"
     "@stoplight/json" "^3.18.1"
-    "@stoplight/mosaic" "^1.53.3"
+    "@stoplight/mosaic" "^1.53.4"
     "@stoplight/types" "^14.1.1"
     "@stoplight/yaml" "^4.3.0"
     classnames "^2.2.6"
@@ -2612,10 +2612,10 @@
     "@types/json-schema" "^7.0.7"
     magic-error "0.0.1"
 
-"@stoplight/json-schema-viewer@4.16.1":
-  version "4.16.1"
-  resolved "https://registry.yarnpkg.com/@stoplight/json-schema-viewer/-/json-schema-viewer-4.16.1.tgz#2e1ddb33afae9e5c46257d9bf58bb61eec9f43ca"
-  integrity sha512-gQ1v9/Dj1VP43zERuZoFMOr7RQDBZlgfF7QFh+R0sadP6W30oYFJtD7y2PG2gIQDohKElVuPjhFUbVH/81MnSg==
+"@stoplight/json-schema-viewer@4.16.3":
+  version "4.16.3"
+  resolved "https://registry.yarnpkg.com/@stoplight/json-schema-viewer/-/json-schema-viewer-4.16.3.tgz#d9ccdea065eb869ad2a3b70be4f3976b8986794d"
+  integrity sha512-cQDxmyAkR3l8Pem1EuGMR+JKM8ePTSr/aqzJscp+hJ4R2geUNbdEleBHnJkZLLLfNr+PMlP+WiFO6GajCSxzUA==
   dependencies:
     "@stoplight/json" "^3.20.1"
     "@stoplight/json-schema-tree" "^4.0.0"
@@ -2686,7 +2686,7 @@
     unist-util-select "^4.0.0"
     unist-util-visit "^3.1.0"
 
-"@stoplight/mosaic-code-editor@^1.53.1":
+"@stoplight/mosaic-code-editor@^1.53.4":
   version "1.53.4"
   resolved "https://registry.yarnpkg.com/@stoplight/mosaic-code-editor/-/mosaic-code-editor-1.53.4.tgz#a8d2c9f38d735cff4a187950de05c03a3a69caf8"
   integrity sha512-StVEXVq5ZlVGvfdsKIYw/h76jb22CKCBUcgNmGyKSQx9ZmLc1wA24CWvbRvSxXKm3/0/P/IyVZ61aaYItqhmrg==
@@ -2716,7 +2716,7 @@
     use-resize-observer "^9.0.2"
     zustand "^3.5.2"
 
-"@stoplight/mosaic-code-viewer@1.53.4", "@stoplight/mosaic-code-viewer@^1.53.1":
+"@stoplight/mosaic-code-viewer@1.53.4", "@stoplight/mosaic-code-viewer@^1.53.4":
   version "1.53.4"
   resolved "https://registry.yarnpkg.com/@stoplight/mosaic-code-viewer/-/mosaic-code-viewer-1.53.4.tgz#650ea524d62baada0c0b92f19c1de2135f0ed179"
   integrity sha512-RZEZ7+UodFQtuuVHyCONg/8wNDlFCuDz0knneGrDaQ1vDa3ddePPjBQnpqVFY0ndXqoaxZTuQu4GvcC8wKdk0Q==
@@ -2745,7 +2745,7 @@
     use-resize-observer "^9.0.2"
     zustand "^3.5.2"
 
-"@stoplight/mosaic@1.53.4", "@stoplight/mosaic@^1.53.3":
+"@stoplight/mosaic@1.53.4", "@stoplight/mosaic@^1.53.4":
   version "1.53.4"
   resolved "https://registry.yarnpkg.com/@stoplight/mosaic/-/mosaic-1.53.4.tgz#04e03a4dfb95e0a451cd2bde6e14ad66103a684d"
   integrity sha512-k3D9B2bM/Ko7ibKKWxJuhomHCOAxooPNPZNX0aY+3kTmQf7tJL+70iwcwD7TbrMyOj7L8SzJPRpJ9fcM8LaDNA==
@@ -12202,12 +12202,12 @@ xml-but-prettier@^1.0.1:
   dependencies:
     repeat-string "^1.5.2"
 
-xml-formatter@^2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/xml-formatter/-/xml-formatter-2.6.1.tgz#066ef3a100bd58ee3b943f0c503be63176d3d497"
-  integrity sha512-dOiGwoqm8y22QdTNI7A+N03tyVfBlQ0/oehAzxIZtwnFAHGeSlrfjF73YQvzSsa/Kt6+YZasKsrdu6OIpuBggw==
+xml-formatter@^3.6.3:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/xml-formatter/-/xml-formatter-3.6.5.tgz#ef541394aa56de432ce5ead3f175640d8cd8a92e"
+  integrity sha512-5Dvux87y+abquO3Om8zRyOUdYkc22BnSS3zMhL2UgeCC+3lz9FbSBpAhzxmk+/qfTO3ypLRwTxJvByoG+FjTMA==
   dependencies:
-    xml-parser-xo "^3.2.0"
+    xml-parser-xo "^4.1.2"
 
 xml-js@^1.6.11:
   version "1.6.11"
@@ -12216,10 +12216,10 @@ xml-js@^1.6.11:
   dependencies:
     sax "^1.2.4"
 
-xml-parser-xo@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/xml-parser-xo/-/xml-parser-xo-3.2.0.tgz#c633ab55cf1976d6b03ab4a6a85045093ac32b73"
-  integrity sha512-8LRU6cq+d7mVsoDaMhnkkt3CTtAs4153p49fRo+HIB3I1FD1o5CeXRjRH29sQevIfVJIcPjKSsPU/+Ujhq09Rg==
+xml-parser-xo@^4.1.2:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/xml-parser-xo/-/xml-parser-xo-4.1.3.tgz#b6f287a7de5b42b2b5a90be970fba296d87f828e"
+  integrity sha512-U6eN5Pyrlek9ottHVpT9e8YUax75oVYXbnYxU+utzDC7i+OyWj9ynsNMiZNQZvpuazbG0O7iLAs9FkcFmzlgSA==
 
 xml@=1.0.1:
   version "1.0.1"
