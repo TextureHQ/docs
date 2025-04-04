@@ -58,7 +58,7 @@ interface ApiResponse {
   nextPage: null | number;
 }
 
-const imageBaseUrl = 'https://device.cms.texture.energy/'
+const imageBaseUrl = 'https://device.cms.texture.energy'
 
 const SupportedDevicesType: React.FC<SupportedDevicesTypeProps> = ({ type, title, filter }) => {
   const [allDeviceModels, setAllDeviceModels] = useState<DeviceModel[]>([]);
