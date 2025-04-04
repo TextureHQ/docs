@@ -181,7 +181,16 @@ const SupportedDevicesType: React.FC<SupportedDevicesTypeProps> = ({ type, title
             {deviceModels.map((deviceModel, index) => (
               <tr key={index}>
                 <td style={{ display: 'flex', alignItems: 'center' }}>
-                  <img src={`${imageBaseUrl}${deviceModel.manufacturer.vector_icon.url}`} alt="Manufacturer Icon" width={30} height={30} style={{ marginRight: '8px' }} /> {deviceModel.manufacturer.name}
+                  {deviceModel.manufacturer.vector_icon?.url ? (
+                    <img
+                      src={`${imageBaseUrl}${deviceModel.manufacturer.vector_icon.url}`}
+                      alt="Manufacturer Icon"
+                      width={30}
+                      height={30}
+                      style={{ marginRight: '8px', display: 'none' }}
+                      onLoad={(e) => e.currentTarget.style.display = 'inline-block'}
+                    />
+                  ) : null} {deviceModel.manufacturer.name}
                 </td>
                 <td>{deviceModel.name}</td>
                 <td>
