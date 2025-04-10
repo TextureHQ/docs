@@ -20,6 +20,26 @@ Texture automatically creates or updates a **Site** when a Device or utility acc
 
 ---
 
+## How Sites are Created
+
+Sites can be created through several paths in the Texture Platform:
+
+1. **Program Enrollment**
+   - When a customer enrolls in a [Program](../programs-enrollments/overview.md) through the Texture Onboard flow, we collect their address details and automatically create a Site for them.
+   - This Site becomes the central location for all enrolled devices and program-related data.
+
+2. **Texture Connect Flow**
+   - Going through our [Texture Connect](../sources/texture-connect.md) flow to connect a device requires providing an address.
+   - Once the customer completes the flow, Texture creates a Site at that address and links the newly connected device to it.
+
+3. **Data Source Connection**
+   - When connecting a data source (such as [Arcadia or UtilityAPI](./apps.md)) that already has customer location data, Texture automatically:
+     - Pulls in the data
+     - Creates Sites for each unique address
+     - Links this data to the corresponding Site on our platform
+
+> **Note:** Currently, we do not offer the ability to create a Site independent of these methods. However, we plan to expand this functionality to allow Site creation via API or directly in the Dashboard. We welcome feature requests for this capability.
+
 ## What Happens When a Site is Created?
 
 When a user (or system) provides location details (e.g., an address) during Device or utility onboarding:
