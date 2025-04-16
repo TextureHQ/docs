@@ -165,7 +165,7 @@ Energy Generation measures the amount of energy generated or produced by solar i
 GET /v1/metrics/generation
 ```
 
-This is a new metric being added to the API. Detailed documentation will be available soon.
+For detailed request parameters and response format, see the [Energy Generation API documentation](https://docs.texturehq.com/api#/paths/metrics-generation/get).
 
 ### Example Usage
 
