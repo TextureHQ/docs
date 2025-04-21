@@ -44,7 +44,7 @@ Arcadia facilitates access to renewable energy data and sustainability programs.
 4. **Surface** these Meters and their interval data in your Texture Dashboard or via our API, correlating them with Device data for deeper insights.
 
 ### Bayou Energy
-Bayou Energy integration allows you to import energy usage data from utility bills and meters for optimized resource use and planning. By connecting your Bayou Energy account, Texture can access utility bill data and interval meter data, providing detailed insights into energy consumption patterns.
+This integration allows you to import energy usage data from utility bills and meters for optimized resource use and planning. By connecting your Bayou Energy account, Texture can access utility bill and interval meter data, providing detailed insights into energy consumption patterns.
 
 ### Utility Data Authorization Flow
 
@@ -105,7 +105,7 @@ Salesforce integration allows you to link CRM records and automation workflows w
 ## Permits
 
 ### Shovels
-Shovels surfaces permitting data for your Sites. Enable it to attach relevant permit data to your Texture Sites, allowing you to track and monitor permitting status and details.
+Shovels surfaces permitting data for your Sites. Enable **Shovels** to attach relevant permit data to your Texture Sites, allowing you to track and monitor permitting status and details.
 
 ---
 
@@ -113,6 +113,8 @@ Shovels surfaces permitting data for your Sites. Enable it to attach relevant pe
 
 ### Palmetto's Energy Intelligence
 Palmetto's Energy Intelligence provides detailed energy modeling for your Sites. This integration delivers disaggregated data on a Site's energy footprint, offering insights into energy usage patterns, efficiency opportunities, and optimization strategies.
+
+See [What Happens When a Site is Created?](./sites.md#what-happens-when-a-site-is-created) for more on how this integration enhances your Site data.
 
 ---
 

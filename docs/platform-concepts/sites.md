@@ -47,7 +47,14 @@ Sites can be created through several paths in the Texture Platform:
      - Creates Sites for each unique address
      - Links this data to the corresponding Site on our platform
 
-> **Note:** Currently, Sites are limited to U.S. addresses as some of the data sources we rely upon are U.S. only. We plan to support global site creation eventually. There are some regions outside the U.S. that are supported, but with a slightly degraded experience (e.g., we will have weather data, but no marginal carbon emissions, and some Apps like Palmetto's Energy Intelligence or Shovels will not work). Please let us know if global site support is important for your use case.
+> **Note:** Regarding geographic support:
+> - **U.S. Addresses**: Currently fully supported with all features and data sources
+> - **Limited International Support**: Some regions outside the U.S. are supported with reduced functionality:
+>   - Weather data is available globally
+>   - Marginal carbon emissions data is U.S. only
+>   - Some Apps (Palmetto's Energy Intelligence, Shovels) only work with U.S. addresses
+> - **Future Plans**: We intend to expand global site support over time
+> - **Feedback Welcome**: Please let us know if global site support is important for your use case
 
 ## What Happens When a Site is Created?
 
