@@ -154,7 +154,7 @@ This will return a comprehensive data package including:
 If you encounter any issues or have questions during the hackathon:
 
 - Meet Victor, Co-founder and CTO of Texture, in-person at the AWS loft
-- Join the Hackathon Discord channel and tag @Texture
+- Join the Hackathon Discord channel where you'll find Victor and Texture employees
 - Use the live chat in the Texture Dashboard to connect directly with Texture engineers
 
 Good luck with your hackathon project! We're excited to see what you build using Texture and our partner APIs.
