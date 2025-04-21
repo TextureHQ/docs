@@ -24,37 +24,51 @@ Texture automatically creates or updates a **Site** when a Device or utility acc
 
 Sites can be created through several paths in the Texture Platform:
 
-1. **Program Enrollment**
-   - When a customer enrolls in a [Program](../programs-enrollments/overview.md) through the Texture Onboard flow, we collect their address details and automatically create a Site for them.
-   - This Site becomes the central location for all enrolled devices and program-related data.
+1. **Dashboard Creation**
+   - Navigate to the Sites list in the Dashboard and click the "+ Add Site" button
+   - Provide the address information for the Site
+   - The Site will be created and automatically enriched with location data
 
-2. **Texture Connect Flow**
-   - Going through our [Texture Connect](../sources/texture-connect.md) flow to connect a device requires providing an address.
-   - Once the customer completes the flow, Texture creates a Site at that address and links the newly connected device to it.
+2. **API Creation**
+   - Use the REST API by calling `POST /sites` and providing the address information
+   - The API will create the Site and initiate automatic data enrichment
 
-3. **Data Source Connection**
+3. **Program Enrollment**
+   - When a customer enrolls in a [Program](../programs-enrollments/overview.md) through the Texture Onboard flow, we collect their address details and automatically create a Site for them
+   - This Site becomes the central location for all enrolled devices and program-related data
+
+4. **Texture Connect Flow**
+   - Going through our [Texture Connect](../sources/texture-connect.md) flow to connect a device requires providing an address
+   - Once the customer completes the flow, Texture creates a Site at that address and links the newly connected device to it
+
+5. **Data Source Connection**
    - When connecting a data source (such as [Arcadia or UtilityAPI](./apps.md)) that already has customer location data, Texture automatically:
      - Pulls in the data
      - Creates Sites for each unique address
      - Links this data to the corresponding Site on our platform
 
-> **Note:** Currently, we do not offer the ability to create a Site independent of these methods. However, we plan to expand this functionality to allow Site creation via API or directly in the Dashboard. We welcome feature requests for this capability.
+> **Note:** Currently, Sites are limited to U.S. addresses as some of the data sources we rely upon are U.S. only. We plan to support global site creation eventually. There are some regions outside the U.S. that are supported, but with a slightly degraded experience (e.g., we will have weather data, but no marginal carbon emissions, and some Apps like Palmetto's Energy Intelligence or Shovels will not work). Please let us know if global site support is important for your use case.
 
 ## What Happens When a Site is Created?
 
-When a user (or system) provides location details (e.g., an address) during Device or utility onboarding:
+When a user (or system) provides address information for a new Site:
 1. **Geocoding**
-   - Texture converts the address into latitude/longitude coordinates.
+   - Texture converts the address into latitude/longitude coordinates to find it in the real world
 2. **Site Creation/Upsert**
-   - A new Site record is created—or an existing Site is updated if it matches the same address footprint.
+   - A new Site record is created—or an existing Site is updated if it matches the same address footprint
 3. **Customer Linking**
-   - If the address is linked to an existing [Customer](./customers.md), we associate the new Site with that Customer. Otherwise, Texture creates a new Customer record.
-4. **Territory Assignment**
-   - Texture determines the utility territory, ISO, and (if applicable) the wholesale market for that Site's coordinates.
-5. **Signal Collection**
-   - Jobs run to pull in local weather, marginal carbon emissions (via WattTime), or other signals to enrich the Site's data.
-6. **Device/Utility Data Sync**
-   - Any Devices or utility billing/interval data associated with that location auto-link to the newly created Site.
+   - If the address is linked to an existing [Customer](./customers.md), we associate the new Site with that Customer. Otherwise, Texture creates a new Customer record
+4. **Automatic Data Enrichment**
+   - Several background processes are initiated to enhance the Site with valuable data:
+     - **Territory Assignment**: Determining the utility territory, ISO, and wholesale market for that Site's coordinates
+     - **Carbon Emissions**: Fetching marginal carbon emissions data for the Site location
+     - **Weather Data**: Collecting local weather data and forecasts
+     - **Apps Integration**: If any [Apps](./apps.md) are enabled that provide additional data for the Site:
+       - **Shovels**: Fetching permit data related to the Site
+       - **Palmetto's Energy Intelligence**: Adding energy modeling data for the Site
+       - **Bayou Energy**: Connecting utility bill and meter interval data
+5. **Device/Utility Data Sync**
+   - Any Devices or utility billing/interval data associated with that location auto-link to the newly created Site
 
 ---
 
@@ -80,7 +94,13 @@ Each Site in the **Sites** section of the Dashboard offers multiple tabs:
 
 ## Managing Sites via API
 
-Texture's **REST API** exposes endpoints to list, fetch, and update Site data. Key calls include:
+Texture's **REST API** exposes endpoints to create, list, fetch, and update Site data. Key calls include:
+
+- **Create a Site**
+  ```http
+  POST /sites
+  ```
+  Creates a new Site by providing address information. This initiates the automatic data enrichment process.
 
 - **List all Sites**
   ```http
@@ -93,6 +113,21 @@ Texture's **REST API** exposes endpoints to list, fetch, and update Site data. K
   GET /sites/{id}
   ```
   Retrieves detailed info about a Site, including its location, Devices, and aggregated usage data.
+
+  The GET request supports an optional `include` query parameter to retrieve additional data associated with the Site:
+  ```http
+  GET /sites/{id}?include=weather,permits,statements,intervals,energy-modeling
+  ```
+  
+  These optional include values are:
+  
+  - **weather**: Weather data for the Site (included by default for all Sites)
+  - **permits**: Permit data if the Shovels app is enabled and data is available
+  - **statements**: Monthly utility bills including energy used, total charges, and PDF bills if connected via Arcadia, UtilityAPI, or Bayou Energy
+  - **intervals**: Smart meter interval data (typically 15-minute or 1-hour) if available from the utility
+  - **energy-modeling**: Disaggregated data on a Site's energy footprint from services like Palmetto's Energy Intelligence
+
+  > **Note:** Including additional data may impact API performance, so we recommend including only the data you need for your specific use case.
 
 You can also associate or unassociate a Site with a Customer or Device by specifying the relevant IDs in your requests.
 
