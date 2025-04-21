@@ -145,26 +145,14 @@ This will return a comprehensive data package including:
 - Utility statements and intervals from Bayou Energy (if available)
 - Energy modeling data from Palmetto (if available)
 
-## Hackathon-Specific Tutorials
-
-### Tutorial 1: [Title TBD]
-
-*Detailed tutorial for Bayou Energy integration will be added soon.*
-
-### Tutorial 2: [Title TBD]
-
-*Detailed tutorial for Shovels integration will be added soon.*
-
-### Tutorial 3: [Title TBD]
-
-*Detailed tutorial for Palmetto's Energy Intelligence integration will be added soon.*
+<!-- Hackathon-specific tutorials will be added closer to the event -->
 
 ## Need Help?
 
 If you encounter any issues or have questions during the hackathon:
 
-- Visit our [Customer Portal](https://texture.atlassian.net/servicedesk/customer/portal/2)
-- Email us at [hackathon-support@texturehq.com](mailto:hackathon-support@texturehq.com)
-- Find our team at the Texture booth during the SF Climate Week Hackathon
+- Meet Victor, Co-founder and CTO of Texture, in-person at the AWS loft
+- Join the Hackathon Discord channel and tag @Texture
+- Use the live chat in the Texture Dashboard to connect directly with Texture engineers
 
 Good luck with your hackathon project! We're excited to see what you build using Texture and our partner APIs.
