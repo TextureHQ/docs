@@ -50,7 +50,7 @@ Bayou Energy provides access to utility bill and meter interval data, giving you
 To set up Bayou Energy integration:
 
 1. Obtain your Bayou Energy API credentials:
-   - Register at [Bayou Energy Developer Portal](https://docs.bayou.energy) (provide your hackathon registration code during signup)
+   - Register at [Bayou Energy Developer Portal](https://docs.bayou.energy)
    - Generate an API key from your Bayou Energy developer account
 
 2. Configure in Texture:
@@ -70,7 +70,7 @@ Shovels provides permit data for residential and commercial buildings, allowing 
 To set up Shovels integration:
 
 1. Obtain your Shovels API credentials:
-   - Register at [Shovels Developer Portal](https://shovels.ai) (use your hackathon registration code for expedited access)
+   - Register at [Shovels Developer Portal](https://shovels.ai)
    - Create and copy your API key from the Shovels dashboard
 
 2. Configure in Texture:
@@ -88,6 +88,8 @@ Once configured, Texture will:
 - Provide permit status, details, and history
 - Display permit information in the Texture Dashboard's "Permits" tab and make it available via API
 
+> **Note:** Not every Site will have permit data available. Shovels has data for permits issued in the last decade, so if a Site shows "No permits," it may simply mean there are no recent permits for that location rather than indicating an issue with the integration.
+
 ### Palmetto's Energy Intelligence Integration
 
 Palmetto's Energy Intelligence provides detailed energy modeling for Sites, offering insights into energy usage patterns and efficiency opportunities.
@@ -95,7 +97,7 @@ Palmetto's Energy Intelligence provides detailed energy modeling for Sites, offe
 To set up Palmetto's Energy Intelligence integration:
 
 1. Obtain your Palmetto API credentials:
-   - Register at [Palmetto Energy Intelligence Developer Portal](https://ei.docs.palmetto.com/) (provide your hackathon registration code during signup)
+   - Register at [Palmetto Energy Intelligence Developer Portal](https://ei.docs.palmetto.com/)
    - Generate an API key from your Palmetto developer account
 
 2. Configure in Texture:
