@@ -21,7 +21,7 @@ Texture provides a unified platform that simplifies working with multiple energy
 Before you begin integrating with the hackathon partner APIs, you'll need to:
 
 1. Sign up for a Texture account
-2. Create a Workspace
+2. Create an Organization
 3. Configure each partner API integration
 
 ### Step 1: Sign Up for Texture
@@ -30,11 +30,21 @@ Before you begin integrating with the hackathon partner APIs, you'll need to:
 2. Complete the registration process with your email address
 3. Verify your email address through the confirmation link
 
-### Step 2: Create a Workspace
+### Step 2: Create an Organization
 
-1. After logging in, you'll be prompted to create a new Workspace
-2. Name your Workspace (e.g., "SF Climate Hackathon 2025")
-3. Complete the workspace setup process
+1. After logging in, you'll be prompted to create a new Organization
+2. Name your Organization (e.g., "SF Climate Hackathon 2025")
+3. Complete the organization setup process
+
+> **Note:** Texture will automatically create "production" and "sandbox" Workspaces for you when you sign up. You can create additional Workspaces later if needed.
+
+### Step 2a: Invite Team Members
+
+1. After creating your Organization, consider inviting your team members:
+   - Click on the Organization Settings in the Dashboard
+   - Select "Team Members"
+   - Use the "Invite" button to add team members by email
+   - Set appropriate permission levels for each team member
 
 ### Step 3: Navigate to the Apps Page
 
@@ -62,6 +72,8 @@ Once configured, Texture will:
 - Automatically import utility bill and meter interval data
 - Link the data to corresponding Sites in your Workspace
 - Make the data accessible via the Texture API and Dashboard
+
+> **Note:** Texture pulls data from Bayou Energy approximately every 15 minutes, so if a Site does not appear immediately after authorization, please wait a few minutes. We are working on making this process real-time in a future update, but for now there may be a short delay before new data appears.
 
 ### Shovels Integration
 
@@ -154,7 +166,7 @@ This will return a comprehensive data package including:
 If you encounter any issues or have questions during the hackathon:
 
 - Meet Victor, Co-founder and CTO of Texture, in-person at the AWS loft
-- Join the Hackathon Discord channel where you'll find Victor and Texture employees
+- Join the Hackathon Slack where you'll find Victor and Texture employees
 - Use the live chat in the Texture Dashboard to connect directly with Texture engineers
 
 Good luck with your hackathon project! We're excited to see what you build using Texture and our partner APIs.
