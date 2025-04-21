@@ -186,4 +186,4 @@ This modular approach lets you focus on delivering valuable incentives or demand
 - **Build or Customize Enrollment Forms**
   - Use Texture's programmatic form generation or embed sign-up fields in your own UI.
 - **Contact Us**
-  - If you need additional support or want a Program added to our catalog, reach out here via our [Customer Portal](https://texture.atlassian.net/servicedesk/customer/portal/2)
+  - If you need additional support or want a Program added to our catalog, use the live chat feature in the Dashboard (look for the chat bubble in the lower right corner) to connect with our team

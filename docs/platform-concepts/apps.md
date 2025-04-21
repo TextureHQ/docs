@@ -161,4 +161,4 @@ If you have a Tesla Grid Services account, connect it to enable real-time access
 3. **Monitor & Iterate**  
    Track how your new integrations add value (e.g., deeper site insights, better energy forecasting, streamlined workflows), and fine-tune settings as needed.
 
-If you have any questions or need help configuring an App, visit our [Customer Portal](https://texture.atlassian.net/servicedesk/customer/portal/2) or contact your Texture representative.
+If you have any questions or need help configuring an App, use the live chat feature in the Dashboard (look for the chat bubble in the lower right corner) to connect with our team, or contact your Texture representative.

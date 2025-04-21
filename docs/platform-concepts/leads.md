@@ -85,7 +85,7 @@ For the full request/response body schema, refer to our [interactive REST API do
 
 ## Questions or Need Help?
 
-If you have questions about managing leads or need assistance with CRM integrations, reach out via our [Customer Portal](https://texture.atlassian.net/servicedesk/customer/portal/2).
+If you have questions about managing leads or need assistance with CRM integrations, use the live chat feature in the Dashboard (look for the chat bubble in the lower right corner) to connect with our team.
 
 ---
 
