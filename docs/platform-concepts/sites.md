@@ -170,7 +170,7 @@ This aggregated approach helps you see how all Devices and cCstomers at a locati
 
 ## Need Help or Have Questions?
 
-If you run into any issues or have specific requests around Sites, please reach out through our [Customer Portal](https://texture.atlassian.net/servicedesk/customer/portal/2). We're here to help expand functionality and ensure your energy data is as rich and actionable as possible.
+If you run into any issues or have specific requests around Sites, please use the live chat feature in the Dashboard (look for the chat bubble in the lower right corner). A human from our team will reply quickly to help expand functionality and ensure your energy data is as rich and actionable as possible.
 
 ---
 
