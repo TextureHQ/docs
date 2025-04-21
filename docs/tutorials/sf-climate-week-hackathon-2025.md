@@ -10,11 +10,11 @@ Welcome to the **SF Climate Week Hackathon 2025** tutorial! This guide will show
 
 Texture provides a unified platform that simplifies working with multiple energy data sources:
 
-- **Single API Access Point**: One API to access data from all three hackathon partner services
+- **Single API Access Point**: One REST API to access data from all three hackathon partner services
 - **Unified Dashboard**: Visualize all your energy data in one place through the Texture Dashboard
 - **Automatic Data Enrichment**: Texture automatically enhances Sites with weather, emissions, and utility territory data
 - **Simplified Auth**: Manage all your API keys and authentication in one secure location
-- **Ready-to-Use SDKs**: Access the data through our JavaScript, Python, and REST APIs
+- **Single API Key**: Use your Texture API key instead of managing multiple service credentials
 
 ## Getting Started
 
@@ -34,7 +34,7 @@ Before you begin integrating with the hackathon partner APIs, you'll need to:
 
 1. After logging in, you'll be prompted to create a new Workspace
 2. Name your Workspace (e.g., "SF Climate Hackathon 2025")
-3. Select the "Developer" tier to get started
+3. Complete the workspace setup process
 
 ### Step 3: Navigate to the Apps Page
 
@@ -78,10 +78,15 @@ To set up Shovels integration:
    - Enter your Shovels API key
    - Click "Save" to activate the integration
 
+3. Important: Create Sites First
+   - Since Shovels has nationwide coverage, Texture doesn't automatically create Sites from Shovels data
+   - You must first create the Sites you want to fetch permit data for (via Dashboard, REST API, or Connect flow)
+   - Once a Site exists, Texture will fetch and associate relevant permit data with it
+
 Once configured, Texture will:
-- Fetch permit data related to your Sites
+- Fetch permit data related to your existing Sites
 - Provide permit status, details, and history
-- Display permit information in the Texture Dashboard and make it available via API
+- Display permit information in the Texture Dashboard's "Permits" tab and make it available via API
 
 ### Palmetto's Energy Intelligence Integration
 
@@ -90,7 +95,7 @@ Palmetto's Energy Intelligence provides detailed energy modeling for Sites, offe
 To set up Palmetto's Energy Intelligence integration:
 
 1. Obtain your Palmetto API credentials:
-   - Register at [Palmetto Developer Portal](https://developer.palmetto.com) (provide your hackathon registration code during signup)
+   - Register at [Palmetto Energy Intelligence Developer Portal](https://ei.docs.palmetto.com/) (provide your hackathon registration code during signup)
    - Generate an API key from your Palmetto developer account
 
 2. Configure in Texture:
@@ -98,8 +103,13 @@ To set up Palmetto's Energy Intelligence integration:
    - Enter your Palmetto API key
    - Click "Save" to activate the integration
 
+3. Important: Create Sites First
+   - Similar to Shovels, you must first create the Sites you want to analyze
+   - Create Sites via the Dashboard, REST API, or Connect flow
+   - Once a Site exists, Texture will fetch and associate energy modeling data with it
+
 Once configured, Texture will:
-- Import energy modeling data for your Sites
+- Import energy modeling data for your existing Sites
 - Provide disaggregated energy usage information
 - Make the data accessible via the Texture API and Dashboard
 
