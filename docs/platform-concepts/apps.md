@@ -46,6 +46,27 @@ Arcadia facilitates access to renewable energy data and sustainability programs.
 ### Bayou Energy
 Bayou Energy integration allows you to import energy usage data from utility bills and meters for optimized resource use and planning. By connecting your Bayou Energy account, Texture can access utility bill data and interval meter data, providing detailed insights into energy consumption patterns.
 
+### Utility Data Authorization Flow
+
+While Texture supports utility data via Arcadia, UtilityAPI, and Bayou Energy, these integrations require end-user authorization and are not yet available through the Texture Connect flow. To obtain utility data for your users:
+
+1. **Independent Authorization**: Developers need to separately implement the utility data OAuth/connection flows in their applications, independent of Texture.
+   
+2. **End-User Authentication**: End users must go through the authentication process to allow access to their utility accounts for monthly bill or meter interval data:
+   - **Arcadia**: Implement [Arcadia Connect](https://docs.arcadia.com/v2022-10-13/docs/connect-guide) for user authorization
+   - **UtilityAPI**: Use [UtilityAPI Authorization Forms](https://utilityapi.com/docs/authorization-forms/urls) to collect permissions
+   - **Bayou Energy**: Follow [Bayou's Customer Creation process](https://docs.bayou.energy/docs/merge-customer-code-with-your-project) to set up connections
+
+3. **Automatic Data Syncing**: Once the end user authorizes access to their utility data:
+   - Texture will automatically detect the new Site on the utility-provider side
+   - Begin modeling the data within the Texture platform
+   - Start polling for data updates at regular intervals
+   - Make the utility bill and meter interval data available through the Texture Dashboard and API
+
+4. **Data Freshness**: Texture will update the utility data as frequently and as freshly as we receive updates from these sources.
+
+> **Note:** In the future, we plan to integrate these utility authorization flows directly into the Texture Connect experience for a more seamless user journey.
+
 ---
 
 ## Device Data
