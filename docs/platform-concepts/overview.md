@@ -6,14 +6,17 @@ sidebar_position: 1
 
 ## What is Texture?
 
-Texture is a unified platform for connecting, monitoring, and controlling distributed energy resources (DERs) at scale. 
+Texture is the industry cloud for distributed energy. We provide a comprehensive platform that turns data chaos into data confidence by making energy data work smarter for companies across the energy sector.
 
-Our platform enables energy companies, utilities, renewable energy providers, and technology developers to:
+Our platform goes far beyond basic device integration to enable:
 
-1. **Connect** to any energy device across multiple manufacturers through a standardized API
-2. **Monitor** real-time and historical energy data from all connected devices
-3. **Control** individual devices or groups of devices automatically or on-demand
-4. **Orchestrate** complex energy systems including solar, storage, EVs, and flexible loads
+1. **Unified Integration**: Connect to any energy device across multiple manufacturers through a standardized API and data model
+2. **Advanced Data Engineering**: Transform, normalize, and aggregate telemetry data for actionable insights
+3. **Sophisticated Control**: Manage individual devices or orchestrate complex systems at scale
+4. **Intelligent Automation**: Create rules and schedules that respond to device data and external signals
+5. **Contextual Intelligence**: Combine device data with utility information, weather, emissions data, and more
+6. **End-to-End Program Management**: Streamline enrollment, execution, and reporting for energy programs
+7. **Enterprise Security**: Ensure robust data protection with granular permissions and compliance features
 
 ## Energy Networks
 

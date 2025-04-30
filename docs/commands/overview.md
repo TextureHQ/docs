@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Commands
+# Overview
 
 ## What are Commands?
 
@@ -17,35 +17,6 @@ With Texture Commands, you can:
 - Schedule operations for future execution
 - Run batch commands across multiple devices
 - Create automation rules triggered by events or conditions
-
-## Command Structure
-
-All Commands in Texture follow a consistent structure:
-
-```json
-{
-  "deviceId": "string",    // Target device identifier
-  "command": "string",     // Command name (e.g., "charge", "setMode")
-  "parameters": {},        // Command-specific parameters
-  "metadata": {}           // Optional request metadata
-}
-```
-
-## Command Types
-
-Texture supports three main types of commands:
-
-### 1. Direct Commands
-
-Sent immediately to the device for execution. Results are returned synchronously when possible, or you can poll for status.
-
-### 2. Scheduled Commands
-
-Commands set to execute at a specific time in the future. Useful for time-of-use optimization, demand response, or routine operations.
-
-### 3. Rule-Based Commands
-
-Commands triggered automatically based on conditions you define (e.g., "when battery reaches 80% charge, stop charging").
 
 ## Command Namespacing
 
