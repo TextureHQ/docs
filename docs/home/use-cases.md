@@ -4,147 +4,115 @@ sidebar_position: 4
 
 # Common Use Cases
 
-Texture powers a wide range of energy applications across residential, commercial, and utility scales. This page highlights some common use cases that showcase how developers leverage Texture's platform capabilities.
+Texture's unified platform for energy device integration and control supports a wide range of industry applications. This page highlights some of the most common use cases that our customers are implementing today.
 
-## Residential Energy Management
+## Industry Solutions
 
-**Use Case**: Building smart home energy management applications that optimize solar, storage, and flexible loads.
+### Community Choice Aggregators (CCAs)
 
-**How Texture Helps**:
-- Connect to residential solar inverters, batteries, EV chargers, and smart thermostats
-- Monitor home energy production, consumption, and storage 
-- Schedule battery charging/discharging around utility rates
-- Enable homeowners to understand and reduce carbon emissions
+Community Choice Aggregators leverage Texture to provide comprehensive energy management solutions for the communities they serve.
 
-**Example Implementation**:
-```javascript
-// Schedule battery charging during low-cost off-peak hours
-await texture.commands.scheduleCommand({
-  deviceId: "battery-123",
-  command: "setMode",
-  parameters: { mode: "charge", target: 90 },
-  scheduledAt: "2025-05-01T02:00:00Z" // Off-peak time
-});
-```
+**How Texture Helps CCAs:**
+- Simplify integration with diverse energy resources across the community
+- Enable real-time monitoring of distributed energy resources
+- Provide a single platform for managing energy programs and device control
+- Deliver insights on community-wide energy usage and generation patterns
 
-## Demand Response Programs
+### Cooperative Networks
 
-**Use Case**: Implementing demand response programs that incentivize users to reduce electricity use during peak periods.
+Cooperative Networks use Texture to establish a single source of truth for all energy data across their membership.
 
-**How Texture Helps**:
-- Monitor real-time device status across a fleet of enrolled devices
-- Send batch commands to multiple devices simultaneously
-- Access utility rate and grid signal data
-- Track response performance and savings
+**How Texture Helps Cooperatives:**
+- Unify management of member-owned energy devices
+- Enable coordinated response to grid events
+- Simplify data sharing between cooperative members
+- Enhance visibility across distributed resources
 
-**Example Implementation**:
-```javascript
-// Reduce load across all enrolled devices during a DR event
-const enrolledDevices = await texture.devices.list({ 
-  tags: ["dr-program-enrolled"] 
-});
+### DERMS Providers
 
-await texture.commands.batchCommand(
-  enrolledDevices.map(device => ({
-    deviceId: device.id,
-    command: device.type === "thermostat" 
-      ? "setTemperature" 
-      : "reduceLoad",
-    parameters: device.type === "thermostat"
-      ? { temperature: device.currentTemp + 2 }
-      : { reductionPercentage: 20 }
-  }))
-);
-```
+Distributed Energy Resource Management System (DERMS) providers use Texture as a reliable integration platform to connect with diverse energy devices.
 
-## Virtual Power Plants (VPPs)
+**How Texture Helps DERMS Providers:**
+- Eliminate the need to build and maintain individual device integrations
+- Standardize device data across manufacturers and protocols
+- Enable scalable deployment across different types of DERs
+- Focus on core DERMS capabilities rather than integration challenges
 
-**Use Case**: Creating virtual power plants that aggregate distributed energy resources to provide grid services.
+### Original Equipment Manufacturers (OEMs)
 
-**How Texture Helps**:
-- Coordinate diverse assets (batteries, solar, flexible loads)
-- Implement automated dispatch logic based on grid conditions
-- Track asset performance and availability
-- Interface with market platforms through Leap Energy or Shadow Power
+Energy hardware manufacturers use Texture to enhance their products with software capabilities and integrations.
 
-**Example Implementation**:
-```javascript
-// Discharge all available batteries in response to a grid event
-const availableBatteries = await texture.devices.search({
-  type: "battery",
-  query: "stateOfCharge:>50 AND isOnline:true",
-  sort: "capacity:desc"
-});
+**How Texture Helps OEMs:**
+- Provide a secure API for third-party applications to access device data
+- Enable interoperability with other energy systems
+- Deliver insights and analytics on device performance
+- Create new service opportunities through software integrations
 
-const dischargeResponses = await texture.commands.batchCommand(
-  availableBatteries.map(battery => ({
-    deviceId: battery.id,
-    command: "discharge",
-    parameters: { 
-      rate: "max", 
-      duration: 60, // minutes
-      minSoc: 20 // Stop at 20% state of charge
-    }
-  }))
-);
-```
+### Retail Energy Providers
 
-## Energy Data Analytics
+Retail Energy Providers maximize value through Texture's end-to-end energy management platform.
 
-**Use Case**: Building analytics platforms that provide insights into energy usage, production, and optimization opportunities.
+**How Texture Helps Retail Energy Providers:**
+- Offer advanced energy management services to customers
+- Deploy programs that optimize energy usage during peak pricing
+- Enable automated response to grid signals
+- Create new revenue streams through energy optimization services
 
-**How Texture Helps**:
-- Access standardized energy data across device types and manufacturers
-- Combine device data with weather, emissions, and utility rate information
-- Create custom dashboards and reports
-- Export data to business intelligence tools
+## Capability Solutions
 
-**Example Implementation**:
-```javascript
-// Get energy production, consumption, and carbon data for a site
-const siteData = await texture.sites.get(siteId, {
-  include: ["weather", "carbon", "devices", "utility"]
-});
+### Utility Program Enrollment
 
-// Calculate site metrics
-const production = siteData.devices
-  .filter(d => d.type === "inverter")
-  .reduce((sum, d) => sum + d.production, 0);
+Texture simplifies complex energy program enrollment processes by providing a seamless customer experience.
 
-const consumption = siteData.devices
-  .reduce((sum, d) => sum + d.consumption, 0);
+**How It Works:**
+- Customize enrollment flows for specific utility programs
+- Validate customer eligibility through automated checks
+- Connect customer devices during the enrollment process
+- Manage program participation and reporting through a single interface
 
-const emissions = consumption * siteData.carbon.intensity;
-```
+### Turnkey Demand Response
 
-## EV Charging Management
+Automate your demand response program enrollment and management from end to end with Texture.
 
-**Use Case**: Managing electric vehicle charging infrastructure to optimize for cost, emissions, and grid constraints.
+**Key Capabilities:**
+- Enroll customers and their devices in demand response programs
+- Dispatch load reduction signals to participating devices
+- Monitor real-time response to demand response events
+- Calculate load reduction and participant compensation
+- Scale from hundreds to millions of devices
 
-**How Texture Helps**:
-- Connect to multiple EV charger brands through a unified interface
-- Schedule charging based on TOU rates, solar production, or carbon intensity
-- Implement smart load management across multiple chargers
-- Track charging session data and energy usage
+### Secure Maintenance & Monitoring
 
-**Example Implementation**:
-```javascript
-// Smart EV charging that follows solar production
-const solarProduction = await texture.devices
-  .get(solarInverterId)
-  .then(device => device.currentProduction);
+Texture provides enterprise-grade visibility with secure cross-organizational collaboration for critical infrastructure.
 
-// Dynamically adjust EV charging rate based on solar output
-await texture.commands.execute({
-  deviceId: evChargerId,
-  command: "setChargingRate",
-  parameters: { 
-    amps: Math.min(32, solarProduction / 240), // Convert watts to amps
-    followProduction: true
-  }
-});
-```
+**Key Benefits:**
+- Monitor device health and performance across organizational boundaries
+- Enable secure access for maintenance providers
+- Set granular permissions for different stakeholders
+- Create audit trails of all device interactions
+- Maintain regulatory compliance while improving operational efficiency
+
+### Data Operations Platform
+
+Texture serves as the comprehensive data operations platform that energy companies need.
+
+**Platform Capabilities:**
+- Harmonize data from diverse energy devices and systems
+- Enable real-time visibility across your entire energy portfolio
+- Provide universal access through standardized APIs
+- Ensure robust security and compliance
+- Automate data processing and analytics
+
+## Beyond Device Integration
+
+While Texture excels at connecting to energy devices, our platform goes beyond basic integration to deliver:
+
+- **Unified Data Model**: Standardized device data across manufacturers
+- **Real-Time Control**: Send commands to individual devices or groups
+- **Automation**: Create rules and schedules for autonomous operation
+- **Analytics**: Gain insights from combined device and contextual data
+- **Program Management**: Implement and scale energy programs
 
 ## Need Help with Your Use Case?
 
-If you have a specific use case not covered here, or need guidance on implementing any of these examples, use the live chat in the Dashboard (look for the chat bubble in the lower right corner) to connect with our team.
+If you have a specific application that isn't covered here, use the live chat in the Dashboard (look for the chat bubble in the lower right corner) to connect with our team. We're continuously expanding our platform capabilities to support new use cases in the evolving energy landscape.
