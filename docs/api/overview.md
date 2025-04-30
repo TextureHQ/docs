@@ -2,14 +2,44 @@
 sidebar_position: 1
 ---
 
-# Overview
+# API Overview
 
-We have spent a lot of time thinking about how to make it easy for you to pull data from your devices and to run commands on them.
+## Unified API for Energy Devices
 
-We have built a powerful and flexible API that allows you to do just that.
+Texture's API provides a standardized interface to interact with any supported energy device, regardless of manufacturer. Our API enables you to:
 
-We have built our API to be OpenAPI and Swagger compliant so we always expose [the full Swagger json here](https://api.texturehq.com/v1/docs/swagger.json).
+- **Read** device telemetry, status, and configuration data
+- **Write** commands to control devices (charge, discharge, set modes, etc.)
+- **Manage** device connections, sites, and customers
+- **Configure** automations, schedules, and rules
+- **Access** supplemental data like weather forecasts and carbon intensity
 
-From this Swagger we generate live interactive docs and we have a [full list of our API endpoints here](https://docs.texturehq.com/api/).
+## API Resources
 
-We do not yet publish clients in every language yet (coming soon!) but in the meantime, you can use our swagger.json to generate your own client SDKs.
+| Resource | Description |
+|----------|-------------|
+| [Devices](/api#tag/Devices) | Get device information, telemetry, and send commands |
+| [Sites](/api#tag/Sites) | Manage physical locations and their associated devices |
+| [Customers](/api#tag/Customers) | Create and manage customer records |
+| [Commands](/api#tag/Commands) | Send operations to devices individually or in batches |
+| [Connections](/api#tag/Connections) | Create and manage device connection flows |
+| [Weather](/api#tag/Weather) | Access forecast data for your sites |
+
+## Using the API
+
+Our API follows REST principles with JSON payloads and standard HTTP methods. Authentication is performed using API keys which you can generate in the [Dashboard](https://dashboard.texturehq.com/developer).
+
+```bash
+# Example: Get a list of your devices
+curl -X GET https://api.texturehq.com/v1/devices \
+  -H "Texture-Api-Key: your_api_key"
+```
+
+## Documentation
+
+We provide Swagger/OpenAPI documentation for our entire API:
+
+- [Interactive API Explorer](/api)
+- [OpenAPI Specification](https://api.texturehq.com/v1/docs/swagger.json)
+
+You can use the OpenAPI specification to generate client libraries in your preferred programming language.

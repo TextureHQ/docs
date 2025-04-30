@@ -2,17 +2,54 @@
 sidebar_position: 1
 ---
 
-# Overview
+# Commands
 
-_Access real-time device data, control devices, and set schedules. Use our powerful APIs and rich documentation to get started in minutes._
+## What are Commands?
 
-## Introduction
+Commands are operations you send to energy devices through the Texture platform to control their behavior, retrieve data, or modify settings. Commands provide the "control" aspect of Texture's connect-monitor-control functionality.
 
-Commands allow you to control devices in your Energy Network.
+With Texture Commands, you can:
 
-## Overview
+- Control battery systems (charge, discharge, set modes)
+- Adjust EV charging (start, stop, set charge rates)
+- Manage solar inverters (enable/disable, set power limits)
+- Control smart thermostats (adjust temperature, change modes)
+- Schedule operations for future execution
+- Run batch commands across multiple devices
+- Create automation rules triggered by events or conditions
 
-As with most other entities on the Texture platform, all APIs provided to take Action on a device are name-spaced by [Workspace](/docs/platform-concepts/workspaces). This enables developers to easily segregate data from different environments such as `staging`, `production`, etc.
+## Command Structure
+
+All Commands in Texture follow a consistent structure:
+
+```json
+{
+  "deviceId": "string",    // Target device identifier
+  "command": "string",     // Command name (e.g., "charge", "setMode")
+  "parameters": {},        // Command-specific parameters
+  "metadata": {}           // Optional request metadata
+}
+```
+
+## Command Types
+
+Texture supports three main types of commands:
+
+### 1. Direct Commands
+
+Sent immediately to the device for execution. Results are returned synchronously when possible, or you can poll for status.
+
+### 2. Scheduled Commands
+
+Commands set to execute at a specific time in the future. Useful for time-of-use optimization, demand response, or routine operations.
+
+### 3. Rule-Based Commands
+
+Commands triggered automatically based on conditions you define (e.g., "when battery reaches 80% charge, stop charging").
+
+## Command Namespacing
+
+All Commands are namespaced by [Workspace](/docs/platform-concepts/workspaces), enabling you to segregate operations between environments like development, staging, and production.
 
 > 🤔 Please note: all temperatures are returned in Fahrenheit only for now. We are building a platform capability to allow an Organization to specify their desired temperature units and have them apply to data sent and returned via API and in the Dashboard, but until that feature is released, we had to pick one and most of our initially supported smart thermostat manufacturers supported Fahrenheit out of the box so we took the same approach. Stay tuned for different temperature unit support.
 

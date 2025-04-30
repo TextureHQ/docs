@@ -2,35 +2,62 @@
 sidebar_position: 1
 ---
 
-# Overview
+# Sources Overview
 
-Connections are the ways that devices get connected to the Texture Platform so that their energy usage can be monitored and controlled.
+## What are Sources?
 
-Today we have 2 main types of connections:
+**Sources** are data providers that connect energy devices and related information to the Texture Platform. Sources are the foundation of your Energy Network, enabling Texture to collect telemetry, status information, and control capabilities from various devices and systems.
 
-1. End User Connections
-2. Installer Connections
+## Types of Sources
 
-## End User Connections
+### Device Sources
 
-End user connections are the connections that are made by end users to their devices. 
+Device Sources provide direct connections to energy hardware such as:
+- Solar inverters
+- Battery storage systems
+- EV chargers
+- Smart thermostats
+- Other grid-interactive devices
 
-These are generally our customers' customers that are homeowners who own solar panels, electric vehicles, or batteries and want to connect them to the Texture Platform.
+You can connect devices to Texture using two primary methods:
 
-Texture provides a variety of ways for these end users to connect their devices to the Texture Platform including:
-1. Creating a Connect link via our REST API
-2. Creating a Connect link via the Texture Dashboard
-3. Creating a Connect link via one of our SDKs
-    1. Texture JavaScript SDK
-    2. Texture React SDK
-    3. Texture React Native SDK
+#### 1. End User Authentication
 
-And we are constantly working to make it easier for our developers and customers to enable their end users to connect their devices to the Texture Platform so if there is an SDK or a method that you would like to see, please let us know.
+Ideal for: Residential deployments, consumer devices, and situations where device owners need to authorize access
 
-## Installer Connections
+With this method, device owners authenticate with their manufacturer accounts (e.g., Tesla, Enphase, SolarEdge) through Texture's Connect flow, granting your application permission to access their devices.
 
-These are generally connections made by installers who are installing devices on behalf of end users.
+**Implementation options:**
+- Create a Connect link via our [REST API](/api#tag/Connections)
+- Generate a Connect flow in the [Texture Dashboard](https://dashboard.texturehq.com)
+- Embed Connect in your app using our SDKs:
+  - [JavaScript SDK](/docs/home/quickstart#javascript-sdk)
+  - [React SDK](/docs/home/quickstart#react-sdk)
+  - [React Native SDK](/docs/home/quickstart#react-native-sdk)
 
-They often have credentials to connect to devices directly via the manufacturer and then connect them to the Texture Platform.
+#### 2. Direct API Integration
 
-We support installer credentials for a variety of our supported manufacturers and are constantly working to add more. Most of the docs in this section focus on End User Connections but if you are an installer and need help connecting a device, please reach out to us and we can help you get connected.
+Ideal for: Commercial deployments, installer-managed systems, and large fleets
+
+This method uses installer or developer credentials directly from the manufacturer to connect devices to Texture, without requiring end-user interaction.
+
+We support direct integration for multiple manufacturers and can help configure the appropriate authentication for your specific needs.
+
+### Utility Data Sources
+
+Texture can also integrate with various utility data sources including:
+- Electricity bill information
+- Meter interval data
+- Demand response program signals
+- Time-of-use rate structures
+
+See [Apps](../platform-concepts/apps.md) for more information on available utility data integrations.
+
+## Getting Started with Sources
+
+To begin connecting devices to your Texture account:
+
+1. Create a developer account in the [Texture Dashboard](https://dashboard.texturehq.com)
+2. Generate API keys under the Developer section
+3. Follow our [Quickstart guide](/docs/home/quickstart) to create your first connection
+4. Review [Supported Devices](/docs/sources/supported-devices) to see the full list of available integrations
