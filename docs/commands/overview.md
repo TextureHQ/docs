@@ -4,15 +4,23 @@ sidebar_position: 1
 
 # Overview
 
-_Access real-time device data, control devices, and set schedules. Use our powerful APIs and rich documentation to get started in minutes._
+## What are Commands?
 
-## Introduction
+Commands are operations you send to energy devices through the Texture platform to control their behavior, retrieve data, or modify settings. Commands provide the "control" aspect of Texture's connect-monitor-control functionality.
 
-Commands allow you to control devices in your Energy Network.
+With Texture Commands, you can:
 
-## Overview
+- Control battery systems (charge, discharge, set modes)
+- Adjust EV charging (start, stop, set charge rates)
+- Manage solar inverters (enable/disable, set power limits)
+- Control smart thermostats (adjust temperature, change modes)
+- Schedule operations for future execution
+- Run batch commands across multiple devices
+- Create automation rules triggered by events or conditions
 
-As with most other entities on the Texture platform, all APIs provided to take Action on a device are name-spaced by [Workspace](/docs/platform-concepts/workspaces). This enables developers to easily segregate data from different environments such as `staging`, `production`, etc.
+## Command Namespacing
+
+All Commands are namespaced by [Workspace](/docs/platform-concepts/workspaces), enabling you to segregate operations between environments like development, staging, and production.
 
 > 🤔 Please note: all temperatures are returned in Fahrenheit only for now. We are building a platform capability to allow an Organization to specify their desired temperature units and have them apply to data sent and returned via API and in the Dashboard, but until that feature is released, we had to pick one and most of our initially supported smart thermostat manufacturers supported Fahrenheit out of the box so we took the same approach. Stay tuned for different temperature unit support.
 

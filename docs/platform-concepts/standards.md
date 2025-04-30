@@ -16,7 +16,7 @@ Key features of IEEE 2030.5:
 - **Secure Communications**: Implements robust security mechanisms for device communication
 - **Device Discovery**: Enables automatic device discovery and registration
 - **Demand Response**: Supports demand response event messaging and participation
-- **Distributed Energy Resources (DER)**: Provides capabilities for managing solar, storage, and other DERs
+- **Energy Resources (ER)**: Provides capabilities for managing solar, storage, and other ERs
 - **Metering**: Allows exchange of energy usage data
 
 Texture supports IEEE 2030.5 specifically for device telemetry and control operations. This enables you to monitor and manage compatible devices through a standardized protocol while leveraging Texture's platform capabilities for analytics, automation, and integration.

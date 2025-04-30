@@ -2,14 +2,63 @@
 sidebar_position: 1
 ---
 
-# Overview
+# API Overview
 
-We have spent a lot of time thinking about how to make it easy for you to pull data from your devices and to run commands on them.
+## Unified API for Energy Devices
 
-We have built a powerful and flexible API that allows you to do just that.
+Texture's API provides a standardized interface to interact with any supported energy device, regardless of manufacturer. Our API enables you to:
 
-We have built our API to be OpenAPI and Swagger compliant so we always expose [the full Swagger json here](https://api.texturehq.com/v1/docs/swagger.json).
+- **Read** device telemetry, status, and configuration data
+- **Write** commands to control devices (charge, discharge, set modes, etc.)
+- **Manage** device connections, sites, and customers
+- **Configure** automations, schedules, and rules
+- **Access** supplemental data like weather forecasts and carbon intensity
 
-From this Swagger we generate live interactive docs and we have a [full list of our API endpoints here](https://docs.texturehq.com/api/).
+## API Resources
 
-We do not yet publish clients in every language yet (coming soon!) but in the meantime, you can use our swagger.json to generate your own client SDKs.
+| Resource | Description |
+|----------|-------------|
+| [Devices](/api#/paths/devices/get) | Get device information, telemetry, and device history |
+| [Device Commands](/api#/paths/devices-id--commands/post) | Send operations to specific devices |
+| [Sites](/api#/paths/sites/get) | Manage physical locations with associated devices and weather data |
+| [Customers](/api#/paths/customers/get) | Create and manage customer records |
+| [Connections](/api#/paths/connections/post) | Create device connection flows for end users |
+| [Programs](/api#/paths/programs/get) | Access energy program definitions |
+| [Enrollments](/api#/paths/programInstances-instanceId--enrollments/get) | Manage program enrollments |
+| [Metrics](/api#/paths/metrics-storage/get) | Access aggregated metrics (consumption, production, storage, etc.) |
+| [Leads](/api#/paths/leads/post) | Create and manage leads for energy programs |
+| [Commands](/api#/paths/commands-id/get) | Specialized device commands for batteries, thermostats, etc. |
+
+## Using the API
+
+Our API follows REST principles with JSON payloads and standard HTTP methods. Authentication is performed using API keys which you can generate in the [Dashboard](https://dashboard.texturehq.com/developer).
+
+```bash
+# Example: Get a list of your devices
+curl -X GET "https://api.texturehq.com/v1/devices" \
+  -H "Texture-Api-Key: your_api_key"
+
+# Example: Get device metrics for consumption
+curl -X GET "https://api.texturehq.com/v1/metrics/consumption?period=day&timeframe=1d" \
+  -H "Texture-Api-Key: your_api_key"
+
+# Example: Create a connection for device onboarding
+curl -X POST "https://api.texturehq.com/v1/connections" \
+  -H "Texture-Api-Key: your_api_key" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "referenceId": "your-reference-id",
+    "redirectUrl": "https://your-app.example.com/callback",
+    "clientName": "Your Application"
+  }'
+```
+
+## Documentation
+
+We provide comprehensive documentation for our entire API:
+
+- [Interactive API Explorer](/api) - Browse and test API endpoints
+- [OpenAPI Specification](https://api.texturehq.com/v1/docs/swagger.json) - Full API specification
+- [Example Applications](https://github.com/TextureHQ) - Sample code and implementation examples
+
+You can use the OpenAPI specification to generate client libraries in your preferred programming language or use our provided SDKs for common platforms.

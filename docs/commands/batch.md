@@ -276,7 +276,7 @@ Create scheduled commands to reduce grid consumption during daily peak periods:
 
 ### Virtual Power Plants
 
-Orchestrate distributed energy resources to provide grid services:
+Orchestrate energy resources to provide grid services:
 
 1. Tag batteries by capacity and location
 2. Create schedules for coordinated charge/discharge cycles

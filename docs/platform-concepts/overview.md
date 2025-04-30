@@ -4,15 +4,23 @@ sidebar_position: 1
 
 # Overview
 
-There is nothing on the market quite like the Texture Platform so we have created this guide to help you understand some of the core concepts of the platform and how they fit together.
-
 ## What is Texture?
 
-Texture is a platform for managing Energy Networks. 
+Texture is the industry cloud for energy. We provide a comprehensive platform that turns data chaos into data confidence by making energy data work smarter for companies across the energy sector.
 
-If you are wondering, "but what is an Energy Network? I have never heard that term before" that makes sense, because we coined the term. See more details in the [Network](network) section.
+Our platform goes far beyond basic device integration to enable:
 
-But let's start at the top.
+1. **Unified Integration**: Connect to any energy device across multiple manufacturers through a standardized API and data model
+2. **Advanced Data Engineering**: Transform, normalize, and aggregate telemetry data for actionable insights
+3. **Sophisticated Control**: Manage individual devices or orchestrate complex systems at scale
+4. **Intelligent Automation**: Create rules and schedules that respond to device data and external signals
+5. **Contextual Intelligence**: Combine device data with utility information, weather, emissions data, and more
+6. **End-to-End Program Management**: Streamline enrollment, execution, and reporting for energy programs
+7. **Enterprise Security**: Ensure robust data protection with granular permissions and compliance features
+
+## Energy Networks
+
+We use the term "Energy Network" to describe the interconnected systems of devices, data sources, and energy flows that you manage. An Energy Network can include residential solar+storage systems, commercial EV charging stations, utility-scale batteries, or any combination of energy devices. Read more about [Networks](network) to understand how Texture models these relationships.
 
 ## Integrations
 

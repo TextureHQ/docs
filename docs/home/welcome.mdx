@@ -1,11 +1,524 @@
 ---
 sidebar_position: 1
 id: welcome
-title: Welcome
+title: Welcome to Texture
 ---
 
-import HomepageFeatures from '../../src/components/HomepageFeatures';
-import HomepageHeader from '../../src/components/HomepageHeader';
+import Link from '@docusaurus/Link';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<HomepageHeader />
-<HomepageFeatures />
+<div className="hero-section">
+  <div className="container">
+    <h1>Texture Documentation</h1>
+    <p>The industry cloud for energy</p>
+  </div>
+</div>
+
+<div className="container">
+  <div className="row">
+    <div className="col col--8 col--offset-2">
+      <p className="hero__subtitle text--center">
+        Texture unifies energy device data and control in one platform, enabling you to build powerful applications without the complexity of multiple integrations.
+      </p>
+    </div>
+  </div>
+
+  <div className="row margin-top--lg">
+    <div className="col col--4">
+      <div className="action-card">
+        <div className="action-card__header">
+          <h3>I want to connect devices</h3>
+        </div>
+        <div className="action-card__body">
+          <p>
+            Learn how to connect energy devices from multiple manufacturers to your application through Texture's unified API.
+          </p>
+        </div>
+        <div className="action-card__footer">
+          <Link
+            className="texture-button texture-button--primary"
+            to="/docs/home/getting-started">
+            Start Connecting
+          </Link>
+        </div>
+      </div>
+    </div>
+    
+    <div className="col col--4">
+      <div className="action-card">
+        <div className="action-card__header">
+          <h3>I want to build a solution</h3>
+        </div>
+        <div className="action-card__body">
+          <p>
+            Explore how Texture supports common energy industry use cases like demand response, VPPs, and monitoring.
+          </p>
+        </div>
+        <div className="action-card__footer">
+          <Link
+            className="texture-button texture-button--primary"
+            to="/docs/home/use-cases">
+            See Use Cases
+          </Link>
+        </div>
+      </div>
+    </div>
+    
+    <div className="col col--4">
+      <div className="action-card">
+        <div className="action-card__header">
+          <h3>I need technical references</h3>
+        </div>
+        <div className="action-card__body">
+          <p>
+            Access detailed API documentation, data models, and technical specifications for integration.
+          </p>
+        </div>
+        <div className="action-card__footer">
+          <Link
+            className="texture-button texture-button--primary"
+            to="/api">
+            View API Docs
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="row margin-top--xl">
+    <div className="col">
+      <h2 className="text--center">What can I build with Texture?</h2>
+    </div>
+  </div>
+
+  <div className="row">
+    <div className="col col--6">
+      <div className="solution-card margin-top--md">
+        <div className="solution-card__header">
+          <h3>Energy Management Applications</h3>
+        </div>
+        <div className="solution-card__body">
+          <ul>
+            <li>Monitor real-time energy production and consumption</li>
+            <li>Control devices to optimize for time-of-use rates</li>
+            <li>Visualize energy usage across fleets of devices</li>
+            <li>Create dashboards for customers to track their energy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div className="col col--6">
+      <div className="solution-card margin-top--md">
+        <div className="solution-card__header">
+          <h3>Grid Services Applications</h3>
+        </div>
+        <div className="solution-card__body">
+          <ul>
+            <li>Manage demand response program enrollment and dispatch</li>
+            <li>Orchestrate virtual power plants across device fleets</li>
+            <li>Provide advanced battery control for grid services</li>
+            <li>Optimize energy usage based on carbon intensity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div className="row">
+    <div className="col col--6">
+      <div className="solution-card margin-top--md">
+        <div className="solution-card__header">
+          <h3>Energy Data Analytics</h3>
+        </div>
+        <div className="solution-card__body">
+          <ul>
+            <li>Aggregate and analyze energy data across sites</li>
+            <li>Generate insights from combined device telemetry</li>
+            <li>Create custom reports and visualizations</li>
+            <li>Track performance metrics and KPIs over time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div className="col col--6">
+      <div className="solution-card margin-top--md">
+        <div className="solution-card__header">
+          <h3>Energy Program Management</h3>
+        </div>
+        <div className="solution-card__body">
+          <ul>
+            <li>Streamline utility program enrollment flows</li>
+            <li>Manage customer engagement and communications</li>
+            <li>Track program participation and compliance</li>
+            <li>Measure and report on program outcomes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="row margin-top--lg">
+    <div className="col col--12">
+      <Tabs>
+        <TabItem value="connect" label="Connect Devices" default>
+          <div className="row">
+            <div className="col col--6">
+              <h3>Unified Device Connections</h3>
+              <p>
+                Connect to any supported energy device through a single API, regardless of manufacturer. Texture handles the complex integration work so you can focus on building your application.
+              </p>
+              <ul>
+                <li>Solar inverters from multiple manufacturers</li>
+                <li>Residential and commercial battery systems</li>
+                <li>EV chargers and vehicle connections</li>
+                <li>Smart thermostats and HVAC systems</li>
+              </ul>
+              <Link
+                className="texture-button texture-button--secondary"
+                to="/docs/sources/supported-devices">
+                See Supported Devices
+              </Link>
+            </div>
+            <div className="col col--6">
+              <div className="code-block">
+                ```javascript
+// Create a connection for device onboarding
+fetch("https://api.texturehq.com/v1/connections", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Texture-Api-Key": "<YOUR_API_KEY>",
+  },
+  body: JSON.stringify({
+    referenceId: "customer-123",
+    redirectUrl: "https://your-app.com/callback",
+    clientName: "Your Energy App"
+  }),
+})
+  .then(response => response.json())
+  .then(data => {
+    // Redirect user to data.connectUrl
+  });
+                ```
+              </div>
+            </div>
+          </div>
+        </TabItem>
+        <TabItem value="control" label="Monitor & Control">
+          <div className="row">
+            <div className="col col--6">
+              <h3>Device Monitoring & Control</h3>
+              <p>
+                Access real-time device data and send commands through a standardized interface. Build sophisticated control systems without worrying about manufacturer-specific implementations.
+              </p>
+              <ul>
+                <li>Read current device status and telemetry</li>
+                <li>Send control commands to individual or groups of devices</li>
+                <li>Schedule operations for future execution</li>
+                <li>Create rules for automated device control</li>
+              </ul>
+              <Link
+                className="texture-button texture-button--secondary"
+                to="/docs/commands/overview">
+                Learn About Commands
+              </Link>
+            </div>
+            <div className="col col--6">
+              <div className="code-block">
+                ```javascript
+// Get device information
+fetch("https://api.texturehq.com/v1/devices/device-123", {
+  headers: {
+    "Texture-Api-Key": "<YOUR_API_KEY>",
+  },
+})
+  .then(response => response.json())
+  .then(deviceData => {
+    console.log(deviceData);
+  });
+
+// Send device command
+fetch("https://api.texturehq.com/v1/devices/device-123/commands", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Texture-Api-Key": "<YOUR_API_KEY>",
+  },
+  body: JSON.stringify({
+    command: "setOperatingMode",
+    parameters: { mode: "charge" }
+  }),
+});
+                ```
+              </div>
+            </div>
+          </div>
+        </TabItem>
+        <TabItem value="analyze" label="Analyze Energy Data">
+          <div className="row">
+            <div className="col col--6">
+              <h3>Energy Analytics</h3>
+              <p>
+                Access aggregated metrics and analyze energy data across your fleet of devices. Combine device data with contextual information like weather and utility rates.
+              </p>
+              <ul>
+                <li>Track energy consumption, production, and storage</li>
+                <li>Analyze carbon emissions impact</li>
+                <li>Monitor program performance</li>
+                <li>Create custom reports and visualizations</li>
+              </ul>
+              <Link
+                className="texture-button texture-button--secondary"
+                to="/docs/platform-concepts/overview">
+                Explore Platform Concepts
+              </Link>
+            </div>
+            <div className="col col--6">
+              <div className="code-block">
+                ```javascript
+// Get energy metrics
+fetch("https://api.texturehq.com/v1/metrics/consumption?period=day&timeframe=7d", {
+  headers: {
+    "Texture-Api-Key": "<YOUR_API_KEY>",
+  },
+})
+  .then(response => response.json())
+  .then(metrics => {
+    // Process consumption data
+  });
+
+// Get site with weather and energy data
+fetch("https://api.texturehq.com/v1/sites/site-123?include=weather", {
+  headers: {
+    "Texture-Api-Key": "<YOUR_API_KEY>",
+  },
+});
+                ```
+              </div>
+            </div>
+          </div>
+        </TabItem>
+      </Tabs>
+    </div>
+  </div>
+
+  <div className="row margin-top--xl">
+    <div className="col">
+      <h2 className="text--center">Getting Started</h2>
+    </div>
+  </div>
+
+  <div className="row">
+    <div className="col col--10 col--offset-1">
+      <ol className="getting-started-steps">
+        <li>
+          <h3>Sign up for Texture</h3>
+          <p>Create your account at <a href="https://dashboard.texturehq.com" target="_blank">dashboard.texturehq.com</a></p>
+        </li>
+        <li>
+          <h3>Get your API keys</h3>
+          <p>Generate API keys from the Developer section of the Dashboard</p>
+        </li>
+        <li>
+          <h3>Connect your first device</h3>
+          <p>Follow our <Link to="/docs/home/quickstart">Quickstart guide</Link> to connect a device</p>
+        </li>
+        <li>
+          <h3>Build your application</h3>
+          <p>Use our APIs to integrate energy devices into your product</p>
+        </li>
+      </ol>
+      <div className="text--center margin-top--lg">
+        <Link
+          className="texture-button texture-button--primary texture-button--lg"
+          to="/docs/home/getting-started">
+          Detailed Getting Started Guide
+        </Link>
+      </div>
+    </div>
+  </div>
+
+  <div className="row margin-top--xl margin-bottom--lg">
+    <div className="col col--12">
+      <div className="card">
+        <div className="card__header">
+          <h3 className="text--center">Need Help?</h3>
+        </div>
+        <div className="card__body">
+          <p className="text--center">
+            Use the live chat in the Dashboard (look for the chat bubble in the lower right corner) to connect directly with Texture engineers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style jsx>{`
+  .hero-section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Action Cards */
+  .action-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--ifm-card-background-color);
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+  }
+
+  .action-card__header {
+    padding: 1.5rem 1.5rem 0.5rem;
+  }
+
+  .action-card__header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .action-card__body {
+    padding: 0 1.5rem;
+    flex-grow: 1;
+  }
+
+  .action-card__footer {
+    padding: 1rem 1.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Solution Cards */
+  .solution-card {
+    background: var(--ifm-card-background-color);
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: 100%;
+  }
+
+  .solution-card__header {
+    padding: 1.25rem 1.5rem 0.5rem;
+  }
+
+  .solution-card__header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .solution-card__body {
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  /* Texture Buttons */
+.texture-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem; /* less vertical, more horizontal */
+  font-weight: 600; /* bolder text */
+  font-size: 1rem;
+  line-height: 1.25;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.texture-button--primary {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.texture-button--primary:hover {
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+}
+
+.texture-button--secondary {
+  background-color: white;
+  color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+}
+
+.texture-button--secondary:hover {
+  background-color: #f5f5f5;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.texture-button--block {
+  display: flex;
+  width: 100%;
+}
+
+.texture-button--lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+.texture-button p {
+  margin: 0;
+}
+  /* Getting Started Steps */
+  .getting-started-steps {
+    counter-reset: step;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .getting-started-steps li {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1rem 1rem 1rem 4rem;
+    background: var(--ifm-card-background-color);
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  .getting-started-steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2d2d2d;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+  }
+
+  .getting-started-steps h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .getting-started-steps p {
+    margin-bottom: 0;
+  }
+
+  /* Code Blocks */
+  .code-block {
+    overflow: auto;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+`}</style>

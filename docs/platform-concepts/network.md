@@ -6,7 +6,7 @@ sidebar_position: 2
 
 The Texture Platform is designed to manage Energy Networks. An Energy Network is a grouping of energy assets that can communicate with each other to form a network.
 
-This is the best way to truly unlock the power of distributed energy resources. By bringing these assets online into an Energy Network, you can monitor, control, and communicate with them via the Texture Platform.
+This is the best way to truly unlock the power of energy resources. By bringing these assets online into an Energy Network, you can monitor, control, and communicate with them via the Texture Platform.
 
 ## What is an Energy Network?
 An Energy Network is a network of energy assets that can communicate with each other to form a network.
