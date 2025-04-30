@@ -1,6 +1,6 @@
 # Texture
 
-These are the docs for [Texture](https://www.texturehq.com), the industry cloud for distributed energy.
+These are the docs for [Texture](https://www.texturehq.com), the industry cloud for energy.
 
 They are hosted here: [https://docs.texturehq.com](https://docs.texturehq.com)
 

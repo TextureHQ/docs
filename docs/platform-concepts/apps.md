@@ -148,7 +148,7 @@ WattTime shows real-time emissions data. By pairing it with your energy usage or
 ## Grid Services
 
 ### Tesla Grid Services
-If you have a Tesla Grid Services account, connect it to enable real-time access to Tesla device data and robust dispatch capabilities for distributed energy resources.
+If you have a Tesla Grid Services account, connect it to enable real-time access to Tesla device data and robust dispatch capabilities for energy resources.
 
 ---
 

@@ -8,14 +8,14 @@ import Link from '@docusaurus/Link';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<div className="hero-banner">
+<div className="hero-section">
   <div className="container">
     <h1>Texture Documentation</h1>
-    <p>The industry cloud for distributed energy</p>
+    <p>The industry cloud for energy</p>
   </div>
 </div>
 
-<div className="container margin-top--lg">
+<div className="container">
   <div className="row">
     <div className="col col--8 col--offset-2">
       <p className="hero__subtitle text--center">
@@ -26,18 +26,18 @@ import TabItem from '@theme/TabItem';
 
   <div className="row margin-top--lg">
     <div className="col col--4">
-      <div className="card">
-        <div className="card__header">
+      <div className="action-card">
+        <div className="action-card__header">
           <h3>I want to connect devices</h3>
         </div>
-        <div className="card__body">
+        <div className="action-card__body">
           <p>
             Learn how to connect energy devices from multiple manufacturers to your application through Texture's unified API.
           </p>
         </div>
-        <div className="card__footer">
+        <div className="action-card__footer">
           <Link
-            className="button button--primary button--block"
+            className="texture-button texture-button--primary"
             to="/docs/home/getting-started">
             Start Connecting
           </Link>
@@ -46,18 +46,18 @@ import TabItem from '@theme/TabItem';
     </div>
     
     <div className="col col--4">
-      <div className="card">
-        <div className="card__header">
+      <div className="action-card">
+        <div className="action-card__header">
           <h3>I want to build a solution</h3>
         </div>
-        <div className="card__body">
+        <div className="action-card__body">
           <p>
             Explore how Texture supports common energy industry use cases like demand response, VPPs, and monitoring.
           </p>
         </div>
-        <div className="card__footer">
+        <div className="action-card__footer">
           <Link
-            className="button button--primary button--block"
+            className="texture-button texture-button--primary"
             to="/docs/home/use-cases">
             See Use Cases
           </Link>
@@ -66,18 +66,18 @@ import TabItem from '@theme/TabItem';
     </div>
     
     <div className="col col--4">
-      <div className="card">
-        <div className="card__header">
+      <div className="action-card">
+        <div className="action-card__header">
           <h3>I need technical references</h3>
         </div>
-        <div className="card__body">
+        <div className="action-card__body">
           <p>
             Access detailed API documentation, data models, and technical specifications for integration.
           </p>
         </div>
-        <div className="card__footer">
+        <div className="action-card__footer">
           <Link
-            className="button button--primary button--block"
+            className="texture-button texture-button--primary"
             to="/api">
             View API Docs
           </Link>
@@ -94,11 +94,11 @@ import TabItem from '@theme/TabItem';
 
   <div className="row">
     <div className="col col--6">
-      <div className="card margin-top--md">
-        <div className="card__header">
+      <div className="solution-card margin-top--md">
+        <div className="solution-card__header">
           <h3>Energy Management Applications</h3>
         </div>
-        <div className="card__body">
+        <div className="solution-card__body">
           <ul>
             <li>Monitor real-time energy production and consumption</li>
             <li>Control devices to optimize for time-of-use rates</li>
@@ -110,16 +110,50 @@ import TabItem from '@theme/TabItem';
     </div>
     
     <div className="col col--6">
-      <div className="card margin-top--md">
-        <div className="card__header">
+      <div className="solution-card margin-top--md">
+        <div className="solution-card__header">
           <h3>Grid Services Applications</h3>
         </div>
-        <div className="card__body">
+        <div className="solution-card__body">
           <ul>
             <li>Manage demand response program enrollment and dispatch</li>
             <li>Orchestrate virtual power plants across device fleets</li>
             <li>Provide advanced battery control for grid services</li>
             <li>Optimize energy usage based on carbon intensity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div className="row">
+    <div className="col col--6">
+      <div className="solution-card margin-top--md">
+        <div className="solution-card__header">
+          <h3>Energy Data Analytics</h3>
+        </div>
+        <div className="solution-card__body">
+          <ul>
+            <li>Aggregate and analyze energy data across sites</li>
+            <li>Generate insights from combined device telemetry</li>
+            <li>Create custom reports and visualizations</li>
+            <li>Track performance metrics and KPIs over time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div className="col col--6">
+      <div className="solution-card margin-top--md">
+        <div className="solution-card__header">
+          <h3>Energy Program Management</h3>
+        </div>
+        <div className="solution-card__body">
+          <ul>
+            <li>Streamline utility program enrollment flows</li>
+            <li>Manage customer engagement and communications</li>
+            <li>Track program participation and compliance</li>
+            <li>Measure and report on program outcomes</li>
           </ul>
         </div>
       </div>
@@ -143,16 +177,15 @@ import TabItem from '@theme/TabItem';
                 <li>Smart thermostats and HVAC systems</li>
               </ul>
               <Link
-                className="button button--secondary"
+                className="texture-button texture-button--secondary"
                 to="/docs/sources/supported-devices">
                 See Supported Devices
               </Link>
             </div>
             <div className="col col--6">
               <div className="code-block">
-                <pre>
-                  <code>
-{`// Create a connection for device onboarding
+                ```javascript
+// Create a connection for device onboarding
 fetch("https://api.texturehq.com/v1/connections", {
   method: "POST",
   headers: {
@@ -168,9 +201,8 @@ fetch("https://api.texturehq.com/v1/connections", {
   .then(response => response.json())
   .then(data => {
     // Redirect user to data.connectUrl
-  });`}
-                  </code>
-                </pre>
+  });
+                ```
               </div>
             </div>
           </div>
@@ -189,16 +221,15 @@ fetch("https://api.texturehq.com/v1/connections", {
                 <li>Create rules for automated device control</li>
               </ul>
               <Link
-                className="button button--secondary"
+                className="texture-button texture-button--secondary"
                 to="/docs/commands/overview">
                 Learn About Commands
               </Link>
             </div>
             <div className="col col--6">
               <div className="code-block">
-                <pre>
-                  <code>
-{`// Get device information
+                ```javascript
+// Get device information
 fetch("https://api.texturehq.com/v1/devices/device-123", {
   headers: {
     "Texture-Api-Key": "<YOUR_API_KEY>",
@@ -220,9 +251,8 @@ fetch("https://api.texturehq.com/v1/devices/device-123/commands", {
     command: "setOperatingMode",
     parameters: { mode: "charge" }
   }),
-});`}
-                  </code>
-                </pre>
+});
+                ```
               </div>
             </div>
           </div>
@@ -241,16 +271,15 @@ fetch("https://api.texturehq.com/v1/devices/device-123/commands", {
                 <li>Create custom reports and visualizations</li>
               </ul>
               <Link
-                className="button button--secondary"
+                className="texture-button texture-button--secondary"
                 to="/docs/platform-concepts/overview">
                 Explore Platform Concepts
               </Link>
             </div>
             <div className="col col--6">
               <div className="code-block">
-                <pre>
-                  <code>
-{`// Get energy metrics
+                ```javascript
+// Get energy metrics
 fetch("https://api.texturehq.com/v1/metrics/consumption?period=day&timeframe=7d", {
   headers: {
     "Texture-Api-Key": "<YOUR_API_KEY>",
@@ -266,9 +295,8 @@ fetch("https://api.texturehq.com/v1/sites/site-123?include=weather", {
   headers: {
     "Texture-Api-Key": "<YOUR_API_KEY>",
   },
-});`}
-                  </code>
-                </pre>
+});
+                ```
               </div>
             </div>
           </div>
@@ -305,7 +333,7 @@ fetch("https://api.texturehq.com/v1/sites/site-123?include=weather", {
       </ol>
       <div className="text--center margin-top--lg">
         <Link
-          className="button button--primary button--lg"
+          className="texture-button texture-button--primary texture-button--lg"
           to="/docs/home/getting-started">
           Detailed Getting Started Guide
         </Link>
@@ -330,17 +358,122 @@ fetch("https://api.texturehq.com/v1/sites/site-123?include=weather", {
 </div>
 
 <style jsx>{`
-  .hero-banner {
+  .hero-section {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: var(--ifm-color-primary);
-    color: white;
   }
 
-  .hero-banner h1 {
+  .hero-section h1 {
     font-size: 3rem;
+    margin-bottom: 0.5rem;
   }
 
+  /* Action Cards */
+  .action-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--ifm-card-background-color);
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+  }
+
+  .action-card__header {
+    padding: 1.5rem 1.5rem 0.5rem;
+  }
+
+  .action-card__header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .action-card__body {
+    padding: 0 1.5rem;
+    flex-grow: 1;
+  }
+
+  .action-card__footer {
+    padding: 1rem 1.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Solution Cards */
+  .solution-card {
+    background: var(--ifm-card-background-color);
+    border: 1px solid #eaeaea;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: 100%;
+  }
+
+  .solution-card__header {
+    padding: 1.25rem 1.5rem 0.5rem;
+  }
+
+  .solution-card__header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .solution-card__body {
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  /* Texture Buttons */
+.texture-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem; /* less vertical, more horizontal */
+  font-weight: 600; /* bolder text */
+  font-size: 1rem;
+  line-height: 1.25;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.texture-button--primary {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.texture-button--primary:hover {
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+}
+
+.texture-button--secondary {
+  background-color: white;
+  color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+}
+
+.texture-button--secondary:hover {
+  background-color: #f5f5f5;
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.texture-button--block {
+  display: flex;
+  width: 100%;
+}
+
+.texture-button--lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+.texture-button p {
+  margin: 0;
+}
+  /* Getting Started Steps */
   .getting-started-steps {
     counter-reset: step;
     list-style: none;
@@ -352,7 +485,7 @@ fetch("https://api.texturehq.com/v1/sites/site-123?include=weather", {
     margin-bottom: 2rem;
     padding: 1rem 1rem 1rem 4rem;
     background: var(--ifm-card-background-color);
-    border-radius: 8px;
+    border: 1px solid #eaeaea;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   }
 
@@ -367,7 +500,7 @@ fetch("https://api.texturehq.com/v1/sites/site-123?include=weather", {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--ifm-color-primary);
+    background: #2d2d2d;
     color: white;
     border-radius: 50%;
     font-weight: bold;
@@ -382,21 +515,10 @@ fetch("https://api.texturehq.com/v1/sites/site-123?include=weather", {
     margin-bottom: 0;
   }
 
+  /* Code Blocks */
   .code-block {
-    background: #2d2d2d;
-    border-radius: 8px;
     overflow: auto;
     font-size: 0.9rem;
     margin-top: 1rem;
-  }
-
-  .code-block pre {
-    margin: 0;
-    padding: 1rem;
-  }
-
-  .code-block code {
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-    color: #e6e6e6;
   }
 `}</style>

@@ -14,7 +14,7 @@ Community Choice Aggregators leverage Texture to provide comprehensive energy ma
 
 **How Texture Helps CCAs:**
 - Simplify integration with diverse energy resources across the community
-- Enable real-time monitoring of distributed energy resources
+- Enable real-time monitoring of energy resources
 - Provide a single platform for managing energy programs and device control
 - Deliver insights on community-wide energy usage and generation patterns
 
@@ -26,7 +26,7 @@ Cooperative Networks use Texture to establish a single source of truth for all e
 - Unify management of member-owned energy devices
 - Enable coordinated response to grid events
 - Simplify data sharing between cooperative members
-- Enhance visibility across distributed resources
+- Enhance visibility across energy resources
 
 ### DERMS Providers
 

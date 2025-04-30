@@ -9,7 +9,7 @@ sidebar_position: 13
 A **Virtual Power Plant (VPP)** is a network of decentralized, medium-scale power generating units, flexible power consumers, and storage systems that are aggregated and operated as a single entity. Unlike traditional power plants, VPPs are distributed across multiple locations but can be remotely and collectively controlled.
 
 VPPs typically include:
-- **Distributed Energy Resources (DERs)** such as solar panels and wind turbines
+- **Energy Resources (ERs)** such as solar panels and wind turbines
 - **Energy Storage Systems** like batteries
 - **Flexible Loads** that can adjust their energy consumption on demand
 - **Electric Vehicles** and their charging infrastructure
