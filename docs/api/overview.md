@@ -18,12 +18,16 @@ Texture's API provides a standardized interface to interact with any supported e
 
 | Resource | Description |
 |----------|-------------|
-| [Devices](/api#tag/Devices) | Get device information, telemetry, and send commands |
-| [Sites](/api#tag/Sites) | Manage physical locations and their associated devices |
-| [Customers](/api#tag/Customers) | Create and manage customer records |
-| [Commands](/api#tag/Commands) | Send operations to devices individually or in batches |
-| [Connections](/api#tag/Connections) | Create and manage device connection flows |
-| [Weather](/api#tag/Weather) | Access forecast data for your sites |
+| [Devices](/api#/paths/devices/get) | Get device information, telemetry, and device history |
+| [Device Commands](/api#/paths/devices-id--commands/post) | Send operations to specific devices |
+| [Sites](/api#/paths/sites/get) | Manage physical locations with associated devices and weather data |
+| [Customers](/api#/paths/customers/get) | Create and manage customer records |
+| [Connections](/api#/paths/connections/post) | Create device connection flows for end users |
+| [Programs](/api#/paths/programs/get) | Access energy program definitions |
+| [Enrollments](/api#/paths/programInstances-instanceId--enrollments/get) | Manage program enrollments |
+| [Metrics](/api#/paths/metrics-storage/get) | Access aggregated metrics (consumption, production, storage, etc.) |
+| [Leads](/api#/paths/leads/post) | Create and manage leads for energy programs |
+| [Commands](/api#/paths/commands-id/get) | Specialized device commands for batteries, thermostats, etc. |
 
 ## Using the API
 
@@ -31,15 +35,30 @@ Our API follows REST principles with JSON payloads and standard HTTP methods. Au
 
 ```bash
 # Example: Get a list of your devices
-curl -X GET https://api.texturehq.com/v1/devices \
+curl -X GET "https://api.texturehq.com/v1/devices" \
   -H "Texture-Api-Key: your_api_key"
+
+# Example: Get device metrics for consumption
+curl -X GET "https://api.texturehq.com/v1/metrics/consumption?period=day&timeframe=1d" \
+  -H "Texture-Api-Key: your_api_key"
+
+# Example: Create a connection for device onboarding
+curl -X POST "https://api.texturehq.com/v1/connections" \
+  -H "Texture-Api-Key: your_api_key" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "referenceId": "your-reference-id",
+    "redirectUrl": "https://your-app.example.com/callback",
+    "clientName": "Your Application"
+  }'
 ```
 
 ## Documentation
 
-We provide Swagger/OpenAPI documentation for our entire API:
+We provide comprehensive documentation for our entire API:
 
-- [Interactive API Explorer](/api)
-- [OpenAPI Specification](https://api.texturehq.com/v1/docs/swagger.json)
+- [Interactive API Explorer](/api) - Browse and test API endpoints
+- [OpenAPI Specification](https://api.texturehq.com/v1/docs/swagger.json) - Full API specification
+- [Example Applications](https://github.com/TextureHQ) - Sample code and implementation examples
 
-You can use the OpenAPI specification to generate client libraries in your preferred programming language.
+You can use the OpenAPI specification to generate client libraries in your preferred programming language or use our provided SDKs for common platforms.
