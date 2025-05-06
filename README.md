@@ -24,9 +24,7 @@ This site is built using [Docusaurus](https://docusaurus.io/), a modern static w
 
 This site uses both Vercel Analytics and PostHog for tracking user behavior:
 
-- Vercel Analytics is automatically configured through the `@vercel/analytics` package
-- PostHog requires environment variables to be set in the `.env` file:
-  - `REACT_APP_PUBLIC_POSTHOG_KEY`: Your PostHog project API key
-  - `REACT_APP_PUBLIC_POSTHOG_HOST`: The PostHog instance URL (usually https://us.i.posthog.com)
+- Vercel Analytics is automatically configured through the `/_vercel/insights/script.js` script
+- PostHog is configured directly in the docusaurus.config.ts file with the PostHog script
 
 These analytics tools help us understand how users interact with our documentation, allowing us to make improvements based on actual usage patterns.

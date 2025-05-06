@@ -25,6 +25,20 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  
+  scripts: [
+    // Add Vercel Analytics script
+    {
+      src: '/_vercel/insights/script.js',
+      async: true,
+    },
+    // Add PostHog script - only in production
+    process.env.NODE_ENV === 'production' ? {
+      src: 'https://us.i.posthog.com/static/array.js',
+      async: true,
+      'data-api-key': 'phc_a721Zj2XX90dfUYDTwcuxWq4mQglrfYpJTJO4yXEa8A',
+    } : null,
+  ].filter(Boolean),
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
