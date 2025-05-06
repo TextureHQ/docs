@@ -105,6 +105,23 @@ html.docs-doc-id-home\/welcome div.theme-doc-markdown header:first-child {
   display: none;
 }
 
+/* Responsive grid classes for different screen sizes */
+@media (max-width: 996px) {
+  .col--md-6 {
+    --ifm-col-width: 50% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .col--sm-12 {
+    --ifm-col-width: 100% !important;
+  }
+  
+  .col--sm-offset-0 {
+    margin-left: 0 !important;
+  }
+}
+
 /* Sidebar */
 nav.menu, .navbar-sidebar {
   padding-bottom: 3rem;
