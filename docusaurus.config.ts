@@ -2,6 +2,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { ProvidePlugin } from "webpack";
+import path from 'path';
 
 const gtag = process.env.GOOGLE_ANALYTICS_TAG
   ? { 
@@ -25,6 +26,14 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  
+  scripts: [
+    // Add Vercel Analytics script
+    {
+      src: '/analytics.js',
+      async: true,
+    },
+  ].filter(Boolean),
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -36,9 +45,12 @@ const config: Config = {
 
   customFields: {
     API_BASE_URL: process.env.API_BASE_URL,
+    POSTHOG_KEY: process.env.REACT_APP_PUBLIC_POSTHOG_KEY,
+    POSTHOG_HOST: process.env.REACT_APP_PUBLIC_POSTHOG_HOST,
   },
 
   plugins: [
+    path.resolve(__dirname, 'src/plugins/posthog-plugin'),
     [
       '@docusaurus/plugin-client-redirects',
       {
