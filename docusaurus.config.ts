@@ -36,6 +36,8 @@ const config: Config = {
 
   customFields: {
     API_BASE_URL: process.env.API_BASE_URL,
+    POSTHOG_KEY: process.env.REACT_APP_PUBLIC_POSTHOG_KEY,
+    POSTHOG_HOST: process.env.REACT_APP_PUBLIC_POSTHOG_HOST,
   },
 
   plugins: [
