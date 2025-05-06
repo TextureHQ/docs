@@ -29,7 +29,7 @@ const config: Config = {
   scripts: [
     // Add Vercel Analytics script
     {
-      src: '/_vercel/insights/script.js',
+      src: '/analytics.js',
       async: true,
     },
     // Add PostHog script - only in production
