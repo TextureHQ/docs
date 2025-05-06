@@ -1,6 +1,6 @@
 import React from 'react';
 import { Analytics } from '@vercel/analytics/react';
-import { PostHogProvider } from 'posthog-js/react';
+import posthog from 'posthog-js';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 interface RootProps {
@@ -14,27 +14,26 @@ export default function Root({ children }: RootProps): JSX.Element {
     POSTHOG_HOST?: string;
   };
 
-  // PostHog init options
-  const posthogOptions = {
-    api_host: POSTHOG_HOST,
-  };
+  // Initialize PostHog on client-side only
+  React.useEffect(() => {
+    if (typeof window !== 'undefined' && POSTHOG_KEY && POSTHOG_HOST) {
+      posthog.init(POSTHOG_KEY, {
+        api_host: POSTHOG_HOST,
+        capture_pageview: true,
+        loaded: (posthog) => {
+          if (process.env.NODE_ENV === 'development') {
+            // Log PostHog initialization in development
+            console.log('PostHog initialized');
+          }
+        }
+      });
+    }
+  }, [POSTHOG_KEY, POSTHOG_HOST]);
 
   return (
     <>
-      {POSTHOG_KEY && POSTHOG_HOST ? (
-        <PostHogProvider 
-          apiKey={POSTHOG_KEY} 
-          options={posthogOptions}
-        >
-          {children}
-          <Analytics />
-        </PostHogProvider>
-      ) : (
-        <>
-          {children}
-          <Analytics />
-        </>
-      )}
+      {children}
+      <Analytics />
     </>
   );
 }
