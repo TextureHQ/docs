@@ -2,6 +2,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import { ProvidePlugin } from "webpack";
+import path from 'path';
 
 const gtag = process.env.GOOGLE_ANALYTICS_TAG
   ? { 
@@ -32,12 +33,6 @@ const config: Config = {
       src: '/analytics.js',
       async: true,
     },
-    // Add PostHog script - only in production
-    process.env.NODE_ENV === 'production' ? {
-      src: 'https://us.i.posthog.com/static/array.js',
-      async: true,
-      'data-api-key': 'phc_a721Zj2XX90dfUYDTwcuxWq4mQglrfYpJTJO4yXEa8A',
-    } : null,
   ].filter(Boolean),
 
   // Even if you don't use internationalization, you can use this field to set
@@ -55,6 +50,7 @@ const config: Config = {
   },
 
   plugins: [
+    [path.resolve(__dirname, 'src/plugins/posthog-plugin')],
     [
       '@docusaurus/plugin-client-redirects',
       {
