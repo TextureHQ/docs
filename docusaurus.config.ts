@@ -50,7 +50,7 @@ const config: Config = {
   },
 
   plugins: [
-    [path.resolve(__dirname, 'src/plugins/posthog-plugin')],
+    path.resolve(__dirname, 'src/plugins/posthog-plugin'),
     [
       '@docusaurus/plugin-client-redirects',
       {
