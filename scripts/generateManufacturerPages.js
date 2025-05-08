@@ -137,7 +137,9 @@ sidebar_position: 3
 
 ${logoHtml}
 
-${manufacturer.description_html || manufacturer.description || `${manufacturer.name} is a manufacturer of energy devices supported by Texture.`}
+${manufacturer.description_html 
+    ? `<div dangerouslySetInnerHTML={{ __html: \`${manufacturer.description_html.replace(/`/g, '\\`')}\` }} />`
+    : manufacturer.description || `${manufacturer.name} is a manufacturer of energy devices supported by Texture.`}
 
 ${manufacturer.website_url ? `**Website**: [${manufacturer.name} Website](${manufacturer.website_url})` : ''}
 
@@ -166,7 +168,9 @@ ${manufacturer.source ? `\n**Integration Method**: ${manufacturer.source === 'di
 ${manufacturer.documentation_html || manufacturer.documentation ? `
 ## Manufacturer Documentation
 
-${manufacturer.documentation_html || manufacturer.documentation}
+${manufacturer.documentation_html 
+  ? `<div dangerouslySetInnerHTML={{ __html: \`${manufacturer.documentation_html.replace(/`/g, '\\`')}\` }} />`
+  : manufacturer.documentation}
 ` : ''}
 
 `;
