@@ -24,8 +24,6 @@ FranklinWH is a manufacturer of energy devices supported by Texture.
 
 **Grid Services Support**: ✅ Supported
 
-**Integration Method**: 🔌 Direct API integration with the manufacturer
-
 ## Supported Device Types
 
 Batteries
@@ -33,6 +31,8 @@ Batteries
 ## Integration Details
 
 FranklinWH devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
+
+**Integration Method**: 🔌 Direct API integration with the manufacturer
 
 
 

@@ -155,9 +155,6 @@ ${manufacturer.website_url ? `**Website**: [${manufacturer.name} Website](${manu
     ? 'N/A (Not applicable for this device type)'
     : (manufacturer.supports_grid_services ? '✅ Supported' : '❌ Not supported')
 }
-\n**Integration Method**: ${manufacturer.source === 'direct' ? '🔌 Direct API integration with the manufacturer' : 
-  manufacturer.source === 'smartcar' ? '🚗 Integration via Smartcar partnership' : 
-  manufacturer.source ? manufacturer.source : '🔌 Direct API integration with the manufacturer'}
 
 ## Supported Device Types
 
@@ -166,6 +163,10 @@ ${deviceTypesList}
 ## Integration Details
 
 ${manufacturer.name} devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
+
+**Integration Method**: ${manufacturer.source === 'direct' ? '🔌 Direct API integration with the manufacturer' : 
+  manufacturer.source === 'smartcar' ? '🚗 Integration via Smartcar partnership' : 
+  manufacturer.source ? manufacturer.source : '🔌 Direct API integration with the manufacturer'}
 
 ${manufacturer.documentation_html || manufacturer.documentation ? `
 ## Manufacturer Documentation
