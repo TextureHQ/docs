@@ -1,0 +1,4937 @@
+[
+  {
+    "id": "6602ee130c3669c8ce19c0e6",
+    "slug": "alfa-romeo",
+    "name": "Alfa Romeo",
+    "logo": {
+      "id": "6602e84d0c3669c8ce19be5b",
+      "alt": "alfa-romeo-logo",
+      "filename": "Alfa Romeo-1.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 8053,
+      "width": 5263,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:22:53.964Z",
+      "updatedAt": "2024-03-26T15:23:26.375Z",
+      "url": "/logo/Alfa Romeo-1.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:47:31.243Z",
+    "updatedAt": "2024-06-18T18:23:49.459Z",
+    "icon": {
+      "id": "6671d09443849cb1f9bf0094",
+      "alt": "alfa-romeo-icon",
+      "filename": " Alfa Romeo Icon.png",
+      "mimeType": "image/png",
+      "filesize": 208394,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 40243,
+          "filename": " Alfa Romeo Icon-400x300.png",
+          "url": "/logo/ Alfa Romeo Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 120069,
+          "filename": " Alfa Romeo Icon-768x1024.png",
+          "url": "/logo/ Alfa Romeo Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 131528,
+          "filename": " Alfa Romeo Icon-1024x1024.png",
+          "url": "/logo/ Alfa Romeo Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-18T18:23:16.736Z",
+      "updatedAt": "2024-06-18T18:23:16.736Z",
+      "url": "/logo/ Alfa Romeo Icon.png"
+    },
+    "vector_icon": {
+      "id": "6671d05c43849cb1f9bf0085",
+      "alt": "alfa-romeo-icon",
+      "filename": " Alfa Romeo Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 8301,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-18T18:22:20.731Z",
+      "updatedAt": "2024-06-18T18:22:20.731Z",
+      "url": "/logo/ Alfa Romeo Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602ee320c3669c8ce19c0ff",
+    "slug": "audi",
+    "name": "Audi",
+    "logo": {
+      "id": "6602e8ac0c3669c8ce19be88",
+      "alt": "audi-logo",
+      "filename": "Audi.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2958,
+      "width": 5264,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:24:28.621Z",
+      "updatedAt": "2024-03-26T15:24:28.621Z",
+      "url": "/logo/Audi.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:48:02.339Z",
+    "updatedAt": "2024-06-25T18:55:12.773Z",
+    "icon": {
+      "id": "667b03f843849cb1f9ca3b9d",
+      "alt": "audi-logo-icon",
+      "filename": " Audi Icon.png",
+      "mimeType": "image/png",
+      "filesize": 158510,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 20170,
+          "filename": " Audi Icon-400x300.png",
+          "url": "/logo/ Audi Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 61476,
+          "filename": " Audi Icon-768x1024.png",
+          "url": "/logo/ Audi Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 70043,
+          "filename": " Audi Icon-1024x1024.png",
+          "url": "/logo/ Audi Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:52:56.134Z",
+      "updatedAt": "2024-06-25T17:52:56.134Z",
+      "url": "/logo/ Audi Icon.png"
+    },
+    "vector_icon": {
+      "id": "667aff8743849cb1f9ca33c4",
+      "alt": "audi-logo-vector-icon",
+      "filename": " Audi Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2017,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:33:59.699Z",
+      "updatedAt": "2024-06-25T17:33:59.699Z",
+      "url": "/logo/ Audi Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "65c40335e361450dffbb1b34",
+    "slug": "bmw",
+    "name": "BMW",
+    "logo": {
+      "id": "6602e7fe0c3669c8ce19be42",
+      "filename": "BMW-1.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3053,
+      "width": 5263,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:21:34.398Z",
+      "updatedAt": "2024-03-26T15:23:56.111Z",
+      "url": "/logo/BMW-1.svg",
+      "alt": "bmw-logo"
+    },
+    "createdAt": "2024-02-07T22:24:53.768Z",
+    "updatedAt": "2024-06-25T18:55:30.178Z",
+    "support_level": "production",
+    "icon": {
+      "id": "667b040343849cb1f9ca3bac",
+      "alt": "bmw-logo-icon",
+      "filename": " BMW Icon.png",
+      "mimeType": "image/png",
+      "filesize": 187298,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 29020,
+          "filename": " BMW Icon-400x300.png",
+          "url": "/logo/ BMW Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 88726,
+          "filename": " BMW Icon-768x1024.png",
+          "url": "/logo/ BMW Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 98973,
+          "filename": " BMW Icon-1024x1024.png",
+          "url": "/logo/ BMW Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:53:07.521Z",
+      "updatedAt": "2024-06-25T17:53:07.521Z",
+      "url": "/logo/ BMW Icon.png"
+    },
+    "vector_icon": {
+      "id": "667affa243849cb1f9ca33d3",
+      "alt": "bmw-logo-vector-icon",
+      "filename": " BMW Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3096,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:34:26.776Z",
+      "updatedAt": "2024-06-25T17:34:26.776Z",
+      "url": "/logo/ BMW Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602ee420c3669c8ce19c118",
+    "slug": "cadillac",
+    "name": "Cadillac",
+    "logo": {
+      "id": "6602e8c90c3669c8ce19be97",
+      "alt": "cadillac-logo",
+      "filename": "Cadillac.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2144,
+      "width": 5264,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:24:57.499Z",
+      "updatedAt": "2024-03-26T15:24:57.499Z",
+      "url": "/logo/Cadillac.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:48:18.905Z",
+    "updatedAt": "2024-06-25T18:55:46.135Z",
+    "icon": {
+      "id": "667b040f43849cb1f9ca3bbb",
+      "alt": "cadillac-logo-icon",
+      "filename": " Cadillac Icon.png",
+      "mimeType": "image/png",
+      "filesize": 145809,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 14100,
+          "filename": " Cadillac Icon-400x300.png",
+          "url": "/logo/ Cadillac Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 46271,
+          "filename": " Cadillac Icon-768x1024.png",
+          "url": "/logo/ Cadillac Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 54491,
+          "filename": " Cadillac Icon-1024x1024.png",
+          "url": "/logo/ Cadillac Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:53:19.875Z",
+      "updatedAt": "2024-06-25T17:53:19.875Z",
+      "url": "/logo/ Cadillac Icon.png"
+    },
+    "vector_icon": {
+      "id": "667affbe43849cb1f9ca33e6",
+      "alt": "cadillac-logo-vector-icon",
+      "filename": " Cadillac Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2434,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:34:54.125Z",
+      "updatedAt": "2024-06-25T17:34:54.125Z",
+      "url": "/logo/ Cadillac Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "668355c09b9a76094372b386",
+    "slug": "chargepoint",
+    "name": "ChargePoint",
+    "logo": {
+      "id": "668355909b9a76094372b33c",
+      "alt": "ChargePoint",
+      "filename": "ChargePoint Icon.png",
+      "mimeType": "image/png",
+      "filesize": 11191,
+      "width": 882,
+      "height": 882,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 13110,
+          "filename": "ChargePoint Icon-400x300.png",
+          "url": "/logo/ChargePoint Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 31746,
+          "filename": "ChargePoint Icon-768x1024.png",
+          "url": "/logo/ChargePoint Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 35015,
+          "filename": "ChargePoint Icon-1024x1024.png",
+          "url": "/logo/ChargePoint Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-07-02T01:19:12.167Z",
+      "updatedAt": "2024-07-02T01:19:12.167Z",
+      "url": "/logo/ChargePoint Icon.png"
+    },
+    "icon": {
+      "id": "668355909b9a76094372b33c",
+      "alt": "ChargePoint",
+      "filename": "ChargePoint Icon.png",
+      "mimeType": "image/png",
+      "filesize": 11191,
+      "width": 882,
+      "height": 882,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 13110,
+          "filename": "ChargePoint Icon-400x300.png",
+          "url": "/logo/ChargePoint Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 31746,
+          "filename": "ChargePoint Icon-768x1024.png",
+          "url": "/logo/ChargePoint Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 35015,
+          "filename": "ChargePoint Icon-1024x1024.png",
+          "url": "/logo/ChargePoint Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-07-02T01:19:12.167Z",
+      "updatedAt": "2024-07-02T01:19:12.167Z",
+      "url": "/logo/ChargePoint Icon.png"
+    },
+    "vector_icon": {
+      "id": "6683559d9b9a76094372b34b",
+      "alt": "ChargePoint",
+      "filename": "ChargePoint Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 40043,
+      "width": 1176,
+      "height": 1176,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-07-02T01:19:25.894Z",
+      "updatedAt": "2024-07-02T01:19:25.894Z",
+      "url": "/logo/ChargePoint Vector Icon.svg"
+    },
+    "support_level": "planned",
+    "createdAt": "2024-07-02T01:20:00.705Z",
+    "updatedAt": "2024-07-02T01:20:00.705Z",
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "charger"
+    ]
+  },
+  {
+    "id": "6602ee5e0c3669c8ce19c131",
+    "slug": "chevrolet",
+    "name": "Chevrolet",
+    "logo": {
+      "id": "6602e8e50c3669c8ce19bea6",
+      "alt": "chevrolet-logo",
+      "filename": "Chevrolet.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 432,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:25:25.528Z",
+      "updatedAt": "2024-03-26T15:25:25.528Z",
+      "url": "/logo/Chevrolet.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:48:46.587Z",
+    "updatedAt": "2024-06-25T18:59:00.165Z",
+    "icon": {
+      "id": "667b042943849cb1f9ca3bca",
+      "alt": "chevrolet-logo-icon",
+      "filename": " Chevrolet Icon.png",
+      "mimeType": "image/png",
+      "filesize": 130210,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 6587,
+          "filename": " Chevrolet Icon-400x300.png",
+          "url": "/logo/ Chevrolet Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 24577,
+          "filename": " Chevrolet Icon-768x1024.png",
+          "url": "/logo/ Chevrolet Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 30776,
+          "filename": " Chevrolet Icon-1024x1024.png",
+          "url": "/logo/ Chevrolet Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:53:45.726Z",
+      "updatedAt": "2024-06-25T17:53:45.726Z",
+      "url": "/logo/ Chevrolet Icon.png"
+    },
+    "vector_icon": {
+      "id": "667affce43849cb1f9ca3453",
+      "alt": "cheverolet-logo-vector-icon",
+      "filename": " Chevrolet Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 643,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:35:10.472Z",
+      "updatedAt": "2024-06-25T17:35:10.472Z",
+      "url": "/logo/ Chevrolet Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602ee7d0c3669c8ce19c14a",
+    "slug": "chrysler",
+    "name": "Chrysler",
+    "logo": {
+      "id": "6602e8fc0c3669c8ce19beb5",
+      "alt": "chrysler-logo",
+      "filename": "Chrysler.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 9376,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:25:48.314Z",
+      "updatedAt": "2024-03-26T15:25:48.314Z",
+      "url": "/logo/Chrysler.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:49:17.948Z",
+    "updatedAt": "2024-06-25T18:59:14.328Z",
+    "icon": {
+      "id": "667b044543849cb1f9ca3bdd",
+      "alt": "chrysler-logo-icon",
+      "filename": " Chrysler Icon.png",
+      "mimeType": "image/png",
+      "filesize": 143702,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 16399,
+          "filename": " Chrysler Icon-400x300.png",
+          "url": "/logo/ Chrysler Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 51713,
+          "filename": " Chrysler Icon-768x1024.png",
+          "url": "/logo/ Chrysler Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 59498,
+          "filename": " Chrysler Icon-1024x1024.png",
+          "url": "/logo/ Chrysler Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:54:13.526Z",
+      "updatedAt": "2024-06-25T17:54:13.526Z",
+      "url": "/logo/ Chrysler Icon.png"
+    },
+    "vector_icon": {
+      "id": "667affea43849cb1f9ca3477",
+      "alt": "chrysler-logo-vector-icon",
+      "filename": " Chrysler Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 9744,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:35:38.091Z",
+      "updatedAt": "2024-06-25T17:35:38.091Z",
+      "url": "/logo/ Chrysler Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602ee950c3669c8ce19c163",
+    "slug": "citroen",
+    "name": "Citroen",
+    "logo": {
+      "id": "6602e9100c3669c8ce19bec4",
+      "alt": "citroen-logo",
+      "filename": "CitroeÌn.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4251,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:26:08.356Z",
+      "updatedAt": "2024-03-26T15:26:08.356Z",
+      "url": "/logo/CitroeÌn.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:49:41.881Z",
+    "updatedAt": "2024-06-25T19:00:27.137Z",
+    "icon": {
+      "id": "667b045243849cb1f9ca3bec",
+      "alt": "citroen-logo-icon",
+      "filename": " Citroen Icon.png",
+      "mimeType": "image/png",
+      "filesize": 171862,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 22661,
+          "filename": " Citroen Icon-400x300.png",
+          "url": "/logo/ Citroen Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 73960,
+          "filename": " Citroen Icon-768x1024.png",
+          "url": "/logo/ Citroen Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 83009,
+          "filename": " Citroen Icon-1024x1024.png",
+          "url": "/logo/ Citroen Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:54:26.016Z",
+      "updatedAt": "2024-06-25T17:54:26.016Z",
+      "url": "/logo/ Citroen Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b000b43849cb1f9ca3486",
+      "alt": "citroen-logo-vector-icon",
+      "filename": " Citroen Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1147,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:36:11.446Z",
+      "updatedAt": "2024-06-25T17:36:11.446Z",
+      "url": "/logo/ Citroen Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602eea80c3669c8ce19c17c",
+    "slug": "cupra",
+    "name": "Cupra",
+    "logo": {
+      "id": "6602e93b0c3669c8ce19bed3",
+      "alt": "cupra-logo",
+      "filename": "Cupra.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3073,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:26:51.337Z",
+      "updatedAt": "2024-03-26T15:26:51.337Z",
+      "url": "/logo/Cupra.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:50:00.038Z",
+    "updatedAt": "2024-06-25T19:00:48.702Z",
+    "icon": {
+      "id": "667b045d43849cb1f9ca3bfb",
+      "alt": "cupra-logo-icon",
+      "filename": " Cupra Icon.png",
+      "mimeType": "image/png",
+      "filesize": 150885,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 13954,
+          "filename": " Cupra Icon-400x300.png",
+          "url": "/logo/ Cupra Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 49171,
+          "filename": " Cupra Icon-768x1024.png",
+          "url": "/logo/ Cupra Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 56788,
+          "filename": " Cupra Icon-1024x1024.png",
+          "url": "/logo/ Cupra Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:54:37.834Z",
+      "updatedAt": "2024-06-25T17:54:37.834Z",
+      "url": "/logo/ Cupra Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b002643849cb1f9ca3495",
+      "alt": "cupra-logo-vector-icon",
+      "filename": " Cupra Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2081,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:36:38.071Z",
+      "updatedAt": "2024-06-25T17:36:38.071Z",
+      "url": "/logo/ Cupra Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602eebb0c3669c8ce19c198",
+    "slug": "daikin",
+    "name": "Daikin",
+    "logo": {
+      "id": "6602e9560c3669c8ce19bee2",
+      "alt": "daikin-logo",
+      "filename": "Daikin.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1394,
+      "width": 5263,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:27:18.829Z",
+      "updatedAt": "2024-03-26T15:27:18.829Z",
+      "url": "/logo/Daikin.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:50:19.182Z",
+    "updatedAt": "2025-04-24T11:26:47.923Z",
+    "icon": {
+      "id": "667b047d43849cb1f9ca3c5a",
+      "alt": "daikin-logo-icon",
+      "filename": "Daikin Icon.png",
+      "mimeType": "image/png",
+      "filesize": 1265228,
+      "width": 7500,
+      "height": 7500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 15888,
+          "filename": "Daikin Icon-400x300.png",
+          "url": "/logo/Daikin Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 55354,
+          "filename": "Daikin Icon-768x1024.png",
+          "url": "/logo/Daikin Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 64851,
+          "filename": "Daikin Icon-1024x1024.png",
+          "url": "/logo/Daikin Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:55:09.035Z",
+      "updatedAt": "2024-06-25T17:55:09.035Z",
+      "url": "/logo/Daikin Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b02fe43849cb1f9ca3af9",
+      "alt": "daikin-logo-vector-icon",
+      "filename": "Daikin Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1851,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:48:46.376Z",
+      "updatedAt": "2024-06-25T17:48:46.376Z",
+      "url": "/logo/Daikin Vector Icon.svg"
+    },
+    "is_featured_on_home_page": true,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "thermostat"
+    ]
+  },
+  {
+    "id": "6602eed50c3669c8ce19c1b4",
+    "slug": "ds",
+    "name": "DS Automobiles",
+    "logo": {
+      "id": "6602e96e0c3669c8ce19bef1",
+      "alt": "ds-automobiles-logo",
+      "filename": "DS Automobiles.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2609,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:27:42.272Z",
+      "updatedAt": "2024-03-26T15:27:42.272Z",
+      "url": "/logo/DS Automobiles.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:50:45.574Z",
+    "updatedAt": "2024-11-01T14:21:49.014Z",
+    "icon": {
+      "id": "667b048e43849cb1f9ca3c93",
+      "alt": "ds-logo-icon",
+      "filename": " DS Icon.png",
+      "mimeType": "image/png",
+      "filesize": 167873,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 17739,
+          "filename": " DS Icon-400x300.png",
+          "url": "/logo/ DS Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 64943,
+          "filename": " DS Icon-768x1024.png",
+          "url": "/logo/ DS Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 73865,
+          "filename": " DS Icon-1024x1024.png",
+          "url": "/logo/ DS Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:55:26.442Z",
+      "updatedAt": "2024-06-25T17:55:26.442Z",
+      "url": "/logo/ DS Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b004043849cb1f9ca3514",
+      "alt": "ds-logo-vector-icon",
+      "filename": " DS Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2830,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:37:04.578Z",
+      "updatedAt": "2024-06-25T17:37:04.578Z",
+      "url": "/logo/ DS Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602eeec0c3669c8ce19c1d9",
+    "slug": "ecobee",
+    "name": "Ecobee",
+    "logo": {
+      "id": "6602e9870c3669c8ce19bf00",
+      "alt": "ecobee-logo",
+      "filename": "Ecobee.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 5298,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:28:07.280Z",
+      "updatedAt": "2024-03-26T15:28:07.280Z",
+      "url": "/logo/Ecobee.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:51:08.038Z",
+    "updatedAt": "2025-05-07T13:58:27.745Z",
+    "icon": {
+      "id": "667b049a43849cb1f9ca3ca2",
+      "alt": "ecobee-logo-icon",
+      "filename": " Ecobee Icon.png",
+      "mimeType": "image/png",
+      "filesize": 156336,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 13713,
+          "filename": " Ecobee Icon-400x300.png",
+          "url": "/logo/ Ecobee Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 49132,
+          "filename": " Ecobee Icon-768x1024.png",
+          "url": "/logo/ Ecobee Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 56033,
+          "filename": " Ecobee Icon-1024x1024.png",
+          "url": "/logo/ Ecobee Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:55:38.969Z",
+      "updatedAt": "2024-06-25T17:55:38.969Z",
+      "url": "/logo/ Ecobee Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b005843849cb1f9ca3523",
+      "alt": "ecobee-logo-vector-icon",
+      "filename": " Ecobee Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1214,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:37:28.421Z",
+      "updatedAt": "2024-06-25T17:37:28.421Z",
+      "url": "/logo/ Ecobee Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "thermostat"
+    ]
+  },
+  {
+    "id": "67f412b70e797c99f9375da8",
+    "slug": "eg4-electronics",
+    "name": "EG4 Electronics",
+    "logo": {
+      "id": "67f40d740e797c99f936b694",
+      "alt": "EG4 Electronics logo",
+      "filename": "EG4 Electronics-1.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 6424,
+      "width": 5200,
+      "height": 1400,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:37:56.634Z",
+      "updatedAt": "2025-04-07T17:37:56.634Z",
+      "url": "/logo/EG4 Electronics-1.svg"
+    },
+    "icon": {
+      "id": "67f40cb20e797c99f93686b7",
+      "alt": "EG4 Vector Icon",
+      "filename": "EG4 Vector Icon.png",
+      "mimeType": "image/png",
+      "filesize": 166611,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 18864,
+          "filename": "EG4 Vector Icon-400x300.png",
+          "url": "/logo/EG4 Vector Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 61627,
+          "filename": "EG4 Vector Icon-768x1024.png",
+          "url": "/logo/EG4 Vector Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 69631,
+          "filename": "EG4 Vector Icon-1024x1024.png",
+          "url": "/logo/EG4 Vector Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2025-04-07T17:34:42.793Z",
+      "updatedAt": "2025-04-07T17:34:42.793Z",
+      "url": "/logo/EG4 Vector Icon.png"
+    },
+    "vector_icon": {
+      "id": "67f40c800e797c99f93680c3",
+      "alt": "EG4 Icon",
+      "filename": "EG4 Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2833,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:33:52.703Z",
+      "updatedAt": "2025-04-07T17:33:52.703Z",
+      "url": "/logo/EG4 Vector Icon.svg"
+    },
+    "support_level": "development",
+    "createdAt": "2025-04-07T18:00:23.911Z",
+    "updatedAt": "2025-05-06T17:50:23.802Z",
+    "supports_grid_services": true,
+    "is_featured_on_home_page": true,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "battery"
+    ]
+  },
+  {
+    "id": "67f411750e797c99f93732cd",
+    "slug": "emporia",
+    "name": "Emporia",
+    "logo": {
+      "id": "67f40e5f0e797c99f936ddea",
+      "alt": "Emporia logo",
+      "filename": "Emporia.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 9775,
+      "width": 5200,
+      "height": 1400,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:41:51.330Z",
+      "updatedAt": "2025-04-07T17:41:51.330Z",
+      "url": "/logo/Emporia.svg"
+    },
+    "icon": {
+      "id": "67f40b7e0e797c99f9363730",
+      "alt": "Emporia logo",
+      "filename": "Emporia Vector Icon.png",
+      "mimeType": "image/png",
+      "filesize": 151572,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": "/logo/Emporia Vector Icon-400x300.png",
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 15615,
+          "filename": "Emporia Vector Icon-400x300.png"
+        },
+        "card": {
+          "url": "/logo/Emporia Vector Icon-768x1024.png",
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 48973,
+          "filename": "Emporia Vector Icon-768x1024.png"
+        },
+        "tablet": {
+          "url": "/logo/Emporia Vector Icon-1024x1024.png",
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 57491,
+          "filename": "Emporia Vector Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2025-04-07T17:29:34.981Z",
+      "updatedAt": "2025-04-07T17:29:45.325Z",
+      "url": "/logo/Emporia Vector Icon.png"
+    },
+    "vector_icon": {
+      "id": "67f40a320e797c99f93611ac",
+      "alt": "Emporia logo",
+      "filename": "Emporia Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 9938,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:24:02.749Z",
+      "updatedAt": "2025-04-07T17:29:03.183Z",
+      "url": "/logo/Emporia Vector Icon.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2025-04-07T17:55:01.698Z",
+    "updatedAt": "2025-05-06T17:50:32.877Z",
+    "supports_grid_services": true,
+    "is_featured_on_home_page": true,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "charger",
+      "battery"
+    ]
+  },
+  {
+    "id": "6602ef080c3669c8ce19c1f5",
+    "slug": "enelx",
+    "name": "Enel X",
+    "logo": {
+      "id": "6602e9980c3669c8ce19bf0f",
+      "alt": "enel-x-logo",
+      "filename": "Enel X.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1774,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:28:24.843Z",
+      "updatedAt": "2024-03-26T15:28:31.482Z",
+      "url": "/logo/Enel X.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:51:36.284Z",
+    "updatedAt": "2024-06-25T19:02:13.580Z",
+    "icon": {
+      "id": "667b04b243849cb1f9ca3d24",
+      "alt": "enel-x-logo-icon",
+      "filename": " Enel X Icon.png",
+      "mimeType": "image/png",
+      "filesize": 146418,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 14146,
+          "filename": " Enel X Icon-400x300.png",
+          "url": "/logo/ Enel X Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 49189,
+          "filename": " Enel X Icon-768x1024.png",
+          "url": "/logo/ Enel X Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 56049,
+          "filename": " Enel X Icon-1024x1024.png",
+          "url": "/logo/ Enel X Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:56:02.156Z",
+      "updatedAt": "2024-06-25T17:56:02.156Z",
+      "url": "/logo/ Enel X Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b007643849cb1f9ca3532",
+      "alt": "enel-x-logo-vector-icon",
+      "filename": " Enel X Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 761,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:37:58.178Z",
+      "updatedAt": "2024-06-25T17:37:58.178Z",
+      "url": "/logo/ Enel X Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "charger"
+    ]
+  },
+  {
+    "id": "6602ef1f0c3669c8ce19c211",
+    "slug": "enphase",
+    "name": "Enphase",
+    "logo": {
+      "id": "6602e9b20c3669c8ce19bf24",
+      "alt": "enphase-logo",
+      "filename": "Enphase.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 7064,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:28:50.108Z",
+      "updatedAt": "2024-03-26T15:28:50.108Z",
+      "url": "/logo/Enphase.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:51:59.118Z",
+    "updatedAt": "2025-04-24T11:20:59.752Z",
+    "icon": {
+      "id": "667b04c543849cb1f9ca3d33",
+      "alt": "enphase-logo-icon",
+      "filename": " Enphase Icon.png",
+      "mimeType": "image/png",
+      "filesize": 147142,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 14142,
+          "filename": " Enphase Icon-400x300.png",
+          "url": "/logo/ Enphase Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 48245,
+          "filename": " Enphase Icon-768x1024.png",
+          "url": "/logo/ Enphase Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 54981,
+          "filename": " Enphase Icon-1024x1024.png",
+          "url": "/logo/ Enphase Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:56:21.773Z",
+      "updatedAt": "2024-06-25T17:56:21.773Z",
+      "url": "/logo/ Enphase Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b008643849cb1f9ca3541",
+      "alt": "enphase-logo-vector-icon",
+      "filename": " Enphase Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2056,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:38:14.274Z",
+      "updatedAt": "2024-06-25T17:38:14.274Z",
+      "url": "/logo/ Enphase Vector Icon.svg"
+    },
+    "supports_grid_services": true,
+    "is_featured_on_home_page": true,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "battery",
+      "inverter"
+    ]
+  },
+  {
+    "id": "6602ef2f0c3669c8ce19c230",
+    "slug": "fiat",
+    "name": "Fiat",
+    "logo": {
+      "id": "6602e9d20c3669c8ce19bf38",
+      "alt": "fiat-logo",
+      "filename": "Fiat.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 792,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:29:22.894Z",
+      "updatedAt": "2024-03-26T15:29:22.894Z",
+      "url": "/logo/Fiat.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:52:15.577Z",
+    "updatedAt": "2024-06-25T19:02:50.013Z",
+    "icon": {
+      "id": "667b04d143849cb1f9ca3d42",
+      "alt": "fiat-logo-icon",
+      "filename": " Fiat Icon.png",
+      "mimeType": "image/png",
+      "filesize": 152134,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 15538,
+          "filename": " Fiat Icon-400x300.png",
+          "url": "/logo/ Fiat Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 47590,
+          "filename": " Fiat Icon-768x1024.png",
+          "url": "/logo/ Fiat Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 56352,
+          "filename": " Fiat Icon-1024x1024.png",
+          "url": "/logo/ Fiat Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:56:33.793Z",
+      "updatedAt": "2024-06-25T17:56:33.793Z",
+      "url": "/logo/ Fiat Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b009543849cb1f9ca3550",
+      "alt": "fiat-logo-vector-icon",
+      "filename": " Fiat Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1181,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:38:29.898Z",
+      "updatedAt": "2024-06-25T17:38:29.898Z",
+      "url": "/logo/ Fiat Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602ef410c3669c8ce19c24f",
+    "slug": "ford",
+    "name": "Ford",
+    "logo": {
+      "id": "6602e9e20c3669c8ce19bf47",
+      "alt": "ford-logo",
+      "filename": "Ford.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 7209,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:29:38.818Z",
+      "updatedAt": "2024-03-26T15:29:38.818Z",
+      "url": "/logo/Ford.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:52:33.824Z",
+    "updatedAt": "2024-06-25T19:03:04.087Z",
+    "icon": {
+      "id": "667b04df43849cb1f9ca3d51",
+      "alt": "ford-logo-icon",
+      "filename": " Ford Icon.png",
+      "mimeType": "image/png",
+      "filesize": 167680,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 28192,
+          "filename": " Ford Icon-400x300.png",
+          "url": "/logo/ Ford Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 82222,
+          "filename": " Ford Icon-768x1024.png",
+          "url": "/logo/ Ford Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 93840,
+          "filename": " Ford Icon-1024x1024.png",
+          "url": "/logo/ Ford Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:56:47.343Z",
+      "updatedAt": "2024-06-25T17:56:47.343Z",
+      "url": "/logo/ Ford Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b00d043849cb1f9ca3563",
+      "alt": "ford-logo-vector-icon",
+      "filename": " Ford Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 8679,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:39:28.750Z",
+      "updatedAt": "2024-06-25T17:39:28.750Z",
+      "url": "/logo/ Ford Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602ef610c3669c8ce19c26b",
+    "slug": "franklinwh",
+    "name": "FranklinWH",
+    "logo": {
+      "id": "6602e9ff0c3669c8ce19bf56",
+      "alt": "franklinwh-logo",
+      "filename": "FranklinWH.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 31598,
+      "width": 5334,
+      "height": 1116,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:30:07.749Z",
+      "updatedAt": "2024-03-26T15:30:07.749Z",
+      "url": "/logo/FranklinWH.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:53:05.485Z",
+    "updatedAt": "2025-04-24T11:26:23.426Z",
+    "icon": {
+      "id": "667b053243849cb1f9ca3d60",
+      "alt": "franklinwh-logo-icon",
+      "filename": "FranklinWH Icon.png",
+      "mimeType": "image/png",
+      "filesize": 1021382,
+      "width": 7500,
+      "height": 7500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 10780,
+          "filename": "FranklinWH Icon-400x300.png",
+          "url": "/logo/FranklinWH Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 35818,
+          "filename": "FranklinWH Icon-768x1024.png",
+          "url": "/logo/FranklinWH Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 43486,
+          "filename": "FranklinWH Icon-1024x1024.png",
+          "url": "/logo/FranklinWH Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:58:10.430Z",
+      "updatedAt": "2024-06-25T17:58:10.430Z",
+      "url": "/logo/FranklinWH Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b030a43849cb1f9ca3b10",
+      "alt": "franklinwh-logo-vector-icon",
+      "filename": "FranklinWH Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3395,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:48:58.914Z",
+      "updatedAt": "2024-06-25T17:48:58.914Z",
+      "url": "/logo/FranklinWH Vector Icon.svg"
+    },
+    "supports_grid_services": true,
+    "is_featured_on_home_page": true,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "battery"
+    ]
+  },
+  {
+    "id": "66cf780a248284b59a82b93d",
+    "slug": "generac",
+    "name": "Generac",
+    "logo": {
+      "id": "66cf7750248284b59a82b8a1",
+      "alt": "Generac Icon",
+      "filename": "Generac Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 14336,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-08-28T19:15:28.532Z",
+      "updatedAt": "2024-08-28T19:15:28.532Z",
+      "url": "/logo/Generac Vector Icon.svg"
+    },
+    "icon": {
+      "id": "66cf77d0248284b59a82b8e4",
+      "alt": "Generac Icon",
+      "filename": "Generac Icon.png",
+      "mimeType": "image/png",
+      "filesize": 236735,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 23639,
+          "filename": "Generac Icon-400x300.png",
+          "url": "/logo/Generac Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 90648,
+          "filename": "Generac Icon-768x1024.png",
+          "url": "/logo/Generac Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 100346,
+          "filename": "Generac Icon-1024x1024.png",
+          "url": "/logo/Generac Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-08-28T19:17:36.520Z",
+      "updatedAt": "2024-08-28T19:17:36.520Z",
+      "url": "/logo/Generac Icon.png"
+    },
+    "vector_icon": {
+      "id": "66cf7750248284b59a82b8a1",
+      "alt": "Generac Icon",
+      "filename": "Generac Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 14336,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-08-28T19:15:28.532Z",
+      "updatedAt": "2024-08-28T19:15:28.532Z",
+      "url": "/logo/Generac Vector Icon.svg"
+    },
+    "support_level": "development",
+    "supports_grid_services": true,
+    "createdAt": "2024-08-28T19:18:34.300Z",
+    "updatedAt": "2024-08-28T19:18:34.300Z",
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "inverter",
+      "battery"
+    ]
+  },
+  {
+    "id": "6602ef7c0c3669c8ce19c287",
+    "slug": "google-nest",
+    "name": "Google Nest",
+    "logo": {
+      "id": "6602ea290c3669c8ce19bf65",
+      "alt": "google-nest-logo",
+      "filename": "Google Nest.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3529,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:30:49.726Z",
+      "updatedAt": "2024-03-26T15:30:49.726Z",
+      "url": "/logo/Google Nest.svg"
+    },
+    "support_level": "blocked",
+    "createdAt": "2024-03-26T15:53:32.283Z",
+    "updatedAt": "2025-04-16T15:58:02.189Z",
+    "icon": {
+      "id": "667b05e043849cb1f9ca407c",
+      "alt": "nest-logo-icon",
+      "filename": " Nest Icon.png",
+      "mimeType": "image/png",
+      "filesize": 177071,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 22395,
+          "filename": " Nest Icon-400x300.png",
+          "url": "/logo/ Nest Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 70854,
+          "filename": " Nest Icon-768x1024.png",
+          "url": "/logo/ Nest Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 78823,
+          "filename": " Nest Icon-1024x1024.png",
+          "url": "/logo/ Nest Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:01:04.748Z",
+      "updatedAt": "2024-06-25T18:01:04.748Z",
+      "url": "/logo/ Nest Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b01b143849cb1f9ca3670",
+      "alt": "nest-logo-vector-icon",
+      "filename": " Nest Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3712,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:43:13.935Z",
+      "updatedAt": "2024-06-25T17:43:13.935Z",
+      "url": "/logo/ Nest Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "thermostat"
+    ]
+  },
+  {
+    "id": "6602ef910c3669c8ce19c2a9",
+    "slug": "honeywell",
+    "name": "Honeywell",
+    "logo": {
+      "id": "6602ea400c3669c8ce19bf74",
+      "alt": "honeywell-logo",
+      "filename": "Honeywell.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3055,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:31:12.887Z",
+      "updatedAt": "2024-03-26T15:31:12.887Z",
+      "url": "/logo/Honeywell.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:53:53.436Z",
+    "updatedAt": "2024-06-25T19:05:26.179Z",
+    "icon": {
+      "id": "667b053f43849cb1f9ca3d6f",
+      "alt": "honeywell-logo-icon",
+      "filename": " Honeywell Icon.png",
+      "mimeType": "image/png",
+      "filesize": 123049,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 4306,
+          "filename": " Honeywell Icon-400x300.png",
+          "url": "/logo/ Honeywell Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 21318,
+          "filename": " Honeywell Icon-768x1024.png",
+          "url": "/logo/ Honeywell Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 29045,
+          "filename": " Honeywell Icon-1024x1024.png",
+          "url": "/logo/ Honeywell Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:58:23.545Z",
+      "updatedAt": "2024-06-25T17:58:23.545Z",
+      "url": "/logo/ Honeywell Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b00e943849cb1f9ca3576",
+      "alt": "honeywell-logo-vector-icon",
+      "filename": " Honeywell Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 512,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:39:53.550Z",
+      "updatedAt": "2024-06-25T17:39:53.550Z",
+      "url": "/logo/ Honeywell Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "thermostat"
+    ]
+  },
+  {
+    "id": "6602efa80c3669c8ce19c2cb",
+    "slug": "hyundai",
+    "name": "Hyundai",
+    "logo": {
+      "id": "6602ea550c3669c8ce19bf83",
+      "alt": "hyundai-logo",
+      "filename": "Hyundai.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3311,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:31:33.651Z",
+      "updatedAt": "2024-03-26T15:31:33.651Z",
+      "url": "/logo/Hyundai.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:54:16.139Z",
+    "updatedAt": "2024-06-25T19:05:45.809Z",
+    "icon": {
+      "id": "667b054b43849cb1f9ca3d7e",
+      "alt": "hyundai-logo-icon",
+      "filename": " Hyundai Icon.png",
+      "mimeType": "image/png",
+      "filesize": 153698,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 20774,
+          "filename": " Hyundai Icon-400x300.png",
+          "url": "/logo/ Hyundai Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 64203,
+          "filename": " Hyundai Icon-768x1024.png",
+          "url": "/logo/ Hyundai Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 72855,
+          "filename": " Hyundai Icon-1024x1024.png",
+          "url": "/logo/ Hyundai Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:58:35.883Z",
+      "updatedAt": "2024-06-25T17:58:35.883Z",
+      "url": "/logo/ Hyundai Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b00fa43849cb1f9ca35d5",
+      "alt": "hyundai-logo-vector-icon",
+      "filename": " Hyundai Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2504,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:40:10.080Z",
+      "updatedAt": "2024-06-25T17:40:10.080Z",
+      "url": "/logo/ Hyundai Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6602efbd0c3669c8ce19c2ea",
+    "slug": "jaguar",
+    "name": "Jaguar",
+    "logo": {
+      "id": "6602ea670c3669c8ce19bf92",
+      "alt": "jaguar-logo",
+      "filename": "Jaguar.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3372,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:31:51.039Z",
+      "updatedAt": "2024-03-26T15:31:51.039Z",
+      "url": "/logo/Jaguar.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:54:37.806Z",
+    "updatedAt": "2024-06-25T19:06:03.620Z",
+    "icon": {
+      "id": "667b055943849cb1f9ca3d8d",
+      "alt": "jaguar-logo-icon",
+      "filename": " Jaguar Icon.png",
+      "mimeType": "image/png",
+      "filesize": 139187,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 9682,
+          "filename": " Jaguar Icon-400x300.png",
+          "url": "/logo/ Jaguar Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 31269,
+          "filename": " Jaguar Icon-768x1024.png",
+          "url": "/logo/ Jaguar Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 38420,
+          "filename": " Jaguar Icon-1024x1024.png",
+          "url": "/logo/ Jaguar Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:58:49.639Z",
+      "updatedAt": "2024-06-25T17:58:49.639Z",
+      "url": "/logo/ Jaguar Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b011943849cb1f9ca3607",
+      "alt": "jaguar-logo-vector-icon",
+      "filename": " Jaguar Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3956,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:40:41.200Z",
+      "updatedAt": "2024-06-25T17:40:41.200Z",
+      "url": "/logo/ Jaguar Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "662839092433e1e272107a76",
+    "slug": "jeep",
+    "name": "Jeep",
+    "logo": {
+      "id": "662838da2433e1e272107a4d",
+      "alt": "jeep-logo",
+      "filename": "Jeep.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1832,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-04-23T22:40:26.636Z",
+      "updatedAt": "2024-04-23T22:40:26.636Z",
+      "url": "/logo/Jeep.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:41:13.507Z",
+    "updatedAt": "2024-06-25T19:07:43.606Z",
+    "icon": {
+      "id": "667afd1e43849cb1f9ca2edb",
+      "alt": "jeep-logo-icon",
+      "filename": " Jeep Icon.png",
+      "mimeType": "image/png",
+      "filesize": 144338,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 12181,
+          "filename": " Jeep Icon-400x300.png",
+          "url": "/logo/ Jeep Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 41542,
+          "filename": " Jeep Icon-768x1024.png",
+          "url": "/logo/ Jeep Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 48757,
+          "filename": " Jeep Icon-1024x1024.png",
+          "url": "/logo/ Jeep Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:23:42.620Z",
+      "updatedAt": "2024-06-25T17:23:42.620Z",
+      "url": "/logo/ Jeep Icon.png"
+    },
+    "vector_icon": {
+      "id": "667afd3143849cb1f9ca2eee",
+      "alt": "jeep-logo-vector-icon",
+      "filename": " Jeep Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2195,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:24:01.008Z",
+      "updatedAt": "2024-06-25T19:07:24.436Z",
+      "url": "/logo/ Jeep Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282cb82433e1e272107780",
+    "slug": "kia",
+    "name": "Kia",
+    "logo": {
+      "id": "6602ea780c3669c8ce19bfa1",
+      "alt": "kia-logo",
+      "filename": "Kia.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1817,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:32:08.269Z",
+      "updatedAt": "2024-03-26T15:32:08.269Z",
+      "url": "/logo/Kia.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:48:40.519Z",
+    "updatedAt": "2024-06-25T19:08:13.765Z",
+    "icon": {
+      "id": "667b056843849cb1f9ca3da0",
+      "alt": "kia-logo-icon",
+      "filename": " Kia Icon.png",
+      "mimeType": "image/png",
+      "filesize": 139751,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 10524,
+          "filename": " Kia Icon-400x300.png",
+          "url": "/logo/ Kia Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 37292,
+          "filename": " Kia Icon-768x1024.png",
+          "url": "/logo/ Kia Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 44699,
+          "filename": " Kia Icon-1024x1024.png",
+          "url": "/logo/ Kia Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:59:04.649Z",
+      "updatedAt": "2024-06-25T17:59:04.649Z",
+      "url": "/logo/ Kia Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b013d43849cb1f9ca3616",
+      "alt": "kia-logo-vector-icon",
+      "filename": " Kia Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2189,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:41:17.816Z",
+      "updatedAt": "2024-06-25T17:41:17.816Z",
+      "url": "/logo/ Kia Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282cd12433e1e27210779f",
+    "slug": "land-rover",
+    "name": "Land Rover",
+    "logo": {
+      "id": "6602ea8b0c3669c8ce19bfb0",
+      "alt": "land-rover-logo",
+      "filename": "Land Rover.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 5490,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:32:27.856Z",
+      "updatedAt": "2024-03-26T15:32:27.856Z",
+      "url": "/logo/Land Rover.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:49:05.170Z",
+    "updatedAt": "2024-06-25T19:08:37.642Z",
+    "icon": {
+      "id": "667b058543849cb1f9ca3db3",
+      "alt": "land-rover-logo-icon",
+      "filename": " Land Rover Icon.png",
+      "mimeType": "image/png",
+      "filesize": 180819,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 29734,
+          "filename": " Land Rover Icon-400x300.png",
+          "url": "/logo/ Land Rover Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 93119,
+          "filename": " Land Rover Icon-768x1024.png",
+          "url": "/logo/ Land Rover Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 104325,
+          "filename": " Land Rover Icon-1024x1024.png",
+          "url": "/logo/ Land Rover Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:59:33.304Z",
+      "updatedAt": "2024-06-25T17:59:33.304Z",
+      "url": "/logo/ Land Rover Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b014843849cb1f9ca3625",
+      "alt": "land-rover-logo-vector-icon",
+      "filename": " Land Rover Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 5841,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:41:28.854Z",
+      "updatedAt": "2024-06-25T17:41:28.854Z",
+      "url": "/logo/ Land Rover Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282cec2433e1e2721077be",
+    "slug": "lexus",
+    "name": "Lexus",
+    "logo": {
+      "id": "6602ea9d0c3669c8ce19bfbf",
+      "alt": "lexus-logo",
+      "filename": "Lexus.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2490,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:32:45.137Z",
+      "updatedAt": "2024-03-26T15:32:45.137Z",
+      "url": "/logo/Lexus.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:49:32.305Z",
+    "updatedAt": "2024-06-25T19:08:52.351Z",
+    "icon": {
+      "id": "667b059243849cb1f9ca3dc2",
+      "alt": "lexus-logo-icon",
+      "filename": " Lexus Icon.png",
+      "mimeType": "image/png",
+      "filesize": 153990,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 16017,
+          "filename": " Lexus Icon-400x300.png",
+          "url": "/logo/ Lexus Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 54809,
+          "filename": " Lexus Icon-768x1024.png",
+          "url": "/logo/ Lexus Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 62582,
+          "filename": " Lexus Icon-1024x1024.png",
+          "url": "/logo/ Lexus Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:59:46.823Z",
+      "updatedAt": "2024-06-25T17:59:46.823Z",
+      "url": "/logo/ Lexus Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b015243849cb1f9ca3634",
+      "alt": "lexus-logo-vector-icon",
+      "filename": " Lexus Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1572,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:41:38.953Z",
+      "updatedAt": "2024-06-25T17:41:38.953Z",
+      "url": "/logo/ Lexus Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282d012433e1e2721077dd",
+    "slug": "lincoln",
+    "name": "Lincoln",
+    "logo": {
+      "id": "6602eab30c3669c8ce19bfce",
+      "alt": "lincoln-logo",
+      "filename": "Lincoln.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 6309,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:33:07.442Z",
+      "updatedAt": "2024-03-26T15:33:07.442Z",
+      "url": "/logo/Lincoln.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:49:53.491Z",
+    "updatedAt": "2024-06-25T19:09:16.649Z",
+    "icon": {
+      "id": "667b059f43849cb1f9ca3dd1",
+      "alt": "lincoln-logo-icon",
+      "filename": " Lincoln Icon.png",
+      "mimeType": "image/png",
+      "filesize": 158794,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 16173,
+          "filename": " Lincoln Icon-400x300.png",
+          "url": "/logo/ Lincoln Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 56554,
+          "filename": " Lincoln Icon-768x1024.png",
+          "url": "/logo/ Lincoln Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 63834,
+          "filename": " Lincoln Icon-1024x1024.png",
+          "url": "/logo/ Lincoln Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:59:59.502Z",
+      "updatedAt": "2024-06-25T17:59:59.502Z",
+      "url": "/logo/ Lincoln Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b016143849cb1f9ca3643",
+      "alt": "lincoln-logo-vector-icon",
+      "filename": " Lincoln Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1128,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:41:53.067Z",
+      "updatedAt": "2024-06-25T17:41:53.067Z",
+      "url": "/logo/ Lincoln Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282d232433e1e2721077fc",
+    "slug": "mercedes-benz",
+    "name": "Mercedes Benz",
+    "logo": {
+      "id": "6602eb080c3669c8ce19bfdd",
+      "alt": "mercedes-benz-logo",
+      "filename": "Mercedes-Benz.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 18643,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:34:32.872Z",
+      "updatedAt": "2024-03-26T15:34:32.872Z",
+      "url": "/logo/Mercedes-Benz.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:50:27.207Z",
+    "updatedAt": "2024-06-25T19:09:39.245Z",
+    "icon": {
+      "id": "667b05b043849cb1f9ca3fb5",
+      "alt": "mercedes-benz-logo-icon",
+      "filename": " Mercedes-Benz Icon.png",
+      "mimeType": "image/png",
+      "filesize": 167924,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 19158,
+          "filename": " Mercedes-Benz Icon-400x300.png",
+          "url": "/logo/ Mercedes-Benz Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 65083,
+          "filename": " Mercedes-Benz Icon-768x1024.png",
+          "url": "/logo/ Mercedes-Benz Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 74461,
+          "filename": " Mercedes-Benz Icon-1024x1024.png",
+          "url": "/logo/ Mercedes-Benz Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:00:16.306Z",
+      "updatedAt": "2024-06-25T18:00:16.306Z",
+      "url": "/logo/ Mercedes-Benz Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b019943849cb1f9ca3652",
+      "alt": "mercedes-benz-logo-vector-icon",
+      "filename": " Mercedes-Benz Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1117,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:42:49.466Z",
+      "updatedAt": "2024-06-25T17:42:49.466Z",
+      "url": "/logo/ Mercedes-Benz Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282d352433e1e27210781b",
+    "slug": "mini",
+    "name": "Mini",
+    "logo": {
+      "id": "6602eb160c3669c8ce19bfec",
+      "alt": "mini-logo",
+      "filename": "Mini.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2341,
+      "width": 5263,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:34:46.917Z",
+      "updatedAt": "2024-03-26T15:34:46.917Z",
+      "url": "/logo/Mini.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:50:45.220Z",
+    "updatedAt": "2024-06-25T19:10:18.331Z",
+    "icon": {
+      "id": "667b05be43849cb1f9ca406d",
+      "alt": "mini-logo-icon",
+      "filename": " Mini Icon.png",
+      "mimeType": "image/png",
+      "filesize": 150657,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 13577,
+          "filename": " Mini Icon-400x300.png",
+          "url": "/logo/ Mini Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 44963,
+          "filename": " Mini Icon-768x1024.png",
+          "url": "/logo/ Mini Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 52596,
+          "filename": " Mini Icon-1024x1024.png",
+          "url": "/logo/ Mini Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:00:30.544Z",
+      "updatedAt": "2024-06-25T18:00:30.544Z",
+      "url": "/logo/ Mini Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b01a643849cb1f9ca3661",
+      "alt": "mini-logo-vector-icon",
+      "filename": " Mini Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2114,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:43:02.033Z",
+      "updatedAt": "2024-06-25T17:43:02.033Z",
+      "url": "/logo/ Mini Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282d452433e1e27210783a",
+    "slug": "nissan",
+    "name": "Nissan",
+    "logo": {
+      "id": "6602eb260c3669c8ce19bffb",
+      "alt": "nissan-logo",
+      "filename": "Nissan.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3105,
+      "width": 5264,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:35:02.697Z",
+      "updatedAt": "2024-03-26T15:35:02.697Z",
+      "url": "/logo/Nissan.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:51:01.747Z",
+    "updatedAt": "2024-06-25T19:10:33.592Z",
+    "icon": {
+      "id": "667b05ee43849cb1f9ca4092",
+      "alt": "nissan-logo-icon",
+      "filename": " Nissan Icon.png",
+      "mimeType": "image/png",
+      "filesize": 164609,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 20865,
+          "filename": " Nissan Icon-400x300.png",
+          "url": "/logo/ Nissan Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 64064,
+          "filename": " Nissan Icon-768x1024.png",
+          "url": "/logo/ Nissan Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 72964,
+          "filename": " Nissan Icon-1024x1024.png",
+          "url": "/logo/ Nissan Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:01:18.866Z",
+      "updatedAt": "2024-06-25T18:01:18.866Z",
+      "url": "/logo/ Nissan Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b01bf43849cb1f9ca367f",
+      "alt": "nissan-logo-vector-icon",
+      "filename": " Nissan Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3640,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:43:27.115Z",
+      "updatedAt": "2024-06-25T17:43:27.115Z",
+      "url": "/logo/ Nissan Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282d602433e1e272107859",
+    "slug": "opel",
+    "name": "Opel",
+    "logo": {
+      "id": "6602eb320c3669c8ce19c00a",
+      "alt": "opel-logo",
+      "filename": "Opel.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 7538,
+      "width": 5263,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:35:14.881Z",
+      "updatedAt": "2024-03-26T15:35:14.881Z",
+      "url": "/logo/Opel.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:51:28.557Z",
+    "updatedAt": "2024-06-25T19:11:00.455Z",
+    "icon": {
+      "id": "667b05fe43849cb1f9ca40a8",
+      "alt": "opel-logo-icon",
+      "filename": " Opel Icon.png",
+      "mimeType": "image/png",
+      "filesize": 159836,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 18146,
+          "filename": " Opel Icon-400x300.png",
+          "url": "/logo/ Opel Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 59926,
+          "filename": " Opel Icon-768x1024.png",
+          "url": "/logo/ Opel Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 69327,
+          "filename": " Opel Icon-1024x1024.png",
+          "url": "/logo/ Opel Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:01:34.684Z",
+      "updatedAt": "2024-06-25T18:01:34.684Z",
+      "url": "/logo/ Opel Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b01cc43849cb1f9ca368e",
+      "alt": "opel-logo-vector-icon",
+      "filename": " Opel Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 7945,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:43:40.499Z",
+      "updatedAt": "2024-06-25T17:43:40.499Z",
+      "url": "/logo/ Opel Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282d782433e1e272107878",
+    "slug": "peugeot",
+    "name": "Peugeot",
+    "logo": {
+      "id": "6602eb420c3669c8ce19c019",
+      "alt": "peugeot-logo",
+      "filename": "Peugeot.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 18067,
+      "width": 5264,
+      "height": 1417,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:35:30.425Z",
+      "updatedAt": "2024-03-26T15:35:30.425Z",
+      "url": "/logo/Peugeot.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:51:52.302Z",
+    "updatedAt": "2024-06-25T19:11:21.418Z",
+    "icon": {
+      "id": "667b061543849cb1f9ca4162",
+      "alt": "peugeot-logo-icon",
+      "filename": " Peugeot Icon.png",
+      "mimeType": "image/png",
+      "filesize": 201317,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 32256,
+          "filename": " Peugeot Icon-400x300.png",
+          "url": "/logo/ Peugeot Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 106102,
+          "filename": " Peugeot Icon-768x1024.png",
+          "url": "/logo/ Peugeot Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 119131,
+          "filename": " Peugeot Icon-1024x1024.png",
+          "url": "/logo/ Peugeot Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:01:57.765Z",
+      "updatedAt": "2024-06-25T18:01:57.765Z",
+      "url": "/logo/ Peugeot Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b01f843849cb1f9ca36a1",
+      "alt": "peugeot-logo-vector-icon",
+      "filename": " Peugeot Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 18570,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:44:24.317Z",
+      "updatedAt": "2024-06-25T17:44:24.317Z",
+      "url": "/logo/ Peugeot Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282d8d2433e1e272107897",
+    "slug": "porsche",
+    "name": "Porsche",
+    "logo": {
+      "id": "6602eb570c3669c8ce19c028",
+      "alt": "porsche-logo",
+      "filename": "Porsche.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4781,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:35:51.308Z",
+      "updatedAt": "2024-03-26T15:35:51.308Z",
+      "url": "/logo/Porsche.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:52:13.579Z",
+    "updatedAt": "2024-06-25T19:11:45.345Z",
+    "icon": {
+      "id": "667b063643849cb1f9ca417a",
+      "alt": "porsche-logo-icon",
+      "filename": " Porsche Icon.png",
+      "mimeType": "image/png",
+      "filesize": 214254,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 33605,
+          "filename": " Porsche Icon-400x300.png",
+          "url": "/logo/ Porsche Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 103052,
+          "filename": " Porsche Icon-768x1024.png",
+          "url": "/logo/ Porsche Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 113837,
+          "filename": " Porsche Icon-1024x1024.png",
+          "url": "/logo/ Porsche Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:02:30.461Z",
+      "updatedAt": "2024-06-25T18:02:30.461Z",
+      "url": "/logo/ Porsche Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b020643849cb1f9ca36b4",
+      "alt": "porsche-logo-vector-icon",
+      "filename": " Porsche Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 11728,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:44:38.308Z",
+      "updatedAt": "2024-06-25T17:44:38.308Z",
+      "url": "/logo/ Porsche Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282da82433e1e2721078b9",
+    "slug": "renault",
+    "name": "Renault",
+    "logo": {
+      "id": "6602eb650c3669c8ce19c037",
+      "alt": "renault-logo",
+      "filename": "Renault.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1621,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:36:05.362Z",
+      "updatedAt": "2024-03-26T15:36:05.362Z",
+      "url": "/logo/Renault.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:52:40.448Z",
+    "updatedAt": "2024-06-25T19:12:03.169Z",
+    "icon": {
+      "id": "667b064243849cb1f9ca4189",
+      "alt": "renault-logo-icon",
+      "filename": " Renault Icon.png",
+      "mimeType": "image/png",
+      "filesize": 171813,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 19015,
+          "filename": " Renault Icon-400x300.png",
+          "url": "/logo/ Renault Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 66710,
+          "filename": " Renault Icon-768x1024.png",
+          "url": "/logo/ Renault Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 76182,
+          "filename": " Renault Icon-1024x1024.png",
+          "url": "/logo/ Renault Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:02:42.612Z",
+      "updatedAt": "2024-06-25T18:02:42.612Z",
+      "url": "/logo/ Renault Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b023443849cb1f9ca394d",
+      "alt": "renault-logo-vector-icon",
+      "filename": " Renault Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 904,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:45:24.818Z",
+      "updatedAt": "2024-06-25T17:45:24.818Z",
+      "url": "/logo/ Renault Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "66282dbc2433e1e2721078d8",
+    "slug": "rivian",
+    "name": "Rivian",
+    "logo": {
+      "id": "6602eb760c3669c8ce19c046",
+      "alt": "rivian-logo",
+      "filename": "Rivian.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4257,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:36:22.853Z",
+      "updatedAt": "2024-03-26T15:36:22.853Z",
+      "url": "/logo/Rivian.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:53:00.283Z",
+    "updatedAt": "2024-06-25T19:12:27.737Z",
+    "icon": {
+      "id": "667b065043849cb1f9ca4198",
+      "alt": "rivian-logo-icon",
+      "filename": " Rivian Icon.png",
+      "mimeType": "image/png",
+      "filesize": 178196,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 23707,
+          "filename": " Rivian Icon-400x300.png",
+          "url": "/logo/ Rivian Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 76142,
+          "filename": " Rivian Icon-768x1024.png",
+          "url": "/logo/ Rivian Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 86107,
+          "filename": " Rivian Icon-1024x1024.png",
+          "url": "/logo/ Rivian Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:02:56.381Z",
+      "updatedAt": "2024-06-25T18:02:56.381Z",
+      "url": "/logo/ Rivian Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b025443849cb1f9ca396a",
+      "alt": "rivian-logo-vector-icon",
+      "filename": " Rivian Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3063,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:45:56.278Z",
+      "updatedAt": "2024-06-25T17:45:56.278Z",
+      "url": "/logo/ Rivian Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "67f411f50e797c99f937533f",
+    "slug": "savant-power",
+    "name": "Savant Power",
+    "logo": {
+      "id": "67f40ed30e797c99f936df29",
+      "alt": "Savan Power logo",
+      "filename": "Savant Power.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 13193,
+      "width": 5200,
+      "height": 1400,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:43:47.792Z",
+      "updatedAt": "2025-04-07T17:43:47.792Z",
+      "url": "/logo/Savant Power.svg"
+    },
+    "icon": {
+      "id": "67f411c10e797c99f9375242",
+      "alt": "Savant Power logo",
+      "filename": "Savant Vector Icon.png",
+      "mimeType": "image/png",
+      "filesize": 162641,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 19276,
+          "filename": "Savant Vector Icon-400x300.png",
+          "url": "/logo/Savant Vector Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 60256,
+          "filename": "Savant Vector Icon-768x1024.png",
+          "url": "/logo/Savant Vector Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 67256,
+          "filename": "Savant Vector Icon-1024x1024.png",
+          "url": "/logo/Savant Vector Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2025-04-07T17:56:17.793Z",
+      "updatedAt": "2025-04-07T17:56:17.793Z",
+      "url": "/logo/Savant Vector Icon.png"
+    },
+    "vector_icon": {
+      "id": "67f411aa0e797c99f9374c22",
+      "alt": "Savant Power logo",
+      "filename": "Savant Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 26014,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:55:54.978Z",
+      "updatedAt": "2025-04-07T17:55:54.978Z",
+      "url": "/logo/Savant Vector Icon.svg"
+    },
+    "support_level": "planned",
+    "createdAt": "2025-04-07T17:57:09.054Z",
+    "updatedAt": "2025-04-24T11:29:16.127Z",
+    "is_featured_on_home_page": true,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "battery"
+    ]
+  },
+  {
+    "id": "66282dd12433e1e2721078f7",
+    "slug": "sensibo",
+    "name": "Sensibo",
+    "logo": {
+      "id": "6602eb860c3669c8ce19c055",
+      "alt": "sensibo-logo",
+      "filename": "Sensibo.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 5447,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:36:38.403Z",
+      "updatedAt": "2024-03-26T15:36:38.403Z",
+      "url": "/logo/Sensibo.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T21:53:21.567Z",
+    "updatedAt": "2024-06-25T19:12:43.508Z",
+    "icon": {
+      "id": "667b065e43849cb1f9ca41a7",
+      "alt": "sensibo-logo-icon",
+      "filename": " Sensibo Icon.png",
+      "mimeType": "image/png",
+      "filesize": 134341,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 11794,
+          "filename": " Sensibo Icon-400x300.png",
+          "url": "/logo/ Sensibo Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 42130,
+          "filename": " Sensibo Icon-768x1024.png",
+          "url": "/logo/ Sensibo Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 48839,
+          "filename": " Sensibo Icon-1024x1024.png",
+          "url": "/logo/ Sensibo Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:03:10.004Z",
+      "updatedAt": "2024-06-25T18:03:10.004Z",
+      "url": "/logo/ Sensibo Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b026043849cb1f9ca3979",
+      "alt": "sensibo-logo-vector-icon",
+      "filename": " Sensibo Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2346,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:46:08.390Z",
+      "updatedAt": "2024-06-25T17:46:08.390Z",
+      "url": "/logo/ Sensibo Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "thermostat"
+    ]
+  },
+  {
+    "id": "662835dc2433e1e272107941",
+    "slug": "skoda",
+    "name": "Skoda",
+    "logo": {
+      "id": "6602eb950c3669c8ce19c064",
+      "alt": "skoda-logo",
+      "filename": "Skoda.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1683,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:36:53.670Z",
+      "updatedAt": "2024-03-26T15:36:53.670Z",
+      "url": "/logo/Skoda.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:27:40.561Z",
+    "updatedAt": "2024-06-25T19:13:05.040Z",
+    "icon": {
+      "id": "667b066b43849cb1f9ca41b6",
+      "alt": "skoda-logo-icon",
+      "filename": " Skoda Icon.png",
+      "mimeType": "image/png",
+      "filesize": 197731,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 31312,
+          "filename": " Skoda Icon-400x300.png",
+          "url": "/logo/ Skoda Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 98867,
+          "filename": " Skoda Icon-768x1024.png",
+          "url": "/logo/ Skoda Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 112374,
+          "filename": " Skoda Icon-1024x1024.png",
+          "url": "/logo/ Skoda Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:03:23.259Z",
+      "updatedAt": "2024-06-25T18:03:23.259Z",
+      "url": "/logo/ Skoda Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b026b43849cb1f9ca3988",
+      "alt": "skoda-logo-vector-icon",
+      "filename": " Skoda Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2591,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:46:19.931Z",
+      "updatedAt": "2024-06-25T17:46:19.931Z",
+      "url": "/logo/ Skoda Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "662835fc2433e1e272107960",
+    "slug": "solark",
+    "name": "Sol-Ark",
+    "logo": {
+      "id": "6602eba30c3669c8ce19c073",
+      "alt": "sol-ark-logo",
+      "filename": "Sol-Ark.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 41486,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:37:07.282Z",
+      "updatedAt": "2024-03-26T15:37:07.282Z",
+      "url": "/logo/Sol-Ark.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:28:12.386Z",
+    "updatedAt": "2025-05-07T13:57:15.367Z",
+    "icon": {
+      "id": "667b068243849cb1f9ca41c5",
+      "alt": "sol-ark-logo-icon",
+      "filename": " Sol-Ark Icon.png",
+      "mimeType": "image/png",
+      "filesize": 196138,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 33450,
+          "filename": " Sol-Ark Icon-400x300.png",
+          "url": "/logo/ Sol-Ark Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 105868,
+          "filename": " Sol-Ark Icon-768x1024.png",
+          "url": "/logo/ Sol-Ark Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 115961,
+          "filename": " Sol-Ark Icon-1024x1024.png",
+          "url": "/logo/ Sol-Ark Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:03:46.112Z",
+      "updatedAt": "2024-06-25T18:03:46.112Z",
+      "url": "/logo/ Sol-Ark Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b029043849cb1f9ca399c",
+      "alt": "sol-ark-logo-vector-icon",
+      "filename": " Sol-Ark Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 19413,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:46:56.543Z",
+      "updatedAt": "2024-06-25T17:46:56.543Z",
+      "url": "/logo/ Sol-Ark Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "inverter",
+      "battery"
+    ]
+  },
+  {
+    "id": "662839222433e1e272107a95",
+    "slug": "solaredge",
+    "name": "SolarEdge",
+    "logo": {
+      "id": "662838f02433e1e272107a5c",
+      "alt": "solaredge-logo",
+      "filename": "SolarEdge.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4523,
+      "width": 5200,
+      "height": 1400,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-04-23T22:40:48.667Z",
+      "updatedAt": "2024-04-23T22:40:48.667Z",
+      "url": "/logo/SolarEdge.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:41:38.430Z",
+    "updatedAt": "2025-05-07T13:59:04.162Z",
+    "icon": {
+      "id": "667afcb143849cb1f9ca2e83",
+      "alt": "solaredge-logo-icon",
+      "filename": "SolarEdge Icon.png",
+      "mimeType": "image/png",
+      "filesize": 69268,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 14938,
+          "filename": "SolarEdge Icon-400x300.png",
+          "url": "/logo/SolarEdge Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 36488,
+          "filename": "SolarEdge Icon-768x1024.png",
+          "url": "/logo/SolarEdge Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 44566,
+          "filename": "SolarEdge Icon-1024x1024.png",
+          "url": "/logo/SolarEdge Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:21:53.403Z",
+      "updatedAt": "2024-06-25T17:21:53.403Z",
+      "url": "/logo/SolarEdge Icon.png"
+    },
+    "vector_icon": {
+      "id": "667afcd643849cb1f9ca2e92",
+      "alt": "solaredge-logo-vector-icon",
+      "filename": "SolarEdge Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4558,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:22:30.902Z",
+      "updatedAt": "2024-06-25T17:22:30.902Z",
+      "url": "/logo/SolarEdge Vector Icon.svg"
+    },
+    "supports_grid_services": true,
+    "is_featured_on_home_page": true,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "inverter",
+      "battery"
+    ]
+  },
+  {
+    "id": "67f411160e797c99f937318f",
+    "slug": "sonnen",
+    "name": "Sonnen",
+    "logo": {
+      "id": "67f40f030e797c99f936df9f",
+      "alt": "Sonnen logo",
+      "filename": "Sonnen.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3048,
+      "width": 5200,
+      "height": 1400,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:44:35.605Z",
+      "updatedAt": "2025-04-07T17:44:35.605Z",
+      "url": "/logo/Sonnen.svg"
+    },
+    "icon": {
+      "id": "67f410c90e797c99f9372f1e",
+      "alt": "Sonnen logo",
+      "filename": "Sonnen Vector Icon.png",
+      "mimeType": "image/png",
+      "filesize": 172187,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": "/logo/Sonnen Vector Icon-400x300.png",
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 18690,
+          "filename": "Sonnen Vector Icon-400x300.png"
+        },
+        "card": {
+          "url": "/logo/Sonnen Vector Icon-768x1024.png",
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 70229,
+          "filename": "Sonnen Vector Icon-768x1024.png"
+        },
+        "tablet": {
+          "url": "/logo/Sonnen Vector Icon-1024x1024.png",
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 80093,
+          "filename": "Sonnen Vector Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2025-04-07T17:52:09.733Z",
+      "updatedAt": "2025-04-07T17:52:23.538Z",
+      "url": "/logo/Sonnen Vector Icon.png"
+    },
+    "vector_icon": {
+      "id": "67f410e40e797c99f9372fc8",
+      "alt": "Sonnen logo",
+      "filename": "Sonnen Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3072,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:52:36.803Z",
+      "updatedAt": "2025-04-07T17:52:36.803Z",
+      "url": "/logo/Sonnen Vector Icon.svg"
+    },
+    "support_level": "planned",
+    "createdAt": "2025-04-07T17:53:26.378Z",
+    "updatedAt": "2025-05-07T13:56:26.283Z",
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": []
+  },
+  {
+    "id": "662836142433e1e27210797f",
+    "slug": "tesla",
+    "name": "Tesla",
+    "logo": {
+      "id": "6602ebb30c3669c8ce19c082",
+      "alt": "tesla-logo",
+      "filename": "Tesla.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1477,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:37:23.830Z",
+      "updatedAt": "2024-03-26T15:37:23.830Z",
+      "url": "/logo/Tesla.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:28:36.190Z",
+    "updatedAt": "2025-04-24T11:25:39.041Z",
+    "icon": {
+      "id": "667b069443849cb1f9ca41d8",
+      "alt": "tesla-logo-icon",
+      "filename": " Tesla Icon.png",
+      "mimeType": "image/png",
+      "filesize": 147601,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 13244,
+          "filename": " Tesla Icon-400x300.png",
+          "url": "/logo/ Tesla Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 45683,
+          "filename": " Tesla Icon-768x1024.png",
+          "url": "/logo/ Tesla Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 52352,
+          "filename": " Tesla Icon-1024x1024.png",
+          "url": "/logo/ Tesla Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:04:04.460Z",
+      "updatedAt": "2024-06-25T18:04:04.460Z",
+      "url": "/logo/ Tesla Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b029c43849cb1f9ca39ab",
+      "alt": "tesla-logo-vector-icon",
+      "filename": " Tesla Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1074,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:47:08.984Z",
+      "updatedAt": "2024-06-25T17:47:08.984Z",
+      "url": "/logo/ Tesla Vector Icon.svg"
+    },
+    "supports_grid_services": true,
+    "is_featured_on_home_page": true,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle",
+      "charger",
+      "battery",
+      "inverter"
+    ]
+  },
+  {
+    "id": "6633f24925a8c779bf697b90",
+    "slug": "texture-os",
+    "name": "TextureOS",
+    "logo": {
+      "id": "6633f22b25a8c779bf697b76",
+      "alt": "texture-logo-white",
+      "filename": "texture_logo.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 7816,
+      "width": 148,
+      "height": 45,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-05-02T20:06:03.189Z",
+      "updatedAt": "2024-05-02T20:06:03.189Z",
+      "url": "/logo/texture_logo.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-05-02T20:06:33.870Z",
+    "updatedAt": "2024-07-01T23:20:30.639Z",
+    "icon": {
+      "id": "667c2d1343849cb1f9cba9e4",
+      "alt": "texture-logo-icon",
+      "filename": "Texture Icon.png",
+      "mimeType": "image/png",
+      "filesize": 154817,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 10108,
+          "filename": "Texture Icon-400x300.png",
+          "url": "/logo/Texture Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 44104,
+          "filename": "Texture Icon-768x1024.png",
+          "url": "/logo/Texture Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 53239,
+          "filename": "Texture Icon-1024x1024.png",
+          "url": "/logo/Texture Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-26T15:00:35.171Z",
+      "updatedAt": "2024-06-26T15:00:35.171Z",
+      "url": "/logo/Texture Icon.png"
+    },
+    "vector_icon": {
+      "id": "667c2d0043849cb1f9cba933",
+      "alt": "texture-logo-vector-icon",
+      "filename": "Texture Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4630,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-26T15:00:16.833Z",
+      "updatedAt": "2024-06-26T15:00:16.833Z",
+      "url": "/logo/Texture Vector Icon.svg"
+    },
+    "supports_grid_services": true,
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle",
+      "thermostat",
+      "charger",
+      "inverter",
+      "battery"
+    ]
+  },
+  {
+    "id": "6628362a2433e1e27210799e",
+    "slug": "toyota",
+    "name": "Toyota",
+    "logo": {
+      "id": "6602ebc10c3669c8ce19c091",
+      "alt": "toyota-logo",
+      "filename": "Toyota.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3800,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:37:37.522Z",
+      "updatedAt": "2024-03-26T15:37:37.522Z",
+      "url": "/logo/Toyota.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:28:58.157Z",
+    "updatedAt": "2024-06-25T19:49:16.128Z",
+    "icon": {
+      "id": "667b06a143849cb1f9ca41e7",
+      "alt": "toyota-logo-icon",
+      "filename": " Toyota Icon.png",
+      "mimeType": "image/png",
+      "filesize": 166179,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 22697,
+          "filename": " Toyota Icon-400x300.png",
+          "url": "/logo/ Toyota Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 70965,
+          "filename": " Toyota Icon-768x1024.png",
+          "url": "/logo/ Toyota Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 79593,
+          "filename": " Toyota Icon-1024x1024.png",
+          "url": "/logo/ Toyota Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:04:17.724Z",
+      "updatedAt": "2024-06-25T18:04:17.724Z",
+      "url": "/logo/ Toyota Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b02ad43849cb1f9ca3a66",
+      "alt": "toyota-logo-vector-icon",
+      "filename": " Toyota Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1861,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:47:25.270Z",
+      "updatedAt": "2024-06-25T17:47:25.270Z",
+      "url": "/logo/ Toyota Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "662836442433e1e2721079bd",
+    "slug": "vauxhall",
+    "name": "Vauxhall",
+    "logo": {
+      "id": "6602ebd10c3669c8ce19c0a0",
+      "alt": "vauxhall-logo",
+      "filename": "Vauxhall.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3528,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:37:53.474Z",
+      "updatedAt": "2024-03-26T15:37:53.474Z",
+      "url": "/logo/Vauxhall.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:29:24.035Z",
+    "updatedAt": "2024-06-25T19:49:40.137Z",
+    "icon": {
+      "id": "667b06b043849cb1f9ca41fa",
+      "alt": "vauxhall-logo-icon",
+      "filename": " Vauxhall Icon.png",
+      "mimeType": "image/png",
+      "filesize": 164292,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 22982,
+          "filename": " Vauxhall Icon-400x300.png",
+          "url": "/logo/ Vauxhall Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 73165,
+          "filename": " Vauxhall Icon-768x1024.png",
+          "url": "/logo/ Vauxhall Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 82839,
+          "filename": " Vauxhall Icon-1024x1024.png",
+          "url": "/logo/ Vauxhall Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T18:04:32.219Z",
+      "updatedAt": "2024-06-25T18:04:32.219Z",
+      "url": "/logo/ Vauxhall Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b02d043849cb1f9ca3a75",
+      "alt": "vauxhall-logo-vector-icon",
+      "filename": " Vauxhall Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 6235,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:48:00.756Z",
+      "updatedAt": "2024-06-25T17:48:00.756Z",
+      "url": "/logo/ Vauxhall Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6628365c2433e1e2721079dc",
+    "slug": "volkswagen",
+    "name": "Volkswagen",
+    "logo": {
+      "id": "6602ebdf0c3669c8ce19c0af",
+      "alt": "volkswagen-logo",
+      "filename": "Volkswagen.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1740,
+      "width": 5264,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:38:07.636Z",
+      "updatedAt": "2024-03-26T15:38:07.636Z",
+      "url": "/logo/Volkswagen.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:29:48.736Z",
+    "updatedAt": "2024-06-26T14:39:15.893Z",
+    "icon": {
+      "id": "667afde643849cb1f9ca2fac",
+      "alt": "volkswagen-logo-icon",
+      "filename": " Volkswagen Icon.png",
+      "mimeType": "image/png",
+      "filesize": 179785,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 30023,
+          "filename": " Volkswagen Icon-400x300.png",
+          "url": "/logo/ Volkswagen Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 91018,
+          "filename": " Volkswagen Icon-768x1024.png",
+          "url": "/logo/ Volkswagen Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 101137,
+          "filename": " Volkswagen Icon-1024x1024.png",
+          "url": "/logo/ Volkswagen Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:27:02.651Z",
+      "updatedAt": "2024-06-25T17:27:02.651Z",
+      "url": "/logo/ Volkswagen Icon.png"
+    },
+    "vector_icon": {
+      "id": "667afdce43849cb1f9ca2f9d",
+      "alt": "volkswagen-logo-vector-icon",
+      "filename": " Volkswagen Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2126,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:26:38.061Z",
+      "updatedAt": "2024-06-25T17:26:38.061Z",
+      "url": "/logo/ Volkswagen Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  },
+  {
+    "id": "6628366f2433e1e2721079fb",
+    "slug": "volvo",
+    "name": "Volvo",
+    "logo": {
+      "id": "6602ebec0c3669c8ce19c0be",
+      "alt": "volvo-logo",
+      "filename": "Volvo.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1566,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:38:20.932Z",
+      "updatedAt": "2024-03-26T15:38:20.932Z",
+      "url": "/logo/Volvo.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-04-23T22:30:07.552Z",
+    "updatedAt": "2024-06-25T17:28:43.089Z",
+    "icon": {
+      "id": "667afe1343849cb1f9ca2fcc",
+      "alt": "volvo-logo-icon",
+      "filename": " Volvo Icon.png",
+      "mimeType": "image/png",
+      "filesize": 167181,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 20272,
+          "filename": " Volvo Icon-400x300.png",
+          "url": "/logo/ Volvo Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 65919,
+          "filename": " Volvo Icon-768x1024.png",
+          "url": "/logo/ Volvo Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 76051,
+          "filename": " Volvo Icon-1024x1024.png",
+          "url": "/logo/ Volvo Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:27:47.777Z",
+      "updatedAt": "2024-06-25T17:27:47.777Z",
+      "url": "/logo/ Volvo Icon.png"
+    },
+    "vector_icon": {
+      "id": "667afe3243849cb1f9ca2fdb",
+      "alt": "volvo-logo-vector-icon",
+      "filename": " Volvo Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2677,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:28:18.391Z",
+      "updatedAt": "2024-06-25T17:28:18.391Z",
+      "url": "/logo/ Volvo Vector Icon.svg"
+    },
+    "is_featured_on_home_page": false,
+    "description_html": "",
+    "documentation_html": "",
+    "supported_device_types": [
+      "vehicle"
+    ]
+  }
+]

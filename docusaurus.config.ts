@@ -56,12 +56,16 @@ const config: Config = {
       {
         redirects: [
           {
-            to: '/docs/sources/supported-devices',
+            to: '/docs/sources/manufacturers',
             from: '/docs/devices-1',
           },
           {
-            to: '/docs/sources/supported-devices',
+            to: '/docs/sources/manufacturers',
             from: '/docs/connections/supported-devices',
+          },
+          {
+            to: '/docs/sources/manufacturers',
+            from: '/docs/sources/supported-devices',
           },
           {
             to: '/docs/devices/polling',
@@ -150,7 +154,7 @@ const config: Config = {
           label: 'Docs',
         },
         { to: '/api', label: 'API Reference', position: 'left' },
-        { to: '/docs/sources/supported-devices', label: 'Supported Devices', position: 'left' },
+        { to: '/docs/sources/manufacturers', label: 'Supported Manufacturers', position: 'left' },
         {
           href: 'https://dashboard.texturehq.com',
           label: 'Dashboard',

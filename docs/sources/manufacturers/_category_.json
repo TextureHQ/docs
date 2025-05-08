@@ -1,0 +1,8 @@
+{
+  "label": "Manufacturers",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Browse all manufacturers supported by Texture"
+  }
+}
