@@ -24,6 +24,8 @@ sidebar_position: 3
 
 **Grid Services Support**: ✅ Supported
 
+**Integration Method**: 🔌 Direct API integration with the manufacturer
+
 ## Supported Device Types
 
 Solar Inverters, Batteries
@@ -31,7 +33,6 @@ Solar Inverters, Batteries
 ## Integration Details
 
 SolarEdge devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
-
 
 
 

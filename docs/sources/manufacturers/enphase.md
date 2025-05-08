@@ -24,6 +24,8 @@ Enphase is a manufacturer of energy devices supported by Texture.
 
 **Grid Services Support**: ✅ Supported
 
+**Integration Method**: 🔌 Direct API integration with the manufacturer
+
 ## Supported Device Types
 
 Batteries, Solar Inverters
@@ -31,7 +33,6 @@ Batteries, Solar Inverters
 ## Integration Details
 
 Enphase devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
-
 
 
 
