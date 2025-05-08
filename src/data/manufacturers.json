@@ -1548,7 +1548,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:51:59.118Z",
-    "updatedAt": "2025-04-24T11:20:59.752Z",
+    "updatedAt": "2025-05-08T21:28:44.011Z",
     "icon": {
       "id": "667b04c543849cb1f9ca3d33",
       "alt": "enphase-logo-icon",
@@ -1614,8 +1614,1730 @@
     },
     "supports_grid_services": true,
     "is_featured_on_home_page": true,
-    "description_html": "",
-    "documentation_html": "",
+    "description": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Enphase is a leading provider of microinverter-based solar and storage systems, known for its modular architecture, high reliability, and comprehensive energy management platform. Unlike traditional string inverter setups, Enphase systems optimize power at the panel level, improving performance and offering granular visibility into each component. Their ecosystem includes solar microinverters, IQ Batteries, EV chargers, and the Enlighten monitoring platform — enabling end-to-end control for homes and businesses.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Texture supports both the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Monitoring API",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " and ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Grid Services API",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " for Enphase devices. Our integration provides access to device-level telemetry and control functions across solar and storage assets. We’ve enabled customers to leverage Enphase systems in a variety of grid-interactive use cases, with particularly strong adoption in ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "energy arbitrage scenarios within the ERCOT market",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ", where battery cycling against real-time pricing delivers measurable ROI.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "By integrating directly with Enphase, Texture helps utilities, aggregators, and software platforms monitor asset performance, participate in programs, and coordinate dispatch across distributed fleets — without relying on reverse-engineered or unsupported methods.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Common Use Cases",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Energy Arbitrage",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " (especially in ERCOT)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Virtual Power Plants (VPPs)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Demand Response (DR)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 3
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Home Energy Management",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 4
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "DER Aggregation & Orchestration",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 5
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Program Eligibility Screening",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 6
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Performance Monitoring & Alerting",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 7
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "start": 1,
+            "tag": "ul"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "description_html": "<p>Enphase is a leading provider of microinverter-based solar and storage systems, known for its modular architecture, high reliability, and comprehensive energy management platform. Unlike traditional string inverter setups, Enphase systems optimize power at the panel level, improving performance and offering granular visibility into each component. Their ecosystem includes solar microinverters, IQ Batteries, EV chargers, and the Enlighten monitoring platform — enabling end-to-end control for homes and businesses.</p><p>Texture supports both the <strong>Monitoring API</strong> and <strong>Grid Services API</strong> for Enphase devices. Our integration provides access to device-level telemetry and control functions across solar and storage assets. We’ve enabled customers to leverage Enphase systems in a variety of grid-interactive use cases, with particularly strong adoption in <strong>energy arbitrage scenarios within the ERCOT market</strong>, where battery cycling against real-time pricing delivers measurable ROI.</p><p>By integrating directly with Enphase, Texture helps utilities, aggregators, and software platforms monitor asset performance, participate in programs, and coordinate dispatch across distributed fleets — without relying on reverse-engineered or unsupported methods.</p><p><strong>Common Use Cases</strong></p><ul class=\"bullet\"><li value=1><strong>Energy Arbitrage</strong> (especially in ERCOT)</li><li value=2><strong>Virtual Power Plants (VPPs)</strong></li><li value=3><strong>Demand Response (DR)</strong></li><li value=4><strong>Home Energy Management</strong></li><li value=5><strong>DER Aggregation & Orchestration</strong></li><li value=6><strong>Program Eligibility Screening</strong></li><li value=7><strong>Performance Monitoring & Alerting</strong></li></ul>",
+    "documentation": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Overview",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#overview"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "We are using the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Enphase API v4",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://developer-v4.enphase.com/"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " to connect to Enphase accounts.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "For this connection, a typical OAuth flow is used to authenticate the user and obtain consent to access their Enphase account and thus devices.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Device Updates",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#device-updates"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "One quirk with Enphase systems is that they don't always seem to update their data in real-time or on a regular cadence.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Our ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "platform polls",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/devices/polling"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " the Enphase API every 15 minutes for new data, but the Enphase system may not be reporting any new data yet. When we do receive new data, we will update the device(s) in Texture with the new data and backfill any missing data since the last reported data point for the associated Enphase device(s).",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Battery Commands",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#battery-commands"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If you are using our ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "set operating mode command",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/commands#set-operating-mode"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " with Enphase batteries, there is one main thing to be aware of.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "There is a limitation with the Enphase API where we currently don't have a way to manipulate or adjust the battery system's tariff or rate settings. This means that while you may want to export energy to the grid during a specific time of day, for example, the battery system's tariff settings may not align with this.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "In the scenario above, where you want to export to the grid during potentially non-peak hours. While the battery may not align and export to the grid, we will set it up such that it at least discharges the battery to cover home loads until the target reserve level is reached. Curtailing more expensive grid power usage still during this time.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If you enroll your users in our grid services program, we can control the battery system to optimize for grid services. See the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Enphase Grid Services",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " section below for more information.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Enphase Grid Services",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "In cases where your organization needs or desires features like off-peak grid export, we can work with you to allow enabling your customers to enroll their Enphase systems in one of our grid services programs.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Once enabled for your organization, you can start to send your customers your unique enphase authorization link to enroll their Enphase system(s).",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "How to enroll your customers in a grid services program",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#how-to-enroll-your-customers-in-a-grid-services-program"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The basic process for your customer's to enroll in a grid services program is as follows:",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Your customer first goes through the connect flow as normal, connecting their Enphase account to Texture.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Send them an authorization link to enroll in one of our grid services programs.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "number",
+            "start": 1,
+            "tag": "ol"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "You can chain these flows together as described above, by constructing a connect link with the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "redirectUrl",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " set to the enphase grid services authorization link. Then the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "redirectUrl",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " query parameter in the enphase grid services authorization link can be set to a final redirect url to navigate to after the customer completes the grid services enrollment.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Note:",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " After the customer completes step 1 you will still be able to monitor and send commands to their Enphase system(s). The grid services program will only start to take effect once the customer has enrolled and allows more advanced control of the battery system.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "paragraph",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "quote",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "How to find your organization's authorization url",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#how-to-find-your-organizations-authorization-url"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The base enphase authorization link for your organization will look like this:",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "https://enphase.connect.texturehq.com/<organization-token>",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "You can find your organization's unique url (if enabled) programmatically by making a ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "GET",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " request to our ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "organization endpoint with a valid API key",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/api"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ".",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The response will contain your organization's base enphase authorization link, if enabled, under the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "oemSpecifics.enphase.gridServicesAuthorizationUrl",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " path in the response.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Query Parameters",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#query-parameters"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The following table details the query parameters that can be used with the enphase authorization link.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "NameRequired?DescriptionprogramSlugyesUnique identifier for the Enphase Grid Services program to enroll the user in. Typically, a state code for states where we have available programs.referenceIdyesUnique identifier in your system to tie to the user enrolling in Grid Services. This should ideally be the same id utilized during the Texture Connect flow.clientNamenoAllows adjusting the name that is displayed on the intro screen of the Enphase Grid Services enrollment flow. If not provided, it will fall back/use your organization's name.redirectUrlnoAllows you to set a redirect url to navigate to when the user clicks \"Continue\" after completing their Enphase Grid Services enrollment.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Programs",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#programs"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Enphase Grid Services programs are per state, and we currently have programs available in the following states:",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Program StateProgram SlugCaliforniaCATexasTX",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Note:",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " If there is a mismatch between the state of the Enphase system and the state of the grid services program, the system will not be able to enroll in the program.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "paragraph",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "quote",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Examples",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#examples"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Let's say your organization's token is ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "my-org-token",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " and you want to enroll a customer in the California grid services program. The authorization link would look like this:",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 16,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "https://enphase.connect.texturehq.com/my-org-token?programSlug=CA",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "autolink",
+                "version": 2,
+                "fields": {
+                  "linkType": "custom",
+                  "url": "https://enphase.connect.texturehq.com/my-org-token?programSlug=CA"
+                }
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If you also wanted to adjust the name displayed on the intro screen to be ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "My Company",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ", the authorization link would look like this:",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 16,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "autolink",
+                "version": 2,
+                "fields": {
+                  "linkType": "custom",
+                  "url": "https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company"
+                }
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Battery Commands",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/enphase/#battery-commands-1"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Once a customer's Enphase system is enrolled in a grid services program, we will be able to control the battery system to optimize for grid services. This means that we will be able to control the battery system to export to the grid during off-peak hours, for example.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "There are some caveats or things to be aware of:",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Commands won't take effect for at least 1 minute after they are sent.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Commands at maximum will last up to 4 hours.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "If the target reserve level is reached before the command expires, the battery system will return to its operation mode before the command was sent.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 3
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "The lowest target reserve level that can be set is 10%.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 4
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "start": 1,
+            "tag": "ul"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "documentation_html": "<h2>Overview<a href=\"http://localhost:3000/docs/sources/oem/enphase/#overview\">​</a></h2><p>We are using the <a href=\"https://developer-v4.enphase.com/\" rel=\"noopener noreferrer\">Enphase API v4</a> to connect to Enphase accounts.</p><p>For this connection, a typical OAuth flow is used to authenticate the user and obtain consent to access their Enphase account and thus devices.</p><h2>Device Updates<a href=\"http://localhost:3000/docs/sources/oem/enphase/#device-updates\">​</a></h2><p>One quirk with Enphase systems is that they don't always seem to update their data in real-time or on a regular cadence.</p><p>Our <a href=\"http://localhost:3000/docs/devices/polling\">platform polls</a> the Enphase API every 15 minutes for new data, but the Enphase system may not be reporting any new data yet. When we do receive new data, we will update the device(s) in Texture with the new data and backfill any missing data since the last reported data point for the associated Enphase device(s).</p><h2>Battery Commands<a href=\"http://localhost:3000/docs/sources/oem/enphase/#battery-commands\">​</a></h2><p>If you are using our <a href=\"http://localhost:3000/docs/commands#set-operating-mode\">set operating mode command</a> with Enphase batteries, there is one main thing to be aware of.</p><p>There is a limitation with the Enphase API where we currently don't have a way to manipulate or adjust the battery system's tariff or rate settings. This means that while you may want to export energy to the grid during a specific time of day, for example, the battery system's tariff settings may not align with this.</p><p>In the scenario above, where you want to export to the grid during potentially non-peak hours. While the battery may not align and export to the grid, we will set it up such that it at least discharges the battery to cover home loads until the target reserve level is reached. Curtailing more expensive grid power usage still during this time.</p><p>If you enroll your users in our grid services program, we can control the battery system to optimize for grid services. See the <a href=\"http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services\">Enphase Grid Services</a> section below for more information.</p><h2>Enphase Grid Services<a href=\"http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services\">​</a></h2><p>In cases where your organization needs or desires features like off-peak grid export, we can work with you to allow enabling your customers to enroll their Enphase systems in one of our grid services programs.</p><p>Once enabled for your organization, you can start to send your customers your unique enphase authorization link to enroll their Enphase system(s).</p><h3>How to enroll your customers in a grid services program<a href=\"http://localhost:3000/docs/sources/oem/enphase/#how-to-enroll-your-customers-in-a-grid-services-program\">​</a></h3><p>The basic process for your customer's to enroll in a grid services program is as follows:</p><ol class=\"number\"><li value=1>Your customer first goes through the connect flow as normal, connecting their Enphase account to Texture.</li><li value=2>Send them an authorization link to enroll in one of our grid services programs.</li></ol><p>You can chain these flows together as described above, by constructing a connect link with the <code>redirectUrl</code> set to the enphase grid services authorization link. Then the <code>redirectUrl</code> query parameter in the enphase grid services authorization link can be set to a final redirect url to navigate to after the customer completes the grid services enrollment.</p><blockquote><p><strong>Note:</strong> After the customer completes step 1 you will still be able to monitor and send commands to their Enphase system(s). The grid services program will only start to take effect once the customer has enrolled and allows more advanced control of the battery system.</p></blockquote><h3>How to find your organization's authorization url<a href=\"http://localhost:3000/docs/sources/oem/enphase/#how-to-find-your-organizations-authorization-url\">​</a></h3><p>The base enphase authorization link for your organization will look like this:</p><p><code>https://enphase.connect.texturehq.com/<organization-token></code><br></p><p>You can find your organization's unique url (if enabled) programmatically by making a <code>GET</code> request to our <a href=\"http://localhost:3000/api\">organization endpoint with a valid API key</a>.</p><p>The response will contain your organization's base enphase authorization link, if enabled, under the <code>oemSpecifics.enphase.gridServicesAuthorizationUrl</code> path in the response.</p><h3>Query Parameters<a href=\"http://localhost:3000/docs/sources/oem/enphase/#query-parameters\">​</a></h3><p>The following table details the query parameters that can be used with the enphase authorization link.</p><p>NameRequired?DescriptionprogramSlugyesUnique identifier for the Enphase Grid Services program to enroll the user in. Typically, a state code for states where we have available programs.referenceIdyesUnique identifier in your system to tie to the user enrolling in Grid Services. This should ideally be the same id utilized during the Texture Connect flow.clientNamenoAllows adjusting the name that is displayed on the intro screen of the Enphase Grid Services enrollment flow. If not provided, it will fall back/use your organization's name.redirectUrlnoAllows you to set a redirect url to navigate to when the user clicks \"Continue\" after completing their Enphase Grid Services enrollment.</p><h3>Programs<a href=\"http://localhost:3000/docs/sources/oem/enphase/#programs\">​</a></h3><p>Enphase Grid Services programs are per state, and we currently have programs available in the following states:</p><p>Program StateProgram SlugCaliforniaCATexasTX</p><blockquote><p><strong>Note:</strong> If there is a mismatch between the state of the Enphase system and the state of the grid services program, the system will not be able to enroll in the program.</p></blockquote><h3>Examples<a href=\"http://localhost:3000/docs/sources/oem/enphase/#examples\">​</a></h3><p>Let's say your organization's token is <code>my-org-token</code> and you want to enroll a customer in the California grid services program. The authorization link would look like this:</p><p><a href=\"https://enphase.connect.texturehq.com/my-org-token?programSlug=CA\"><code>https://enphase.connect.texturehq.com/my-org-token?programSlug=CA</code></a><br></p><p>If you also wanted to adjust the name displayed on the intro screen to be <code>My Company</code>, the authorization link would look like this:</p><p><a href=\"https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company\"><code>https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company</code></a><br></p><h3>Battery Commands<a href=\"http://localhost:3000/docs/sources/oem/enphase/#battery-commands-1\">​</a></h3><p>Once a customer's Enphase system is enrolled in a grid services program, we will be able to control the battery system to optimize for grid services. This means that we will be able to control the battery system to export to the grid during off-peak hours, for example.</p><p>There are some caveats or things to be aware of:</p><ul class=\"bullet\"><li value=1>Commands won't take effect for at least 1 minute after they are sent.</li><li value=2>Commands at maximum will last up to 4 hours.</li><li value=3>If the target reserve level is reached before the command expires, the battery system will return to its operation mode before the command was sent.</li><li value=4>The lowest target reserve level that can be set is 10%.</li></ul>",
+    "website_url": "https://enphase.com/",
     "supported_device_types": [
       "battery",
       "inverter"
@@ -4154,7 +5876,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:41:38.430Z",
-    "updatedAt": "2025-05-08T21:10:48.397Z",
+    "updatedAt": "2025-05-08T21:25:36.129Z",
     "icon": {
       "id": "667afcb143849cb1f9ca2e83",
       "alt": "solaredge-logo-icon",
@@ -4505,6 +6227,7 @@
     "description_html": "<p>SolarEdge is a global leader in smart energy solutions, known for pioneering inverter technology that has reshaped how solar energy is harvested and managed. Their systems include optimized inverters, energy storage, EV charging, and home energy management capabilities — all orchestrated through a robust monitoring platform. With millions of systems deployed across more than 140 countries, SolarEdge is widely trusted for both residential and commercial-scale deployments.</p><p>Texture supports both the <strong>Monitoring API</strong> and <strong>Grid Services API</strong> for SolarEdge devices. Our integration enables seamless access to real-time and historical telemetry data, as well as control interfaces for participating in demand response and other grid-interactive programs. We’ve worked closely with SolarEdge for several years to support utility, aggregator, and OEM-driven initiatives that require high-fidelity data and reliable device orchestration.</p><p>This close collaboration ensures that Texture customers can easily enroll SolarEdge systems in programs, monitor asset performance, and automate control strategies — all without having to reverse-engineer or maintain brittle workarounds.</p><p><strong>Common Use Cases</strong></p><ul class=\"bullet\"><li value=1><strong>Virtual Power Plants (VPPs)</strong></li><li value=2><strong>Demand Response (DR)</strong></li><li value=3><strong>Energy Arbitrage</strong> (e.g., optimizing battery charge/discharge against TOU or market signals)</li><li value=4><strong>Operations & Maintenance (O&M)</strong></li><li value=5><strong>Asset Performance Monitoring</strong></li><li value=6><strong>DER Program Enrollment & Eligibility Screening</strong></li><li value=7><strong>Grid Services Participation</strong> (e.g., voltage support, frequency response)</li></ul>",
     "documentation_html": "",
     "website_url": "https://www.solaredge.com/us/",
+    "source": "direct",
     "supported_device_types": [
       "inverter",
       "battery"
@@ -4637,7 +6360,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:28:36.190Z",
-    "updatedAt": "2025-04-24T11:25:39.041Z",
+    "updatedAt": "2025-05-08T21:31:58.660Z",
     "icon": {
       "id": "667b069443849cb1f9ca41d8",
       "alt": "tesla-logo-icon",
@@ -4703,8 +6426,2163 @@
     },
     "supports_grid_services": true,
     "is_featured_on_home_page": true,
-    "description_html": "",
-    "documentation_html": "",
+    "description": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Tesla Energy is one of the most recognized names in distributed energy, offering a vertically integrated ecosystem that includes Powerwall batteries, solar panels, EVs, and the Powerhub platform for grid services. Their systems are widely deployed across residential, commercial, and utility settings, and Tesla continues to expand its footprint through both retail and partner channels. The Tesla Energy ecosystem is unified through robust software platforms, enabling real-time monitoring and intelligent control across all assets.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Texture supports Tesla’s ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Fleet API",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " and ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Grid Services API (Powerhub)",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ". These integrations allow us to enroll and manage fleets of Tesla Powerwalls for grid programs, pull live and historical telemetry, and initiate control actions — all in a secure and standardized way. We’re working closely with Tesla to enable large-scale integrations for ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Co-ops, DERMS providers, and utility-aligned aggregators",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ", helping them access and orchestrate behind-the-meter Tesla systems at scale.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "These integrations unlock the ability to not only monitor and optimize performance, but also automate participation in grid services with minimal overhead — bridging the gap between distributed Tesla devices and centralized utility systems.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Common Use Cases",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Grid Services Participation",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " (e.g., frequency response, load shifting)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Virtual Power Plants (VPPs)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Co-op and CCA Program Integration",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 3
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "DERMS Integration",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 4
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Performance Monitoring & Fleet Management",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 5
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Load Flexibility & Peak Shaving",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 6
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Resiliency Planning & Backup Power Coordination",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 7
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "start": 1,
+            "tag": "ul"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "description_html": "<p>Tesla Energy is one of the most recognized names in distributed energy, offering a vertically integrated ecosystem that includes Powerwall batteries, solar panels, EVs, and the Powerhub platform for grid services. Their systems are widely deployed across residential, commercial, and utility settings, and Tesla continues to expand its footprint through both retail and partner channels. The Tesla Energy ecosystem is unified through robust software platforms, enabling real-time monitoring and intelligent control across all assets.</p><p>Texture supports Tesla’s <strong>Fleet API</strong> and <strong>Grid Services API (Powerhub)</strong>. These integrations allow us to enroll and manage fleets of Tesla Powerwalls for grid programs, pull live and historical telemetry, and initiate control actions — all in a secure and standardized way. We’re working closely with Tesla to enable large-scale integrations for <strong>Co-ops, DERMS providers, and utility-aligned aggregators</strong>, helping them access and orchestrate behind-the-meter Tesla systems at scale.</p><p>These integrations unlock the ability to not only monitor and optimize performance, but also automate participation in grid services with minimal overhead — bridging the gap between distributed Tesla devices and centralized utility systems.</p><p><strong>Common Use Cases</strong></p><ul class=\"bullet\"><li value=1><strong>Grid Services Participation</strong> (e.g., frequency response, load shifting)</li><li value=2><strong>Virtual Power Plants (VPPs)</strong></li><li value=3><strong>Co-op and CCA Program Integration</strong></li><li value=4><strong>DERMS Integration</strong></li><li value=5><strong>Performance Monitoring & Fleet Management</strong></li><li value=6><strong>Load Flexibility & Peak Shaving</strong></li><li value=7><strong>Resiliency Planning & Backup Power Coordination</strong></li></ul>",
+    "documentation_html": "<h2>Overview<a href=\"http://localhost:3000/docs/sources/oem/tesla/#overview\">​</a></h2><p>We are using the <a href=\"https://developer.tesla.com/docs/fleet-api\" rel=\"noopener noreferrer\">official Tesla FleetAPI</a> or their Powerhub to connect to Tesla accounts.</p><p>For Fleet API connections, a typical OAuth flow is used to authenticate the user and obtain consent to access their Tesla account and thus devices.</p><p>For Powerhub/Grid Services the flow is a bit more involved and custom, contact us for more details. As a result, the docs below pertain mostly to Fleet API and not Powerhub.</p><h2>Authorization<a href=\"http://localhost:3000/docs/sources/oem/tesla/#authorization\">​</a></h2><p>In the majority of cases, if the user simply clicks \"Select All\" when connecting their Tesla account, the necessary authorization scopes will be granted.</p><p>However, in cases where the user wants to manually select the authorization scopes, the authorization scopes required would depend on the level of access you would like to have. Specifically what kind of device data you would like to access, vehicles vs. energy products (inverters, powerwalls, etc.).</p><h3>User flow<a href=\"http://localhost:3000/docs/sources/oem/tesla/#user-flow\">​</a></h3><p>When authorizing the Tesla connection, the user will be prompted to select the authorization scopes they would like to grant to Texture.</p><p></p><blockquote><p><strong>Note</strong>: At minimum the user must grant the necessary scopes for reading data from the devices you would like to access. If you would like to execute commands on the devices, they must also grant the necessary scopes for that.</p></blockquote><p>The following sections contain images of the checkboxes required for various levels of access.</p><h4>Vehicles<a href=\"http://localhost:3000/docs/sources/oem/tesla/#vehicles\">​</a></h4><p>Minimum required scopes for reading vehicle data:<br></p><p>Additional required scopes for executing commands on vehicles (<strong>at least one of these is required</strong>):<br></p><h4>Energy Products<a href=\"http://localhost:3000/docs/sources/oem/tesla/#energy-products\">​</a></h4><p>Minimum required scopes for reading energy product data:<br></p><p>Additional required scopes for executing commands on energy products:<br></p><h3>Additional resources on authorization scopes<a href=\"http://localhost:3000/docs/sources/oem/tesla/#additional-resources-on-authorization-scopes\">​</a></h3><p>For an overview on Tesla's authorization scopes, please refer to the <a href=\"https://developer.tesla.com/docs/fleet-api#authorization-scopes\" rel=\"noopener noreferrer\">official Tesla FleetAPI documentation</a>.</p><p>They additionally have an endpoint listing the authorization scopes required for various endpoints <a href=\"https://developer.tesla.com/docs/scopes.json\" rel=\"noopener noreferrer\">here</a>.</p><h3>Insufficent Scopes<a href=\"http://localhost:3000/docs/sources/oem/tesla/#insufficent-scopes\">​</a></h3><p>If the user does not grant the necessary scopes, you will unfortunately either not be able to access their devices, or not be able to access all the data you would like to.</p><p>To rectify this situation, direct the user to update the access the Texture application has to their Tesla account. They can also revoke access their as well and then go through the Connect flow again, ensuring the necessary scopes are granted this time around.</p><p></p><ol class=\"number\"><li value=1>Send the user to <a href=\"https://auth.tesla.com/user/revoke/consent?revoke_client_id=f8e24ca22654-4253-abfe-b738cdb57dad\" rel=\"noopener noreferrer\">update the access Texture has to their Tesla account</a></li><li value=2>They will be prompted to log in, and then can revoke or update access the Texture app has to their account</li><li value=3>Afterward, they must go through the Connect flow again to grant the necessary scopes or re-grant access to their account under the new scopes.</li></ol><h2>Battery Import/Export Limitations<a href=\"http://localhost:3000/docs/sources/oem/tesla/#battery-importexport-limitations\">​</a></h2><p>Before you can successfully issue a discharge or charge command to a Tesla Powerwall via the Texture Platform to export or import energy to/from the grid, you must first ensure that the customer's Powerwall is configured to allow this.</p><p>Tesla provides detailed information about this in their <a href=\"https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings\" rel=\"noopener noreferrer\">Advanced Settings documentation</a>.</p><p>Some details from the above page are also captured in the following sections.</p><h3>Permission to Export<a href=\"http://localhost:3000/docs/sources/oem/tesla/#permission-to-export\">​</a></h3><p>Details can be found at: <a href=\"https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#permission-to-export\" rel=\"noopener noreferrer\">https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#permission-to-export</a></p><p>In the Tesla App, the customer should be able to see and adjust the following option:<br></p><p>If this option is unavailable or can't be found, the customer should contact Tesla or their installer to enable this feature.</p><p>If it is available, ensure the customer has it enabled or set to \"Yes\" to allow exporting energy to the grid.</p><h3>Energy Export Preferences<a href=\"http://localhost:3000/docs/sources/oem/tesla/#energy-export-preferences\">​</a></h3><p>Details can be found at: <a href=\"https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#energy-exports\" rel=\"noopener noreferrer\">https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#energy-exports</a></p><p>Assuming the user has permission to export enabled, they should also be able to see and adjust the following option:<br></p><p>If this option is unavailable or can't be found, the customer should contact Tesla or their installer to enable this feature.</p><p>If it is available, ensure the customer has it set to \"Everything\" to allow exporting the battery in addition to solar energy to the grid.</p><blockquote><p><strong>Note</strong>: When sending a discharge command to a battery with the <code>enableGridInteraction</code> flag set to true, we will attempt to adjust the export preferences to allow exporting the battery in addition to solar energy to the grid.</p></blockquote><h3>Grid Charging<a href=\"http://localhost:3000/docs/sources/oem/tesla/#grid-charging\">​</a></h3><p>Details can be found at: <a href=\"https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#grid-charging\" rel=\"noopener noreferrer\">https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#grid-charging</a></p><p>In the Tesla App, the customer should be able to see and adjust the following option:<br></p><p>Even if the customer doesn't have this option enabled, the battery still will be capable of charging from the grid when it has low energy, assuming of course it is connected to the grid.</p><p>Solar will still be prioritized over grid charging in most cases when set to \"Yes\", unless there is a financial incentive to charge from the grid or there is insufficient solar energy available.</p><blockquote><p><strong>Note</strong>: When sending a charge command to a battery with the <code>enableGridInteraction</code> flag set to true, we will attempt to adjust the grid charging preferences to allow charging the battery from the grid.</p></blockquote><h2>Vehicle Command Execution<a href=\"http://localhost:3000/docs/sources/oem/tesla/#vehicle-command-execution\">​</a></h2><p>The new Tesla FleetAPI has some additional requirements when it comes to executing commands on vehicles.</p><p>The user must first grant the scope in the above section to allow executing commands on their vehicles, but additionally must register a virtual key with their vehicle.</p><p>The basic process for this is as follows:</p><ol class=\"number\"><li value=1>Open the Tesla app and select a vehicle</li><li value=2>Visit <a href=\"https://www.tesla.com/_ak/cdn.texturehq.com\" rel=\"noopener noreferrer\">https://www.tesla.com/_ak/cdn.texturehq.com</a> from their phone or desktop</li></ol><p>The user will then be prompted to add the key to their selected vehicle.</p><p>After adding the key, Texture can now send commands to the vehicle over the internet on your behalf.</p><h3>Troubleshooting<a href=\"http://localhost:3000/docs/sources/oem/tesla/#troubleshooting\">​</a></h3><p>If you are attempting to execute one of the vehicle commands via our api, you may notice when querying for the status of the command, that you receive back a <code>reason</code> field indicating the following:</p><p><code>vehicle rejected request: your public key has not been paired with the vehicle</code><br></p><p>This indicates that the user has not yet paired our virtual key with their vehicle. The user must follow the steps in the previous section to pair the virtual key with their vehicle before Texture can send commands to it.</p>",
+    "source": "direct",
+    "website_url": "https://www.tesla.com/",
+    "documentation": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Overview",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#overview"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "We are using the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "official Tesla FleetAPI",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://developer.tesla.com/docs/fleet-api"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " or their Powerhub to connect to Tesla accounts.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "For Fleet API connections, a typical OAuth flow is used to authenticate the user and obtain consent to access their Tesla account and thus devices.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "For Powerhub/Grid Services the flow is a bit more involved and custom, contact us for more details. As a result, the docs below pertain mostly to Fleet API and not Powerhub.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Authorization",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#authorization"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "In the majority of cases, if the user simply clicks \"Select All\" when connecting their Tesla account, the necessary authorization scopes will be granted.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "However, in cases where the user wants to manually select the authorization scopes, the authorization scopes required would depend on the level of access you would like to have. Specifically what kind of device data you would like to access, vehicles vs. energy products (inverters, powerwalls, etc.).",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "User flow",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#user-flow"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "When authorizing the Tesla connection, the user will be prompted to select the authorization scopes they would like to grant to Texture.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Note",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": ": At minimum the user must grant the necessary scopes for reading data from the devices you would like to access. If you would like to execute commands on the devices, they must also grant the necessary scopes for that.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "paragraph",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "quote",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The following sections contain images of the checkboxes required for various levels of access.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Vehicles",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#vehicles"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h4"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Minimum required scopes for reading vehicle data:",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Additional required scopes for executing commands on vehicles (",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "at least one of these is required",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "):",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Energy Products",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#energy-products"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h4"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Minimum required scopes for reading energy product data:",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Additional required scopes for executing commands on energy products:",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Additional resources on authorization scopes",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#additional-resources-on-authorization-scopes"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "For an overview on Tesla's authorization scopes, please refer to the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "official Tesla FleetAPI documentation",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://developer.tesla.com/docs/fleet-api#authorization-scopes"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ".",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "They additionally have an endpoint listing the authorization scopes required for various endpoints ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "here",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://developer.tesla.com/docs/scopes.json"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ".",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Insufficent Scopes",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#insufficent-scopes"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If the user does not grant the necessary scopes, you will unfortunately either not be able to access their devices, or not be able to access all the data you would like to.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "To rectify this situation, direct the user to update the access the Texture application has to their Tesla account. They can also revoke access their as well and then go through the Connect flow again, ensuring the necessary scopes are granted this time around.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Send the user to ",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "update the access Texture has to their Tesla account",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "link",
+                    "version": 2,
+                    "fields": {
+                      "doc": null,
+                      "linkType": "custom",
+                      "newTab": true,
+                      "url": "https://auth.tesla.com/user/revoke/consent?revoke_client_id=f8e24ca22654-4253-abfe-b738cdb57dad"
+                    }
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "They will be prompted to log in, and then can revoke or update access the Texture app has to their account",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Afterward, they must go through the Connect flow again to grant the necessary scopes or re-grant access to their account under the new scopes.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 3
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "number",
+            "start": 1,
+            "tag": "ol"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Battery Import/Export Limitations",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#battery-importexport-limitations"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Before you can successfully issue a discharge or charge command to a Tesla Powerwall via the Texture Platform to export or import energy to/from the grid, you must first ensure that the customer's Powerwall is configured to allow this.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Tesla provides detailed information about this in their ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Advanced Settings documentation",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings"
+                }
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ".",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Some details from the above page are also captured in the following sections.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Permission to Export",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#permission-to-export"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Details can be found at: ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#permission-to-export",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#permission-to-export"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "In the Tesla App, the customer should be able to see and adjust the following option:",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If this option is unavailable or can't be found, the customer should contact Tesla or their installer to enable this feature.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If it is available, ensure the customer has it enabled or set to \"Yes\" to allow exporting energy to the grid.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Energy Export Preferences",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#energy-export-preferences"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Details can be found at: ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#energy-exports",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#energy-exports"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Assuming the user has permission to export enabled, they should also be able to see and adjust the following option:",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If this option is unavailable or can't be found, the customer should contact Tesla or their installer to enable this feature.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If it is available, ensure the customer has it set to \"Everything\" to allow exporting the battery in addition to solar energy to the grid.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Note",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": ": When sending a discharge command to a battery with the ",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 16,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "enableGridInteraction",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " flag set to true, we will attempt to adjust the export preferences to allow exporting the battery in addition to solar energy to the grid.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "paragraph",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "quote",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Grid Charging",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#grid-charging"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Details can be found at: ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#grid-charging",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": true,
+                  "url": "https://www.tesla.com/support/energy/powerwall/mobile-app/advanced-settings#grid-charging"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "In the Tesla App, the customer should be able to see and adjust the following option:",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Even if the customer doesn't have this option enabled, the battery still will be capable of charging from the grid when it has low energy, assuming of course it is connected to the grid.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Solar will still be prioritized over grid charging in most cases when set to \"Yes\", unless there is a financial incentive to charge from the grid or there is insufficient solar energy available.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Note",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": ": When sending a charge command to a battery with the ",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 16,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "enableGridInteraction",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " flag set to true, we will attempt to adjust the grid charging preferences to allow charging the battery from the grid.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "paragraph",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "quote",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Vehicle Command Execution",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#vehicle-command-execution"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The new Tesla FleetAPI has some additional requirements when it comes to executing commands on vehicles.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The user must first grant the scope in the above section to allow executing commands on their vehicles, but additionally must register a virtual key with their vehicle.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The basic process for this is as follows:",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Open the Tesla app and select a vehicle",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Visit ",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "children": [
+                      {
+                        "detail": 0,
+                        "format": 0,
+                        "mode": "normal",
+                        "style": "",
+                        "text": "https://www.tesla.com/_ak/cdn.texturehq.com",
+                        "type": "text",
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "format": "",
+                    "indent": 0,
+                    "type": "link",
+                    "version": 2,
+                    "fields": {
+                      "doc": null,
+                      "linkType": "custom",
+                      "newTab": true,
+                      "url": "https://www.tesla.com/_ak/cdn.texturehq.com"
+                    }
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " from their phone or desktop",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "number",
+            "start": 1,
+            "tag": "ol"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "The user will then be prompted to add the key to their selected vehicle.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "After adding the key, Texture can now send commands to the vehicle over the internet on your behalf.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Troubleshooting",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "​",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "link",
+                "version": 2,
+                "fields": {
+                  "doc": null,
+                  "linkType": "custom",
+                  "newTab": false,
+                  "url": "http://localhost:3000/docs/sources/oem/tesla/#troubleshooting"
+                }
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h3"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "If you are attempting to execute one of the vehicle commands via our api, you may notice when querying for the status of the command, that you receive back a ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "reason",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " field indicating the following:",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 16,
+                "mode": "normal",
+                "style": "",
+                "text": "vehicle rejected request: your public key has not been paired with the vehicle",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "type": "linebreak",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "This indicates that the user has not yet paired our virtual key with their vehicle. The user must follow the steps in the previous section to pair the virtual key with their vehicle before Texture can send commands to it.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
     "supported_device_types": [
       "vehicle",
       "charger",

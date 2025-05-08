@@ -197,10 +197,6 @@ Texture works with the following manufacturers to provide integrations for their
 
 <StaticManufacturersList />
 
-## All Manufacturers
-
-${manufacturers.map(m => `- [${m.name}](${m.slug})`).join('\n')}
-
 ## Our Integration Approach
 
 **We never use web scraping or reverse engineering in any of our device integrations.**
