@@ -4154,7 +4154,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:41:38.430Z",
-    "updatedAt": "2025-05-07T13:59:04.162Z",
+    "updatedAt": "2025-05-08T21:10:48.397Z",
     "icon": {
       "id": "667afcb143849cb1f9ca2e83",
       "alt": "solaredge-logo-icon",
@@ -4220,8 +4220,291 @@
     },
     "supports_grid_services": true,
     "is_featured_on_home_page": true,
-    "description_html": "",
+    "description": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "SolarEdge is a global leader in smart energy solutions, known for pioneering inverter technology that has reshaped how solar energy is harvested and managed. Their systems include optimized inverters, energy storage, EV charging, and home energy management capabilities — all orchestrated through a robust monitoring platform. With millions of systems deployed across more than 140 countries, SolarEdge is widely trusted for both residential and commercial-scale deployments.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Texture supports both the ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Monitoring API",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " and ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Grid Services API",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " for SolarEdge devices. Our integration enables seamless access to real-time and historical telemetry data, as well as control interfaces for participating in demand response and other grid-interactive programs. We’ve worked closely with SolarEdge for several years to support utility, aggregator, and OEM-driven initiatives that require high-fidelity data and reliable device orchestration.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "This close collaboration ensures that Texture customers can easily enroll SolarEdge systems in programs, monitor asset performance, and automate control strategies — all without having to reverse-engineer or maintain brittle workarounds.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Common Use Cases",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Virtual Power Plants (VPPs)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Demand Response (DR)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Energy Arbitrage",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " (e.g., optimizing battery charge/discharge against TOU or market signals)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 3
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Operations & Maintenance (O&M)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 4
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Asset Performance Monitoring",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 5
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "DER Program Enrollment & Eligibility Screening",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 6
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Grid Services Participation",
+                    "type": "text",
+                    "version": 1
+                  },
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": " (e.g., voltage support, frequency response)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 7
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "start": 1,
+            "tag": "ul"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "description_html": "<p>SolarEdge is a global leader in smart energy solutions, known for pioneering inverter technology that has reshaped how solar energy is harvested and managed. Their systems include optimized inverters, energy storage, EV charging, and home energy management capabilities — all orchestrated through a robust monitoring platform. With millions of systems deployed across more than 140 countries, SolarEdge is widely trusted for both residential and commercial-scale deployments.</p><p>Texture supports both the <strong>Monitoring API</strong> and <strong>Grid Services API</strong> for SolarEdge devices. Our integration enables seamless access to real-time and historical telemetry data, as well as control interfaces for participating in demand response and other grid-interactive programs. We’ve worked closely with SolarEdge for several years to support utility, aggregator, and OEM-driven initiatives that require high-fidelity data and reliable device orchestration.</p><p>This close collaboration ensures that Texture customers can easily enroll SolarEdge systems in programs, monitor asset performance, and automate control strategies — all without having to reverse-engineer or maintain brittle workarounds.</p><p><strong>Common Use Cases</strong></p><ul class=\"bullet\"><li value=1><strong>Virtual Power Plants (VPPs)</strong></li><li value=2><strong>Demand Response (DR)</strong></li><li value=3><strong>Energy Arbitrage</strong> (e.g., optimizing battery charge/discharge against TOU or market signals)</li><li value=4><strong>Operations & Maintenance (O&M)</strong></li><li value=5><strong>Asset Performance Monitoring</strong></li><li value=6><strong>DER Program Enrollment & Eligibility Screening</strong></li><li value=7><strong>Grid Services Participation</strong> (e.g., voltage support, frequency response)</li></ul>",
     "documentation_html": "",
+    "website_url": "https://www.solaredge.com/us/",
     "supported_device_types": [
       "inverter",
       "battery"

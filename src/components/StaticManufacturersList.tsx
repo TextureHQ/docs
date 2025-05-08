@@ -15,7 +15,11 @@ interface Manufacturer {
   support_level: string;
   supported_device_types?: string[];
   description?: string;
-  website?: string;
+  description_html?: string;
+  website_url?: string;
+  documentation?: string;
+  documentation_html?: string;
+  source?: string;
   vector_icon?: {
     id: string;
     url: string;

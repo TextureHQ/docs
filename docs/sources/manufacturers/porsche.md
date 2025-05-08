@@ -32,3 +32,6 @@ Electric Vehicles
 
 Porsche devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
 
+
+
+

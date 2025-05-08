@@ -39,7 +39,11 @@ const axios = require('axios');
  * @property {string} support_level
  * @property {string[]} [supported_device_types]
  * @property {string} [description]
- * @property {string} [website]
+ * @property {string} [description_html]
+ * @property {string} [website_url]
+ * @property {string} [documentation]
+ * @property {string} [documentation_html]
+ * @property {string} [source]
  */
 
 /**

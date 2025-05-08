@@ -137,9 +137,9 @@ sidebar_position: 3
 
 ${logoHtml}
 
-${manufacturer.description || `${manufacturer.name} is a manufacturer of energy devices supported by Texture.`}
+${manufacturer.description_html || manufacturer.description || `${manufacturer.name} is a manufacturer of energy devices supported by Texture.`}
 
-${manufacturer.website ? `**Website**: [${manufacturer.website}](${manufacturer.website})` : ''}
+${manufacturer.website_url ? `**Website**: [${manufacturer.name} Website](${manufacturer.website_url})` : ''}
 
 ## Support Status
 
@@ -161,6 +161,13 @@ ${deviceTypesList}
 ## Integration Details
 
 ${manufacturer.name} devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
+${manufacturer.source ? `\n**Integration Method**: ${manufacturer.source === 'direct' ? 'Direct API integration with the manufacturer' : manufacturer.source === 'smartcar' ? 'Integration via Smartcar' : manufacturer.source}` : ''}
+
+${manufacturer.documentation_html || manufacturer.documentation ? `
+## Manufacturer Documentation
+
+${manufacturer.documentation_html || manufacturer.documentation}
+` : ''}
 
 `;
 }
