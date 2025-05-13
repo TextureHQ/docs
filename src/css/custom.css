@@ -133,6 +133,10 @@ nav.menu, .navbar-sidebar {
 .menu__link--active:not(.menu__link--sublist) {
   background: none;
 }
+/* Hide items with hidden class */
+.hidden {
+  display: none !important;
+}
 @media (min-width: 997px) {
   @supports (scrollbar-gutter: stable) {
     .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
