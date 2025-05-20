@@ -77,8 +77,8 @@ Smartcar integration gives you real-time vehicle data, enabling remote EV comman
 ### Enode
 Enode offers access to a broad range of energy devices—EVs, inverters, thermostats, batteries. Connecting Enode helps unify device controls and telemetry in Texture.
 
-### Deraapi (Coming soon)
-Deraapi integration extends support for additional smart energy devices. Once live, you’ll be able to seamlessly import device data for enhanced management.
+### DERAPI (Coming soon)
+DERAPI integration extends support for additional smart energy devices. Once live, you’ll be able to seamlessly import device data for enhanced management.
 
 ---
 
