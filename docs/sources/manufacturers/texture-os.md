@@ -14,25 +14,45 @@ sidebar_position: 3
   />
 </div>
 
-TextureOS is a manufacturer of energy devices supported by Texture.
+**⚠️ IMPORTANT: TextureOS is NOT an actual device manufacturer. Texture does not manufacture any physical devices whatsoever. We are purely a software company.**
 
+These are **virtual devices created by Texture for testing and development purposes**. They are not real devices that exist in the real world.
 
+## What are Virtual Devices?
+
+Virtual devices allow you to experience the full Texture platform functionality without needing physical hardware:
+
+- ✅ View telemetry data 
+- ✅ Run commands
+- ✅ Test all platform features
+- ✅ Everything you can do with real devices
+
+## Important Limitations
+
+**⚠️ The device data is entirely random and not representative of real device behavior.**
+
+Virtual devices are **not useful** for testing scenarios where you expect realistic device responses, such as:
+- Testing battery state changes after commands
+- Expecting devices to switch from grid import to export
+- Any testing that requires predictable or realistic telemetry patterns
+
+The data is randomly generated and does not reflect actual device physics or behavior.
 
 ## Support Status
 
-**Support Level**: ✅ Production-ready, fully supported integration
+**Support Level**: ✅ Available for development and testing
 
-**Grid Services Support**: ✅ Supported
+**Grid Services Support**: ✅ Supported (with random data)
 
-## Supported Device Types
+## Supported Virtual Device Types
 
 Electric Vehicles, Smart Thermostats, EV Chargers, Solar Inverters, Batteries
 
-## Integration Details
+## Getting Started with Virtual Devices
 
-TextureOS devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
+Virtual devices are helpful for developers to explore the platform, but the user experience is not currently polished.
 
-**Integration Method**: 🔌 Direct API integration with the manufacturer
+**Interested in adding virtual devices to your platform?** [Contact us](mailto:support@texture.energy) to discuss your use case and we can help you get started.
 
 
 
