@@ -28,7 +28,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:47:31.243Z",
-    "updatedAt": "2024-06-18T18:23:49.459Z",
+    "updatedAt": "2025-05-08T21:43:54.579Z",
     "icon": {
       "id": "6671d09443849cb1f9bf0094",
       "alt": "alfa-romeo-icon",
@@ -92,9 +92,10 @@
       "updatedAt": "2024-06-18T18:22:20.731Z",
       "url": "/logo/ Alfa Romeo Icon.svg"
     },
-    "is_featured_on_home_page": false,
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
+    "source": "smartcar",
     "supported_device_types": [
       "vehicle"
     ]
@@ -1308,11 +1309,288 @@
     },
     "support_level": "development",
     "createdAt": "2025-04-07T18:00:23.911Z",
-    "updatedAt": "2025-05-06T17:50:23.802Z",
+    "updatedAt": "2025-05-08T21:43:26.580Z",
     "supports_grid_services": true,
     "is_featured_on_home_page": true,
-    "description_html": "",
-    "documentation_html": "",
+    "description_html": "<p>EG4 Electronics, a division of Signature Solar, is a growing provider of energy storage systems, hybrid inverters, and lithium-iron-phosphate (LiFePO₄) batteries aimed at making renewable energy more accessible and affordable. Known for its practical, DIY-friendly systems and competitive pricing, EG4 has quickly gained traction among homeowners, installers, and small commercial operators seeking reliable off-grid or grid-tied energy solutions. Their portfolio includes hybrid inverters, rack-mounted battery systems, and integrated ESS units designed for both flexibility and scalability.</p><p>Texture supports direct integrations with <strong>EG4’s batteries, inverters, and complete energy storage systems (ESS)</strong>. These integrations provide real-time telemetry and control across EG4 devices, enabling data visibility and orchestrated dispatch for grid-facing programs. Our support spans both monitoring and operational control, ensuring EG4 assets can be seamlessly enrolled in DER programs or managed as part of larger virtual fleets.</p><p>This positions EG4 devices as viable contributors in broader DER ecosystems — particularly for aggregators, VPP providers, and utilities looking to expand beyond Tier 1 OEMs without sacrificing observability or control.</p><p><strong>Common Use Cases</strong></p><ul class=\"bullet\"><li value=1><strong>Residential and Commercial VPP Participation</strong></li><li value=2><strong>Demand Response (DR)</strong></li><li value=3><strong>Energy Arbitrage</strong></li><li value=4><strong>DER Enrollment & Program Compliance</strong></li><li value=5><strong>Backup Power & Resiliency Planning</strong></li><li value=6><strong>Off-grid and Hybrid System Monitoring</strong></li><li value=7><strong>Operations & Maintenance (O&M)</strong></li></ul>",
+    "documentation_html": "<p>EG4 unfortunately does not support an OAuth flow so homeowners will be prompted to provide their serial number through the Texture Connect flow.</p>",
+    "source": "direct",
+    "website_url": "https://eg4electronics.com/",
+    "description": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "EG4 Electronics, a division of Signature Solar, is a growing provider of energy storage systems, hybrid inverters, and lithium-iron-phosphate (LiFePO₄) batteries aimed at making renewable energy more accessible and affordable. Known for its practical, DIY-friendly systems and competitive pricing, EG4 has quickly gained traction among homeowners, installers, and small commercial operators seeking reliable off-grid or grid-tied energy solutions. Their portfolio includes hybrid inverters, rack-mounted battery systems, and integrated ESS units designed for both flexibility and scalability.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Texture supports direct integrations with ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "EG4’s batteries, inverters, and complete energy storage systems (ESS)",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ". These integrations provide real-time telemetry and control across EG4 devices, enabling data visibility and orchestrated dispatch for grid-facing programs. Our support spans both monitoring and operational control, ensuring EG4 assets can be seamlessly enrolled in DER programs or managed as part of larger virtual fleets.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "This positions EG4 devices as viable contributors in broader DER ecosystems — particularly for aggregators, VPP providers, and utilities looking to expand beyond Tier 1 OEMs without sacrificing observability or control.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Common Use Cases",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Residential and Commercial VPP Participation",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Demand Response (DR)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Energy Arbitrage",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 3
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "DER Enrollment & Program Compliance",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 4
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Backup Power & Resiliency Planning",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 5
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Off-grid and Hybrid System Monitoring",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 6
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Operations & Maintenance (O&M)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 7
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "start": 1,
+            "tag": "ul"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "documentation": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "EG4 unfortunately does not support an OAuth flow so homeowners will be prompted to provide their serial number through the Texture Connect flow.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
     "supported_device_types": [
       "battery"
     ]
@@ -1409,11 +1687,258 @@
     },
     "support_level": "production",
     "createdAt": "2025-04-07T17:55:01.698Z",
-    "updatedAt": "2025-05-06T17:50:32.877Z",
+    "updatedAt": "2025-05-08T21:45:45.957Z",
     "supports_grid_services": true,
     "is_featured_on_home_page": true,
-    "description_html": "",
+    "description": {
+      "root": {
+        "type": "root",
+        "format": "",
+        "indent": 0,
+        "version": 1,
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Emporia Energy is a U.S.-based company focused on delivering affordable, smart energy management solutions for residential customers. Their product ecosystem includes energy monitors, smart plugs, home batteries, and most recently, inverters — all designed to provide detailed insights and actionable control over household energy use. Emporia’s focus on cost-effective, app-integrated devices has made it a popular choice for homeowners looking to improve efficiency, manage solar generation, and reduce electricity bills.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Texture currently supports ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Emporia’s EV chargers and home batteries",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": ", enabling access to real-time telemetry and control for solar and storage systems. These integrations allow customers to monitor asset performance, participate in grid programs, and orchestrate energy flows in alignment with utility signals or market conditions. Support for ",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Emporia’s energy monitors (a.k.a. Vue meters)",
+                "type": "text",
+                "version": 1
+              },
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": " is actively on our roadmap, but not yet live — we’re working to expand coverage as Emporia’s footprint grows.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Emporia’s growing install base and strong focus on visibility make it an increasingly relevant player in the DER ecosystem, and Texture’s integration ensures these devices can participate in VPPs and other energy programs with minimal friction.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 1,
+                "mode": "normal",
+                "style": "",
+                "text": "Common Use Cases",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Energy Arbitrage",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Virtual Power Plant (VPP) Participation",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Demand Response (DR)",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 3
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "DER Integration & Program Enrollment",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 4
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Performance Monitoring & Dispatch Optimization",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 5
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 1,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Residential Load Flexibility",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": "ltr",
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 6
+              }
+            ],
+            "direction": "ltr",
+            "format": "",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "start": 1,
+            "tag": "ul"
+          }
+        ],
+        "direction": "ltr"
+      }
+    },
+    "description_html": "<p>Emporia Energy is a U.S.-based company focused on delivering affordable, smart energy management solutions for residential customers. Their product ecosystem includes energy monitors, smart plugs, home batteries, and most recently, inverters — all designed to provide detailed insights and actionable control over household energy use. Emporia’s focus on cost-effective, app-integrated devices has made it a popular choice for homeowners looking to improve efficiency, manage solar generation, and reduce electricity bills.</p><p>Texture currently supports <strong>Emporia’s EV chargers and home batteries</strong>, enabling access to real-time telemetry and control for solar and storage systems. These integrations allow customers to monitor asset performance, participate in grid programs, and orchestrate energy flows in alignment with utility signals or market conditions. Support for <strong>Emporia’s energy monitors (a.k.a. Vue meters)</strong> is actively on our roadmap, but not yet live — we’re working to expand coverage as Emporia’s footprint grows.</p><p>Emporia’s growing install base and strong focus on visibility make it an increasingly relevant player in the DER ecosystem, and Texture’s integration ensures these devices can participate in VPPs and other energy programs with minimal friction.</p><p><strong>Common Use Cases</strong></p><ul class=\"bullet\"><li value=1><strong>Energy Arbitrage</strong></li><li value=2><strong>Virtual Power Plant (VPP) Participation</strong></li><li value=3><strong>Demand Response (DR)</strong></li><li value=4><strong>DER Integration & Program Enrollment</strong></li><li value=5><strong>Performance Monitoring & Dispatch Optimization</strong></li><li value=6><strong>Residential Load Flexibility</strong></li></ul>",
     "documentation_html": "",
+    "source": "direct",
+    "website_url": "https://www.emporiaenergy.com/",
     "supported_device_types": [
       "charger",
       "battery"
@@ -3734,13 +4259,14 @@
       "updatedAt": "2024-08-28T19:15:28.532Z",
       "url": "/logo/Generac Vector Icon.svg"
     },
-    "support_level": "development",
+    "support_level": "planned",
     "supports_grid_services": true,
     "createdAt": "2024-08-28T19:18:34.300Z",
-    "updatedAt": "2024-08-28T19:18:34.300Z",
-    "is_featured_on_home_page": false,
+    "updatedAt": "2025-05-08T21:37:27.143Z",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
+    "source": "direct",
     "supported_device_types": [
       "inverter",
       "battery"
@@ -9024,7 +9550,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:30:07.552Z",
-    "updatedAt": "2024-06-25T17:28:43.089Z",
+    "updatedAt": "2025-05-08T21:46:20.992Z",
     "icon": {
       "id": "667afe1343849cb1f9ca2fcc",
       "alt": "volvo-logo-icon",
@@ -9088,9 +9614,10 @@
       "updatedAt": "2024-06-25T17:28:18.391Z",
       "url": "/logo/ Volvo Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
+    "source": "smartcar",
     "supported_device_types": [
       "vehicle"
     ]
