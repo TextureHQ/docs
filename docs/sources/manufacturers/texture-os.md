@@ -48,6 +48,14 @@ The data is randomly generated and does not reflect actual device physics or beh
 
 Electric Vehicles, Smart Thermostats, EV Chargers, Solar Inverters, Batteries
 
+## OAuth Flow Testing
+
+Virtual devices are **excellent for testing the OAuth flow** and user onboarding via Texture's Hosted Onboarding experience.
+
+**Cannot be used for testing:**
+- Direct access onboarding (installer credentials, TPO credentials)
+- Certain grid services that don't support OAuth
+
 ## Getting Started with Virtual Devices
 
 Virtual devices are helpful for developers to explore the platform, but the user experience is not currently polished.
