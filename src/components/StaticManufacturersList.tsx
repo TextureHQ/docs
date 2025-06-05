@@ -172,7 +172,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({ class
                 <td style={{ display: 'flex', alignItems: 'center' }}>
                   {manufacturer.vector_icon?.url ? (
                     <img
-                      src={`${PAYLOAD_CMS_URL}${encodeURI(manufacturer.vector_icon.url)}`}
+                      src={`${PAYLOAD_CMS_URL}${manufacturer.vector_icon.url.split('/').map(segment => encodeURIComponent(segment)).join('/')}`}
                       alt={manufacturer.vector_icon.alt || `${manufacturer.name} logo`}
                       width={30}
                       height={30}

@@ -25,12 +25,12 @@
     --color-code: var(--color-canvas-tint);
     --color-on-code: var(--color-text-heading);
   }
-  @import "node_modules/@stoplight/mosaic/themes/default";
+  @import "~@stoplight/mosaic/themes/default.css";
 }
 
 .stoplight {
   :global {
-    @import "node_modules/@stoplight/mosaic/styles";
-    @import "node_modules/@stoplight/elements-core/core";
+    @import "~@stoplight/mosaic/styles.css";
+    @import "~@stoplight/elements-core/core.css";
   }
 }

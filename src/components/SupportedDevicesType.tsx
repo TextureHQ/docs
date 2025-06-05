@@ -183,7 +183,7 @@ const SupportedDevicesType: React.FC<SupportedDevicesTypeProps> = ({ type, title
                 <td style={{ display: 'flex', alignItems: 'center' }}>
                   {deviceModel.manufacturer.vector_icon?.url ? (
                     <img
-                      src={`${imageBaseUrl}${deviceModel.manufacturer.vector_icon.url}`}
+                      src={`${imageBaseUrl}${deviceModel.manufacturer.vector_icon.url.split('/').map(segment => encodeURIComponent(segment)).join('/')}`}
                       alt="Manufacturer Icon"
                       width={30}
                       height={30}

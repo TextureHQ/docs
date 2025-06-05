@@ -20,7 +20,7 @@ Generac is a manufacturer of energy devices supported by Texture.
 
 ## Support Status
 
-**Support Level**: 🔨 Integration currently in development
+**Support Level**: 🗓️ Integration planned for the future
 
 **Grid Services Support**: ✅ Supported
 
