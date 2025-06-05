@@ -5125,6 +5125,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@texturehq/device@npm:1.8.0":
+  version: 1.8.0
+  resolution: "@texturehq/device@npm:1.8.0"
+  dependencies:
+    axios: "npm:^1.6.7"
+    axios-cache-interceptor: "npm:^1.8.0"
+    axios-retry: "npm:^4.5.0"
+    zod: "npm:^3.22.4"
+  peerDependencies:
+    "@texturehq/logger": ^2.0.0
+  peerDependenciesMeta:
+    "@texturehq/logger":
+      optional: true
+  checksum: 10c0/7f877e31823426db436e9b1c7204f32b1b5a8ccbbd2e8b2589d98646e45c79cc9653d36aa49fc74e25761279f712d4c4163556884d35f61a9fbdae8888a855bb
+  languageName: node
+  linkType: hard
+
+"@texturehq/events@npm:1.6.2":
+  version: 1.6.2
+  resolution: "@texturehq/events@npm:1.6.2"
+  dependencies:
+    "@texturehq/device": "npm:1.8.0"
+    zod: "npm:^3.23.8"
+  checksum: 10c0/2b535decaf884da6e3b761970c14c65be449f0596e7cf60a76cd90d95c75a440a96c3382588a30966009785fa5d8a0c770e812e6f2db4f55498d99db5c543c7b
+  languageName: node
+  linkType: hard
+
 "@tree-sitter-grammars/tree-sitter-yaml@npm:=0.7.1":
   version: 0.7.1
   resolution: "@tree-sitter-grammars/tree-sitter-yaml@npm:0.7.1"
@@ -6284,7 +6311,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.7.4, axios@npm:^1.9.0":
+"axios-cache-interceptor@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "axios-cache-interceptor@npm:1.8.0"
+  dependencies:
+    cache-parser: "npm:1.2.5"
+    fast-defer: "npm:1.1.8"
+    object-code: "npm:1.3.3"
+  peerDependencies:
+    axios: ^1
+  checksum: 10c0/da4e67a6126cb8f6fabfe592a6c4418da5d45f2f19f7259756d16dfb2d3b32f3fea4886d1e39d47a09a97dcd45aa7b59233ba302a822a879d8a3c2e569de8f7d
+  languageName: node
+  linkType: hard
+
+"axios-retry@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "axios-retry@npm:4.5.0"
+  dependencies:
+    is-retry-allowed: "npm:^2.2.0"
+  peerDependencies:
+    axios: 0.x || 1.x
+  checksum: 10c0/574e7b1bf24aad99b560042d232a932d51bfaa29b5a6d4612d748ed799a6f11a5afb2582792492c55d95842200cbdfbe3454027a8c1b9a2d3e895d13c3d03c10
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.6.7, axios@npm:^1.7.4, axios@npm:^1.9.0":
   version: 1.9.0
   resolution: "axios@npm:1.9.0"
   dependencies:
@@ -6605,6 +6656,13 @@ __metadata:
     tar: "npm:^7.4.3"
     unique-filename: "npm:^4.0.0"
   checksum: 10c0/01f2134e1bd7d3ab68be851df96c8d63b492b1853b67f2eecb2c37bb682d37cb70bb858a16f2f0554d3c0071be6dfe21456a1ff6fa4b7eed996570d6a25ffe9c
+  languageName: node
+  linkType: hard
+
+"cache-parser@npm:1.2.5":
+  version: 1.2.5
+  resolution: "cache-parser@npm:1.2.5"
+  checksum: 10c0/08ef9b465a0af87565f12448a2c250934f4c02f1247a9c519759139a0e2db5584f45ffa8401ce721f7e5a8f8ba1faf3ddc1e99c29e5e93aba01f7e1f4ee8ef9a
   languageName: node
   linkType: hard
 
@@ -7858,6 +7916,7 @@ __metadata:
     "@payloadcms/richtext-lexical": "npm:^0.11.2"
     "@phosphor-icons/react": "npm:^2.0.15"
     "@stoplight/elements": "npm:^8.5.2"
+    "@texturehq/events": "npm:1.6.2"
     "@types/swagger-ui-react": "npm:^4.18.3"
     "@vercel/analytics": "npm:^1.5.0"
     axios: "npm:^1.7.4"
@@ -8570,6 +8629,13 @@ __metadata:
   version: 3.1.3
   resolution: "fast-deep-equal@npm:3.1.3"
   checksum: 10c0/40dedc862eb8992c54579c66d914635afbec43350afbbe991235fdcb4e3a8d5af1b23ae7e79bef7d4882d0ecee06c3197488026998fb19f72dc95acff1d1b1d0
+  languageName: node
+  linkType: hard
+
+"fast-defer@npm:1.1.8":
+  version: 1.1.8
+  resolution: "fast-defer@npm:1.1.8"
+  checksum: 10c0/4537cf81ce3e1505adba01dfe232231271162c8365427b360e0e86c8e4bf65f08d9e6ced1bd063fbafb48376f2ff152d1cad3cb25237126492921a15ce203e88
   languageName: node
   linkType: hard
 
@@ -10346,6 +10412,13 @@ __metadata:
   version: 1.0.0
   resolution: "is-regexp@npm:1.0.0"
   checksum: 10c0/34cacda1901e00f6e44879378f1d2fa96320ea956c1bec27713130aaf1d44f6e7bd963eed28945bfe37e600cb27df1cf5207302680dad8bdd27b9baff8ecf611
+  languageName: node
+  linkType: hard
+
+"is-retry-allowed@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "is-retry-allowed@npm:2.2.0"
+  checksum: 10c0/013be4f8a0a06a49ed1fe495242952e898325d496202a018f6f9fb3fb9ac8fe3b957a9bd62463d68299ae35dbbda680473c85a9bcefca731b49d500d3ccc08ff
   languageName: node
   linkType: hard
 
@@ -12710,6 +12783,13 @@ __metadata:
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: 10c0/1f4df9945120325d041ccf7b86f31e8bcc14e73d29171e37a7903050e96b81323784ec59f93f102ec635bcf6fa8034ba3ea0a8c7e69fa202b87ae3b6cec5a414
+  languageName: node
+  linkType: hard
+
+"object-code@npm:1.3.3":
+  version: 1.3.3
+  resolution: "object-code@npm:1.3.3"
+  checksum: 10c0/804650eb9b7f23f612c5ba7afbfccc0406f622d701491a690d0492f6e01252096cfba85186fd39883fda6b0e04d623aa8d9485395830223af2395df32d55a75e
   languageName: node
   linkType: hard
 
@@ -17807,6 +17887,13 @@ __metadata:
   version: 4.0.2
   resolution: "zenscroll@npm:4.0.2"
   checksum: 10c0/419e87ebe3a22a3b2ac22cd02aeccb900c9c330f539efdb1efc382090157d466373ee615812caef5bbe2da140e3c7df222236c8cfd8e697e97d4d91cf3f81c63
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.22.4, zod@npm:^3.23.8":
+  version: 3.25.51
+  resolution: "zod@npm:3.25.51"
+  checksum: 10c0/6fc708a45b0d44282c18da4c93f4d42336a884a42487031b40bacb7e8c5a2e539b7993d3ccba75f445df78050f05ff4e34110ffe03d2c3fcbe557c7fe7c1350a
   languageName: node
   linkType: hard
 
