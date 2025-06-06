@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "BROWSER=none docusaurus start",
     "prebuild": "node scripts/generateManufacturerPages.js",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",

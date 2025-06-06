@@ -31,6 +31,6 @@
 .stoplight {
   :global {
     @import "~@stoplight/mosaic/styles.css";
-    @import "~@stoplight/elements-core/core.css";
+    @import "~@stoplight/elements/styles.min.css";
   }
 }

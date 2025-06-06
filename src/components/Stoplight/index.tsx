@@ -1,6 +1,6 @@
 import React from "react";
 import { API } from "@stoplight/elements";
-import styles from "./index.module.scss";
+import "@stoplight/elements/styles.min.css";
 
 interface StoplightProps {
   apiDescriptionUrl: string;
@@ -8,9 +8,13 @@ interface StoplightProps {
 
 export function Stoplight({ apiDescriptionUrl }: StoplightProps) {
   return (
-      <div className={(styles as { stoplight: string }).stoplight}>
-        <API apiDescriptionUrl={apiDescriptionUrl} layout="responsive" router="hash" />
-      </div>
+    <div>
+      <API
+        apiDescriptionUrl={apiDescriptionUrl}
+        layout="responsive"
+        router="hash"
+      />
+    </div>
   );
 }
 
