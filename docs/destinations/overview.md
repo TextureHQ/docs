@@ -21,13 +21,13 @@ Currently supported destinations:
 - [Webhooks](./webhooks.md)
 - [Email](./email.md)
 - [SMS](./sms.md)
+- [Kafka](./kafka.md)
 
 **Coming soon**
 
 - s3
 - WebSocket
 - MQTT
-- Kafka
 - Push Notifications
 - Snowflake
 - Databricks
