@@ -9,6 +9,8 @@ import TabItem from '@theme/TabItem';
 
 # Quickstart
 
+Texture makes your energy systems visible, responsive, and connected—without rebuilding your stack. It works with your existing infrastructure—no migration, no disruptions. Start with a single integration or use case, and expand as you go.
+
 ## Introduction
 This guide will walk you through the process of generating a link that allows your customers to connect their devices with Texture.
 

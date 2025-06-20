@@ -4,6 +4,8 @@ id: signing-up
 ---
 
 # Signing Up
+
+Texture makes your energy systems visible, responsive, and connected—without rebuilding your stack. It works with your existing infrastructure—no migration, no disruptions. Start with a single integration or use case, and expand as you go.
  
 ## Step 1: Create your account
 

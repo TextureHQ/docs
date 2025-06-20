@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Getting Started with Texture
 
+Texture makes your energy systems visible, responsive, and connected—without rebuilding your stack. It works with your existing infrastructure—no migration, no disruptions. Start with a single integration or use case, and expand as you go.
+
 This guide provides a clear roadmap to start building with Texture's energy device platform. Whether you're developing a solar monitoring solution, demand response application, or virtual power plant, the steps below will help you quickly integrate with energy devices.
 
 ## Step 1: Create Your Account

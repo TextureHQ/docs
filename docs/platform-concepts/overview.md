@@ -6,7 +6,9 @@ sidebar_position: 1
 
 ## What is Texture?
 
-Texture is the industry cloud for energy. We provide a comprehensive platform that turns data chaos into data confidence by making energy data work smarter for companies across the energy sector.
+Texture eliminates data silos in energy. We provide a comprehensive platform that turns data chaos into data confidence by making energy data work smarter for companies across the energy sector.
+
+Texture makes your energy systems visible, responsive, and connected—without rebuilding your stack. It works with your existing infrastructure—no migration, no disruptions. Start with a single integration or use case, and expand as you go.
 
 Our platform goes far beyond basic device integration to enable:
 

@@ -1,6 +1,8 @@
 # Texture
 
-These are the docs for [Texture](https://www.texturehq.com), the industry cloud for energy.
+These are the docs for [Texture](https://www.texturehq.com), the platform eliminating data silos in energy.
+
+Texture makes your energy systems visible, responsive, and connected—without rebuilding your stack. It works with your existing infrastructure—no migration, no disruptions. Start with a single integration or use case, and expand as you go. Texture helps you stay ahead by making your data work smarter.
 
 They are hosted here: [https://docs.texturehq.com](https://docs.texturehq.com)
 
