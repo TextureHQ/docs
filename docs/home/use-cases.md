@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Common Use Cases
 
+Texture makes your energy systems visible, responsive, and connected—without rebuilding your stack. It works with your existing infrastructure—no migration, no disruptions. Start with a single integration or use case, and expand as you go.
+
 Texture's unified platform for energy device integration and control supports a wide range of industry applications. This page highlights some of the most common use cases that our customers are implementing today.
 
 ## Industry Solutions
