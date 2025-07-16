@@ -356,6 +356,15 @@ nav.menu,
    CONTENT BLOCKS & COMPONENTS
    ========================================================================== */
 
+/* Hide anchor link icons */
+.markdown a.anchor {
+  display: none;
+}
+
+.markdown .anchor {
+  display: none;
+}
+
 /* Blockquotes */
 blockquote {
   background: #fef7e0;
