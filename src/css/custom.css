@@ -321,6 +321,14 @@ html[data-theme="dark"] .markdown > p {
    NAVIGATION & LAYOUT
    ========================================================================== */
 
+/* SVG Icon Alignment in Links */
+a svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
+
 /* Navbar Adjustments */
 @media (min-width: 997px) {
   .navbar__logo {
