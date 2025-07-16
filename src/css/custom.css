@@ -179,7 +179,7 @@
 .markdown p {
   font-family: var(--font-family-base);
   line-height: var(--line-height-base);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
 }
 
 /* Horizontal Rules */
@@ -199,12 +199,63 @@
   margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-lg);
   padding-left: 0;
+  list-style: none;
 }
 
 .markdown ul li,
 .markdown ol li {
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
   line-height: var(--line-height-base);
+  position: relative;
+  padding-left: 2rem;
+}
+
+/* Ordered List Number Styling */
+.markdown ol li::before {
+  content: counter(list-item);
+  counter-increment: list-item;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #e5e7eb;
+  color: #4b5563;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  border: 1px solid #d1d5db;
+  margin-right: 0.75rem;
+}
+
+.markdown ol li {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-base);
+  position: relative;
+  padding-left: 2.75rem;
+}
+
+/* Unordered List Bullet Styling */
+.markdown ul li::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #6b7280;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.markdown ul li {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-base);
+  position: relative;
+  padding-left: 2.75rem;
 }
 
 /* Paragraph to List Spacing */
@@ -242,11 +293,15 @@
    ========================================================================== */
 
 /* Markdown Content Spacing */
-.markdown > pre,
-.markdown > ul,
-.markdown > p {
+.markdown > pre {
   margin-bottom: 0;
   margin-top: 1rem;
+}
+
+.markdown > ul,
+.markdown > ol {
+  margin-bottom: var(--spacing-lg);
+  margin-top: var(--spacing-sm);
 }
 
 /* Markdown Content Colors */
