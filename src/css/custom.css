@@ -540,11 +540,13 @@ nav.menu,
   border-radius: 6px;
   margin: 2px 8px;
   padding: 8px 12px;
+  transition: all 0.2s ease;
 }
 
 .menu__link:hover {
-  background-color: #f3f4f6 !important;
-  color: #374151 !important;
+  background-color: #e5e7eb !important;
+  color: #1f2937 !important;
+  transform: translateX(2px);
 }
 
 .menu__link--active:not(.menu__link--sublist) {
@@ -632,8 +634,9 @@ nav.menu,
 
 [data-theme="dark"] .menu__link:hover,
 [data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
-  background-color: #374151 !important;
-  color: #f9fafb !important;
+  background-color: #4b5563 !important;
+  color: #ffffff !important;
+  transform: translateX(2px);
 }
 
 [data-theme="dark"] .menu__caret {
