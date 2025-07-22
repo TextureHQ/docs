@@ -268,17 +268,17 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         .manufacturers-filters {
           display: flex;
           flex-wrap: wrap;
-          gap: 8px;
+          gap: 6px;
           margin-bottom: 32px;
         }
 
         .filter-button {
-          padding: 8px 16px;
+          padding: 6px 12px;
           border: 1px solid #e5e7eb;
           border-radius: 6px;
           background-color: #ffffff;
           color: #374151;
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 500;
           cursor: pointer;
           transition: all 0.2s ease;
@@ -361,12 +361,12 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
           }
 
           .manufacturers-filters {
-            gap: 6px;
+            gap: 4px;
           }
 
           .filter-button {
-            padding: 6px 12px;
-            font-size: 13px;
+            padding: 4px 8px;
+            font-size: 12px;
           }
 
           .manufacturers-search-input {

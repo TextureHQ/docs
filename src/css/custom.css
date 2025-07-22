@@ -431,8 +431,50 @@ html.docs-doc-id-home\/welcome div.theme-doc-markdown header:first-child {
 
 /* Main content area padding for better spacing from sidebars */
 .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Override Docusaurus horizontal spacing variable */
+:root {
+  --ifm-spacing-horizontal: 2rem;
+}
+
+/* Grid column padding for better spacing */
+.col[class*="col--"] {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Responsive grid column padding */
+@media (max-width: 1200px) {
+  :root {
+    --ifm-spacing-horizontal: 1.5rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+@media (max-width: 996px) {
+  :root {
+    --ifm-spacing-horizontal: 1.25rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --ifm-spacing-horizontal: 1rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 
 /* ==========================================================================
@@ -460,22 +502,22 @@ table tr:nth-child(odd) {
 /* Responsive padding adjustments */
 @media (max-width: 1200px) {
   .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
 @media (max-width: 996px) {
   .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 @media (max-width: 767px) {
   .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
