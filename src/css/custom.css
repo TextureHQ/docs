@@ -24,26 +24,6 @@
   /* Typography Colors */
   --ifm-heading-color: #0c1452;
   --ifm-navbar-link-color: #0c1452;
-
-  /* Code & Syntax Highlighting */
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-
-  /* Layout & Spacing */
-  --ifm-blockquote-padding-vertical: 1rem;
-  --ifm-menu-link-padding-horizontal: 1.1rem;
-}
-
-/* ==========================================================================
-   TYPOGRAPHY SYSTEM
-   ========================================================================== */
-
-:root {
-  /* Font Family */
-  --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Helvetica", "Arial", sans-serif;
-
-  /* Typography Colors */
   --font-color-base: #333333;
   --font-color-heading: #333333;
 
@@ -69,7 +49,7 @@
   --line-height-h5: 1.5;
   --line-height-h6: 1.5;
 
-  /* Vertical Rhythm */
+  /* Spacing System */
   --spacing-unit: 1rem;
   --spacing-xs: 0.5rem;
   --spacing-sm: 0.75rem;
@@ -82,21 +62,25 @@
   /* Heading Margins */
   --heading-margin-top-h1: var(--spacing-3xl);
   --heading-margin-bottom-h1: var(--spacing-xl);
-
   --heading-margin-top-h2: var(--spacing-2xl);
   --heading-margin-bottom-h2: var(--spacing-lg);
-
   --heading-margin-top-h3: var(--spacing-xl);
   --heading-margin-bottom-h3: var(--spacing-md);
-
   --heading-margin-top-h4: var(--spacing-lg);
   --heading-margin-bottom-h4: var(--spacing-sm);
-
   --heading-margin-top-h5: var(--spacing-lg);
   --heading-margin-bottom-h5: var(--spacing-sm);
-
   --heading-margin-top-h6: var(--spacing-lg);
   --heading-margin-bottom-h6: var(--spacing-sm);
+
+  /* Code & Syntax Highlighting */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Layout & Spacing */
+  --ifm-blockquote-padding-vertical: 1rem;
+  --ifm-menu-link-padding-horizontal: 1.1rem;
+  --ifm-spacing-horizontal: 2rem;
 
   /* Legacy variables for backward compatibility */
   --leading: 1.6;
@@ -104,8 +88,21 @@
   --h2-vertical-rhythm-top: 1;
 }
 
-/* Font Loading */
+/* ==========================================================================
+   FONT LOADING
+   ========================================================================== */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+/* ==========================================================================
+   TYPOGRAPHY SYSTEM
+   ========================================================================== */
+
+/* Font Family */
+:root {
+  --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Helvetica", "Arial", sans-serif;
+}
 
 /* Heading Styles */
 h1,
@@ -205,6 +202,10 @@ h6,
   height: 1px;
 }
 
+/* ==========================================================================
+   LIST STYLING
+   ========================================================================== */
+
 /* List Styles */
 .markdown ul,
 .markdown ol {
@@ -288,6 +289,740 @@ h6,
 }
 
 /* ==========================================================================
+   MARKDOWN CONTENT STYLING
+   ========================================================================== */
+
+/* Markdown Content Spacing */
+.markdown > pre {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.markdown > ul,
+.markdown > ol {
+  margin-bottom: var(--spacing-lg);
+  margin-top: var(--spacing-sm);
+}
+
+/* Markdown Content Colors */
+.markdown > pre,
+.markdown > ul,
+.markdown > p {
+  color: #3c4257;
+}
+
+/* Global link styling with increased underline offset */
+a {
+  text-underline-offset: 0.3em;
+}
+
+/* Hide anchor link icons */
+.markdown a.anchor {
+  display: none;
+}
+
+/* Keep headings visible but hide anchor link icons */
+.markdown .anchor:not(a) {
+  display: block;
+}
+
+/* SVG Icon Alignment in Links */
+a svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+/* Blockquotes */
+blockquote {
+  background: #fef7e0;
+  border-left: var(--ifm-blockquote-border-left-width) solid
+    var(--ifm-blockquote-border-color);
+  box-shadow: var(--ifm-blockquote-shadow);
+  color: var(--ifm-blockquote-color);
+  font-size: var(--ifm-blockquote-font-size);
+  margin: 2rem 0;
+}
+
+/* Example Blocks */
+.example {
+  background-color: #8ecafc;
+  border-left: var(--ifm-blockquote-border-left-width) solid
+    var(--ifm-blockquote-border-color);
+  box-shadow: var(--ifm-blockquote-shadow);
+  color: var(--ifm-blockquote-color);
+  font-size: var(--ifm-blockquote-font-size);
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+/* ==========================================================================
+   NAVIGATION & LAYOUT
+   ========================================================================== */
+
+/* Navbar Styling - OpenAI-style muted background */
+.navbar {
+  background-color: #f5f5f5 !important;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: none;
+}
+
+.navbar__inner {
+  background-color: #f5f5f5;
+}
+
+.navbar__brand {
+  color: #374151 !important;
+}
+
+.navbar__item {
+  color: #6b7280 !important;
+  font-weight: 500;
+}
+
+.navbar__item:hover {
+  color: #374151 !important;
+  background: none;
+}
+
+.navbar__link {
+  color: #6b7280 !important;
+  font-weight: 500;
+}
+
+.navbar__link:hover {
+  color: #374151 !important;
+  background: none;
+}
+
+/* Navbar Adjustments */
+@media (min-width: 997px) {
+  .navbar__logo {
+    position: relative;
+    bottom: 2.5px;
+  }
+}
+
+/* Welcome Page Full-Width Hero */
+@media (min-width: 997px) {
+  html.docs-doc-id-home\/welcome
+    .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    max-width: none !important;
+  }
+}
+
+html.docs-doc-id-home\/welcome div.theme-doc-markdown header:first-child {
+  display: none;
+}
+
+/* ==========================================================================
+   SIDEBAR STYLING
+   ========================================================================== */
+
+/* Sidebar Layout - OpenAI-style muted background */
+nav.menu,
+.navbar-sidebar {
+  padding-bottom: 3rem;
+  background-color: #f5f5f5;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* Sidebar Navigation Links */
+.menu__link {
+  color: #6b7280 !important;
+  font-weight: 500;
+  border-radius: 6px;
+  margin: 2px 8px;
+  padding: 8px 12px;
+  transition: none;
+}
+
+.menu__link:hover {
+  background-color: #e5e7eb !important;
+  color: #1f2937 !important;
+  transform: none;
+}
+
+/* Active page links (not section headers) */
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: transparent !important;
+  color: var(--brand-color) !important;
+  font-weight: 700;
+  border: none;
+  position: relative;
+  transition: none;
+}
+
+.menu__link--active:not(.menu__link--sublist)::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+  animation: dotAppear 0.3s ease-out;
+}
+
+/* Remove active styling from section headers */
+.menu__list-item--collapsible .menu__link--active {
+  color: var(--ifm-color-emphasis-900) !important;
+  font-weight: 600 !important;
+}
+
+.menu__list-item--collapsible .menu__link--active::before {
+  display: none !important;
+}
+
+@keyframes dotAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0) translateX(-10px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-50%) scale(1.4) translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) translateX(0);
+  }
+}
+
+.menu__caret {
+  color: #6b7280 !important;
+}
+
+.menu__caret:hover {
+  background: none;
+  color: #374151 !important;
+}
+
+/* Menu headings */
+.menu__list-item--collapsed .menu__link {
+  color: #374151 !important;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Left Sidebar Section Styling - Less Clunky */
+.menu__list-item--collapsible {
+  margin-bottom: 8px;
+}
+
+/* Main Section Headers - More Elegant (Override Docusaurus defaults) */
+.menu__list-item--collapsible .menu__link {
+  padding: 4px 12px !important;
+  border-radius: 4px !important;
+  transition: none !important;
+  background-color: transparent !important;
+  color: var(--ifm-color-emphasis-600) !important;
+  font-weight: 500 !important;
+  font-size: 0.8rem !important;
+  text-transform: none !important;
+  letter-spacing: 0.025em !important;
+  margin: 0 !important;
+}
+
+.menu__list-item--collapsible .menu__link:hover {
+  background-color: var(--ifm-color-emphasis-50) !important;
+  color: var(--ifm-color-emphasis-800) !important;
+}
+
+.menu__list-item--collapsible .menu__link--active {
+  background-color: var(--ifm-color-emphasis-50) !important;
+  color: var(--ifm-color-emphasis-900) !important;
+  font-weight: 600 !important;
+  border-left: 2px solid var(--brand-color) !important;
+  padding-left: 10px !important;
+}
+
+/* Ensure section headers don't get active page styling */
+.menu__list-item--collapsible .menu__link--active {
+  color: var(--ifm-color-emphasis-900) !important;
+}
+
+/* Reduce spacing between sections */
+.menu__list-item--collapsible {
+  margin-bottom: 2px !important;
+  padding-top: 0 !important;
+}
+
+/* Submenu styling - consolidated */
+.menu__list-item--collapsible .menu__list {
+  margin-top: 2px;
+  margin-left: 8px;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  padding-left: 12px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Chevron animation - more subtle */
+.menu__list-item--collapsible .menu__link::after {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__list-item--collapsible .menu__link--active::after {
+  transform: rotate(90deg);
+}
+
+/* Sidebar Scrollbar */
+@media (min-width: 997px) {
+  @supports (scrollbar-gutter: stable) {
+    .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
+      padding: 0 0 4rem 0 !important;
+      scrollbar-gutter: stable;
+    }
+  }
+}
+
+/* Sidebar Menu Items */
+.menu__list-item-collapsible {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Complete sidebar redesign - proper hierarchy and rhythm */
+div.menu__list-item-collapsible {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* More prominent section labels in left sidebar */
+div.menu__list-item-collapsible .menu__link {
+  padding: 10px 16px;
+  border-radius: 0;
+  transition: none;
+  background-color: transparent;
+  color: var(--ifm-color-emphasis-800);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: 0.025em;
+  margin: 0;
+  border: none;
+  position: relative;
+}
+
+div.menu__list-item-collapsible .menu__link:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+}
+
+div.menu__list-item-collapsible .menu__link--active {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 700;
+  padding-left: 16px;
+}
+
+/* L2 items - proper hierarchy with smaller indent */
+.menu__list-item .menu__link {
+  padding: 6px 16px 6px 20px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--ifm-color-emphasis-600);
+  border: none;
+  position: relative;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  will-change: auto !important;
+}
+
+/* Active menu items - make them bolder (only page links, not section headers) */
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: 700 !important;
+  color: var(--brand-color) !important;
+}
+
+.menu__list-item .menu__link:hover {
+  background-color: var(--ifm-color-emphasis-50);
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Submenu container styling - smaller indent */
+.menu__list-item-collapsible .menu__list {
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  margin-left: 4px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Disable all animations on menu items to prevent spreading */
+.menu__list-item,
+.menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link:hover,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link--active,
+.menu__link,
+.menu__link:hover,
+.menu__link--active,
+.menu__link--sublist,
+.menu__link--sublist:hover,
+.menu__link--sublist--active {
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  will-change: auto !important;
+}
+
+/* Hidden Elements */
+.hidden {
+  display: none !important;
+}
+
+/* Override any Docusaurus menu animations */
+[class*="menu__"] {
+  transition: none !important;
+  animation: none !important;
+}
+
+[class*="menu__"] * {
+  transition: none !important;
+  animation: none !important;
+}
+
+/* ==========================================================================
+   SEARCH BAR STYLING
+   ========================================================================== */
+
+/* DocSearch elegant styling */
+.DocSearch-Button {
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  width: 280px !important;
+  height: 40px !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.2s ease !important;
+}
+
+.DocSearch-Button:hover {
+  background: #f9fafb !important;
+  border-color: #d1d5db !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+.DocSearch-Button:focus {
+  outline: none !important;
+  border-color: var(--brand-color) !important;
+  box-shadow: 0 0 0 3px rgba(68, 74, 225, 0.1) !important;
+}
+
+.DocSearch-Button-Key {
+  display: inline !important;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #9ca3af !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  padding: 0 !important;
+  margin-left: 8px !important;
+  min-width: auto !important;
+  height: auto !important;
+  box-shadow: none !important;
+}
+
+.DocSearch-Button-Placeholder {
+  color: #6b7280 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.DocSearch-Button-Keys {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: auto !important;
+}
+
+/* Target all possible keyboard shortcut elements */
+.DocSearch-Button-Key,
+.DocSearch-Button-Keys .DocSearch-Button-Key,
+.DocSearch-Button-Keys span,
+.DocSearch-Button-Keys kbd {
+  display: none !important;
+}
+
+/* Search icon styling */
+.DocSearch-Button .DocSearch-Button-Container {
+  margin-right: 8px !important;
+}
+
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: #9ca3af !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* ==========================================================================
+   TABLE OF CONTENTS STYLING
+   ========================================================================== */
+
+/* TOC Container */
+.theme-doc-toc-desktop {
+  position: sticky !important;
+  top: 2rem !important;
+  max-height: calc(100vh - 4rem) !important;
+  overflow-y: auto !important;
+}
+
+/* TOC List Container */
+.theme-doc-toc-desktop .table-of-contents {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Background Vertical Line */
+.theme-doc-toc-desktop .table-of-contents::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e5e7eb;
+}
+
+/* TOC Links */
+.theme-doc-toc-desktop .table-of-contents__link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  transition: none;
+  margin-left: -1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* Active Link Styling */
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  color: var(--brand-color);
+  font-weight: 600;
+  background-color: rgba(68, 74, 225, 0.1);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem -0.75rem;
+  border-left: 3px solid var(--brand-color);
+}
+
+/* Hover Effects */
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  color: #374151;
+  text-decoration: none;
+}
+
+/* More prominent TOC hover states */
+.theme-doc-toc-desktop .table-of-contents__link {
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: none;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 400;
+  margin: 2px 0;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 500;
+  transform: none;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--brand-color);
+  font-weight: 600;
+  border-left: 3px solid var(--brand-color);
+  padding-left: 9px;
+}
+
+/* ==========================================================================
+   CONTENT AREA PADDING & LAYOUT
+   ========================================================================== */
+
+/* Main content area padding for better spacing from sidebars */
+.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Grid column padding for better spacing */
+.col[class*="col--"] {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE GRID SYSTEM
+   ========================================================================== */
+
+@media (max-width: 996px) {
+  .col--md-6 {
+    --ifm-col-width: 50% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .col--sm-12 {
+    --ifm-col-width: 100% !important;
+  }
+
+  .col--sm-offset-0 {
+    margin-left: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE PADDING ADJUSTMENTS
+   ========================================================================== */
+
+/* Responsive grid column padding */
+@media (max-width: 1200px) {
+  :root {
+    --ifm-spacing-horizontal: 1.5rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 996px) {
+  :root {
+    --ifm-spacing-horizontal: 1.25rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --ifm-spacing-horizontal: 1rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   TABLE STYLING OVERRIDES
+   ========================================================================== */
+
+/* Remove any zebra stripes from tables */
+table tr:nth-child(even),
+table tr:nth-child(odd) {
+  background-color: transparent !important;
+}
+
+/* Ensure manufacturers table has no zebra stripes */
+.manufacturers-table tr:nth-child(even),
+.manufacturers-table tr:nth-child(odd) {
+  background-color: transparent !important;
+}
+
+/* Override any Docusaurus default table styles */
+.markdown table tr:nth-child(even),
+.markdown table tr:nth-child(odd) {
+  background-color: transparent !important;
+}
+
+/* ==========================================================================
+   BREADCRUMBS STYLING
+   ========================================================================== */
+
+/* Professional and elegant breadcrumbs */
+.breadcrumbs {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.breadcrumbs__item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.breadcrumbs__link {
+  color: var(--ifm-color-emphasis-600);
+  text-decoration: none;
+  transition: none;
+  font-weight: 400;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--ifm-color-emphasis-800);
+  text-decoration: none;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 600;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.breadcrumbs__separator {
+  color: var(--ifm-color-emphasis-400);
+  margin: 0 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* Hide breadcrumbs - not needed for simple section/page structure */
+.breadcrumbs {
+  display: none !important;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+  display: none;
+}
+
+/* ==========================================================================
    DARK MODE THEME OVERRIDES
    ========================================================================== */
 
@@ -368,334 +1103,14 @@ h6,
   background: #121212;
 }
 
-/* ==========================================================================
-   MARKDOWN CONTENT STYLING
-   ========================================================================== */
-
-/* Markdown Content Spacing */
-.markdown > pre {
-  margin-bottom: 0;
-  margin-top: 1rem;
-}
-
-.markdown > ul,
-.markdown > ol {
-  margin-bottom: var(--spacing-lg);
-  margin-top: var(--spacing-sm);
-}
-
-/* Markdown Content Colors */
-.markdown > pre,
-.markdown > ul,
-.markdown > p {
-  color: #3c4257;
-}
-
+/* Dark Mode Markdown Content */
 html[data-theme="dark"] .markdown > pre,
 html[data-theme="dark"] .markdown > ul,
 html[data-theme="dark"] .markdown > p {
   color: #ffffff;
 }
 
-/* ==========================================================================
-   NAVIGATION & LAYOUT
-   ========================================================================== */
-
-/* SVG Icon Alignment in Links */
-a svg {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.5rem;
-  margin-right: 0.25rem;
-}
-
-/* Navbar Styling - OpenAI-style muted background */
-.navbar {
-  background-color: #f5f5f5 !important;
-  border-bottom: 1px solid #e5e7eb;
-  box-shadow: none;
-}
-
-.navbar__inner {
-  background-color: #f5f5f5;
-}
-
-.navbar__brand {
-  color: #374151 !important;
-}
-
-.navbar__item {
-  color: #6b7280 !important;
-  font-weight: 500;
-}
-
-.navbar__item:hover {
-  color: #374151 !important;
-  background: none;
-}
-
-.navbar__link {
-  color: #6b7280 !important;
-  font-weight: 500;
-}
-
-.navbar__link:hover {
-  color: #374151 !important;
-  background: none;
-}
-
-/* Navbar Adjustments */
-@media (min-width: 997px) {
-  .navbar__logo {
-    position: relative;
-    bottom: 2.5px;
-  }
-}
-
-/* Welcome Page Full-Width Hero */
-@media (min-width: 997px) {
-  html.docs-doc-id-home\/welcome
-    .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    max-width: none !important;
-  }
-}
-
-html.docs-doc-id-home\/welcome div.theme-doc-markdown header:first-child {
-  display: none;
-}
-
-/* ==========================================================================
-   RESPONSIVE GRID SYSTEM
-   ========================================================================== */
-
-@media (max-width: 996px) {
-  .col--md-6 {
-    --ifm-col-width: 50% !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .col--sm-12 {
-    --ifm-col-width: 100% !important;
-  }
-
-  .col--sm-offset-0 {
-    margin-left: 0 !important;
-  }
-}
-
-/* ==========================================================================
-   CONTENT AREA PADDING
-   ========================================================================== */
-
-/* Main content area padding for better spacing from sidebars */
-.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-/* Override Docusaurus horizontal spacing variable */
-:root {
-  --ifm-spacing-horizontal: 2rem;
-}
-
-/* Grid column padding for better spacing */
-.col[class*="col--"] {
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-}
-
-/* Responsive grid column padding */
-@media (max-width: 1200px) {
-  :root {
-    --ifm-spacing-horizontal: 1.5rem;
-  }
-  .col[class*="col--"] {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-  }
-}
-
-@media (max-width: 996px) {
-  :root {
-    --ifm-spacing-horizontal: 1.25rem;
-  }
-  .col[class*="col--"] {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-  }
-}
-
-@media (max-width: 767px) {
-  :root {
-    --ifm-spacing-horizontal: 1rem;
-  }
-  .col[class*="col--"] {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-}
-
-/* ==========================================================================
-   TABLE STYLING OVERRIDES
-   ========================================================================== */
-
-/* Remove any zebra stripes from tables */
-table tr:nth-child(even),
-table tr:nth-child(odd) {
-  background-color: transparent !important;
-}
-
-/* Ensure manufacturers table has no zebra stripes */
-.manufacturers-table tr:nth-child(even),
-.manufacturers-table tr:nth-child(odd) {
-  background-color: transparent !important;
-}
-
-/* Override any Docusaurus default table styles */
-.markdown table tr:nth-child(even),
-.markdown table tr:nth-child(odd) {
-  background-color: transparent !important;
-}
-
-/* Responsive padding adjustments */
-@media (max-width: 1200px) {
-  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-
-@media (max-width: 996px) {
-  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-/* ==========================================================================
-   SIDEBAR STYLING
-   ========================================================================== */
-
-/* Sidebar Layout - OpenAI-style muted background */
-nav.menu,
-.navbar-sidebar {
-  padding-bottom: 3rem;
-  background-color: #f5f5f5;
-  border-right: 1px solid #e5e7eb;
-}
-
-/* Sidebar Navigation Links */
-.menu__link {
-  color: #6b7280 !important;
-  font-weight: 500;
-  border-radius: 6px;
-  margin: 2px 8px;
-  padding: 8px 12px;
-  transition: all 0.2s ease;
-}
-
-.menu__link:hover {
-  background-color: #e5e7eb !important;
-  color: #1f2937 !important;
-  transform: translateX(2px);
-}
-
-.menu__link--active:not(.menu__link--sublist) {
-  background-color: transparent !important;
-  color: var(--brand-color) !important;
-  font-weight: 700;
-  border: none;
-  position: relative;
-  transition: color 0.2s ease, font-weight 0.2s ease;
-}
-
-.menu__link--active:not(.menu__link--sublist)::before {
-  content: "";
-  position: absolute;
-  left: -8px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 4px;
-  height: 4px;
-  background-color: var(--brand-color);
-  border-radius: 50%;
-  animation: dotAppear 0.3s ease-out;
-}
-
-@keyframes dotAppear {
-  0% {
-    opacity: 0;
-    transform: translateY(-50%) scale(0) translateX(-10px);
-  }
-  50% {
-    opacity: 0.7;
-    transform: translateY(-50%) scale(1.4) translateX(-2px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-50%) scale(1) translateX(0);
-  }
-}
-
-/* Dark Mode Active Sidebar Link */
-[data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
-  color: #b4b9ff !important;
-}
-
-[data-theme="dark"] .menu__link--active:not(.menu__link--sublist)::before {
-  background-color: #b4b9ff;
-}
-
-.menu__caret {
-  color: #6b7280 !important;
-}
-
-.menu__caret:hover {
-  background: none;
-  color: #374151 !important;
-}
-
-/* Menu headings */
-.menu__list-item--collapsed .menu__link {
-  color: #374151 !important;
-  font-weight: 600;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Hidden Elements */
-.hidden {
-  display: none !important;
-}
-
-/* Sidebar Scrollbar */
-@media (min-width: 997px) {
-  @supports (scrollbar-gutter: stable) {
-    .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
-      padding: 0 0 4rem 0 !important;
-      scrollbar-gutter: stable;
-    }
-  }
-}
-
-/* Sidebar Menu Items */
-.menu__list-item-collapsible {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-/* Dark mode overrides */
+/* Dark Mode Navigation */
 [data-theme="dark"] nav {
   background: #1f1f1f;
 }
@@ -727,15 +1142,15 @@ nav.menu,
   background: none !important;
 }
 
+/* Dark Mode Sidebar */
 [data-theme="dark"] .menu__link {
   color: #d1d5db !important;
 }
 
-[data-theme="dark"] .menu__link:hover,
-[data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
+[data-theme="dark"] .menu__link:hover {
   background-color: #4b5563 !important;
   color: #ffffff !important;
-  transform: translateX(2px);
+  transform: none;
 }
 
 [data-theme="dark"] .menu__caret {
@@ -750,81 +1165,56 @@ nav.menu,
   color: #e5e7eb !important;
 }
 
-/* ==========================================================================
-   SEARCH BAR STYLING
-   ========================================================================== */
-
-/* DocSearch elegant styling */
-.DocSearch-Button {
-  background: #ffffff !important;
-  border: 1px solid #e5e7eb !important;
-  border-radius: 8px !important;
-  padding: 8px 16px !important;
-  width: 280px !important;
-  height: 40px !important;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
-  transition: all 0.2s ease !important;
+/* Dark Mode Active Sidebar Link - only for page links, not section headers */
+[data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
+  color: #b4b9ff !important;
 }
 
-.DocSearch-Button:hover {
-  background: #f9fafb !important;
-  border-color: #d1d5db !important;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+[data-theme="dark"] .menu__link--active:not(.menu__link--sublist)::before {
+  background-color: #b4b9ff;
 }
 
-.DocSearch-Button:focus {
-  outline: none !important;
-  border-color: var(--brand-color) !important;
-  box-shadow: 0 0 0 3px rgba(68, 74, 225, 0.1) !important;
+/* Dark mode sidebar adjustments */
+[data-theme="dark"] .menu__list-item--collapsible .menu__link {
+  color: var(--ifm-color-emphasis-500) !important;
 }
 
-.DocSearch-Button-Key {
-  display: inline !important;
-  background: none !important;
-  border: none !important;
-  border-radius: 0 !important;
-  color: #9ca3af !important;
-  font-size: 12px !important;
-  font-weight: 400 !important;
-  padding: 0 !important;
-  margin-left: 8px !important;
-  min-width: auto !important;
-  height: auto !important;
-  box-shadow: none !important;
+[data-theme="dark"] .menu__list-item--collapsible .menu__link:hover {
+  background-color: var(--ifm-color-emphasis-100) !important;
+  color: var(--ifm-color-emphasis-200) !important;
 }
 
-.DocSearch-Button-Placeholder {
-  color: #6b7280 !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
+[data-theme="dark"] .menu__list-item--collapsible .menu__link--active {
+  background-color: var(--ifm-color-emphasis-100) !important;
+  color: var(--ifm-color-emphasis-200) !important;
+  border-left-color: #b4b9ff !important;
 }
 
-.DocSearch-Button-Keys {
-  display: flex !important;
-  align-items: center !important;
-  margin-left: auto !important;
+[data-theme="dark"] .menu__list-item .menu__link {
+  color: var(--ifm-color-emphasis-500);
 }
 
-/* Target all possible keyboard shortcut elements */
-.DocSearch-Button-Key,
-.DocSearch-Button-Keys .DocSearch-Button-Key,
-.DocSearch-Button-Keys span,
-.DocSearch-Button-Keys kbd {
-  display: none !important;
+[data-theme="dark"] .menu__list-item .menu__link:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-200);
 }
 
-/* Search icon styling */
-.DocSearch-Button .DocSearch-Button-Container {
-  margin-right: 8px !important;
+[data-theme="dark"] div.menu__list-item-collapsible .menu__link {
+  color: var(--ifm-color-emphasis-600);
 }
 
-.DocSearch-Button .DocSearch-Search-Icon {
-  color: #9ca3af !important;
-  width: 16px !important;
-  height: 16px !important;
+[data-theme="dark"] div.menu__list-item-collapsible .menu__link:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-100);
 }
 
-/* Dark mode search styling */
+[data-theme="dark"] div.menu__list-item-collapsible .menu__link--active {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-100);
+  border-left-color: #b4b9ff;
+}
+
+/* Dark Mode Search */
 [data-theme="dark"] .DocSearch-Button {
   background: #374151 !important;
   border-color: #4b5563 !important;
@@ -857,74 +1247,7 @@ nav.menu,
   display: none !important;
 }
 
-/* ==========================================================================
-   TABLE OF CONTENTS STYLING - OpenAI Style
-   ========================================================================== */
-
-/* TOC Container */
-.theme-doc-toc-desktop {
-  position: sticky !important;
-  top: 2rem !important;
-  max-height: calc(100vh - 4rem) !important;
-  overflow-y: auto !important;
-}
-
-/* TOC List Container */
-.theme-doc-toc-desktop .table-of-contents {
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-/* Background Vertical Line */
-.theme-doc-toc-desktop .table-of-contents::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: #e5e7eb;
-}
-
-/* TOC Links */
-.theme-doc-toc-desktop .table-of-contents__link {
-  position: relative;
-  display: block;
-  padding: 0.5rem 0;
-  color: #6b7280;
-  text-decoration: none;
-  font-size: 0.875rem;
-  line-height: 1.4;
-  transition: all 0.2s ease;
-  margin-left: -1.5rem;
-  padding-left: 1.5rem;
-}
-
-/* Active Link Styling */
-.theme-doc-toc-desktop .table-of-contents__link--active {
-  color: var(--brand-color);
-  font-weight: 600;
-  background-color: rgba(68, 74, 225, 0.1);
-  border-radius: 6px;
-  padding: 0.5rem 0.75rem;
-  margin: 0.25rem -0.75rem;
-  border-left: 3px solid var(--brand-color);
-}
-
-/* Dark Mode Active Link Styling */
-[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link--active {
-  color: #b4b9ff;
-  background-color: rgba(180, 185, 255, 0.15);
-  border-left-color: #b4b9ff;
-}
-
-/* Hover Effects */
-.theme-doc-toc-desktop .table-of-contents__link:hover {
-  color: #374151;
-  text-decoration: none;
-}
-
-/* Dark Mode Support */
+/* Dark Mode TOC */
 [data-theme="dark"] .theme-doc-toc-desktop .table-of-contents::before {
   background-color: #4b5563;
 }
@@ -935,58 +1258,46 @@ nav.menu,
 
 [data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link--active {
   color: #b4b9ff;
+  background-color: rgba(180, 185, 255, 0.15);
+  border-left-color: #b4b9ff;
 }
 
 [data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link:hover {
   color: #f9fafb;
 }
 
-/* ==========================================================================
-   CONTENT BLOCKS & COMPONENTS
-   ========================================================================== */
-
-/* Global link styling with increased underline offset */
-a {
-  text-underline-offset: 0.3em;
+[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link {
+  color: var(--ifm-color-emphasis-500);
 }
 
-/* Hide anchor link icons */
-.markdown a.anchor {
-  display: none;
+[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-100);
 }
 
-/* Keep headings visible but hide anchor link icons */
-.markdown .anchor:not(a) {
-  display: block;
+[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link--active {
+  background-color: var(--ifm-color-emphasis-200);
+  color: #b4b9ff;
+  border-left-color: #b4b9ff;
 }
 
-/* Blockquotes */
-blockquote {
-  background: #fef7e0;
-  border-left: var(--ifm-blockquote-border-left-width) solid
-    var(--ifm-blockquote-border-color);
-  box-shadow: var(--ifm-blockquote-shadow);
-  color: var(--ifm-blockquote-color);
-  font-size: var(--ifm-blockquote-font-size);
-  margin: 2rem 0;
+/* Dark Mode Breadcrumbs */
+[data-theme="dark"] .breadcrumbs {
+  color: var(--ifm-color-emphasis-500);
 }
 
-/* Example Blocks */
-.example {
-  background-color: #8ecafc;
-  border-left: var(--ifm-blockquote-border-left-width) solid
-    var(--ifm-blockquote-border-color);
-  box-shadow: var(--ifm-blockquote-shadow);
-  color: var(--ifm-blockquote-color);
-  font-size: var(--ifm-blockquote-font-size);
-  margin: 2rem 0;
-  padding: 1rem;
+[data-theme="dark"] .breadcrumbs__link {
+  color: var(--ifm-color-emphasis-500);
 }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
+[data-theme="dark"] .breadcrumbs__link:hover {
+  color: var(--ifm-color-emphasis-300);
+}
 
-.footer {
-  display: none;
+[data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme="dark"] .breadcrumbs__separator {
+  color: var(--ifm-color-emphasis-600);
 }
