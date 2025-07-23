@@ -1,36 +1,37 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 import { ProvidePlugin } from "webpack";
-import path from 'path';
+import path from "path";
 
 const gtag = process.env.GOOGLE_ANALYTICS_TAG
-  ? { 
-    gtag: {
-      trackingID: process.env.GOOGLE_ANALYTICS_TAG, 
-      anonymizeIP: false,
+  ? {
+      gtag: {
+        trackingID: process.env.GOOGLE_ANALYTICS_TAG,
+        anonymizeIP: false,
+      },
     }
-  }
   : {};
 
 const config: Config = {
-  title: 'Texture Documentation',
-  tagline: 'Explore our guides, examples, and API reference to begin building on the Texture platform',
-  favicon: 'img/favicon.ico',
+  title: "Texture Documentation",
+  tagline:
+    "Explore our guides, examples, and API reference to begin building on the Texture platform",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://docs.texturehq.com',
+  url: "https://docs.texturehq.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+
   scripts: [
     // Add Vercel Analytics script
     {
-      src: '/analytics.js',
+      src: "/analytics.js",
       async: true,
     },
   ].filter(Boolean),
@@ -39,8 +40,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   customFields: {
@@ -50,26 +51,26 @@ const config: Config = {
   },
 
   plugins: [
-    path.resolve(__dirname, 'src/plugins/posthog-plugin'),
+    path.resolve(__dirname, "src/plugins/posthog-plugin"),
     [
-      '@docusaurus/plugin-client-redirects',
+      "@docusaurus/plugin-client-redirects",
       {
         redirects: [
           {
-            to: '/docs/sources/manufacturers',
-            from: '/docs/devices-1',
+            to: "/docs/sources/manufacturers",
+            from: "/docs/devices-1",
           },
           {
-            to: '/docs/sources/manufacturers',
-            from: '/docs/connections/supported-devices',
+            to: "/docs/sources/manufacturers",
+            from: "/docs/connections/supported-devices",
           },
           {
-            to: '/docs/sources/manufacturers',
-            from: '/docs/sources/supported-devices',
+            to: "/docs/sources/manufacturers",
+            from: "/docs/sources/supported-devices",
           },
           {
-            to: '/docs/devices/polling',
-            from: '/docs/platform-concepts/polling',
+            to: "/docs/devices/polling",
+            from: "/docs/platform-concepts/polling",
           },
         ],
       },
@@ -108,24 +109,24 @@ const config: Config = {
     }),
   ],
 
-  organizationName: 'texturehq',
-  projectName: 'docs',
+  organizationName: "texturehq",
+  projectName: "docs",
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Add the following lines for the "Edit" functionality
-          editUrl: 'https://github.com/texturehq/docs/tree/main/',
+          editUrl: "https://github.com/texturehq/docs/tree/main/",
           editLocalizedFiles: true,
         },
         blog: {
           showReadingTime: true,
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
         ...gtag,
       } satisfies Preset.Options,
@@ -134,65 +135,69 @@ const config: Config = {
 
   themeConfig: {
     algolia: {
-      appId: 'TS0KK5KXLO',
-      apiKey: '99a70acfc3fd6c2941528e464a175820',
-      indexName: 'texturehq',
+      appId: "TS0KK5KXLO",
+      apiKey: "99a70acfc3fd6c2941528e464a175820",
+      indexName: "texturehq",
       contextualSearch: false,
     },
-    image: 'img/texture-social-card.png',
+    image: "img/texture-social-card.png",
     navbar: {
       logo: {
-        alt: 'Texture Docs Logo',
-        src: 'img/docs-logo.svg',
-        srcDark: 'img/docs-logo__dark.svg',
+        alt: "Texture Docs Logo",
+        src: "img/docs-logo.svg",
+        srcDark: "img/docs-logo__dark.svg",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'home',
-          position: 'left',
-          label: 'Docs',
+          type: "docSidebar",
+          sidebarId: "home",
+          position: "left",
+          label: "Docs",
         },
-        { to: '/api', label: 'API Reference', position: 'left' },
-        { to: '/docs/sources/manufacturers', label: 'Supported Manufacturers', position: 'left' },
+        { to: "/api", label: "API Reference", position: "left" },
         {
-          href: 'https://dashboard.texturehq.com',
-          label: 'Dashboard',
-          position: 'right',
+          to: "/docs/sources/manufacturers",
+          label: "Supported Manufacturers",
+          position: "left",
         },
         {
-          href: 'https://github.com/texturehq/examples',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://dashboard.texturehq.com",
+          label: "Dashboard",
+          position: "right",
+        },
+        {
+          href: "https://github.com/texturehq/examples",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Join our Slack Community',
-              href: 'https://join.slack.com/t/texture-community/shared_invite/zt-2ho02ds2o-pBNH1ZGcopxgIY3BgKcKzg',
+              label: "Join our Slack Community",
+              href: "https://join.slack.com/t/texture-community/shared_invite/zt-2ho02ds2o-pBNH1ZGcopxgIY3BgKcKzg",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/texturehq',
+              label: "Twitter",
+              href: "https://twitter.com/texturehq",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'Status',
-              href: 'https://status.texturehq.com',
+              label: "Status",
+              href: "https://status.texturehq.com",
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/texturehq/examples',
+              label: "GitHub",
+              href: "https://github.com/texturehq/examples",
             },
           ],
         },

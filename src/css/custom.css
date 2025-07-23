@@ -11,13 +11,15 @@
 
 :root {
   /* Brand Colors */
-  --ifm-color-primary: #444ae1;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --brand-color: #444ae1;
+  --brand-color-hover: #3a3fd1;
+  --ifm-color-primary: var(--brand-color);
+  --ifm-color-primary-dark: #3a3fd1;
+  --ifm-color-primary-darker: #3338c7;
+  --ifm-color-primary-darkest: #2a2fb3;
+  --ifm-color-primary-light: #5a5fe7;
+  --ifm-color-primary-lighter: #666be9;
+  --ifm-color-primary-lightest: #7a7feb;
 
   /* Typography Colors */
   --ifm-heading-color: #0c1452;
@@ -291,18 +293,75 @@ h6,
 
 [data-theme="dark"] {
   /* Brand Colors - Dark Mode */
-  --ifm-color-primary: #9093ed;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #b4b9ff;
+  --ifm-color-primary-dark: #a1a7ff;
+  --ifm-color-primary-darker: #8e95ff;
+  --ifm-color-primary-darkest: #7b83ff;
+  --ifm-color-primary-light: #c7ccff;
+  --ifm-color-primary-lighter: #d0d5ff;
+  --ifm-color-primary-lightest: #d9deff;
 
   /* Layout - Dark Mode */
   --docusaurus-highlighted-code-line-bg: #b2b2b2;
   --ifm-navbar-background-color: #1f1f1f;
   --ifm-navbar-link-color: #ffffff;
+}
+
+/* Dark Mode Heading Colors */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: #ffffff;
+}
+
+/* Dark Mode List Items and Text Elements */
+[data-theme="dark"] .markdown > ul > li,
+[data-theme="dark"] .markdown > ol > li,
+[data-theme="dark"] .markdown > ul,
+[data-theme="dark"] .markdown > ol,
+[data-theme="dark"] .markdown > p {
+  color: #e5e7eb;
+}
+
+/* Dark Mode Links */
+[data-theme="dark"] .markdown a {
+  color: #b4b9ff;
+}
+
+[data-theme="dark"] .markdown a:hover {
+  color: #c7ccff;
+}
+
+/* Dark Mode Tab Labels and UI Elements */
+[data-theme="dark"] .tabs__item,
+[data-theme="dark"] .tabs__item--active,
+[data-theme="dark"] .tabs__item:hover {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .tabs__item--active {
+  color: #b4b9ff;
+  border-bottom-color: #b4b9ff;
+}
+
+[data-theme="dark"] .tabs__item:hover {
+  color: #ffffff;
+}
+
+/* Dark Mode Code Blocks and Technical Text */
+[data-theme="dark"] code,
+[data-theme="dark"] .prism-code {
+  color: #e5e7eb;
+  background-color: #374151;
+}
+
+/* Dark Mode Inline Code */
+[data-theme="dark"] .markdown code {
+  color: #f3f4f6;
+  background-color: #374151;
 }
 
 [data-theme="dark"] body {
@@ -550,9 +609,49 @@ nav.menu,
 }
 
 .menu__link--active:not(.menu__link--sublist) {
-  background-color: #f3f4f6 !important;
-  color: #374151 !important;
-  font-weight: 600;
+  background-color: transparent !important;
+  color: var(--brand-color) !important;
+  font-weight: 700;
+  border: none;
+  position: relative;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+
+.menu__link--active:not(.menu__link--sublist)::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--brand-color);
+  border-radius: 50%;
+  animation: dotAppear 0.3s ease-out;
+}
+
+@keyframes dotAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0) translateX(-10px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-50%) scale(1.4) translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) translateX(0);
+  }
+}
+
+/* Dark Mode Active Sidebar Link */
+[data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
+  color: #b4b9ff !important;
+}
+
+[data-theme="dark"] .menu__link--active:not(.menu__link--sublist)::before {
+  background-color: #b4b9ff;
 }
 
 .menu__caret {
@@ -675,8 +774,8 @@ nav.menu,
 
 .DocSearch-Button:focus {
   outline: none !important;
-  border-color: #3b82f6 !important;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+  border-color: var(--brand-color) !important;
+  box-shadow: 0 0 0 3px rgba(68, 74, 225, 0.1) !important;
 }
 
 .DocSearch-Button-Key {
@@ -759,6 +858,90 @@ nav.menu,
 }
 
 /* ==========================================================================
+   TABLE OF CONTENTS STYLING - OpenAI Style
+   ========================================================================== */
+
+/* TOC Container */
+.theme-doc-toc-desktop {
+  position: sticky !important;
+  top: 2rem !important;
+  max-height: calc(100vh - 4rem) !important;
+  overflow-y: auto !important;
+}
+
+/* TOC List Container */
+.theme-doc-toc-desktop .table-of-contents {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Background Vertical Line */
+.theme-doc-toc-desktop .table-of-contents::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e5e7eb;
+}
+
+/* TOC Links */
+.theme-doc-toc-desktop .table-of-contents__link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  transition: all 0.2s ease;
+  margin-left: -1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* Active Link Styling */
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  color: var(--brand-color);
+  font-weight: 600;
+  background-color: rgba(68, 74, 225, 0.1);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem -0.75rem;
+  border-left: 3px solid var(--brand-color);
+}
+
+/* Dark Mode Active Link Styling */
+[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link--active {
+  color: #b4b9ff;
+  background-color: rgba(180, 185, 255, 0.15);
+  border-left-color: #b4b9ff;
+}
+
+/* Hover Effects */
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  color: #374151;
+  text-decoration: none;
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents::before {
+  background-color: #4b5563;
+}
+
+[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link--active {
+  color: #b4b9ff;
+}
+
+[data-theme="dark"] .theme-doc-toc-desktop .table-of-contents__link:hover {
+  color: #f9fafb;
+}
+
+/* ==========================================================================
    CONTENT BLOCKS & COMPONENTS
    ========================================================================== */
 
@@ -772,8 +955,9 @@ a {
   display: none;
 }
 
-.markdown .anchor {
-  display: none;
+/* Keep headings visible but hide anchor link icons */
+.markdown .anchor:not(a) {
+  display: block;
 }
 
 /* Blockquotes */
