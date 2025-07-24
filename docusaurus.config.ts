@@ -121,8 +121,6 @@ const config: Config = {
           // Add the following lines for the "Edit" functionality
           editUrl: "https://github.com/texturehq/docs/tree/main/",
           editLocalizedFiles: true,
-          // Disable TOC globally
-          tableOfContents: false,
         },
         blog: {
           showReadingTime: true,
