@@ -4,35 +4,140 @@ title: ChargePoint
 sidebar_position: 3
 ---
 
-# ChargePoint
 
-<div style={{ textAlign: 'center', margin: '20px 0' }}>
-  <img 
-    src="https://device.cms.texture.energy/logo/ChargePoint%20Vector%20Icon.svg" 
-    alt="ChargePoint logo" 
-    style={{ maxWidth: '200px', maxHeight: '150px' }}
-  />
+<div style={{
+  background: '#ffffff',
+  border: '1px solid #d1d5db',
+  borderRadius: '12px',
+  marginBottom: '32px'
+}}>
+  <div className="manufacturer-hero-desktop">
+    {/* Left Column - Logo and Details */}
+    <div style={{
+      borderRight: '1px solid #d1d5db',
+      background: '#f8fcff',
+      borderRadius: '8px',
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100%'
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '20px',
+        marginBottom: '32px',
+        padding: '24px 24px 0 24px'
+      }}>
+        <div style={{
+          background: '#ffffff',
+          border: '1px solid #e5e7eb',
+          borderRadius: '12px',
+          padding: '16px',
+          flexShrink: '0',
+          width: '160px',
+          height: '100px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
+        }}>
+          <img 
+        src="https://device.cms.texture.energy/logo/ChargePoint%20Icon.png" 
+        alt="ChargePoint logo" 
+        style={{ 
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          filter: 'brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%)',
+          opacity: '0.9'
+        }}
+      />
+        </div>
+      </div>
+      
+      <div style={{
+        display: 'grid',
+        gap: '12px',
+        padding: '0 24px 24px 24px'
+      }}>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0',
+          borderBottom: '1px solid #e5e7eb'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Type</span>
+          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>Energy Device Manufacturer</span>
+        </div>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0',
+          borderBottom: '1px solid #e5e7eb'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Status</span>
+          <span style={{ 
+    backgroundColor: '#f5f3ff',
+    color: '#5b21b6',
+    padding: '4px 8px',
+    borderRadius: '4px',
+    fontSize: '12px',
+    fontWeight: '500'
+  }}>Planned</span>
+        </div>
+        
+
+        
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0',
+          borderBottom: '1px solid #e5e7eb'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Grid Services</span>
+          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>N/A</span>
+        </div>
+        
+
+        
+        
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Supported Device Types</span>
+          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>EV Chargers</span>
+        </div>
+      </div>
+    </div>
+    
+    {/* Right Column - About Section */}
+    <div style={{
+      padding: '48px 32px 32px 16px'
+    }}>
+      <h3 style={{
+        margin: '0 0 20px 0',
+        fontSize: '18px',
+        fontWeight: '600',
+        color: '#1f2937'
+      }}>About ChargePoint</h3>
+      
+      <p style={{
+        margin: '0 0 20px 0',
+        fontSize: '18px',
+        lineHeight: '1.6',
+        color: '#4b5563'
+      }}>ChargePoint operates one of the world's largest networks of electric vehicle charging stations and energy management software platforms. The company provides Level 2 and DC fast charging hardware, cloud-based energy management systems, and smart grid integration solutions. Their charging infrastructure serves residential, commercial, workplace, and fleet applications across multiple energy market segments globally.</p>
+    </div>
+  </div>
 </div>
 
-ChargePoint is a manufacturer of energy devices supported by Texture.
 
-
-
-## Support Status
-
-**Support Level**: 🗓️ Integration planned for the future
-
-**Grid Services Support**: N/A (Not applicable for this device type)
-
-## Supported Device Types
-
-EV Chargers
-
-## Integration Details
-
-ChargePoint devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
-
-**Integration Method**: 🔌 Direct API integration with the manufacturer
 
 
 

@@ -1,6 +1,6 @@
 ---
-id: opel
-title: Opel
+id: savant
+title: Savant
 sidebar_position: 3
 ---
 
@@ -42,8 +42,8 @@ sidebar_position: 3
           boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
         }}>
           <img 
-        src="https://device.cms.texture.energy/logo/Opel.svg" 
-        alt="Opel logo" 
+        src="https://device.cms.texture.energy/logo/Savant%20Power.svg" 
+        alt="Savant logo" 
         style={{ 
           width: '100%',
           height: '100%',
@@ -79,13 +79,13 @@ sidebar_position: 3
         }}>
           <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Status</span>
           <span style={{ 
-    backgroundColor: '#ecfdf5',
-    color: '#065f46',
+    backgroundColor: '#f5f3ff',
+    color: '#5b21b6',
     padding: '4px 8px',
     borderRadius: '4px',
     fontSize: '12px',
     fontWeight: '500'
-  }}>Production Ready</span>
+  }}>Planned</span>
         </div>
         
 
@@ -98,7 +98,7 @@ sidebar_position: 3
           borderBottom: '1px solid #e5e7eb'
         }}>
           <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Grid Services</span>
-          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>N/A</span>
+          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>Not supported</span>
         </div>
         
 
@@ -108,10 +108,26 @@ sidebar_position: 3
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
+          padding: '12px 0',
+          borderBottom: '1px solid #e5e7eb'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Website</span>
+          <a href="https://www.savant.com" target="_blank" rel="noopener noreferrer" style={{
+            color: '#444ae1',
+            textDecoration: 'none',
+            fontWeight: '600',
+            fontSize: '14px'
+          }}>Visit Website</a>
+        </div>
+        
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
           padding: '12px 0'
         }}>
           <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Supported Device Types</span>
-          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>Electric Vehicles</span>
+          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>Batteries</span>
         </div>
       </div>
     </div>
@@ -125,14 +141,14 @@ sidebar_position: 3
         fontSize: '18px',
         fontWeight: '600',
         color: '#1f2937'
-      }}>About Opel</h3>
+      }}>About Savant</h3>
       
       <p style={{
         margin: '0 0 20px 0',
         fontSize: '18px',
         lineHeight: '1.6',
         color: '#4b5563'
-      }}>Opel produces electric vehicles and energy systems including compact EVs and charging solutions for European mobility applications. The German manufacturer, part of Stellantis, develops battery electric vehicles, plug-in hybrids, and energy management systems. Their products focus on efficient urban mobility with smart charging integration and energy recovery systems for residential and commercial applications.</p>
+      }}>Savant manufactures smart home automation systems, energy management platforms, and integrated control solutions for luxury residential applications. The company produces whole-home automation hardware, energy monitoring software, and smart grid integration systems. Their platforms control lighting, climate, security, and energy systems while optimizing consumption and integrating renewable energy sources for high-end residential markets.</p>
     </div>
   </div>
 </div>

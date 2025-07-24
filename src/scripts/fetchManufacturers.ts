@@ -4,9 +4,9 @@
  * for manufacturers rather than fetching them client-side.
  */
 
-const fs = require('fs');
-const path = require('path');
-const axios = require('axios');
+const fs = require("fs");
+const path = require("path");
+const axios = require("axios");
 
 /**
  * @typedef {Object} VectorIcon
@@ -40,6 +40,7 @@ const axios = require('axios');
  * @property {string[]} [supported_device_types]
  * @property {string} [description]
  * @property {string} [description_html]
+ * @property {string} [about]
  * @property {string} [website_url]
  * @property {string} [documentation]
  * @property {string} [documentation_html]
@@ -60,9 +61,9 @@ const axios = require('axios');
  * @property {number|null} nextPage
  */
 
-const PAYLOAD_CMS_URL = 'https://device.cms.texture.energy';
-const OUTPUT_DIR = path.join(process.cwd(), 'src', 'data');
-const OUTPUT_FILE = path.join(OUTPUT_DIR, 'manufacturers.json');
+const PAYLOAD_CMS_URL = "https://device.cms.texture.energy";
+const OUTPUT_DIR = path.join(process.cwd(), "src", "data");
+const OUTPUT_FILE = path.join(OUTPUT_DIR, "manufacturers.json");
 
 /**
  * Fetches manufacturer data from Payload CMS
@@ -72,25 +73,25 @@ async function fetchManufacturers() {
   try {
     const response = await axios.get(`${PAYLOAD_CMS_URL}/api/manufacturers`, {
       params: {
-        limit: 1000
-      }
+        limit: 1000,
+      },
     });
-    
+
     // Process manufacturers - ensure they have slugs
-    const manufacturers = response.data.docs.map(manufacturer => {
+    const manufacturers = response.data.docs.map((manufacturer) => {
       // If manufacturer doesn't have a slug, create one from the name
       if (!manufacturer.slug) {
         manufacturer.slug = manufacturer.name
           .toLowerCase()
-          .replace(/[^\w\s]/g, '')
-          .replace(/\s+/g, '-');
+          .replace(/[^\w\s]/g, "")
+          .replace(/\s+/g, "-");
       }
       return manufacturer;
     });
-    
+
     return manufacturers;
   } catch (error) {
-    console.error('Error fetching manufacturers:', error);
+    console.error("Error fetching manufacturers:", error);
     return [];
   }
 }
@@ -105,17 +106,17 @@ async function enrichManufacturersWithDeviceTypes(manufacturers) {
     // Fetch all device models
     const response = await axios.get(`${PAYLOAD_CMS_URL}/api/device_models`, {
       params: {
-        limit: 1000
-      }
+        limit: 1000,
+      },
     });
-    
+
     const deviceModels = response.data.docs;
-    
+
     // Create a map to track device types by manufacturer
     const manufacturerDeviceTypes = new Map();
-    
+
     // Process each device model
-    deviceModels.forEach(model => {
+    deviceModels.forEach((model) => {
       if (model.manufacturer && model.manufacturer.id && model.type) {
         const manufacturerId = model.manufacturer.id;
         if (!manufacturerDeviceTypes.has(manufacturerId)) {
@@ -124,17 +125,17 @@ async function enrichManufacturersWithDeviceTypes(manufacturers) {
         manufacturerDeviceTypes.get(manufacturerId).add(model.type);
       }
     });
-    
+
     // Add device types to manufacturer objects
-    return manufacturers.map(manufacturer => {
+    return manufacturers.map((manufacturer) => {
       const deviceTypes = manufacturerDeviceTypes.get(manufacturer.id);
       return {
         ...manufacturer,
-        supported_device_types: deviceTypes ? Array.from(deviceTypes) : []
+        supported_device_types: deviceTypes ? Array.from(deviceTypes) : [],
       };
     });
   } catch (error) {
-    console.error('Error enriching manufacturers with device types:', error);
+    console.error("Error enriching manufacturers with device types:", error);
     return manufacturers;
   }
 }
@@ -145,22 +146,24 @@ async function main() {
     if (!fs.existsSync(OUTPUT_DIR)) {
       fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
-    
+
     // Fetch manufacturers
     let manufacturers = await fetchManufacturers();
-    
+
     // Enrich with device types
     manufacturers = await enrichManufacturersWithDeviceTypes(manufacturers);
-    
+
     // Sort manufacturers by name
     manufacturers.sort((a, b) => a.name.localeCompare(b.name));
-    
+
     // Write output
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(manufacturers, null, 2));
-    
-    console.log(`Successfully fetched ${manufacturers.length} manufacturers and saved to ${OUTPUT_FILE}`);
+
+    console.log(
+      `Successfully fetched ${manufacturers.length} manufacturers and saved to ${OUTPUT_FILE}`
+    );
   } catch (error) {
-    console.error('Failed to fetch manufacturers:', error);
+    console.error("Failed to fetch manufacturers:", error);
     process.exit(1);
   }
 }

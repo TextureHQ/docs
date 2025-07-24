@@ -12,6 +12,45 @@ const DOCS_DIR = path.join(__dirname, '..', 'docs', 'sources', 'manufacturers');
 const DATA_DIR = path.join(__dirname, '..', 'src', 'data');
 const DATA_FILE = path.join(DATA_DIR, 'manufacturers.json');
 
+/**
+ * Get status tag styling for generated pages
+ */
+function getStatusTag(supportLevel) {
+  const supportLevelText = {
+    'production': 'Production Ready',
+    'development': 'In Development', 
+    'planned': 'Planned',
+    'blocked': 'Blocked'
+  };
+
+  const supportLevelColors = {
+    'production': '#065f46', // emerald-800
+    'development': '#92400e', // amber-800
+    'planned': '#5b21b6', // violet-800
+    'blocked': '#991b1b' // red-800
+  };
+
+  const supportLevelBgColors = {
+    'production': '#ecfdf5', // emerald-50
+    'development': '#fffbeb', // amber-50
+    'planned': '#f5f3ff', // violet-50
+    'blocked': '#fef2f2' // red-50
+  };
+
+  const color = supportLevelColors[supportLevel] || '#6b7280';
+  const bgColor = supportLevelBgColors[supportLevel] || 'transparent';
+  const text = supportLevelText[supportLevel] || supportLevel;
+
+  return `<span style={{ 
+    backgroundColor: '${bgColor}',
+    color: '${color}',
+    padding: '4px 8px',
+    borderRadius: '4px',
+    fontSize: '12px',
+    fontWeight: '500'
+  }}>${text}</span>`;
+}
+
 // Map device types to human-readable names
 const deviceTypeDisplayNames = {
   'battery': 'Batteries',
@@ -111,21 +150,210 @@ function generateManufacturerPage(manufacturer) {
     'blocked': 'Integration blocked by the manufacturer'
   };
   
-  const deviceTypesList = manufacturer.supported_device_types && manufacturer.supported_device_types.length > 0
-    ? manufacturer.supported_device_types
-        .map(type => deviceTypeDisplayNames[type] || type)
-        .join(', ')
-    : 'None reported';
+
   
-  const logoHtml = manufacturer.vector_icon && manufacturer.vector_icon.url 
-    ? `<div style={{ textAlign: 'center', margin: '20px 0' }}>
-  <img 
-    src="https://device.cms.texture.energy${encodeURI(manufacturer.vector_icon.url)}" 
-    alt="${manufacturer.name} logo" 
-    style={{ maxWidth: '200px', maxHeight: '150px' }}
-  />
-</div>`
-    : '';
+  // Create a clean, Seam-inspired manufacturer info card
+  const manufacturerLogo = manufacturer.logo && manufacturer.logo.url 
+    ? `<img 
+        src="https://device.cms.texture.energy${encodeURI(manufacturer.logo.url)}" 
+        alt="${manufacturer.name} logo" 
+        style={{ 
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          filter: 'brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%)',
+          opacity: '0.9'
+        }}
+      />`
+    : `<div style={{ 
+        width: '120px', 
+        height: '80px', 
+        background: 'linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%)',
+        borderRadius: '8px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontSize: '18px',
+        fontWeight: '600',
+        color: '#6b7280'
+      }}>
+        ${manufacturer.name.charAt(0)}
+      </div>`;
+
+  // Support level mapping
+  const supportLevelText = {
+    'production': 'Production Ready',
+    'development': 'In Development', 
+    'planned': 'Planned',
+    'blocked': 'Blocked'
+  };
+
+  // Device type mapping
+  const deviceTypeText = {
+    'battery': 'Batteries',
+    'charger': 'EV Chargers', 
+    'inverter': 'Solar Inverters',
+    'thermostat': 'Smart Thermostats',
+    'vehicle': 'Electric Vehicles'
+  };
+
+  const deviceTypesList = manufacturer.supported_device_types && manufacturer.supported_device_types.length > 0
+    ? manufacturer.supported_device_types.map(type => deviceTypeText[type] || type).join(', ')
+    : 'None reported';
+
+  const heroSection = `
+<div style={{
+  background: '#ffffff',
+  border: '1px solid #d1d5db',
+  borderRadius: '12px',
+  marginBottom: '32px'
+}}>
+  <div className="manufacturer-hero-desktop">
+    {/* Left Column - Logo and Details */}
+    <div style={{
+      borderRight: '1px solid #d1d5db',
+      background: '#f8fcff',
+      borderRadius: '8px',
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100%'
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '20px',
+        marginBottom: '32px',
+        padding: '24px 24px 0 24px'
+      }}>
+        <div style={{
+          background: '#ffffff',
+          border: '1px solid #e5e7eb',
+          borderRadius: '12px',
+          padding: '16px',
+          flexShrink: '0',
+          width: '160px',
+          height: '100px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)'
+        }}>
+          ${manufacturerLogo}
+        </div>
+      </div>
+      
+      <div style={{
+        display: 'grid',
+        gap: '12px',
+        padding: '0 24px 24px 24px'
+      }}>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0',
+          borderBottom: '1px solid #e5e7eb'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Type</span>
+          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>Energy Device Manufacturer</span>
+        </div>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0',
+          borderBottom: '1px solid #e5e7eb'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Status</span>
+          ${getStatusTag(manufacturer.support_level)}
+        </div>
+        
+
+        
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0',
+          borderBottom: '1px solid #e5e7eb'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Grid Services</span>
+          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>${
+            manufacturer.supported_device_types?.length === 1 && 
+            (manufacturer.supported_device_types[0] === 'vehicle' ||
+             manufacturer.supported_device_types[0] === 'charger' ||
+             manufacturer.supported_device_types[0] === 'thermostat')
+              ? 'N/A'
+              : (manufacturer.supports_grid_services ? 'Supported' : 'Not supported')
+          }</span>
+        </div>
+        
+
+        
+        ${manufacturer.website_url ? `
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0',
+          borderBottom: '1px solid #e5e7eb'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Website</span>
+          <a href="${manufacturer.website_url}" target="_blank" rel="noopener noreferrer" style={{
+            color: '#444ae1',
+            textDecoration: 'none',
+            fontWeight: '600',
+            fontSize: '14px'
+          }}>Visit Website</a>
+        </div>
+        ` : ''}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          padding: '12px 0'
+        }}>
+          <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Supported Device Types</span>
+          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>${manufacturer.supported_device_types && manufacturer.supported_device_types.length > 0
+            ? manufacturer.supported_device_types.map(type => {
+                const deviceTypeText = {
+                  'battery': 'Batteries',
+                  'charger': 'EV Chargers',
+                  'inverter': 'Solar Inverters',
+                  'thermostat': 'Smart Thermostats',
+                  'vehicle': 'Electric Vehicles'
+                };
+                return deviceTypeText[type] || type;
+              }).join(', ')
+            : 'None'}</span>
+        </div>
+      </div>
+    </div>
+    
+    {/* Right Column - About Section */}
+    <div style={{
+      padding: '48px 32px 32px 16px'
+    }}>
+      <h3 style={{
+        margin: '0 0 20px 0',
+        fontSize: '18px',
+        fontWeight: '600',
+        color: '#1f2937'
+      }}>About ${manufacturer.name}</h3>
+      
+      <p style={{
+        margin: '0 0 20px 0',
+        fontSize: '18px',
+        lineHeight: '1.6',
+        color: '#4b5563'
+      }}>${manufacturer.about 
+        ? manufacturer.about
+        : manufacturer.description_html 
+        ? manufacturer.description_html.replace(/<[^>]*>/g, '').substring(0, 300) + (manufacturer.description_html.replace(/<[^>]*>/g, '').length > 300 ? '...' : '')
+        : manufacturer.description || `${manufacturer.name} is a manufacturer of energy devices supported by Texture.`}</p>
+    </div>
+  </div>
+</div>`;
   
   return `---
 id: ${manufacturer.slug}
@@ -133,47 +361,16 @@ title: ${manufacturer.name}
 sidebar_position: 3
 ---
 
-# ${manufacturer.name}
-
-${logoHtml}
+${heroSection}
 
 ${manufacturer.description_html 
     ? `<div dangerouslySetInnerHTML={{ __html: \`${manufacturer.description_html.replace(/`/g, '\\`')}\` }} />`
-    : manufacturer.description || `${manufacturer.name} is a manufacturer of energy devices supported by Texture.`}
-
-${manufacturer.website_url ? `**Website**: [${manufacturer.name} Website](${manufacturer.website_url})` : ''}
-
-## Support Status
-
-**Support Level**: ${supportLevelEmoji[manufacturer.support_level] || ''} ${supportLevelDescription[manufacturer.support_level] || manufacturer.support_level}
-
-**Grid Services Support**: ${
-  manufacturer.supported_device_types?.length === 1 && 
-  (manufacturer.supported_device_types[0] === 'vehicle' ||
-   manufacturer.supported_device_types[0] === 'charger' ||
-   manufacturer.supported_device_types[0] === 'thermostat')
-    ? 'N/A (Not applicable for this device type)'
-    : (manufacturer.supports_grid_services ? '✅ Supported' : '❌ Not supported')
-}
-
-## Supported Device Types
-
-${deviceTypesList}
-
-## Integration Details
-
-${manufacturer.name} devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
-
-**Integration Method**: ${manufacturer.source === 'direct' ? '🔌 Direct API integration with the manufacturer' : 
-  manufacturer.source === 'smartcar' ? '🚗 Integration via Smartcar partnership' : 
-  manufacturer.source ? manufacturer.source : '🔌 Direct API integration with the manufacturer'}
+    : ''}
 
 ${manufacturer.documentation_html || manufacturer.documentation ? `
-## Manufacturer Documentation
-
-${manufacturer.documentation_html 
-  ? `<div dangerouslySetInnerHTML={{ __html: \`${manufacturer.documentation_html.replace(/`/g, '\\`')}\` }} />`
-  : manufacturer.documentation}
+<div dangerouslySetInnerHTML={{ __html: \`${manufacturer.documentation_html 
+  ? manufacturer.documentation_html.replace(/`/g, '\\`')
+  : manufacturer.documentation}\` }} />
 ` : ''}
 
 `;

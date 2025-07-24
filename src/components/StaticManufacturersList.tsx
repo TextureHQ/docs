@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Fuse from "fuse.js";
 import manufacturersData from "@site/src/data/manufacturers.json";
+import StatusTag from "./StatusTag";
 
 interface StaticManufacturersListProps {
   className?: string;
@@ -11,20 +12,18 @@ interface Manufacturer {
   id: string;
   name: string;
   slug: string;
-  supports_grid_services: boolean;
   support_level: string;
   supported_device_types?: string[];
-  description?: string;
+  description?: any;
   description_html?: string;
+  about?: string;
   website_url?: string;
-  documentation?: string;
+  documentation?: any;
   documentation_html?: string;
   source?: string;
-  vector_icon?: {
-    id: string;
-    url: string;
-    alt?: string;
-  };
+  logo?: any;
+  icon?: any;
+  vector_icon?: any;
 }
 
 const PAYLOAD_CMS_URL = "https://device.cms.texture.energy";
@@ -201,20 +200,10 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
                     </div>
                   </td>
                   <td className="support-level-cell">
-                    <span
-                      className="support-level-badge"
-                      style={{
-                        backgroundColor:
-                          supportLevelBgColors[manufacturer.support_level] ||
-                          "transparent",
-                        color:
-                          supportLevelColors[manufacturer.support_level] ||
-                          "#6b7280",
-                      }}
-                    >
-                      {supportLevelEmojis[manufacturer.support_level] || ""}{" "}
-                      {manufacturer.support_level}
-                    </span>
+                    <StatusTag
+                      supportLevel={manufacturer.support_level}
+                      variant="badge"
+                    />
                   </td>
                   <td className="grid-services-cell">
                     {manufacturer.supported_device_types?.length === 1 &&
@@ -222,9 +211,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
                       manufacturer.supported_device_types[0] === "charger" ||
                       manufacturer.supported_device_types[0] === "thermostat")
                       ? "N/A"
-                      : manufacturer.supports_grid_services
-                      ? "✅"
-                      : "❌"}
+                      : "N/A"}
                   </td>
                   <td className="device-types-cell">
                     {manufacturer.supported_device_types
@@ -238,7 +225,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         </div>
       )}
 
-      <style jsx>{`
+      <style>{`
         .manufacturers-list {
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
             sans-serif;

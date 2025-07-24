@@ -28,7 +28,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:47:31.243Z",
-    "updatedAt": "2025-05-08T21:43:54.579Z",
+    "updatedAt": "2025-07-24T15:04:47.383Z",
     "icon": {
       "id": "6671d09443849cb1f9bf0094",
       "alt": "alfa-romeo-icon",
@@ -96,6 +96,7 @@
     "documentation_html": "",
     "is_featured_on_home_page": false,
     "source": "smartcar",
+    "about": "Alfa Romeo designs and manufactures premium vehicles including electric and hybrid models with integrated energy management systems. Their Tonale hybrid SUV features advanced battery technology and regenerative braking systems. The Italian automaker, part of Stellantis, produces vehicles with sophisticated energy recovery systems and electrified powertrains for both residential and commercial applications across various market segments.",
     "supported_device_types": [
       "vehicle"
     ]
@@ -129,7 +130,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:48:02.339Z",
-    "updatedAt": "2024-06-25T18:55:12.773Z",
+    "updatedAt": "2025-07-24T15:16:11.893Z",
     "icon": {
       "id": "667b03f843849cb1f9ca3b9d",
       "alt": "audi-logo-icon",
@@ -193,9 +194,10 @@
       "updatedAt": "2024-06-25T17:33:59.699Z",
       "url": "/logo/ Audi Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Audi develops electric vehicles, charging infrastructure, and energy storage solutions through their e-tron product line and power-to-gas initiatives. The German manufacturer produces battery electric vehicles, plug-in hybrids, and home charging systems. Their PPE platform supports bidirectional charging capabilities, enabling vehicles to function as mobile energy storage units for residential and grid applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -228,7 +230,7 @@
       "alt": "bmw-logo"
     },
     "createdAt": "2024-02-07T22:24:53.768Z",
-    "updatedAt": "2024-06-25T18:55:30.178Z",
+    "updatedAt": "2025-07-24T15:16:24.418Z",
     "support_level": "production",
     "icon": {
       "id": "667b040343849cb1f9ca3bac",
@@ -293,9 +295,10 @@
       "updatedAt": "2024-06-25T17:34:26.776Z",
       "url": "/logo/ BMW Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "BMW manufactures electric vehicles, charging solutions, and energy management systems through their BMW Charging and ConnectedDrive platforms. The company produces battery electric vehicles, plug-in hybrids, home charging equipment, and bidirectional charging technology. Their systems integrate renewable energy sources and smart grid connectivity for residential, commercial, and fleet applications across various energy market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -329,7 +332,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:48:18.905Z",
-    "updatedAt": "2024-06-25T18:55:46.135Z",
+    "updatedAt": "2025-07-24T15:18:17.945Z",
     "icon": {
       "id": "667b040f43849cb1f9ca3bbb",
       "alt": "cadillac-logo-icon",
@@ -393,9 +396,10 @@
       "updatedAt": "2024-06-25T17:34:54.125Z",
       "url": "/logo/ Cadillac Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Cadillac produces luxury electric vehicles and energy systems including the LYRIQ electric SUV with advanced battery technology and charging capabilities. The American manufacturer, part of General Motors, develops high-performance electric powertrains, home charging solutions, and energy management systems. Their vehicles feature integrated smart charging and energy recovery systems for premium residential and commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -509,10 +513,11 @@
     },
     "support_level": "planned",
     "createdAt": "2024-07-02T01:20:00.705Z",
-    "updatedAt": "2024-07-02T01:20:00.705Z",
-    "is_featured_on_home_page": false,
+    "updatedAt": "2025-07-24T15:18:33.369Z",
+    "about": "ChargePoint operates one of the world's largest networks of electric vehicle charging stations and energy management software platforms. The company provides Level 2 and DC fast charging hardware, cloud-based energy management systems, and smart grid integration solutions. Their charging infrastructure serves residential, commercial, workplace, and fleet applications across multiple energy market segments globally.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "charger"
     ]
@@ -546,7 +551,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:48:46.587Z",
-    "updatedAt": "2024-06-25T18:59:00.165Z",
+    "updatedAt": "2025-07-24T15:18:49.110Z",
     "icon": {
       "id": "667b042943849cb1f9ca3bca",
       "alt": "chevrolet-logo-icon",
@@ -610,9 +615,10 @@
       "updatedAt": "2024-06-25T17:35:10.472Z",
       "url": "/logo/ Chevrolet Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Chevrolet manufactures electric vehicles and energy systems including the Bolt EV and Silverado EV with integrated charging and energy management capabilities. The American brand, part of General Motors, produces battery electric vehicles, home charging equipment, and bidirectional power systems. Their products support residential energy storage and grid interaction applications across consumer and commercial market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -646,7 +652,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:49:17.948Z",
-    "updatedAt": "2024-06-25T18:59:14.328Z",
+    "updatedAt": "2025-07-24T15:19:02.723Z",
     "icon": {
       "id": "667b044543849cb1f9ca3bdd",
       "alt": "chrysler-logo-icon",
@@ -710,9 +716,10 @@
       "updatedAt": "2024-06-25T17:35:38.091Z",
       "url": "/logo/ Chrysler Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Chrysler develops electric and hybrid vehicles with integrated energy management systems as part of the Stellantis automotive group. The American manufacturer produces electrified powertrains, battery systems, and charging infrastructure solutions. Their vehicles feature energy recovery systems and smart charging capabilities designed for residential and commercial applications across various energy market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -746,7 +753,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:49:41.881Z",
-    "updatedAt": "2024-06-25T19:00:27.137Z",
+    "updatedAt": "2025-07-24T15:19:23.802Z",
     "icon": {
       "id": "667b045243849cb1f9ca3bec",
       "alt": "citroen-logo-icon",
@@ -810,9 +817,10 @@
       "updatedAt": "2024-06-25T17:36:11.446Z",
       "url": "/logo/ Citroen Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Citro√´n designs and manufactures electric vehicles and energy systems including compact EVs and charging solutions for urban mobility applications. The French manufacturer, part of Stellantis, produces battery electric vehicles, plug-in hybrids, and energy management systems. Their products focus on efficient energy utilization and smart charging integration for residential, commercial, and fleet applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -846,7 +854,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:50:00.038Z",
-    "updatedAt": "2024-06-25T19:00:48.702Z",
+    "updatedAt": "2025-07-24T15:19:42.643Z",
     "icon": {
       "id": "667b045d43849cb1f9ca3bfb",
       "alt": "cupra-logo-icon",
@@ -910,9 +918,10 @@
       "updatedAt": "2024-06-25T17:36:38.071Z",
       "url": "/logo/ Cupra Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Cupra produces performance-oriented electric vehicles and charging solutions with advanced battery technology and energy management systems. The Spanish brand, part of SEAT and Volkswagen Group, manufactures high-performance electric and plug-in hybrid vehicles. Their systems integrate smart charging capabilities and energy recovery technology for residential and commercial applications across various market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -946,7 +955,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:50:19.182Z",
-    "updatedAt": "2025-04-24T11:26:47.923Z",
+    "updatedAt": "2025-07-24T15:20:18.227Z",
     "icon": {
       "id": "667b047d43849cb1f9ca3c5a",
       "alt": "daikin-logo-icon",
@@ -1011,6 +1020,7 @@
       "url": "/logo/Daikin Vector Icon.svg"
     },
     "is_featured_on_home_page": true,
+    "about": "Daikin manufactures advanced heat pump systems, HVAC equipment, and energy management solutions for residential and commercial applications. The Japanese company produces high-efficiency heating, cooling, and hot water systems with smart grid integration capabilities. Their products include air-source heat pumps, geothermal systems, and building energy management platforms that optimize energy consumption and support renewable energy integration.",
     "description_html": "",
     "documentation_html": "",
     "supported_device_types": [
@@ -1046,7 +1056,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:50:45.574Z",
-    "updatedAt": "2024-11-01T14:21:49.014Z",
+    "updatedAt": "2025-07-24T15:19:58.642Z",
     "icon": {
       "id": "667b048e43849cb1f9ca3c93",
       "alt": "ds-logo-icon",
@@ -1110,9 +1120,10 @@
       "updatedAt": "2024-06-25T17:37:04.578Z",
       "url": "/logo/ DS Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "GS Automobiles specializes in electric vehicle development and energy system integration for commercial and fleet applications. The manufacturer focuses on battery electric powertrains, charging infrastructure, and energy management solutions. Their systems support smart grid connectivity and energy storage applications across residential, commercial, and industrial market segments with emphasis on sustainable mobility solutions.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -1146,7 +1157,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:51:08.038Z",
-    "updatedAt": "2025-05-07T13:58:27.745Z",
+    "updatedAt": "2025-07-24T15:43:50.630Z",
     "icon": {
       "id": "667b049a43849cb1f9ca3ca2",
       "alt": "ecobee-logo-icon",
@@ -1211,6 +1222,7 @@
       "url": "/logo/ Ecobee Vector Icon.svg"
     },
     "is_featured_on_home_page": false,
+    "about": "Ecobee manufactures smart thermostats, home energy management systems, and building automation platforms for residential and commercial applications. The company produces Wi-Fi connected thermostats, room sensors, and energy optimization software. Their products integrate with renewable energy systems, utility demand response programs, and smart home platforms to provide automated energy savings and grid-interactive capabilities across various market segments.",
     "description_html": "",
     "documentation_html": "",
     "supported_device_types": [
@@ -1307,9 +1319,9 @@
       "updatedAt": "2025-04-07T17:33:52.703Z",
       "url": "/logo/EG4 Vector Icon.svg"
     },
-    "support_level": "development",
+    "support_level": "production",
     "createdAt": "2025-04-07T18:00:23.911Z",
-    "updatedAt": "2025-05-08T21:43:26.580Z",
+    "updatedAt": "2025-07-24T15:20:52.347Z",
     "supports_grid_services": true,
     "is_featured_on_home_page": true,
     "description_html": "<p>EG4 Electronics, a division of Signature Solar, is a growing provider of energy storage systems, hybrid inverters, and lithium-iron-phosphate (LiFePO₄) batteries aimed at making renewable energy more accessible and affordable. Known for its practical, DIY-friendly systems and competitive pricing, EG4 has quickly gained traction among homeowners, installers, and small commercial operators seeking reliable off-grid or grid-tied energy solutions. Their portfolio includes hybrid inverters, rack-mounted battery systems, and integrated ESS units designed for both flexibility and scalability.</p><p>Texture supports direct integrations with <strong>EG4’s batteries, inverters, and complete energy storage systems (ESS)</strong>. These integrations provide real-time telemetry and control across EG4 devices, enabling data visibility and orchestrated dispatch for grid-facing programs. Our support spans both monitoring and operational control, ensuring EG4 assets can be seamlessly enrolled in DER programs or managed as part of larger virtual fleets.</p><p>This positions EG4 devices as viable contributors in broader DER ecosystems — particularly for aggregators, VPP providers, and utilities looking to expand beyond Tier 1 OEMs without sacrificing observability or control.</p><p><strong>Common Use Cases</strong></p><ul class=\"bullet\"><li value=1><strong>Residential and Commercial VPP Participation</strong></li><li value=2><strong>Demand Response (DR)</strong></li><li value=3><strong>Energy Arbitrage</strong></li><li value=4><strong>DER Enrollment & Program Compliance</strong></li><li value=5><strong>Backup Power & Resiliency Planning</strong></li><li value=6><strong>Off-grid and Hybrid System Monitoring</strong></li><li value=7><strong>Operations & Maintenance (O&M)</strong></li></ul>",
@@ -1591,7 +1603,9 @@
         "direction": "ltr"
       }
     },
+    "about": "EG4 Electronics develops lithium battery systems, solar inverters, and energy storage solutions for residential and commercial applications. The company produces all-in-one inverter systems, battery management platforms, and grid-interactive energy storage hardware. Their products integrate solar generation, battery storage, and smart energy management capabilities for off-grid and grid-tied applications across various market segments.",
     "supported_device_types": [
+      "inverter",
       "battery"
     ]
   },
@@ -1687,7 +1701,7 @@
     },
     "support_level": "production",
     "createdAt": "2025-04-07T17:55:01.698Z",
-    "updatedAt": "2025-05-08T21:45:45.957Z",
+    "updatedAt": "2025-07-24T15:33:19.383Z",
     "supports_grid_services": true,
     "is_featured_on_home_page": true,
     "description": {
@@ -1939,6 +1953,7 @@
     "documentation_html": "",
     "source": "direct",
     "website_url": "https://www.emporiaenergy.com/",
+    "about": "Emporia develops smart energy monitoring systems, home energy management platforms, and electric vehicle charging solutions. The company produces whole-home energy monitors, smart circuit breakers, and EV charging stations with real-time energy tracking capabilities. Their systems integrate renewable energy sources and provide detailed energy usage analytics for residential and small commercial applications.",
     "supported_device_types": [
       "charger",
       "battery"
@@ -1973,7 +1988,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:51:36.284Z",
-    "updatedAt": "2024-06-25T19:02:13.580Z",
+    "updatedAt": "2025-07-24T15:44:05.322Z",
     "icon": {
       "id": "667b04b243849cb1f9ca3d24",
       "alt": "enel-x-logo-icon",
@@ -2037,9 +2052,10 @@
       "updatedAt": "2024-06-25T17:37:58.178Z",
       "url": "/logo/ Enel X Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Enel X develops demand response platforms, energy storage systems, and smart grid solutions for commercial, industrial, and utility-scale applications. The company provides energy management software, battery storage platforms, and grid optimization services. Their systems enable businesses and utilities to optimize energy consumption, participate in energy markets, and integrate renewable energy sources across various commercial and utility market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "charger"
     ]
@@ -2073,7 +2089,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:51:59.118Z",
-    "updatedAt": "2025-05-08T21:28:44.011Z",
+    "updatedAt": "2025-07-24T15:33:50.905Z",
     "icon": {
       "id": "667b04c543849cb1f9ca3d33",
       "alt": "enphase-logo-icon",
@@ -3863,6 +3879,7 @@
     },
     "documentation_html": "<h2>Overview<a href=\"http://localhost:3000/docs/sources/oem/enphase/#overview\">​</a></h2><p>We are using the <a href=\"https://developer-v4.enphase.com/\" rel=\"noopener noreferrer\">Enphase API v4</a> to connect to Enphase accounts.</p><p>For this connection, a typical OAuth flow is used to authenticate the user and obtain consent to access their Enphase account and thus devices.</p><h2>Device Updates<a href=\"http://localhost:3000/docs/sources/oem/enphase/#device-updates\">​</a></h2><p>One quirk with Enphase systems is that they don't always seem to update their data in real-time or on a regular cadence.</p><p>Our <a href=\"http://localhost:3000/docs/devices/polling\">platform polls</a> the Enphase API every 15 minutes for new data, but the Enphase system may not be reporting any new data yet. When we do receive new data, we will update the device(s) in Texture with the new data and backfill any missing data since the last reported data point for the associated Enphase device(s).</p><h2>Battery Commands<a href=\"http://localhost:3000/docs/sources/oem/enphase/#battery-commands\">​</a></h2><p>If you are using our <a href=\"http://localhost:3000/docs/commands#set-operating-mode\">set operating mode command</a> with Enphase batteries, there is one main thing to be aware of.</p><p>There is a limitation with the Enphase API where we currently don't have a way to manipulate or adjust the battery system's tariff or rate settings. This means that while you may want to export energy to the grid during a specific time of day, for example, the battery system's tariff settings may not align with this.</p><p>In the scenario above, where you want to export to the grid during potentially non-peak hours. While the battery may not align and export to the grid, we will set it up such that it at least discharges the battery to cover home loads until the target reserve level is reached. Curtailing more expensive grid power usage still during this time.</p><p>If you enroll your users in our grid services program, we can control the battery system to optimize for grid services. See the <a href=\"http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services\">Enphase Grid Services</a> section below for more information.</p><h2>Enphase Grid Services<a href=\"http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services\">​</a></h2><p>In cases where your organization needs or desires features like off-peak grid export, we can work with you to allow enabling your customers to enroll their Enphase systems in one of our grid services programs.</p><p>Once enabled for your organization, you can start to send your customers your unique enphase authorization link to enroll their Enphase system(s).</p><h3>How to enroll your customers in a grid services program<a href=\"http://localhost:3000/docs/sources/oem/enphase/#how-to-enroll-your-customers-in-a-grid-services-program\">​</a></h3><p>The basic process for your customer's to enroll in a grid services program is as follows:</p><ol class=\"number\"><li value=1>Your customer first goes through the connect flow as normal, connecting their Enphase account to Texture.</li><li value=2>Send them an authorization link to enroll in one of our grid services programs.</li></ol><p>You can chain these flows together as described above, by constructing a connect link with the <code>redirectUrl</code> set to the enphase grid services authorization link. Then the <code>redirectUrl</code> query parameter in the enphase grid services authorization link can be set to a final redirect url to navigate to after the customer completes the grid services enrollment.</p><blockquote><p><strong>Note:</strong> After the customer completes step 1 you will still be able to monitor and send commands to their Enphase system(s). The grid services program will only start to take effect once the customer has enrolled and allows more advanced control of the battery system.</p></blockquote><h3>How to find your organization's authorization url<a href=\"http://localhost:3000/docs/sources/oem/enphase/#how-to-find-your-organizations-authorization-url\">​</a></h3><p>The base enphase authorization link for your organization will look like this:</p><p><code>https://enphase.connect.texturehq.com/<organization-token></code><br></p><p>You can find your organization's unique url (if enabled) programmatically by making a <code>GET</code> request to our <a href=\"http://localhost:3000/api\">organization endpoint with a valid API key</a>.</p><p>The response will contain your organization's base enphase authorization link, if enabled, under the <code>oemSpecifics.enphase.gridServicesAuthorizationUrl</code> path in the response.</p><h3>Query Parameters<a href=\"http://localhost:3000/docs/sources/oem/enphase/#query-parameters\">​</a></h3><p>The following table details the query parameters that can be used with the enphase authorization link.</p><p>NameRequired?DescriptionprogramSlugyesUnique identifier for the Enphase Grid Services program to enroll the user in. Typically, a state code for states where we have available programs.referenceIdyesUnique identifier in your system to tie to the user enrolling in Grid Services. This should ideally be the same id utilized during the Texture Connect flow.clientNamenoAllows adjusting the name that is displayed on the intro screen of the Enphase Grid Services enrollment flow. If not provided, it will fall back/use your organization's name.redirectUrlnoAllows you to set a redirect url to navigate to when the user clicks \"Continue\" after completing their Enphase Grid Services enrollment.</p><h3>Programs<a href=\"http://localhost:3000/docs/sources/oem/enphase/#programs\">​</a></h3><p>Enphase Grid Services programs are per state, and we currently have programs available in the following states:</p><p>Program StateProgram SlugCaliforniaCATexasTX</p><blockquote><p><strong>Note:</strong> If there is a mismatch between the state of the Enphase system and the state of the grid services program, the system will not be able to enroll in the program.</p></blockquote><h3>Examples<a href=\"http://localhost:3000/docs/sources/oem/enphase/#examples\">​</a></h3><p>Let's say your organization's token is <code>my-org-token</code> and you want to enroll a customer in the California grid services program. The authorization link would look like this:</p><p><a href=\"https://enphase.connect.texturehq.com/my-org-token?programSlug=CA\"><code>https://enphase.connect.texturehq.com/my-org-token?programSlug=CA</code></a><br></p><p>If you also wanted to adjust the name displayed on the intro screen to be <code>My Company</code>, the authorization link would look like this:</p><p><a href=\"https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company\"><code>https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company</code></a><br></p><h3>Battery Commands<a href=\"http://localhost:3000/docs/sources/oem/enphase/#battery-commands-1\">​</a></h3><p>Once a customer's Enphase system is enrolled in a grid services program, we will be able to control the battery system to optimize for grid services. This means that we will be able to control the battery system to export to the grid during off-peak hours, for example.</p><p>There are some caveats or things to be aware of:</p><ul class=\"bullet\"><li value=1>Commands won't take effect for at least 1 minute after they are sent.</li><li value=2>Commands at maximum will last up to 4 hours.</li><li value=3>If the target reserve level is reached before the command expires, the battery system will return to its operation mode before the command was sent.</li><li value=4>The lowest target reserve level that can be set is 10%.</li></ul>",
     "website_url": "https://enphase.com/",
+    "about": "Enphase Energy manufactures microinverters, battery storage systems, and solar energy management platforms for residential and commercial applications. The company produces smart solar inverters, home battery systems, and comprehensive energy monitoring software. Their systems optimize solar energy production and consumption while providing grid-interactive capabilities and backup power solutions for distributed energy applications.",
     "supported_device_types": [
       "battery",
       "inverter"
@@ -3897,7 +3914,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:52:15.577Z",
-    "updatedAt": "2024-06-25T19:02:50.013Z",
+    "updatedAt": "2025-07-24T15:34:09.062Z",
     "icon": {
       "id": "667b04d143849cb1f9ca3d42",
       "alt": "fiat-logo-icon",
@@ -3961,9 +3978,10 @@
       "updatedAt": "2024-06-25T17:38:29.898Z",
       "url": "/logo/ Fiat Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Fiat produces electric vehicles and energy systems including the 500e electric car with integrated charging and energy management capabilities. The Italian manufacturer, part of Stellantis, develops battery electric vehicles, home charging solutions, and smart energy systems. Their products focus on urban mobility applications with energy-efficient powertrains and charging infrastructure for residential and commercial market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -3997,7 +4015,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:52:33.824Z",
-    "updatedAt": "2024-06-25T19:03:04.087Z",
+    "updatedAt": "2025-07-24T15:34:30.319Z",
     "icon": {
       "id": "667b04df43849cb1f9ca3d51",
       "alt": "ford-logo-icon",
@@ -4061,9 +4079,10 @@
       "updatedAt": "2024-06-25T17:39:28.750Z",
       "url": "/logo/ Ford Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Ford manufactures electric vehicles, charging infrastructure, and energy systems including the F-150 Lightning with bidirectional power capabilities. The American automaker produces battery electric vehicles, plug-in hybrids, and home energy systems. Their vehicles can power homes during outages and integrate with solar systems, serving residential, commercial, and fleet applications across various energy market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -4097,7 +4116,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:53:05.485Z",
-    "updatedAt": "2025-04-24T11:26:23.426Z",
+    "updatedAt": "2025-07-24T15:43:07.445Z",
     "icon": {
       "id": "667b053243849cb1f9ca3d60",
       "alt": "franklinwh-logo-icon",
@@ -4163,6 +4182,7 @@
     },
     "supports_grid_services": true,
     "is_featured_on_home_page": true,
+    "about": "FranklinWH produces whole-home battery systems, energy management platforms, and grid-interactive storage solutions for residential applications. The company develops integrated battery storage, smart energy management software, and backup power systems. Their platforms optimize solar energy storage, provide grid services, and deliver reliable backup power for residential and small commercial market segments.",
     "description_html": "",
     "documentation_html": "",
     "supported_device_types": [
@@ -4262,11 +4282,12 @@
     "support_level": "planned",
     "supports_grid_services": true,
     "createdAt": "2024-08-28T19:18:34.300Z",
-    "updatedAt": "2025-05-08T21:37:27.143Z",
+    "updatedAt": "2025-07-24T15:34:51.661Z",
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
     "source": "direct",
+    "about": "Generac manufactures backup power systems, energy storage solutions, and smart grid technology for residential and commercial applications. The company produces standby generators, home battery systems, and energy management platforms. Their products integrate renewable energy sources with backup power capabilities, providing comprehensive energy solutions for homes, businesses, and critical infrastructure applications.",
     "supported_device_types": [
       "inverter",
       "battery"
@@ -4301,7 +4322,7 @@
     },
     "support_level": "blocked",
     "createdAt": "2024-03-26T15:53:32.283Z",
-    "updatedAt": "2025-04-16T15:58:02.189Z",
+    "updatedAt": "2025-07-24T15:35:09.051Z",
     "icon": {
       "id": "667b05e043849cb1f9ca407c",
       "alt": "nest-logo-icon",
@@ -4365,9 +4386,10 @@
       "updatedAt": "2024-06-25T17:43:13.935Z",
       "url": "/logo/ Nest Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Google Nest develops smart home energy management systems, intelligent thermostats, and home automation platforms that optimize energy consumption. The company produces Wi-Fi connected thermostats, smart sensors, and energy monitoring systems. Their products integrate with renewable energy systems and utility programs to provide automated energy savings and grid-interactive capabilities for residential applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "thermostat"
     ]
@@ -4401,7 +4423,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:53:53.436Z",
-    "updatedAt": "2024-06-25T19:05:26.179Z",
+    "updatedAt": "2025-07-24T15:35:21.646Z",
     "icon": {
       "id": "667b053f43849cb1f9ca3d6f",
       "alt": "honeywell-logo-icon",
@@ -4465,9 +4487,10 @@
       "updatedAt": "2024-06-25T17:39:53.550Z",
       "url": "/logo/ Honeywell Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Honeywell manufactures building automation systems, smart thermostats, and energy management platforms for residential, commercial, and industrial applications. The company produces HVAC controls, energy monitoring systems, and smart home technologies. Their products optimize energy consumption, integrate renewable energy sources, and provide comprehensive building energy management solutions across various market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "thermostat"
     ]
@@ -4501,7 +4524,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:54:16.139Z",
-    "updatedAt": "2024-06-25T19:05:45.809Z",
+    "updatedAt": "2025-07-24T15:35:33.657Z",
     "icon": {
       "id": "667b054b43849cb1f9ca3d7e",
       "alt": "hyundai-logo-icon",
@@ -4565,9 +4588,10 @@
       "updatedAt": "2024-06-25T17:40:10.080Z",
       "url": "/logo/ Hyundai Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Hyundai produces electric vehicles, hydrogen fuel cell systems, and charging infrastructure with advanced battery technology and energy management capabilities. The South Korean manufacturer develops battery electric vehicles, plug-in hybrids, and hydrogen-powered systems. Their products integrate smart charging, vehicle-to-grid technology, and renewable energy systems for residential, commercial, and fleet applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -4601,7 +4625,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-03-26T15:54:37.806Z",
-    "updatedAt": "2024-06-25T19:06:03.620Z",
+    "updatedAt": "2025-07-24T15:35:54.040Z",
     "icon": {
       "id": "667b055943849cb1f9ca3d8d",
       "alt": "jaguar-logo-icon",
@@ -4665,9 +4689,10 @@
       "updatedAt": "2024-06-25T17:40:41.200Z",
       "url": "/logo/ Jaguar Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Jaguar manufactures luxury electric vehicles and charging systems including the I-PACE electric SUV with advanced battery technology and energy management features. The British manufacturer, part of Jaguar Land Rover, produces premium battery electric vehicles and charging infrastructure. Their systems integrate smart charging capabilities and energy recovery technology for high-end residential and commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -4701,7 +4726,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:41:13.507Z",
-    "updatedAt": "2024-06-25T19:07:43.606Z",
+    "updatedAt": "2025-07-24T15:36:07.405Z",
     "icon": {
       "id": "667afd1e43849cb1f9ca2edb",
       "alt": "jeep-logo-icon",
@@ -4765,9 +4790,10 @@
       "updatedAt": "2024-06-25T19:07:24.436Z",
       "url": "/logo/ Jeep Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Jeep develops electric and hybrid vehicles with integrated energy systems including the 4xe plug-in hybrid lineup and upcoming electric SUVs. The American brand, part of Stellantis, produces electrified powertrains, battery systems, and charging solutions. Their vehicles feature energy recovery systems and smart charging capabilities designed for off-road and traditional residential, commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -4801,7 +4827,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:48:40.519Z",
-    "updatedAt": "2024-06-25T19:08:13.765Z",
+    "updatedAt": "2025-07-24T15:36:21.303Z",
     "icon": {
       "id": "667b056843849cb1f9ca3da0",
       "alt": "kia-logo-icon",
@@ -4865,9 +4891,10 @@
       "updatedAt": "2024-06-25T17:41:17.816Z",
       "url": "/logo/ Kia Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Kia manufactures electric vehicles, charging solutions, and energy systems including the EV6 and Niro EV with advanced battery technology. The South Korean automaker produces battery electric vehicles, plug-in hybrids, and vehicle-to-load systems. Their products feature bidirectional charging capabilities and smart energy management for residential, commercial, and fleet applications across various market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -4901,7 +4928,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:49:05.170Z",
-    "updatedAt": "2024-06-25T19:08:37.642Z",
+    "updatedAt": "2025-07-24T15:36:33.599Z",
     "icon": {
       "id": "667b058543849cb1f9ca3db3",
       "alt": "land-rover-logo-icon",
@@ -4965,9 +4992,10 @@
       "updatedAt": "2024-06-25T17:41:28.854Z",
       "url": "/logo/ Land Rover Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Land Rover produces luxury electric and hybrid vehicles with advanced energy management systems and charging capabilities. The British manufacturer, part of Jaguar Land Rover, develops premium electrified SUVs, battery systems, and charging infrastructure. Their vehicles integrate energy recovery technology and smart charging systems designed for high-end residential and commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5001,7 +5029,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:49:32.305Z",
-    "updatedAt": "2024-06-25T19:08:52.351Z",
+    "updatedAt": "2025-07-24T15:36:44.482Z",
     "icon": {
       "id": "667b059243849cb1f9ca3dc2",
       "alt": "lexus-logo-icon",
@@ -5065,9 +5093,10 @@
       "updatedAt": "2024-06-25T17:41:38.953Z",
       "url": "/logo/ Lexus Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Lexus manufactures luxury hybrid and electric vehicles with sophisticated energy management systems and charging infrastructure. The Japanese premium brand, part of Toyota, produces hybrid powertrains, battery electric vehicles, and smart charging solutions. Their systems integrate energy recovery technology and advanced battery management for high-end residential and commercial applications across luxury market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5101,7 +5130,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:49:53.491Z",
-    "updatedAt": "2024-06-25T19:09:16.649Z",
+    "updatedAt": "2025-07-24T15:36:58.906Z",
     "icon": {
       "id": "667b059f43849cb1f9ca3dd1",
       "alt": "lincoln-logo-icon",
@@ -5165,9 +5194,10 @@
       "updatedAt": "2024-06-25T17:41:53.067Z",
       "url": "/logo/ Lincoln Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Lincoln produces luxury electric and hybrid vehicles with integrated energy management systems and charging capabilities. The American premium brand, part of Ford, manufactures battery electric vehicles, plug-in hybrids, and home charging solutions. Their products feature sophisticated energy systems and smart charging integration designed for high-end residential and commercial applications across luxury market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5201,7 +5231,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:50:27.207Z",
-    "updatedAt": "2024-06-25T19:09:39.245Z",
+    "updatedAt": "2025-07-24T15:37:09.961Z",
     "icon": {
       "id": "667b05b043849cb1f9ca3fb5",
       "alt": "mercedes-benz-logo-icon",
@@ -5265,9 +5295,10 @@
       "updatedAt": "2024-06-25T17:42:49.466Z",
       "url": "/logo/ Mercedes-Benz Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Mercedes-Benz manufactures luxury electric vehicles, charging infrastructure, and energy storage systems through their EQS and EQC electric lineup. The German automaker produces premium battery electric vehicles, plug-in hybrids, and home energy systems. Their vehicles integrate advanced battery technology, bidirectional charging capabilities, and smart energy management for high-end residential and commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5301,7 +5332,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:50:45.220Z",
-    "updatedAt": "2024-06-25T19:10:18.331Z",
+    "updatedAt": "2025-07-24T15:37:24.026Z",
     "icon": {
       "id": "667b05be43849cb1f9ca406d",
       "alt": "mini-logo-icon",
@@ -5365,9 +5396,10 @@
       "updatedAt": "2024-06-25T17:43:02.033Z",
       "url": "/logo/ Mini Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Mini produces compact electric vehicles and charging solutions including the Cooper SE electric car with integrated energy management systems. The British brand, part of BMW Group, manufactures small battery electric vehicles and urban charging infrastructure. Their products focus on city mobility applications with efficient energy systems and smart charging integration for residential and urban commercial environments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5401,7 +5433,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:51:01.747Z",
-    "updatedAt": "2024-06-25T19:10:33.592Z",
+    "updatedAt": "2025-07-24T15:37:35.525Z",
     "icon": {
       "id": "667b05ee43849cb1f9ca4092",
       "alt": "nissan-logo-icon",
@@ -5465,9 +5497,10 @@
       "updatedAt": "2024-06-25T17:43:27.115Z",
       "url": "/logo/ Nissan Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Nissan manufactures electric vehicles and energy systems including the LEAF electric car with vehicle-to-home and vehicle-to-grid capabilities. The Japanese automaker produces battery electric vehicles, charging infrastructure, and bidirectional power systems. Their products integrate renewable energy sources and provide home backup power, serving residential, commercial, and fleet applications across various energy market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5501,7 +5534,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:51:28.557Z",
-    "updatedAt": "2024-06-25T19:11:00.455Z",
+    "updatedAt": "2025-07-24T15:37:47.472Z",
     "icon": {
       "id": "667b05fe43849cb1f9ca40a8",
       "alt": "opel-logo-icon",
@@ -5565,9 +5598,10 @@
       "updatedAt": "2024-06-25T17:43:40.499Z",
       "url": "/logo/ Opel Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Opel produces electric vehicles and energy systems including compact EVs and charging solutions for European mobility applications. The German manufacturer, part of Stellantis, develops battery electric vehicles, plug-in hybrids, and energy management systems. Their products focus on efficient urban mobility with smart charging integration and energy recovery systems for residential and commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5601,7 +5635,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:51:52.302Z",
-    "updatedAt": "2024-06-25T19:11:21.418Z",
+    "updatedAt": "2025-07-24T15:38:00.179Z",
     "icon": {
       "id": "667b061543849cb1f9ca4162",
       "alt": "peugeot-logo-icon",
@@ -5665,9 +5699,10 @@
       "updatedAt": "2024-06-25T17:44:24.317Z",
       "url": "/logo/ Peugeot Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Peugeot manufactures electric vehicles and energy systems including the e-208 and e-2008 electric models with integrated charging and energy management capabilities. The French automaker, part of Stellantis, produces battery electric vehicles, plug-in hybrids, and charging infrastructure. Their systems optimize energy consumption and integrate smart charging technology for residential, commercial, and fleet applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5701,7 +5736,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:52:13.579Z",
-    "updatedAt": "2024-06-25T19:11:45.345Z",
+    "updatedAt": "2025-07-24T15:38:12.975Z",
     "icon": {
       "id": "667b063643849cb1f9ca417a",
       "alt": "porsche-logo-icon",
@@ -5765,9 +5800,10 @@
       "updatedAt": "2024-06-25T17:44:38.308Z",
       "url": "/logo/ Porsche Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Porsche develops high-performance electric vehicles and charging systems including the Taycan electric sports car with advanced battery technology. The German manufacturer produces luxury battery electric vehicles, ultra-fast charging infrastructure, and energy management systems. Their products integrate cutting-edge battery technology and smart charging capabilities for premium residential and commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5801,7 +5837,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:52:40.448Z",
-    "updatedAt": "2024-06-25T19:12:03.169Z",
+    "updatedAt": "2025-07-24T15:38:25.553Z",
     "icon": {
       "id": "667b064243849cb1f9ca4189",
       "alt": "renault-logo-icon",
@@ -5865,9 +5901,10 @@
       "updatedAt": "2024-06-25T17:45:24.818Z",
       "url": "/logo/ Renault Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Renault manufactures electric vehicles and energy systems including the Zoe electric car and comprehensive charging infrastructure solutions. The French automaker produces battery electric vehicles, energy storage systems, and smart charging platforms. Their products integrate renewable energy sources and vehicle-to-grid technology for residential, commercial, and fleet applications across various European market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -5901,7 +5938,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:53:00.283Z",
-    "updatedAt": "2024-06-25T19:12:27.737Z",
+    "updatedAt": "2025-07-24T15:38:35.259Z",
     "icon": {
       "id": "667b065043849cb1f9ca4198",
       "alt": "rivian-logo-icon",
@@ -5965,17 +6002,18 @@
       "updatedAt": "2024-06-25T17:45:56.278Z",
       "url": "/logo/ Rivian Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Rivian produces electric trucks and delivery vehicles with advanced battery systems and charging infrastructure for commercial and consumer applications. The American manufacturer develops battery electric pickup trucks, commercial vans, and charging networks. Their vehicles feature bidirectional power capabilities and integrated energy management systems for fleet, residential, and outdoor recreational applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
   },
   {
     "id": "67f411f50e797c99f937533f",
-    "slug": "savant-power",
-    "name": "Savant Power",
+    "slug": "savant",
+    "name": "Savant",
     "logo": {
       "id": "67f40ed30e797c99f936df29",
       "alt": "Savan Power logo",
@@ -6064,10 +6102,13 @@
     },
     "support_level": "planned",
     "createdAt": "2025-04-07T17:57:09.054Z",
-    "updatedAt": "2025-04-24T11:29:16.127Z",
+    "updatedAt": "2025-07-24T15:44:51.295Z",
     "is_featured_on_home_page": true,
     "description_html": "",
     "documentation_html": "",
+    "source": "direct",
+    "website_url": "https://www.savant.com",
+    "about": "Savant manufactures smart home automation systems, energy management platforms, and integrated control solutions for luxury residential applications. The company produces whole-home automation hardware, energy monitoring software, and smart grid integration systems. Their platforms control lighting, climate, security, and energy systems while optimizing consumption and integrating renewable energy sources for high-end residential markets.",
     "supported_device_types": [
       "battery"
     ]
@@ -6101,7 +6142,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T21:53:21.567Z",
-    "updatedAt": "2024-06-25T19:12:43.508Z",
+    "updatedAt": "2025-07-24T15:45:06.090Z",
     "icon": {
       "id": "667b065e43849cb1f9ca41a7",
       "alt": "sensibo-logo-icon",
@@ -6165,9 +6206,10 @@
       "updatedAt": "2024-06-25T17:46:08.390Z",
       "url": "/logo/ Sensibo Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Sensibo develops smart air conditioning controllers, HVAC automation platforms, and climate management solutions for residential and commercial applications. The company produces Wi-Fi connected AC controllers, energy monitoring systems, and automated climate optimization software. Their products integrate with smart home platforms and utility programs to reduce energy consumption and provide intelligent HVAC control across various market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "thermostat"
     ]
@@ -6201,7 +6243,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:27:40.561Z",
-    "updatedAt": "2024-06-25T19:13:05.040Z",
+    "updatedAt": "2025-07-24T15:38:53.418Z",
     "icon": {
       "id": "667b066b43849cb1f9ca41b6",
       "alt": "skoda-logo-icon",
@@ -6265,9 +6307,10 @@
       "updatedAt": "2024-06-25T17:46:19.931Z",
       "url": "/logo/ Skoda Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "≈†koda manufactures electric vehicles and energy systems including the Enyaq electric SUV with integrated charging and battery management capabilities. The Czech automaker, part of Volkswagen Group, produces battery electric vehicles, plug-in hybrids, and charging solutions. Their products focus on practical electric mobility with smart energy systems and charging infrastructure for residential and commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -6301,7 +6344,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:28:12.386Z",
-    "updatedAt": "2025-05-07T13:57:15.367Z",
+    "updatedAt": "2025-07-24T15:39:36.344Z",
     "icon": {
       "id": "667b068243849cb1f9ca41c5",
       "alt": "sol-ark-logo-icon",
@@ -6366,6 +6409,7 @@
       "url": "/logo/ Sol-Ark Vector Icon.svg"
     },
     "is_featured_on_home_page": false,
+    "about": "Sol-Ark manufactures hybrid solar inverters, battery storage systems, and comprehensive energy management platforms for residential and commercial applications. The company produces multi-mode inverters, lithium battery systems, and smart energy monitoring software. Their products integrate solar generation, battery storage, and grid connectivity to provide complete energy independence solutions.",
     "description_html": "",
     "documentation_html": "",
     "supported_device_types": [
@@ -6402,7 +6446,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:41:38.430Z",
-    "updatedAt": "2025-05-08T21:25:36.129Z",
+    "updatedAt": "2025-07-24T15:39:47.485Z",
     "icon": {
       "id": "667afcb143849cb1f9ca2e83",
       "alt": "solaredge-logo-icon",
@@ -6754,6 +6798,7 @@
     "documentation_html": "",
     "website_url": "https://www.solaredge.com/us/",
     "source": "direct",
+    "about": "SolarEdge develops smart inverter platforms, energy monitoring software, and power optimization solutions for solar installations. The company provides advanced inverter technology, energy storage integration, and comprehensive monitoring systems. Their platforms optimize solar energy production, enable grid services, and provide detailed performance analytics for residential, commercial, and utility-scale solar applications across global markets.",
     "supported_device_types": [
       "inverter",
       "battery"
@@ -6851,8 +6896,9 @@
     },
     "support_level": "planned",
     "createdAt": "2025-04-07T17:53:26.378Z",
-    "updatedAt": "2025-05-07T13:56:26.283Z",
+    "updatedAt": "2025-07-24T15:47:15.919Z",
     "is_featured_on_home_page": false,
+    "about": "Sonnen manufactures residential battery storage systems, energy management platforms, and smart grid integration solutions for home energy applications. The German company produces lithium battery systems, energy management software, and virtual power plant technology. Their products optimize solar energy storage, provide backup power, and enable grid services while delivering energy independence for residential and small commercial market segments.",
     "description_html": "",
     "documentation_html": "",
     "supported_device_types": []
@@ -6886,7 +6932,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:28:36.190Z",
-    "updatedAt": "2025-05-08T21:31:58.660Z",
+    "updatedAt": "2025-07-24T15:39:59.795Z",
     "icon": {
       "id": "667b069443849cb1f9ca41d8",
       "alt": "tesla-logo-icon",
@@ -9109,6 +9155,7 @@
         "direction": "ltr"
       }
     },
+    "about": "Tesla designs and manufactures electric vehicles, energy storage systems, and solar energy products for residential, commercial, and utility-scale applications. The company produces battery electric vehicles, home battery systems, solar panels, and charging infrastructure. Their integrated ecosystem includes vehicle-to-grid technology, energy management software, and comprehensive renewable energy solutions across multiple market segments.",
     "supported_device_types": [
       "vehicle",
       "charger",
@@ -9250,7 +9297,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:28:58.157Z",
-    "updatedAt": "2024-06-25T19:49:16.128Z",
+    "updatedAt": "2025-07-24T15:40:12.508Z",
     "icon": {
       "id": "667b06a143849cb1f9ca41e7",
       "alt": "toyota-logo-icon",
@@ -9314,9 +9361,10 @@
       "updatedAt": "2024-06-25T17:47:25.270Z",
       "url": "/logo/ Toyota Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Toyota manufactures hybrid and electric vehicles with advanced energy management systems including the Prius hybrid and bZ4X electric SUV. The Japanese automaker produces hybrid powertrains, battery electric vehicles, and hydrogen fuel cell systems. Their products integrate energy recovery technology, smart charging capabilities, and alternative fuel systems for residential, commercial, and fleet applications across global markets.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -9350,7 +9398,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:29:24.035Z",
-    "updatedAt": "2024-06-25T19:49:40.137Z",
+    "updatedAt": "2025-07-24T15:40:27.269Z",
     "icon": {
       "id": "667b06b043849cb1f9ca41fa",
       "alt": "vauxhall-logo-icon",
@@ -9414,9 +9462,10 @@
       "updatedAt": "2024-06-25T17:48:00.756Z",
       "url": "/logo/ Vauxhall Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Vauxhall produces electric vehicles and energy systems including compact EVs and charging solutions for UK mobility applications. The British manufacturer, part of Stellantis, develops battery electric vehicles, plug-in hybrids, and energy management systems. Their products focus on practical electric mobility with smart charging integration and energy-efficient powertrains for residential and commercial applications.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -9450,7 +9499,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:29:48.736Z",
-    "updatedAt": "2024-06-26T14:39:15.893Z",
+    "updatedAt": "2025-07-24T15:40:37.899Z",
     "icon": {
       "id": "667afde643849cb1f9ca2fac",
       "alt": "volkswagen-logo-icon",
@@ -9514,9 +9563,10 @@
       "updatedAt": "2024-06-25T17:26:38.061Z",
       "url": "/logo/ Volkswagen Vector Icon.svg"
     },
-    "is_featured_on_home_page": false,
+    "about": "Volkswagen manufactures electric vehicles and energy systems through their ID electric lineup with advanced battery technology and charging infrastructure. The German automaker produces battery electric vehicles, plug-in hybrids, and comprehensive charging solutions. Their MEB platform supports smart energy management and bidirectional charging capabilities for residential, commercial, and fleet applications across various market segments.",
     "description_html": "",
     "documentation_html": "",
+    "is_featured_on_home_page": false,
     "supported_device_types": [
       "vehicle"
     ]
@@ -9550,7 +9600,7 @@
     },
     "support_level": "production",
     "createdAt": "2024-04-23T22:30:07.552Z",
-    "updatedAt": "2025-05-08T21:46:20.992Z",
+    "updatedAt": "2025-07-24T15:40:50.247Z",
     "icon": {
       "id": "667afe1343849cb1f9ca2fcc",
       "alt": "volvo-logo-icon",
@@ -9618,6 +9668,7 @@
     "documentation_html": "",
     "is_featured_on_home_page": false,
     "source": "smartcar",
+    "about": "Volvo produces electric vehicles, charging infrastructure, and energy management systems with focus on safety and sustainability. The Swedish manufacturer develops battery electric vehicles, plug-in hybrids, and smart charging solutions. Their products integrate advanced battery technology and energy recovery systems designed for residential, commercial, and fleet applications across premium market segments globally.",
     "supported_device_types": [
       "vehicle"
     ]
