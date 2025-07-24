@@ -632,6 +632,40 @@ blockquote {
   background: none;
 }
 
+/* Dark mode toggle styling - ensure consistent color and spacing */
+.clean-btn {
+  color: #6b7280 !important;
+  font-weight: 500;
+  padding: 8px !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.clean-btn:hover {
+  color: #374151 !important;
+  background-color: #e5e7eb !important;
+}
+
+/* Ensure dark mode toggle icon inherits the correct color */
+.clean-btn svg {
+  color: inherit !important;
+  fill: currentColor !important;
+}
+
+/* Navbar spacing improvements */
+.navbar__items {
+  gap: 8px !important;
+}
+
+.navbar__items--right {
+  gap: 12px !important;
+}
+
 /* Navbar Adjustments */
 @media (min-width: 997px) {
   .navbar__logo {
@@ -1376,6 +1410,16 @@ html[data-theme="dark"] .markdown > p {
 [data-theme="dark"] .navbar__link:hover {
   color: #f9fafb !important;
   background: none !important;
+}
+
+/* Dark mode toggle styling for dark theme */
+[data-theme="dark"] .clean-btn {
+  color: #e5e7eb !important;
+}
+
+[data-theme="dark"] .clean-btn:hover {
+  color: #f9fafb !important;
+  background-color: #374151 !important;
 }
 
 /* Dark Mode Sidebar */

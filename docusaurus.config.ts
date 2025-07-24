@@ -134,6 +134,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     algolia: {
       appId: "TS0KK5KXLO",
       apiKey: "99a70acfc3fd6c2941528e464a175820",
