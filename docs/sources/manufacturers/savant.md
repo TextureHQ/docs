@@ -120,14 +120,14 @@ sidebar_position: 3
           }}>Visit Website</a>
         </div>
         
-        <div style={{
+        <div className="device-types-row" style={{
           display: 'flex',
           justifyContent: 'space-between',
-          alignItems: 'center',
-          padding: '12px 0'
+          alignItems: 'flex-start',
+          padding: '16px 0'
         }}>
           <span style={{ fontWeight: '500', color: '#6b7280', fontSize: '14px' }}>Supported Device Types</span>
-          <span style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px' }}>Batteries</span>
+          <span className="device-types-value" style={{ fontWeight: '600', color: '#1f2937', fontSize: '14px', textAlign: 'right', maxWidth: '60%' }}>Batteries</span>
         </div>
       </div>
     </div>

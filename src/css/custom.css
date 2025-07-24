@@ -1559,6 +1559,20 @@ html[data-theme="dark"] .markdown > p {
   text-decoration: underline !important;
 }
 
+/* Device types responsive text wrapping */
+.manufacturer-hero-desktop .device-types-value {
+  line-height: 1.4;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+/* Ensure proper spacing for multi-line device types */
+.manufacturer-hero-desktop .device-types-row {
+  align-items: flex-start;
+  padding: 16px 0;
+}
+
 /* Mobile responsive - stack columns */
 @media (max-width: 768px) {
   .manufacturer-hero-desktop {
