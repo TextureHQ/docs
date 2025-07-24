@@ -6,6 +6,7 @@ hide_table_of_contents: true
 ---
 
 import Link from '@docusaurus/Link';
+import { WelcomeCard } from '../../src/components/WelcomeCard';
 
 <div className="hero-section">
   <div className="hero-container">
@@ -88,68 +89,29 @@ import Link from '@docusaurus/Link';
   </div>
 
   <div className="row margin-top--md action-cards-container">
-    <div className="col col--4 col--md-6 col--sm-12">
-      <div className="action-card">
-        <div className="action-card__header">
-          <h3>Connect devices</h3>
-        </div>
-        <div className="action-card__body">
-          <p>
-            Add energy devices to your application. Works with solar, batteries, EVs, and more.
-          </p>
-        </div>
-        <div className="action-card__footer">
-          <Link
-            className="action-card__link"
-            to="/docs/home/getting-started">
-            Get started →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <WelcomeCard
+      title="Connect devices"
+      description="Add energy devices to your application. Works with solar, batteries, EVs, and more."
+      linkText="Get started →"
+      linkTo="/docs/home/getting-started"
+    />
     
-    <div className="col col--4 col--md-6 col--sm-12">
-      <div className="action-card">
-        <div className="action-card__header">
-          <h3>Build solutions</h3>
-        </div>
-        <div className="action-card__body">
-          <p>
-            Create demand response programs, virtual power plants, and energy management apps.
-          </p>
-        </div>
-        <div className="action-card__footer">
-          <Link
-            className="action-card__link"
-            to="/docs/home/use-cases">
-            View use cases →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <WelcomeCard
+      title="Build solutions"
+      description="Create demand response programs, virtual power plants, and energy management apps."
+      linkText="View use cases →"
+      linkTo="/docs/home/use-cases"
+    />
     
-    <div className="col col--4 col--md-6 col--sm-12">
-      <div className="action-card">
-        <div className="action-card__header">
-          <h3>API reference</h3>
-        </div>
-        <div className="action-card__body">
-          <p>
-            Complete API documentation with examples, data models, and integration guides.
-          </p>
-        </div>
-        <div className="action-card__footer">
-          <Link
-            className="action-card__link"
-            to="/api">
-            Browse API →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <WelcomeCard
+      title="API reference"
+      description="Complete API documentation with examples, data models, and integration guides."
+      linkText="Browse API →"
+      linkTo="/api"
+    />
   </div>
 
-  <div className="row margin-top--xl">
+  <div className="row margin-top--lg">
     <div className="col col--12">
       <h2>Quick Setup</h2>
       <p className="section-description">Get up and running in minutes with these essential steps.</p>
@@ -157,62 +119,29 @@ import Link from '@docusaurus/Link';
   </div>
 
   <div className="row quick-setup-cards-container">
-    <div className="col col--4 col--md-6 col--sm-12">
-      <div className="quick-setup-card">
-        <div className="quick-setup-card__header">
-          <h3>Create account</h3>
-        </div>
-        <div className="quick-setup-card__body">
-          <p>Sign up at <a href="https://dashboard.texturehq.com" target="_blank">dashboard.texturehq.com</a></p>
-        </div>
-        <div className="quick-setup-card__footer">
-          <Link
-            className="quick-setup-card__link"
-            to="/docs/home/signing-up">
-            Learn more →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <WelcomeCard
+      title="Create account"
+      description="Sign up at dashboard.texturehq.com"
+      linkText="Learn more →"
+      linkTo="/docs/home/signing-up"
+    />
     
-    <div className="col col--4 col--md-6 col--sm-12">
-      <div className="quick-setup-card">
-        <div className="quick-setup-card__header">
-          <h3>Get API keys</h3>
-        </div>
-        <div className="quick-setup-card__body">
-          <p>Generate keys from the Developer section of your dashboard</p>
-        </div>
-        <div className="quick-setup-card__footer">
-          <Link
-            className="quick-setup-card__link"
-            to="/docs/home/getting-started">
-            View guide →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <WelcomeCard
+      title="Get API keys"
+      description="Generate keys from the Developer section of your dashboard"
+      linkText="View guide →"
+      linkTo="/docs/home/getting-started"
+    />
     
-    <div className="col col--4 col--md-6 col--sm-12">
-      <div className="quick-setup-card">
-        <div className="quick-setup-card__header">
-          <h3>Test connection</h3>
-        </div>
-        <div className="quick-setup-card__body">
-          <p>Make your first API call with our <Link to="/docs/home/quickstart">quickstart guide</Link></p>
-        </div>
-        <div className="quick-setup-card__footer">
-          <Link
-            className="quick-setup-card__link"
-            to="/docs/home/quickstart">
-            Start building →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <WelcomeCard
+      title="Test connection"
+      description="Make your first API call with our quickstart guide"
+      linkText="Start building →"
+      linkTo="/docs/home/quickstart"
+    />
   </div>
 
-  <div className="row margin-top--xl">
+  <div className="row margin-top--lg">
     <div className="col col--12">
       <h2>Core Concepts</h2>
       <p className="section-description">Learn the fundamental concepts that power Texture's platform.</p>
@@ -222,64 +151,34 @@ import Link from '@docusaurus/Link';
   <div className="row concept-cards-container">
     <div className="col col--12">
       <div className="row">
-        <div className="col col--4 col--md-6 col--sm-12">
-          <div className="concept-card margin-top--md">
-                    <div className="concept-card__header">
-          <h3>Platform concepts</h3>
-        </div>
-        <div className="concept-card__body">
-          <p>Learn the core concepts that power Texture's platform.</p>
-        </div>
-        <div className="concept-card__footer">
-          <Link
-            className="concept-card__link"
-            to="/docs/platform-concepts/overview">
-            Learn concepts →
-          </Link>
-        </div>
-          </div>
-        </div>
+        <WelcomeCard
+          title="Platform concepts"
+          description="Learn the core concepts that power Texture's platform."
+          linkText="Learn concepts →"
+          linkTo="/docs/platform-concepts/overview"
+          className="margin-top--md"
+        />
         
-        <div className="col col--4 col--md-6 col--sm-12">
-          <div className="concept-card margin-top--md">
-                    <div className="concept-card__header">
-          <h3>Device management</h3>
-        </div>
-        <div className="concept-card__body">
-          <p>Discover, monitor, and control energy devices through Texture.</p>
-        </div>
-        <div className="concept-card__footer">
-          <Link
-            className="concept-card__link"
-            to="/docs/devices/overview">
-            Explore devices →
-          </Link>
-        </div>
-          </div>
-        </div>
+        <WelcomeCard
+          title="Device management"
+          description="Discover, monitor, and control energy devices through Texture."
+          linkText="Explore devices →"
+          linkTo="/docs/devices/overview"
+          className="margin-top--md"
+        />
         
-        <div className="col col--4 col--md-6 col--sm-12">
-          <div className="concept-card margin-top--md">
-                    <div className="concept-card__header">
-          <h3>Commands & control</h3>
-        </div>
-        <div className="concept-card__body">
-          <p>Send commands and control devices through our unified API.</p>
-        </div>
-        <div className="concept-card__footer">
-          <Link
-            className="concept-card__link"
-            to="/docs/commands/overview">
-            Learn commands →
-          </Link>
-        </div>
-          </div>
-        </div>
+        <WelcomeCard
+          title="Commands & control"
+          description="Send commands and control devices through our unified API."
+          linkText="Learn commands →"
+          linkTo="/docs/commands/overview"
+          className="margin-top--md"
+        />
       </div>
     </div>
   </div>
 
-  <div className="row margin-top--xl margin-bottom--lg">
+  <div className="row margin-top--lg margin-bottom--lg">
     <div className="col col--12">
       <div className="help-card">
         <div className="help-card__header">
@@ -369,11 +268,22 @@ import Link from '@docusaurus/Link';
     line-height: 1.5;
   }
 
-  /* Action Cards */
-  .action-card {
+  /* Welcome Cards */
+  .welcome-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .welcome-card-link:hover {
+    text-decoration: none;
+  }
+
+  .welcome-card {
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 240px;
     background: var(--ifm-card-background-color);
     border: 1px solid #9ca3af;
     border-radius: 12px;
@@ -384,44 +294,47 @@ import Link from '@docusaurus/Link';
     overflow: hidden;
   }
 
-  .action-card:hover {
+  .welcome-card-link:hover .welcome-card {
     border: 2px solid var(--ifm-color-primary);
     background-color: #fafbfc;
     transform: translateY(-1px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   }
 
-  .action-card__header {
-    padding: 1.5rem 1.5rem 0.75rem;
+  .welcome-card__header {
+    padding: 0 1.5rem 0.75rem;
   }
 
-  .action-card__header h3 {
-    margin: 0;
+  .welcome-card__header h3 {
+    margin: 0 !important;
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--ifm-color-emphasis-900);
   }
 
-  .action-card__body {
+  .welcome-card__body {
     padding: 0 1.5rem;
     flex-grow: 1;
   }
 
-  .action-card__body p {
+  .welcome-card__body p {
     font-size: 0.95rem;
     line-height: 1.5;
     color: var(--ifm-color-emphasis-700);
     margin-bottom: 0;
   }
 
-  .action-card__footer {
-    padding: 0 1.5rem 0;
+  .welcome-card__footer {
+    padding: 0 1.5rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-top: auto;
+    flex-shrink: 0;
+    padding-top: 1rem;
   }
 
-  .action-card__link {
+  .welcome-card__link {
     color: var(--ifm-color-primary);
     text-decoration: none;
     font-weight: 500;
@@ -429,135 +342,7 @@ import Link from '@docusaurus/Link';
     transition: text-decoration 0.2s ease;
   }
 
-  .action-card:hover .action-card__link {
-    text-decoration: underline;
-  }
-
-  /* Quick Setup Cards */
-  .quick-setup-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: var(--ifm-card-background-color);
-    border: 1px solid #9ca3af;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .quick-setup-card:hover {
-    border: 2px solid var(--ifm-color-primary);
-    background-color: #fafbfc;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  }
-
-  .quick-setup-card__header {
-    padding: 1.5rem 1.5rem 0.75rem;
-  }
-
-  .quick-setup-card__header h3 {
-    margin: 0;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--ifm-color-emphasis-900);
-  }
-
-  .quick-setup-card__body {
-    padding: 0 1.5rem;
-    flex-grow: 1;
-  }
-
-  .quick-setup-card__body p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: var(--ifm-color-emphasis-700);
-    margin-bottom: 0;
-  }
-
-  .quick-setup-card__footer {
-    padding: 0 1.5rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .quick-setup-card__link {
-    color: var(--ifm-color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: text-decoration 0.2s ease;
-  }
-
-  .quick-setup-card:hover .quick-setup-card__link {
-    text-decoration: underline;
-  }
-
-  /* Concept Cards */
-  .concept-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: var(--ifm-card-background-color);
-    border: 1px solid #9ca3af;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .concept-card:hover {
-    border: 2px solid var(--ifm-color-primary);
-    background-color: #fafbfc;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  }
-
-  .concept-card__header {
-    padding: 1.5rem 1.5rem 0.75rem;
-  }
-
-  .concept-card__header h3 {
-    margin: 0;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--ifm-color-emphasis-900);
-  }
-
-  .concept-card__body {
-    padding: 0 1.5rem;
-    flex-grow: 1;
-  }
-
-  .concept-card__body p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: var(--ifm-color-emphasis-700);
-    margin-bottom: 0;
-  }
-
-  .concept-card__footer {
-    padding: 0 1.5rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .concept-card__link {
-    color: var(--ifm-color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: text-decoration 0.2s ease;
-  }
-
-  .concept-card:hover .concept-card__link {
+  .welcome-card-link:hover .welcome-card__link {
     text-decoration: underline;
   }
 

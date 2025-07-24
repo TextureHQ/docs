@@ -1034,7 +1034,11 @@ div.menu__list-item-collapsible .menu__link--active {
   animation: none !important;
 }
 
-[class*="menu__"] * {
+/* Only target menu-related elements, not all children */
+[class*="menu__"] .menu__link,
+[class*="menu__"] .menu__list-item,
+[class*="menu__"] .menu__caret,
+[class*="menu__"] .menu__list {
   transition: none !important;
   animation: none !important;
 }
@@ -1811,75 +1815,27 @@ html[data-theme="dark"] .markdown > p {
   color: #d1d5db;
 }
 
-/* Dark mode action cards */
-[data-theme="dark"] .action-card {
+/* Dark mode welcome cards */
+[data-theme="dark"] .welcome-card {
   background: #2d2d2d;
   border-color: #4b5563;
 }
 
-[data-theme="dark"] .action-card:hover {
+[data-theme="dark"] .welcome-card-link:hover .welcome-card {
   background-color: #374151;
   border-color: #b4b9ff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-[data-theme="dark"] .action-card__header h3 {
+[data-theme="dark"] .welcome-card__header h3 {
   color: #ffffff;
 }
 
-[data-theme="dark"] .action-card__body p {
+[data-theme="dark"] .welcome-card__body p {
   color: #d1d5db;
 }
 
-[data-theme="dark"] .action-card__link {
-  color: #b4b9ff;
-}
-
-/* Dark mode quick setup cards */
-[data-theme="dark"] .quick-setup-card {
-  background: #2d2d2d;
-  border-color: #4b5563;
-}
-
-[data-theme="dark"] .quick-setup-card:hover {
-  background-color: #374151;
-  border-color: #b4b9ff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-[data-theme="dark"] .quick-setup-card__header h3 {
-  color: #ffffff;
-}
-
-[data-theme="dark"] .quick-setup-card__body p {
-  color: #d1d5db;
-}
-
-[data-theme="dark"] .quick-setup-card__link {
-  color: #b4b9ff;
-}
-
-/* Dark mode concept cards */
-[data-theme="dark"] .concept-card {
-  background: #2d2d2d;
-  border-color: #4b5563;
-}
-
-[data-theme="dark"] .concept-card:hover {
-  background-color: #374151;
-  border-color: #b4b9ff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-[data-theme="dark"] .concept-card__header h3 {
-  color: #ffffff;
-}
-
-[data-theme="dark"] .concept-card__body p {
-  color: #d1d5db;
-}
-
-[data-theme="dark"] .concept-card__link {
+[data-theme="dark"] .welcome-card__link {
   color: #b4b9ff;
 }
 
@@ -1904,8 +1860,6 @@ html[data-theme="dark"] .markdown > p {
 }
 
 /* Dark mode card hover effects */
-[data-theme="dark"] .action-card:hover .action-card__link,
-[data-theme="dark"] .quick-setup-card:hover .quick-setup-card__link,
-[data-theme="dark"] .concept-card:hover .concept-card__link {
+[data-theme="dark"] .welcome-card-link:hover .welcome-card__link {
   text-decoration: underline;
 }
