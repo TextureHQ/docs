@@ -148,18 +148,18 @@ h6,
 /* H1 Specific Styles */
 h1:first-child,
 .markdown h1:first-child {
-  font-size: var(--font-size-h1) !important;
-  font-weight: var(--font-weight-bold) !important;
-  line-height: var(--line-height-h1) !important;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h1);
   margin-top: var(--heading-margin-top-h1);
   margin-bottom: var(--heading-margin-bottom-h1);
 }
 
 h1,
 .markdown h1 {
-  font-size: var(--font-size-h1) !important;
-  font-weight: var(--font-weight-bold) !important;
-  line-height: var(--line-height-h1) !important;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h1);
   margin-top: var(--heading-margin-top-h1);
   margin-bottom: var(--heading-margin-bottom-h1);
 }
@@ -170,42 +170,42 @@ h1,
   .markdown h1,
   h1:first-child,
   .markdown h1:first-child {
-    font-size: var(--font-size-h1-mobile) !important;
+    font-size: var(--font-size-h1-mobile);
     margin-top: var(--heading-margin-top-h1-mobile);
     margin-bottom: var(--heading-margin-bottom-h1-mobile);
   }
 
   h2,
   .markdown h2 {
-    font-size: var(--font-size-h2-mobile) !important;
+    font-size: var(--font-size-h2-mobile);
     margin-top: var(--heading-margin-top-h2-mobile);
     margin-bottom: var(--heading-margin-bottom-h2-mobile);
   }
 
   h3,
   .markdown h3 {
-    font-size: var(--font-size-h3-mobile) !important;
+    font-size: var(--font-size-h3-mobile);
     margin-top: var(--heading-margin-top-h3-mobile);
     margin-bottom: var(--heading-margin-bottom-h3-mobile);
   }
 
   h4,
   .markdown h4 {
-    font-size: var(--font-size-h4-mobile) !important;
+    font-size: var(--font-size-h4-mobile);
     margin-top: var(--heading-margin-top-h4-mobile);
     margin-bottom: var(--heading-margin-bottom-h4-mobile);
   }
 
   h5,
   .markdown h5 {
-    font-size: var(--font-size-h5-mobile) !important;
+    font-size: var(--font-size-h5-mobile);
     margin-top: var(--heading-margin-top-h5-mobile);
     margin-bottom: var(--heading-margin-bottom-h5-mobile);
   }
 
   h6,
   .markdown h6 {
-    font-size: var(--font-size-h6-mobile) !important;
+    font-size: var(--font-size-h6-mobile);
     margin-top: var(--heading-margin-top-h6-mobile);
     margin-bottom: var(--heading-margin-bottom-h6-mobile);
   }
@@ -214,8 +214,8 @@ h1,
 /* H2 Specific Styles */
 h2,
 .markdown > h2 {
-  font-size: var(--font-size-h2) !important;
-  line-height: var(--line-height-h2) !important;
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
   margin-top: var(--heading-margin-top-h2);
   margin-bottom: var(--heading-margin-bottom-h2);
 }
@@ -223,8 +223,8 @@ h2,
 /* H3 Specific Styles */
 h3,
 .markdown > h3 {
-  font-size: var(--font-size-h3) !important;
-  line-height: var(--line-height-h3) !important;
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
   margin-top: var(--heading-margin-top-h3);
   margin-bottom: var(--heading-margin-bottom-h3);
 }
@@ -232,8 +232,8 @@ h3,
 /* H4 Specific Styles */
 h4,
 .markdown > h4 {
-  font-size: var(--font-size-h4) !important;
-  line-height: var(--line-height-h4) !important;
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
   margin-top: var(--heading-margin-top-h4);
   margin-bottom: var(--heading-margin-bottom-h4);
 }
@@ -241,8 +241,8 @@ h4,
 /* H5 Specific Styles */
 h5,
 .markdown > h5 {
-  font-size: var(--font-size-h5) !important;
-  line-height: var(--line-height-h5) !important;
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-h5);
   margin-top: var(--heading-margin-top-h5);
   margin-bottom: var(--heading-margin-bottom-h5);
 }
@@ -250,8 +250,8 @@ h5,
 /* H6 Specific Styles */
 h6,
 .markdown > h6 {
-  font-size: var(--font-size-h6) !important;
-  line-height: var(--line-height-h6) !important;
+  font-size: var(--font-size-h6);
+  line-height: var(--line-height-h6);
   margin-top: var(--heading-margin-top-h6);
   margin-bottom: var(--heading-margin-bottom-h6);
 }
@@ -599,7 +599,7 @@ blockquote {
 
 /* Navbar Styling - OpenAI-style muted background */
 .navbar {
-  background-color: #f5f5f5 !important;
+  background-color: #f5f5f5;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: none;
 }
@@ -609,67 +609,67 @@ blockquote {
 }
 
 .navbar__brand {
-  color: #374151 !important;
+  color: #374151;
 }
 
 .navbar__item {
-  color: #6b7280 !important;
+  color: #6b7280;
   font-weight: 500;
 }
 
 .navbar__item:hover {
-  color: #374151 !important;
+  color: #374151;
   background: none;
 }
 
 .navbar__link {
-  color: #6b7280 !important;
+  color: #6b7280;
   font-weight: 500;
 }
 
 .navbar__link:hover {
-  color: #374151 !important;
+  color: #374151;
   background: none;
 }
 
 /* Dark mode toggle styling - ensure consistent color and spacing */
 .clean-btn {
-  color: #6b7280 !important;
+  color: #6b7280;
   font-weight: 500;
-  padding: 8px !important;
-  border-radius: 6px !important;
-  transition: all 0.2s ease !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 40px !important;
-  height: 40px !important;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
 }
 
 .clean-btn:hover {
-  color: #374151 !important;
-  background-color: #e5e7eb !important;
+  color: #374151;
+  background-color: #e5e7eb;
 }
 
 /* Ensure dark mode toggle icon inherits the correct color */
 .clean-btn svg {
-  color: inherit !important;
-  fill: currentColor !important;
+  color: inherit;
+  fill: currentColor;
 }
 
 /* Navbar spacing improvements */
 .navbar__items {
-  gap: 8px !important;
+  gap: 8px;
 }
 
 .navbar__items--right {
-  gap: 12px !important;
+  gap: 12px;
 }
 
 /* Hide mobile menu toggle on desktop screens */
 @media (min-width: 996px) {
   .navbar__toggle {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -682,7 +682,7 @@ blockquote {
 
   /* Hide mobile menu toggle on desktop */
   .navbar__toggle {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -690,12 +690,60 @@ blockquote {
 @media (min-width: 997px) {
   html.docs-doc-id-home\/welcome
     .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
-    max-width: none !important;
+    max-width: none;
   }
 }
 
 html.docs-doc-id-home\/welcome div.theme-doc-markdown header:first-child {
   display: none;
+}
+
+/* Welcome page H2 overrides to inherit global styles */
+html.docs-doc-id-home\/welcome h2 {
+  font-size: var(--font-size-h2) !important;
+  line-height: var(--line-height-h2) !important;
+  margin-top: var(--heading-margin-top-h2) !important;
+  margin-bottom: var(--heading-margin-bottom-h2) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  color: var(--font-color-heading) !important;
+}
+
+/* Welcome page H3 overrides to inherit global styles */
+html.docs-doc-id-home\/welcome h3 {
+  font-size: var(--font-size-h3) !important;
+  line-height: var(--line-height-h3) !important;
+  margin-top: var(--heading-margin-top-h3) !important;
+  margin-bottom: var(--heading-margin-bottom-h3) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  color: var(--font-color-heading) !important;
+}
+
+/* Mobile responsive overrides for welcome page */
+@media (max-width: 768px) {
+  html.docs-doc-id-home\/welcome h2 {
+    font-size: var(--font-size-h2-mobile) !important;
+    margin-top: var(--heading-margin-top-h2-mobile) !important;
+    margin-bottom: var(--heading-margin-bottom-h2-mobile) !important;
+  }
+
+  html.docs-doc-id-home\/welcome h3 {
+    font-size: var(--font-size-h3-mobile) !important;
+    margin-top: var(--heading-margin-top-h3-mobile) !important;
+    margin-bottom: var(--heading-margin-bottom-h3-mobile) !important;
+  }
+}
+
+/* Card heading overrides - remove top margin for proper card spacing */
+html.docs-doc-id-home\/welcome .action-card h3,
+html.docs-doc-id-home\/welcome .quick-setup-card h3,
+html.docs-doc-id-home\/welcome .concept-card h3,
+html.docs-doc-id-home\/welcome .help-card h3 {
+  margin-top: 0 !important;
+}
+
+/* Section H2s should keep their top margin for proper section spacing */
+html.docs-doc-id-home\/welcome .row h2 {
+  margin-top: var(--heading-margin-top-h2) !important;
 }
 
 /* ==========================================================================
@@ -712,7 +760,7 @@ nav.menu,
 
 /* Sidebar Navigation Links */
 .menu__link {
-  color: #6b7280 !important;
+  color: #374151;
   font-weight: 500;
   border-radius: 6px;
   margin: 2px 8px;
@@ -721,15 +769,15 @@ nav.menu,
 }
 
 .menu__link:hover {
-  background-color: #e5e7eb !important;
-  color: #1f2937 !important;
+  background-color: #e5e5e5 !important;
+  color: #111827 !important;
   transform: none;
 }
 
 /* Active page links (not section headers) */
 .menu__link--active:not(.menu__link--sublist) {
-  background-color: transparent !important;
-  color: var(--brand-color) !important;
+  background-color: transparent;
+  color: var(--ifm-color-primary);
   font-weight: 700;
   border: none;
   position: relative;
@@ -744,19 +792,19 @@ nav.menu,
   transform: translateY(-50%);
   width: 4px;
   height: 4px;
-  background-color: var(--brand-color);
+  background-color: var(--ifm-color-primary);
   border-radius: 50%;
   animation: dotAppear 0.3s ease-out;
 }
 
 /* Remove active styling from section headers */
 .menu__list-item--collapsible .menu__link--active {
-  color: var(--ifm-color-emphasis-900) !important;
-  font-weight: 600 !important;
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 600;
 }
 
 .menu__list-item--collapsible .menu__link--active::before {
-  display: none !important;
+  display: none;
 }
 
 @keyframes dotAppear {
@@ -775,17 +823,17 @@ nav.menu,
 }
 
 .menu__caret {
-  color: #6b7280 !important;
+  color: #6b7280;
 }
 
 .menu__caret:hover {
   background: none;
-  color: #374151 !important;
+  color: #374151;
 }
 
 /* Menu headings */
 .menu__list-item--collapsed .menu__link {
-  color: #374151 !important;
+  color: #374151;
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -801,40 +849,49 @@ nav.menu,
 
 /* Main Section Headers - More Elegant (Override Docusaurus defaults) */
 .menu__list-item--collapsible .menu__link {
-  padding: 4px 12px !important;
-  border-radius: 4px !important;
-  transition: none !important;
-  background-color: transparent !important;
-  color: var(--ifm-color-emphasis-600) !important;
-  font-weight: 500 !important;
-  font-size: 0.8rem !important;
-  text-transform: none !important;
-  letter-spacing: 0.025em !important;
-  margin: 0 !important;
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: none;
+  background-color: transparent;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: 0.025em;
+  margin: 0;
 }
 
-.menu__list-item--collapsible .menu__link:hover {
-  background-color: var(--ifm-color-emphasis-50) !important;
-  color: var(--ifm-color-emphasis-800) !important;
+/* Remove hover and active effects from section headers - they're not clickable links */
+.menu__list-item--collapsible .menu__link:hover,
+.menu__list-item--collapsible .menu__link--sublist:hover,
+.menu__link--sublist:hover,
+.menu__link--sublist--active,
+/* Exception for category level 1 section headers */
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible:hover,
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible .menu__link:hover,
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible .menu__link--sublist:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  transform: none !important;
 }
 
 .menu__list-item--collapsible .menu__link--active {
-  background-color: var(--ifm-color-emphasis-50) !important;
-  color: var(--ifm-color-emphasis-900) !important;
-  font-weight: 600 !important;
-  border-left: 2px solid var(--brand-color) !important;
-  padding-left: 10px !important;
+  background-color: var(--ifm-color-emphasis-50);
+  color: #1f2937;
+  font-weight: 600;
+  border-left: 2px solid var(--brand-color);
+  padding-left: 10px;
 }
 
 /* Ensure section headers don't get active page styling */
 .menu__list-item--collapsible .menu__link--active {
-  color: var(--ifm-color-emphasis-900) !important;
+  color: var(--ifm-color-emphasis-900);
 }
 
 /* Reduce spacing between sections */
 .menu__list-item--collapsible {
-  margin-bottom: 2px !important;
-  padding-top: 0 !important;
+  margin-bottom: 2px;
+  padding-top: 0;
 }
 
 /* Submenu styling - consolidated */
@@ -847,9 +904,9 @@ nav.menu,
   overflow: hidden;
 }
 
-/* Chevron animation - more subtle */
+/* Chevron animation - disabled to prevent spreading */
 .menu__list-item--collapsible .menu__link::after {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: none !important;
 }
 
 .menu__list-item--collapsible .menu__link--active::after {
@@ -860,7 +917,7 @@ nav.menu,
 @media (min-width: 997px) {
   @supports (scrollbar-gutter: stable) {
     .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
-      padding: 0 0 4rem 0 !important;
+      padding: 0 0 4rem 0;
       scrollbar-gutter: stable;
     }
   }
@@ -894,9 +951,13 @@ div.menu__list-item-collapsible .menu__link {
   position: relative;
 }
 
-div.menu__list-item-collapsible .menu__link:hover {
-  background-color: var(--ifm-color-emphasis-100);
-  color: var(--ifm-color-emphasis-900);
+/* Remove hover effect from div-based section headers */
+div.menu__list-item-collapsible .menu__link:hover,
+div.menu__list-item-collapsible .menu__link--sublist:hover,
+div.menu__list-item-collapsible .menu__link--sublist:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  transform: none !important;
 }
 
 div.menu__list-item-collapsible .menu__link--active {
@@ -913,24 +974,24 @@ div.menu__list-item-collapsible .menu__link--active {
   font-weight: 400;
   text-transform: none;
   letter-spacing: normal;
-  color: var(--ifm-color-emphasis-600);
+  color: #4b5563;
   border: none;
   position: relative;
-  transition: none !important;
-  transform: none !important;
-  animation: none !important;
-  will-change: auto !important;
+  transition: none;
+  transform: none;
+  animation: none;
+  will-change: auto;
 }
 
 /* Active menu items - make them bolder (only page links, not section headers) */
 .menu__link--active:not(.menu__link--sublist) {
-  font-weight: 700 !important;
-  color: var(--brand-color) !important;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
 }
 
 .menu__list-item .menu__link:hover {
-  background-color: var(--ifm-color-emphasis-50);
-  color: var(--ifm-color-emphasis-800);
+  background-color: #e5e5e5 !important;
+  color: #111827 !important;
 }
 
 /* Submenu container styling - smaller indent */
@@ -964,7 +1025,7 @@ div.menu__list-item-collapsible .menu__link--active {
 
 /* Hidden Elements */
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 /* Override any Docusaurus menu animations */
@@ -978,59 +1039,95 @@ div.menu__list-item-collapsible .menu__link--active {
   animation: none !important;
 }
 
+/* Specifically disable menu list transitions */
+.menu__list {
+  transition: none !important;
+  animation: none !important;
+}
+
+.menu__list-item-collapsible .menu__list {
+  transition: none !important;
+  animation: none !important;
+  height: auto !important;
+}
+
+/* Comprehensive menu animation disable */
+.menu__list-item,
+.menu__list-item .menu__link,
+.menu__list-item-collapsible,
+.menu__list-item-collapsible .menu__link,
+.menu__list-item-collapsible .menu__list,
+.menu__list-item-collapsible .menu__list .menu__list-item,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link:hover,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link--active,
+.menu__link,
+.menu__link:hover,
+.menu__link--active,
+.menu__link--sublist,
+.menu__link--sublist:hover,
+.menu__link--sublist--active,
+.menu__caret,
+.menu__caret:hover {
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  will-change: auto !important;
+}
+
 /* ==========================================================================
    SEARCH BAR STYLING
    ========================================================================== */
 
 /* DocSearch elegant styling */
 .DocSearch-Button {
-  background: #ffffff !important;
-  border: 1px solid #e5e7eb !important;
-  border-radius: 8px !important;
-  padding: 8px 16px !important;
-  width: 280px !important;
-  height: 40px !important;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
-  transition: all 0.2s ease !important;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 280px;
+  height: 40px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
 }
 
 .DocSearch-Button:hover {
-  background: #f9fafb !important;
-  border-color: #d1d5db !important;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+  background: #f9fafb;
+  border-color: #d1d5db;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .DocSearch-Button:focus {
-  outline: none !important;
-  border-color: var(--brand-color) !important;
-  box-shadow: 0 0 0 3px rgba(68, 74, 225, 0.1) !important;
+  outline: none;
+  border-color: var(--brand-color);
+  box-shadow: 0 0 0 3px rgba(68, 74, 225, 0.1);
 }
 
 .DocSearch-Button-Key {
-  display: inline !important;
-  background: none !important;
-  border: none !important;
-  border-radius: 0 !important;
-  color: #9ca3af !important;
-  font-size: 12px !important;
-  font-weight: 400 !important;
-  padding: 0 !important;
-  margin-left: 8px !important;
-  min-width: auto !important;
-  height: auto !important;
-  box-shadow: none !important;
+  display: inline;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0;
+  margin-left: 8px;
+  min-width: auto;
+  height: auto;
+  box-shadow: none;
 }
 
 .DocSearch-Button-Placeholder {
-  color: #6b7280 !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .DocSearch-Button-Keys {
-  display: flex !important;
-  align-items: center !important;
-  margin-left: auto !important;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 /* Target all possible keyboard shortcut elements */
@@ -1038,18 +1135,18 @@ div.menu__list-item-collapsible .menu__link--active {
 .DocSearch-Button-Keys .DocSearch-Button-Key,
 .DocSearch-Button-Keys span,
 .DocSearch-Button-Keys kbd {
-  display: none !important;
+  display: none;
 }
 
 /* Search icon styling */
 .DocSearch-Button .DocSearch-Button-Container {
-  margin-right: 8px !important;
+  margin-right: 8px;
 }
 
 .DocSearch-Button .DocSearch-Search-Icon {
-  color: #9ca3af !important;
-  width: 16px !important;
-  height: 16px !important;
+  color: #9ca3af;
+  width: 16px;
+  height: 16px;
 }
 
 /* ==========================================================================
@@ -1058,10 +1155,10 @@ div.menu__list-item-collapsible .menu__link--active {
 
 /* TOC Container */
 .theme-doc-toc-desktop {
-  position: sticky !important;
-  top: 2rem !important;
-  max-height: calc(100vh - 4rem) !important;
-  overflow-y: auto !important;
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
 }
 
 /* TOC List Container */
@@ -1149,8 +1246,8 @@ div.menu__list-item-collapsible .menu__link--active {
 
 /* Grid column padding for better spacing */
 .col[class*="col--"] {
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /* ==========================================================================
@@ -1159,17 +1256,17 @@ div.menu__list-item-collapsible .menu__link--active {
 
 @media (max-width: 996px) {
   .col--md-6 {
-    --ifm-col-width: 50% !important;
+    --ifm-col-width: 50%;
   }
 }
 
 @media (max-width: 767px) {
   .col--sm-12 {
-    --ifm-col-width: 100% !important;
+    --ifm-col-width: 100%;
   }
 
   .col--sm-offset-0 {
-    margin-left: 0 !important;
+    margin-left: 0;
   }
 }
 
@@ -1183,8 +1280,8 @@ div.menu__list-item-collapsible .menu__link--active {
     --ifm-spacing-horizontal: 1.5rem;
   }
   .col[class*="col--"] {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
     padding-left: 2.5rem;
@@ -1197,8 +1294,8 @@ div.menu__list-item-collapsible .menu__link--active {
     --ifm-spacing-horizontal: 1.25rem;
   }
   .col[class*="col--"] {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
   .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
     padding-left: 2rem;
@@ -1211,8 +1308,8 @@ div.menu__list-item-collapsible .menu__link--active {
     --ifm-spacing-horizontal: 1rem;
   }
   .col[class*="col--"] {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
     padding-left: 1.5rem;
@@ -1227,19 +1324,19 @@ div.menu__list-item-collapsible .menu__link--active {
 /* Remove any zebra stripes from tables */
 table tr:nth-child(even),
 table tr:nth-child(odd) {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 /* Ensure manufacturers table has no zebra stripes */
 .manufacturers-table tr:nth-child(even),
 .manufacturers-table tr:nth-child(odd) {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 /* Override any Docusaurus default table styles */
 .markdown table tr:nth-child(even),
 .markdown table tr:nth-child(odd) {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 /* ==========================================================================
@@ -1293,7 +1390,7 @@ table tr:nth-child(odd) {
 
 /* Hide breadcrumbs - not needed for simple section/page structure */
 .breadcrumbs {
-  display: none !important;
+  display: none;
 }
 
 /* ==========================================================================
@@ -1399,144 +1496,174 @@ html[data-theme="dark"] .markdown > p {
 
 [data-theme="dark"] nav.menu,
 [data-theme="dark"] .navbar-sidebar {
-  background-color: #1f1f1f !important;
-  border-right-color: #374151 !important;
+  background-color: #1f1f1f;
+  border-right-color: #374151;
 }
 
 [data-theme="dark"] .navbar {
-  background-color: #1f1f1f !important;
-  border-bottom-color: #374151 !important;
+  background-color: #1f1f1f;
+  border-bottom-color: #374151;
 }
 
 [data-theme="dark"] .navbar__inner {
-  background-color: #1f1f1f !important;
+  background-color: #1f1f1f;
 }
 
 [data-theme="dark"] .navbar__brand,
 [data-theme="dark"] .navbar__item,
 [data-theme="dark"] .navbar__link {
-  color: #e5e7eb !important;
+  color: #e5e7eb;
 }
 
 [data-theme="dark"] .navbar__item:hover,
 [data-theme="dark"] .navbar__link:hover {
-  color: #f9fafb !important;
-  background: none !important;
+  color: #f9fafb;
+  background: none;
 }
 
 /* Dark mode toggle styling for dark theme */
 [data-theme="dark"] .clean-btn {
-  color: #e5e7eb !important;
+  color: #e5e7eb;
 }
 
 [data-theme="dark"] .clean-btn:hover {
-  color: #f9fafb !important;
-  background-color: #374151 !important;
+  color: #f9fafb;
+  background-color: #374151;
 }
 
 /* Dark Mode Sidebar */
 [data-theme="dark"] .menu__link {
-  color: #d1d5db !important;
+  color: #e5e7eb;
 }
 
 [data-theme="dark"] .menu__link:hover {
-  background-color: #4b5563 !important;
-  color: #ffffff !important;
-  transform: none;
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+  transform: none !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
 [data-theme="dark"] .menu__caret {
-  color: #d1d5db !important;
+  color: #d1d5db;
 }
 
 [data-theme="dark"] .menu__caret:hover {
-  color: #f9fafb !important;
+  color: #f9fafb;
 }
 
 [data-theme="dark"] .menu__list-item--collapsed .menu__link {
-  color: #e5e7eb !important;
+  color: #e5e7eb;
 }
 
 /* Dark Mode Active Sidebar Link - only for page links, not section headers */
 [data-theme="dark"] .menu__link--active:not(.menu__link--sublist) {
-  color: #b4b9ff !important;
+  color: var(--ifm-color-primary);
 }
 
 [data-theme="dark"] .menu__link--active:not(.menu__link--sublist)::before {
-  background-color: #b4b9ff;
+  background-color: var(--ifm-color-primary);
 }
 
 /* Dark mode sidebar adjustments */
 [data-theme="dark"] .menu__list-item--collapsible .menu__link {
-  color: var(--ifm-color-emphasis-500) !important;
+  color: #d1d5db;
 }
 
-[data-theme="dark"] .menu__list-item--collapsible .menu__link:hover {
-  background-color: var(--ifm-color-emphasis-100) !important;
-  color: var(--ifm-color-emphasis-200) !important;
+/* Remove hover and active effects from dark mode section headers */
+[data-theme="dark"] .menu__list-item--collapsible .menu__link:hover,
+[data-theme="dark"] .menu__list-item--collapsible .menu__link--sublist:hover,
+[data-theme="dark"] .menu__link--sublist:hover,
+[data-theme="dark"] .menu__link--sublist--active,
+/* Exception for dark mode category level 1 section headers */
+[data-theme="dark"] .theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible:hover,
+[data-theme="dark"] .theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible .menu__link:hover,
+[data-theme="dark"] .theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible .menu__link--sublist:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  transform: none !important;
 }
 
 [data-theme="dark"] .menu__list-item--collapsible .menu__link--active {
-  background-color: var(--ifm-color-emphasis-100) !important;
-  color: var(--ifm-color-emphasis-200) !important;
-  border-left-color: #b4b9ff !important;
+  background-color: var(--ifm-color-emphasis-100);
+  color: #f9fafb;
+  border-left-color: var(--ifm-color-primary);
 }
 
 [data-theme="dark"] .menu__list-item .menu__link {
-  color: var(--ifm-color-emphasis-500);
+  color: #d1d5db;
 }
 
 [data-theme="dark"] .menu__list-item .menu__link:hover {
-  background-color: var(--ifm-color-emphasis-200);
-  color: var(--ifm-color-emphasis-200);
+  background-color: #374151 !important;
+  color: #f9fafb !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Override for active links in dark mode - must come after general menu link rules */
+[data-theme="dark"]
+  .menu__list-item
+  .menu__link--active:not(.menu__link--sublist) {
+  color: var(--ifm-color-primary) !important;
+}
+
+[data-theme="dark"]
+  .menu__list-item
+  .menu__link--active:not(.menu__link--sublist)::before {
+  background-color: var(--ifm-color-primary) !important;
 }
 
 [data-theme="dark"] div.menu__list-item-collapsible .menu__link {
-  color: var(--ifm-color-emphasis-600);
+  color: #d1d5db;
 }
 
-[data-theme="dark"] div.menu__list-item-collapsible .menu__link:hover {
-  background-color: var(--ifm-color-emphasis-200);
-  color: var(--ifm-color-emphasis-100);
+/* Remove hover effect from dark mode div-based section headers */
+[data-theme="dark"] div.menu__list-item-collapsible .menu__link:hover,
+[data-theme="dark"] div.menu__list-item-collapsible .menu__link--sublist:hover,
+[data-theme="dark"] div.menu__list-item-collapsible .menu__link--sublist:hover {
+  background-color: transparent !important;
+  color: inherit !important;
+  transform: none !important;
 }
 
 [data-theme="dark"] div.menu__list-item-collapsible .menu__link--active {
   background-color: var(--ifm-color-emphasis-200);
-  color: var(--ifm-color-emphasis-100);
-  border-left-color: #b4b9ff;
+  color: #f9fafb;
+  border-left-color: var(--ifm-color-primary);
 }
 
 /* Dark Mode Search */
 [data-theme="dark"] .DocSearch-Button {
-  background: #374151 !important;
-  border-color: #4b5563 !important;
-  color: #e5e7eb !important;
+  background: #374151;
+  border-color: #4b5563;
+  color: #e5e7eb;
 }
 
 [data-theme="dark"] .DocSearch-Button:hover {
-  background: #4b5563 !important;
-  border-color: #6b7280 !important;
+  background: #4b5563;
+  border-color: #6b7280;
 }
 
 [data-theme="dark"] .DocSearch-Button-Placeholder {
-  color: #9ca3af !important;
+  color: #9ca3af;
 }
 
 [data-theme="dark"] .DocSearch-Button .DocSearch-Search-Icon {
-  color: #9ca3af !important;
+  color: #9ca3af;
 }
 
 [data-theme="dark"] .DocSearch-Button-Key {
-  background: none !important;
-  border: none !important;
-  color: #6b7280 !important;
+  background: none;
+  border: none;
+  color: #6b7280;
 }
 
 [data-theme="dark"] .DocSearch-Button-Key,
 [data-theme="dark"] .DocSearch-Button-Keys .DocSearch-Button-Key,
 [data-theme="dark"] .DocSearch-Button-Keys span,
 [data-theme="dark"] .DocSearch-Button-Keys kbd {
-  display: none !important;
+  display: none;
 }
 
 /* Dark Mode TOC */
@@ -1612,7 +1739,7 @@ html[data-theme="dark"] .markdown > p {
 }
 
 .manufacturer-hero-desktop a:hover {
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 /* Device types responsive text wrapping */
@@ -1649,122 +1776,136 @@ html[data-theme="dark"] .markdown > p {
 
 /* Dark mode hero section background */
 [data-theme="dark"] .hero-section {
-  background: linear-gradient(
-    135deg,
-    #1a1a1a 0%,
-    #1f1f2e 50%,
-    #1a1a2e 100%
-  ) !important;
+  background: linear-gradient(135deg, #1a1a1a 0%, #1f1f2e 50%, #1a1a2e 100%);
+}
+
+/* Dark mode main content background - ensure body background is applied */
+[data-theme="dark"] body {
+  background: #121212;
+}
+
+[data-theme="dark"] .container-fluid {
+  background: transparent;
+}
+
+/* Ensure the main content area has dark background */
+[data-theme="dark"] .theme-doc-markdown {
+  background: #121212;
+}
+
+[data-theme="dark"]
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+  background: #121212;
 }
 
 /* Dark mode hero content text */
 [data-theme="dark"] .hero-section h1 {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 [data-theme="dark"] .hero__description {
-  color: #d1d5db !important;
+  color: #d1d5db;
 }
 
 [data-theme="dark"] .section-description {
-  color: #d1d5db !important;
+  color: #d1d5db;
 }
 
 /* Dark mode action cards */
 [data-theme="dark"] .action-card {
-  background: #2d2d2d !important;
-  border-color: #4b5563 !important;
+  background: #2d2d2d;
+  border-color: #4b5563;
 }
 
 [data-theme="dark"] .action-card:hover {
-  background-color: #374151 !important;
-  border-color: #b4b9ff !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  background-color: #374151;
+  border-color: #b4b9ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .action-card__header h3 {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 [data-theme="dark"] .action-card__body p {
-  color: #d1d5db !important;
+  color: #d1d5db;
 }
 
 [data-theme="dark"] .action-card__link {
-  color: #b4b9ff !important;
+  color: #b4b9ff;
 }
 
 /* Dark mode quick setup cards */
 [data-theme="dark"] .quick-setup-card {
-  background: #2d2d2d !important;
-  border-color: #4b5563 !important;
+  background: #2d2d2d;
+  border-color: #4b5563;
 }
 
 [data-theme="dark"] .quick-setup-card:hover {
-  background-color: #374151 !important;
-  border-color: #b4b9ff !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  background-color: #374151;
+  border-color: #b4b9ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .quick-setup-card__header h3 {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 [data-theme="dark"] .quick-setup-card__body p {
-  color: #d1d5db !important;
+  color: #d1d5db;
 }
 
 [data-theme="dark"] .quick-setup-card__link {
-  color: #b4b9ff !important;
+  color: #b4b9ff;
 }
 
 /* Dark mode concept cards */
 [data-theme="dark"] .concept-card {
-  background: #2d2d2d !important;
-  border-color: #4b5563 !important;
+  background: #2d2d2d;
+  border-color: #4b5563;
 }
 
 [data-theme="dark"] .concept-card:hover {
-  background-color: #374151 !important;
-  border-color: #b4b9ff !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  background-color: #374151;
+  border-color: #b4b9ff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .concept-card__header h3 {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 [data-theme="dark"] .concept-card__body p {
-  color: #d1d5db !important;
+  color: #d1d5db;
 }
 
 [data-theme="dark"] .concept-card__link {
-  color: #b4b9ff !important;
+  color: #b4b9ff;
 }
 
 /* Dark mode help card */
 [data-theme="dark"] .help-card {
-  background: #1f1f2e !important;
-  border-color: #4b5563 !important;
+  background: #1f1f2e;
+  border-color: #4b5563;
 }
 
 [data-theme="dark"] .help-card__header h3 {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 [data-theme="dark"] .help-card__body p {
-  color: #d1d5db !important;
+  color: #d1d5db;
 }
 
 /* Dark mode network SVG adjustments */
 [data-theme="dark"] .network-svg line {
-  stroke: #6b7280 !important;
-  opacity: 0.4 !important;
+  stroke: #6b7280;
+  opacity: 0.4;
 }
 
 /* Dark mode card hover effects */
 [data-theme="dark"] .action-card:hover .action-card__link,
 [data-theme="dark"] .quick-setup-card:hover .quick-setup-card__link,
 [data-theme="dark"] .concept-card:hover .concept-card__link {
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
