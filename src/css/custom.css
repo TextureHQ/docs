@@ -35,6 +35,14 @@
   --font-size-h5: 1rem;
   --font-size-h6: 0.875rem;
 
+  /* Mobile Typography Scale */
+  --font-size-h1-mobile: 1.5rem;
+  --font-size-h2-mobile: 1.375rem;
+  --font-size-h3-mobile: 1.125rem;
+  --font-size-h4-mobile: 1rem;
+  --font-size-h5-mobile: 0.95rem;
+  --font-size-h6-mobile: 0.875rem;
+
   /* Font Weights */
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -140,6 +148,41 @@ h1,
   line-height: var(--line-height-h1) !important;
   margin-top: var(--heading-margin-top-h1);
   margin-bottom: var(--heading-margin-bottom-h1);
+}
+
+/* Mobile Typography Overrides */
+@media (max-width: 768px) {
+  h1,
+  .markdown h1,
+  h1:first-child,
+  .markdown h1:first-child {
+    font-size: var(--font-size-h1-mobile) !important;
+  }
+
+  h2,
+  .markdown h2 {
+    font-size: var(--font-size-h2-mobile) !important;
+  }
+
+  h3,
+  .markdown h3 {
+    font-size: var(--font-size-h3-mobile) !important;
+  }
+
+  h4,
+  .markdown h4 {
+    font-size: var(--font-size-h4-mobile) !important;
+  }
+
+  h5,
+  .markdown h5 {
+    font-size: var(--font-size-h5-mobile) !important;
+  }
+
+  h6,
+  .markdown h6 {
+    font-size: var(--font-size-h6-mobile) !important;
+  }
 }
 
 /* H2 Specific Styles */

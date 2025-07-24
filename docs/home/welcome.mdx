@@ -12,7 +12,7 @@ import Link from '@docusaurus/Link';
     <div className="row align-items-center">
       <div className="col col--6 col--md-12">
         <div className="hero-content">
-          <h1>Texture Documentation</h1>
+          <h1>**Texture** Documentation</h1>
           <p className="hero__description">AI-powered workflows, live data access, and secure collaboration across systems, devices, and teams.</p>
         </div>
       </div>
@@ -595,6 +595,34 @@ import Link from '@docusaurus/Link';
     }
   }
 
+  @media (max-width: 768px) {
+    .action-card,
+    .quick-setup-card,
+    .concept-card {
+      margin-bottom: 2rem;
+    }
+    
+    .action-cards-container .col,
+    .quick-setup-cards-container .col,
+    .concept-cards-container .col {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .action-card,
+    .quick-setup-card,
+    .concept-card {
+      margin-bottom: 2.5rem;
+    }
+    
+    .action-cards-container .col,
+    .quick-setup-cards-container .col,
+    .concept-cards-container .col {
+      margin-bottom: 2.5rem;
+    }
+  }
+
   /* Responsive adjustments */
   @media (max-width: 996px) {
     .hero-section {
@@ -612,11 +640,6 @@ import Link from '@docusaurus/Link';
     
     .hero-visual {
       height: 200px;
-    }
-    
-    .hero-section h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
     }
     
     .hero__description {
@@ -640,11 +663,6 @@ import Link from '@docusaurus/Link';
       height: 180px;
     }
     
-    .hero-section h1 {
-      font-size: 1.75rem;
-      margin-bottom: 0.875rem;
-    }
-    
     .hero__description {
       font-size: 0.95rem !important;
       line-height: 1.5;
@@ -664,11 +682,6 @@ import Link from '@docusaurus/Link';
     
     .hero-visual {
       height: 150px;
-    }
-    
-    .hero-section h1 {
-      font-size: 1.5rem;
-      margin-bottom: 0.75rem;
     }
     
     .hero__description {
