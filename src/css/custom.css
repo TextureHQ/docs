@@ -666,11 +666,23 @@ blockquote {
   gap: 12px !important;
 }
 
+/* Hide mobile menu toggle on desktop screens */
+@media (min-width: 996px) {
+  .navbar__toggle {
+    display: none !important;
+  }
+}
+
 /* Navbar Adjustments */
 @media (min-width: 997px) {
   .navbar__logo {
     position: relative;
     bottom: 2.5px;
+  }
+
+  /* Hide mobile menu toggle on desktop */
+  .navbar__toggle {
+    display: none !important;
   }
 }
 
