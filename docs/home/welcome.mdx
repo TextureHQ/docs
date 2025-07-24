@@ -9,10 +9,109 @@ import Link from '@docusaurus/Link';
 
 <div className="hero-section">
   <div className="container-fluid">
-    <div className="row">
-      <div className="col col--12">
-        <h1>Texture Documentation</h1>
-        <p className="hero__description">AI-powered workflows, live data access, and secure collaboration across systems, devices, and teams.</p>
+    <div className="row align-items-center">
+      <div className="col col--6 col--md-12">
+        <div className="hero-content">
+          <h1>Texture Documentation</h1>
+          <p className="hero__description">AI-powered workflows, live data access, and secure collaboration across systems, devices, and teams.</p>
+        </div>
+      </div>
+      <div className="col col--6 col--md-12">
+        <div className="hero-visual">
+          <svg className="network-svg" width="100%" height="350" viewBox="0 0 350 350">
+            {/* Static bubble network - matching homepage style */}
+            {/* Large bubbles - connected ones will have center dots */}
+            <circle cx="100" cy="120" r="45" fill="#00d5be" opacity="0.35" />
+            <circle cx="250" cy="100" r="45" fill="#2CDAF4" opacity="0.35" />
+            <circle cx="150" cy="250" r="45" fill="#444AE1" opacity="0.35" />
+            
+            {/* Medium bubbles */}
+            <circle cx="80" cy="200" r="28" fill="#00d5be" opacity="0.35" />
+            <circle cx="270" cy="80" r="28" fill="#2CDAF4" opacity="0.35" />
+            <circle cx="200" cy="270" r="28" fill="#444AE1" opacity="0.35" />
+            <circle cx="200" cy="60" r="28" fill="#00d5be" opacity="0.35" />
+            
+            {/* Small bubbles */}
+            <circle cx="180" cy="160" r="16" fill="#2CDAF4" opacity="0.35" />
+            <circle cx="220" cy="200" r="16" fill="#444AE1" opacity="0.35" />
+            <circle cx="120" cy="220" r="16" fill="#00d5be" opacity="0.35" />
+            <circle cx="220" cy="120" r="16" fill="#2CDAF4" opacity="0.35" />
+            <circle cx="160" cy="80" r="16" fill="#444AE1" opacity="0.35" />
+            <circle cx="280" cy="220" r="16" fill="#00d5be" opacity="0.35" />
+            
+            {/* Additional small bubbles for density */}
+            <circle cx="110" cy="180" r="12" fill="#2CDAF4" opacity="0.35" />
+            <circle cx="240" cy="150" r="12" fill="#444AE1" opacity="0.35" />
+            <circle cx="170" cy="220" r="12" fill="#00d5be" opacity="0.35" />
+            <circle cx="260" cy="200" r="12" fill="#2CDAF4" opacity="0.35" />
+            <circle cx="130" cy="160" r="12" fill="#444AE1" opacity="0.35" />
+            <circle cx="210" cy="180" r="12" fill="#00d5be" opacity="0.35" />
+            
+            {/* Center dots for connected bubbles - matching homepage style */}
+            {/* Large connected bubbles */}
+            <circle cx="100" cy="120" r="8" fill="#00d5be" opacity="0.8" />
+            <circle cx="250" cy="100" r="8" fill="#2CDAF4" opacity="0.8" />
+            <circle cx="150" cy="250" r="8" fill="#444AE1" opacity="0.8" />
+            
+            {/* Medium connected bubbles */}
+            <circle cx="80" cy="200" r="6" fill="#00d5be" opacity="0.8" />
+            <circle cx="270" cy="80" r="6" fill="#2CDAF4" opacity="0.8" />
+            <circle cx="200" cy="270" r="6" fill="#444AE1" opacity="0.8" />
+            <circle cx="200" cy="60" r="6" fill="#00d5be" opacity="0.8" />
+            
+            {/* Small connected bubbles */}
+            <circle cx="180" cy="160" r="4" fill="#2CDAF4" opacity="0.8" />
+            <circle cx="220" cy="200" r="4" fill="#444AE1" opacity="0.8" />
+            <circle cx="120" cy="220" r="4" fill="#00d5be" opacity="0.8" />
+            <circle cx="220" cy="120" r="4" fill="#2CDAF4" opacity="0.8" />
+            <circle cx="160" cy="80" r="4" fill="#444AE1" opacity="0.8" />
+            <circle cx="280" cy="220" r="4" fill="#00d5be" opacity="0.8" />
+            
+            {/* Additional connected small bubbles */}
+            <circle cx="110" cy="180" r="3" fill="#2CDAF4" opacity="0.8" />
+            <circle cx="240" cy="150" r="3" fill="#444AE1" opacity="0.8" />
+            <circle cx="170" cy="220" r="3" fill="#00d5be" opacity="0.8" />
+            <circle cx="260" cy="200" r="3" fill="#2CDAF4" opacity="0.8" />
+            <circle cx="130" cy="160" r="3" fill="#444AE1" opacity="0.8" />
+            <circle cx="210" cy="180" r="3" fill="#00d5be" opacity="0.8" />
+            
+            {/* Connection lines - faint and neutral like homepage */}
+            {/* Large to large connections */}
+            <line x1="100" y1="120" x2="250" y2="100" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="250" y1="100" x2="150" y2="250" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="150" y1="250" x2="100" y2="120" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            
+            {/* Medium to medium connections */}
+            <line x1="80" y1="200" x2="270" y2="80" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="270" y1="80" x2="200" y2="270" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="200" y1="270" x2="200" y2="60" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="200" y1="60" x2="80" y2="200" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            
+            {/* Small to small connections */}
+            <line x1="180" y1="160" x2="220" y2="200" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="220" y1="200" x2="120" y2="220" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="120" y1="220" x2="220" y2="120" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="220" y1="120" x2="160" y2="80" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="160" y1="80" x2="280" y2="220" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="280" y1="220" x2="180" y2="160" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            
+            {/* Additional dense connections */}
+            <line x1="110" y1="180" x2="170" y2="220" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="240" y1="150" x2="260" y2="200" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="130" y1="160" x2="210" y2="180" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="110" y1="180" x2="130" y2="160" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="240" y1="150" x2="210" y2="180" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="170" y1="220" x2="260" y2="200" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            
+            {/* Cross-connections between different sizes */}
+            <line x1="100" y1="120" x2="180" y2="160" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="250" y1="100" x2="220" y2="200" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="150" y1="250" x2="120" y2="220" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="80" y1="200" x2="160" y2="80" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="270" y1="80" x2="220" y2="120" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+            <line x1="200" y1="270" x2="280" y2="220" stroke="#6b7280" strokeWidth="1" opacity="0.2" />
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -236,28 +335,32 @@ import Link from '@docusaurus/Link';
 
 <style jsx>{`
   .hero-section {
-    padding: 3rem 0 6rem;
-    text-align: center;
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-    margin: -2rem -2rem 4rem -2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 2rem 0;
+    margin: 0;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 50%, #f0f2ff 100%);
   }
 
-  .hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-      radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
-    pointer-events: none;
+  .hero-content {
+    text-align: left;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero-visual {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .network-svg {
+    width: 100%;
+    height: 100%;
   }
 
   .hero-section .container-fluid {
@@ -266,11 +369,12 @@ import Link from '@docusaurus/Link';
   }
 
   .hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
     margin-top: 0;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--ifm-color-emphasis-900);
+    line-height: 1.2;
   }
 
   .hero-section p {
@@ -283,12 +387,10 @@ import Link from '@docusaurus/Link';
     font-size: 1.25rem !important;
     color: var(--ifm-color-emphasis-700) !important;
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0;
     line-height: 1.6;
     font-weight: 400 !important;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 500px;
   }
 
   .section-description {
@@ -580,6 +682,35 @@ import Link from '@docusaurus/Link';
     .concept-cards-container,
     .quick-setup-cards-container {
       justify-content: center;
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 996px) {
+    .hero-content {
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-visual {
+      height: 250px;
+    }
+    
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-visual {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-visual {
+      height: 150px;
     }
   }
 `}</style>
