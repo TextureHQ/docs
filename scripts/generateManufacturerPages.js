@@ -270,10 +270,10 @@ function generateManufacturerPage(manufacturer) {
     background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
-    padding: 16px;
+    padding: 20px;
     flex-shrink: 0;
-    width: 160px;
-    height: 100px;
+    width: 200px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,19 +284,18 @@ function generateManufacturerPage(manufacturer) {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
     opacity: 0.9;
   }
 
   .manufacturer-logo-placeholder {
-    width: 120px;
+    width: 160px;
     height: 80px;
     background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #6b7280;
   }
