@@ -63,7 +63,7 @@ When a user (or system) provides address information for a new Site:
 2. **Site Creation/Upsert**
    - A new Site record is created—or an existing Site is updated if it matches the same address footprint
 3. **Customer Linking**
-   - If the address is linked to an existing [Customer](./customers.md), we associate the new Site with that Customer. Otherwise, Texture creates a new Customer record
+   - If the address is linked to an existing [Customer](./contacts.md), we associate the new Site with that Customer. Otherwise, Texture creates a new Customer record
 4. **Automatic Data Enrichment**
    - Several background processes are initiated to enhance the Site with valuable data:
      - **Territory Assignment**: Determining the utility territory, ISO, and wholesale market for that Site's coordinates
@@ -163,7 +163,7 @@ This aggregated approach helps you see how all Devices and cCstomers at a locati
 - **Enrichment**
   - Make sure you have location-based integrations (like weather or emissions) set up to get the most out of Sites.
 - **Linking**
-  - Sites automatically link to [Customers](./customers.md), but you can override or manually adjust these associations via the API.
+  - Sites automatically link to [Customers](./contacts.md), but you can override or manually adjust these associations via the API.
 
 ---
 
@@ -178,6 +178,6 @@ If you run into any issues or have specific requests around Sites, please use th
 - **Browse the [API](/api)** for full details on Site endpoints.
 - **Enable Apps** that provide utility billing or meter data to enrich your Sites further.
 - **Explore** the Site's Dashboard tabs (Overview, Activity, Bills) to track usage, events, and costs.
-- **Combine** with [Devices](./devices.md) and [Customers](./customers.md) for a complete energy management solution.
+- **Combine** with [Devices](./devices.md) and [Customers](./contacts.md) for a complete energy management solution.
 
 A **Site** is more than just an address—it's a living, enriched data model that powers all your energy insights in Texture.

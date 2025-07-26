@@ -1,0 +1,811 @@
+/**
+ * Texture Documentation - Navigation & Layout
+ * 
+ * This file contains all navigation-related styles including navbar,
+ * sidebar, search, and layout components.
+ */
+
+/* ==========================================================================
+   NAVIGATION & LAYOUT
+   ========================================================================== */
+
+/* Navbar Styling - OpenAI-style muted background */
+.navbar {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: none;
+}
+
+.navbar__inner {
+  background-color: #f5f5f5;
+}
+
+.navbar__brand {
+  color: #374151;
+}
+
+.navbar__item {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.navbar__item:hover {
+  color: #374151;
+  background: none;
+}
+
+.navbar__link {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.navbar__link:hover {
+  color: #374151;
+  background: none;
+}
+
+/* Dark mode toggle styling - ensure consistent color and spacing */
+.clean-btn {
+  color: #6b7280;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.clean-btn:hover {
+  color: #374151;
+  background-color: #e5e7eb;
+}
+
+/* Ensure dark mode toggle icon inherits the correct color */
+.clean-btn svg {
+  color: inherit;
+  fill: currentColor;
+}
+
+/* Navbar spacing improvements */
+.navbar__items {
+  gap: 8px;
+}
+
+.navbar__items--right {
+  gap: 12px;
+}
+
+/* Hide mobile menu toggle on desktop screens */
+@media (min-width: 996px) {
+  .navbar__toggle {
+    display: none;
+  }
+}
+
+/* Navbar Adjustments */
+@media (min-width: 997px) {
+  .navbar__logo {
+    position: relative;
+    bottom: 2.5px;
+  }
+
+  /* Hide mobile menu toggle on desktop */
+  .navbar__toggle {
+    display: none;
+  }
+}
+
+/* Welcome Page Full-Width Hero */
+@media (min-width: 997px) {
+  html.docs-doc-id-overview\/welcome
+    .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    max-width: none;
+  }
+}
+
+html.docs-doc-id-overview\/welcome div.theme-doc-markdown header:first-child {
+  display: none;
+}
+
+/* Welcome page H2 overrides to inherit global styles */
+html.docs-doc-id-overview\/welcome h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  margin-top: var(--heading-margin-top-h2);
+  margin-bottom: var(--heading-margin-bottom-h2);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-heading);
+}
+
+/* Welcome page H3 overrides to inherit global styles */
+html.docs-doc-id-overview\/welcome h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  margin-top: var(--heading-margin-top-h3);
+  margin-bottom: var(--heading-margin-bottom-h3);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-heading);
+}
+
+/* Mobile responsive overrides for welcome page */
+@media (max-width: 768px) {
+  html.docs-doc-id-overview\/welcome h2 {
+    font-size: var(--font-size-h2-mobile);
+    margin-top: var(--heading-margin-top-h2-mobile);
+    margin-bottom: var(--heading-margin-bottom-h2-mobile);
+  }
+
+  html.docs-doc-id-overview\/welcome h3 {
+    font-size: var(--font-size-h3-mobile);
+    margin-top: var(--heading-margin-top-h3-mobile);
+    margin-bottom: var(--heading-margin-bottom-h3-mobile);
+  }
+}
+
+/* Card heading overrides - remove top margin for proper card spacing */
+html.docs-doc-id-overview\/welcome .action-card h3,
+html.docs-doc-id-overview\/welcome .quick-setup-card h3,
+html.docs-doc-id-overview\/welcome .concept-card h3,
+html.docs-doc-id-overview\/welcome .help-card h3 {
+  margin-top: 0;
+}
+
+/* Section H2s should keep their top margin for proper section spacing */
+html.docs-doc-id-overview\/welcome .row h2 {
+  margin-top: var(--heading-margin-top-h2);
+}
+
+/* ==========================================================================
+   SIDEBAR STYLING
+   ========================================================================== */
+
+/* Sidebar Layout - OpenAI-style muted background */
+nav.menu,
+.navbar-sidebar {
+  padding-bottom: 3rem;
+  padding-left: 0;
+  background-color: #f5f5f5;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* Comprehensive chevron hiding - highest priority */
+.menu__caret,
+.menu__link--sublist::after,
+.menu__link--sublist-caret::after,
+.menu__list-item--collapsible .menu__link::after,
+.menu__list-item--collapsible .menu__link--active::after,
+.menu__list-item-collapsible .menu__link--sublist::after,
+.menu__list-item-collapsible .menu__link--sublist-caret::after,
+[class*="menu__"] .menu__caret,
+[class*="menu__"] .menu__link::after {
+  display: none;
+  content: none;
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transform: none;
+  transition: none;
+}
+
+/* Hide chevrons and disable collapse functionality */
+.menu__caret {
+  display: none;
+}
+
+/* Hide chevrons rendered as ::after pseudo-elements */
+.menu__link--sublist::after,
+.menu__link--sublist-caret::after,
+.menu__list-item--collapsible .menu__link::after {
+  display: none;
+  content: none;
+}
+
+/* Prevent category headers from being clickable */
+.menu__list-item--collapsible .menu__link,
+.menu__link--sublist,
+.menu__link--sublist-caret,
+.menu__list-item--collapsible .menu__link--sublist,
+.menu__list-item--collapsible .menu__link--sublist-caret,
+[role="button"].menu__link,
+[role="button"].menu__link--sublist {
+  pointer-events: none;
+  cursor: default;
+  user-select: none;
+}
+
+/* Ensure all categories stay expanded */
+.menu__list-item--collapsible .menu__list,
+.menu__list-item-collapsible .menu__list {
+  display: block;
+  height: auto;
+  overflow: visible;
+}
+
+/* Remove any collapse-related animations */
+.menu__list-item--collapsible .menu__list,
+.menu__list-item-collapsible .menu__list {
+  transition: none;
+  animation: none;
+}
+
+/* Sidebar Navigation Links */
+.menu__link {
+  color: #374151;
+  font-weight: 500;
+  border-radius: 6px;
+  margin: 2px 0;
+  padding: 8px 12px;
+  transition: none;
+}
+
+.menu__link:hover {
+  background-color: #e5e5e5;
+  color: #111827;
+  transform: none;
+}
+
+/* Active page links (not section headers) */
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: rgba(68, 74, 225, 0.12);
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  transition: none;
+  padding-left: 16px;
+}
+
+.menu__link--active:not(.menu__link--sublist)::before {
+  display: none;
+}
+
+/* Remove active styling from section headers */
+.menu__list-item--collapsible .menu__link--active {
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 600;
+}
+
+.menu__list-item--collapsible .menu__link--active::before {
+  display: none;
+}
+
+@keyframes dotAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(0) translateX(-10px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-50%) scale(1.4) translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1) translateX(0);
+  }
+}
+
+/* Chevrons are hidden by the earlier rule */
+
+/* Menu headings */
+.menu__list-item--collapsed .menu__link {
+  color: #374151;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Left Sidebar Section Styling - Less Clunky */
+.menu__list-item--collapsible,
+.theme-doc-sidebar-item-category {
+  margin-bottom: 16px;
+}
+
+/* Main Section Headers - More Elegant (Override Docusaurus defaults) */
+.menu__list-item--collapsible .menu__link {
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: none;
+  background-color: transparent;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: 0.025em;
+  margin: 0;
+}
+
+/* Remove hover and active effects from section headers - they're not clickable links */
+.menu__list-item--collapsible .menu__link:hover,
+.menu__list-item--collapsible .menu__link--sublist:hover,
+.menu__link--sublist:hover,
+.menu__link--sublist--active,
+/* Exception for category level 1 section headers */
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible:hover,
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible .menu__link:hover,
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible .menu__link--sublist:hover {
+  background-color: transparent;
+  color: inherit;
+  transform: none;
+}
+
+.menu__list-item--collapsible .menu__link--active {
+  background-color: var(--ifm-color-emphasis-50);
+  color: #1f2937;
+  font-weight: 600;
+  border-left: 2px solid var(--brand-color);
+  padding-left: 10px;
+}
+
+/* Ensure section headers don't get active page styling */
+.menu__list-item--collapsible .menu__link--active {
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Reduce spacing between sections */
+.menu__list-item--collapsible {
+  margin-bottom: 2px;
+  padding-top: 0;
+}
+
+/* Submenu styling - consolidated */
+.menu__list-item--collapsible .menu__list {
+  margin-top: 2px;
+  margin-left: 8px;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  padding-left: 12px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Hide all chevron animations and content */
+.menu__list-item--collapsible .menu__link::after,
+.menu__list-item--collapsible .menu__link--active::after {
+  display: none;
+  content: none;
+  transform: none;
+  transition: none;
+}
+
+/* Sidebar Scrollbar */
+@media (min-width: 997px) {
+  @supports (scrollbar-gutter: stable) {
+    .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
+      padding: 0 0 4rem 0;
+      scrollbar-gutter: stable;
+    }
+  }
+}
+
+/* Sidebar Menu Items */
+.menu__list-item-collapsible {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Complete sidebar redesign - proper hierarchy and rhythm */
+div.menu__list-item-collapsible {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* More prominent section labels in left sidebar */
+div.menu__list-item-collapsible .menu__link {
+  padding: 10px 16px;
+  border-radius: 0;
+  transition: none;
+  background-color: transparent;
+  color: var(--ifm-color-emphasis-800);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: 0.025em;
+  margin: 0;
+  border: none;
+  position: relative;
+}
+
+/* Remove hover effect from div-based section headers */
+div.menu__list-item-collapsible .menu__link:hover,
+div.menu__list-item-collapsible .menu__link--sublist:hover,
+div.menu__list-item-collapsible .menu__link--sublist:hover {
+  background-color: transparent;
+  color: inherit;
+  transform: none;
+}
+
+div.menu__list-item-collapsible .menu__link--active {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 700;
+  padding-left: 16px;
+}
+
+/* L2 items - proper hierarchy with smaller indent */
+.menu__list-item .menu__link {
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #4b5563;
+  border: none;
+  position: relative;
+  transition: none;
+  transform: none;
+  animation: none;
+  will-change: auto;
+}
+
+/* Active menu items - make them bolder (only page links, not section headers) */
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.menu__list-item .menu__link:hover {
+  background-color: #e5e5e5;
+  color: #111827;
+}
+
+/* Submenu container styling - smaller indent */
+.menu__list-item-collapsible .menu__list {
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  margin-left: 4px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Disable all animations on menu items to prevent spreading */
+.menu__list-item,
+.menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link:hover,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link--active,
+.menu__link,
+.menu__link:hover,
+.menu__link--active,
+.menu__link--sublist,
+.menu__link--sublist:hover,
+.menu__link--sublist--active {
+  transition: none;
+  transform: none;
+  animation: none;
+  will-change: auto;
+}
+
+/* Hidden Elements */
+.hidden {
+  display: none;
+}
+
+/* Override any Docusaurus menu animations */
+[class*="menu__"] {
+  transition: none;
+  animation: none;
+}
+
+/* Only target menu-related elements, not all children */
+[class*="menu__"] .menu__link,
+[class*="menu__"] .menu__list-item,
+[class*="menu__"] .menu__caret,
+[class*="menu__"] .menu__list {
+  transition: none;
+  animation: none;
+}
+
+/* Specifically disable menu list transitions */
+.menu__list {
+  transition: none;
+  animation: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Override Docusaurus menu list padding with our own rule */
+.menu__list,
+.menu__list.menu__list {
+  padding-left: 0;
+}
+
+.menu__list-item-collapsible .menu__list {
+  transition: none;
+  animation: none;
+  height: auto;
+}
+
+/* Comprehensive menu animation disable */
+.menu__list-item,
+.menu__list-item .menu__link,
+.menu__list-item-collapsible,
+.menu__list-item-collapsible .menu__link,
+.menu__list-item-collapsible .menu__list,
+.menu__list-item-collapsible .menu__list .menu__list-item,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link:hover,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link--active,
+.menu__link,
+.menu__link:hover,
+.menu__link--active,
+.menu__link--sublist,
+.menu__link--sublist:hover,
+.menu__link--sublist--active,
+.menu__caret,
+.menu__caret:hover {
+  transition: none;
+  transform: none;
+  animation: none;
+  will-change: auto;
+}
+
+/* Hide sidebar items with the 'hidden' class */
+.menu__list-item.hidden {
+  display: none;
+}
+
+/* ==========================================================================
+   SEARCH BAR STYLING
+   ========================================================================== */
+
+/* DocSearch elegant styling */
+.DocSearch-Button {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 280px;
+  height: 40px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.DocSearch-Button:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.DocSearch-Button:focus {
+  outline: none;
+  border-color: var(--brand-color);
+  box-shadow: 0 0 0 3px rgba(68, 74, 225, 0.1);
+}
+
+.DocSearch-Button-Key {
+  display: inline;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0;
+  margin-left: 8px;
+  min-width: auto;
+  height: auto;
+  box-shadow: none;
+}
+
+.DocSearch-Button-Placeholder {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.DocSearch-Button-Keys {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Target all possible keyboard shortcut elements */
+.DocSearch-Button-Key,
+.DocSearch-Button-Keys .DocSearch-Button-Key,
+.DocSearch-Button-Keys span,
+.DocSearch-Button-Keys kbd {
+  display: none;
+}
+
+/* Search icon styling */
+.DocSearch-Button .DocSearch-Button-Container {
+  margin-right: 8px;
+}
+
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: #9ca3af;
+  width: 16px;
+  height: 16px;
+}
+
+/* ==========================================================================
+   TABLE OF CONTENTS STYLING
+   ========================================================================== */
+
+/* TOC Container */
+.theme-doc-toc-desktop {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+/* TOC List Container */
+.theme-doc-toc-desktop .table-of-contents {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Background Vertical Line */
+.theme-doc-toc-desktop .table-of-contents::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #e5e7eb;
+}
+
+/* TOC Links */
+.theme-doc-toc-desktop .table-of-contents__link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  transition: none;
+  margin-left: -1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* Active Link Styling */
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  color: var(--brand-color);
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem -0.75rem;
+  border-left: 3px solid var(--brand-color);
+}
+
+/* Hover Effects */
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  color: #374151;
+  text-decoration: none;
+}
+
+/* More prominent TOC hover states */
+.theme-doc-toc-desktop .table-of-contents__link {
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: none;
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 400;
+  margin: 2px 0;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 500;
+  transform: none;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  color: var(--brand-color);
+  font-weight: 600;
+  border-left: 3px solid var(--brand-color);
+  padding-left: 9px;
+}
+
+/* ==========================================================================
+   CONTENT AREA PADDING & LAYOUT
+   ========================================================================== */
+
+/* Main content area padding for better spacing from sidebars */
+.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Grid column padding for better spacing */
+.col[class*="col--"] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE GRID SYSTEM
+   ========================================================================== */
+
+@media (max-width: 996px) {
+  .col--md-6 {
+    --ifm-col-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col--sm-12 {
+    --ifm-col-width: 100%;
+  }
+
+  .col--sm-offset-0 {
+    margin-left: 0;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE PADDING ADJUSTMENTS
+   ========================================================================== */
+
+/* Responsive grid column padding */
+@media (max-width: 1200px) {
+  :root {
+    --ifm-spacing-horizontal: 1.5rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 996px) {
+  :root {
+    --ifm-spacing-horizontal: 1.25rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --ifm-spacing-horizontal: 1rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   BREADCRUMBS - Hide default Docusaurus breadcrumbs
+   ========================================================================== */
+
+/* Hide all Docusaurus breadcrumbs globally */
+.breadcrumbs {
+  display: none;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+  display: none;
+}

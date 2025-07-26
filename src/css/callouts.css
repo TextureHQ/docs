@@ -1,0 +1,250 @@
+/**
+ * Texture Documentation - Callout Styles
+ * 
+ * This file contains all callout/admonition box styles for the Texture documentation site.
+ * These styles override Docusaurus defaults to match our design system.
+ */
+
+/* ==========================================================================
+   CALLOUT BASE STYLES
+   ========================================================================== */
+
+/* Base callout container */
+.theme-admonition {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Callout header with icon and title */
+[class*="admonitionHeading"] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* Admonition icon styling */
+[class*="admonitionHeading"] svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Icon colors for each admonition type */
+.theme-admonition-tip [class*="admonitionHeading"] svg {
+  color: var(--callout-tip-heading);
+}
+
+.theme-admonition-note [class*="admonitionHeading"] svg {
+  color: var(--callout-note-heading);
+}
+
+.theme-admonition-caution [class*="admonitionHeading"] svg {
+  color: var(--callout-caution-heading);
+}
+
+.theme-admonition-danger [class*="admonitionHeading"] svg {
+  color: var(--callout-danger-heading);
+}
+
+/* Callout content */
+[class*="admonitionContent"] {
+  margin: 0;
+  color: inherit;
+}
+
+/* ==========================================================================
+   CALLOUT TYPES
+   ========================================================================== */
+
+/* Tip Callout */
+.theme-admonition-tip {
+  background-color: var(--callout-tip-bg);
+  border-left-color: var(--callout-tip-border);
+  color: var(--callout-tip-text);
+}
+
+.theme-admonition-tip [class*="admonitionHeading"] {
+  color: var(--callout-tip-heading);
+}
+
+/* Note Callout */
+.theme-admonition-note {
+  background-color: var(--callout-note-bg);
+  border-left-color: var(--callout-note-border);
+  color: var(--callout-note-text);
+}
+
+.theme-admonition-note [class*="admonitionHeading"] {
+  color: var(--callout-note-heading);
+}
+
+/* Caution Callout */
+.theme-admonition-caution {
+  background-color: var(--callout-caution-bg);
+  border-left-color: var(--callout-caution-border);
+  color: var(--callout-caution-text);
+}
+
+.theme-admonition-caution [class*="admonitionHeading"] {
+  color: var(--callout-caution-heading);
+}
+
+/* Danger Callout */
+.theme-admonition-danger {
+  background-color: var(--callout-danger-bg);
+  border-left-color: var(--callout-danger-border);
+  color: var(--callout-danger-text);
+}
+
+.theme-admonition-danger [class*="admonitionHeading"] {
+  color: var(--callout-danger-heading);
+}
+
+/* ==========================================================================
+   DARK MODE CALLOUTS
+   ========================================================================== */
+
+/* Dark mode callouts are handled by CSS variables in dark-mode.css */
+
+/* ==========================================================================
+   RESPONSIVE CALLOUTS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .theme-admonition {
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  [class*="admonitionHeading"] {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* ==========================================================================
+   CALLOUT SPACING WITH OTHER ELEMENTS
+   ========================================================================== */
+
+/* Spacing between callouts and headings */
+.markdown .theme-admonition + h1,
+.markdown .theme-admonition + h2,
+.markdown .theme-admonition + h3,
+.markdown .theme-admonition + h4,
+.markdown .theme-admonition + h5,
+.markdown .theme-admonition + h6 {
+  margin-top: 2rem;
+}
+
+.markdown h1 + .theme-admonition,
+.markdown h2 + .theme-admonition,
+.markdown h3 + .theme-admonition,
+.markdown h4 + .theme-admonition,
+.markdown h5 + .theme-admonition,
+.markdown h6 + .theme-admonition {
+  margin-top: 1rem;
+}
+
+/* Spacing between callouts and code blocks */
+.markdown .theme-admonition + pre {
+  margin-top: 1rem;
+}
+
+.markdown pre + .theme-admonition {
+  margin-top: 1rem;
+}
+
+/* Spacing between multiple callouts */
+.markdown .theme-admonition + .theme-admonition {
+  margin-top: 1rem;
+}
+
+/* ==========================================================================
+   BLOCKQUOTES
+   ========================================================================== */
+
+/* Blockquote base styles */
+blockquote {
+  background: var(--blockquote-bg);
+  border-left: 4px solid var(--blockquote-border);
+  color: var(--blockquote-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Blockquote spacing with other elements */
+.markdown blockquote + h1,
+.markdown blockquote + h2,
+.markdown blockquote + h3,
+.markdown blockquote + h4,
+.markdown blockquote + h5,
+.markdown blockquote + h6 {
+  margin-top: 2rem;
+}
+
+.markdown h1 + blockquote,
+.markdown h2 + blockquote,
+.markdown h3 + blockquote,
+.markdown h4 + blockquote,
+.markdown h5 + blockquote,
+.markdown h6 + blockquote {
+  margin-top: 1rem;
+}
+
+.markdown p + blockquote {
+  margin-top: 1rem;
+}
+
+.markdown blockquote + p {
+  margin-top: 1rem;
+}
+
+/* Remove redundant margins from elements inside blockquotes */
+.markdown blockquote p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown blockquote p + p {
+  margin-top: 0.75rem;
+}
+
+/* Remove redundant margins from lists inside blockquotes */
+.markdown blockquote ul,
+.markdown blockquote ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown blockquote ul + ul,
+.markdown blockquote ol + ol,
+.markdown blockquote p + ul,
+.markdown blockquote p + ol {
+  margin-top: 0.75rem;
+}
+
+/* Responsive blockquotes */
+@media (max-width: 768px) {
+  blockquote {
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}

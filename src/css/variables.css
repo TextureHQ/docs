@@ -1,0 +1,200 @@
+/**
+ * Texture Documentation - CSS Variables & Theme Configuration
+ * 
+ * This file contains all CSS custom properties and theme configuration
+ * for the Texture documentation site.
+ */
+
+/* ==========================================================================
+   CSS VARIABLES & THEME CONFIGURATION
+   ========================================================================== */
+
+:root {
+  /* Brand Colors */
+  --brand-color: #444ae1;
+  --brand-color-hover: #3a3fd1;
+  --ifm-color-primary: var(--brand-color);
+  --ifm-color-primary-dark: #3a3fd1;
+  --ifm-color-primary-darker: #3338c7;
+  --ifm-color-primary-darkest: #2a2fb3;
+  --ifm-color-primary-light: #5a5fe7;
+  --ifm-color-primary-lighter: #666be9;
+  --ifm-color-primary-lightest: #7a7feb;
+
+  /* Typography Colors */
+  --ifm-heading-color: #0c1452;
+  --ifm-navbar-link-color: #0c1452;
+  --font-color-base: #333333;
+  --font-color-heading: #333333;
+
+  /* Typography Scale */
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 1.875rem;
+  --font-size-h3: 1.25rem;
+  --font-size-h4: 1.125rem;
+  --font-size-h5: 1rem;
+  --font-size-h6: 0.875rem;
+
+  /* Mobile Typography Scale */
+  --font-size-h1-mobile: 1.5rem;
+  --font-size-h2-mobile: 1.375rem;
+  --font-size-h3-mobile: 1.125rem;
+  --font-size-h4-mobile: 1rem;
+  --font-size-h5-mobile: 0.95rem;
+  --font-size-h6-mobile: 0.875rem;
+
+  /* Font Weights */
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+
+  /* Line Heights */
+  --line-height-base: 1.6;
+  --line-height-h1: 1.2;
+  --line-height-h2: 1.3;
+  --line-height-h3: 1.4;
+  --line-height-h4: 1.4;
+  --line-height-h5: 1.5;
+  --line-height-h6: 1.5;
+
+  /* Spacing System */
+  --spacing-unit: 1rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Heading Margins - Enterprise Documentation Standards */
+  --heading-margin-top-h1: 3rem;
+  --heading-margin-bottom-h1: 1.5rem;
+  --heading-margin-top-h2: 4rem;
+  --heading-margin-bottom-h2: 1.25rem;
+  --heading-margin-top-h3: 3rem;
+  --heading-margin-bottom-h3: 1rem;
+  --heading-margin-top-h4: 1.75rem;
+  --heading-margin-bottom-h4: 0.875rem;
+  --heading-margin-top-h5: 1.5rem;
+  --heading-margin-bottom-h5: 0.75rem;
+  --heading-margin-top-h6: 1.25rem;
+  --heading-margin-bottom-h6: 0.625rem;
+
+  /* Mobile Heading Margins - Tighter spacing for mobile */
+  --heading-margin-top-h1-mobile: 2rem;
+  --heading-margin-bottom-h1-mobile: 1rem;
+  --heading-margin-top-h2-mobile: 2.5rem;
+  --heading-margin-bottom-h2-mobile: 0.875rem;
+  --heading-margin-top-h3-mobile: 2rem;
+  --heading-margin-bottom-h3-mobile: 0.75rem;
+  --heading-margin-top-h4-mobile: 1.25rem;
+  --heading-margin-bottom-h4-mobile: 0.625rem;
+  --heading-margin-top-h5-mobile: 1rem;
+  --heading-margin-bottom-h5-mobile: 0.5rem;
+  --heading-margin-top-h6-mobile: 0.875rem;
+  --heading-margin-bottom-h6-mobile: 0.5rem;
+
+  /* Code & Syntax Highlighting */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Callout Colors */
+  --callout-tip-bg: #ecfdf5;
+  --callout-tip-border: #10b981;
+  --callout-tip-text: #065f46;
+  --callout-tip-heading: #047857;
+
+  --callout-note-bg: #eff6ff;
+  --callout-note-border: #3b82f6;
+  --callout-note-text: #1e40af;
+  --callout-note-heading: #1d4ed8;
+
+  --callout-caution-bg: #fffbeb;
+  --callout-caution-border: #f59e0b;
+  --callout-caution-text: #92400e;
+  --callout-caution-heading: #d97706;
+
+  --callout-danger-bg: #fef2f2;
+  --callout-danger-border: #ef4444;
+  --callout-danger-text: #991b1b;
+  --callout-danger-heading: #dc2626;
+
+  /* Blockquote Colors */
+  --blockquote-bg: #fef7e0;
+  --blockquote-border: #f59e0b;
+  --blockquote-text: #92400e;
+
+  /* Layout & Spacing */
+  --ifm-blockquote-padding-vertical: 1rem;
+  --ifm-menu-link-padding-horizontal: 1.1rem;
+  --ifm-spacing-horizontal: 2rem;
+
+  /* Legacy variables for backward compatibility */
+  --leading: 1.6;
+  --heading-vertical-rhythm-bottom: 1;
+  --h2-vertical-rhythm-top: 1;
+}
+
+/* Font Family */
+:root {
+  --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+/* ==========================================================================
+   DARK MODE OVERRIDES
+   ========================================================================== */
+
+[data-theme="dark"] {
+  /* Brand Colors - Dark Mode */
+  --brand-color: #b4b9ff;
+  --ifm-color-primary: var(--brand-color);
+  --ifm-color-primary-dark: #a1a7ff;
+  --ifm-color-primary-darker: #8e95ff;
+  --ifm-color-primary-darkest: #7b83ff;
+  --ifm-color-primary-light: #c7ccff;
+  --ifm-color-primary-lighter: #d0d5ff;
+  --ifm-color-primary-lightest: #d9deff;
+
+  /* Typography Colors - Dark Mode */
+  --ifm-heading-color: #ffffff;
+  --ifm-navbar-link-color: #e5e7eb;
+  --font-color-base: #e5e7eb;
+  --font-color-heading: #ffffff;
+
+  /* Callout Colors - Dark Mode */
+  --callout-tip-bg: #064e3b;
+  --callout-tip-border: #10b981;
+  --callout-tip-text: #6ee7b7;
+  --callout-tip-heading: #34d399;
+
+  --callout-note-bg: #1e3a8a;
+  --callout-note-border: #3b82f6;
+  --callout-note-text: #93c5fd;
+  --callout-note-heading: #60a5fa;
+
+  --callout-caution-bg: #78350f;
+  --callout-caution-border: #f59e0b;
+  --callout-caution-text: #fbbf24;
+  --callout-caution-heading: #f59e0b;
+
+  --callout-danger-bg: #7f1d1d;
+  --callout-danger-border: #ef4444;
+  --callout-danger-text: #fca5a5;
+  --callout-danger-heading: #f87171;
+
+  /* Blockquote Colors - Dark Mode */
+  --blockquote-bg: #78350f;
+  --blockquote-border: #f59e0b;
+  --blockquote-text: #fbbf24;
+
+  /* Code & Syntax Highlighting - Dark Mode */
+  --docusaurus-highlighted-code-line-bg: #b2b2b2;
+}
+
+/* ==========================================================================
+   FONT LOADING
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");

@@ -5,7 +5,7 @@
 
 This page provides an overview of managing Leads in the Texture Platform. Use this area to explain how incoming leads are captured, tracked, and converted, and how they integrate with Customers.
 
-A **Lead** represents partial or preliminary information about a person who might become a [Customer](./customers.md), but isn't one yet. The Leads feature in Texture is designed for managing prospects, gathering minimal contact details, and eventually converting them to fully onboarded Customers once enough data is provided.
+A **Lead** represents partial or preliminary information about a person who might become a [Customer](./contacts.md), but isn't one yet. The Leads feature in Texture is designed for managing prospects, gathering minimal contact details, and eventually converting them to fully onboarded Customers once enough data is provided.
 
 ---
 
@@ -34,7 +34,7 @@ Since Leads are partial by design, you can store as little or as much as you kno
 Leads appear in the **Leads** section of the Texture Dashboard as a simple table view:
 - **Filter & Search**: find Leads by name, email, city, or state.  
 - **No Detail Page**: Unlike Customers, Leads don't currently have a dedicated detail page currently. All relevant fields are shown in the table in the Dashboard.  
-- **Conversion Process**: When you're ready to collect more info and fully onboard a lead, you can gather the rest of the data (first/last name, address, etc.) and create a [Customer](./customers.md) record.
+- **Conversion Process**: When you're ready to collect more info and fully onboard a lead, you can gather the rest of the data (first/last name, address, etc.) and create a [Customer](./contacts.md) record.
 
 ---
 
@@ -92,4 +92,4 @@ If you have questions about managing leads or need assistance with CRM integrati
 
 - **Experiment** with `POST /leads` to capture new prospects.  
 - **Filter & Manage** your lead list in the Dashboard to see how they progress.  
-- **Convert** a lead to a full [Customer](./customers.md) record when ready to onboard their Devices or gather full address details.
+- **Convert** a lead to a full [Customer](./contacts.md) record when ready to onboard their Devices or gather full address details.

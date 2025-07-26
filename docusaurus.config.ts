@@ -135,7 +135,7 @@ const config: Config = {
           showReadingTime: true,
         },
         theme: {
-          customCss: "./src/css/custom.css",
+          customCss: "./src/css/main.css",
         },
         ...gtag,
       } satisfies Preset.Options,

@@ -1,0 +1,491 @@
+/**
+ * Texture Documentation - Typography System
+ * 
+ * This file contains all typography-related styles including headings,
+ * body text, lists, and spacing rules.
+ */
+
+/* ==========================================================================
+   TYPOGRAPHY SYSTEM
+   ========================================================================== */
+
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-heading);
+  margin-bottom: 1em;
+}
+
+/* Page Subtitle Styles - for consistent subtitles below page titles */
+.page-subtitle,
+.markdown .page-subtitle {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-normal);
+  color: #6b7280;
+  line-height: 1.6;
+  margin-top: -0.75rem;
+  margin-bottom: 2.5rem;
+  max-width: 70ch;
+  font-family: var(--font-family-base);
+  opacity: 0.85;
+  letter-spacing: -0.01em;
+}
+
+/* Mobile responsive for page subtitles */
+@media (max-width: 768px) {
+  .page-subtitle,
+  .markdown .page-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    margin-top: -0.5rem;
+  }
+}
+
+/* H1 Specific Styles */
+h1:first-child,
+.markdown h1:first-child {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h1);
+  margin-top: var(--heading-margin-top-h1);
+  margin-bottom: var(--heading-margin-bottom-h1);
+}
+
+h1,
+.markdown h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-h1);
+  margin-top: var(--heading-margin-top-h1);
+  margin-bottom: var(--heading-margin-bottom-h1);
+}
+
+/* Mobile Typography Overrides */
+@media (max-width: 768px) {
+  h1,
+  .markdown h1,
+  h1:first-child,
+  .markdown h1:first-child {
+    font-size: var(--font-size-h1-mobile);
+    margin-top: var(--heading-margin-top-h1-mobile);
+    margin-bottom: var(--heading-margin-bottom-h1-mobile);
+  }
+
+  h2,
+  .markdown h2 {
+    font-size: var(--font-size-h2-mobile);
+    margin-top: var(--heading-margin-top-h2-mobile);
+    margin-bottom: var(--heading-margin-bottom-h2-mobile);
+  }
+
+  h3,
+  .markdown h3 {
+    font-size: var(--font-size-h3-mobile);
+    margin-top: var(--heading-margin-top-h3-mobile);
+    margin-bottom: var(--heading-margin-bottom-h3-mobile);
+  }
+
+  h4,
+  .markdown h4 {
+    font-size: var(--font-size-h4-mobile);
+    margin-top: var(--heading-margin-top-h4-mobile);
+    margin-bottom: var(--heading-margin-bottom-h4-mobile);
+  }
+
+  h5,
+  .markdown h5 {
+    font-size: var(--font-size-h5-mobile);
+    margin-top: var(--heading-margin-top-h5-mobile);
+    margin-bottom: var(--heading-margin-bottom-h5-mobile);
+  }
+
+  h6,
+  .markdown h6 {
+    font-size: var(--font-size-h6-mobile);
+    margin-top: var(--heading-margin-top-h6-mobile);
+    margin-bottom: var(--heading-margin-bottom-h6-mobile);
+  }
+}
+
+/* H2 Specific Styles */
+h2,
+.markdown > h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  margin-top: var(--heading-margin-top-h2);
+  margin-bottom: var(--heading-margin-bottom-h2);
+}
+
+/* H3 Specific Styles */
+h3,
+.markdown > h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  margin-top: var(--heading-margin-top-h3);
+  margin-bottom: var(--heading-margin-bottom-h3);
+}
+
+/* H4 Specific Styles */
+h4,
+.markdown > h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
+  margin-top: var(--heading-margin-top-h4);
+  margin-bottom: var(--heading-margin-bottom-h4);
+}
+
+/* H5 Specific Styles */
+h5,
+.markdown > h5 {
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-h5);
+  margin-top: var(--heading-margin-top-h5);
+  margin-bottom: var(--heading-margin-bottom-h5);
+}
+
+/* H6 Specific Styles */
+h6,
+.markdown > h6 {
+  font-size: var(--font-size-h6);
+  line-height: var(--line-height-h6);
+  margin-top: var(--heading-margin-top-h6);
+  margin-bottom: var(--heading-margin-bottom-h6);
+}
+
+/* Body Text Styles */
+.markdown p {
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-base);
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* Paragraph spacing for better content flow */
+.markdown p + p {
+  margin-top: 0;
+}
+
+/* Spacing after headings for better content separation */
+.markdown h1 + p,
+.markdown h2 + p,
+.markdown h3 + p,
+.markdown h4 + p,
+.markdown h5 + p,
+.markdown h6 + p {
+  margin-top: 0.75rem;
+}
+
+/* Spacing before headings for better content separation */
+.markdown p + h1,
+.markdown p + h2,
+.markdown p + h3,
+.markdown p + h4,
+.markdown p + h5,
+.markdown p + h6 {
+  margin-top: 2.5rem;
+}
+
+/* Mobile paragraph spacing adjustments */
+@media (max-width: 768px) {
+  .markdown p {
+    margin-bottom: 1.25rem;
+  }
+
+  .markdown h1 + p,
+  .markdown h2 + p,
+  .markdown h3 + p,
+  .markdown h4 + p,
+  .markdown h5 + p,
+  .markdown h6 + p {
+    margin-top: 0.5rem;
+  }
+
+  .markdown p + h1,
+  .markdown p + h2,
+  .markdown p + h3,
+  .markdown p + h4,
+  .markdown p + h5,
+  .markdown p + h6 {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Horizontal Rules */
+.markdown hr {
+  border: none;
+  border-top: 1px solid #d1d5db;
+  margin: var(--spacing-xl) 0;
+  height: 1px;
+}
+
+/* ==========================================================================
+   LIST STYLING
+   ========================================================================== */
+
+/* List Styles */
+.markdown ul,
+.markdown ol {
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-base);
+  color: var(--font-color-base);
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* List spacing after headings */
+.markdown h1 + ul,
+.markdown h1 + ol,
+.markdown h2 + ul,
+.markdown h2 + ol,
+.markdown h3 + ul,
+.markdown h3 + ol,
+.markdown h4 + ul,
+.markdown h4 + ol,
+.markdown h5 + ul,
+.markdown h5 + ol,
+.markdown h6 + ul,
+.markdown h6 + ol {
+  margin-top: 0.5rem;
+}
+
+/* List spacing before headings */
+.markdown ul + h1,
+.markdown ol + h1,
+.markdown ul + h2,
+.markdown ol + h2,
+.markdown ul + h3,
+.markdown ol + h3,
+.markdown ul + h4,
+.markdown ol + h4,
+.markdown ul + h5,
+.markdown ol + h5,
+.markdown ul + h6,
+.markdown ol + h6 {
+  margin-top: 2.5rem;
+}
+
+/* Mobile list spacing adjustments */
+@media (max-width: 768px) {
+  .markdown ul,
+  .markdown ol {
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .markdown h1 + ul,
+  .markdown h1 + ol,
+  .markdown h2 + ul,
+  .markdown h2 + ol,
+  .markdown h3 + ul,
+  .markdown h3 + ol,
+  .markdown h4 + ul,
+  .markdown h4 + ol,
+  .markdown h5 + ul,
+  .markdown h5 + ol,
+  .markdown h6 + ul,
+  .markdown h6 + ol {
+    margin-top: 0.375rem;
+  }
+
+  .markdown ul + h1,
+  .markdown ol + h1,
+  .markdown ul + h2,
+  .markdown ol + h2,
+  .markdown ul + h3,
+  .markdown ol + h3,
+  .markdown ul + h4,
+  .markdown ol + h4,
+  .markdown ul + h5,
+  .markdown ol + h5,
+  .markdown ul + h6,
+  .markdown ol + h6 {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Initialize counter for ordered lists */
+.markdown > ol {
+  counter-reset: list-item;
+}
+
+.markdown > ul > li,
+.markdown > ol > li {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-base);
+  position: relative;
+  padding-left: 2rem;
+}
+
+/* Ordered List Number Styling */
+.markdown > ol > li {
+  counter-increment: list-item;
+}
+
+.markdown > ol > li::before {
+  content: counter(list-item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #e5e7eb;
+  color: #4b5563;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  border: 1px solid #d1d5db;
+  margin-right: 0.75rem;
+}
+
+.markdown > ol > li {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-base);
+  position: relative;
+  padding-left: 2.75rem;
+}
+
+/* Unordered List Bullet Styling */
+.markdown > ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #6b7280;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.markdown > ul > li {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-base);
+  position: relative;
+  padding-left: 2.75rem;
+}
+
+/* Paragraph to List Spacing */
+.markdown p + ul,
+.markdown p + ol {
+  margin-top: var(--spacing-xs);
+}
+
+/* ==========================================================================
+   MARKDOWN CONTENT STYLING
+   ========================================================================== */
+
+/* Markdown Content Spacing */
+.markdown > pre {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.markdown > ul,
+.markdown > ol {
+  margin-bottom: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+/* Code block spacing with headings */
+.markdown h1 + pre,
+.markdown h2 + pre,
+.markdown h3 + pre,
+.markdown h4 + pre,
+.markdown h5 + pre,
+.markdown h6 + pre {
+  margin-top: 0.75rem;
+}
+
+.markdown pre + h1,
+.markdown pre + h2,
+.markdown pre + h3,
+.markdown pre + h4,
+.markdown pre + h5,
+.markdown pre + h6 {
+  margin-top: 2.5rem;
+}
+
+/* Mobile code block spacing adjustments */
+@media (max-width: 768px) {
+  .markdown > pre {
+    margin-bottom: 1.25rem;
+    margin-top: 0.75rem;
+  }
+
+  .markdown h1 + pre,
+  .markdown h2 + pre,
+  .markdown h3 + pre,
+  .markdown h4 + pre,
+  .markdown h5 + pre,
+  .markdown h6 + pre {
+    margin-top: 0.5rem;
+  }
+
+  .markdown pre + h1,
+  .markdown pre + h2,
+  .markdown pre + h3,
+  .markdown pre + h4,
+  .markdown pre + h5,
+  .markdown pre + h6 {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Markdown Content Colors */
+.markdown > pre,
+.markdown > ul,
+.markdown > p {
+  color: #3c4257;
+}
+
+/* Global link styling with increased underline offset */
+a {
+  text-underline-offset: 0.3em;
+}
+
+/* Hide anchor link icons */
+.markdown a.anchor {
+  display: none;
+}
+
+/* Keep headings visible but hide anchor link icons */
+.markdown .anchor:not(a) {
+  display: block;
+}
+
+/* SVG Icon Alignment in Links */
+a svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+/* Example Blocks */
+.example {
+  background-color: #8ecafc;
+  border-left: var(--ifm-blockquote-border-left-width) solid
+    var(--ifm-blockquote-border-color);
+  box-shadow: var(--ifm-blockquote-shadow);
+  color: var(--ifm-blockquote-color);
+  font-size: var(--ifm-blockquote-font-size);
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
