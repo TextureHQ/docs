@@ -97,9 +97,7 @@
     "is_featured_on_home_page": false,
     "source": "smartcar",
     "about": "Alfa Romeo designs and manufactures premium vehicles including electric and hybrid models with integrated energy management systems. Their Tonale hybrid SUV features advanced battery technology and regenerative braking systems. The Italian automaker, part of Stellantis, produces vehicles with sophisticated energy recovery systems and electrified powertrains for both residential and commercial applications across various market segments.",
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602ee320c3669c8ce19c0ff",
@@ -198,9 +196,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "65c40335e361450dffbb1b34",
@@ -299,9 +295,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602ee420c3669c8ce19c118",
@@ -400,9 +394,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "668355c09b9a76094372b386",
@@ -518,9 +510,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "charger"
-    ]
+    "supported_device_types": ["charger"]
   },
   {
     "id": "6602ee5e0c3669c8ce19c131",
@@ -619,9 +609,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602ee7d0c3669c8ce19c14a",
@@ -720,9 +708,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602ee950c3669c8ce19c163",
@@ -821,9 +807,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602eea80c3669c8ce19c17c",
@@ -922,9 +906,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602eebb0c3669c8ce19c198",
@@ -1023,9 +1005,7 @@
     "about": "Daikin manufactures advanced heat pump systems, HVAC equipment, and energy management solutions for residential and commercial applications. The Japanese company produces high-efficiency heating, cooling, and hot water systems with smart grid integration capabilities. Their products include air-source heat pumps, geothermal systems, and building energy management platforms that optimize energy consumption and support renewable energy integration.",
     "description_html": "",
     "documentation_html": "",
-    "supported_device_types": [
-      "thermostat"
-    ]
+    "supported_device_types": ["thermostat"]
   },
   {
     "id": "6602eed50c3669c8ce19c1b4",
@@ -1124,9 +1104,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602eeec0c3669c8ce19c1d9",
@@ -1225,9 +1203,7 @@
     "about": "Ecobee manufactures smart thermostats, home energy management systems, and building automation platforms for residential and commercial applications. The company produces Wi-Fi connected thermostats, room sensors, and energy optimization software. Their products integrate with renewable energy systems, utility demand response programs, and smart home platforms to provide automated energy savings and grid-interactive capabilities across various market segments.",
     "description_html": "",
     "documentation_html": "",
-    "supported_device_types": [
-      "thermostat"
-    ]
+    "supported_device_types": ["thermostat"]
   },
   {
     "id": "67f412b70e797c99f9375da8",
@@ -1604,10 +1580,7 @@
       }
     },
     "about": "EG4 Electronics develops lithium battery systems, solar inverters, and energy storage solutions for residential and commercial applications. The company produces all-in-one inverter systems, battery management platforms, and grid-interactive energy storage hardware. Their products integrate solar generation, battery storage, and smart energy management capabilities for off-grid and grid-tied applications across various market segments.",
-    "supported_device_types": [
-      "inverter",
-      "battery"
-    ]
+    "supported_device_types": ["inverter", "battery"]
   },
   {
     "id": "67f411750e797c99f93732cd",
@@ -1954,10 +1927,7 @@
     "source": "direct",
     "website_url": "https://www.emporiaenergy.com/",
     "about": "Emporia develops smart energy monitoring systems, home energy management platforms, and electric vehicle charging solutions. The company produces whole-home energy monitors, smart circuit breakers, and EV charging stations with real-time energy tracking capabilities. Their systems integrate renewable energy sources and provide detailed energy usage analytics for residential and small commercial applications.",
-    "supported_device_types": [
-      "charger",
-      "battery"
-    ]
+    "supported_device_types": ["charger", "battery"]
   },
   {
     "id": "6602ef080c3669c8ce19c1f5",
@@ -2056,9 +2026,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "charger"
-    ]
+    "supported_device_types": ["charger"]
   },
   {
     "id": "6602ef1f0c3669c8ce19c211",
@@ -2659,7 +2627,7 @@
                   "doc": null,
                   "linkType": "custom",
                   "newTab": false,
-                  "url": "http://localhost:3000/docs/devices/polling"
+                  "url": "/platform-concepts/devices#polling"
                 }
               },
               {
@@ -2753,7 +2721,7 @@
                   "doc": null,
                   "linkType": "custom",
                   "newTab": false,
-                  "url": "http://localhost:3000/docs/commands#set-operating-mode"
+                  "url": "/platform-concepts/commands#set-operating-mode"
                 }
               },
               {
@@ -3877,13 +3845,10 @@
         "direction": "ltr"
       }
     },
-    "documentation_html": "<h2>Overview<a href=\"http://localhost:3000/docs/sources/oem/enphase/#overview\">​</a></h2><p>We are using the <a href=\"https://developer-v4.enphase.com/\" rel=\"noopener noreferrer\">Enphase API v4</a> to connect to Enphase accounts.</p><p>For this connection, a typical OAuth flow is used to authenticate the user and obtain consent to access their Enphase account and thus devices.</p><h2>Device Updates<a href=\"http://localhost:3000/docs/sources/oem/enphase/#device-updates\">​</a></h2><p>One quirk with Enphase systems is that they don't always seem to update their data in real-time or on a regular cadence.</p><p>Our <a href=\"http://localhost:3000/docs/devices/polling\">platform polls</a> the Enphase API every 15 minutes for new data, but the Enphase system may not be reporting any new data yet. When we do receive new data, we will update the device(s) in Texture with the new data and backfill any missing data since the last reported data point for the associated Enphase device(s).</p><h2>Battery Commands<a href=\"http://localhost:3000/docs/sources/oem/enphase/#battery-commands\">​</a></h2><p>If you are using our <a href=\"http://localhost:3000/docs/commands#set-operating-mode\">set operating mode command</a> with Enphase batteries, there is one main thing to be aware of.</p><p>There is a limitation with the Enphase API where we currently don't have a way to manipulate or adjust the battery system's tariff or rate settings. This means that while you may want to export energy to the grid during a specific time of day, for example, the battery system's tariff settings may not align with this.</p><p>In the scenario above, where you want to export to the grid during potentially non-peak hours. While the battery may not align and export to the grid, we will set it up such that it at least discharges the battery to cover home loads until the target reserve level is reached. Curtailing more expensive grid power usage still during this time.</p><p>If you enroll your users in our grid services program, we can control the battery system to optimize for grid services. See the <a href=\"http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services\">Enphase Grid Services</a> section below for more information.</p><h2>Enphase Grid Services<a href=\"http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services\">​</a></h2><p>In cases where your organization needs or desires features like off-peak grid export, we can work with you to allow enabling your customers to enroll their Enphase systems in one of our grid services programs.</p><p>Once enabled for your organization, you can start to send your customers your unique enphase authorization link to enroll their Enphase system(s).</p><h3>How to enroll your customers in a grid services program<a href=\"http://localhost:3000/docs/sources/oem/enphase/#how-to-enroll-your-customers-in-a-grid-services-program\">​</a></h3><p>The basic process for your customer's to enroll in a grid services program is as follows:</p><ol class=\"number\"><li value=1>Your customer first goes through the connect flow as normal, connecting their Enphase account to Texture.</li><li value=2>Send them an authorization link to enroll in one of our grid services programs.</li></ol><p>You can chain these flows together as described above, by constructing a connect link with the <code>redirectUrl</code> set to the enphase grid services authorization link. Then the <code>redirectUrl</code> query parameter in the enphase grid services authorization link can be set to a final redirect url to navigate to after the customer completes the grid services enrollment.</p><blockquote><p><strong>Note:</strong> After the customer completes step 1 you will still be able to monitor and send commands to their Enphase system(s). The grid services program will only start to take effect once the customer has enrolled and allows more advanced control of the battery system.</p></blockquote><h3>How to find your organization's authorization url<a href=\"http://localhost:3000/docs/sources/oem/enphase/#how-to-find-your-organizations-authorization-url\">​</a></h3><p>The base enphase authorization link for your organization will look like this:</p><p><code>https://enphase.connect.texturehq.com/<organization-token></code><br></p><p>You can find your organization's unique url (if enabled) programmatically by making a <code>GET</code> request to our <a href=\"http://localhost:3000/api\">organization endpoint with a valid API key</a>.</p><p>The response will contain your organization's base enphase authorization link, if enabled, under the <code>oemSpecifics.enphase.gridServicesAuthorizationUrl</code> path in the response.</p><h3>Query Parameters<a href=\"http://localhost:3000/docs/sources/oem/enphase/#query-parameters\">​</a></h3><p>The following table details the query parameters that can be used with the enphase authorization link.</p><p>NameRequired?DescriptionprogramSlugyesUnique identifier for the Enphase Grid Services program to enroll the user in. Typically, a state code for states where we have available programs.referenceIdyesUnique identifier in your system to tie to the user enrolling in Grid Services. This should ideally be the same id utilized during the Texture Connect flow.clientNamenoAllows adjusting the name that is displayed on the intro screen of the Enphase Grid Services enrollment flow. If not provided, it will fall back/use your organization's name.redirectUrlnoAllows you to set a redirect url to navigate to when the user clicks \"Continue\" after completing their Enphase Grid Services enrollment.</p><h3>Programs<a href=\"http://localhost:3000/docs/sources/oem/enphase/#programs\">​</a></h3><p>Enphase Grid Services programs are per state, and we currently have programs available in the following states:</p><p>Program StateProgram SlugCaliforniaCATexasTX</p><blockquote><p><strong>Note:</strong> If there is a mismatch between the state of the Enphase system and the state of the grid services program, the system will not be able to enroll in the program.</p></blockquote><h3>Examples<a href=\"http://localhost:3000/docs/sources/oem/enphase/#examples\">​</a></h3><p>Let's say your organization's token is <code>my-org-token</code> and you want to enroll a customer in the California grid services program. The authorization link would look like this:</p><p><a href=\"https://enphase.connect.texturehq.com/my-org-token?programSlug=CA\"><code>https://enphase.connect.texturehq.com/my-org-token?programSlug=CA</code></a><br></p><p>If you also wanted to adjust the name displayed on the intro screen to be <code>My Company</code>, the authorization link would look like this:</p><p><a href=\"https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company\"><code>https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company</code></a><br></p><h3>Battery Commands<a href=\"http://localhost:3000/docs/sources/oem/enphase/#battery-commands-1\">​</a></h3><p>Once a customer's Enphase system is enrolled in a grid services program, we will be able to control the battery system to optimize for grid services. This means that we will be able to control the battery system to export to the grid during off-peak hours, for example.</p><p>There are some caveats or things to be aware of:</p><ul class=\"bullet\"><li value=1>Commands won't take effect for at least 1 minute after they are sent.</li><li value=2>Commands at maximum will last up to 4 hours.</li><li value=3>If the target reserve level is reached before the command expires, the battery system will return to its operation mode before the command was sent.</li><li value=4>The lowest target reserve level that can be set is 10%.</li></ul>",
+    "documentation_html": "<h2>Overview<a href=\"http://localhost:3000/docs/sources/oem/enphase/#overview\">​</a></h2><p>We are using the <a href=\"https://developer-v4.enphase.com/\" rel=\"noopener noreferrer\">Enphase API v4</a> to connect to Enphase accounts.</p><p>For this connection, a typical OAuth flow is used to authenticate the user and obtain consent to access their Enphase account and thus devices.</p><h2>Device Updates<a href=\"http://localhost:3000/docs/sources/oem/enphase/#device-updates\">​</a></h2><p>One quirk with Enphase systems is that they don't always seem to update their data in real-time or on a regular cadence.</p><p>Our <a href=\"/platform-concepts/devices#polling\">platform polls</a> the Enphase API every 15 minutes for new data, but the Enphase system may not be reporting any new data yet. When we do receive new data, we will update the device(s) in Texture with the new data and backfill any missing data since the last reported data point for the associated Enphase device(s).</p><h2>Battery Commands<a href=\"http://localhost:3000/docs/sources/oem/enphase/#battery-commands\">​</a></h2><p>If you are using our <a href=\"/platform-concepts/commands#set-operating-mode\">set operating mode command</a> with Enphase batteries, there is one main thing to be aware of.</p><p>There is a limitation with the Enphase API where we currently don't have a way to manipulate or adjust the battery system's tariff or rate settings. This means that while you may want to export energy to the grid during a specific time of day, for example, the battery system's tariff settings may not align with this.</p><p>In the scenario above, where you want to export to the grid during potentially non-peak hours. While the battery may not align and export to the grid, we will set it up such that it at least discharges the battery to cover home loads until the target reserve level is reached. Curtailing more expensive grid power usage still during this time.</p><p>If you enroll your users in our grid services program, we can control the battery system to optimize for grid services. See the <a href=\"http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services\">Enphase Grid Services</a> section below for more information.</p><h2>Enphase Grid Services<a href=\"http://localhost:3000/docs/sources/oem/enphase/#enphase-grid-services\">​</a></h2><p>In cases where your organization needs or desires features like off-peak grid export, we can work with you to allow enabling your customers to enroll their Enphase systems in one of our grid services programs.</p><p>Once enabled for your organization, you can start to send your customers your unique enphase authorization link to enroll their Enphase system(s).</p><h3>How to enroll your customers in a grid services program<a href=\"http://localhost:3000/docs/sources/oem/enphase/#how-to-enroll-your-customers-in-a-grid-services-program\">​</a></h3><p>The basic process for your customer's to enroll in a grid services program is as follows:</p><ol class=\"number\"><li value=1>Your customer first goes through the connect flow as normal, connecting their Enphase account to Texture.</li><li value=2>Send them an authorization link to enroll in one of our grid services programs.</li></ol><p>You can chain these flows together as described above, by constructing a connect link with the <code>redirectUrl</code> set to the enphase grid services authorization link. Then the <code>redirectUrl</code> query parameter in the enphase grid services authorization link can be set to a final redirect url to navigate to after the customer completes the grid services enrollment.</p><blockquote><p><strong>Note:</strong> After the customer completes step 1 you will still be able to monitor and send commands to their Enphase system(s). The grid services program will only start to take effect once the customer has enrolled and allows more advanced control of the battery system.</p></blockquote><h3>How to find your organization's authorization url<a href=\"http://localhost:3000/docs/sources/oem/enphase/#how-to-find-your-organizations-authorization-url\">​</a></h3><p>The base enphase authorization link for your organization will look like this:</p><p><code>https://enphase.connect.texturehq.com/<organization-token></code><br></p><p>You can find your organization's unique url (if enabled) programmatically by making a <code>GET</code> request to our <a href=\"http://localhost:3000/api\">organization endpoint with a valid API key</a>.</p><p>The response will contain your organization's base enphase authorization link, if enabled, under the <code>oemSpecifics.enphase.gridServicesAuthorizationUrl</code> path in the response.</p><h3>Query Parameters<a href=\"http://localhost:3000/docs/sources/oem/enphase/#query-parameters\">​</a></h3><p>The following table details the query parameters that can be used with the enphase authorization link.</p><p>NameRequired?DescriptionprogramSlugyesUnique identifier for the Enphase Grid Services program to enroll the user in. Typically, a state code for states where we have available programs.referenceIdyesUnique identifier in your system to tie to the user enrolling in Grid Services. This should ideally be the same id utilized during the Texture Connect flow.clientNamenoAllows adjusting the name that is displayed on the intro screen of the Enphase Grid Services enrollment flow. If not provided, it will fall back/use your organization's name.redirectUrlnoAllows you to set a redirect url to navigate to when the user clicks \"Continue\" after completing their Enphase Grid Services enrollment.</p><h3>Programs<a href=\"http://localhost:3000/docs/sources/oem/enphase/#programs\">​</a></h3><p>Enphase Grid Services programs are per state, and we currently have programs available in the following states:</p><p>Program StateProgram SlugCaliforniaCATexasTX</p><blockquote><p><strong>Note:</strong> If there is a mismatch between the state of the Enphase system and the state of the grid services program, the system will not be able to enroll in the program.</p></blockquote><h3>Examples<a href=\"http://localhost:3000/docs/sources/oem/enphase/#examples\">​</a></h3><p>Let's say your organization's token is <code>my-org-token</code> and you want to enroll a customer in the California grid services program. The authorization link would look like this:</p><p><a href=\"https://enphase.connect.texturehq.com/my-org-token?programSlug=CA\"><code>https://enphase.connect.texturehq.com/my-org-token?programSlug=CA</code></a><br></p><p>If you also wanted to adjust the name displayed on the intro screen to be <code>My Company</code>, the authorization link would look like this:</p><p><a href=\"https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company\"><code>https://enphase.connect.texturehq.com/my-org-token?programSlug=CA&clientName=My%20Company</code></a><br></p><h3>Battery Commands<a href=\"http://localhost:3000/docs/sources/oem/enphase/#battery-commands-1\">​</a></h3><p>Once a customer's Enphase system is enrolled in a grid services program, we will be able to control the battery system to optimize for grid services. This means that we will be able to control the battery system to export to the grid during off-peak hours, for example.</p><p>There are some caveats or things to be aware of:</p><ul class=\"bullet\"><li value=1>Commands won't take effect for at least 1 minute after they are sent.</li><li value=2>Commands at maximum will last up to 4 hours.</li><li value=3>If the target reserve level is reached before the command expires, the battery system will return to its operation mode before the command was sent.</li><li value=4>The lowest target reserve level that can be set is 10%.</li></ul>",
     "website_url": "https://enphase.com/",
     "about": "Enphase Energy manufactures microinverters, battery storage systems, and solar energy management platforms for residential and commercial applications. The company produces smart solar inverters, home battery systems, and comprehensive energy monitoring software. Their systems optimize solar energy production and consumption while providing grid-interactive capabilities and backup power solutions for distributed energy applications.",
-    "supported_device_types": [
-      "battery",
-      "inverter"
-    ]
+    "supported_device_types": ["battery", "inverter"]
   },
   {
     "id": "6602ef2f0c3669c8ce19c230",
@@ -3982,9 +3947,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602ef410c3669c8ce19c24f",
@@ -4083,9 +4046,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602ef610c3669c8ce19c26b",
@@ -4185,9 +4146,7 @@
     "about": "FranklinWH produces whole-home battery systems, energy management platforms, and grid-interactive storage solutions for residential applications. The company develops integrated battery storage, smart energy management software, and backup power systems. Their platforms optimize solar energy storage, provide grid services, and deliver reliable backup power for residential and small commercial market segments.",
     "description_html": "",
     "documentation_html": "",
-    "supported_device_types": [
-      "battery"
-    ]
+    "supported_device_types": ["battery"]
   },
   {
     "id": "66cf780a248284b59a82b93d",
@@ -4288,10 +4247,7 @@
     "is_featured_on_home_page": false,
     "source": "direct",
     "about": "Generac manufactures backup power systems, energy storage solutions, and smart grid technology for residential and commercial applications. The company produces standby generators, home battery systems, and energy management platforms. Their products integrate renewable energy sources with backup power capabilities, providing comprehensive energy solutions for homes, businesses, and critical infrastructure applications.",
-    "supported_device_types": [
-      "inverter",
-      "battery"
-    ]
+    "supported_device_types": ["inverter", "battery"]
   },
   {
     "id": "6602ef7c0c3669c8ce19c287",
@@ -4390,9 +4346,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "thermostat"
-    ]
+    "supported_device_types": ["thermostat"]
   },
   {
     "id": "6602ef910c3669c8ce19c2a9",
@@ -4491,9 +4445,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "thermostat"
-    ]
+    "supported_device_types": ["thermostat"]
   },
   {
     "id": "6602efa80c3669c8ce19c2cb",
@@ -4592,9 +4544,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6602efbd0c3669c8ce19c2ea",
@@ -4693,9 +4643,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "662839092433e1e272107a76",
@@ -4794,9 +4742,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282cb82433e1e272107780",
@@ -4895,9 +4841,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282cd12433e1e27210779f",
@@ -4996,9 +4940,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282cec2433e1e2721077be",
@@ -5097,9 +5039,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282d012433e1e2721077dd",
@@ -5198,9 +5138,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282d232433e1e2721077fc",
@@ -5299,9 +5237,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282d352433e1e27210781b",
@@ -5400,9 +5336,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282d452433e1e27210783a",
@@ -5501,9 +5435,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282d602433e1e272107859",
@@ -5602,9 +5534,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282d782433e1e272107878",
@@ -5703,9 +5633,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282d8d2433e1e272107897",
@@ -5804,9 +5732,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282da82433e1e2721078b9",
@@ -5905,9 +5831,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "66282dbc2433e1e2721078d8",
@@ -6006,9 +5930,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "67f411f50e797c99f937533f",
@@ -6109,9 +6031,7 @@
     "source": "direct",
     "website_url": "https://www.savant.com",
     "about": "Savant manufactures smart home automation systems, energy management platforms, and integrated control solutions for luxury residential applications. The company produces whole-home automation hardware, energy monitoring software, and smart grid integration systems. Their platforms control lighting, climate, security, and energy systems while optimizing consumption and integrating renewable energy sources for high-end residential markets.",
-    "supported_device_types": [
-      "battery"
-    ]
+    "supported_device_types": ["battery"]
   },
   {
     "id": "66282dd12433e1e2721078f7",
@@ -6210,9 +6130,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "thermostat"
-    ]
+    "supported_device_types": ["thermostat"]
   },
   {
     "id": "662835dc2433e1e272107941",
@@ -6311,9 +6229,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "662835fc2433e1e272107960",
@@ -6412,10 +6328,7 @@
     "about": "Sol-Ark manufactures hybrid solar inverters, battery storage systems, and comprehensive energy management platforms for residential and commercial applications. The company produces multi-mode inverters, lithium battery systems, and smart energy monitoring software. Their products integrate solar generation, battery storage, and grid connectivity to provide complete energy independence solutions.",
     "description_html": "",
     "documentation_html": "",
-    "supported_device_types": [
-      "inverter",
-      "battery"
-    ]
+    "supported_device_types": ["inverter", "battery"]
   },
   {
     "id": "662839222433e1e272107a95",
@@ -6799,10 +6712,7 @@
     "website_url": "https://www.solaredge.com/us/",
     "source": "direct",
     "about": "SolarEdge develops smart inverter platforms, energy monitoring software, and power optimization solutions for solar installations. The company provides advanced inverter technology, energy storage integration, and comprehensive monitoring systems. Their platforms optimize solar energy production, enable grid services, and provide detailed performance analytics for residential, commercial, and utility-scale solar applications across global markets.",
-    "supported_device_types": [
-      "inverter",
-      "battery"
-    ]
+    "supported_device_types": ["inverter", "battery"]
   },
   {
     "id": "67f411160e797c99f937318f",
@@ -9156,12 +9066,7 @@
       }
     },
     "about": "Tesla designs and manufactures electric vehicles, energy storage systems, and solar energy products for residential, commercial, and utility-scale applications. The company produces battery electric vehicles, home battery systems, solar panels, and charging infrastructure. Their integrated ecosystem includes vehicle-to-grid technology, energy management software, and comprehensive renewable energy solutions across multiple market segments.",
-    "supported_device_types": [
-      "vehicle",
-      "charger",
-      "battery",
-      "inverter"
-    ]
+    "supported_device_types": ["vehicle", "charger", "battery", "inverter"]
   },
   {
     "id": "6633f24925a8c779bf697b90",
@@ -9365,9 +9270,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "662836442433e1e2721079bd",
@@ -9466,9 +9369,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6628365c2433e1e2721079dc",
@@ -9567,9 +9468,7 @@
     "description_html": "",
     "documentation_html": "",
     "is_featured_on_home_page": false,
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   },
   {
     "id": "6628366f2433e1e2721079fb",
@@ -9669,8 +9568,6 @@
     "is_featured_on_home_page": false,
     "source": "smartcar",
     "about": "Volvo produces electric vehicles, charging infrastructure, and energy management systems with focus on safety and sustainability. The Swedish manufacturer develops battery electric vehicles, plug-in hybrids, and smart charging solutions. Their products integrate advanced battery technology and energy recovery systems designed for residential, commercial, and fleet applications across premium market segments globally.",
-    "supported_device_types": [
-      "vehicle"
-    ]
+    "supported_device_types": ["vehicle"]
   }
 ]

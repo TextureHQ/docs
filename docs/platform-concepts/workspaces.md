@@ -6,7 +6,7 @@ sidebar_position: 9
 
 Workspaces are a way to organize your projects and their resources. 
 
-Each workspace is its own encapsulated environment with its own [API keys](/docs/api/keys), [Devices](devices), [Destinations](destinations), etc. This allows for the developer to have the flexibility they need to play, test, and integrate with the Texture Platform and API.
+Each workspace is its own encapsulated environment with its own [API keys](/api/keys), [Devices](devices), [Destinations](destinations), etc. This allows for the developer to have the flexibility they need to play, test, and integrate with the Texture Platform and API.
 
 By default, Workspaces are shared with all Members of an Organization.
 

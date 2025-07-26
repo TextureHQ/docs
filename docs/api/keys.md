@@ -22,7 +22,7 @@ As their name implies they must be kept secret, so they are never to be used in 
 
 These keys are alright to be used publicly. Again, you can create these yourself. 
 
-They can be used in websites, mobile apps, and other front end applications. They are primarily used in connection with our Connect interface for the end user to connect their device(s) and thus you can use them to [create a connect link](/docs/sources/texture-connect).
+They can be used in websites, mobile apps, and other front end applications. They are primarily used in connection with our Connect interface for the end user to connect their device(s) and thus you can use them to [create a connect link](/integrations/texture-connect).
 
 They cannot be used to run any commands on any device, to retrieve any device data, or do pretty much anything else. They are only for creating Connect links. In this way they are safe to put into a web application, mobile application, etc. because they cannot be used to do anything destructive or to access any sensitive information.
 
@@ -34,4 +34,4 @@ When you authenticate by creating a link session, you will receive back to your 
 
 This scoped key is keyed only to allow access to that specific users' devices and so it is ideal for use in a client application. If this key is used to access any other device that is not this user's, it will get a 403 response.
 
-More on [Scoped Keys](/docs/sources/scoped-key)
+More on [Scoped Keys](/integrations/scoped-key)

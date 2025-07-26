@@ -3,20 +3,28 @@
  * from Payload CMS. It creates MDX files for each manufacturer in the docs.
  */
 
-const fs = require('fs');
-const path = require('path');
-const { fetchManufacturers, enrichManufacturersWithDeviceTypes } = require('./fetchManufacturers');
+const fs = require("fs");
+const path = require("path");
+const {
+  fetchManufacturers,
+  enrichManufacturersWithDeviceTypes,
+} = require("./fetchManufacturers");
 
-const DOCS_DIR = path.join(process.cwd(), 'docs', 'sources', 'manufacturers');
-const DATA_FILE = path.join(process.cwd(), 'src', 'data', 'manufacturers.json');
+const DOCS_DIR = path.join(
+  process.cwd(),
+  "docs",
+  "integrations",
+  "manufacturers"
+);
+const DATA_FILE = path.join(process.cwd(), "src", "data", "manufacturers.json");
 
 // Map device types to human-readable names
 const deviceTypeDisplayNames = {
-  'battery': 'Batteries',
-  'charger': 'EV Chargers',
-  'inverter': 'Solar Inverters',
-  'thermostat': 'Smart Thermostats',
-  'vehicle': 'Electric Vehicles'
+  battery: "Batteries",
+  charger: "EV Chargers",
+  inverter: "Solar Inverters",
+  thermostat: "Smart Thermostats",
+  vehicle: "Electric Vehicles",
 };
 
 /**
@@ -26,42 +34,60 @@ const deviceTypeDisplayNames = {
  */
 function generateManufacturerPage(manufacturer) {
   const supportLevelEmoji = {
-    'production': '✅',
-    'development': '🔨',
-    'planned': '🗓️',
-    'blocked': '🚫'
+    production: "✅",
+    development: "🔨",
+    planned: "🗓️",
+    blocked: "🚫",
   };
-  
+
   const supportLevelDescription = {
-    'production': 'Production-ready, fully supported integration',
-    'development': 'Integration currently in development',
-    'planned': 'Integration planned for the future',
-    'blocked': 'Integration blocked by the manufacturer'
+    production: "Production-ready, fully supported integration",
+    development: "Integration currently in development",
+    planned: "Integration planned for the future",
+    blocked: "Integration blocked by the manufacturer",
   };
-  
-  const deviceTypesList = manufacturer.supported_device_types && manufacturer.supported_device_types.length > 0
-    ? manufacturer.supported_device_types
-        .map(type => deviceTypeDisplayNames[type] || type)
-        .join(', ')
-    : 'None reported';
-  
+
+  const deviceTypesList =
+    manufacturer.supported_device_types &&
+    manufacturer.supported_device_types.length > 0
+      ? manufacturer.supported_device_types
+          .map((type) => deviceTypeDisplayNames[type] || type)
+          .join(", ")
+      : "None reported";
+
   return `---
 id: ${manufacturer.slug}
 title: ${manufacturer.name}
 sidebar_position: 3
 ---
 
+import { BackLink } from '@components/BackLink';
+
+<BackLink to="/integrations/manufacturers" label="Supported Manufacturers" />
+
 # ${manufacturer.name}
 
-${manufacturer.description || `${manufacturer.name} is a manufacturer of energy devices supported by Texture.`}
+${
+  manufacturer.description ||
+  `${manufacturer.name} is a manufacturer of energy devices supported by Texture.`
+}
 
-${manufacturer.website ? `**Website**: [${manufacturer.website}](${manufacturer.website})` : ''}
+${
+  manufacturer.website
+    ? `**Website**: [${manufacturer.website}](${manufacturer.website})`
+    : ""
+}
 
 ## Support Status
 
-**Support Level**: ${supportLevelEmoji[manufacturer.support_level] || ''} ${supportLevelDescription[manufacturer.support_level] || manufacturer.support_level}
+**Support Level**: ${supportLevelEmoji[manufacturer.support_level] || ""} ${
+    supportLevelDescription[manufacturer.support_level] ||
+    manufacturer.support_level
+  }
 
-**Grid Services Support**: ${manufacturer.supports_grid_services ? '✅ Supported' : '❌ Not supported'}
+**Grid Services Support**: ${
+    manufacturer.supports_grid_services ? "✅ Supported" : "❌ Not supported"
+  }
 
 ## Supported Device Types
 
@@ -69,7 +95,9 @@ ${deviceTypesList}
 
 ## Integration Details
 
-${manufacturer.name} devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
+${
+  manufacturer.name
+} devices are integrated into the Texture platform using our standard OEM integration approach. We never use web scraping or reverse engineering in our device integrations.
 
 `;
 }
@@ -90,7 +118,7 @@ sidebar_position: 1
 
 Texture works with the following manufacturers to provide integrations for their devices. We work directly with manufacturers to build OEM Partnership APIs with well-documented access to device capabilities.
 
-${manufacturers.map(m => `- [${m.name}](./${m.slug})`).join('\n')}
+${manufacturers.map((m) => `- [${m.name}](./${m.slug})`).join("\n")}
 
 ## Our Integration Approach
 
@@ -117,14 +145,18 @@ If you are a customer with a request for a specific manufacturer or device, plea
  * @returns {string}
  */
 function generateCategoryJson() {
-  return JSON.stringify({
-    "label": "Manufacturers",
-    "position": 5,
-    "link": {
-      "type": "generated-index",
-      "description": "Browse all manufacturers supported by Texture"
-    }
-  }, null, 2);
+  return JSON.stringify(
+    {
+      label: "Manufacturers",
+      position: 5,
+      link: {
+        type: "generated-index",
+        description: "Browse all manufacturers supported by Texture",
+      },
+    },
+    null,
+    2
+  );
 }
 
 async function main() {
@@ -133,51 +165,55 @@ async function main() {
     if (!fs.existsSync(DOCS_DIR)) {
       fs.mkdirSync(DOCS_DIR, { recursive: true });
     }
-    
+
     // Check if we already have the data file
     let manufacturers;
     if (fs.existsSync(DATA_FILE)) {
       // Use cached data
-      const data = fs.readFileSync(DATA_FILE, 'utf8');
+      const data = fs.readFileSync(DATA_FILE, "utf8");
       manufacturers = JSON.parse(data);
     } else {
       // Fetch fresh data
       let fetchedManufacturers = await fetchManufacturers();
-      manufacturers = await enrichManufacturersWithDeviceTypes(fetchedManufacturers);
-      
+      manufacturers = await enrichManufacturersWithDeviceTypes(
+        fetchedManufacturers
+      );
+
       // Create data directory if needed
       const dataDir = path.dirname(DATA_FILE);
       if (!fs.existsSync(dataDir)) {
         fs.mkdirSync(dataDir, { recursive: true });
       }
-      
+
       // Save the data
       fs.writeFileSync(DATA_FILE, JSON.stringify(manufacturers, null, 2));
     }
-    
+
     // Generate category JSON
     fs.writeFileSync(
-      path.join(DOCS_DIR, '_category_.json'),
+      path.join(DOCS_DIR, "_category_.json"),
       generateCategoryJson()
     );
-    
+
     // Generate index page
     fs.writeFileSync(
-      path.join(DOCS_DIR, 'index.md'),
+      path.join(DOCS_DIR, "index.md"),
       generateIndexPage(manufacturers)
     );
-    
+
     // Generate individual manufacturer pages
-    manufacturers.forEach(manufacturer => {
+    manufacturers.forEach((manufacturer) => {
       fs.writeFileSync(
         path.join(DOCS_DIR, `${manufacturer.slug}.md`),
         generateManufacturerPage(manufacturer)
       );
     });
-    
-    console.log(`Successfully generated ${manufacturers.length} manufacturer pages in ${DOCS_DIR}`);
+
+    console.log(
+      `Successfully generated ${manufacturers.length} manufacturer pages in ${DOCS_DIR}`
+    );
   } catch (error) {
-    console.error('Failed to generate manufacturer pages:', error);
+    console.error("Failed to generate manufacturer pages:", error);
     process.exit(1);
   }
 }

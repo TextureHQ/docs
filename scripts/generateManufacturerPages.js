@@ -8,7 +8,7 @@ const path = require('path');
 const axios = require('axios');
 
 const PAYLOAD_CMS_URL = 'https://device.cms.texture.energy';
-const DOCS_DIR = path.join(__dirname, '..', 'docs', 'sources', 'manufacturers');
+const DOCS_DIR = path.join(__dirname, '..', 'docs', 'integrations', 'manufacturers');
 const DATA_DIR = path.join(__dirname, '..', 'src', 'data');
 const DATA_FILE = path.join(DATA_DIR, 'manufacturers.json');
 
@@ -17,6 +17,7 @@ const DATA_FILE = path.join(DATA_DIR, 'manufacturers.json');
  */
 function getStatusTag(supportLevel) {
   const supportLevelText = {
+    
     'production': 'Production Ready',
     'development': 'In Development', 
     'planned': 'Planned',
@@ -484,9 +485,14 @@ function generateManufacturerPage(manufacturer) {
   
   return `---
 id: ${manufacturer.slug}
-title: ${manufacturer.name}
 sidebar_position: 3
 ---
+
+import { BackLink } from '@components/BackLink';
+
+<BackLink to="/integrations/manufacturers/supported-manufacturers" label="Supported Manufacturers" />
+
+# ${manufacturer.name}
 
 ${heroSection}
 

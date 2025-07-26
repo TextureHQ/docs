@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 ---
 
 # Overview
@@ -40,7 +39,7 @@ Once this is achieved, every platform that offers only Integrations as a capabil
 
 ## Retrieving Telemetry Data
 
-We have a whole breakout on [Polling](/docs/devices/polling) so we won't go into depth here but that is how we receive telemetry data from most devices.
+We have a whole breakout on [Polling](/platform-concepts/devices#polling) so we won't go into depth here but that is how we receive telemetry data from most devices.
 
 When we originally built the Texture Platform, we naively assumed that most manufacturers would support some sort of push mechanism for updates. In reality, almost none do today, so we have built out a rather sophisticated polling capability to retrieve data on a regular interval. 
 

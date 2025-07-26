@@ -57,19 +57,23 @@ const config: Config = {
       {
         redirects: [
           {
-            to: "/docs/sources/manufacturers",
+            to: "/overview/welcome",
+            from: "/",
+          },
+          {
+            to: "/integrations/manufacturers/supported-manufacturers",
             from: "/docs/devices-1",
           },
           {
-            to: "/docs/sources/manufacturers",
+            to: "/integrations/manufacturers/supported-manufacturers",
             from: "/docs/connections/supported-devices",
           },
           {
-            to: "/docs/sources/manufacturers",
+            to: "/integrations/manufacturers/supported-manufacturers",
             from: "/docs/sources/supported-devices",
           },
           {
-            to: "/docs/devices/polling",
+            to: "/platform-concepts/devices#polling",
             from: "/docs/platform-concepts/polling",
           },
         ],
@@ -97,6 +101,9 @@ const config: Config = {
             }),
           ],
           resolve: {
+            alias: {
+              "@components": path.resolve(__dirname, "src/components"),
+            },
             fallback: {
               buffer: require.resolve("buffer"),
               stream: false,
@@ -121,6 +128,8 @@ const config: Config = {
           // Add the following lines for the "Edit" functionality
           editUrl: "https://github.com/texturehq/docs/tree/main/",
           editLocalizedFiles: true,
+          routeBasePath: "/",
+          path: "docs",
         },
         blog: {
           showReadingTime: true,
@@ -151,6 +160,7 @@ const config: Config = {
         alt: "Texture Docs Logo",
         src: "img/docs-logo.svg",
         srcDark: "img/docs-logo__dark.svg",
+        href: "/overview/welcome",
       },
       items: [
         {
@@ -161,7 +171,7 @@ const config: Config = {
         },
         { to: "/api", label: "API Reference", position: "left" },
         {
-          to: "/docs/sources/manufacturers",
+          to: "/integrations/manufacturers",
           label: "Supported Manufacturers",
           position: "left",
         },

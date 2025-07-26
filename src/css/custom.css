@@ -688,18 +688,18 @@ blockquote {
 
 /* Welcome Page Full-Width Hero */
 @media (min-width: 997px) {
-  html.docs-doc-id-home\/welcome
+  html.docs-doc-id-overview\/welcome
     .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
     max-width: none;
   }
 }
 
-html.docs-doc-id-home\/welcome div.theme-doc-markdown header:first-child {
+html.docs-doc-id-overview\/welcome div.theme-doc-markdown header:first-child {
   display: none;
 }
 
 /* Welcome page H2 overrides to inherit global styles */
-html.docs-doc-id-home\/welcome h2 {
+html.docs-doc-id-overview\/welcome h2 {
   font-size: var(--font-size-h2) !important;
   line-height: var(--line-height-h2) !important;
   margin-top: var(--heading-margin-top-h2) !important;
@@ -709,7 +709,7 @@ html.docs-doc-id-home\/welcome h2 {
 }
 
 /* Welcome page H3 overrides to inherit global styles */
-html.docs-doc-id-home\/welcome h3 {
+html.docs-doc-id-overview\/welcome h3 {
   font-size: var(--font-size-h3) !important;
   line-height: var(--line-height-h3) !important;
   margin-top: var(--heading-margin-top-h3) !important;
@@ -720,13 +720,13 @@ html.docs-doc-id-home\/welcome h3 {
 
 /* Mobile responsive overrides for welcome page */
 @media (max-width: 768px) {
-  html.docs-doc-id-home\/welcome h2 {
+  html.docs-doc-id-overview\/welcome h2 {
     font-size: var(--font-size-h2-mobile) !important;
     margin-top: var(--heading-margin-top-h2-mobile) !important;
     margin-bottom: var(--heading-margin-bottom-h2-mobile) !important;
   }
 
-  html.docs-doc-id-home\/welcome h3 {
+  html.docs-doc-id-overview\/welcome h3 {
     font-size: var(--font-size-h3-mobile) !important;
     margin-top: var(--heading-margin-top-h3-mobile) !important;
     margin-bottom: var(--heading-margin-bottom-h3-mobile) !important;
@@ -734,15 +734,15 @@ html.docs-doc-id-home\/welcome h3 {
 }
 
 /* Card heading overrides - remove top margin for proper card spacing */
-html.docs-doc-id-home\/welcome .action-card h3,
-html.docs-doc-id-home\/welcome .quick-setup-card h3,
-html.docs-doc-id-home\/welcome .concept-card h3,
-html.docs-doc-id-home\/welcome .help-card h3 {
+html.docs-doc-id-overview\/welcome .action-card h3,
+html.docs-doc-id-overview\/welcome .quick-setup-card h3,
+html.docs-doc-id-overview\/welcome .concept-card h3,
+html.docs-doc-id-overview\/welcome .help-card h3 {
   margin-top: 0 !important;
 }
 
 /* Section H2s should keep their top margin for proper section spacing */
-html.docs-doc-id-home\/welcome .row h2 {
+html.docs-doc-id-overview\/welcome .row h2 {
   margin-top: var(--heading-margin-top-h2) !important;
 }
 
@@ -1344,56 +1344,16 @@ table tr:nth-child(odd) {
 }
 
 /* ==========================================================================
-   BREADCRUMBS STYLING
+   BREADCRUMBS - Hide default Docusaurus breadcrumbs
    ========================================================================== */
 
-/* Professional and elegant breadcrumbs */
+/* Hide all Docusaurus breadcrumbs globally */
 .breadcrumbs {
-  margin: 0 0 1rem 0;
-  padding: 0;
-  font-size: 0.875rem;
-  color: var(--ifm-color-emphasis-600);
+  display: none;
 }
 
-.breadcrumbs__item {
-  display: inline-flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.breadcrumbs__item:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
-.breadcrumbs__link {
-  color: var(--ifm-color-emphasis-600);
-  text-decoration: none;
-  transition: none;
-  font-weight: 400;
-}
-
-.breadcrumbs__link:hover {
-  color: var(--ifm-color-emphasis-800);
-  text-decoration: none;
-}
-
-.breadcrumbs__item--active .breadcrumbs__link {
-  color: var(--ifm-color-emphasis-900);
-  font-weight: 600;
-  background: none;
-  padding: 0;
-  border-radius: 0;
-}
-
-.breadcrumbs__separator {
-  color: var(--ifm-color-emphasis-400);
-  margin: 0 0.5rem;
-  font-size: 0.75rem;
-}
-
-/* Hide breadcrumbs - not needed for simple section/page structure */
-.breadcrumbs {
+/* Hide sidebar items with the 'hidden' class */
+.menu__list-item.hidden {
   display: none;
 }
 
@@ -1702,27 +1662,6 @@ html[data-theme="dark"] .markdown > p {
   background-color: var(--ifm-color-emphasis-200);
   color: #b4b9ff;
   border-left-color: #b4b9ff;
-}
-
-/* Dark Mode Breadcrumbs */
-[data-theme="dark"] .breadcrumbs {
-  color: var(--ifm-color-emphasis-500);
-}
-
-[data-theme="dark"] .breadcrumbs__link {
-  color: var(--ifm-color-emphasis-500);
-}
-
-[data-theme="dark"] .breadcrumbs__link:hover {
-  color: var(--ifm-color-emphasis-300);
-}
-
-[data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {
-  color: var(--ifm-color-emphasis-200);
-}
-
-[data-theme="dark"] .breadcrumbs__separator {
-  color: var(--ifm-color-emphasis-600);
 }
 
 /* ==========================================================================

@@ -192,7 +192,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
                         />
                       ) : null}
                       <a
-                        href={`/docs/sources/manufacturers/${manufacturer.slug}`}
+                        href={`/integrations/manufacturers/${manufacturer.slug}`}
                         className="manufacturer-link"
                       >
                         {manufacturer.name}
@@ -277,8 +277,8 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         }
 
         .filter-button.active {
-          background-color: #3b82f6;
-          border-color: #3b82f6;
+          background-color: var(--brand-color);
+          border-color: var(--brand-color);
           color: #ffffff;
         }
 
@@ -461,8 +461,8 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         }
 
         [data-theme="dark"] .filter-button.active {
-          background-color: #60a5fa;
-          border-color: #60a5fa;
+          background-color: var(--brand-color);
+          border-color: var(--brand-color);
           color: #ffffff;
         }
 

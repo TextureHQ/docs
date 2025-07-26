@@ -1,5 +1,4 @@
 ---
-sidebar_position: 5
 ---
 
 # Sites
@@ -38,7 +37,7 @@ Sites can be created through several paths in the Texture Platform:
    - This Site becomes the central location for all enrolled devices and program-related data
 
 4. **Texture Connect Flow**
-   - Going through our [Texture Connect](../sources/texture-connect.md) flow to connect a device requires providing an address
+   - Going through our [Texture Connect](../integrations/texture-connect.md) flow to connect a device requires providing an address
    - Once the customer completes the flow, Texture creates a Site at that address and links the newly connected device to it
 
 5. **Data Source Connection**
