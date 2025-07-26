@@ -245,11 +245,7 @@ const sidebars: SidebarsConfig = {
           id: "integrations/manufacturers/lincoln",
           className: "hidden",
         },
-        {
-          type: "doc",
-          id: "integrations/manufacturers/manufacturers",
-          className: "hidden",
-        },
+
         {
           type: "doc",
           id: "integrations/manufacturers/mercedes-benz",

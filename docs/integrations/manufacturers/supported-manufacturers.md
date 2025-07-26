@@ -27,4 +27,4 @@ For a more detailed explanation of why we take this approach, read our blog post
 
 If you are a manufacturer and would like to see your devices supported on the Texture platform, please [let us know](https://www.texturehq.com/contact-us).
 
-If you are a customer with a request for a specific manufacturer or device, please [submit here](https://texture.atlassian.net/servicedesk/customer/portal/2/group/3/create/13).
+If you are a customer with a request for a specific manufacturer or device, please [submit here](https://texture.atlassian.net/servicedesk/customer/portal/2/group/3/create/13). 

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #333; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #666; }
+      .node-label { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; fill: #333; }
+      .node-desc { font-family: Arial, sans-serif; font-size: 10px; fill: #666; }
+      .connection-label { font-family: Arial, sans-serif; font-size: 10px; fill: #666; }
+      .workspace-bg { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 2; rx: 8; }
+      .site-bg { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; rx: 6; }
+      .device-bg { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 1.5; rx: 4; }
+      .meter-bg { fill: #e8f5e8; stroke: #4caf50; stroke-width: 1.5; rx: 4; }
+      .contact-bg { fill: #fff3e0; stroke: #ff9800; stroke-width: 1.5; rx: 4; }
+      .program-bg { fill: #fce4ec; stroke: #e91e63; stroke-width: 1.5; rx: 4; }
+      .region-bg { fill: #f1f8e9; stroke: #8bc34a; stroke-width: 1.5; rx: 4; }
+      .connection-line { stroke: #666; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+      .connection-line-dashed { stroke: #666; stroke-width: 1.5; stroke-dasharray: 5,5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">Texture Network Architecture</text>
+  <text x="400" y="50" text-anchor="middle" class="subtitle">Structured graph of sites, assets, and entities within a workspace</text>
+  
+  <!-- Workspace Container -->
+  <rect x="50" y="80" width="700" height="480" class="workspace-bg"/>
+  <text x="400" y="105" text-anchor="middle" class="node-label">Workspace Network</text>
+  
+  <!-- Regions -->
+  <rect x="80" y="120" width="120" height="60" class="region-bg"/>
+  <text x="140" y="140" text-anchor="middle" class="node-label">Regions</text>
+  <text x="140" y="155" text-anchor="middle" class="node-desc">Geospatial grouping</text>
+  <text x="140" y="170" text-anchor="middle" class="node-desc">Regulatory boundaries</text>
+  
+  <!-- Sites -->
+  <rect x="250" y="120" width="120" height="60" class="site-bg"/>
+  <text x="310" y="140" text-anchor="middle" class="node-label">Sites</text>
+  <text x="310" y="155" text-anchor="middle" class="node-desc">Physical locations</text>
+  <text x="310" y="170" text-anchor="middle" class="node-desc">Homes, facilities, feeders</text>
+  
+  <!-- Devices -->
+  <rect x="420" y="120" width="120" height="60" class="device-bg"/>
+  <text x="480" y="140" text-anchor="middle" class="node-label">Devices</text>
+  <text x="480" y="155" text-anchor="middle" class="node-desc">Controllable assets</text>
+  <text x="480" y="170" text-anchor="middle" class="node-desc">Batteries, HVAC, EVSEs</text>
+  
+  <!-- Meters -->
+  <rect x="590" y="120" width="120" height="60" class="meter-bg"/>
+  <text x="650" y="140" text-anchor="middle" class="node-label">Meters</text>
+  <text x="650" y="155" text-anchor="middle" class="node-desc">Energy flows</text>
+  <text x="650" y="170" text-anchor="middle" class="node-desc">Utility &amp; virtual</text>
+  
+  <!-- Contacts -->
+  <rect x="80" y="220" width="120" height="60" class="contact-bg"/>
+  <text x="140" y="240" text-anchor="middle" class="node-label">Contacts</text>
+  <text x="140" y="255" text-anchor="middle" class="node-desc">People &amp; organizations</text>
+  <text x="140" y="270" text-anchor="middle" class="node-desc">Tied to assets</text>
+  
+  <!-- Programs -->
+  <rect x="250" y="220" width="120" height="60" class="program-bg"/>
+  <text x="310" y="240" text-anchor="middle" class="node-label">Programs</text>
+  <text x="310" y="255" text-anchor="middle" class="node-desc">Incentive models</text>
+  <text x="310" y="270" text-anchor="middle" class="node-desc">Participation logic</text>
+  
+  <!-- Enrollments -->
+  <rect x="420" y="220" width="120" height="60" class="program-bg"/>
+  <text x="480" y="240" text-anchor="middle" class="node-label">Enrollments</text>
+  <text x="480" y="255" text-anchor="middle" class="node-desc">Program participation</text>
+  <text x="480" y="270" text-anchor="middle" class="node-desc">Layered logic</text>
+  
+  <!-- Locations -->
+  <rect x="590" y="220" width="120" height="60" class="region-bg"/>
+  <text x="650" y="240" text-anchor="middle" class="node-label">Locations</text>
+  <text x="650" y="255" text-anchor="middle" class="node-desc">Structured addresses</text>
+  <text x="650" y="270" text-anchor="middle" class="node-desc">Physical context</text>
+  
+  <!-- Connections -->
+  <!-- Regions to Sites -->
+  <line x1="200" y1="150" x2="250" y2="150" class="connection-line"/>
+  <text x="225" y="145" text-anchor="middle" class="connection-label">contains</text>
+  
+  <!-- Sites to Devices -->
+  <line x1="370" y1="150" x2="420" y2="150" class="connection-line"/>
+  <text x="395" y="145" text-anchor="middle" class="connection-label">hosts</text>
+  
+  <!-- Sites to Meters -->
+  <line x1="370" y1="165" x2="590" y2="165" class="connection-line"/>
+  <text x="480" y="160" text-anchor="middle" class="connection-label">monitors</text>
+  
+  <!-- Sites to Contacts -->
+  <line x1="310" y1="180" x2="200" y2="220" class="connection-line"/>
+  <text x="255" y="200" text-anchor="middle" class="connection-label">owned by</text>
+  
+  <!-- Sites to Programs -->
+  <line x1="310" y1="180" x2="370" y2="220" class="connection-line"/>
+  <text x="340" y="200" text-anchor="middle" class="connection-label">participates in</text>
+  
+  <!-- Programs to Enrollments -->
+  <line x1="370" y1="250" x2="420" y2="250" class="connection-line"/>
+  <text x="395" y="245" text-anchor="middle" class="connection-label">manages</text>
+  
+  <!-- Sites to Locations -->
+  <line x1="310" y1="180" x2="650" y2="220" class="connection-line-dashed"/>
+  <text x="480" y="200" text-anchor="middle" class="connection-label">located at</text>
+  
+  <!-- Devices to Programs -->
+  <line x1="480" y1="180" x2="370" y2="220" class="connection-line-dashed"/>
+  <text x="425" y="200" text-anchor="middle" class="connection-label">enrolled in</text>
+  
+  <!-- Usage Examples -->
+  <rect x="80" y="320" width="640" height="120" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="4"/>
+  <text x="400" y="340" text-anchor="middle" class="node-label">How Networks Are Used</text>
+  
+  <text x="100" y="365" class="node-desc">• Workflow targeting: Scope actions to relevant sites, fleets, or participants</text>
+  <text x="100" y="380" class="node-desc">• Agent logic: Detect change across graph boundaries</text>
+  <text x="100" y="395" class="node-desc">• Data access: Share structured context with dashboards, partners, or analytics</text>
+  <text x="100" y="410" class="node-desc">• Control orchestration: Group assets for dispatch or automated action</text>
+  <text x="100" y="425" class="node-desc">• Traverse relationships: From region → sites → devices → contacts → enrollments</text>
+</svg> 

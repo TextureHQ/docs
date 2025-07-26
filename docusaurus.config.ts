@@ -61,15 +61,15 @@ const config: Config = {
             from: "/",
           },
           {
-            to: "/integrations/manufacturers/supported-manufacturers",
+            to: "/integrations/manufacturers",
             from: "/docs/devices-1",
           },
           {
-            to: "/integrations/manufacturers/supported-manufacturers",
+            to: "/integrations/manufacturers",
             from: "/docs/connections/supported-devices",
           },
           {
-            to: "/integrations/manufacturers/supported-manufacturers",
+            to: "/integrations/manufacturers",
             from: "/docs/sources/supported-devices",
           },
           {
