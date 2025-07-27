@@ -36,7 +36,6 @@ const sidebars: SidebarsConfig = {
       items: [
         "platform-concepts/overview",
         "platform-concepts/network",
-        "platform-concepts/sources",
         "platform-concepts/sites",
         "platform-concepts/contacts",
         "platform-concepts/leads",

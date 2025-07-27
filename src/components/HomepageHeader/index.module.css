@@ -25,6 +25,15 @@
   color: #0c1452 !important;
 }
 
+/* Mobile responsive typography for hero title */
+@media (max-width: 768px) {
+  .hero h1,
+  .heroTitle {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
 @media (min-width: 72rem) {
   .hero {
     height: 400px;
@@ -80,4 +89,11 @@
   padding: 0;
   margin: 0;
   color: #0c1452 !important;
+}
+
+/* Mobile responsive typography for hero subtitle */
+@media (max-width: 768px) {
+  .heroSubtitle {
+    font-size: 16px;
+  }
 }
