@@ -33,7 +33,7 @@ h6,
 .markdown .page-subtitle {
   font-size: 1.25rem;
   font-weight: var(--font-weight-normal);
-  color: #6b7280;
+  color: var(--content-muted-color);
   line-height: 1.6;
   margin-top: -0.75rem;
   margin-bottom: 2.5rem;
@@ -225,7 +225,7 @@ h6,
 /* Horizontal Rules */
 .markdown hr {
   border: none;
-  border-top: 1px solid #d1d5db;
+  border-top: 1px solid var(--hr-color);
   margin: var(--spacing-xl) 0;
   height: 1px;
 }
@@ -342,15 +342,15 @@ h6,
   top: 0;
   width: 1.5rem;
   height: 1.5rem;
-  background: #e5e7eb;
-  color: #4b5563;
+  background: var(--list-number-bg);
+  color: var(--list-number-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.875rem;
   font-weight: var(--font-weight-bold);
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--list-number-border);
   margin-right: 0.75rem;
 }
 
@@ -369,7 +369,7 @@ h6,
   top: 0.5rem;
   width: 0.5rem;
   height: 0.5rem;
-  background: #6b7280;
+  background: var(--list-bullet-color);
   border-radius: 50%;
   margin-right: 0.75rem;
 }
@@ -451,8 +451,9 @@ h6,
 /* Markdown Content Colors */
 .markdown > pre,
 .markdown > ul,
+.markdown > ol,
 .markdown > p {
-  color: #3c4257;
+  color: var(--content-color);
 }
 
 /* Global link styling with increased underline offset */

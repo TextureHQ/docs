@@ -11,42 +11,46 @@
 
 /* Navbar Styling - OpenAI-style muted background */
 .navbar {
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #e5e7eb;
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--navbar-border);
   box-shadow: none;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .navbar__inner {
-  background-color: #f5f5f5;
+  background-color: var(--navbar-bg);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar__brand {
-  color: #374151;
+  color: var(--navbar-brand-color);
 }
 
 .navbar__item {
-  color: #6b7280;
+  color: var(--navbar-link-color);
   font-weight: 500;
 }
 
 .navbar__item:hover {
-  color: #374151;
+  color: var(--navbar-link-hover-color);
   background: none;
 }
 
 .navbar__link {
-  color: #6b7280;
+  color: var(--navbar-link-color);
   font-weight: 500;
 }
 
 .navbar__link:hover {
-  color: #374151;
+  color: var(--navbar-link-hover-color);
   background: none;
 }
 
 /* Dark mode toggle styling - ensure consistent color and spacing */
 .clean-btn {
-  color: #6b7280;
+  color: var(--navbar-toggle-color);
   font-weight: 500;
   padding: 8px;
   border-radius: 6px;
@@ -59,8 +63,8 @@
 }
 
 .clean-btn:hover {
-  color: #374151;
-  background-color: #e5e7eb;
+  color: var(--navbar-toggle-hover-color);
+  background-color: var(--navbar-toggle-hover-bg);
 }
 
 /* Ensure dark mode toggle icon inherits the correct color */
@@ -94,6 +98,113 @@
 
   /* Hide mobile menu toggle on desktop */
   .navbar__toggle {
+    display: none;
+  }
+}
+
+/* Mobile Navbar Adjustments */
+@media (max-width: 996px) {
+  .navbar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navbar__brand {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar__items {
+    gap: 4px;
+  }
+
+  .navbar__items--right {
+    gap: 8px;
+  }
+
+  /* Ensure mobile menu toggle is visible */
+  .navbar__toggle {
+    display: block;
+  }
+
+  /* Adjust search button for mobile */
+  .DocSearch-Button {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .DocSearch-Button-Placeholder {
+    display: none;
+  }
+
+  /* Mobile Sidebar Adjustments */
+  .navbar-sidebar {
+    padding: 1rem;
+    background-color: var(--sidebar-bg);
+    border-right: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Remove left padding from mobile sidebar items with proper specificity */
+  .navbar-sidebar .navbar-sidebar_item {
+    padding-left: 0;
+  }
+
+  /* Also target the menu container inside sidebar */
+  .navbar-sidebar .menu {
+    padding-left: 0;
+  }
+
+  /* Target any other potential padding sources */
+  .navbar-sidebar .menu__list {
+    padding-left: 0;
+  }
+
+  /* Mobile sidebar menu items */
+  .navbar-sidebar .menu__link {
+    padding: 12px 16px;
+    margin: 2px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--sidebar-link-color);
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+  }
+
+  .navbar-sidebar .menu__link:hover {
+    background-color: var(--sidebar-link-hover-bg);
+    color: var(--sidebar-link-hover-color);
+  }
+
+  .navbar-sidebar .menu__link--active {
+    background-color: var(--sidebar-link-active-bg);
+    color: var(--sidebar-link-active-color);
+    font-weight: 600;
+  }
+
+  /* Mobile sidebar section headers */
+  .navbar-sidebar .menu__list-item--collapsible .menu__link {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--sidebar-section-header-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Mobile sidebar submenu items */
+  .navbar-sidebar .menu__list-item .menu__link {
+    padding: 8px 16px 8px 32px;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  /* Hide mobile sidebar back button - not needed with X close button */
+  .navbar-sidebar__back {
     display: none;
   }
 }
@@ -167,8 +278,8 @@ nav.menu,
 .navbar-sidebar {
   padding-bottom: 3rem;
   padding-left: 0;
-  background-color: #f5f5f5;
-  border-right: 1px solid #e5e7eb;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
 }
 
 /* Comprehensive chevron hiding - highest priority */
@@ -234,7 +345,7 @@ nav.menu,
 
 /* Sidebar Navigation Links */
 .menu__link {
-  color: #374151;
+  color: var(--sidebar-link-color);
   font-weight: 500;
   border-radius: 6px;
   margin: 2px 0;
@@ -243,21 +354,21 @@ nav.menu,
 }
 
 .menu__link:hover {
-  background-color: #e5e5e5;
-  color: #111827;
+  background-color: var(--sidebar-link-hover-bg);
+  color: var(--sidebar-link-hover-color);
   transform: none;
 }
 
 /* Active page links (not section headers) */
 .menu__link--active:not(.menu__link--sublist) {
-  background-color: rgba(68, 74, 225, 0.12);
-  color: var(--ifm-color-primary);
+  background-color: var(--sidebar-link-active-bg);
+  color: var(--sidebar-link-active-color);
   font-weight: 600;
   border: none;
   border-radius: 6px;
   position: relative;
   transition: none;
-  padding-left: 16px;
+  padding-left: 24px;
 }
 
 .menu__link--active:not(.menu__link--sublist)::before {
@@ -293,7 +404,7 @@ nav.menu,
 
 /* Menu headings */
 .menu__list-item--collapsed .menu__link {
-  color: #374151;
+  color: var(--sidebar-section-header-color);
   font-weight: 600;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -310,11 +421,11 @@ nav.menu,
 
 /* Main Section Headers - More Elegant (Override Docusaurus defaults) */
 .menu__list-item--collapsible .menu__link {
-  padding: 4px 12px;
+  padding: 4px 24px;
   border-radius: 4px;
   transition: none;
   background-color: transparent;
-  color: #374151;
+  color: var(--sidebar-section-header-color);
   font-weight: 500;
   font-size: 0.8rem;
   text-transform: none;
@@ -359,7 +470,7 @@ nav.menu,
 .menu__list-item--collapsible .menu__list {
   margin-top: 2px;
   margin-left: 8px;
-  border-left: 1px solid var(--ifm-color-emphasis-200);
+  border-left: 1px solid var(--sidebar-submenu-border);
   padding-left: 12px;
   transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -398,11 +509,11 @@ div.menu__list-item-collapsible {
 
 /* More prominent section labels in left sidebar */
 div.menu__list-item-collapsible .menu__link {
-  padding: 10px 16px;
+  padding: 10px 24px;
   border-radius: 0;
   transition: none;
   background-color: transparent;
-  color: var(--ifm-color-emphasis-800);
+  color: var(--sidebar-section-header-color);
   font-weight: 700;
   font-size: 0.9rem;
   text-transform: none;
@@ -425,17 +536,17 @@ div.menu__list-item-collapsible .menu__link--active {
   background-color: var(--ifm-color-emphasis-100);
   color: var(--ifm-color-emphasis-900);
   font-weight: 700;
-  padding-left: 16px;
+  padding-left: 24px;
 }
 
 /* L2 items - proper hierarchy with smaller indent */
 .menu__list-item .menu__link {
-  padding: 6px 16px;
+  padding: 6px 24px;
   font-size: 0.875rem;
   font-weight: 400;
   text-transform: none;
   letter-spacing: normal;
-  color: #4b5563;
+  color: var(--sidebar-link-color);
   border: none;
   position: relative;
   transition: none;
@@ -451,15 +562,15 @@ div.menu__list-item-collapsible .menu__link--active {
 }
 
 .menu__list-item .menu__link:hover {
-  background-color: #e5e5e5;
-  color: #111827;
+  background-color: var(--sidebar-link-hover-bg);
+  color: var(--sidebar-link-hover-color);
 }
 
 /* Submenu container styling - smaller indent */
 .menu__list-item-collapsible .menu__list {
   margin: 0;
   padding: 0;
-  border-left: 1px solid var(--ifm-color-emphasis-200);
+  border-left: 1px solid var(--sidebar-submenu-border);
   margin-left: 4px;
   transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -559,8 +670,8 @@ div.menu__list-item-collapsible .menu__link--active {
 
 /* DocSearch elegant styling */
 .DocSearch-Button {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: var(--search-bg);
+  border: 1px solid var(--search-border);
   border-radius: 8px;
   padding: 8px 16px;
   width: 280px;
@@ -570,15 +681,15 @@ div.menu__list-item-collapsible .menu__link--active {
 }
 
 .DocSearch-Button:hover {
-  background: #f9fafb;
-  border-color: #d1d5db;
+  background: var(--search-hover-bg);
+  border-color: var(--search-hover-border);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .DocSearch-Button:focus {
   outline: none;
-  border-color: var(--brand-color);
-  box-shadow: 0 0 0 3px rgba(68, 74, 225, 0.1);
+  border-color: var(--search-focus-border);
+  box-shadow: 0 0 0 3px var(--search-focus-shadow);
 }
 
 .DocSearch-Button-Key {
@@ -597,7 +708,7 @@ div.menu__list-item-collapsible .menu__link--active {
 }
 
 .DocSearch-Button-Placeholder {
-  color: #6b7280;
+  color: var(--search-placeholder-color);
   font-size: 14px;
   font-weight: 400;
 }
@@ -622,7 +733,7 @@ div.menu__list-item-collapsible .menu__link--active {
 }
 
 .DocSearch-Button .DocSearch-Search-Icon {
-  color: #9ca3af;
+  color: var(--search-icon-color);
   width: 16px;
   height: 16px;
 }
@@ -653,7 +764,7 @@ div.menu__list-item-collapsible .menu__link--active {
   top: 0;
   bottom: 0;
   width: 1px;
-  background-color: #e5e7eb;
+  background-color: var(--toc-border);
 }
 
 /* TOC Links */
@@ -661,7 +772,7 @@ div.menu__list-item-collapsible .menu__link--active {
   position: relative;
   display: block;
   padding: 0.5rem 0;
-  color: #6b7280;
+  color: var(--toc-link-color);
   text-decoration: none;
   font-size: 0.875rem;
   line-height: 1.4;
@@ -672,17 +783,17 @@ div.menu__list-item-collapsible .menu__link--active {
 
 /* Active Link Styling */
 .theme-doc-toc-desktop .table-of-contents__link--active {
-  color: var(--brand-color);
+  color: var(--toc-link-active-color);
   font-weight: 600;
   border-radius: 6px;
   padding: 0.5rem 0.75rem;
   margin: 0.25rem -0.75rem;
-  border-left: 3px solid var(--brand-color);
+  border-left: 3px solid var(--toc-link-active-border);
 }
 
 /* Hover Effects */
 .theme-doc-toc-desktop .table-of-contents__link:hover {
-  color: #374151;
+  color: var(--toc-link-hover-color);
   text-decoration: none;
 }
 
@@ -691,22 +802,22 @@ div.menu__list-item-collapsible .menu__link--active {
   padding: 6px 12px;
   border-radius: 4px;
   transition: none;
-  color: var(--ifm-color-emphasis-700);
+  color: var(--toc-link-color);
   font-weight: 400;
   margin: 2px 0;
 }
 
 .theme-doc-toc-desktop .table-of-contents__link:hover {
-  background-color: var(--ifm-color-emphasis-100);
-  color: var(--ifm-color-emphasis-900);
+  background-color: var(--toc-link-hover-bg);
+  color: var(--toc-link-hover-color);
   font-weight: 500;
   transform: none;
 }
 
 .theme-doc-toc-desktop .table-of-contents__link--active {
-  color: var(--brand-color);
+  color: var(--toc-link-active-color);
   font-weight: 600;
-  border-left: 3px solid var(--brand-color);
+  border-left: 3px solid var(--toc-link-active-border);
   padding-left: 9px;
 }
 
@@ -791,6 +902,53 @@ div.menu__list-item-collapsible .menu__link--active {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  /* Extra small screen navbar adjustments */
+  .navbar {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .navbar__items {
+    gap: 2px;
+  }
+
+  .navbar__items--right {
+    gap: 4px;
+  }
+
+  .DocSearch-Button {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+
+  /* Extra small screen mobile sidebar adjustments */
+  .navbar-sidebar {
+    padding: 0.75rem;
+  }
+
+  /* Ensure no left padding on smaller screens too */
+  .navbar-sidebar .navbar-sidebar_item {
+    padding-left: 0;
+  }
+
+  .navbar-sidebar .menu__link {
+    padding: 10px 12px;
+    font-size: 0.875rem;
+  }
+
+  .navbar-sidebar .menu__list-item--collapsible .menu__link {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .navbar-sidebar .menu__list-item .menu__link {
+    padding: 6px 12px 6px 24px;
+    font-size: 0.8rem;
+  }
+
+  /* Back button already hidden in larger mobile breakpoint */
 }
 
 /* ==========================================================================

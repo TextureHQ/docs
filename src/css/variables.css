@@ -27,6 +27,75 @@
   --font-color-base: #333333;
   --font-color-heading: #333333;
 
+  /* Content Colors - Light Mode */
+  --content-color: #3c4257;
+  --content-muted-color: #6b7280;
+  --list-bullet-color: #6b7280;
+  --list-number-bg: #e5e7eb;
+  --list-number-color: #4b5563;
+  --list-number-border: #d1d5db;
+  --hr-color: #d1d5db;
+
+  /* Docusaurus Content Colors - Light Mode */
+  --ifm-color-content: #3c4257;
+  --ifm-color-content-secondary: #6b7280;
+  --ifm-color-emphasis-0: #ffffff;
+  --ifm-color-emphasis-100: #f9fafb;
+  --ifm-color-emphasis-200: #f3f4f6;
+  --ifm-color-emphasis-300: #e5e7eb;
+  --ifm-color-emphasis-400: #d1d5db;
+  --ifm-color-emphasis-500: #9ca3af;
+  --ifm-color-emphasis-600: #6b7280;
+  --ifm-color-emphasis-700: #374151;
+  --ifm-color-emphasis-800: #1f2937;
+  --ifm-color-emphasis-900: #111827;
+
+  /* Docusaurus Background Colors - Light Mode */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-color-emphasis-0: #ffffff;
+
+  /* Navigation Colors - Light Mode */
+  --navbar-bg: #f5f5f5;
+  --navbar-border: #e5e7eb;
+  --navbar-brand-color: #374151;
+  --navbar-link-color: #6b7280;
+  --navbar-link-hover-color: #374151;
+  --navbar-toggle-color: #6b7280;
+  --navbar-toggle-hover-color: #374151;
+  --navbar-toggle-hover-bg: #e5e7eb;
+
+  /* Sidebar Colors - Light Mode */
+  --sidebar-bg: #f5f5f5;
+  --sidebar-border: #e5e7eb;
+  --sidebar-section-color: #374151;
+  --sidebar-link-color: #374151;
+  --sidebar-link-hover-color: #111827;
+  --sidebar-link-hover-bg: #e5e5e5;
+  --sidebar-link-active-color: var(--ifm-color-primary);
+  --sidebar-link-active-bg: rgba(68, 74, 225, 0.12);
+  --sidebar-section-header-color: #374151;
+  --sidebar-submenu-border: #e5e7eb;
+
+  /* Table of Contents Colors - Light Mode */
+  --toc-bg: transparent;
+  --toc-border: #e5e7eb;
+  --toc-link-color: #6b7280;
+  --toc-link-hover-color: #374151;
+  --toc-link-hover-bg: #f3f4f6;
+  --toc-link-active-color: var(--brand-color);
+  --toc-link-active-border: var(--brand-color);
+
+  /* Search Colors - Light Mode */
+  --search-bg: #ffffff;
+  --search-border: #e5e7eb;
+  --search-placeholder-color: #6b7280;
+  --search-icon-color: #9ca3af;
+  --search-hover-bg: #f9fafb;
+  --search-hover-border: #d1d5db;
+  --search-focus-border: var(--brand-color);
+  --search-focus-shadow: rgba(68, 74, 225, 0.1);
+
   /* Typography Scale */
   --font-size-h1: 2.5rem;
   --font-size-h2: 1.875rem;
@@ -162,6 +231,75 @@
   --ifm-navbar-link-color: #e5e7eb;
   --font-color-base: #e5e7eb;
   --font-color-heading: #ffffff;
+
+  /* Content Colors - Dark Mode */
+  --content-color: #d1d5db;
+  --content-muted-color: #9ca3af;
+  --list-bullet-color: #9ca3af;
+  --list-number-bg: #374151;
+  --list-number-color: #e5e7eb;
+  --list-number-border: #4b5563;
+  --hr-color: #4b5563;
+
+  /* Docusaurus Content Colors - Dark Mode */
+  --ifm-color-content: #d1d5db;
+  --ifm-color-content-secondary: #9ca3af;
+  --ifm-color-emphasis-0: #1f2937;
+  --ifm-color-emphasis-100: #262626;
+  --ifm-color-emphasis-200: #262626;
+  --ifm-color-emphasis-300: #374151;
+  --ifm-color-emphasis-400: #4b5563;
+  --ifm-color-emphasis-500: #9ca3af;
+  --ifm-color-emphasis-600: #d1d5db;
+  --ifm-color-emphasis-700: #e5e7eb;
+  --ifm-color-emphasis-800: #f3f4f6;
+  --ifm-color-emphasis-900: #f9fafb;
+
+  /* Docusaurus Background Colors - Dark Mode */
+  --ifm-background-color: #1f2937;
+  --ifm-background-surface-color: #262626;
+  --ifm-color-emphasis-0: #1f2937;
+
+  /* Navigation Colors - Dark Mode */
+  --navbar-bg: #1f2937;
+  --navbar-border: #374151;
+  --navbar-brand-color: #f9fafb;
+  --navbar-link-color: #d1d5db;
+  --navbar-link-hover-color: #f9fafb;
+  --navbar-toggle-color: #d1d5db;
+  --navbar-toggle-hover-color: #f9fafb;
+  --navbar-toggle-hover-bg: #374151;
+
+  /* Sidebar Colors - Dark Mode */
+  --sidebar-bg: #1f2937;
+  --sidebar-border: #374151;
+  --sidebar-section-color: #f9fafb;
+  --sidebar-link-color: #d1d5db;
+  --sidebar-link-hover-color: #f9fafb;
+  --sidebar-link-hover-bg: #374151;
+  --sidebar-link-active-color: #b4b9ff;
+  --sidebar-link-active-bg: rgba(180, 185, 255, 0.12);
+  --sidebar-section-header-color: #f9fafb;
+  --sidebar-submenu-border: #374151;
+
+  /* Table of Contents Colors - Dark Mode */
+  --toc-bg: #1f2937;
+  --toc-border: #374151;
+  --toc-link-color: #d1d5db;
+  --toc-link-hover-color: #f9fafb;
+  --toc-link-hover-bg: #262626;
+  --toc-link-active-color: #b4b9ff;
+  --toc-link-active-border: #b4b9ff;
+
+  /* Search Colors - Dark Mode */
+  --search-bg: #1f2937;
+  --search-border: #374151;
+  --search-placeholder-color: #d1d5db;
+  --search-icon-color: #9ca3af;
+  --search-hover-bg: #262626;
+  --search-hover-border: #374151;
+  --search-focus-border: #b4b9ff;
+  --search-focus-shadow: rgba(180, 185, 255, 0.1);
 
   /* Callout Colors - Dark Mode */
   --callout-tip-bg: #064e3b;
