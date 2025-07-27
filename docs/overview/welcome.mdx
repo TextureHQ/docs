@@ -202,6 +202,11 @@ import { WelcomeCard } from '../../src/components/WelcomeCard';
     min-height: 400px;
   }
 
+  /* Dark mode override for hero section */
+  [data-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 50%, #0f172a 100%) !important;
+  }
+
   .hero-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -299,6 +304,19 @@ import { WelcomeCard } from '../../src/components/WelcomeCard';
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   }
 
+  /* Dark mode variants for welcome cards */
+  [data-theme="dark"] .welcome-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+  }
+
+  [data-theme="dark"] .welcome-card-link:hover .welcome-card {
+    background-color: #262626;
+    border: 2px solid var(--ifm-color-primary);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
   .welcome-card__header {
     padding: 2rem 1.5rem 0.75rem;
   }
@@ -344,6 +362,15 @@ import { WelcomeCard } from '../../src/components/WelcomeCard';
     text-decoration: underline;
   }
 
+  /* Dark mode text color variants for welcome cards */
+  [data-theme="dark"] .welcome-card__header h3 {
+    color: #f9fafb;
+  }
+
+  [data-theme="dark"] .welcome-card__body p {
+    color: #d1d5db;
+  }
+
   /* Help Card */
   .help-card {
     background: #f8f9ff;
@@ -367,6 +394,20 @@ import { WelcomeCard } from '../../src/components/WelcomeCard';
     font-size: 1rem;
     color: var(--ifm-color-emphasis-700);
     line-height: 1.6;
+  }
+
+  /* Dark mode variants for help card */
+  [data-theme="dark"] .help-card {
+    background: #1f2937;
+    border: 1px solid #374151;
+  }
+
+  [data-theme="dark"] .help-card__header h3 {
+    color: #f9fafb;
+  }
+
+  [data-theme="dark"] .help-card__body p {
+    color: #d1d5db;
   }
   
   /* Responsive behavior for cards */

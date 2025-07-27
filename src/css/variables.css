@@ -260,6 +260,13 @@
   --ifm-background-surface-color: #262626;
   --ifm-color-emphasis-0: #1f2937;
 
+  /* Welcome Page Hero Overrides - Always Light Mode */
+  --welcome-hero-bg: #f8fffc;
+  --welcome-hero-color: #0c1452;
+  --welcome-hero-border: #efefef;
+  --welcome-hero-title-color: #0c1452;
+  --welcome-hero-subtitle-color: #0c1452;
+
   /* Navigation Colors - Dark Mode */
   --navbar-bg: #1f2937;
   --navbar-border: #374151;

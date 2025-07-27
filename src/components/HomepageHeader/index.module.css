@@ -1,10 +1,10 @@
 /* hero styles */
 
 .hero {
-  background: #F8FFFC;
+  background: #f8fffc !important;
   padding: 0;
-  border-bottom: 1px solid #EFEFEF;
-  color: #0C1452;
+  border-bottom: 1px solid #efefef !important;
+  color: #0c1452 !important;
   margin-bottom: 3rem;
   overflow: hidden;
   position: relative;
@@ -17,10 +17,12 @@
   top: 0;
 }
 
-.hero h1 {
+.hero h1,
+.heroTitle {
   margin-bottom: 1rem;
-  font-family: 'FirsNeue', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "FirsNeue", "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 2.5rem;
+  color: #0c1452 !important;
 }
 
 @media (min-width: 72rem) {
@@ -50,12 +52,14 @@
   }
 }
 
-.left, .right {
+.left,
+.right {
   width: 100%;
 }
 
 @media (min-width: 72rem) {
-  .left, .right {
+  .left,
+  .right {
     width: 50%;
   }
 }
@@ -75,5 +79,5 @@
   font-size: 20px;
   padding: 0;
   margin: 0;
+  color: #0c1452 !important;
 }
-

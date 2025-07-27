@@ -6,6 +6,23 @@
  */
 
 /* ==========================================================================
+   WELCOME PAGE HERO OVERRIDES
+   ========================================================================== */
+
+/* Welcome page hero-section dark mode background override - high specificity */
+html[data-theme="dark"] html.docs-doc-id-overview\/welcome .hero-section,
+html[data-theme="dark"] .docs-doc-id-overview\/welcome .hero-section,
+[data-theme="dark"] html.docs-doc-id-overview\/welcome .hero-section,
+[data-theme="dark"] .docs-doc-id-overview\/welcome .hero-section {
+  background: linear-gradient(
+    135deg,
+    #1f2937 0%,
+    #111827 50%,
+    #0f172a 100%
+  ) !important;
+}
+
+/* ==========================================================================
    TABLE STYLING OVERRIDES
    ========================================================================== */
 
