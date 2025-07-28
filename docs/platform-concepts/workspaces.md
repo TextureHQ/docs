@@ -4,57 +4,76 @@ sidebar_position: 9
 
 # Workspaces
 
-Workspaces are a way to organize your projects and their resources. 
+import { Subtitle } from '@site/src/components/Subtitle';
 
-Each workspace is its own encapsulated environment with its own [API keys](/api/keys), [Devices](devices), [Destinations](destinations), etc. This allows for the developer to have the flexibility they need to play, test, and integrate with the Texture Platform and API.
+<Subtitle>Isolated environments that group resources, roles, and API access within an Organization</Subtitle>
+
+## What is a Workspace?
+
+Workspaces are a way to organize your projects and their resources. Each workspace is its own encapsulated environment with its own [API keys](/api/keys), [Devices](devices), [Destinations](destinations), etc. This allows for the developer to have the flexibility they need to play, test, and integrate with the Texture Platform and API.
 
 By default, Workspaces are shared with all Members of an Organization.
 
-At the Enterprise level, we unlock the ability to create private Workspaces and more rich role-based access control.
-
-## Isolated Environment
-
-By Isolated Environment, we mean that each Workspace has its own set of API keys, Devices, Destinations, etc.
-
-This means that when you connect a Device to one Workspace, it is not available in another Workspace by design.
-
-We want isolation to prevent developers from accidentally sending commands to a production device when they meant to send it to a device in their sandbox environment so this total isolation ensures that can never happen.
-
-We have no way to "move" a Device from one Workspace to another, so if you want to achieve that today, you would have to connect the Device to the new Workspace and then delete it from the old Workspace.
-
 ## Why Workspaces?
-At Texture, we set out to create a best-in-class developer platform.
 
-We believe that Workspaces are a key part of that so that you can ensure that your development, staging, and production environments are separate and secure.
+Workspaces help you build safely and confidently. They keep staging and production environments separate—so testing never impacts real infrastructure.
 
-There is nothing worse than accidentally sending a command to a production device when you meant to send it to a device in your sandbox environment. Workspaces help prevent that.
+Each Workspace is fully isolated:
+
+- **Devices** only exist in one Workspace
+- **API keys** grant access to a single Workspace
+- **Destinations, Commands, and telemetry** are scoped independently
+
+This structure prevents cross-environment mistakes—like accidentally sending a command to a production Device from a test script.
+
+:::caution
+Devices cannot be moved between Workspaces. To migrate a Device, reconnect it in the new Workspace and delete it from the original.
+:::
+
+Workspaces let you:
+
+- Spin up clean environments for testing or demos
+- Safely collaborate across teams or roles
+- Apply strict access control with scoped API tokens
+
+This model supports a clean separation of responsibilities while giving developers room to play, prototype, and operate with confidence.
 
 ## Default Workspaces
-    
-When you create an Organization, you are automatically given two default Workspaces. 
 
-We create one called `production` and another called `sandbox` for you. This helps you get started quickly and will accommodate most basic use cases out of the box.
+When you create an Organization, you are automatically given two default Workspaces. We create one called `production` and another called `sandbox` for you. This helps you get started quickly and will accommodate most basic use cases out of the box.
 
 ## Creating a Workspace
 
-To create a new Workspace, open the Workspace dropdown in the top left corner of the Texture Dashboard and click the "Add Workspace" button. You will be prompted to name your Workspace.
+To create a Workspace:
 
-You can also navigate to Settings > Organization > Workspaces and click the "Create Workspace" button.  
+1. Open the Workspace dropdown in the top-left of the Dashboard
+2. Click **Add Workspace**
+3. Name your Workspace (names must be unique within the Organization)
 
-You can give your Workspace any name you'd like as long as it is unique within your Organization.
+You can also go to **Settings > Organization > Workspaces** and click **Create Workspace**.
 
-We do not enforce any constraints on how many Workspaces you can create. We understand that each team has different needs and we want to support that. Some create Workspaces for each developer, others for each environment, and others for each project. We don't know how you'll use the Texture Platform so we want to give you the flexibility to use it as you see fit.
+:::tip
+There's no limit to how many Workspaces you can create. Some teams create one per developer, others per environment or project.
+:::
 
-## Changing your Workspace
+## Switching Workspaces
 
-You can change your Workspace at any time by using the dropdown in the top left corner of the Texture Dashboard. 
- 
+### How to switch Workspaces
+
+- Use the dropdown in the top-left of the Dashboard
+- Select any Workspace in your Organization
+
 import changeWorkspaceImage from '/img/change-workspace.png'
 
 <img src={changeWorkspaceImage} alt="Change Workspace" style={{ maxHeight: '300px' }} />
 
-This will allow you to switch between Workspaces and see the resources that are available in each.
+### When you switch Workspaces:
 
-As you switch between Workspaces, you will see the resources that are available in each update. So if you are viewing the Network tab and switch to a different Workspace, you will see the Energy Devices that are available in that Workspace. Same goes for API Keys and anything else that is Workspace specific.
+- Only resources scoped to that Workspace appear (e.g., Devices, API Keys)
+- The context in the Dashboard updates automatically
+- Your last-used Workspace is remembered across sessions
 
-When you change an Organization or Workspace, we will remember it for you and keep you in that Workspace until you change it again.
+## Access and Permissions
+
+- All Workspaces are visible to every Member of an Organization by default
+- Only Admins can create, rename, or delete Workspaces
