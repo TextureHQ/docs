@@ -103,20 +103,20 @@
   --search-focus-shadow: rgba(68, 74, 225, 0.1);
 
   /* Typography Scale */
-  --font-size-h1: 2.5rem;
-  --font-size-h2: 1.875rem;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
   --font-size-h3: 1.25rem;
   --font-size-h4: 1.125rem;
   --font-size-h5: 1rem;
   --font-size-h6: 0.875rem;
 
   /* Mobile Typography Scale */
-  --font-size-h1-mobile: 1.75rem;
-  --font-size-h2-mobile: 1.5rem;
-  --font-size-h3-mobile: 1.25rem;
-  --font-size-h4-mobile: 1.125rem;
-  --font-size-h5-mobile: 1rem;
-  --font-size-h6-mobile: 0.875rem;
+  --font-size-h1-mobile: 1.5rem;
+  --font-size-h2-mobile: 1.25rem;
+  --font-size-h3-mobile: 1.125rem;
+  --font-size-h4-mobile: 1rem;
+  --font-size-h5-mobile: 0.875rem;
+  --font-size-h6-mobile: 0.75rem;
 
   /* Font Weights */
   --font-weight-semibold: 600;
