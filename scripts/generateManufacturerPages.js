@@ -375,7 +375,7 @@ function generateManufacturerPage(manufacturer) {
   }
 
   /* Mobile responsive - stack columns */
-  @media (max-width: 768px) {
+  @media (max-width: var(--breakpoint-md)) {
     .manufacturer-hero-desktop {
       grid-template-columns: 1fr;
       gap: 16px;

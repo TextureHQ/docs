@@ -46,7 +46,7 @@
    RESPONSIVE CODE BLOCKS
    ========================================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   .markdown h1 + pre,
   .markdown h2 + pre,
   .markdown h3 + pre,

@@ -10,6 +10,13 @@
    ========================================================================== */
 
 :root {
+  /* Breakpoint System - Centralized responsive breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 767px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 996px;
+  --breakpoint-xl: 1200px;
+
   /* Brand Colors */
   --brand-color: #444ae1;
   --brand-color-hover: #3a3fd1;

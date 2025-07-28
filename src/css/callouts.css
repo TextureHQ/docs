@@ -128,7 +128,7 @@
    RESPONSIVE CALLOUTS
    ========================================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   .theme-admonition {
     margin: 2rem 0;
     padding: 1rem 1.25rem;
@@ -248,7 +248,7 @@ blockquote {
 }
 
 /* Responsive blockquotes */
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   blockquote {
     margin: 2rem 0;
     padding: 1rem 1.25rem;

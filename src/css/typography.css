@@ -44,7 +44,7 @@ h6,
 }
 
 /* Mobile responsive for page subtitles */
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   .page-subtitle,
   .markdown .page-subtitle {
     font-size: 1.125rem;
@@ -118,7 +118,7 @@ h6,
 }
 
 /* Mobile Typography Overrides - Higher specificity to ensure they override desktop styles */
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   h1,
   .markdown h1,
   .markdown > h1,
@@ -204,7 +204,7 @@ h6,
 }
 
 /* Mobile paragraph spacing adjustments */
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   .markdown p {
     margin-bottom: 1.25rem;
   }
@@ -285,7 +285,7 @@ h6,
 }
 
 /* Mobile list spacing adjustments */
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   .markdown ul,
   .markdown ol {
     margin-top: 0.5rem;

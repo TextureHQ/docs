@@ -1,0 +1,90 @@
+/**
+ * Texture Documentation - Table of Contents Styles
+ * 
+ * This file contains all table of contents (TOC) related styles including
+ * desktop and mobile TOC styling.
+ */
+
+/* ==========================================================================
+   TABLE OF CONTENTS STYLING
+   ========================================================================== */
+
+/* TOC Container */
+.theme-doc-toc-desktop {
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+/* TOC List Container */
+.theme-doc-toc-desktop .table-of-contents {
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 4rem;
+}
+
+/* Background Vertical Line */
+.theme-doc-toc-desktop .table-of-contents::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--toc-border);
+}
+
+/* TOC Links */
+.theme-doc-toc-desktop .table-of-contents__link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--toc-link-color);
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  transition: none;
+  margin-left: -1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* Active Link Styling */
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  color: var(--toc-link-active-color);
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem -0.75rem;
+  border-left: 3px solid var(--toc-link-active-border);
+}
+
+/* Hover Effects */
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  color: var(--toc-link-hover-color);
+  text-decoration: none;
+}
+
+/* More prominent TOC hover states */
+.theme-doc-toc-desktop .table-of-contents__link {
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: none;
+  color: var(--toc-link-color);
+  font-weight: 400;
+  margin: 2px 0;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  background-color: var(--toc-link-hover-bg);
+  color: var(--toc-link-hover-color);
+  font-weight: 500;
+  transform: none;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  color: var(--toc-link-active-color);
+  font-weight: 600;
+  border-left: 3px solid var(--toc-link-active-border);
+  padding-left: 9px;
+}

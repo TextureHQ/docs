@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+There's no need to continually start the dev server to test changes, my dev server is always running in this project

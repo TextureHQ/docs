@@ -1,0 +1,175 @@
+/**
+ * Texture Documentation - Layout Styles
+ * 
+ * This file contains all layout-related styles including content area padding,
+ * responsive grid system, and page-specific layout overrides.
+ */
+
+/* ==========================================================================
+   CONTENT AREA PADDING & LAYOUT
+   ========================================================================== */
+
+/* Main content area padding for better spacing from sidebars */
+.docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+/* Main content column width control - target the parent container */
+/* Use attribute selector to target the main content column regardless of generated classname */
+div[class*="docItemCol"] {
+  max-width: 100% !important;
+}
+
+/* Grid column padding for better spacing */
+.col[class*="col--"] {
+  min-width: 350px;
+}
+
+/* ==========================================================================
+   RESPONSIVE GRID SYSTEM
+   ========================================================================== */
+
+@media (max-width: var(--breakpoint-lg)) {
+  .col--md-6 {
+    --ifm-col-width: 50%;
+  }
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  .col--sm-12 {
+    --ifm-col-width: 100%;
+  }
+
+  .col--sm-offset-0 {
+    margin-left: 0;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE PADDING ADJUSTMENTS
+   ========================================================================== */
+
+/* Responsive grid column padding */
+@media (max-width: var(--breakpoint-xl)) {
+  :root {
+    --ifm-spacing-horizontal: 1.5rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: var(--breakpoint-lg)) {
+  :root {
+    --ifm-spacing-horizontal: 1.25rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  :root {
+    --ifm-spacing-horizontal: 1rem;
+  }
+  .col[class*="col--"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   WELCOME PAGE LAYOUT OVERRIDES
+   ========================================================================== */
+
+/* Welcome Page Full-Width Hero */
+@media (min-width: var(--breakpoint-lg)) {
+  html.docs-doc-id-overview\/welcome
+    .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    max-width: none;
+  }
+}
+
+html.docs-doc-id-overview\/welcome div.theme-doc-markdown header:first-child {
+  display: none;
+}
+
+/* Welcome page H2 overrides to inherit global styles */
+html.docs-doc-id-overview\/welcome h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  margin-top: var(--heading-margin-top-h2);
+  margin-bottom: var(--heading-margin-bottom-h2);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-heading);
+}
+
+/* Welcome page H3 overrides to inherit global styles */
+html.docs-doc-id-overview\/welcome h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  margin-top: var(--heading-margin-top-h3);
+  margin-bottom: var(--heading-margin-bottom-h3);
+  font-weight: var(--font-weight-semibold);
+  color: var(--font-color-heading);
+}
+
+/* Mobile responsive overrides for welcome page */
+@media (max-width: var(--breakpoint-md)) {
+  html.docs-doc-id-overview\/welcome h2 {
+    font-size: var(--font-size-h2-mobile);
+    margin-top: var(--heading-margin-top-h2-mobile);
+    margin-bottom: var(--heading-margin-bottom-h2-mobile);
+  }
+
+  html.docs-doc-id-overview\/welcome h3 {
+    font-size: var(--font-size-h3-mobile);
+    margin-top: var(--heading-margin-top-h3-mobile);
+    margin-bottom: var(--heading-margin-bottom-h3-mobile);
+  }
+}
+
+/* Card heading overrides - remove top margin for proper card spacing */
+html.docs-doc-id-overview\/welcome .action-card h3,
+html.docs-doc-id-overview\/welcome .quick-setup-card h3,
+html.docs-doc-id-overview\/welcome .concept-card h3,
+html.docs-doc-id-overview\/welcome .help-card h3 {
+  margin-top: 0;
+}
+
+/* Section H2s should keep their top margin for proper section spacing */
+html.docs-doc-id-overview\/welcome .row h2 {
+  margin-top: var(--heading-margin-top-h2);
+}
+
+/* ==========================================================================
+   BREADCRUMBS - Hide default Docusaurus breadcrumbs
+   ========================================================================== */
+
+/* Hide all Docusaurus breadcrumbs globally */
+.breadcrumbs {
+  display: none;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+  display: none;
+}

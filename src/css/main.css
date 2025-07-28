@@ -8,17 +8,27 @@
 /* Import CSS Variables and Theme Configuration */
 @import "./variables.css";
 
+/* Import Breakpoint Utilities */
+@import "./breakpoints.css";
+
 /* Import Typography System */
 @import "./typography.css";
 
 /* Import Navigation and Layout Styles */
-@import "./navigation.css";
+@import "./navbar.css";
+@import "./sidebar.css";
+@import "./search.css";
+@import "./toc.css";
+@import "./layout.css";
+
+/* Import Table Styles */
+@import "./tables.css";
+
+/* Import Hero Section Styles */
+@import "./hero.css";
 
 /* Import Callout Styles */
 @import "./callouts.css";
 
 /* Import Code Block Styles */
 @import "./code-blocks.css";
-
-/* Import Miscellaneous Styles */
-@import "./misc.css";

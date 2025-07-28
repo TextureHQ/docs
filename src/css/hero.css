@@ -1,8 +1,8 @@
 /**
- * Texture Documentation - Miscellaneous Styles
+ * Texture Documentation - Hero Section Styles
  * 
- * This file contains miscellaneous styles for tables, manufacturer
- * hero sections, and other specific components.
+ * This file contains styles for hero sections including welcome page
+ * and manufacturer hero layouts.
  */
 
 /* ==========================================================================
@@ -20,28 +20,6 @@ html[data-theme="dark"] .docs-doc-id-overview\/welcome .hero-section,
     #111827 50%,
     #0f172a 100%
   ) !important;
-}
-
-/* ==========================================================================
-   TABLE STYLING OVERRIDES
-   ========================================================================== */
-
-/* Remove any zebra stripes from tables */
-table tr:nth-child(even),
-table tr:nth-child(odd) {
-  background-color: transparent;
-}
-
-/* Ensure manufacturers table has no zebra stripes */
-.manufacturers-table tr:nth-child(even),
-.manufacturers-table tr:nth-child(odd) {
-  background-color: transparent;
-}
-
-/* Override any Docusaurus default table styles */
-.markdown table tr:nth-child(even),
-.markdown table tr:nth-child(odd) {
-  background-color: transparent;
 }
 
 /* ==========================================================================
@@ -80,7 +58,7 @@ table tr:nth-child(odd) {
 }
 
 /* Mobile responsive - stack columns */
-@media (max-width: 768px) {
+@media (max-width: var(--breakpoint-md)) {
   .manufacturer-hero-desktop {
     grid-template-columns: 1fr;
     gap: 16px;

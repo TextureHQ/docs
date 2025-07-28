@@ -1,0 +1,491 @@
+/**
+ * Texture Documentation - Sidebar Styles
+ * 
+ * This file contains all sidebar-related styles including desktop sidebar,
+ * mobile sidebar, and menu navigation.
+ */
+
+/* ==========================================================================
+   SIDEBAR STYLING
+   ========================================================================== */
+
+/* Sidebar Layout - Clean muted background */
+nav.menu,
+.navbar-sidebar {
+  padding-bottom: 3rem;
+  padding-left: 0;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+}
+
+/* Comprehensive chevron hiding - highest priority */
+.menu__caret,
+.menu__link--sublist::after,
+.menu__link--sublist-caret::after,
+.menu__list-item--collapsible .menu__link::after,
+.menu__list-item--collapsible .menu__link--active::after,
+.menu__list-item-collapsible .menu__link--sublist::after,
+.menu__list-item-collapsible .menu__link--sublist-caret::after,
+[class*="menu__"] .menu__caret,
+[class*="menu__"] .menu__link::after {
+  display: none;
+  content: none;
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transform: none;
+  transition: none;
+}
+
+/* Hide chevrons and disable collapse functionality */
+.menu__caret {
+  display: none;
+}
+
+/* Hide chevrons rendered as ::after pseudo-elements */
+.menu__link--sublist::after,
+.menu__link--sublist-caret::after,
+.menu__list-item--collapsible .menu__link::after {
+  display: none;
+  content: none;
+}
+
+/* Prevent category headers from being clickable */
+.menu__list-item--collapsible .menu__link,
+.menu__link--sublist,
+.menu__link--sublist-caret,
+.menu__list-item--collapsible .menu__link--sublist,
+.menu__list-item--collapsible .menu__link--sublist-caret,
+[role="button"].menu__link,
+[role="button"].menu__link--sublist {
+  pointer-events: none;
+  cursor: default;
+  user-select: none;
+}
+
+/* Ensure all categories stay expanded */
+.menu__list-item--collapsible .menu__list,
+.menu__list-item-collapsible .menu__list {
+  display: block;
+  height: auto;
+  overflow: visible;
+}
+
+/* Remove any collapse-related animations */
+.menu__list-item--collapsible .menu__list,
+.menu__list-item-collapsible .menu__list {
+  transition: none;
+  animation: none;
+}
+
+/* Sidebar Navigation Links */
+.menu__link {
+  color: var(--sidebar-link-color);
+  font-weight: 500;
+  border-radius: 6px;
+  margin: 2px 0;
+  padding: 8px 12px;
+  transition: none;
+}
+
+.menu__link:hover {
+  background-color: var(--sidebar-link-hover-bg);
+  color: var(--sidebar-link-hover-color);
+  transform: none;
+}
+
+/* Active page links (not section headers) */
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: var(--sidebar-link-active-bg);
+  color: var(--sidebar-link-active-color);
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  transition: none;
+  padding-left: 24px;
+}
+
+.menu__link--active:not(.menu__link--sublist)::before {
+  display: none;
+}
+
+/* Remove active styling from section headers */
+.menu__list-item--collapsible .menu__link--active {
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 600;
+}
+
+.menu__list-item--collapsible .menu__link--active::before {
+  display: none;
+}
+
+/* Menu headings */
+.menu__list-item--collapsed .menu__link {
+  color: var(--sidebar-section-header-color);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Left Sidebar Section Styling - Less Clunky */
+.menu__list-item--collapsible,
+.theme-doc-sidebar-item-category {
+  margin-bottom: 16px;
+}
+
+/* Main Section Headers - More Elegant (Override Docusaurus defaults) */
+.menu__list-item--collapsible .menu__link {
+  padding: 4px 24px;
+  border-radius: 4px;
+  transition: none;
+  background-color: transparent;
+  color: var(--sidebar-section-header-color);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: 0.025em;
+  margin: 0;
+}
+
+/* Remove hover and active effects from section headers - they're not clickable links */
+.menu__list-item--collapsible .menu__link:hover,
+.menu__list-item--collapsible .menu__link--sublist:hover,
+.menu__link--sublist:hover,
+.menu__link--sublist--active,
+/* Exception for category level 1 section headers */
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible:hover,
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible .menu__link:hover,
+.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible .menu__link--sublist:hover {
+  background-color: transparent;
+  color: inherit;
+  transform: none;
+}
+
+.menu__list-item--collapsible .menu__link--active {
+  background-color: var(--ifm-color-emphasis-50);
+  color: #1f2937;
+  font-weight: 600;
+  border-left: 2px solid var(--brand-color);
+  padding-left: 10px;
+}
+
+/* Ensure section headers don't get active page styling */
+.menu__list-item--collapsible .menu__link--active {
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Reduce spacing between sections */
+.menu__list-item--collapsible {
+  margin-bottom: 2px;
+  padding-top: 0;
+}
+
+/* Submenu styling - consolidated */
+.menu__list-item--collapsible .menu__list {
+  margin-top: 2px;
+  margin-left: 8px;
+  border-left: 1px solid var(--sidebar-submenu-border);
+  padding-left: 12px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Hide all chevron animations and content */
+.menu__list-item--collapsible .menu__link::after,
+.menu__list-item--collapsible .menu__link--active::after {
+  display: none;
+  content: none;
+  transform: none;
+  transition: none;
+}
+
+/* Sidebar Scrollbar */
+@media (min-width: var(--breakpoint-lg)) {
+  @supports (scrollbar-gutter: stable) {
+    .menu_node_modules-\@docusaurus-theme-classic-lib-theme-DocSidebar-Desktop-Content-styles-module {
+      padding: 0 0 4rem 0;
+      scrollbar-gutter: stable;
+    }
+  }
+}
+
+/* Sidebar Menu Items */
+.menu__list-item-collapsible {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Complete sidebar redesign - proper hierarchy and rhythm */
+div.menu__list-item-collapsible {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* More prominent section labels in left sidebar */
+div.menu__list-item-collapsible .menu__link {
+  padding: 10px 24px;
+  border-radius: 0;
+  transition: none;
+  background-color: transparent;
+  color: var(--sidebar-section-header-color);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: 0.025em;
+  margin: 0;
+  border: none;
+  position: relative;
+}
+
+/* Remove hover effect from div-based section headers */
+div.menu__list-item-collapsible .menu__link:hover,
+div.menu__list-item-collapsible .menu__link--sublist:hover,
+div.menu__list-item-collapsible .menu__link--sublist:hover {
+  background-color: transparent;
+  color: inherit;
+  transform: none;
+}
+
+div.menu__list-item-collapsible .menu__link--active {
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 700;
+  padding-left: 24px;
+}
+
+/* L2 items - proper hierarchy with smaller indent */
+.menu__list-item .menu__link {
+  padding: 6px 24px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--sidebar-link-color);
+  border: none;
+  position: relative;
+  transition: none;
+  transform: none;
+  animation: none;
+  will-change: auto;
+}
+
+/* Active menu items - make them bolder (only page links, not section headers) */
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+}
+
+.menu__list-item .menu__link:hover {
+  background-color: var(--sidebar-link-hover-bg);
+  color: var(--sidebar-link-hover-color);
+}
+
+/* Submenu container styling - smaller indent */
+.menu__list-item-collapsible .menu__list {
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--sidebar-submenu-border);
+  margin-left: 4px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Disable all animations on menu items to prevent spreading */
+.menu__list-item,
+.menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link:hover,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link--active,
+.menu__link,
+.menu__link:hover,
+.menu__link--active,
+.menu__link--sublist,
+.menu__link--sublist:hover,
+.menu__link--sublist--active {
+  transition: none;
+  transform: none;
+  animation: none;
+  will-change: auto;
+}
+
+/* Hidden Elements */
+.hidden {
+  display: none;
+}
+
+/* Override any Docusaurus menu animations */
+[class*="menu__"] {
+  transition: none;
+  animation: none;
+}
+
+/* Only target menu-related elements, not all children */
+[class*="menu__"] .menu__link,
+[class*="menu__"] .menu__list-item,
+[class*="menu__"] .menu__caret,
+[class*="menu__"] .menu__list {
+  transition: none;
+  animation: none;
+}
+
+/* Specifically disable menu list transitions */
+.menu__list {
+  transition: none;
+  animation: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Override Docusaurus menu list padding with our own rule */
+.menu__list,
+.menu__list.menu__list {
+  padding-left: 0;
+}
+
+.menu__list-item-collapsible .menu__list {
+  transition: none;
+  animation: none;
+  height: auto;
+}
+
+/* Comprehensive menu animation disable */
+.menu__list-item,
+.menu__list-item .menu__link,
+.menu__list-item-collapsible,
+.menu__list-item-collapsible .menu__link,
+.menu__list-item-collapsible .menu__list,
+.menu__list-item-collapsible .menu__list .menu__list-item,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link:hover,
+.menu__list-item-collapsible .menu__list .menu__list-item .menu__link--active,
+.menu__link,
+.menu__link:hover,
+.menu__link--active,
+.menu__link--sublist,
+.menu__link--sublist:hover,
+.menu__link--sublist--active,
+.menu__caret,
+.menu__caret:hover {
+  transition: none;
+  transform: none;
+  animation: none;
+  will-change: auto;
+}
+
+/* Hide sidebar items with the 'hidden' class */
+.menu__list-item.hidden {
+  display: none;
+}
+
+/* ==========================================================================
+   MOBILE SIDEBAR STYLING
+   ========================================================================== */
+
+/* Mobile Sidebar Adjustments */
+@media (max-width: var(--breakpoint-lg)) {
+  /* Mobile Sidebar Adjustments */
+  .navbar-sidebar {
+    padding: 1rem;
+    background-color: var(--sidebar-bg);
+    border-right: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Remove left padding from mobile sidebar items with proper specificity */
+  .navbar-sidebar .navbar-sidebar_item {
+    padding-left: 0;
+  }
+
+  /* Also target the menu container inside sidebar */
+  .navbar-sidebar .menu {
+    padding-left: 0;
+  }
+
+  /* Target any other potential padding sources */
+  .navbar-sidebar .menu__list {
+    padding-left: 0;
+  }
+
+  /* Mobile sidebar menu items */
+  .navbar-sidebar .menu__link {
+    padding: 12px 16px;
+    margin: 2px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--sidebar-link-color);
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+  }
+
+  .navbar-sidebar .menu__link:hover {
+    background-color: var(--sidebar-link-hover-bg);
+    color: var(--sidebar-link-hover-color);
+  }
+
+  .navbar-sidebar .menu__link--active {
+    background-color: var(--sidebar-link-active-bg);
+    color: var(--sidebar-link-active-color);
+    font-weight: 600;
+  }
+
+  /* Mobile sidebar section headers */
+  .navbar-sidebar .menu__list-item--collapsible .menu__link {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--sidebar-section-header-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Mobile sidebar submenu items */
+  .navbar-sidebar .menu__list-item .menu__link {
+    padding: 8px 16px 8px 32px;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  /* Hide mobile sidebar back button - not needed with X close button */
+  .navbar-sidebar__back {
+    display: none;
+  }
+}
+
+/* Extra small screen mobile sidebar adjustments */
+@media (max-width: var(--breakpoint-sm)) {
+  /* Extra small screen mobile sidebar adjustments */
+  .navbar-sidebar {
+    padding: 0.75rem;
+  }
+
+  /* Ensure no left padding on smaller screens too */
+  .navbar-sidebar .navbar-sidebar_item {
+    padding-left: 0;
+  }
+
+  .navbar-sidebar .menu__link {
+    padding: 10px 12px;
+    font-size: 0.875rem;
+  }
+
+  .navbar-sidebar .menu__list-item--collapsible .menu__link {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .navbar-sidebar .menu__list-item .menu__link {
+    padding: 6px 12px 6px 24px;
+    font-size: 0.8rem;
+  }
+
+  /* Back button already hidden in larger mobile breakpoint */
+}

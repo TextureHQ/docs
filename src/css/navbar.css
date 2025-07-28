@@ -1,0 +1,163 @@
+/**
+ * Texture Documentation - Navbar Styles
+ * 
+ * This file contains all navbar-related styles including the top navigation bar,
+ * search functionality, and mobile menu.
+ */
+
+/* ==========================================================================
+   NAVBAR STYLING
+   ========================================================================== */
+
+/* Navbar Styling - Clean muted background */
+.navbar {
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--navbar-border);
+  box-shadow: none;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.navbar__inner {
+  background-color: var(--navbar-bg);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar__brand {
+  color: var(--navbar-brand-color);
+  position: relative;
+  bottom: 2.5px;
+}
+
+.navbar__item {
+  color: var(--navbar-link-color);
+  font-weight: 500;
+}
+
+.navbar__item:hover {
+  color: var(--navbar-link-hover-color);
+  background: none;
+}
+
+.navbar__link {
+  color: var(--navbar-link-color);
+  font-weight: 500;
+}
+
+.navbar__link:hover {
+  color: var(--navbar-link-hover-color);
+  background: none;
+}
+
+/* Dark mode toggle styling - ensure consistent color and spacing */
+.clean-btn {
+  color: var(--navbar-toggle-color);
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.clean-btn:hover {
+  color: var(--navbar-toggle-hover-color);
+  background-color: var(--navbar-toggle-hover-bg);
+}
+
+/* Ensure dark mode toggle icon inherits the correct color */
+.clean-btn svg {
+  color: inherit;
+  fill: currentColor;
+}
+
+/* Navbar spacing improvements */
+.navbar__items {
+  gap: 8px;
+}
+
+.navbar__items--right {
+  gap: 12px;
+}
+
+/* Hide hamburger menu on desktop */
+@media (min-width: 996px) {
+  .navbar_toggle.clean-btn {
+    display: none !important;
+  }
+}
+
+/* Navbar Adjustments */
+@media (min-width: 996px) {
+  .navbar__toggle {
+    display: none;
+  }
+}
+
+/* Mobile Navbar Adjustments */
+@media (max-width: var(--breakpoint-lg)) {
+  .navbar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navbar__brand {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar__items {
+    gap: 4px;
+  }
+
+  .navbar__items--right {
+    gap: 8px;
+  }
+
+  /* Ensure mobile menu toggle is visible */
+  .navbar_toggle {
+    display: block;
+  }
+
+  .navbar__logo {
+    position: relative;
+    bottom: 2.5px;
+  }
+
+  /* Adjust search button for mobile */
+  .DocSearch-Button {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .DocSearch-Button-Placeholder {
+    display: none;
+  }
+}
+
+/* Extra small screen navbar adjustments */
+@media (max-width: var(--breakpoint-sm)) {
+  .navbar {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .navbar__items {
+    gap: 2px;
+  }
+
+  .navbar__items--right {
+    gap: 4px;
+  }
+
+  .DocSearch-Button {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+}

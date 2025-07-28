@@ -312,7 +312,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         }
 
         /* Mobile responsive table */
-        @media (max-width: 768px) {
+        @media (max-width: var(--breakpoint-md)) {
           .manufacturers-table-container {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;

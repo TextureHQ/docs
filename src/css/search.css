@@ -1,0 +1,80 @@
+/**
+ * Texture Documentation - Search Styles
+ * 
+ * This file contains all search-related styles including DocSearch button
+ * and search functionality styling.
+ */
+
+/* ==========================================================================
+   SEARCH BAR STYLING
+   ========================================================================== */
+
+/* DocSearch elegant styling */
+.DocSearch-Button {
+  background: var(--search-bg);
+  border: 1px solid var(--search-border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 280px;
+  height: 40px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.DocSearch-Button:hover {
+  background: var(--search-hover-bg);
+  border-color: var(--search-hover-border);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.DocSearch-Button:focus {
+  outline: none;
+  border-color: var(--search-focus-border);
+  box-shadow: 0 0 0 3px var(--search-focus-shadow);
+}
+
+.DocSearch-Button-Key {
+  display: inline;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: #9ca3af;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0;
+  margin-left: 8px;
+  min-width: auto;
+  height: auto;
+  box-shadow: none;
+}
+
+.DocSearch-Button-Placeholder {
+  color: var(--search-placeholder-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.DocSearch-Button-Keys {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Target all possible keyboard shortcut elements */
+.DocSearch-Button-Key,
+.DocSearch-Button-Keys .DocSearch-Button-Key,
+.DocSearch-Button-Keys span,
+.DocSearch-Button-Keys kbd {
+  display: none;
+}
+
+/* Search icon styling */
+.DocSearch-Button .DocSearch-Button-Container {
+  margin-right: 8px;
+}
+
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: var(--search-icon-color);
+  width: 16px;
+  height: 16px;
+}

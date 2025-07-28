@@ -1,0 +1,27 @@
+/**
+ * Texture Documentation - Table Styles
+ * 
+ * This file contains all table-related styles and overrides.
+ */
+
+/* ==========================================================================
+   TABLE STYLING OVERRIDES
+   ========================================================================== */
+
+/* Remove any zebra stripes from tables */
+table tr:nth-child(even),
+table tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+/* Ensure manufacturers table has no zebra stripes */
+.manufacturers-table tr:nth-child(even),
+.manufacturers-table tr:nth-child(odd) {
+  background-color: transparent;
+}
+
+/* Override any Docusaurus default table styles */
+.markdown table tr:nth-child(even),
+.markdown table tr:nth-child(odd) {
+  background-color: transparent;
+}

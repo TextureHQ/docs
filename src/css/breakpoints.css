@@ -1,0 +1,64 @@
+/**
+ * Texture Documentation - Breakpoint Utilities
+ * 
+ * This file contains centralized breakpoint utilities using CSS custom properties.
+ * Use these instead of hardcoded breakpoint values throughout the codebase.
+ */
+
+/* ==========================================================================
+   BREAKPOINT UTILITIES
+   ========================================================================== */
+
+/* Mobile First - Max Width Breakpoints */
+@media (max-width: var(--breakpoint-xl)) {
+  /* 1200px and below */
+}
+
+@media (max-width: var(--breakpoint-lg)) {
+  /* 996px and below */
+}
+
+@media (max-width: var(--breakpoint-md)) {
+  /* 768px and below */
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  /* 767px and below */
+}
+
+@media (max-width: var(--breakpoint-xs)) {
+  /* 480px and below */
+}
+
+/* Desktop First - Min Width Breakpoints */
+@media (min-width: var(--breakpoint-lg)) {
+  /* 996px and above */
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  /* 768px and above */
+}
+
+/* ==========================================================================
+   COMMON RESPONSIVE PATTERNS
+   ========================================================================== */
+
+/* Mobile adjustments */
+@media (max-width: var(--breakpoint-md)) {
+  /* Common mobile styles */
+}
+
+/* Tablet adjustments */
+@media (max-width: var(--breakpoint-lg)) {
+  /* Common tablet styles */
+}
+
+/* Desktop adjustments */
+@media (min-width: var(--breakpoint-lg)) {
+  /* Common desktop styles */
+}
+
+/* Extra small mobile */
+@media (max-width: var(--breakpoint-xs)) {
+  /* Extra small mobile styles */
+}
