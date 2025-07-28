@@ -1,0 +1,149 @@
+/**
+ * Texture Documentation - Diagram Styles
+ * 
+ * This file contains all diagram-related styles including Mermaid diagrams,
+ * flowcharts, and other visual elements.
+ */
+
+/* ==========================================================================
+   MERMAID DIAGRAM STYLES
+   ========================================================================== */
+
+.docusaurus-mermaid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  margin: 3rem 0;
+  border-radius: 8px;
+  background-color: #fbfbfb;
+  border: 2px solid #e0e0e0;
+}
+
+/* ==========================================================================
+   LIGHT MODE - ELEGANT STYLING
+   ========================================================================== */
+
+/* Light mode nodes - very subtle brand tint */
+.docusaurus-mermaid-container .node rect,
+.docusaurus-mermaid-container .node circle,
+.docusaurus-mermaid-container .node polygon {
+  fill: #f8f9ff !important;
+  stroke: #e5e7ff !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Light mode text - readable but not harsh */
+.docusaurus-mermaid-container .node text,
+.docusaurus-mermaid-container .label {
+  fill: #1e293b !important;
+  color: #1e293b !important;
+  font-weight: 500 !important;
+}
+
+/* Light mode lines - subtle connections */
+.docusaurus-mermaid-container .edgePath path,
+.docusaurus-mermaid-container .arrowheadPath {
+  stroke: #94a3b8 !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Light mode arrows - refined */
+.docusaurus-mermaid-container .arrowheadMarker {
+  fill: #94a3b8 !important;
+  stroke: #94a3b8 !important;
+}
+
+/* Light mode clusters - subtle grouping */
+.docusaurus-mermaid-container .cluster rect {
+  fill: #f8fafc !important;
+  stroke: #cbd5e1 !important;
+  stroke-width: 1px !important;
+}
+
+.docusaurus-mermaid-container .cluster-label {
+  fill: #64748b !important;
+  color: #64748b !important;
+  font-weight: 500 !important;
+}
+
+/* ==========================================================================
+   DARK MODE - SOPHISTICATED STYLING
+   ========================================================================== */
+
+[data-theme="dark"] .docusaurus-mermaid-container {
+  background-color: #1a1a1a;
+  border: 1px solid #374151;
+  position: relative;
+}
+
+/* Dark mode subtle background pattern */
+[data-theme="dark"] .docusaurus-mermaid-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(55, 65, 81, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(55, 65, 81, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+/* Dark mode nodes - very subtle brand tint */
+[data-theme="dark"] .docusaurus-mermaid-container .node rect,
+[data-theme="dark"] .docusaurus-mermaid-container .node circle,
+[data-theme="dark"] .docusaurus-mermaid-container .node polygon {
+  fill: #2d2d3a !important;
+  stroke: #4a4a6a !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Dark mode text - comprehensive text styling */
+[data-theme="dark"] .docusaurus-mermaid-container .node text,
+[data-theme="dark"] .docusaurus-mermaid-container .label,
+[data-theme="dark"] .docusaurus-mermaid-container text,
+[data-theme="dark"] .docusaurus-mermaid-container tspan,
+[data-theme="dark"] .docusaurus-mermaid-container .nodeLabel,
+[data-theme="dark"] .docusaurus-mermaid-container .labelText {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+/* Dark mode lines - visible but not harsh */
+[data-theme="dark"] .docusaurus-mermaid-container .edgePath path,
+[data-theme="dark"] .docusaurus-mermaid-container .arrowheadPath {
+  stroke: #64748b !important;
+  stroke-width: 1.5px !important;
+}
+
+/* Dark mode arrows - refined */
+[data-theme="dark"] .docusaurus-mermaid-container .arrowheadMarker {
+  fill: #64748b !important;
+  stroke: #64748b !important;
+}
+
+/* Dark mode clusters - subtle grouping */
+[data-theme="dark"] .docusaurus-mermaid-container .cluster rect {
+  fill: #1e293b !important;
+  stroke: #475569 !important;
+  stroke-width: 1px !important;
+}
+
+[data-theme="dark"] .docusaurus-mermaid-container .cluster-label {
+  fill: #cbd5e1 !important;
+  color: #cbd5e1 !important;
+  font-weight: 500 !important;
+}

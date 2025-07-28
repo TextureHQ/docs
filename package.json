@@ -18,9 +18,10 @@
     "generate-manufacturer-pages": "node scripts/generateManufacturerPages.js"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.7.0",
-    "@docusaurus/plugin-client-redirects": "^3.7.0",
-    "@docusaurus/preset-classic": "^3.7.0",
+    "@docusaurus/core": "^3.8.1",
+    "@docusaurus/plugin-client-redirects": "^3.8.1",
+    "@docusaurus/preset-classic": "^3.8.1",
+    "@docusaurus/theme-mermaid": "^3.8.1",
     "@growthbook/growthbook": "^0.36.0",
     "@growthbook/growthbook-react": "^0.26.0",
     "@lexical/headless": "^0.16.0",
@@ -39,6 +40,7 @@
     "docusaurus-plugin-sass": "^0.2.5",
     "fuse.js": "^7.0.0",
     "lexical": "^0.16.0",
+    "mermaid": "^11.9.0",
     "pluralize": "^8.0.0",
     "posthog-js": "^1.239.1",
     "prism-react-renderer": "^2.3.0",
@@ -54,9 +56,9 @@
     "url": "^0.11.3"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.7.0",
-    "@docusaurus/tsconfig": "^3.7.0",
-    "@docusaurus/types": "^3.7.0",
+    "@docusaurus/module-type-aliases": "^3.8.1",
+    "@docusaurus/tsconfig": "^3.8.1",
+    "@docusaurus/types": "^3.8.1",
     "@types/swagger-ui-react": "^4.18.3",
     "ts-node": "^10.9.2",
     "typescript": "~5.2.2"

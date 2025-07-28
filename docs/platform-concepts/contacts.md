@@ -12,6 +12,13 @@ Each Contact record stores their personal details and links them to the infrastr
 
 The Contact model is designed to mirror common CRM and CIS person records, so you can sync identity and engagement across systems.
 
+```mermaid
+graph TD
+    A[Contact A] --> B[Site 1]
+    C[Contact B] --> D[Site 2]
+    C --> E[Site 3]
+```
+
 ---
 
 ## Why Contacts?

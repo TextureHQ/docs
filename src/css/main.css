@@ -32,3 +32,6 @@
 
 /* Import Code Block Styles */
 @import "./code-blocks.css";
+
+/* Import Diagram Styles */
+@import "./diagrams.css";

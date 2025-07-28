@@ -141,6 +141,10 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
 
   themeConfig: {
     colorMode: {
@@ -223,6 +227,28 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: ["http", "json", "bash"],
+    },
+    mermaid: {
+      theme: { light: "base", dark: "base" },
+      options: {
+        fontFamily: "inherit",
+        themeVariables: {
+          padding: 20,
+          // Light mode - subtle, elegant palette
+          primaryColor: "#f8fafc",
+          primaryTextColor: "#374151",
+          primaryBorderColor: "#e5e7eb",
+          secondaryColor: "#f1f5f9",
+          secondaryTextColor: "#6b7280",
+          secondaryBorderColor: "#d1d5db",
+          tertiaryColor: "#ffffff",
+          tertiaryTextColor: "#4b5563",
+          tertiaryBorderColor: "#f3f4f6",
+          lineColor: "#d1d5db",
+          textColor: "#374151",
+          background: "#ffffff",
+        },
+      },
     },
   } satisfies Preset.ThemeConfig,
 };
