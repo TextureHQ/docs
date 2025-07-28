@@ -107,6 +107,10 @@ Returns all linked Sites.
 
 Texture avoids duplicate Contacts by checking for existing records with matching email, reference ID, or address. You can override or manually link as needed.
 
+:::tip
+Use `referenceId` to maintain consistent Contact records across your systems. This prevents duplicate Contacts when syncing data from multiple sources.
+:::
+
 ---
 
 ## Example Workflow
@@ -134,6 +138,10 @@ Texture avoids duplicate Contacts by checking for existing records with matching
 - Keep **ownership clear** — One Contact should own each Site or Device
 - **Protect PII** — Limit access to personal data and audit usage
 - Set up **Webhooks** — Subscribe to Contact events like new device linked or session started
+
+:::caution
+Contact data contains personal information. Ensure your API access controls and webhook endpoints follow data protection best practices and comply with relevant privacy regulations.
+:::
 
 ---
 
