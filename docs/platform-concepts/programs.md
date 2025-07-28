@@ -1,188 +1,203 @@
 ---
 ---
 
+import { Subtitle } from '@components/Subtitle';
+
 # Programs & Enrollments
 
+<Subtitle>Configure and manage offerings users can enroll in—and track their eligibility and status</Subtitle>
+
 A **Program** is any offering that requires a user to sign up or "enroll." Common examples include:
+
 - Demand response initiatives, like [California's Demand Side Grid Support (DSGS) program](https://www.energy.ca.gov/programs-and-topics/programs/demand-side-grid-support-program)
-- Battery or Thermostat rebate programs provided by utilities, CCAs, or other organizations (e.g. [3CE's Residential Battery Rebate Program](https://3cenergy.org/rebates/residential-battery-rebate-program/))
-- Custom programs that your Organization may create and manage on Texture
+- Battery or thermostat rebate programs provided by utilities, CCAs, or other organizations
+- Custom programs that your **Organization** may create and manage on Texture
 
-From the Texture perspective, these Programs share a common workflow:
-1. Your **Organization** creates an **Instance** of a Program (e.g., a specific battery rebate rollout in a certain region).
-2. A user Enrolls (typically by filling out a Texture-generated form or via your own custom flow calling the Texture API).
-3. Texture validates eligibility—both in real time (synchronous checks) and over time (asynchronous checks).
+From a Texture perspective, these Programs follow a common flow:
 
-Below is an overview of Programs, how to create Program Instances, and how Enrollments (including eligibility checks) work on the Texture Platform.
+1. Your **Organization** creates an **Instance** of a Program (e.g., a specific battery rebate rollout).
+2. A user enrolls—typically by completing a Texture-hosted form or your custom flow using the API.
+3. Texture evaluates eligibility—both in real time and asynchronously.
 
-For more details on Programs and Enrollments, see our more in-depth docs [here](/docs/programs-enrollments/overview.md).
+See below for how Programs, Program Instances, and Enrollments work on Texture.
+
+For a deeper reference, check out our [overview docs](/docs/programs-enrollments/overview.md).
 
 ---
 
 ## What is a Program?
 
-A Program defines the high-level structure for an offering that end users can enroll in. For example, "DSGS," "Battery Rebate Program," or "Time-of-Use Billing Pilot."
+A **Program** defines the template for an offering users can enroll in—such as "DSGS," "Battery Rebate Program," or "Time-of-Use Billing Pilot."
 
-- **Common fields**: name, description, logo, eligibility criteria, terms, states or regions where it's available, start/end times, etc.
-- **Catalog vs. Organization-specific**: Texture maintains a catalog of standard programs (like DSGS or various battery rebates). Your Organization can also define its own.
+- **Common fields**: name, description, logo, eligibility criteria, terms, service areas, start/end dates
+- **Program Catalog**: Texture maintains a set of shared programs (e.g., DSGS)
+- **Custom Programs**: Your **Organization** can also define its own
+
+---
 
 ### Program vs. Program Instance
 
-A single Program can have multiple **Program Instances**, each potentially with different:
-- **Branding** (logo, name, images, text)
-- **Enrollment form URL** and fields
-- **Eligibility criteria** or custom terms
+Each Program can have multiple **Program Instances**, which tailor that offering to a specific context:
 
-Because each Organization's requirements differ, you can create as many Instances of a Program as you need. For example, if your organization wants to run California DSGS in two different territories, you might set up two Instances—each with its own sign-up form link, name, and specialized set of data fields.
+- **Branding** (logo, name, imagery, copy)
+- **Enrollment form** (URL, required fields)
+- **Eligibility criteria** and terms
+
+For example, you could run two DSGS Instances—each with its own sign-up form and region-specific rules.
+
+:::tip
+Program Instances allow for custom preferences, partner branding, or custom eligibility rules—all without redefining the underlying Program.
+:::
 
 ---
 
 ## Program Instances
 
-Program Instances are how you **activate** a Program for your Organization. They let you customize the Program details, branding, and any extra data requirements.
+A **Program Instance** activates a Program for your **Organization**. Each Instance is fully configurable:
 
-- **Example**: `battery_rebate_nyc`, which uses the base "Battery Rebate Program" but is branded and configured specifically for New York City customers.
-- Each Instance has its own `slug` that you can use in a Texture-generated enrollment form URL or via API.
-- An **Organization** can create multiple Instances of the same Program.
+- **Example**: `battery_rebate_nyc` using the base "Battery Rebate Program" but customized for NYC customers
+- Each Instance gets a unique `slug` used in enrollment forms and API calls
+- Organizations can create multiple Instances from the same Program
 
-### Creation
+### Create an Instance
 
-You can create a Program Instance by calling the Texture API:
+Use the Texture API:
 
-```
+```http
 POST /programs/{programSlug}/instances
 ```
 
-This lets you define things like:
-- `name`, `description`, `logo`, etc.
-- Additional or overriding `eligibilityCriteria`
-- Custom terms for your Instance
+**Define:**
+- `name`, `description`, `logo`
+- `eligibilityCriteria`
+- `custom terms and fields`
 
-See our interactive [API reference](/api) for details on the request and response formats.
+See our API reference for full request and response details.
 
 ---
 
 ## Enrollments
 
-An **Enrollment** is how a specific user (Customer) joins a Program Instance. It bundles everything needed to validate a user's participation.
+An **Enrollment** is how a user joins a specific Program Instance. It includes the user's details, the target Instance, and any eligibility evaluation.
 
-### Enrollment Data
-- **Customer info**: name, email, address, etc.
-- **Program Instance**: which specific Program Instance the user is enrolling in.
-- **Custom fields**: Some Programs require arbitrary data points (e.g., utility account number). Texture supports these via dynamic enrollment forms or through your own front-end calling our API.
+### What's Included
+- **Customer info**: name, email, address
+- **Program Instance**: the slug or ID
+- **Custom fields**: flexible fields like utility account number or battery serial
 
 ### How to Enroll
 1. **Texture-Generated Forms**
-   - Texture can generate a fully customizable form link for your Program Instance. You can brand it with your own name, logo, and required fields. Once a user submits, Texture stores their data automatically.
-2. **Direct API Calls**
-   - If you have an existing sign-up flow, collect user info in your own UI and call:
-     ```
-     POST /enrollments
-     ```
-     to create the Enrollment.
+   - Use a branded, customizable form hosted by Texture
+   - Data is stored automatically when submitted
+2. **Custom UI + API**
+   - Collect info in your own UI and call:
 
-### Enrollment Identification Requirements
-
-To create an Enrollment, you must provide a method to identify the customer and specify the address. The supported methods are:
-
-1. **enrollmentId** -- Used primarily for re-enrolling a customer who was enrolled in the same Program Instance previously. In this case, most required information is retrieved from prior enrollments.
-2. **customerId** -- Used when the customer has not enrolled yet but a Customer record already exists (providing name, email, and address).
-3. **leadId** -- Used when a Lead record exists. If any required fields (e.g., first name) are missing from the Lead, the API returns a 400 error with details on the missing fields.
-4. **customerInfo** -- Used when submitting without an existing identifier and providing all new customer data. Almost all fields are required since no data is available in Texture.
-
-### Checking Enrollment Status
-
-Once an enrollment is submitted, you can retrieve the status (and other information) by calling:
-
+```http
+POST /enrollments
 ```
+
+---
+
+## Enrollment Identification Methods
+
+You can identify the enrolling user using one of four supported inputs:
+
+- **enrollmentId** — Re-enroll a known customer; pulls prior data
+- **customerId** — For existing [Contacts](/docs/platform-concepts/contacts.md) with contact info on file
+- **leadId** — For [Leads](/docs/platform-concepts/leads.md); if required fields are missing, Texture returns a 400
+- **customerInfo** — For brand new users; all fields must be included
+
+:::caution
+If you use `leadId` or `customerInfo`, ensure all required fields are present. Incomplete submissions will be rejected.
+:::
+
+---
+
+## Checking Enrollment Status
+
+Once submitted, check enrollment progress with:
+
+```http
 GET /enrollments/{enrollmentId}
 ```
 
-Or fetch a list of enrollments with various filters via:
+Or retrieve filtered lists:
 
-```
+```http
 GET /enrollments?status={status}
 ```
 
-For near real-time updates without polling, you can configure **Destination webhooks**. Texture will send:
-- `enrollment.submitted` when a user first enrolls,
-- `enrollment.approved` if they pass final checks,
-- `enrollment.rejected` if they fail eligibility.
+To receive real-time updates, configure [webhooks](/docs/platform-concepts/destinations/webhooks.md). Texture will send:
+- `enrollment.submitted`
+- `enrollment.approved`
+- `enrollment.rejected`
 
 ---
 
 ## Eligibility Checks
 
-Many Programs come with eligibility rules. Texture can run these checks:
-- **Synchronous**:
-  - E.g., verifying address location or battery specs instantly. Texture uses geocoding to confirm the address and can query device manufacturer APIs for capacity.
-  - Provides real-time feedback (e.g., "You do not appear to be in California; you're ineligible.").
-- **Asynchronous**:
-  - Some checks take extra time, like verifying enrollment history with third parties or utility confirmations. The user's status updates as soon as these checks complete.
+Programs can define rules users must meet to qualify. Texture checks these during and after enrollment.
 
-You can see the `eligibility.status` field in the Enrollment to track overall progress. Typical statuses:
-- **candidate** – The user has started enrollment but not passed all checks yet
-- **eligible** – All synchronous checks passed; asynchronous checks may still be ongoing
-- **ineligible** – The user definitively doesn't meet requirements
-- **submitted** – The user's enrollment data has been formally submitted
-- **approved** – The enrollment is fully approved
-- **rejected** – The user was ultimately rejected
-- **unenrolled** – The user was once enrolled but has since been unenrolled
+**Types of checks:**
+- **Synchronous**: Instant checks (e.g., ZIP code, device spec)
+- **Asynchronous**: Delayed validations (e.g., utility confirmation)
+
+Track progress with the `eligibility.status` field.
+
+**Typical statuses:**
+
+| Status | Description |
+|--------|-------------|
+| **candidate** | Started but not fully evaluated |
+| **eligible** | Passed initial checks |
+| **ineligible** | Failed requirements |
+| **submitted** | Formally submitted |
+| **approved** | Fully qualified |
+| **rejected** | Did not pass |
+| **unenrolled** | Previously enrolled, now removed |
 
 ---
 
 ## Example Workflow
 
-Below is a common end-to-end flow for a battery rebate Program:
+Here's how a battery rebate flow might work:
 
-1. **Organization Creates a Program Instance**
-   - E.g., `battery-rebate-nyc` with custom branding and eligibility rules.
-2. **Shares a Texture Enrollment Form Link (Optional)**
-   - The form can be customized to capture your required fields, branding, and disclaimers.
-3. **User Provides Basic Info**
-   - Name, address, etc.
-4. **Texture Runs Synchronous Checks**
-   - Confirms location eligibility, basic Program requirements, etc.
-5. **If Eligible, Prompt Device Connection**
-   - Texture prompts the user to connect their device (via Texture Connect) or link their utility account (via one of the configured Apps).
-6. **Asynchronous Checks**
-   - If additional external validation is required (e.g., verifying utility account), Texture runs those in the background.
-7. **Enrollment Status Updates**
-   - The status transitions from `candidate` → `eligible` → `submitted` → `approved` or `rejected` depending on final checks.
-8. **Receive Webhook Notifications or Poll**
-   - If configured, you'll receive `enrollment.submitted`, then `enrollment.approved` or `enrollment.rejected` webhooks. Otherwise, you can poll the `/enrollments/{id}` endpoint to track changes.
+1. Org creates a Program Instance: `battery-rebate-nyc`
+2. Shares Texture form link
+3. User provides info
+4. Texture runs synchronous checks
+5. If eligible, user connects device or utility account
+6. Texture performs async checks (if needed)
+7. Enrollment progresses through status changes
+8. Webhooks notify your system or you poll for updates
 
 ---
 
 ## Why Programs & Enrollments?
 
-By introducing **Programs**, **Program Instances**, and **Enrollments**, Texture simplifies the process of managing complex offerings with unique branding, requirements, and sign-up flows. You can:
+This model helps you:
 
-- **Handle multiple Program Instances** for the same underlying Program
-- Run **instant** and **delayed** eligibility checks
-- Capture **custom data fields** and attach relevant devices or utility accounts
-- Receive real-time notifications via webhook on enrollment updates
+- Run multiple tailored **Instances** from a shared **Program**
+- Evaluate users **instantly** and over time
+- Capture **flexible data**
+- Automate with **webhook updates**
 
-This modular approach lets you focus on delivering valuable incentives or demand response initiatives without reinventing the entire sign-up and verification process each time.
+It lets you launch and scale offerings without rebuilding logic or sign-up flows each time.
 
 ---
 
 ## Additional Tips for Developers
 
-- **Testing in Sandbox**: Create a sandbox workspace to trial your Program Instances and Enrollment flows before going live.
-- **Error Handling**: Check for proper HTTP status codes and `reason` fields in the `eligibility` object when the status is `ineligible` or `rejected`.
-- **Security**: Ensure you protect your API keys and verify any external references (like manufacturer IDs) to avoid unauthorized enrollments.
-- **Documentation**: Refer to our [API reference](/api) for interactive endpoints and payload details.
+- **Sandbox Testing**: Try flows in a non-production workspace
+- **Error Handling**: Look at HTTP codes and `eligibility.reason` for rejections
+- **Security**: Protect API keys and validate any external identifiers
+- **Reference Docs**: See the API spec for all payloads and endpoint details
 
 ---
 
 ## Next Steps
 
-- **Explore the API**
-  - [View our Swagger/OpenAPI spec](/api) for endpoints and payload details on `/programs`, `/programs/{programSlug}/instances`, `/enrollments`, etc.
-- **Configure Destinations for Webhooks**
-  - Receive notifications pushed to your webhook endpoint(s) rather than polling for enrollment updates.
-- **Build or Customize Enrollment Forms**
-  - Use Texture's programmatic form generation or embed sign-up fields in your own UI.
-- **Contact Us**
-  - If you need additional support or want a Program added to our catalog, use the live chat feature in the Dashboard (look for the chat bubble in the lower right corner) to connect with our team
+- Explore the **[API Reference](/docs/api/overview.md)** for `/programs`, `/instances`, and `/enrollments`
+- Set up **[Destinations](/docs/platform-concepts/destinations/destinations.md)** to receive webhooks
+- **Customize or embed** Texture forms
+- Reach out via **live chat** in the Dashboard for support or program requests

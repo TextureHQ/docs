@@ -31,15 +31,15 @@ h6,
 /* Page Subtitle Styles - for consistent subtitles below page titles */
 .page-subtitle,
 .markdown .page-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: var(--font-weight-normal);
-  color: var(--content-muted-color);
+  color: var(--font-color-base);
   line-height: 1.6;
   margin-top: -0.75rem;
   margin-bottom: 2.5rem;
   max-width: 70ch;
   font-family: var(--font-family-base);
-  opacity: 0.85;
+  opacity: 0.75;
   letter-spacing: -0.01em;
 }
 
@@ -174,7 +174,7 @@ h6,
 .markdown p {
   font-family: var(--font-family-base);
   line-height: var(--line-height-base);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 0;
 }
 
@@ -248,7 +248,7 @@ h6,
   color: var(--font-color-base);
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
-  padding-left: 0;
+  padding-left: 1rem;
   list-style: none;
 }
 
@@ -369,22 +369,20 @@ h6,
 
 /* Unordered List Bullet Styling */
 .markdown > ul > li::before {
-  content: "";
+  content: "•";
   position: absolute;
-  left: 0.5rem;
-  top: 0.5rem;
-  width: 0.5rem;
-  height: 0.5rem;
-  background: var(--list-bullet-color);
-  border-radius: 50%;
-  margin-right: 0.75rem;
+  left: 0;
+  top: -0.15em;
+  color: var(--font-color-base);
+  font-size: 1.2em;
+  line-height: var(--line-height-base);
 }
 
 .markdown > ul > li {
   margin-bottom: var(--spacing-sm);
   line-height: var(--line-height-base);
   position: relative;
-  padding-left: 2.75rem;
+  padding-left: 1.5rem;
 }
 
 /* Paragraph to List Spacing */
@@ -398,73 +396,30 @@ h6,
    ========================================================================== */
 
 /* Markdown Content Spacing */
-.markdown > pre {
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
-}
-
 .markdown > ul,
 .markdown > ol {
   margin-bottom: 1.5rem;
   margin-top: 0.75rem;
 }
 
-/* Code block spacing with headings */
-.markdown h1 + pre,
-.markdown h2 + pre,
-.markdown h3 + pre,
-.markdown h4 + pre,
-.markdown h5 + pre,
-.markdown h6 + pre {
-  margin-top: 0.75rem;
-}
-
-.markdown pre + h1,
-.markdown pre + h2,
-.markdown pre + h3,
-.markdown pre + h4,
-.markdown pre + h5,
-.markdown pre + h6 {
-  margin-top: 2.5rem;
-}
-
-/* Mobile code block spacing adjustments */
-@media (max-width: 768px) {
-  .markdown > pre {
-    margin-bottom: 1.25rem;
-    margin-top: 0.75rem;
-  }
-
-  .markdown h1 + pre,
-  .markdown h2 + pre,
-  .markdown h3 + pre,
-  .markdown h4 + pre,
-  .markdown h5 + pre,
-  .markdown h6 + pre {
-    margin-top: 0.5rem;
-  }
-
-  .markdown pre + h1,
-  .markdown pre + h2,
-  .markdown pre + h3,
-  .markdown pre + h4,
-  .markdown pre + h5,
-  .markdown pre + h6 {
-    margin-top: 1.5rem;
-  }
-}
-
 /* Markdown Content Colors */
-.markdown > pre,
 .markdown > ul,
 .markdown > ol,
 .markdown > p {
   color: var(--content-color);
 }
 
-/* Global link styling with increased underline offset */
-a {
-  text-underline-offset: 0.3em;
+/* Markdown specific link styling only */
+.markdown a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(68, 74, 225, 0.7);
+  transition: all 0.2s ease;
+}
+
+.markdown a:hover {
+  color: var(--link-hover-color);
+  border-bottom-color: rgba(68, 74, 225, 1);
 }
 
 /* Hide anchor link icons */

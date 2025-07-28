@@ -1,0 +1,81 @@
+/**
+ * Texture Documentation - Code Block Styles
+ * 
+ * Clean, minimal code block styling that works with Docusaurus's syntax highlighting.
+ */
+
+/* ==========================================================================
+   CODE BLOCK SPACING
+   ========================================================================== */
+
+/* Code block spacing with headings */
+.markdown h1 + pre,
+.markdown h2 + pre,
+.markdown h3 + pre,
+.markdown h4 + pre,
+.markdown h5 + pre,
+.markdown h6 + pre {
+  margin-top: 1rem;
+}
+
+.markdown pre + h1,
+.markdown pre + h2,
+.markdown pre + h3,
+.markdown pre + h4,
+.markdown pre + h5,
+.markdown pre + h6 {
+  margin-top: 2rem;
+}
+
+/* Code block spacing with other elements */
+.markdown p + pre,
+.markdown ul + pre,
+.markdown ol + pre,
+.markdown .theme-admonition + pre {
+  margin-top: 1rem;
+}
+
+.markdown pre + p,
+.markdown pre + ul,
+.markdown pre + ol,
+.markdown pre + .theme-admonition {
+  margin-top: 1rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE CODE BLOCKS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .markdown h1 + pre,
+  .markdown h2 + pre,
+  .markdown h3 + pre,
+  .markdown h4 + pre,
+  .markdown h5 + pre,
+  .markdown h6 + pre {
+    margin-top: 0.75rem;
+  }
+
+  .markdown pre + h1,
+  .markdown pre + h2,
+  .markdown pre + h3,
+  .markdown pre + h4,
+  .markdown pre + h5,
+  .markdown pre + h6 {
+    margin-top: 1.5rem;
+  }
+
+  .markdown p + pre,
+  .markdown ul + pre,
+  .markdown ol + pre,
+  .markdown .theme-admonition + pre {
+    margin-top: 0.75rem;
+  }
+
+  .markdown pre + p,
+  .markdown pre + ul,
+  .markdown pre + ol,
+  .markdown pre + .theme-admonition {
+    margin-top: 0.75rem;
+  }
+}

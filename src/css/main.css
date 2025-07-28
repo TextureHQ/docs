@@ -14,10 +14,11 @@
 /* Import Navigation and Layout Styles */
 @import "./navigation.css";
 
-/* Note: Dark mode overrides are now included in variables.css */
-
 /* Import Callout Styles */
 @import "./callouts.css";
+
+/* Import Code Block Styles */
+@import "./code-blocks.css";
 
 /* Import Miscellaneous Styles */
 @import "./misc.css";

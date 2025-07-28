@@ -36,6 +36,12 @@
   --list-number-border: #d1d5db;
   --hr-color: #d1d5db;
 
+  /* Link Colors - Light Mode */
+  --link-color: var(--brand-color);
+  --link-hover-color: var(--brand-color-hover);
+  --link-underline-color: rgba(68, 74, 225, 0.3);
+  --link-hover-underline-color: rgba(58, 63, 209, 0.5);
+
   /* Docusaurus Content Colors - Light Mode */
   --ifm-color-content: #3c4257;
   --ifm-color-content-secondary: #6b7280;
@@ -139,7 +145,7 @@
   /* Heading Margins - Enterprise Documentation Standards */
   --heading-margin-top-h1: 3rem;
   --heading-margin-bottom-h1: 1.5rem;
-  --heading-margin-top-h2: 4rem;
+  --heading-margin-top-h2: 2rem;
   --heading-margin-bottom-h2: 1.25rem;
   --heading-margin-top-h3: 3rem;
   --heading-margin-bottom-h3: 1rem;
@@ -240,6 +246,12 @@
   --list-number-color: #e5e7eb;
   --list-number-border: #4b5563;
   --hr-color: #4b5563;
+
+  /* Link Colors - Dark Mode */
+  --link-color: var(--brand-color);
+  --link-hover-color: var(--brand-color-hover);
+  --link-underline-color: rgba(180, 185, 255, 0.3);
+  --link-hover-underline-color: rgba(161, 167, 255, 0.5);
 
   /* Docusaurus Content Colors - Dark Mode */
   --ifm-color-content: #d1d5db;

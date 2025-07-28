@@ -11,7 +11,7 @@
 
 /* Base callout container */
 .theme-admonition {
-  margin: 1.5rem 0;
+  margin: 2.5rem 0;
   padding: 1.25rem 1.5rem;
   border-radius: 8px;
   border-left: 4px solid;
@@ -19,6 +19,13 @@
   line-height: 1.6;
   position: relative;
   overflow: hidden;
+}
+
+/* Override Docusaurus admonition margins with higher specificity */
+.markdown .theme-admonition,
+.markdown .theme-admonition[class*="admonition_"],
+.markdown .theme-admonition[class*="alert"] {
+  margin: 2.5rem 0;
 }
 
 /* Callout header with icon and title */
@@ -123,7 +130,7 @@
 
 @media (max-width: 768px) {
   .theme-admonition {
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 1rem 1.25rem;
     font-size: 0.9rem;
   }
@@ -145,7 +152,7 @@
 .markdown .theme-admonition + h4,
 .markdown .theme-admonition + h5,
 .markdown .theme-admonition + h6 {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .markdown h1 + .theme-admonition,
@@ -159,7 +166,7 @@
 
 /* Spacing between callouts and code blocks */
 .markdown .theme-admonition + pre {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .markdown pre + .theme-admonition {
@@ -168,7 +175,7 @@
 
 /* Spacing between multiple callouts */
 .markdown .theme-admonition + .theme-admonition {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 /* ==========================================================================
@@ -182,7 +189,7 @@ blockquote {
   color: var(--blockquote-text);
   font-size: 0.95rem;
   line-height: 1.6;
-  margin: 1.5rem 0;
+  margin: 2.5rem 0;
   padding: 1.25rem 1.5rem;
   border-radius: 0 8px 8px 0;
   position: relative;
@@ -196,7 +203,7 @@ blockquote {
 .markdown blockquote + h4,
 .markdown blockquote + h5,
 .markdown blockquote + h6 {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .markdown h1 + blockquote,
@@ -205,15 +212,15 @@ blockquote {
 .markdown h4 + blockquote,
 .markdown h5 + blockquote,
 .markdown h6 + blockquote {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .markdown p + blockquote {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .markdown blockquote + p {
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 /* Remove redundant margins from elements inside blockquotes */
@@ -243,7 +250,7 @@ blockquote {
 /* Responsive blockquotes */
 @media (max-width: 768px) {
   blockquote {
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 1rem 1.25rem;
     font-size: 0.9rem;
   }
