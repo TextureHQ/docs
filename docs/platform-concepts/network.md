@@ -22,6 +22,27 @@ Each workspace models a **Network**: a structured, interrelated graph of energy 
 
 This graph is continuously updated via ingestion, user action, or workflow automation. It's how Texture represents "what's on the grid" in a way that can be observed, reasoned about, and acted on.
 
+```mermaid
+graph TD
+    Network
+    
+    Network --> Site1[Site 1]
+    Network --> Site2[Site 2]
+    Network --> Site3[Site 3]
+    
+    Site1 --> Meter1[Meter]
+    Site2 --> Meter2[Meter]
+    Site3 --> Meter3[Meter]
+    
+    Site1 --> Contact1[Contact]
+    Site2 --> Contact2[Contact]
+    Site3 --> Contact3[Contact]
+    
+    Meter1 --> Device1[Device]
+    Meter2 --> Device2[Device]
+    Meter3 --> Device3[Device]****
+```
+
 ## Why It Matters
 
 Most energy systems lack a consistent, connected view of the infrastructure they manage. Data lives in silos, and relationships between assets are lost.
@@ -34,18 +55,18 @@ With Texture:
 
 The Network provides the data foundation for all workflows, agents, and analytics.
 
-## What's Included
+## Network Composition
 
-| Object Type | Description |
-|-------------|-------------|
-| **Sites** | Core unit of infrastructure, often tied to a customer or program |
-| **Devices** | Controllable or monitored energy assets (battery, inverter, thermostat, etc.) |
-| **Meters** | Utility, revenue-grade, or virtual meters representing energy flows |
-| **Locations & Regions** | Structured address and regulatory context |
-| **Contacts** | People or orgs connected to sites, programs, or documents |
-| **Enrollments & Programs** | Layered logic for participation and incentive models |
+A network comprises these core components:
 
-These objects are linked via identifiers, metadata, and relationships—forming a true operational graph.
+| Component | Role in Network |
+|-----------|----------------|
+| **Sites** | Physical locations that contain energy infrastructure |
+| **Meters** | Energy flow measurement and monitoring points |
+| **Devices** | Controllable or monitored energy assets at each site |
+| **Contacts** | People and organizations associated with network assets |
+
+These components form interconnected relationships that enable the network to function as a unified energy system.
 
 :::tip
 You can traverse the network via API or UI—for example, from a region to sites, then to devices, then to contact records and enrollments.
