@@ -40,7 +40,7 @@ graph TD
     
     Meter1 --> Device1[Device]
     Meter2 --> Device2[Device]
-    Meter3 --> Device3[Device]****
+    Meter3 --> Device3[Device]
 ```
 
 ## Why It Matters
