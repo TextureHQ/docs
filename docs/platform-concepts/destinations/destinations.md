@@ -30,7 +30,7 @@ Destinations are the endpoints where your Texture data gets delivered. Instead o
 - **[SMS](/platform-concepts/destinations/sms)** - Receive text message notifications
 
 ### Event Types
-- **[Event Types](/platform-concepts/destinations/event-types)** - Understand the different types of events you can receive
+- **[Events](/platform-concepts/events)** - Understand the different types of events you can receive
 
 ## Getting Started
 

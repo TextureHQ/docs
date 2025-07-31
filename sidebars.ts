@@ -41,6 +41,7 @@ const sidebars: SidebarsConfig = {
         "platform-concepts/devices",
         "platform-concepts/contacts",
         "platform-concepts/metrics",
+        "platform-concepts/events",
         "platform-concepts/schedules",
         "platform-concepts/commands/commands",
         "platform-concepts/programs",
@@ -77,11 +78,6 @@ const sidebars: SidebarsConfig = {
         {
           type: "doc",
           id: "platform-concepts/destinations/kafka",
-          className: "hidden",
-        },
-        {
-          type: "doc",
-          id: "platform-concepts/destinations/event-types",
           className: "hidden",
         },
       ],

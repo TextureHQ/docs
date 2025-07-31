@@ -14,6 +14,7 @@ interface Manufacturer {
   slug: string;
   support_level: string;
   supported_device_types?: string[];
+  supports_grid_services?: boolean;
   description?: any;
   description_html?: string;
   about?: string;
@@ -201,17 +202,17 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
                   </td>
                   <td className="support-level-cell">
                     <StatusTag
+                      type="support"
                       supportLevel={manufacturer.support_level}
                       variant="badge"
                     />
                   </td>
                   <td className="grid-services-cell">
-                    {manufacturer.supported_device_types?.length === 1 &&
-                    (manufacturer.supported_device_types[0] === "vehicle" ||
-                      manufacturer.supported_device_types[0] === "charger" ||
-                      manufacturer.supported_device_types[0] === "thermostat")
-                      ? "N/A"
-                      : "N/A"}
+                    <StatusTag
+                      type="grid-services"
+                      gridServices={manufacturer.supports_grid_services}
+                      variant="badge"
+                    />
                   </td>
                   <td className="device-types-cell">
                     {manufacturer.supported_device_types
