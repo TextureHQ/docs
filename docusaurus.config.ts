@@ -175,18 +175,8 @@ const config: Config = {
         },
         { to: "/api", label: "API Reference", position: "left" },
         {
-          to: "/integrations/manufacturers",
-          label: "Supported Manufacturers",
-          position: "left",
-        },
-        {
           href: "https://dashboard.texturehq.com",
           label: "Dashboard",
-          position: "right",
-        },
-        {
-          href: "https://github.com/texturehq/examples",
-          label: "GitHub",
           position: "right",
         },
       ],
