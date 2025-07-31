@@ -49,7 +49,7 @@ Texture will automatically enroll your devices into the Grid Services for other 
 
 Enrollment is unfortunately not an instantaneous process as the OEMs need time to test the devices, configure them, and ensure that they are ready for use before they are fully ready to be used in Grid Services.
 
-If you have configured a [Destination](/platform-concepts/destinations/) for your devices, you will see enrollment webhook events fired [here](/platform-concepts/destinations/event-types).
+If you have configured a [Destination](/platform-concepts/destinations/) for your devices, you will see enrollment webhook events fired [here](/platform-concepts/events).
 
 ## Grid Service Commands
 
