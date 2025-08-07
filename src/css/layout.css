@@ -15,15 +15,14 @@
   padding-right: 3rem;
 }
 
-/* Main content column width control - target the parent container */
-/* Use attribute selector to target the main content column regardless of generated classname */
-div[class*="docItemCol"] {
-  max-width: 100% !important;
-}
-
 /* Grid column padding for better spacing */
 .col[class*="col--"] {
   min-width: 350px;
+}
+
+/* Fix for table of contents layout - prevent flex-wrap from pushing TOC below content */
+.row {
+  flex-wrap: nowrap !important;
 }
 
 /* ==========================================================================

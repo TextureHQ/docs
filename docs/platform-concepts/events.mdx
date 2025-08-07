@@ -1,75 +1,193 @@
 ---
 sidebar_position: 6
-title: Events
 ---
 
+import { Subtitle } from '@components/Subtitle';
 import { CustomerCreatedEvent, CommandFailedEvent, CommandSucceededEvent, DeviceDisconnectedEvent, DeviceDiscoveredEvent, DeviceUpdatedEvent, EnrollmentApprovedEvent, SiteCreatedEvent } from '@site/src/components/EventTypes';
 
 # Events
+<Subtitle>Real-time notifications for system changes and device activity</Subtitle>
 
-_We are continually adding more event types as we build out the Texture platform so if there is an event type you would like to see, please let us know._
+**Events** in Texture are real-time notifications that inform you about changes across your energy infrastructure. They provide immediate visibility into device activity, command execution, and system updates—enabling automated workflows and proactive monitoring.
 
-First some overall notes on the event types:
+Each event follows the [Standard Webhook Specification](https://www.standardwebhooks.com/) for maximum compatibility with existing integrations. Events are delivered as JSON payloads with consistent structure, making them easy to process and integrate into your applications.
 
-We follow the [Standard Webhook Specification](https://www.standardwebhooks.com/) as closely as possible for maximum compatibility with existing webhook integrations.
+---
 
-- All events are sent to the destination as a JSON object.
-- All events have a `type` property that indicates the type of event.
-- All events have a `version` property that indicates the version of the event type. We use semver for versioning.
-- All events have a `key` property that is a unique identifier for the event. The `key` is a hash of the event data and is used to deduplicate events helping you avoid duplicate events.
+## Why Events?
 
-## `customer.created`
+Events enable you to:
+
+- **Monitor Real-Time Activity** — Get immediate notifications when devices connect, disconnect, or update
+- **Track Command Execution** — Know when commands succeed or fail across your device fleet
+- **Automate Workflows** — Trigger actions based on specific events and conditions
+- **Maintain System Health** — Proactively identify and respond to device issues
+- **Audit System Changes** — Keep a complete record of all platform activity
+- **Integrate with External Systems** — Connect events to your existing tools and workflows
+
+Events serve as the primary mechanism for real-time communication and automation across the Texture Platform.
+
+---
+
+## Event Structure
+
+All events follow a consistent structure for easy processing:
+
+- **JSON Format** — All events are delivered as JSON objects
+- **Type Property** — Each event has a `type` property indicating the event category
+- **Version Control** — Events include a `version` property using semantic versioning
+- **Unique Keys** — Every event has a unique `key` property for deduplication
+- **Standard Webhooks** — Compatible with the Standard Webhook Specification
+
+This consistent structure ensures reliable event processing and integration across your systems.
+
+---
+
+## Available Event Types
+
+Texture currently offers eight core event types that cover the essential aspects of energy system monitoring:
+
+| Event Type | Description | Trigger |
+|------------|-------------|---------|
+| **customer.created** | New customer created on the platform | Customer registration |
+| **command.failed** | Command execution failed | Command failure |
+| **command.succeeded** | Command execution succeeded | Command completion |
+| **device.discovered** | New device connected to platform | Device connection |
+| **device.updated** | Device data updated | Device state change |
+| **device.disconnected** | Device disconnected from platform | Device disconnection |
+| **enrollment.approved** | Program enrollment approved | Enrollment approval |
+| **site.created** | New site created on platform | Site creation |
+
+Each event type provides specific data relevant to its context, enabling targeted automation and monitoring.
+
+---
+
+## Event Types and Payloads
+
+### Customer Created
 
 Fired whenever a customer is created on the Texture platform.
 
 <CustomerCreatedEvent />
 
-## `command.failed`
+### Command Failed
 
 Fired whenever a command run against a device fails.
 
 <CommandFailedEvent />
 
-## `command.succeeded`
+### Command Succeeded
 
 Fired whenever a command run against a device succeeds.
+
 <CommandSucceededEvent />
 
-## `device.discovered`
+### Device Discovered
 
-Fired when a new device is connected to the Texture platform. Includes the following payload:
+Fired when a new device is connected to the Texture platform.
 
 <DeviceDiscoveredEvent />
 
-_Note that when you configure a destination, you can specify which device types are fired for a given destination which can act as a kind of filter. So for example you could say that you want only Battery updates to go to a given webhook and we will filter them for you._
+:::tip
+**Device Type Filtering**
 
-## `device.updated`
+When configuring a destination, you can specify which device types should trigger events for a given destination. For example, you could configure a webhook to receive only Battery device updates, and Texture will filter events accordingly.
+:::
+
+### Device Updated
 
 Fired whenever we get updated data for a device.
 
 <DeviceUpdatedEvent />
 
-Note, the `state` object will differ by device type. For example, a battery will have different state data than an inverter. We have details on these differences [here](/platform-concepts/data-models/overview). The above example is for a battery.
+:::note
+**Device-Specific State Data**
 
-The lion's share of these events will be triggered from the Device state updates which we get mostly on 5 or 15 minute intervals from the devices, however we are always looking to get tighter interval telemetry data as well as allow for specifying filters on that data. Stay tuned as we continue to add richer functionality to the filtering data to these events.
+The `state` object varies by device type. For example, a battery will have different state data than an inverter. See our [Data Models documentation](/platform-concepts/data-models/overview) for detailed information about device-specific state structures.
+:::
 
-## `device.disconnected`
+Most device update events are triggered from device state updates, which typically occur on 5 or 15-minute intervals. We're continuously working to provide tighter interval telemetry data and enhanced filtering capabilities.
+
+### Device Disconnected
 
 Fired whenever a device disconnects from the Texture platform.
 
 <DeviceDisconnectedEvent />
 
-## `enrollment.approved`
+### Enrollment Approved
 
 Fired whenever an enrollment is approved.
 
-> This event is only available for organizations that have opted 
-in to Grid Services. If you are interested in Grid Services, please reach out to us.
+:::caution
+**Grid Services Required**
+
+This event is only available for organizations that have opted in to Grid Services. If you're interested in Grid Services, please reach out to our team.
+:::
 
 <EnrollmentApprovedEvent />
 
-## `site.created`
+### Site Created
 
 Fired whenever a site is created on the Texture platform.
 
 <SiteCreatedEvent />
+
+---
+
+## Event Processing and Integration
+
+### Webhook Delivery
+
+Events are delivered via webhooks to your configured destinations. Each destination can be configured with:
+
+- **Event Type Filters** — Specify which event types to receive
+- **Device Type Filters** — Filter events by specific device types
+- **Custom Headers** — Add authentication or custom headers
+- **Retry Logic** — Automatic retry for failed deliveries
+
+### Event Deduplication
+
+Each event includes a unique `key` property that's a hash of the event data. This enables:
+
+- **Duplicate Detection** — Avoid processing the same event multiple times
+- **Reliable Processing** — Ensure idempotent event handling
+- **Audit Trail** — Maintain complete event history
+
+### Integration Patterns
+
+Common integration patterns include:
+
+- **Real-Time Dashboards** — Display live system status and activity
+- **Automated Alerts** — Trigger notifications for critical events
+- **Workflow Automation** — Execute actions based on event triggers
+- **Data Synchronization** — Keep external systems updated with platform changes
+
+---
+
+## Best Practices
+
+- **Handle Event Ordering** — Events may arrive out of order; design your handlers accordingly
+- **Implement Idempotency** — Use the event `key` to prevent duplicate processing
+- **Monitor Webhook Health** — Track delivery success rates and response times
+- **Plan for Event Volume** — Design your systems to handle expected event frequency
+- **Test Event Handling** — Validate your event processing logic with test events
+- **Monitor Event Latency** — Track time from event occurrence to processing
+
+---
+
+## Next Steps
+
+- **Configure Destinations** — Set up webhook endpoints to receive events
+- **Implement Event Handlers** — Build logic to process and respond to events
+- **Monitor Event Activity** — Use the Dashboard to track event delivery and processing
+- **Explore Advanced Filtering** — Configure device-specific and event-type filtering
+
+Events provide the real-time foundation for monitoring, automation, and integration across your energy infrastructure in Texture.
+
+---
+
+:::note
+**Expanding Event Types**
+
+We're continually adding more event types as we build out the Texture platform. If there's an event type you'd like to see, please let us know!
+:::

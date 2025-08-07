@@ -30,14 +30,7 @@
 
 /* Callout header with icon and title */
 [class*="admonitionHeading"] {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
-  font-weight: 600;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
+  display: none;
 }
 
 /* Admonition icon styling */
