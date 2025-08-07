@@ -8,15 +8,17 @@ import { CustomerCreatedEvent, CommandFailedEvent, CommandSucceededEvent, Device
 # Events
 <Subtitle>Real-time notifications for system changes and device activity</Subtitle>
 
-**Events** in Texture are real-time notifications that inform you about changes across your energy infrastructure. They provide immediate visibility into device activity, command execution, and system updates—enabling automated workflows and proactive monitoring.
+**Events** are the core of Texture's power—the platform was built as an event-driven system from the ground up, unlike traditional data warehouses that only provide historical analysis. This event-driven architecture enables real-time responsiveness, immediate automation, and proactive energy management that static data systems simply cannot match.
 
-Each event follows the [Standard Webhook Specification](https://www.standardwebhooks.com/) for maximum compatibility with existing integrations. Events are delivered as JSON payloads with consistent structure, making them easy to process and integrate into your applications.
+Every change in your energy infrastructure—device connections, state updates, command executions, and system modifications—triggers events that flow through Texture's real-time processing engine. This gives you immediate visibility and control over your energy systems, enabling automated workflows and proactive monitoring that transform how you manage energy infrastructure.
+
+Each event follows the [Standard Webhook Specification](https://www.standardwebhooks.com/) for maximum compatibility with existing integrations. Events are delivered as JSON payloads with consistent structure, making them easy to process and integrate into your applications****.****
 
 ---
 
 ## Why Events?
 
-Events enable you to:
+Unlike traditional energy management systems that rely on periodic data polling and batch processing, Texture's event-driven architecture provides immediate responsiveness and real-time control. Events enable you to:
 
 - **Monitor Real-Time Activity** — Get immediate notifications when devices connect, disconnect, or update
 - **Track Command Execution** — Know when commands succeed or fail across your device fleet
@@ -24,8 +26,10 @@ Events enable you to:
 - **Maintain System Health** — Proactively identify and respond to device issues
 - **Audit System Changes** — Keep a complete record of all platform activity
 - **Integrate with External Systems** — Connect events to your existing tools and workflows
+- **Enable Real-Time Control** — Respond instantly to grid conditions, price signals, or device states
+- **Scale Automation** — Build complex, multi-device automation that traditional systems cannot support
 
-Events serve as the primary mechanism for real-time communication and automation across the Texture Platform.
+Events transform static energy data into dynamic, actionable intelligence—making Texture fundamentally different from traditional data warehouses that can only tell you what happened yesterday.
 
 ---
 
