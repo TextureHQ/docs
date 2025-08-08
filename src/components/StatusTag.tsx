@@ -37,6 +37,21 @@ export const StatusTag: React.FC<StatusTagProps> = ({
     blocked: "#fef2f2", // red-50
   };
 
+  // Dark mode colors for better contrast
+  const supportLevelColorsDark = {
+    production: "#10b981", // emerald-500
+    development: "#f59e0b", // amber-500
+    planned: "#8b5cf6", // violet-500
+    blocked: "#ef4444", // red-500
+  };
+
+  const supportLevelBgColorsDark = {
+    production: "#064e3b", // emerald-900
+    development: "#78350f", // amber-900
+    planned: "#4c1d95", // violet-900
+    blocked: "#7f1d1d", // red-900
+  };
+
   const supportLevelEmojis = {
     production: "",
     development: "",
@@ -58,6 +73,17 @@ export const StatusTag: React.FC<StatusTagProps> = ({
   const gridServicesBgColors = {
     true: "#ecfdf5", // emerald-50
     false: "#fef2f2", // red-50
+  };
+
+  // Dark mode colors for grid services
+  const gridServicesColorsDark = {
+    true: "#10b981", // emerald-500
+    false: "#ef4444", // red-500
+  };
+
+  const gridServicesBgColorsDark = {
+    true: "#064e3b", // emerald-900
+    false: "#7f1d1d", // red-900
   };
 
   const gridServicesEmojis = {
@@ -91,17 +117,49 @@ export const StatusTag: React.FC<StatusTagProps> = ({
   }
 
   if (variant === "badge") {
+    // Determine dark mode colors based on support level
+    let darkBgColor = bgColor;
+    let darkTextColor = color;
+
+    if (type === "support") {
+      if (supportLevel === "production") {
+        darkBgColor = "#022c22";
+        darkTextColor = "#34d399";
+      } else if (supportLevel === "development") {
+        darkBgColor = "#451a03";
+        darkTextColor = "#fbbf24";
+      } else if (supportLevel === "planned") {
+        darkBgColor = "#2e1065";
+        darkTextColor = "#a78bfa";
+      } else if (supportLevel === "blocked") {
+        darkBgColor = "#450a0a";
+        darkTextColor = "#f87171";
+      }
+    } else if (type === "grid-services") {
+      if (gridServices === true) {
+        darkBgColor = "#022c22";
+        darkTextColor = "#34d399";
+      } else if (gridServices === false) {
+        darkBgColor = "#450a0a";
+        darkTextColor = "#f87171";
+      }
+    }
+
     return (
       <span
         className={`support-level-badge ${className}`}
-        style={{
-          backgroundColor: bgColor,
-          color: color,
-          padding: "4px 8px",
-          borderRadius: "4px",
-          fontSize: "12px",
-          fontWeight: "500",
-        }}
+        style={
+          {
+            backgroundColor: bgColor,
+            color: color,
+            padding: "4px 8px",
+            borderRadius: "4px",
+            fontSize: "12px",
+            fontWeight: "500",
+            "--dark-bg-color": darkBgColor,
+            "--dark-text-color": darkTextColor,
+          } as React.CSSProperties & { [key: string]: string }
+        }
       >
         {emoji} {text}
       </span>

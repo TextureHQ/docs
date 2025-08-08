@@ -496,22 +496,22 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
         }
 
         [data-theme="dark"] .apps-table-container {
-          background: #374151;
-          border-color: #4b5563;
+          background: #1f2937;
+          border-color: #374151;
         }
 
         [data-theme="dark"] .apps-table th {
-          background-color: #4b5563;
+          background-color: #374151;
           color: #e5e7eb;
-          border-bottom-color: #6b7280;
-        }
-
-        [data-theme="dark"] .app-row {
           border-bottom-color: #4b5563;
         }
 
+        [data-theme="dark"] .app-row {
+          border-bottom-color: #374151;
+        }
+
         [data-theme="dark"] .app-row:hover {
-          background-color: #4b5563;
+          background-color: transparent;
         }
 
         [data-theme="dark"] .app-link {
@@ -536,8 +536,8 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
         }
 
         [data-theme="dark"] .app-card {
-          background: #374151;
-          border-color: #4b5563;
+          background: #1f2937;
+          border-color: #374151;
         }
 
         [data-theme="dark"] .app-card-logo {
@@ -563,6 +563,12 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
 
         [data-theme="dark"] .app-card-description {
           color: #9ca3af;
+        }
+
+        /* Dark mode styles for status tags */
+        [data-theme="dark"] .support-level-badge {
+          background-color: var(--dark-bg-color) !important;
+          color: var(--dark-text-color) !important;
         }
       `}</style>
     </div>

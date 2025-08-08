@@ -596,39 +596,40 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         }
 
         [data-theme="dark"] .filter-button {
+          background-color: #1f2937;
+          border-color: #374151;
+          color: #d1d5db;
+        }
+
+        [data-theme="dark"] .filter-button:hover {
           background-color: #374151;
           border-color: #4b5563;
           color: #e5e7eb;
         }
 
-        [data-theme="dark"] .filter-button:hover {
-          background-color: #4b5563;
-          border-color: #6b7280;
-        }
-
         [data-theme="dark"] .filter-button.active {
-          background-color: var(--brand-color);
-          border-color: var(--brand-color);
+          background-color: #3b82f6;
+          border-color: #3b82f6;
           color: #ffffff;
         }
 
         [data-theme="dark"] .manufacturers-table-container {
-          background: #374151;
-          border-color: #4b5563;
+          background: #1f2937;
+          border-color: #374151;
         }
 
         [data-theme="dark"] .manufacturers-table th {
-          background-color: #4b5563;
+          background-color: #374151;
           color: #e5e7eb;
-          border-bottom-color: #6b7280;
-        }
-
-        [data-theme="dark"] .manufacturer-row {
           border-bottom-color: #4b5563;
         }
 
+        [data-theme="dark"] .manufacturer-row {
+          border-bottom-color: #374151;
+        }
+
         [data-theme="dark"] .manufacturer-row:hover {
-          background-color: #4b5563;
+          background-color: transparent;
         }
 
         [data-theme="dark"] .manufacturer-link {
@@ -649,8 +650,8 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         }
 
         [data-theme="dark"] .manufacturer-card {
-          background: #374151;
-          border-color: #4b5563;
+          background: #1f2937;
+          border-color: #374151;
         }
 
         [data-theme="dark"] .manufacturer-card-logo {
@@ -672,6 +673,12 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
 
         [data-theme="dark"] .manufacturer-card-value {
           color: #e5e7eb;
+        }
+
+        /* Dark mode styles for status tags */
+        [data-theme="dark"] .support-level-badge {
+          background-color: var(--dark-bg-color) !important;
+          color: var(--dark-text-color) !important;
         }
       `}</style>
     </div>
