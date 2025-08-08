@@ -7,7 +7,7 @@ import { Subtitle } from '@components/Subtitle';
 
 <Subtitle>Extend platform capabilities through third-party integrations</Subtitle>
 
-**Apps** are integrations with third-party services that expand the functionality, data, and capabilities of the Texture Platform. By enabling an App (often by providing **the** **relevant** API key or OAuth credentials), you can seamlessly connect external services or datasets to Texture and leverage them across your Sites, Devices, and more.fix 
+**Apps** are integrations with third-party services that expand the functionality, data, and capabilities of the Texture Platform. By enabling an App (often by providing **the** **relevant** API key or OAuth credentials), you can seamlessly connect external services or datasets to Texture and leverage them across your Sites, Devices, and more.
 
 ---
 
