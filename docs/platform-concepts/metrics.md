@@ -138,6 +138,12 @@ Energy Emissions measures the total pounds of CO2 emitted during a specific time
 - **Methodology**: Based on WattTime's Marginal Operating Emissions Rate (MOER), which represents the emissions rate of electricity generators responding to load changes on the local grid at a given time
 - **Coverage**: 5-minute granularity with 2+ years of historical data and 72-hour forecasts
 
+:::note
+**Emissions Data Availability**
+
+Marginal emissions data is currently available for U.S. regions only. International coverage is expanding. Contact us if you need emissions data for specific regions outside the U.S.
+:::
+
 **API Reference:**
 ```http
 GET /v1/metrics/emissions
@@ -277,6 +283,12 @@ For example, when requesting hourly data for a day, you'll receive 24 data point
 
 **Grouping by Site:**
 You can group metrics by site using the `groupBy=SITE` parameter along with `filterSiteId` to specify which sites you want data for. This is useful when you want to analyze metrics across multiple devices belonging to the same site.
+
+:::tip
+**Data Freshness**
+
+Metrics data is typically available within 5-15 minutes of collection, depending on device type and connection status. For real-time monitoring, consider using the [Events API](/platform-concepts/events) for immediate device state changes.
+:::
 
 ---
 

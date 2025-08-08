@@ -10,7 +10,7 @@ import { CustomerCreatedEvent, CommandFailedEvent, CommandSucceededEvent, Device
 
 **Events** are the core of Texture's power—the platform was built as an event-driven system from the ground up, unlike traditional data warehouses that only provide historical analysis. This event-driven architecture enables real-time responsiveness, immediate automation, and proactive energy management that static data systems simply cannot match.
 
-Every change in your energy infrastructure—device connections, state updates, command executions, and system modifications—triggers events that flow through Texture's real-time processing engine. This gives you immediate visibility and control over your energy systems, enabling automated workflows and proactive monitoring that transform how you manage energy infrastructure.
+Every change in your energy infrastructure—device connections, state updates, command executions, and system modifications—triggers events that flow through Texture's real-time processing engine. This gives you immediate visibility and control **over** your energy systems, enabling automated workflows and proactive monitoring that transform how you manage energy infrastructure.
 
 Each event follows the [Standard Webhook Specification](https://www.standardwebhooks.com/) for maximum compatibility with existing integrations. Events are delivered as JSON payloads with consistent structure, making them easy to process and integrate into your applications****.****
 
@@ -149,6 +149,12 @@ Events are delivered via webhooks to your configured destinations. Each destinat
 - **Custom Headers** — Add authentication or custom headers
 - **Retry Logic** — Automatic retry for failed deliveries
 
+:::caution
+**Webhook Reliability**
+
+Ensure your webhook endpoints are highly available and respond quickly (within 10 seconds). Texture will retry failed deliveries, but persistent failures may result in event loss. Monitor your webhook health in the Dashboard.
+:::
+
 ### Event Deduplication
 
 Each event includes a unique `key` property that's a hash of the event data. This enables:
@@ -171,6 +177,12 @@ Common integration patterns include:
 ## Best Practices
 
 - **Handle Event Ordering** — Events may arrive out of order; design your handlers accordingly
+
+:::tip
+**Event Ordering Strategy**
+
+Use the event `timestamp` field for ordering when sequence matters. For critical workflows, consider implementing a simple queue or using the event `key` for deduplication to ensure reliable processing.
+:::
 - **Implement Idempotency** — Use the event `key` to prevent duplicate processing
 - **Monitor Webhook Health** — Track delivery success rates and response times
 - **Plan for Event Volume** — Design your systems to handle expected event frequency
