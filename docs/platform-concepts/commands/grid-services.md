@@ -3,67 +3,198 @@ sidebar_position: 17
 ---
 
 import { BackLink } from '@components/BackLink';
+import { Subtitle } from '@components/Subtitle';
 
 <BackLink to="/platform-concepts/commands" label="Commands" />
 
 # Grid Services
+<Subtitle>Advanced grid interaction capabilities through OEM partnerships</Subtitle>
 
-Texture's Grid Services provide advanced capabilities through partnerships with OEMs.
+**Grid Services** provide advanced capabilities for direct grid interaction through partnerships with Original Equipment Manufacturers (OEMs). These services enable devices to participate in grid balancing, demand response programs, and wholesale energy markets with enhanced reliability and support.
 
-We've established strong relationships with OEMs and we also have direct support channels with these OEMs, in many cases backed by SLAs.
+Texture has established strong relationships with OEMs backed by SLAs, providing rock-solid support for energy devices that require advanced communication and control capabilities for grid participation.
 
-This allows us to provide rock solid support for energy devices on the grid that have a need for more advanced communication and control capabilities.
+---
 
-## Overview
+## Why Grid Services?
 
-Grid Services are a specific type of control that allows you to have devices interact with the grid in a more direct way.
+Grid Services enable advanced energy infrastructure capabilities:
 
-The most common use case for Grid Services is exporting energy to the grid from a battery on the Texture platform during a time that is advantageous for a variety of reasons.
+- **Direct Grid Interaction** — Devices interact with the grid in more sophisticated ways than standard commands
+- **OEM Partnerships** — Leverage manufacturer-specific capabilities through direct partnerships
+- **Enhanced Reliability** — SLA-backed support channels with OEMs for critical operations
+- **Market Participation** — Participate in demand response programs and wholesale energy markets
+- **Grid Balancing** — Contribute to grid stability during high-demand periods
+- **Arbitrage Opportunities** — Take advantage of price differentials in deregulated markets
 
-Use cases for Grid Services include:
+Grid Services transform your energy devices into active participants in the broader energy ecosystem.
 
-- Exporting energy to the grid from a battery on the Texture platform during a time of high demand to help grid resilience
-- Importing energy from the grid to a battery on the Texture platform during a time of low demand
+---
 
-These capabilities are useful for:
+## Core Concepts
 
-- Utility Companies looking to balance the grid
-- VPPs, REPs, and CCAs that are able to take advantage of wholesale energy arbitrage
-- CCAs, utilities, and other organizations looking to offer rebates for participating in activities that help grid resilience
-- Any party looking to participate in demand response programs (like [DSGS in California](https://www.energy.ca.gov/programs-and-topics/programs/demand-side-grid-support-program))
-- Parties looking to take advantage of pricing opportunites in deregulated markets like ERCOT
+### What are Grid Services?
 
-## Setup
+Grid Services are specialized commands that allow devices to interact with the grid in more direct and sophisticated ways than standard commands. The most common use case is exporting energy to the grid from batteries during advantageous periods.
 
-In order to setup Grid Services, you will need to work with your Texture Support Team to enable Grid Services for your Organization.
+### OEM Partnerships
 
-If you do not already have a dedicated support contact, please reach out to us at support@texturehq.com and we will help you get set up.
+Texture maintains direct relationships with OEMs, providing:
 
-## Enrollment
+- **Direct Support Channels** — Backed by SLAs for critical operations
+- **Enhanced Capabilities** — Access to manufacturer-specific features
+- **Reliability Assurance** — Enterprise-grade support for grid-critical operations
+- **Testing and Validation** — OEMs test and configure devices for grid service readiness
 
-Once you have enabled Grid Services for your Organization, you will be able to enroll devices into the Grid Service.
+---
 
-Grid Services have their own enrollment process separate from the device enrollment process for [Enphase](/integrations/manufacturers/enphase).
+## Use Cases
 
-Texture will automatically enroll your devices into the Grid Services for other manufacturers (e.g. SolarEdge) as they are added via the Connect flow once you have enabled Grid Services for your Organization.
+Grid Services support various advanced energy management scenarios:
 
-Enrollment is unfortunately not an instantaneous process as the OEMs need time to test the devices, configure them, and ensure that they are ready for use before they are fully ready to be used in Grid Services.
+### Grid Resilience
 
-If you have configured a [Destination](/platform-concepts/destinations/) for your devices, you will see enrollment webhook events fired [here](/platform-concepts/events).
+Export energy to the grid during high-demand periods to help maintain grid stability and prevent outages.
+
+### Energy Arbitrage
+
+Import energy during low-demand periods and export during high-demand periods to capture price differentials in wholesale markets.
+
+### Demand Response Programs
+
+Participate in utility demand response programs like [DSGS in California](https://www.energy.ca.gov/programs-and-topics/programs/demand-side-grid-support-program) to earn incentives for grid support.
+
+### Market Opportunities
+
+Take advantage of pricing opportunities in deregulated markets like ERCOT through strategic energy import/export.
+
+### Utility Programs
+
+Support utility companies, VPPs, REPs, and CCAs in balancing the grid and offering rebates for grid-supporting activities.
+
+---
+
+## Setup and Enrollment
+
+### Organization Setup
+
+To enable Grid Services for your organization:
+
+1. **Contact Support** — Reach out to support@texturehq.com if you don't have a dedicated support contact
+2. **Enable Services** — Work with your Texture Support Team to enable Grid Services
+3. **Configure Integration** — Set up the necessary connections and permissions
+
+### Device Enrollment
+
+Once Grid Services are enabled for your organization:
+
+#### Automatic Enrollment
+- **SolarEdge** — Devices are automatically enrolled as they're added via the Connect flow
+- **Other Manufacturers** — Automatic enrollment based on manufacturer capabilities
+
+#### Manual Enrollment
+- **Enphase** — Requires separate enrollment process from standard device enrollment
+- **Testing Period** — OEMs need time to test, configure, and validate devices before grid service activation
+
+#### Enrollment Monitoring
+If you have configured a [Destination](/platform-concepts/destinations/) for your devices, you'll receive enrollment webhook events that you can monitor [here](/platform-concepts/events).
+
+:::note
+**Enrollment Timeline**
+
+Enrollment is not instantaneous. OEMs require time to test devices, configure them, and ensure they're ready for grid service participation before activation.
+:::
+
+---
 
 ## Grid Service Commands
 
-We have tried our best to make the process of sending Grid Service Commands as easy as possible.
+Grid Service Commands use the same command structure as standard commands, with additional required fields to enable grid interaction.
 
-As a result, they are using the same set of [Commands](/platform-concepts/commands) that are used for all other device actions, just with a few extra required fields.
+### Command Structure
 
-Adding `enableGridInteraction: true` to a Command will tell the Texture platform to send the command to the device manufacturer's Grid Service, if possible.
+```javascript
+{
+  "deviceId": "device_identifier",
+  "input": {
+    // Standard command parameters
+    "operatingMode": "discharge",
+    "enableGridInteraction": true  // Required for Grid Services
+  }
+}
+```
 
-## Storm Guard
+### Key Differences
 
-Note that most OEMs have a feature called "Storm Guard" which is a setting on a battery that will instruct it to charge up in the event of a weather event.
+- **`enableGridInteraction: true`** — Tells the Texture platform to route the command through the manufacturer's Grid Service
+- **Enhanced Capabilities** — Access to manufacturer-specific grid interaction features
+- **OEM Routing** — Commands are sent to the device manufacturer's Grid Service when possible
 
-You can see more about reading the current state of Storm Guard [here](/platform-concepts/data-models/batteries).
+---
 
-While a Storm Guard is active, the battery will not participate in Grid Services, even if a Grid Service Command is sent.
+## Storm Guard Integration
+
+Most OEMs implement a "Storm Guard" feature that affects grid service participation.
+
+### Storm Guard Behavior
+
+When Storm Guard is active on a battery:
+
+- **Automatic Charging** — Battery charges up in response to weather events
+- **Grid Service Suspension** — Battery will not participate in Grid Services
+- **Command Override** — Grid Service Commands are ignored while Storm Guard is active
+
+### Monitoring Storm Guard Status
+
+You can monitor the current Storm Guard state through the battery data model. See [Battery Data Models](/platform-concepts/data-models/batteries) for details on reading Storm Guard status.
+
+:::caution
+**Storm Guard Priority**
+
+Storm Guard takes precedence over Grid Service Commands. When Storm Guard is active, the battery will not respond to grid service commands, even if they are sent successfully.
+:::
+
+---
+
+## Supported Manufacturers
+
+Grid Services are available through partnerships with various OEMs:
+
+### Currently Supported
+- **Enphase** — Requires separate enrollment process
+- **SolarEdge** — Automatic enrollment via Connect flow
+- **Additional OEMs** — Contact support for current partnerships
+
+### Capabilities by Manufacturer
+Each OEM provides different grid interaction capabilities:
+
+| Manufacturer | Grid Export | Grid Import | Demand Response | Market Participation |
+|--------------|-------------|-------------|-----------------|---------------------|
+| Enphase | <div style={{textAlign: 'center'}}>✓</div> | <div style={{textAlign: 'center'}}>✓</div> | <div style={{textAlign: 'center'}}>✓</div> | <div style={{textAlign: 'center'}}>✓</div> |
+| SolarEdge | <div style={{textAlign: 'center'}}>✓</div> | <div style={{textAlign: 'center'}}>✓</div> | <div style={{textAlign: 'center'}}>✓</div> | <div style={{textAlign: 'center'}}>✓</div> |
+
+---
+
+## Best Practices
+
+### Command Implementation
+- **Always Include `enableGridInteraction`** — Set to `true` for grid service commands
+- **Monitor Storm Guard** — Check battery status before sending grid service commands
+- **Handle Failures** — Implement proper error handling for grid service command failures
+- **Test Commands** — Validate grid service behavior in your development environment
+
+### Operational Considerations
+- **Weather Monitoring** — Be aware of weather events that may trigger Storm Guard
+- **Market Timing** — Coordinate commands with market conditions and price signals
+- **Grid Conditions** — Monitor grid status and demand response events
+- **Device Health** — Ensure devices are properly enrolled and connected
+
+---
+
+## Related Topics
+
+- **[Commands](/platform-concepts/commands)** — Standard device control commands
+- **[Batch Commands](/platform-concepts/commands/batch-commands)** — Execute grid service commands across multiple devices
+- **[Events](/platform-concepts/events)** — Monitor grid service enrollment and status events
+- **[Destinations](/platform-concepts/destinations)** — Configure webhooks for grid service monitoring
 

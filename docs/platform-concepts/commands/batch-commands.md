@@ -4,33 +4,52 @@ toc_max_heading_level: 5
 ---
 
 import { BackLink } from '@components/BackLink';
+import { Subtitle } from '@components/Subtitle';
 
 <BackLink to="/platform-concepts/commands" label="Commands" />
 
 # Batch Commands
+<Subtitle>Execute commands across entire device fleets with a single API call</Subtitle>
 
-## Overview
-
-Batch Commands provide a powerful way to control multiple devices simultaneously at scale. This capability is essential for enterprise deployments managing thousands of devices, allowing you to execute commands across entire fleets efficiently with a single API call.
+**Batch Commands** enable enterprise-scale control of your energy infrastructure by executing the same command across multiple devices simultaneously. This capability is essential for managing thousands of devices efficiently, allowing you to coordinate actions across entire fleets with a single API call.
 
 Texture's Batch Commands system addresses complex challenges in managing diverse device ecosystems and provides enterprise-grade tools for coordinating device actions at utility scale.
 
+---
+
+## Why Batch Commands?
+
+Batch Commands solve critical challenges in enterprise energy management:
+
+- **Scale Efficiency** — Execute commands across thousands of devices with a single API call
+- **Device Heterogeneity** — Intelligently route commands only to compatible devices
+- **API Abstraction** — Handle varying manufacturer batch capabilities automatically
+- **Time Zone Management** — Coordinate actions across devices in different time zones
+- **Schedule Coordination** — Manage competing schedules with sophisticated conflict resolution
+- **Enterprise Reliability** — Built-in error handling and recovery for utility-scale operations
+
+Batch Commands transform complex fleet management into simple, reliable operations that power your energy automation at scale.
+
+---
+
 ## Core Concepts
 
-### What are Batch Commands?
+### Tag-Based Grouping
 
-Batch Commands enable you to send the same command to multiple devices simultaneously based on grouping criteria. The primary methods for executing batch commands are:
+Tags are arbitrary labels that create logical device groupings for batch operations:
 
-1. **Tag-Based Batching**: Execute commands on all devices that share a specific tag
-2. **Scheduled Batching**: Set up commands to be executed at specific times across tagged devices
+- **Flexible Grouping** — Group devices by location, type, program, or any criteria
+- **Dynamic Collections** — Create device subsets for different operational needs
+- **Hierarchical Organization** — Use consistent naming patterns for easy management
 
-### Device Tagging
+### Execution Methods
 
-Tags are arbitrary labels that can be applied to devices to create logical groupings. They serve as the foundation for batch operations by allowing you to:
+Batch Commands support two primary execution patterns:
 
-- Group devices by any criteria (location, type, program, etc.)
-- Target specific subsets of your device fleet
-- Create dynamic device collections for different operational needs
+1. **Immediate Execution** — Execute commands immediately on all tagged devices
+2. **Scheduled Execution** — Set up recurring commands for tagged device groups
+
+---
 
 ## Batch Execution Methods
 
@@ -38,8 +57,8 @@ Tags are arbitrary labels that can be applied to devices to create logical group
 
 Execute commands immediately on all devices sharing a specific tag:
 
-```http
-POST /batch-commands
+```javascript
+POST /v1/batch-commands
 {
   "tag": "boston-residential",
   "command": {
@@ -52,14 +71,14 @@ POST /batch-commands
 }
 ```
 
-This approach is ideal for immediate actions across a device fleet, such as responding to grid events or peak demand periods.
+**Use Case:** Immediate actions across a device fleet, such as responding to grid events or peak demand periods.
 
 ### Scheduled Tag-Based Execution
 
 Schedule commands to execute at specific times for tagged devices:
 
-```http
-POST /schedules/tags/{tag}
+```javascript
+POST /v1/schedules/tags/{tag}
 {
   "scheduleId": "your-schedule-id",
   "command": {
@@ -76,48 +95,52 @@ POST /schedules/tags/{tag}
 }
 ```
 
-This method enables you to set up recurring device control patterns, such as daily discharge events during peak hours.
+**Use Case:** Recurring device control patterns, such as daily discharge events during peak hours.
+
+---
 
 ## Technical Challenges Solved
 
 Texture's Batch Commands system addresses several complex technical challenges:
 
-### 1. Device Heterogeneity
+### Device Heterogeneity
 
-**Challenge**: A single tag might include multiple device types (e.g., batteries and thermostats)  
-**Solution**: Texture intelligently routes commands only to compatible devices, ignoring devices that can't execute the specified command.
+**Challenge:** A single tag might include multiple device types (e.g., batteries and thermostats)  
+**Solution:** Texture intelligently routes commands only to compatible devices, ignoring devices that can't execute the specified command.
 
 For example, a `battery:set-operating-mode` command sent to a tag containing both batteries and thermostats will only be applied to the battery devices.
 
-### 2. API Integration Complexity
+### API Integration Complexity
 
-**Challenge**: Manufacturer APIs vary greatly in their batch capabilities  
-**Solution**: Texture abstracts away these differences, providing consistent batch execution regardless of the underlying APIs:
+**Challenge:** Manufacturer APIs vary greatly in their batch capabilities  
+**Solution:** Texture abstracts away these differences, providing consistent batch execution regardless of the underlying APIs:
 
-- For manufacturers with native batch capabilities, Texture leverages these for optimal performance
-- For manufacturers without batch support, Texture manages the individual API calls and parallelization
-- For devices with rate limits, Texture handles appropriate throttling and retry logic
+- **Native Batch Support** — Leverages manufacturer batch capabilities for optimal performance
+- **Individual API Management** — Manages individual API calls and parallelization for manufacturers without batch support
+- **Rate Limit Handling** — Implements appropriate throttling and retry logic for devices with rate limits
 
-### 3. Time Zone Management
+### Time Zone Management
 
-**Challenge**: Scheduled commands need to account for devices in different time zones  
-**Solution**: Texture's scheduling system handles time zone complexity automatically:
+**Challenge:** Scheduled commands need to account for devices in different time zones  
+**Solution:** Texture's scheduling system handles time zone complexity automatically:
 
-- Schedules can be created with specific time zone context
-- Global schedules adjust execution time based on each device's location
-- Events can be synchronized to execute at the same absolute time across all devices
+- **Time Zone Context** — Schedules can be created with specific time zone context
+- **Global Synchronization** — Global schedules adjust execution time based on each device's location
+- **Absolute Time Coordination** — Events can be synchronized to execute at the same absolute time across all devices
 
-### 4. Schedule Conflict Resolution
+### Schedule Conflict Resolution
 
-**Challenge**: Devices may have competing schedules from individual and batch commands  
-**Solution**: Texture implements sophisticated conflict resolution:
+**Challenge:** Devices may have competing schedules from individual and batch commands  
+**Solution:** Texture implements sophisticated conflict resolution:
 
-- Schedules have clear priority rules
-- Newer scheduled commands take precedence over older ones
-- Device-specific schedules override tag-based schedules
-- The system maintains schedule history for auditing and rollback purposes
+- **Priority Rules** — Clear precedence rules for schedule conflicts
+- **Temporal Precedence** — Newer scheduled commands take precedence over older ones
+- **Device-Specific Override** — Device-specific schedules override tag-based schedules
+- **Audit Trail** — Maintains schedule history for auditing and rollback purposes
 
-## Data Model
+---
+
+## Data Models
 
 ### Tag
 
@@ -159,7 +182,9 @@ interface Schedule {
 }
 ```
 
-## API Access
+---
+
+## API Reference
 
 ### REST API Endpoints
 
@@ -188,6 +213,8 @@ interface Schedule {
 | `/schedules/tags/{tag}/{id}` | DELETE | Delete a specific schedule |
 
 For complete API documentation, refer to our [interactive REST API docs](/api).
+
+---
 
 ## Usage Examples
 
@@ -259,22 +286,24 @@ fetch('https://api.texturehq.com/v1/schedules/tags/peak-shaving', {
 })
 ```
 
+---
+
 ## Common Use Cases
 
 ### Demand Response Events
 
 Schedule or trigger immediate discharge of batteries during grid stress events:
 
-1. Create a tag for all eligible batteries (e.g., `dr-program-summer-2025`)
-2. When an event occurs, issue a batch command for discharge
-3. Schedule a follow-up batch command to reset devices after the event
+1. **Create Device Groups** — Tag all eligible batteries (e.g., `dr-program-summer-2025`)
+2. **Execute Commands** — Issue batch commands for immediate discharge when events occur
+3. **Schedule Recovery** — Set up follow-up batch commands to reset devices after events
 
 ### Peak Load Management
 
 Create scheduled commands to reduce grid consumption during daily peak periods:
 
-1. Tag devices by utility territory (e.g., `socal-edison`)
-2. Set up recurring schedules to align with Time-of-Use rates:
+1. **Territory Grouping** — Tag devices by utility territory (e.g., `socal-edison`)
+2. **Time-of-Use Alignment** — Set up recurring schedules aligned with TOU rates:
    - Charge batteries during off-peak hours
    - Discharge during peak hours
 
@@ -282,38 +311,53 @@ Create scheduled commands to reduce grid consumption during daily peak periods:
 
 Orchestrate energy resources to provide grid services:
 
-1. Tag batteries by capacity and location
-2. Create schedules for coordinated charge/discharge cycles
-3. Monitor total fleet capacity and export capabilities
+1. **Capacity Grouping** — Tag batteries by capacity and location
+2. **Coordinated Scheduling** — Create schedules for coordinated charge/discharge cycles
+3. **Fleet Monitoring** — Monitor total fleet capacity and export capabilities
+
+---
 
 ## Best Practices
 
 ### Tagging Strategy
 
-- **Hierarchical Tags**: Use consistent prefixes for hierarchical organization (e.g., `location:boston`, `program:demand-response`)
-- **Functional Groups**: Tag by device functionality or capability
-- **Multiple Tags**: Apply multiple tags to enable flexible grouping options
-- **Naming Conventions**: Establish consistent naming patterns for easier management
+- **Hierarchical Tags** — Use consistent prefixes for hierarchical organization (e.g., `location:boston`, `program:demand-response`)
+- **Functional Groups** — Tag by device functionality or capability
+- **Multiple Tags** — Apply multiple tags to enable flexible grouping options
+- **Naming Conventions** — Establish consistent naming patterns for easier management
 
 ### Schedule Management
 
-- **Conflict Avoidance**: Review existing schedules before creating new ones
-- **Schedule Documentation**: Use clear schedule IDs and descriptions
-- **Time Zone Awareness**: Explicitly set time zones for schedules spanning multiple regions
+- **Conflict Avoidance** — Review existing schedules before creating new ones
+- **Schedule Documentation** — Use clear schedule IDs and descriptions
+- **Time Zone Awareness** — Explicitly set time zones for schedules spanning multiple regions
 
 ### Performance Considerations
 
-- **Batch Size**: For extremely large fleets (10,000+ devices), consider using multiple smaller batches
-- **Status Monitoring**: Use batch command status endpoints to track execution progress
-- **Error Handling**: Set up webhooks to monitor for execution failures
+- **Batch Size** — For extremely large fleets (10,000+ devices), consider using multiple smaller batches
+- **Status Monitoring** — Use batch command status endpoints to track execution progress
+- **Error Handling** — Set up webhooks to monitor for execution failures
+
+---
 
 ## Enterprise Scale Implementation
 
 Texture's Batch Commands system is designed for utility-scale operations, enabling:
 
-- **Synchronization**: Coordinate thousands of devices to act in unison
-- **Latency Minimization**: Pre-scheduled commands ensure consistent execution time
-- **Reliability**: Robust error handling and recovery mechanisms
-- **Observability**: Comprehensive monitoring and reporting
+- **Synchronization** — Coordinate thousands of devices to act in unison
+- **Latency Minimization** — Pre-scheduled commands ensure consistent execution time
+- **Reliability** — Robust error handling and recovery mechanisms
+- **Observability** — Comprehensive monitoring and reporting
 
 For enterprise use cases, Texture can work with you to create custom tag hierarchies and scheduling patterns optimized for your specific operational needs.
+
+---
+
+## Next Steps
+
+- **Explore** the full Batch Commands API reference
+- **Test** batch operations with your device fleet
+- **Implement** tagging strategies for your use cases
+- **Build** automated workflows using batch commands and schedules
+
+Batch Commands provide the enterprise-scale control layer for your energy infrastructure—enabling coordination, automation, and reliable fleet management across the Texture Platform.
