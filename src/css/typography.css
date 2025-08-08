@@ -74,7 +74,7 @@ h1,
 
 /* H2 Specific Styles */
 h2,
-.markdown > h2 {
+.markdown h2 {
   font-size: var(--font-size-h2);
   line-height: var(--line-height-h2);
   margin-top: var(--heading-margin-top-h2);
@@ -83,7 +83,7 @@ h2,
 
 /* H3 Specific Styles */
 h3,
-.markdown > h3 {
+.markdown h3 {
   font-size: var(--font-size-h3);
   line-height: var(--line-height-h3);
   margin-top: var(--heading-margin-top-h3);
@@ -92,7 +92,7 @@ h3,
 
 /* H4 Specific Styles */
 h4,
-.markdown > h4 {
+.markdown h4 {
   font-size: var(--font-size-h4);
   line-height: var(--line-height-h4);
   margin-top: var(--heading-margin-top-h4);
@@ -101,7 +101,7 @@ h4,
 
 /* H5 Specific Styles */
 h5,
-.markdown > h5 {
+.markdown h5 {
   font-size: var(--font-size-h5);
   line-height: var(--line-height-h5);
   margin-top: var(--heading-margin-top-h5);
@@ -110,7 +110,7 @@ h5,
 
 /* H6 Specific Styles */
 h6,
-.markdown > h6 {
+.markdown h6 {
   font-size: var(--font-size-h6);
   line-height: var(--line-height-h6);
   margin-top: var(--heading-margin-top-h6);
@@ -130,40 +130,35 @@ h6,
   }
 
   h2,
-  .markdown h2,
-  .markdown > h2 {
+  .markdown h2 {
     font-size: var(--font-size-h2-mobile);
     margin-top: var(--heading-margin-top-h2-mobile);
     margin-bottom: var(--heading-margin-bottom-h2-mobile);
   }
 
   h3,
-  .markdown h3,
-  .markdown > h3 {
+  .markdown h3 {
     font-size: var(--font-size-h3-mobile);
     margin-top: var(--heading-margin-top-h3-mobile);
     margin-bottom: var(--heading-margin-bottom-h3-mobile);
   }
 
   h4,
-  .markdown h4,
-  .markdown > h4 {
+  .markdown h4 {
     font-size: var(--font-size-h4-mobile);
     margin-top: var(--heading-margin-top-h4-mobile);
     margin-bottom: var(--heading-margin-bottom-h4-mobile);
   }
 
   h5,
-  .markdown h5,
-  .markdown > h5 {
+  .markdown h5 {
     font-size: var(--font-size-h5-mobile);
     margin-top: var(--heading-margin-top-h5-mobile);
     margin-bottom: var(--heading-margin-bottom-h5-mobile);
   }
 
   h6,
-  .markdown h6,
-  .markdown > h6 {
+  .markdown h6 {
     font-size: var(--font-size-h6-mobile);
     margin-top: var(--heading-margin-top-h6-mobile);
     margin-bottom: var(--heading-margin-bottom-h6-mobile);

@@ -1,0 +1,1427 @@
+[
+  {
+    "id": "688a82040e2f63b4f20493c7",
+    "slug": "60-hertz",
+    "name": "60Hertz",
+    "category": "siteIntelligence",
+    "description": "60Hertz Energy provides a purpose-built CMMS platform specifically designed for managing distributed energy resources like solar, wind, battery storage, and microgrids, with unique offline capabilities for remote operations and integrated monitoring-to-maintenance workflows.",
+    "logo": {
+      "id": "688a82600e2f63b4f204948d",
+      "alt": "60Hertz Icon",
+      "filename": "60HertzIcon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 366,
+      "width": 125,
+      "height": 200,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-07-30T20:36:48.427Z",
+      "updatedAt": "2025-07-30T20:36:48.427Z",
+      "url": "/logo/60HertzIcon.svg"
+    },
+    "support_level": "planned",
+    "is_included": false,
+    "is_featured_on_home_page": false,
+    "about": "60Hertz Energy provides a specialized CMMS platform for distributed energy resources like solar, wind, and battery storage. Founded in 2017, their solution uniquely combines real-time monitoring with maintenance workflows, enabling automated alerts and standardized procedures. The platform features offline capabilities for remote operations, AI-powered analytics, and weather-informed scheduling, serving renewable O&M providers and utilities with pricing based on installed capacity.",
+    "learn_more_url": "https://60hertzenergy.com/",
+    "configurationFields": [
+      {
+        "fieldType": "secret",
+        "fieldName": "API Key",
+        "fieldLabel": "API Key",
+        "isRequired": true,
+        "id": "688a820490925b0022731a2e"
+      }
+    ],
+    "createdAt": "2025-07-30T20:35:16.698Z",
+    "updatedAt": "2025-07-30T20:37:07.186Z"
+  },
+  {
+    "id": "6836e0e8234a2d7e9b2563d2",
+    "slug": "also-energy",
+    "name": "AlsoEnergy",
+    "category": "deviceData",
+    "description": "Access live inverter data for deeper performance insights and real-time alerting, keeping energy systems seamlessly connected and transparent.",
+    "logo": {
+      "id": "6836e00f234a2d7e9b2562af",
+      "alt": "AlsoEnergy logo",
+      "filename": "also-energy-1.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 64516,
+      "width": 167,
+      "height": 76,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-05-28T10:06:07.102Z",
+      "updatedAt": "2025-05-28T10:06:37.848Z",
+      "url": "/logo/also-energy-1.svg"
+    },
+    "support_level": "development",
+    "is_included": false,
+    "is_featured_on_home_page": false,
+    "learn_more_url": "https://home.alsoenergy.com/",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "email",
+        "fieldLabel": "Email",
+        "isRequired": true,
+        "id": "6836e0e86622ba00226ba3df"
+      },
+      {
+        "fieldType": "secret",
+        "fieldName": "password",
+        "fieldLabel": "Password",
+        "isRequired": true,
+        "id": "6836e0e86622ba00226ba3e0"
+      }
+    ],
+    "createdAt": "2025-05-28T10:09:44.373Z",
+    "updatedAt": "2025-07-24T15:49:29.895Z",
+    "about": "AlsoEnergy provides solar monitoring software, energy analytics platforms, and performance management solutions for solar installations. The company develops comprehensive monitoring systems, data analytics tools, and reporting platforms for solar asset management. Their solutions enable real-time performance tracking, predictive maintenance, and energy production optimization across residential, commercial, and utility-scale solar applications for various market segments."
+  },
+  {
+    "id": "671660ec07bfd8d186146a03",
+    "slug": "arcadia",
+    "name": "Arcadia",
+    "category": "utilityData",
+    "description": "Easily connect with Arcadia for access to renewable energy data and sustainability initiatives.",
+    "logo": {
+      "id": "6682c0d21177d5ca60152d15",
+      "alt": "arcadia-logo",
+      "filename": "arcadia.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1571,
+      "width": 906,
+      "height": 906,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-07-01T14:44:34.303Z",
+      "updatedAt": "2024-07-01T14:44:34.303Z",
+      "url": "/logo/arcadia.svg"
+    },
+    "support_level": "production",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "clientId",
+        "fieldLabel": "Client ID",
+        "isRequired": true,
+        "tooltip": "You can create an API ID and Secret in your Arcadia dashboard.",
+        "id": "671660ece94391002205e188"
+      },
+      {
+        "fieldType": "secret",
+        "fieldName": "clientSecret",
+        "fieldLabel": "Client secret",
+        "isRequired": true,
+        "id": "671660ece94391002205e189"
+      },
+      {
+        "fieldType": "url",
+        "fieldName": "connectUrl",
+        "fieldLabel": "Connect URL",
+        "isRequired": true,
+        "tooltip": "Add the Connect URL in order to enable utility credentials collection in Texture Connect.",
+        "id": "671660ece94391002205e18a"
+      }
+    ],
+    "createdAt": "2024-10-21T14:10:52.703Z",
+    "updatedAt": "2025-07-24T15:50:03.059Z",
+    "is_included": false,
+    "learn_more_url": "https://www.arcadia.com/",
+    "is_featured_on_home_page": true,
+    "about": "Arcadia develops community solar platforms, clean energy marketplace solutions, and renewable energy access tools for residential consumers. The company provides subscription-based clean energy services, utility bill management, and renewable energy certificate trading systems. Their platforms enable consumers to access solar energy savings and renewable power options across various residential market segments without rooftop installations."
+  },
+  {
+    "id": "67f419210e797c99f9388bb2",
+    "slug": "aurora-solar",
+    "name": "Aurora Solar",
+    "category": "siteIntelligence",
+    "description": "Import accurate solar designs and production estimates to streamline project analysis and customer proposals.",
+    "logo": {
+      "id": "67f408e00e797c99f935e671",
+      "alt": "Aurora Solar logo",
+      "filename": "Aurora Solar.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2861,
+      "width": 267,
+      "height": 267,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:18:24.410Z",
+      "updatedAt": "2025-04-07T17:18:24.410Z",
+      "url": "/logo/Aurora Solar.svg"
+    },
+    "support_level": "planned",
+    "is_included": false,
+    "learn_more_url": "https://aurorasolar.com/",
+    "configurationFields": [],
+    "createdAt": "2025-04-07T18:27:45.231Z",
+    "updatedAt": "2025-07-24T15:50:13.636Z",
+    "is_featured_on_home_page": false,
+    "about": "Aurora Solar provides cloud-based solar design software, sales platforms, and energy modeling tools for solar installers and developers. The company develops comprehensive design automation, proposal generation, and energy production simulation systems. Their platform streamlines solar system design, financial analysis, and project management workflows for residential, commercial, and utility-scale solar applications across global markets."
+  },
+  {
+    "id": "67168b6807bfd8d186148a79",
+    "slug": "bayouEnergy",
+    "name": "Bayou Energy",
+    "category": "utilityData",
+    "description": "Integrate energy data from Bayou Energy to optimize resource use and planning.",
+    "logo": {
+      "id": "6682c0e61177d5ca60152d24",
+      "alt": "bayou-energy-logo",
+      "filename": "bayou-energy.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 11547,
+      "width": 1066,
+      "height": 1066,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-07-01T14:44:54.835Z",
+      "updatedAt": "2024-07-01T14:44:54.835Z",
+      "url": "/logo/bayou-energy.svg"
+    },
+    "support_level": "development",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "apiKey",
+        "fieldLabel": "API key",
+        "isRequired": true,
+        "id": "67194b3b1fd7d6587de6b236"
+      }
+    ],
+    "createdAt": "2024-10-21T17:12:08.275Z",
+    "updatedAt": "2025-07-24T15:50:27.544Z",
+    "is_included": false,
+    "learn_more_url": "https://www.bayou.energy/",
+    "is_featured_on_home_page": true,
+    "about": "Bayou Energy provides energy procurement services, utility bill management platforms, and cost optimization solutions for commercial and industrial energy consumers. The company develops energy purchasing strategies, contract negotiation services, and bill analysis systems. Their platforms help businesses reduce energy costs, manage supply contracts, and optimize energy procurement across deregulated markets in various commercial segments."
+  },
+  {
+    "id": "67f416e90e797c99f93832a0",
+    "slug": "deck",
+    "name": "Deck",
+    "category": "utilityData",
+    "description": "Access utility data across electricity, water, gas, waste, and telco—globally standardized and ready to scale.",
+    "logo": {
+      "id": "67f407d10e797c99f935b599",
+      "alt": "Deck logo",
+      "filename": "Deck.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1088,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:13:53.091Z",
+      "updatedAt": "2025-04-07T17:13:59.980Z",
+      "url": "/logo/Deck.svg"
+    },
+    "support_level": "planned",
+    "is_included": false,
+    "learn_more_url": "https://www.deck.co/",
+    "configurationFields": [],
+    "createdAt": "2025-04-07T18:18:17.656Z",
+    "updatedAt": "2025-07-24T15:50:38.714Z",
+    "about": "Deck develops energy analytics software, demand response platforms, and grid optimization tools for utilities and energy service providers. The company produces load forecasting systems, demand management software, and grid stability solutions. Their platforms analyze energy consumption patterns, predict demand fluctuations, and optimize grid operations for utilities, ISOs, and energy management service providers.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "673f610e643d38894eb8e368",
+    "slug": "derapi",
+    "name": "Derapi",
+    "category": "deviceData",
+    "description": "Connect with a wide range of smart energy devices, unlocking insights for improved energy management and efficiency initiatives.",
+    "logo": {
+      "id": "673f60ce643d38894eb8e258",
+      "alt": "Derapi",
+      "filename": "derapi.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 17984,
+      "width": 450,
+      "height": 226,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-11-21T16:33:18.101Z",
+      "updatedAt": "2024-11-21T16:33:18.101Z",
+      "url": "/logo/derapi.svg"
+    },
+    "support_level": "planned",
+    "is_included": false,
+    "learn_more_url": "https://derapi.com",
+    "configurationFields": [
+      {
+        "fieldType": "secret",
+        "fieldName": "API Key",
+        "fieldLabel": "API Key",
+        "isRequired": true,
+        "id": "673f610e1fe6aa002244c02c"
+      }
+    ],
+    "createdAt": "2024-11-21T16:34:22.175Z",
+    "updatedAt": "2025-07-24T15:50:50.812Z",
+    "is_featured_on_home_page": false,
+    "about": "DerAPI develops distributed energy resource management software, grid integration platforms, and energy system orchestration tools. The company provides APIs and control systems that coordinate solar, storage, electric vehicles, and smart appliances. Their platforms enable utilities, aggregators, and energy service providers to manage and optimize distributed energy resources across residential and commercial market segments."
+  },
+  {
+    "id": "681db59d2a8e448fa080f72c",
+    "slug": "eg4-electronics",
+    "name": "EG4",
+    "category": "gridServices",
+    "description": "Unlock full visibility and control of EG4 Electrics inverters with instant data access and remote management capabilities—empowering intelligent energy use and efficient grid coordination.",
+    "logo": {
+      "id": "67f40cb20e797c99f93686b7",
+      "alt": "EG4 Vector Icon",
+      "filename": "EG4 Vector Icon.png",
+      "mimeType": "image/png",
+      "filesize": 166611,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 18864,
+          "filename": "EG4 Vector Icon-400x300.png",
+          "url": "/logo/EG4 Vector Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 61627,
+          "filename": "EG4 Vector Icon-768x1024.png",
+          "url": "/logo/EG4 Vector Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 69631,
+          "filename": "EG4 Vector Icon-1024x1024.png",
+          "url": "/logo/EG4 Vector Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2025-04-07T17:34:42.793Z",
+      "updatedAt": "2025-04-07T17:34:42.793Z",
+      "url": "/logo/EG4 Vector Icon.png"
+    },
+    "support_level": "production",
+    "is_included": false,
+    "is_featured_on_home_page": false,
+    "learn_more_url": "https://eg4electronics.com/",
+    "configurationFields": [],
+    "createdAt": "2025-05-09T07:58:21.276Z",
+    "updatedAt": "2025-07-24T15:51:01.028Z",
+    "about": "EG4 develops lithium battery systems, solar inverters, and energy storage solutions for residential and commercial applications. The company produces all-in-one inverter systems, battery management platforms, and grid-interactive energy storage hardware. Their products integrate solar generation, battery storage, and smart energy management capabilities for off-grid and grid-tied applications across various market segments."
+  },
+  {
+    "id": "6716c09496ac0a457b52dca5",
+    "slug": "eli",
+    "name": "Eli",
+    "category": "rebatesAndIncentives",
+    "description": "View eligible energy incentives on your Sites to unlock and capture value for you or your customers with ease.",
+    "logo": {
+      "id": "67167ddb07bfd8d186147fb5",
+      "alt": "Eli logo",
+      "filename": "eli.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2324,
+      "width": 267,
+      "height": 267,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T16:14:19.731Z",
+      "updatedAt": "2024-10-21T16:14:19.731Z",
+      "url": "/logo/eli.svg"
+    },
+    "support_level": "planned",
+    "is_included": false,
+    "learn_more_url": "https://www.eli.build/",
+    "configurationFields": [],
+    "createdAt": "2024-10-21T20:59:00.069Z",
+    "updatedAt": "2025-07-24T15:51:10.982Z",
+    "is_featured_on_home_page": false,
+    "about": "Eli provides energy data analytics platforms, consumption monitoring software, and optimization tools for residential and commercial energy users. The company develops smart metering integration, energy usage tracking, and efficiency recommendation systems. Their platforms help consumers understand energy consumption patterns, identify savings opportunities, and optimize energy usage across residential and small commercial market segments."
+  },
+  {
+    "id": "67ab7920e95f644d335e3d7c",
+    "slug": "enode",
+    "name": "Enode",
+    "category": "deviceData",
+    "description": "Easily connect with Enode to access real-time data from over 1000 energy devices, including EVs, solar inverters, home batteries, and thermostats. Unlock insights to improve energy management, efficiency, and site performance.",
+    "logo": {
+      "id": "67356096b3c0c803624f9425",
+      "alt": "Enode logo",
+      "filename": "enode.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 5540,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-11-14T02:29:42.165Z",
+      "updatedAt": "2024-11-14T02:30:01.523Z",
+      "url": "/logo/enode.svg"
+    },
+    "support_level": "development",
+    "is_included": false,
+    "learn_more_url": "https://developers.enode.com/docs/getting-started",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "clientId",
+        "fieldLabel": "Client ID",
+        "isRequired": true,
+        "tooltip": "Enter the unique Client ID provided by Enode to authenticate your application.",
+        "id": "67ab792059b1c50022b4b59b"
+      },
+      {
+        "fieldType": "secret",
+        "fieldName": "clientSecret",
+        "fieldLabel": "Client Secret",
+        "isRequired": true,
+        "tooltip": "Enter the Client Secret associated with your Enode Client ID. This is used to securely authenticate API requests.",
+        "id": "67ab792059b1c50022b4b59c"
+      }
+    ],
+    "createdAt": "2025-02-11T16:21:52.265Z",
+    "updatedAt": "2025-07-24T15:51:21.841Z",
+    "is_featured_on_home_page": false,
+    "about": "Enode develops energy device integration APIs, smart home connectivity platforms, and IoT energy management solutions. The company provides software infrastructure that connects electric vehicles, charging stations, heat pumps, and energy storage systems. Their platforms enable third-party applications to monitor and control energy devices for residential, commercial, and fleet applications across various technology segments."
+  },
+  {
+    "id": "67db3ee20e797c99f953c89c",
+    "slug": "enphase:installer-access",
+    "name": "Enphase",
+    "category": "gridServices",
+    "description": "Access Grid Services enabling grid export with utility-level control.",
+    "logo": {
+      "id": "667b008643849cb1f9ca3541",
+      "alt": "enphase-logo-vector-icon",
+      "filename": " Enphase Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2056,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:38:14.274Z",
+      "updatedAt": "2024-06-25T17:38:14.274Z",
+      "url": "/logo/ Enphase Vector Icon.svg"
+    },
+    "support_level": "planned",
+    "is_included": false,
+    "learn_more_url": "https://www.enphase.com",
+    "configurationFields": [],
+    "createdAt": "2025-03-19T22:02:10.601Z",
+    "updatedAt": "2025-07-24T15:51:36.481Z",
+    "about": "Enphase Energy provides solar monitoring software, energy management platforms, and smart grid integration tools for residential and commercial solar systems. The company develops comprehensive energy monitoring, system optimization, and grid-interactive solutions. Their Enlighten platform enables real-time solar performance tracking, energy consumption analysis, and smart home integration across various residential and commercial market segments.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "67c16a4444ae7ddae45ea367",
+    "slug": "franklinwh:grid-services",
+    "name": "FranklinWH",
+    "category": "gridServices",
+    "description": "Effortlessly integrate with FranklinWH, providing real-time device data access and remote control for enhanced energy optimization and seamless grid interaction.",
+    "logo": {
+      "id": "667b030a43849cb1f9ca3b10",
+      "alt": "franklinwh-logo-vector-icon",
+      "filename": "FranklinWH Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3395,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:48:58.914Z",
+      "updatedAt": "2024-06-25T17:48:58.914Z",
+      "url": "/logo/FranklinWH Vector Icon.svg"
+    },
+    "support_level": "development",
+    "is_included": false,
+    "learn_more_url": "https://www.franklinwh.com/",
+    "configurationFields": [
+      {
+        "fieldType": "secret",
+        "fieldName": "cp",
+        "fieldLabel": "CP",
+        "isRequired": true,
+        "tooltip": "The key provided to installers by your manager at FranklinWH.",
+        "id": "67c16a4430938b00218c81f0"
+      },
+      {
+        "fieldType": "text",
+        "fieldName": "ck",
+        "fieldLabel": "CK",
+        "isRequired": true,
+        "tooltip": "The key provided to installers by your manager at FranklinWH.",
+        "id": "67c16a4430938b00218c81f1"
+      }
+    ],
+    "createdAt": "2025-02-28T07:48:20.120Z",
+    "updatedAt": "2025-07-24T15:52:03.424Z",
+    "is_featured_on_home_page": false,
+    "about": "FranklinWH produces whole-home battery systems, energy management platforms, and grid-interactive storage solutions for residential applications. The company develops integrated battery storage, smart energy management software, and backup power systems. Their platforms optimize solar energy storage, provide grid services, and deliver reliable backup power for residential and small commercial market segments."
+  },
+  {
+    "id": "67168cac07bfd8d186148ca0",
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "category": "crm",
+    "description": "Sync HubSpot CRM with energy data to streamline customer relationship management and lead tracking.",
+    "logo": {
+      "id": "67168ab607bfd8d1861489db",
+      "alt": "HubSpot logo",
+      "filename": "hubspot.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2387,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T17:09:10.633Z",
+      "updatedAt": "2024-10-21T17:09:10.633Z",
+      "url": "/logo/hubspot.svg"
+    },
+    "support_level": "planned",
+    "configurationFields": [],
+    "createdAt": "2024-10-21T17:17:32.903Z",
+    "updatedAt": "2025-07-24T15:52:15.899Z",
+    "is_included": false,
+    "learn_more_url": "https://www.hubspot.com/",
+    "about": "HubSpot provides customer relationship management software, marketing automation platforms, and business development tools for energy companies and service providers. The platform includes lead management, customer communications, and sales process automation systems. Their solutions help solar installers, energy service providers, and equipment manufacturers manage customer relationships and streamline business operations across energy market segments.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "67168ba607bfd8d186148ab9",
+    "slug": "leap",
+    "name": "Leap",
+    "category": "marketAccess",
+    "description": "Enable demand response programs and access energy markets for grid flexibility.",
+    "logo": {
+      "id": "67168b1c07bfd8d186148a4c",
+      "alt": "Leap logo",
+      "filename": "leap.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2305,
+      "width": 268,
+      "height": 267,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T17:10:52.400Z",
+      "updatedAt": "2024-10-21T17:10:52.400Z",
+      "url": "/logo/leap.svg"
+    },
+    "support_level": "production",
+    "configurationFields": [
+      {
+        "fieldType": "secret",
+        "fieldName": "apiKey",
+        "fieldLabel": "API Key",
+        "isRequired": true,
+        "tooltip": "Your API key for Leap. Create on Leap at partner.leap.energy",
+        "id": "671bd94f952814c9eb79fc9d"
+      }
+    ],
+    "createdAt": "2024-10-21T17:13:10.456Z",
+    "updatedAt": "2025-07-24T15:52:27.949Z",
+    "is_included": false,
+    "learn_more_url": "https://www.leap.energy/",
+    "is_featured_on_home_page": true,
+    "about": "Leap provides energy procurement software, utility bill management platforms, and cost optimization tools for commercial energy consumers. The company develops automated energy purchasing, contract analysis, and bill auditing systems. Their platforms help businesses manage energy costs, optimize procurement strategies, and navigate deregulated energy markets across commercial and industrial market segments with comprehensive energy management solutions."
+  },
+  {
+    "id": "679c06f48781f2a42365f2fe",
+    "slug": "myTexture",
+    "name": "My Texture",
+    "category": "textureApps",
+    "description": "Enable a dashboard for your users to be able to log in and see their own device data on Texture",
+    "logo": {
+      "id": "667c2d0043849cb1f9cba933",
+      "alt": "texture-logo-vector-icon",
+      "filename": "Texture Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4630,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-26T15:00:16.833Z",
+      "updatedAt": "2024-06-26T15:00:16.833Z",
+      "url": "/logo/Texture Vector Icon.svg"
+    },
+    "support_level": "development",
+    "is_included": false,
+    "learn_more_url": "https://docs.texturehq.com/docs/home/welcome",
+    "configurationFields": [],
+    "createdAt": "2025-01-30T23:10:44.146Z",
+    "updatedAt": "2025-02-11T16:47:47.520Z",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "67168c8c07bfd8d186148c73",
+    "slug": "nationalWeatherService",
+    "name": "National Weather Service (NWS)",
+    "category": "weather",
+    "description": "Integrate weather data for predictive energy demand and maintenance forecasts.",
+    "logo": {
+      "id": "67167dc307bfd8d186147fa6",
+      "alt": "National Weather Service logo",
+      "filename": "nationalweatherservice.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 52232,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T16:13:55.928Z",
+      "updatedAt": "2024-10-21T16:13:55.928Z",
+      "url": "/logo/nationalweatherservice.svg"
+    },
+    "support_level": "production",
+    "configurationFields": [],
+    "createdAt": "2024-10-21T17:17:00.565Z",
+    "updatedAt": "2025-07-24T15:52:46.400Z",
+    "is_included": true,
+    "learn_more_url": "https://www.weather.gov/documentation/services-web-api",
+    "about": "National Weather Service provides meteorological data services, weather forecasting platforms, and environmental monitoring systems for energy planning and grid operations. The agency delivers weather data, climate information, and severe weather alerts that support renewable energy forecasting, grid management, and energy system optimization across utility, commercial, and residential market segments for reliable energy planning.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "67168c6707bfd8d186148c3c",
+    "slug": "openWeather",
+    "name": "OpenWeather",
+    "category": "weather",
+    "description": "Use global weather data to align energy generation and consumption for better efficiency.",
+    "logo": {
+      "id": "67167d0107bfd8d186147f42",
+      "alt": "OpenWeather logo",
+      "filename": "OpenWeather.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2410,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T16:10:41.742Z",
+      "updatedAt": "2024-10-21T16:10:41.742Z",
+      "url": "/logo/OpenWeather.svg"
+    },
+    "support_level": "production",
+    "configurationFields": [],
+    "createdAt": "2024-10-21T17:16:23.673Z",
+    "updatedAt": "2025-07-24T15:52:59.343Z",
+    "is_included": true,
+    "learn_more_url": "https://openweathermap.org/",
+    "about": "OpenWeather provides weather data APIs, meteorological analytics platforms, and climate information services for energy applications. The company develops weather forecasting systems, solar irradiance data, and environmental monitoring tools. Their platforms support renewable energy forecasting, grid optimization, and energy system planning across utilities, solar developers, and energy management service providers in various market segments.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "67ddb89b0e797c99f9b4a515",
+    "slug": "palmetto-ei",
+    "name": "Palmetto Energy Intelligence",
+    "category": "siteIntelligence",
+    "description": "Access disaggregated, hourly home energy usage and scenario modeling with physics-based insights for electrification and efficiency upgrades.",
+    "logo": {
+      "id": "67ddb6960e797c99f9b449a3",
+      "alt": "Palmetto logo",
+      "filename": "Palmetto.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 112900,
+      "width": 257,
+      "height": 266,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "card": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "tablet": {
+          "url": "/logo/Palmetto-1024x278.png",
+          "width": 1024,
+          "height": 278,
+          "mimeType": "image/png",
+          "filesize": 102563,
+          "filename": "Palmetto-1024x278.png"
+        }
+      },
+      "createdAt": "2025-03-21T18:57:26.225Z",
+      "updatedAt": "2025-04-07T18:39:04.585Z",
+      "url": "/logo/Palmetto.svg"
+    },
+    "support_level": "production",
+    "is_included": false,
+    "learn_more_url": "https://ei.docs.palmetto.com/",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "apiKey",
+        "fieldLabel": "Api Key",
+        "isRequired": true,
+        "tooltip": "You should be able to find your api key under your billing dashboard (https://ei.docs.palmetto.com/page/billing-dashboard)",
+        "id": "67ddb89bf1a9b00022791c6b"
+      }
+    ],
+    "createdAt": "2025-03-21T19:06:03.091Z",
+    "updatedAt": "2025-07-24T15:53:14.191Z",
+    "is_featured_on_home_page": true,
+    "about": "Palmetto Energy Intelligence develops solar design software, energy storage modeling platforms, and renewable energy project management tools. The company provides comprehensive solar system design, financial analysis, and project workflow automation systems. Their platforms serve solar installers, developers, and energy service providers with tools for residential and commercial renewable energy project development and management."
+  },
+  {
+    "id": "67168bfd07bfd8d186148af7",
+    "slug": "salesforce",
+    "name": "Salesforce",
+    "category": "crm",
+    "description": "Sync energy data with Salesforce to enhance customer engagement and workflow automation.",
+    "logo": {
+      "id": "67168add07bfd8d1861489ea",
+      "alt": "Salesforce logo",
+      "filename": "salesforce.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 12138,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T17:09:49.620Z",
+      "updatedAt": "2024-10-21T17:09:49.620Z",
+      "url": "/logo/salesforce.svg"
+    },
+    "support_level": "planned",
+    "configurationFields": [],
+    "createdAt": "2024-10-21T17:14:37.743Z",
+    "updatedAt": "2025-07-24T15:53:23.328Z",
+    "is_included": false,
+    "learn_more_url": "https://www.salesforce.com/",
+    "about": "Salesforce provides customer relationship management software, business process automation platforms, and data analytics tools for energy companies and service providers. The platform includes customer management, sales automation, and operational workflow systems. Their solutions help utilities, solar installers, and energy service providers manage customer relationships, streamline operations, and optimize business processes across energy market segments.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "6830ebab234a2d7e9b1786a6",
+    "slug": "savant",
+    "name": "Savant",
+    "category": "gridServices",
+    "description": "Savant integration unlocks circuit-level insight, adaptive Energy Modes, and remote control of storage, solar, and backup assets - fostering intelligent consumption, storm-ready resilience, and harmonious coordination with the grid.",
+    "logo": {
+      "id": "67f40ed30e797c99f936df29",
+      "alt": "Savan Power logo",
+      "filename": "Savant Power.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 13193,
+      "width": 5200,
+      "height": 1400,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:43:47.792Z",
+      "updatedAt": "2025-04-07T17:43:47.792Z",
+      "url": "/logo/Savant Power.svg"
+    },
+    "support_level": "production",
+    "is_included": false,
+    "is_featured_on_home_page": false,
+    "learn_more_url": "https://www.savant.com/",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "clientId",
+        "fieldLabel": "Client ID",
+        "isRequired": true,
+        "id": "6830ebab6622ba00226ba3dd"
+      },
+      {
+        "fieldType": "secret",
+        "fieldName": "clientSecret",
+        "fieldLabel": "Client Secret",
+        "id": "6830ebab6622ba00226ba3de"
+      }
+    ],
+    "createdAt": "2025-05-23T21:42:03.333Z",
+    "updatedAt": "2025-07-24T15:53:35.190Z",
+    "about": "Savant manufactures smart home automation systems, energy management platforms, and integrated control solutions for luxury residential applications. The company produces whole-home automation hardware, energy monitoring software, and smart grid integration systems. Their platforms control lighting, climate, security, and energy systems while optimizing consumption and integrating renewable energy sources for high-end residential markets."
+  },
+  {
+    "id": "672580d8b3c0c8036245cf56",
+    "slug": "shadowPower",
+    "name": "Shadow Power",
+    "category": "marketAccess",
+    "description": "Connect behind-the-meter assets with financial systems, enabling smarter, data-driven energy solutions.",
+    "logo": {
+      "id": "67257f8cb3c0c8036245ce14",
+      "filename": "shadow.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 552,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-11-02T01:25:32.878Z",
+      "updatedAt": "2024-11-02T01:26:12.392Z",
+      "alt": "Shadow Power logo",
+      "url": "/logo/shadow.svg"
+    },
+    "support_level": "production",
+    "is_included": false,
+    "learn_more_url": "https://www.shadowpower.com",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "apiKey",
+        "fieldLabel": "API key",
+        "isRequired": true,
+        "id": "6745b2a563b8c6f279aeef6a"
+      }
+    ],
+    "createdAt": "2024-11-02T01:31:04.742Z",
+    "updatedAt": "2025-07-24T15:53:57.227Z",
+    "is_featured_on_home_page": true,
+    "about": "ShadowPower develops energy market access platforms, distributed resource aggregation software, and grid services coordination systems. The company provides virtual power plant technology, demand response platforms, and energy trading solutions. Their systems enable residential and commercial energy resources to participate in wholesale energy markets and grid service programs across various utility market segments."
+  },
+  {
+    "id": "67168bc907bfd8d186148ad8",
+    "slug": "shovels",
+    "name": "Shovels",
+    "category": "permits",
+    "description": "Manage permits and compliance in the energy sector with seamless regulatory data integration.",
+    "logo": {
+      "id": "67167d2c07bfd8d186147f6d",
+      "alt": "Shovels logo",
+      "filename": "shovels.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2191,
+      "width": 268,
+      "height": 267,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T16:11:24.793Z",
+      "updatedAt": "2024-10-21T16:11:24.793Z",
+      "url": "/logo/shovels.svg"
+    },
+    "support_level": "production",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "apiKey",
+        "fieldLabel": "API Key",
+        "isRequired": true,
+        "tooltip": "Get your API key at https://app.shovels.ai . You will see it on your dashboard when you register and log in.",
+        "id": "6745e63a288f8292609b776b"
+      }
+    ],
+    "createdAt": "2024-10-21T17:13:45.090Z",
+    "updatedAt": "2025-07-24T15:54:10.686Z",
+    "is_included": false,
+    "learn_more_url": "https://www.shovels.ai",
+    "is_featured_on_home_page": true,
+    "about": "Shovels provides construction permit data analytics, building intelligence platforms, and market research tools for energy sector applications. The company develops permitting data aggregation, construction activity tracking, and market trend analysis systems. Their platforms help solar installers, energy developers, and equipment manufacturers identify opportunities and track market activity across residential and commercial construction segments."
+  },
+  {
+    "id": "6735ffc4990c678ed63e5d48",
+    "slug": "smartcar",
+    "name": "Smartcar",
+    "category": "deviceData",
+    "description": "Access real-time vehicle data, enabling enhanced insights and remote vehicle control for a more connected customer experience.",
+    "logo": {
+      "id": "67257f77b3c0c8036245cde5",
+      "alt": "Smartcar logo",
+      "filename": "smartcar.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1728,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-11-02T01:25:11.020Z",
+      "updatedAt": "2024-11-02T01:25:15.592Z",
+      "url": "/logo/smartcar.svg"
+    },
+    "support_level": "production",
+    "is_included": true,
+    "learn_more_url": "https://smartcar.com/",
+    "configurationFields": [],
+    "createdAt": "2024-11-14T13:48:52.979Z",
+    "updatedAt": "2025-07-24T15:54:27.071Z",
+    "is_featured_on_home_page": true,
+    "about": "Smartcar provides electric vehicle connectivity APIs, fleet management platforms, and automotive data integration solutions. The company develops software infrastructure that connects electric vehicles to energy management systems, charging networks, and smart grid platforms. Their APIs enable third-party applications to monitor vehicle data, control charging, and integrate EVs with home energy systems."
+  },
+  {
+    "id": "67c16c3644ae7ddae45edf86",
+    "slug": "solaredge:grid-services",
+    "name": "SolarEdge",
+    "category": "gridServices",
+    "description": "Сonnect with SolarEdge, enabling real-time monitoring, remote control, and optimized energy management for efficient grid interaction.",
+    "logo": {
+      "id": "667afcd643849cb1f9ca2e92",
+      "alt": "solaredge-logo-vector-icon",
+      "filename": "SolarEdge Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4558,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:22:30.902Z",
+      "updatedAt": "2024-06-25T17:22:30.902Z",
+      "url": "/logo/SolarEdge Vector Icon.svg"
+    },
+    "support_level": "development",
+    "is_included": false,
+    "learn_more_url": "https://www.solaredge.com/",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "email",
+        "fieldLabel": "Email",
+        "isRequired": true,
+        "id": "67f545f1f54f6f2838c35712"
+      },
+      {
+        "fieldType": "text",
+        "fieldName": "password",
+        "fieldLabel": "Password",
+        "isRequired": true,
+        "id": "67f546b7f54f6f2838c35713"
+      },
+      {
+        "fieldType": "text",
+        "fieldName": "certificate",
+        "fieldLabel": "Certificate (PEM format)",
+        "isRequired": true,
+        "id": "67f546cbf54f6f2838c35714"
+      },
+      {
+        "fieldType": "text",
+        "fieldName": "privateKey",
+        "fieldLabel": "Private Key (PEM format)",
+        "isRequired": true,
+        "id": "67f5473cf54f6f2838c35715"
+      }
+    ],
+    "createdAt": "2025-02-28T07:56:38.976Z",
+    "updatedAt": "2025-07-24T15:54:48.047Z",
+    "about": "SolarEdge develops smart inverter platforms, energy monitoring software, and power optimization solutions for solar installations. The company provides advanced inverter technology, energy storage integration, and comprehensive monitoring systems. Their platforms optimize solar energy production, enable grid services, and provide detailed performance analytics for residential, commercial, and utility-scale solar applications across global markets.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "688b93460e2f63b4f2067f39",
+    "slug": "solaredge:monitoring-api",
+    "name": "Solaredge Monitoring API",
+    "category": "deviceData",
+    "description": "Connect with SolarEdge Monitoring to enable real-time visibility into system performance, empowering data-driven insights and proactive energy management without direct control.",
+    "logo": {
+      "id": "667afcd643849cb1f9ca2e92",
+      "alt": "solaredge-logo-vector-icon",
+      "filename": "SolarEdge Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 4558,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:22:30.902Z",
+      "updatedAt": "2024-06-25T17:22:30.902Z",
+      "url": "/logo/SolarEdge Vector Icon.svg"
+    },
+    "support_level": "production",
+    "is_included": false,
+    "is_featured_on_home_page": false,
+    "about": "SolarEdge develops smart inverter platforms, energy monitoring software, and power optimization solutions for solar installations. The company provides advanced inverter technology, energy storage integration, and comprehensive monitoring systems. Their platforms optimize solar energy production, enable grid services, and provide detailed performance analytics for residential, commercial, and utility-scale solar applications across global markets.",
+    "learn_more_url": "https://www.solaredge.com/",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "apiKey",
+        "fieldLabel": "Api Key",
+        "isRequired": true,
+        "id": "688b934690925b0022731a2f"
+      }
+    ],
+    "createdAt": "2025-07-31T16:01:10.230Z",
+    "updatedAt": "2025-07-31T16:01:10.230Z"
+  },
+  {
+    "id": "67a3c782e95f644d3358a73c",
+    "slug": "tesla:grid-services",
+    "name": "Tesla Grid Services",
+    "category": "gridServices",
+    "description": "Seamlessly connect to Tesla Grid Services, enabling real-time access to device data and remote dispatch capabilities for optimized energy management and grid interactions.",
+    "logo": {
+      "id": "667b029c43849cb1f9ca39ab",
+      "alt": "tesla-logo-vector-icon",
+      "filename": " Tesla Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1074,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:47:08.984Z",
+      "updatedAt": "2024-06-25T17:47:08.984Z",
+      "url": "/logo/ Tesla Vector Icon.svg"
+    },
+    "support_level": "production",
+    "is_included": false,
+    "learn_more_url": "https://www.tesla.com/utilities",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "clientId",
+        "fieldLabel": "Client ID",
+        "isRequired": true,
+        "id": "67a3c78259b1c50022b4b599"
+      },
+      {
+        "fieldType": "secret",
+        "fieldName": "clientSecret",
+        "fieldLabel": "Client secret",
+        "isRequired": true,
+        "id": "67a3c78259b1c50022b4b59a"
+      }
+    ],
+    "createdAt": "2025-02-05T20:18:10.809Z",
+    "updatedAt": "2025-07-24T15:55:07.810Z",
+    "about": "Tesla Grid Services operates utility-scale energy storage systems, grid stabilization platforms, and renewable energy integration solutions. The company provides large-scale battery storage, power trading software, and grid management services. Their systems support utilities, energy markets, and grid operators with energy storage, frequency regulation, and renewable energy integration across utility-scale market segments.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "67168c2907bfd8d186148bdd",
+    "slug": "tomorrowIo",
+    "name": "Tomorrow.io",
+    "category": "weather",
+    "description": "Optimize energy operations with hyper-local weather insights and real-time adjustments.",
+    "logo": {
+      "id": "67167d9107bfd8d186147f97",
+      "alt": "Tomorrow.io logo",
+      "filename": "tomorrowio.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2363,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T16:13:05.410Z",
+      "updatedAt": "2024-10-21T16:13:05.410Z",
+      "url": "/logo/tomorrowio.svg"
+    },
+    "support_level": "planned",
+    "configurationFields": [],
+    "createdAt": "2024-10-21T17:15:21.541Z",
+    "updatedAt": "2025-07-24T15:55:22.478Z",
+    "is_included": false,
+    "learn_more_url": "https://www.tomorrow.io/",
+    "about": "Tomorrow.io develops weather intelligence platforms, climate risk analytics, and environmental forecasting solutions for energy sector applications. The company provides advanced weather APIs, severe weather alerts, and climate data integration systems. Their platforms support renewable energy forecasting, grid resilience planning, and energy system optimization across utilities, energy developers, and commercial market segments.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "67168b8907bfd8d186148a99",
+    "slug": "utilityapi",
+    "name": "UtilityAPI",
+    "category": "utilityData",
+    "description": "Access utility billing and meter data for energy monitoring and customer engagement.",
+    "logo": {
+      "id": "6682c0f71177d5ca60152eb8",
+      "alt": "utility-api-logo",
+      "filename": "utility-api.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1024,
+      "width": 905,
+      "height": 905,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-07-01T14:45:11.822Z",
+      "updatedAt": "2024-07-01T14:45:11.822Z",
+      "url": "/logo/utility-api.svg"
+    },
+    "support_level": "development",
+    "configurationFields": [
+      {
+        "fieldType": "text",
+        "fieldName": "apiKey",
+        "fieldLabel": "API Key",
+        "isRequired": true,
+        "tooltip": "",
+        "id": "67194bbd1fd7d6587de6b237"
+      },
+      {
+        "fieldType": "url",
+        "fieldName": "connectUrl",
+        "fieldLabel": "Connect URL",
+        "tooltip": "Add the Connect URL in order to enable utility credentials collection in Texture Connect.",
+        "id": "6728c5789eff476399c6322a"
+      }
+    ],
+    "createdAt": "2024-10-21T17:12:41.699Z",
+    "updatedAt": "2025-07-24T15:55:36.262Z",
+    "is_included": false,
+    "learn_more_url": "https://www.utilityapi.com/",
+    "is_featured_on_home_page": true,
+    "about": "UtilityAPI provides utility data integration services, energy consumption analytics platforms, and smart meter data access solutions. The company develops APIs that securely connect utility billing systems with third-party energy applications. Their platforms enable solar installers, energy service providers, and software developers to access customer energy data for system design, efficiency analysis, and energy management applications."
+  },
+  {
+    "id": "67f414ac0e797c99f937d7cc",
+    "slug": "verdigris",
+    "name": "Verdigris",
+    "category": "deviceData",
+    "description": "Connect smart meters to monitor real-time building energy usage and surface actionable insights.",
+    "logo": {
+      "id": "67f408520e797c99f935d30e",
+      "alt": "Verdigris",
+      "filename": "verdigris.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1418,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:16:02.040Z",
+      "updatedAt": "2025-04-07T17:16:02.040Z",
+      "url": "/logo/verdigris.svg"
+    },
+    "support_level": "planned",
+    "is_included": false,
+    "learn_more_url": "https://www.verdigris.co/",
+    "configurationFields": [],
+    "createdAt": "2025-04-07T18:08:44.752Z",
+    "updatedAt": "2025-07-24T15:56:42.515Z",
+    "about": "Verdegris develops AI-powered energy analytics platforms, building energy monitoring systems, and optimization software for commercial and industrial applications. The company produces smart sensor technology, machine learning algorithms, and energy management dashboards. Their platforms analyze energy consumption patterns, predict equipment failures, and optimize building operations to reduce costs and improve efficiency across various commercial market segments.",
+    "is_featured_on_home_page": false
+  },
+  {
+    "id": "67f417f90e797c99f938602f",
+    "slug": "wattcarbon",
+    "name": "WattCarbon",
+    "category": "emissions",
+    "description": "Track energy, carbon, and cost savings with certified M& for any type of demand side energy project.",
+    "logo": {
+      "id": "67f408b50e797c99f935e50a",
+      "alt": "WattCarbon logo",
+      "filename": "WattCarbon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 2473,
+      "width": 267,
+      "height": 267,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2025-04-07T17:17:41.640Z",
+      "updatedAt": "2025-04-07T17:17:41.640Z",
+      "url": "/logo/WattCarbon.svg"
+    },
+    "support_level": "planned",
+    "is_included": false,
+    "learn_more_url": "https://www.wattcarbon.com/",
+    "configurationFields": [],
+    "createdAt": "2025-04-07T18:22:49.729Z",
+    "updatedAt": "2025-07-24T15:56:05.807Z",
+    "is_featured_on_home_page": false,
+    "about": "WattCarbon operates a platform for carbon credit generation, environmental impact tracking, and renewable energy certificate management. The company provides software solutions that quantify and monetize energy efficiency improvements, solar installations, and emissions reductions. Their platform serves utilities, energy developers, and building owners seeking to measure and trade environmental benefits from energy projects."
+  },
+  {
+    "id": "6716bff296ac0a457b52dc36",
+    "slug": "watttime",
+    "name": "WattTime",
+    "category": "emissions",
+    "description": "View carbon emissions alongside your energy device metrics to understand and optimize consumption for cleaner electricity use.",
+    "logo": {
+      "id": "67167cea07bfd8d186147efb",
+      "alt": "WattTime logo",
+      "filename": "WattTime.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 3811,
+      "width": 257,
+      "height": 266,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-10-21T16:10:18.170Z",
+      "updatedAt": "2024-10-21T16:10:18.170Z",
+      "url": "/logo/WattTime.svg"
+    },
+    "support_level": "production",
+    "is_included": true,
+    "learn_more_url": "https://www.watttime.org/",
+    "configurationFields": [],
+    "createdAt": "2024-10-21T20:56:18.830Z",
+    "updatedAt": "2025-07-24T15:55:55.175Z",
+    "is_featured_on_home_page": true,
+    "about": "WaitTime develops occupancy analytics software, demand forecasting platforms, and energy optimization tools for commercial buildings and facilities. The company provides real-time occupancy monitoring, space utilization analytics, and HVAC optimization systems. Their platforms help building operators reduce energy consumption, optimize comfort, and improve operational efficiency across commercial and institutional market segments."
+  }
+]
