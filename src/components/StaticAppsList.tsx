@@ -287,6 +287,7 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
           border-collapse: collapse;
           font-size: 14px;
           table-layout: fixed;
+          border: none;
         }
 
         .apps-table th {
@@ -299,6 +300,10 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
           font-size: 14px;
           text-transform: none;
           letter-spacing: normal;
+        }
+
+        .apps-table tbody:last-child tr:last-child td {
+          border-bottom: none !important;
         }
 
         .apps-table th:nth-child(1) { width: 25%; }
@@ -413,9 +418,7 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
           background-color: #f9fafb;
         }
 
-        .app-row:last-child {
-          border-bottom: none;
-        }
+
 
         .app-cell,
         .category-cell,

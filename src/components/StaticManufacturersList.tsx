@@ -368,6 +368,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
           border-collapse: collapse;
           font-size: 14px;
           table-layout: fixed;
+          border: none;
         }
 
         .manufacturers-table th {
@@ -381,6 +382,10 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
           text-transform: none;
           letter-spacing: normal;
           width: 25%;
+        }
+
+        .manufacturers-table tbody:last-child tr:last-child td {
+          border-bottom: none !important;
         }
 
         /* Mobile responsive - switch to card layout */
@@ -511,9 +516,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
           background-color: #f9fafb;
         }
 
-        .manufacturer-row:last-child {
-          border-bottom: none;
-        }
+
 
         .manufacturer-cell,
         .support-level-cell,
