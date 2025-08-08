@@ -178,6 +178,52 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
                     </tbody>
                   </table>
                 </div>
+
+                {/* Mobile cards for this category */}
+                <div className="apps-cards">
+                  {categoryApps.map((app, index) => (
+                    <div key={index} className="app-card">
+                      <div className="app-card-header">
+                        {app.logo?.url ? (
+                          <img
+                            src={`${PAYLOAD_CMS_URL}${app.logo.url
+                              .split("/")
+                              .map((segment) => encodeURIComponent(segment))
+                              .join("/")}`}
+                            alt={app.logo.alt || `${app.name} logo`}
+                            className="app-card-logo"
+                            onLoad={(e) =>
+                              (e.currentTarget.style.display = "inline-block")
+                            }
+                          />
+                        ) : null}
+                        <a
+                          href={app.learn_more_url || "#"}
+                          className="app-card-name"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {app.name}
+                        </a>
+                      </div>
+                      <div className="app-card-details">
+                        <div className="app-card-row">
+                          <span className="app-card-label">Support:</span>
+                          <span className="app-card-value">
+                            <StatusTag
+                              type="support"
+                              supportLevel={app.support_level}
+                              variant="badge"
+                            />
+                          </span>
+                        </div>
+                      </div>
+                      <div className="app-card-description">
+                        {app.description}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             );
           })}
@@ -196,6 +242,22 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
           display: flex;
           flex-direction: column;
           gap: 48px;
+        }
+
+        @media (max-width: 768px) {
+          .apps-categories {
+            gap: 32px;
+          }
+
+          .category-header {
+            font-size: 24px;
+            margin-bottom: 12px;
+          }
+
+          .category-description {
+            font-size: 14px;
+            margin-bottom: 20px;
+          }
         }
 
         .category-section {
@@ -243,51 +305,103 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
         .apps-table th:nth-child(2) { width: 20%; }
         .apps-table th:nth-child(3) { width: 55%; }
 
-        /* Mobile responsive table */
-        @media (max-width: var(--breakpoint-md)) {
+        /* Mobile responsive - switch to card layout */
+        @media (max-width: 768px) {
           .apps-table-container {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
+            display: none !important;
           }
 
-          .apps-table {
-            min-width: 600px;
-            table-layout: auto;
+          .apps-cards {
+            display: grid !important;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 20px;
+          }
+        }
+
+        /* Extra mobile breakpoint for testing */
+        @media (max-width: 767px) {
+          .apps-table-container {
+            display: none !important;
           }
 
-          .apps-table th,
-          .app-cell,
-          .support-level-cell,
-          .description-cell {
-            width: auto;
-            padding: 12px 16px;
-            font-size: 13px;
+          .apps-cards {
+            display: grid !important;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 20px;
+          }
+        }
+
+          .app-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            margin-bottom: 16px;
           }
 
-          .app-info {
+          .app-card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+          }
+
+          .app-card-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 6px;
+            object-fit: contain;
+            border: 1px solid #e5e7eb;
+            background-color: #ffffff;
+          }
+
+          .app-card-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1f2937;
+            text-decoration: none;
+            min-width: 0;
+            word-wrap: break-word;
+          }
+
+          .app-card-name:hover {
+            color: #3b82f6;
+          }
+
+          .app-card-details {
+            display: flex;
+            flex-direction: column;
             gap: 12px;
           }
 
-          .app-logo {
-            width: 40px;
-            height: 40px;
+          .app-card-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
           }
 
-          .support-level-badge {
-            font-size: 11px;
-            padding: 3px 6px;
-          }
-
-          .apps-filters {
-            gap: 4px;
-          }
-
-          .filter-button {
-            padding: 4px 8px;
+          .app-card-label {
             font-size: 12px;
+            font-weight: 600;
+            color: #6b7280;
+            min-width: 80px;
           }
 
+          .app-card-value {
+            font-size: 13px;
+            color: #1f2937;
+            line-height: 1.4;
+          }
 
+          .app-card-description {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.5;
+          }
         }
 
         .app-row {
@@ -367,6 +481,12 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
           font-style: italic;
         }
 
+        /* Mobile cards - hidden by default */
+        .apps-cards {
+          display: none;
+          margin-top: 20px;
+        }
+
         /* Dark mode support */
 
 
@@ -412,6 +532,36 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
         }
 
         [data-theme="dark"] .apps-empty {
+          color: #9ca3af;
+        }
+
+        [data-theme="dark"] .app-card {
+          background: #374151;
+          border-color: #4b5563;
+        }
+
+        [data-theme="dark"] .app-card-logo {
+          border-color: #4b5563;
+          background-color: #374151;
+        }
+
+        [data-theme="dark"] .app-card-name {
+          color: #e5e7eb;
+        }
+
+        [data-theme="dark"] .app-card-name:hover {
+          color: #60a5fa;
+        }
+
+        [data-theme="dark"] .app-card-label {
+          color: #9ca3af;
+        }
+
+        [data-theme="dark"] .app-card-value {
+          color: #e5e7eb;
+        }
+
+        [data-theme="dark"] .app-card-description {
           color: #9ca3af;
         }
       `}</style>

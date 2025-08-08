@@ -226,6 +226,67 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         </div>
       )}
 
+      {/* Mobile card layout */}
+      <div className="manufacturers-cards">
+        {manufacturers.map((manufacturer, index) => (
+          <div key={index} className="manufacturer-card">
+            <div className="manufacturer-card-header">
+              {manufacturer.vector_icon?.url ? (
+                <img
+                  src={`${PAYLOAD_CMS_URL}${manufacturer.vector_icon.url
+                    .split("/")
+                    .map((segment) => encodeURIComponent(segment))
+                    .join("/")}`}
+                  alt={
+                    manufacturer.vector_icon.alt || `${manufacturer.name} logo`
+                  }
+                  className="manufacturer-card-logo"
+                  onLoad={(e) =>
+                    (e.currentTarget.style.display = "inline-block")
+                  }
+                />
+              ) : null}
+              <a
+                href={`/integrations/manufacturers/${manufacturer.slug}`}
+                className="manufacturer-card-name"
+              >
+                {manufacturer.name}
+              </a>
+            </div>
+            <div className="manufacturer-card-details">
+              <div className="manufacturer-card-row">
+                <span className="manufacturer-card-label">Support:</span>
+                <span className="manufacturer-card-value">
+                  <StatusTag
+                    type="support"
+                    supportLevel={manufacturer.support_level}
+                    variant="badge"
+                  />
+                </span>
+              </div>
+              <div className="manufacturer-card-row">
+                <span className="manufacturer-card-label">Grid Services:</span>
+                <span className="manufacturer-card-value">
+                  <StatusTag
+                    type="grid-services"
+                    gridServices={manufacturer.supports_grid_services}
+                    variant="badge"
+                  />
+                </span>
+              </div>
+              <div className="manufacturer-card-row">
+                <span className="manufacturer-card-label">Devices:</span>
+                <span className="manufacturer-card-value">
+                  {manufacturer.supported_device_types
+                    ?.map((type) => deviceTypeDisplayNames[type] || type)
+                    .join(", ")}
+                </span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
       <style>{`
         .manufacturers-list {
           font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -255,9 +316,17 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
 
         .manufacturers-filters {
           display: flex;
-          flex-wrap: wrap;
           gap: 6px;
           margin-bottom: 32px;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+          padding: 4px 0;
+        }
+
+        .manufacturers-filters::-webkit-scrollbar {
+          display: none;
         }
 
         .filter-button {
@@ -270,6 +339,8 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
           font-weight: 500;
           cursor: pointer;
           transition: all 0.2s ease;
+          white-space: nowrap;
+          flex-shrink: 0;
         }
 
         .filter-button:hover {
@@ -312,49 +383,117 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
           width: 25%;
         }
 
-        /* Mobile responsive table */
-        @media (max-width: var(--breakpoint-md)) {
+        /* Mobile responsive - switch to card layout */
+        @media (max-width: 768px) {
           .manufacturers-table-container {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
+            display: none !important;
           }
 
-          .manufacturers-table {
-            min-width: 600px;
-            table-layout: auto;
+          .manufacturers-cards {
+            display: grid !important;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 20px;
+          }
+        }
+
+        /* Extra mobile breakpoint for testing */
+        @media (max-width: 767px) {
+          .manufacturers-table-container {
+            display: none !important;
           }
 
-          .manufacturers-table th,
-          .manufacturer-cell,
-          .support-level-cell,
-          .grid-services-cell,
-          .device-types-cell {
-            width: auto;
-            padding: 12px 16px;
+          .manufacturers-cards {
+            display: grid !important;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 20px;
+          }
+        }
+
+          .manufacturer-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            margin-bottom: 16px;
+          }
+
+          .manufacturer-card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+          }
+
+          .manufacturer-card-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            object-fit: contain;
+            border: 1px solid #e5e7eb;
+            background-color: #ffffff;
+          }
+
+          .manufacturer-card-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1f2937;
+            text-decoration: none;
+            min-width: 0;
+            word-wrap: break-word;
+          }
+
+          .manufacturer-card-name:hover {
+            color: #3b82f6;
+          }
+
+          .manufacturer-card-details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+          }
+
+          .manufacturer-card-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+
+          .manufacturer-card-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #6b7280;
+            min-width: 80px;
+          }
+
+          .manufacturer-card-value {
             font-size: 13px;
-          }
-
-          .manufacturer-info {
-            gap: 8px;
-          }
-
-          .manufacturer-logo {
-            width: 24px;
-            height: 24px;
-          }
-
-          .support-level-badge {
-            font-size: 11px;
-            padding: 3px 6px;
+            color: #1f2937;
           }
 
           .manufacturers-filters {
-            gap: 4px;
+            display: flex;
+            overflow-x: auto;
+            gap: 8px;
+            padding: 4px 0;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+          }
+
+          .manufacturers-filters::-webkit-scrollbar {
+            display: none;
           }
 
           .filter-button {
-            padding: 4px 8px;
-            font-size: 12px;
+            padding: 8px 16px;
+            font-size: 14px;
+            white-space: nowrap;
+            flex-shrink: 0;
+            border-radius: 20px;
+            min-width: fit-content;
           }
 
           .manufacturers-search-input {
@@ -438,6 +577,12 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
           font-style: italic;
         }
 
+        /* Mobile cards - hidden by default */
+        .manufacturers-cards {
+          display: none;
+          margin-top: 20px;
+        }
+
         /* Dark mode support */
         [data-theme="dark"] .manufacturers-search-input {
           background-color: #374151;
@@ -501,6 +646,32 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
 
         [data-theme="dark"] .manufacturers-empty {
           color: #9ca3af;
+        }
+
+        [data-theme="dark"] .manufacturer-card {
+          background: #374151;
+          border-color: #4b5563;
+        }
+
+        [data-theme="dark"] .manufacturer-card-logo {
+          border-color: #4b5563;
+          background-color: #374151;
+        }
+
+        [data-theme="dark"] .manufacturer-card-name {
+          color: #e5e7eb;
+        }
+
+        [data-theme="dark"] .manufacturer-card-name:hover {
+          color: #60a5fa;
+        }
+
+        [data-theme="dark"] .manufacturer-card-label {
+          color: #9ca3af;
+        }
+
+        [data-theme="dark"] .manufacturer-card-value {
+          color: #e5e7eb;
         }
       `}</style>
     </div>
