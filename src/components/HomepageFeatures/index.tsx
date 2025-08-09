@@ -96,7 +96,7 @@ const featureList: FeatureItem[] = [
         you to get a whole picture of your energy network.
       </>
     ),
-    link: "/docs/signals/overview",
+    link: "/docs/platform-concepts/signals",
   },
   // {
   //   title: 'Analytics',
