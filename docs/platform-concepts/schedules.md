@@ -48,7 +48,11 @@ Consider a battery system optimized for time-of-use arbitrage. The strategy invo
 - **Weekday mode** (8am-6pm): Discharge during peak demand periods
 - **Weekend mode**: Maintain charging behavior for grid stability
 
-![Device Schedule Example](/img/Scheduling-Device_Schedule.drawio.png)
+| Time Period | Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
+|--------------|---------|---------|----------|-----------|----------|---------|-----------|
+| **Morning** (2a-8a) | weekend | default | default | default | default | default | weekend |
+| **Day** (8a-6p) | weekend | day | day | day | day | day | weekend |
+| **Evening** (6p-2a) | weekend | default | default | default | default | default | weekend |
 
 Here's how this translates into a Texture schedule:
 
@@ -117,7 +121,16 @@ The scheduling engine operates on a precise event loop that evaluates device sta
 - **State Evaluation**: Backwards-looking analysis to determine current device state
 - **Transition Prevention**: Logic to prevent rapid state changes ("thrashing")
 
-![Scheduling Rule Engine State Machine](/img/Scheduling-Rule_Engine-statemachine.drawio_1.png)
+```mermaid
+flowchart TD
+    A["Trigger Edge<br/>Detected"] --> B{"Rising<br/>Edge?"}
+    B -->|Yes| C["Schedule command<br/>to enter<br/>rule operating mode"]
+    B -->|No| D{"Adjacent<br/>Rules?"}
+    D -->|Yes| C
+    D -->|No| E["Schedule command<br/>to enter default<br/>operating mode"]
+    C --> F["End"]
+    E --> F
+```
 
 This design provides granular yet scalable device state tracking, with plans to expand into event-driven rule evaluation and complex analytics for simplified fleet management.
 
