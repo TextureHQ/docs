@@ -5,6 +5,24 @@ title: "Welcome to Texture"
 
 import Link from '@docusaurus/Link';
 import { WelcomeCard } from '../../src/components/WelcomeCard';
+import { 
+  Buildings, 
+  ShareNetwork, 
+  ChartLine, 
+  Bell, 
+  ArrowRight, 
+  Users, 
+  Command, 
+  ClockClockwise, 
+  AppWindow, 
+  ArrowSquareOut,
+  ClipboardText,
+  GearSix,
+  SquaresFour,
+  Database,
+  Waveform,
+  Certificate
+} from "@phosphor-icons/react";
 
 <div className="hero-section">
   <div className="hero-container">
@@ -86,7 +104,7 @@ import { WelcomeCard } from '../../src/components/WelcomeCard';
     </div>
   </div>
 
-  <div className="row margin-top--md action-cards-container">
+  <div className="row action-cards-container">
     <WelcomeCard
       title="Connect devices"
       description="Add energy devices to your application. Works with solar, batteries, EVs, and more."
@@ -141,42 +159,214 @@ import { WelcomeCard } from '../../src/components/WelcomeCard';
 
   <div className="row margin-top--lg">
     <div className="col col--12">
-      <h2>Core Concepts</h2>
-      <p className="section-description">Learn the fundamental concepts that power Texture's platform.</p>
+      <h2>Browse by platform concept</h2>
+      <p className="section-description">Understand Texture's core platform concepts.</p>
     </div>
   </div>
 
-  <div className="row concept-cards-container">
+  <div className="row platform-concepts-container">
     <div className="col col--12">
-      <div className="row">
-        <WelcomeCard
-          title="Platform concepts"
-          description="Learn the core concepts that power Texture's platform."
-          linkText="Learn concepts →"
-          linkTo="/platform-concepts/overview"
-          className="margin-top--md"
-        />
-        
-        <WelcomeCard
-          title="Device management"
-          description="Discover, monitor, and control energy devices through Texture."
-          linkText="Explore devices →"
-          linkTo="/platform-concepts/devices"
-          className="margin-top--md"
-        />
-        
-        <WelcomeCard
-          title="Commands & control"
-          description="Send commands and control devices through our unified API."
-          linkText="Learn commands →"
-          linkTo="/platform-concepts/commands"
-          className="margin-top--md"
-        />
+      <div className="concept-category">
+        <h3>Platform Foundation</h3>
+        <div className="concept-grid">
+          <Link to="/platform-concepts/network" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <SquaresFour size={32} />
+              </div>
+              <div className="concept-content">
+                <h4>Network</h4>
+                <p>Structured graph of sites, devices, and relationships</p>
+              </div>
+            </div>
+          </Link>
+          
+          <Link to="/platform-concepts/workspaces" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <Database size={32} />
+              </div>
+              <div className="concept-content">
+                <h4>Workspaces</h4>
+                <p>Organizational containers for data and access control</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <div className="concept-category">
+        <h3>Physical & Virtual Infrastructure</h3>
+        <div className="concept-grid">
+          <Link to="/platform-concepts/sites" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <Buildings size={32} />
+              </div>
+              <div className="concept-content">
+                <h4>Sites</h4>
+                <p>Core physical locations with devices, meters, and metadata</p>
+              </div>
+            </div>
+          </Link>
+          
+          <Link to="/platform-concepts/devices" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <ShareNetwork size={32} />
+              </div>
+              <div className="concept-content">
+                <h4>Devices</h4>
+                <p>Controllable or monitored energy assets</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <div className="concept-category">
+        <h3>CRM & Engagement</h3>
+        <div className="concept-grid">
+          <Link to="/platform-concepts/contacts" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <Users size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Contacts</h4>
+                <p>Individuals or entities engaged with the platform</p>
+              </div>
+            </div>
+          </Link>
+          
+          <Link to="/platform-concepts/programs-enrollments" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <ClipboardText size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Programs & Enrollments</h4>
+                <p>Structured offerings and contact participation</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <div className="concept-category">
+        <h3>Analytics</h3>
+        <div className="concept-grid">
+          <Link to="/platform-concepts/metrics" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <ChartLine size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Metrics</h4>
+                <p>Real-time and historical time series data</p>
+              </div>
+            </div>
+          </Link>
+          
+          <Link to="/platform-concepts/events" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <Bell size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Events</h4>
+                <p>Discrete system or device state changes</p>
+              </div>
+            </div>
+          </Link>
+          
+          <Link to="/platform-concepts/signals" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <Waveform size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Signals</h4>
+                <p>Weather, emissions, and contextual data enrichment</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <div className="concept-category">
+        <h3>Control & Automation</h3>
+        <div className="concept-grid">
+          <Link to="/platform-concepts/commands" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <Command size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Commands</h4>
+                <p>Direct, verifiable instructions sent to controllable devices</p>
+              </div>
+            </div>
+          </Link>
+          
+          <Link to="/platform-concepts/schedules" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <ClockClockwise size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Schedules</h4>
+                <p>Timed or recurring command patterns</p>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+
+      <div className="concept-category">
+        <h3>Extensibility & Integrations</h3>
+        <div className="concept-grid">
+          <Link to="/platform-concepts/apps" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <AppWindow size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Apps</h4>
+                <p>Platform-managed integrations (e.g., Leap, Arcadia)</p>
+              </div>
+            </div>
+          </Link>
+          
+          <Link to="/platform-concepts/destinations/destinations" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <ArrowSquareOut size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Destinations</h4>
+                <p>Outbound event triggers to external systems</p>
+              </div>
+            </div>
+          </Link>
+          
+          <Link to="/platform-concepts/standards" className="concept-card-link">
+            <div className="concept-card">
+              <div className="concept-icon">
+                <Certificate size={24} />
+              </div>
+              <div className="concept-content">
+                <h4>Standards</h4>
+                <p>Industry-standard protocols for grid integration</p>
+              </div>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   </div>
 
-  <div className="row margin-top--lg margin-bottom--lg">
+  <div className="row margin-top--lg">
     <div className="col col--12">
       <div className="help-card">
         <div className="help-card__header">
@@ -191,330 +381,3 @@ import { WelcomeCard } from '../../src/components/WelcomeCard';
     </div>
   </div>
 </div>
-
-<style jsx>{`
-  .hero-section {
-    padding: 4rem 0;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 50%, #f0f2ff 100%);
-    min-height: 400px;
-  }
-
-  /* Dark mode override for hero section */
-  [data-theme="dark"] .hero-section {
-    background: linear-gradient(135deg, #1f2937 0%, #111827 50%, #0f172a 100%) !important;
-  }
-
-  .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
-    height: 100%;
-  }
-
-  .hero-text {
-    flex: 1;
-    max-width: 500px;
-  }
-
-  .hero-visual {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    padding-top: 2rem;
-  }
-
-  .network-svg {
-    width: 100%;
-    height: 100%;
-    max-width: 400px;
-  }
-
-  .hero-section h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    margin-top: 0 !important;
-    font-weight: 700;
-    color: var(--ifm-color-emphasis-900);
-    line-height: 1.2;
-  }
-
-  .hero-section p {
-    font-size: 1.25rem;
-    color: var(--ifm-color-emphasis-600);
-    margin-bottom: 0;
-  }
-
-  .hero__description {
-    font-size: 1.25rem !important;
-    color: var(--ifm-color-emphasis-700) !important;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    line-height: 1.6;
-    font-weight: 400 !important;
-    max-width: 500px;
-  }
-
-  .section-description {
-    font-size: 1.125rem;
-    color: var(--ifm-color-emphasis-700);
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    line-height: 1.5;
-  }
-
-  /* Welcome Cards */
-  .welcome-card-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .welcome-card-link:hover {
-    text-decoration: none;
-  }
-
-  .welcome-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-height: 240px;
-    background: var(--ifm-card-background-color);
-    border: 1px solid #9ca3af;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .welcome-card-link:hover .welcome-card {
-    border: 2px solid var(--ifm-color-primary);
-    background-color: #fafbfc;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  }
-
-  /* Dark mode variants for welcome cards */
-  [data-theme="dark"] .welcome-card {
-    background: #1f2937;
-    border: 1px solid #374151;
-  }
-
-  [data-theme="dark"] .welcome-card-link:hover .welcome-card {
-    background-color: #262626;
-    border: 2px solid var(--ifm-color-primary);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  }
-
-  .welcome-card__header {
-    padding: 2rem 1.5rem 0.75rem;
-  }
-
-  .welcome-card__header h3 {
-    margin: 0 !important;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--ifm-color-emphasis-900);
-  }
-
-  .welcome-card__body {
-    padding: 0 1.5rem;
-    flex-grow: 1;
-  }
-
-  .welcome-card__body p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: var(--ifm-color-emphasis-700);
-    margin-bottom: 0;
-  }
-
-  .welcome-card__footer {
-    padding: 0 1.5rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: auto;
-    flex-shrink: 0;
-    padding-top: 1rem;
-  }
-
-  .welcome-card__link {
-    color: var(--ifm-color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: text-decoration 0.2s ease;
-  }
-
-  .welcome-card-link:hover .welcome-card__link {
-    text-decoration: underline;
-  }
-
-  /* Dark mode text color variants for welcome cards */
-  [data-theme="dark"] .welcome-card__header h3 {
-    color: #f9fafb;
-  }
-
-  [data-theme="dark"] .welcome-card__body p {
-    color: #d1d5db;
-  }
-
-  /* Help Card */
-  .help-card {
-    background: #f8f9ff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 1.5rem;
-    text-align: left;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .help-card__header h3 {
-    margin: 0 0 0.75rem 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--ifm-color-emphasis-900);
-  }
-
-  .help-card__body p {
-    margin: 0;
-    font-size: 1rem;
-    color: var(--ifm-color-emphasis-700);
-    line-height: 1.6;
-  }
-
-  /* Dark mode variants for help card */
-  [data-theme="dark"] .help-card {
-    background: #1f2937;
-    border: 1px solid #374151;
-  }
-
-  [data-theme="dark"] .help-card__header h3 {
-    color: #f9fafb;
-  }
-
-  [data-theme="dark"] .help-card__body p {
-    color: #d1d5db;
-  }
-  
-  /* Responsive behavior for cards */
-  @media (max-width: 996px) {
-    .action-cards-container,
-    .concept-cards-container,
-    .quick-setup-cards-container {
-      justify-content: center;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .action-card,
-    .quick-setup-card,
-    .concept-card {
-      margin-bottom: 2rem;
-    }
-    
-    .action-cards-container .col,
-    .quick-setup-cards-container .col,
-    .concept-cards-container .col {
-      margin-bottom: 2rem;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .action-card,
-    .quick-setup-card,
-    .concept-card {
-      margin-bottom: 2.5rem;
-    }
-    
-    .action-cards-container .col,
-    .quick-setup-cards-container .col,
-    .concept-cards-container .col {
-      margin-bottom: 2.5rem;
-    }
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 996px) {
-    .hero-section {
-      padding: 3rem 0;
-      min-height: 300px;
-    }
-    
-    .hero-container {
-      flex-direction: column;
-      gap: 2rem;
-      text-align: center;
-    }
-    
-    .hero-text {
-      max-width: none;
-    }
-    
-    .hero-visual {
-      height: 250px;
-    }
-    
-    .hero-visual {
-      height: 200px;
-    }
-    
-    .hero__description {
-      font-size: 1rem !important;
-      max-width: none;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .hero-section {
-      padding: 2rem 0;
-    }
-    
-    .hero-container {
-      padding: 0 1rem;
-      gap: 1.5rem;
-    }
-    
-    .hero-visual {
-      height: 200px;
-    }
-    
-    .hero__description {
-      font-size: 0.95rem !important;
-      line-height: 1.5;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .hero-section {
-      padding: 1.5rem 0;
-    }
-    
-    .hero-container {
-      padding: 0 1rem;
-      gap: 1rem;
-    }
-    
-    .hero-visual {
-      height: 180px;
-    }
-    
-    .hero__description {
-      font-size: 0.875rem !important;
-      line-height: 1.4;
-    }
-  }
-`}</style>

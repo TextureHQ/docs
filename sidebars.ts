@@ -47,8 +47,6 @@ const sidebars: SidebarsConfig = {
         "platform-concepts/programs",
         "platform-concepts/apps",
         "platform-concepts/signals",
-        "platform-concepts/virtual-power-plants",
-        "platform-concepts/standards",
         {
           type: "doc",
           id: "platform-concepts/commands/batch-commands",
@@ -60,6 +58,7 @@ const sidebars: SidebarsConfig = {
           className: "hidden",
         },
         "platform-concepts/destinations/destinations",
+        "platform-concepts/standards",
         {
           type: "doc",
           id: "platform-concepts/destinations/webhooks",

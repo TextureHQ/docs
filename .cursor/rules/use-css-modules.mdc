@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+When adding new styles for a new design element or for a page that needs specific styling, create a thematic css module instead of using inline styles or style objects in the mdx files

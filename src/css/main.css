@@ -35,3 +35,6 @@
 
 /* Import Diagram Styles */
 @import "./diagrams.css";
+
+/* Import Welcome Page Styles */
+@import "./welcome.css";

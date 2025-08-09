@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+When writing styles, try to use colors from my variables.css file and add to them if you need to for a new use case
