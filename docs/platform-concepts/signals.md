@@ -50,6 +50,10 @@ Track and optimize for environmental impact with real-time emissions data.
 |--------|--------|-------------|
 | **Marginal CO2 Emissions** | [WattTime](/platform-concepts/apps) | Real-time carbon intensity data to optimize consumption for cleaner electricity use |
 
+:::note Data Usage Terms
+Due to partnership agreements, raw marginal carbon emissions data cannot be shared directly. Instead, Texture calculates emissions metrics by combining WattTime data with your energy data, providing valuable insights while respecting data partner terms.
+:::
+
 
 
 ## Signal Integration
@@ -103,7 +107,7 @@ Leverage real-time emissions data to participate in carbon-aware grid services p
 
 ## Next Steps
 
-- Review detailed signal documentation: [Weather](/platform-concepts/signals/weather), [Marginal Carbon Emissions](/platform-concepts/signals/marginal-carbon-emissions)
+
 - Access signal data through your dashboard or API (automatically available for all sites)
 - Explore [Metrics](/platform-concepts/metrics) that incorporate signal data
 - Set up [Events](/platform-concepts/events) to monitor signal updates
