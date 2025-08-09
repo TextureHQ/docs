@@ -1,46 +1,56 @@
----
-sidebar_position: 14
----
-
 # Schedules
 
-## Introduction
+import { Subtitle } from '@components/Subtitle';
 
-The Device Schedules product is crafted to empower developers and device fleet operators, offering seamless
-synchronization and control of devices through the Texture platform.
+<Subtitle>Automate device operations with intelligent scheduling capabilities</Subtitle>
 
-It provides a unified API for scheduling, eliminating the need to consider manufacturers or device types. As of now,
-thermostats and batteries from all supported manufacturers are compatible with this product, and we're actively working
-to extend support to additional device types in the near future.
+**Schedules** enable you to automate device operations by defining time-based rules that control when devices should enter specific operating modes. Whether you're optimizing battery charging cycles, managing thermostat settings, or coordinating demand response events, Texture's scheduling system provides precise, reliable automation across all supported device types.
 
-This documentation elucidates the APIs offered under the Device Schedules product and guides developers in their
-utilization.
+## Why Schedules?
 
-## Overview
+Manual device control doesn't scale. As your device fleet grows, the complexity of optimizing operations across hundreds or thousands of devices becomes overwhelming. Schedules solve this by:
 
-As with most other entities on the Texture platform, all APIs provided under the Schedule product are name-spaced
-by [Workspace](/platform-concepts/workspaces). This enables developers to easily segregate data from different
-environments such as `staging`, `production`, etc. The **deviceId** required by the API is the same device ID that is
-created when the device is connected to the workspace.
+- **Automating repetitive operations** across entire device fleets
+- **Optimizing energy usage** based on time-of-use rates and demand patterns
+- **Enabling demand response** participation without manual intervention
+- **Reducing operational overhead** through intelligent automation
+- **Providing consistent behavior** regardless of device manufacturer or type
 
-## General Scheduling Capabilities
+## Schedule Architecture
 
-Currently our API supports creating and updating schedules that are aligned to a weekly interval. As the product and
-platform continue to evolve, we will offer additional scheduling and event driven device state rules that will allow for
-more complex device monitoring and controls. The existing API works via
-the [Set Operating Mode Command API](/platform-concepts/commands) and schedules commands to be sent to the device to enter the
-specified operating mode during the specified rule interval.
+All scheduling APIs are namespaced by [Workspace](/platform-concepts/workspaces), enabling clean separation between environments like staging and production. The scheduling engine operates on a precise event loop that evaluates device state transitions and dispatches commands at rule boundaries, preventing state thrashing while ensuring reliable automation.
 
-### An Example Schedule
+## Core Concepts
+
+### Schedule Structure
+
+A schedule consists of three main components:
+
+1. **Default Operating Mode**: The baseline behavior when no rules are active
+2. **Rules**: Time-based conditions that trigger specific device behaviors
+3. **Device Timezone**: The timezone context for evaluating schedule timing
+
+### Supported Capabilities
+
+Currently, Texture supports weekly interval scheduling for thermostats and batteries from all supported manufacturers. The scheduling system integrates directly with the [Set Operating Mode Command API](/platform-concepts/commands), automatically dispatching commands when devices transition between schedule states.
+
+:::tip Future Capabilities
+We're actively expanding scheduling to support additional device types and more complex event-driven rules for advanced fleet management scenarios.
+:::
+
+## Example Implementation
+
+### Battery Optimization Use Case
+
+Consider a battery system optimized for time-of-use arbitrage. The strategy involves:
+
+- **Default mode** (mornings/evenings): Charge during off-peak hours
+- **Weekday mode** (8am-6pm): Discharge during peak demand periods
+- **Weekend mode**: Maintain charging behavior for grid stability
 
 ![Device Schedule Example](/img/Scheduling-Device_Schedule.drawio.png)
 
-The schedule above simulates a device that has a default operating mode in the mornings and evening during the week, a *
-*day** operating mode during the hours of 8a-6p, and then a **weekend** mode that is active on the weekends. Lets say
-this is for battery device that optimized to store energy in the evenings and weekends but is designed to discharge to
-the grid during demand periods during the day.
-
-An example schedule for this hypothetical device would look as follows:
+Here's how this translates into a Texture schedule:
 
 ```json title="POST https://api.texture.energy/v1/devices/clpkn2je80006102tx7d0jhb8/schedule"
 {
@@ -96,92 +106,112 @@ An example schedule for this hypothetical device would look as follows:
 } 
 ```
 
-### How it works
+## Scheduling Engine
 
-Our scheduling engine works on a fairly straight forward event loop that examines the last minute worth of device
-triggers and then dispatches the scheduled command to the device as it transits the rising or falling edge of the
-window. A rising edge is defined as entering from either the **defaultDeviceOperatingMode** into a rule state, or going
-from one rule to another, "an adjacent rule transition". This is evaluated looking backwards to obtain most recent
-device state and enable the graceful transition between modes to prevent state thrashing. This state machine is
-described in the figure below:
+### State Transition Logic
+
+The scheduling engine operates on a precise event loop that evaluates device state changes and dispatches commands at rule boundaries. Key concepts include:
+
+- **Rising Edge**: Transition from default mode to a rule state, or between rules
+- **Falling Edge**: Transition from a rule state back to default mode
+- **State Evaluation**: Backwards-looking analysis to determine current device state
+- **Transition Prevention**: Logic to prevent rapid state changes ("thrashing")
 
 ![Scheduling Rule Engine State Machine](/img/Scheduling-Rule_Engine-statemachine.drawio_1.png)
 
-The intention of this design is to a offer granular, yet scalable device state evaluation tracking and as the platform
-expands to offer additional capabilities around event driven rule evaluation on device updates, as well as more complex
-historical or analytic analysis performed over groups of devices to simplify device fleet management.
+This design provides granular yet scalable device state tracking, with plans to expand into event-driven rule evaluation and complex analytics for simplified fleet management.
 
-## Endpoint & schema overview
+:::note Timing Precision
+Commands are dispatched within one minute of rule boundaries to ensure reliable automation while maintaining system performance.
+:::
 
-View the full endpoint and schema overview in the [API Reference](/api).
+## API Reference
 
-### Schedule
+### Available Endpoints
 
-| Schedules                        | Endpoint                                               | Schema                            |
-|----------------------------------|--------------------------------------------------------|-----------------------------------|
-| **Get schedules for a device**   | GET /v1/devices/\{deviceId\}/schedules                 | [DeviceSchedule](#deviceschedule) |
-| **Get a schedule for a device**  | GET /v1/devices/\{deviceId\}/schedule/\{scheduleId}    | [DeviceSchedule](#deviceschedule) |
-| **Create a new device schedule** | POST /v1/devices/\{deviceId\}/schedule                 | [DeviceSchedule](#deviceschedule) |
-| **Delete all device schedules**  | DELETE /v1/devices/\{deviceId\}/schedules              | [DeviceSchedule](#deviceschedule) |
-| **Delete a device schedule**     | DELETE /v1/devices/\{deviceId\}/schedule/\{scheduleId} | [DeviceSchedule](#deviceschedule) |
+| Operation | Endpoint | Schema |
+|-----------|----------|--------|
+| **Get schedules for a device** | GET /v1/devices/\{deviceId\}/schedules | [DeviceSchedule](#deviceschedule) |
+| **Get a schedule for a device** | GET /v1/devices/\{deviceId\}/schedule/\{scheduleId} | [DeviceSchedule](#deviceschedule) |
+| **Create a new device schedule** | POST /v1/devices/\{deviceId\}/schedule | [DeviceSchedule](#deviceschedule) |
+| **Delete all device schedules** | DELETE /v1/devices/\{deviceId\}/schedules | [DeviceSchedule](#deviceschedule) |
+| **Delete a device schedule** | DELETE /v1/devices/\{deviceId\}/schedule/\{scheduleId} | [DeviceSchedule](#deviceschedule) |
 
+View the complete endpoint documentation in the [API Reference](/api).
 
-### Creating schedule
+### Request Parameters
 
-To create a schedule for a device, you'll need to provide the following information:
+**Creating a Schedule**
 
-- `deviceId` - The ID of the device for which you want to create a schedule
-- `defaultDeviceOperatingMode` - The default operating mode for the device (specific to the deviceType)
-- `rules` - An array of rules that define the schedule
-- `deviceTimezone` - (Optional) The timezone override in which the schedule should be evaluated
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `deviceId` | string | Yes | Device identifier from your workspace |
+| `defaultDeviceOperatingMode` | object | Yes | Default behavior when no rules are active |
+| `rules` | array | Yes | Time-based rules that define the schedule |
+| `deviceTimezone` | string | No | Timezone override (defaults to device timezone) |
 
-### Checking a device schedule
+**Schedule Rules**
 
-To check the schedule for a device, you'll need to provide the following information:
+Each rule in the `rules` array contains:
 
-- `deviceId` - The ID of the device for which you want to check the schedule
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `startTime` | string | Rule start time in "HH:MM" format |
+| `endTime` | string | Rule end time in "HH:MM" format |
+| `daysOfWeek` | array | Days when rule is active (0=Sunday, 6=Saturday) |
+| `deviceOperatingMode` | object | Device behavior during this rule |
 
-Devices can have only one active schedule. By updating a schedule you will be invalidating any existing schedule for the
-device.
+### Response Objects
 
-### Device Rules
+**DeviceSchedule**
 
-A schedule comprises a set of rules. Each rule consists of the following information:
+The `DeviceSchedule` response includes the original schedule data plus database-enriched information about active and future schedules. See the [API Reference](/api) for complete schema details.
 
-- `startTime` - The time at which the rule should start ("HH:MM")
-- `endTime` - The time at which the rule should end ("HH:MM")
-- `daysOfWeek` - An array of days of the week on which the rule should be active (e.g. [0,1,2] for Sunday, Monday,
-  Tuesday)
-- `deviceOperatingMode` - The operating mode for the device during the rule (specific to the deviceType)
+### Operating Modes
 
-### Device Operating Modes
+Device operating modes vary by device type. View the complete list in our [Commands documentation](/platform-concepts/commands).
 
-View our complete list of available device operating modes [here](/platform-concepts/commands).
+## Schedule Constraints and Behavior
 
-### DeviceSchedule
+### Rule Requirements
 
-A `DeviceSchedule`is the common response object type for our Device Scheduling API. The response type is very similar to
-the post body with some enriched information from the database returned as a list of the active or future schedules. 
-The basic layout of the type is described in the [API Reference](/api) as the response object to the GET Device Schedules endpoint.
+:::caution Schedule Validation
+- Rule intervals **cannot overlap** with each other
+- Operating modes must be compatible with the target device type
+- Each schedule must contain at least one rule
+- A valid timezone must be specified for schedule evaluation
+:::
 
-## Schedules & Rules Notes:
+### Timezone Support
 
-- Scheduled rule intervals **cannot** overlap
-- The scheduled operating modes must match the specified device type
-- A schedule must have at least one rule
-- A schedule must specify a Timezone to evaluate the schedule against
-  - **We support the IANA database of timezones so any valid timezone string will validate, e.g.:**
-    - US/Eastern
-    - US/Central
-    - US/Mountain
-    - US/Pacific
+Texture supports the complete IANA timezone database. Common examples include:
 
-## Device Schedule Notes:
+- `US/Eastern`
+- `US/Central` 
+- `US/Mountain`
+- `US/Pacific`
 
-- A device can have only one active schedule
-- Creating a schedule starting `now` with an open end date with remove all prior schedules
-- Similarly, POSTing a new schedule will remove any existing schedules that overlap with the new schedule.
-- A schedule can be created with a start date in the past, but it will not be active until the next rule interval
-- Rule triggers or resets to the default operating mode only occur on the edge of the rule interval. If you need to
-  trigger a rule immediately, you can use the [Set Operating Mode Command API](/platform-concepts/commands) to force the device into
-  the desired state.
+### Schedule Management
+
+- **Single Active Schedule**: Each device can have only one active schedule at a time
+- **Schedule Replacement**: Creating a new schedule automatically removes conflicting existing schedules
+- **Historical Schedules**: Schedules can be created with past start dates, but activation waits for the next rule interval
+- **Immediate Control**: For instant device control outside of scheduled rules, use the [Set Operating Mode Command API](/platform-concepts/commands)
+
+:::tip Schedule Boundaries
+Rule transitions occur precisely at rule boundaries. If you need immediate device state changes, use direct commands rather than relying on schedule timing.
+:::
+
+## Best Practices
+
+1. **Plan for Peak Periods**: Design schedules around utility rate structures and grid demand patterns
+2. **Account for Device Constraints**: Ensure operating modes respect device-specific limitations (battery reserves, temperature ranges, etc.)
+3. **Test Schedule Logic**: Validate schedules in staging environments before deploying to production fleets
+4. **Monitor Performance**: Use [Events](/platform-concepts/events) to track schedule execution and device response
+5. **Prepare for Exceptions**: Implement fallback logic using direct commands for emergency scenarios
+
+## Next Steps
+
+- Explore [Commands](/platform-concepts/commands) for immediate device control
+- Review [Events](/platform-concepts/events) for schedule monitoring
+- See [Devices](/platform-concepts/devices) for supported device types and capabilities
