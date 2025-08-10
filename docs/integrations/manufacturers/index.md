@@ -4,7 +4,10 @@ title: Supported Manufacturers
 sidebar_position: 1
 ---
 
+import { BackLink } from '@components/BackLink';
 import StaticManufacturersList from '@site/src/components/StaticManufacturersList';
+
+<BackLink to="/integrations/manufacturers/devices-and-oems" label="Devices & OEMs" />
 
 # Supported Manufacturers
 

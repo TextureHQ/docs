@@ -38,3 +38,6 @@
 
 /* Import Welcome Page Styles */
 @import "./welcome.css";
+
+/* Import Integrations Page Styles */
+@import "./integrations.css";

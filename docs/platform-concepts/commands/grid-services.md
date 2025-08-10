@@ -146,7 +146,7 @@ When Storm Guard is active on a battery:
 
 ### Monitoring Storm Guard Status
 
-You can monitor the current Storm Guard state through the battery data model. See [Battery Data Models](/platform-concepts/data-models/batteries) for details on reading Storm Guard status.
+You can monitor the current Storm Guard state through the battery data model. See [Battery Data Models](/integrations/data-models/batteries) for details on reading Storm Guard status.
 
 :::caution
 **Storm Guard Priority**

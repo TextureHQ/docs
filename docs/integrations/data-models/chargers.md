@@ -1,10 +1,17 @@
+import { BackLink } from '@components/BackLink';
+import { Subtitle } from '@components/Subtitle';
+
+<BackLink to="/integrations/manufacturers/devices-and-oems" label="Devices & OEMs" />
+
 # Chargers
+
+<Subtitle>Electric vehicle charging equipment with power output and charging states</Subtitle>
 
 A charger on the Texture Platform is an electric vehicle charger. We support a variety of charger manufacturers and models, and are always adding more. 
 
 ## Supported Chargers
 
-For the list of vehicle models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/supported-manufacturers) page. We are always adding support for more so if you see a charger that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
+For the list of vehicle models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/devices-and-oems) page. We are always adding support for more so if you see a charger that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
 
 ## Charger Data Model
 

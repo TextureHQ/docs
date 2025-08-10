@@ -45,7 +45,6 @@ const sidebars: SidebarsConfig = {
         "platform-concepts/schedules",
         "platform-concepts/commands/commands",
         "platform-concepts/programs",
-        "platform-concepts/apps",
         "platform-concepts/signals",
         {
           type: "doc",
@@ -58,7 +57,6 @@ const sidebars: SidebarsConfig = {
           className: "hidden",
         },
         "platform-concepts/destinations/destinations",
-        "platform-concepts/standards",
         {
           type: "doc",
           id: "platform-concepts/destinations/webhooks",
@@ -88,11 +86,37 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "integrations/overview",
-        "integrations/devices",
+        "integrations/manufacturers/devices-and-oems",
         "integrations/texture-connect",
+        "platform-concepts/apps",
+        "platform-concepts/standards",
         "integrations/scoped-key",
         "integrations/migration",
-        "integrations/manufacturers/supported-manufacturers",
+        {
+          type: "doc",
+          id: "integrations/data-models/batteries",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/data-models/chargers",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/data-models/vehicles",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/data-models/inverters",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/data-models/thermostats",
+          className: "hidden",
+        },
         {
           type: "doc",
           id: "integrations/manufacturers/alfa-romeo",

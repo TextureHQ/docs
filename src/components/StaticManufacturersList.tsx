@@ -332,7 +332,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
         .filter-button {
           padding: 6px 12px;
           border: 1px solid #e5e7eb;
-          border-radius: 6px;
+          border-radius: 4px;
           background-color: #ffffff;
           color: #374151;
           font-size: 13px;
@@ -497,7 +497,7 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
             font-size: 14px;
             white-space: nowrap;
             flex-shrink: 0;
-            border-radius: 20px;
+            border-radius: 6px;
             min-width: fit-content;
           }
 

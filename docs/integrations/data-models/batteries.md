@@ -1,4 +1,11 @@
+import { BackLink } from '@components/BackLink';
+import { Subtitle } from '@components/Subtitle';
+
+<BackLink to="/integrations/manufacturers/devices-and-oems" label="Devices & OEMs" />
+
 # Batteries
+
+<Subtitle>Energy storage systems with charge levels, grid status, and backup capabilities</Subtitle>
 
 Batteries are a type of device that can be used to store and release electrical energy. They are commonly used in a wide range of applications, including portable electronics, electric vehicles, and renewable energy systems.
 
@@ -10,7 +17,7 @@ Batteries are also used to provide backup power in the event of a grid outage, a
 
 ## Battery Models
 
-For the list of battery models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/supported-manufacturers) page. We are always adding support for more so if you see a battery that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
+For the list of battery models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/devices-and-oems) page. We are always adding support for more so if you see a battery that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
 
 ## Battery Data Model
 

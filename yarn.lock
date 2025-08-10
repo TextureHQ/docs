@@ -3738,7 +3738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@phosphor-icons/react@npm:^2.0.15":
+"@phosphor-icons/react@npm:^2.1.10":
   version: 2.1.10
   resolution: "@phosphor-icons/react@npm:2.1.10"
   peerDependencies:
@@ -8797,7 +8797,7 @@ __metadata:
     "@lexical/rich-text": "npm:^0.16.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@payloadcms/richtext-lexical": "npm:^0.11.2"
-    "@phosphor-icons/react": "npm:^2.0.15"
+    "@phosphor-icons/react": "npm:^2.1.10"
     "@stoplight/elements": "npm:^8.5.2"
     "@texturehq/events": "npm:1.6.2"
     "@types/swagger-ui-react": "npm:^4.18.3"

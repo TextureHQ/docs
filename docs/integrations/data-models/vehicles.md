@@ -1,4 +1,11 @@
+import { BackLink } from '@components/BackLink';
+import { Subtitle } from '@components/Subtitle';
+
+<BackLink to="/integrations/manufacturers/devices-and-oems" label="Devices & OEMs" />
+
 # Vehicles
+
+<Subtitle>Connected EVs with battery levels, range, and charging status</Subtitle>
 
 A vehicle on the Texture Platform is a car, truck, or other vehicle that is electric or plug-in hybrid. We support a variety of vehicle manufacturers and models, and are always adding more. 
 
@@ -6,7 +13,7 @@ We do not support any ICE (internal combustion engine) aka gasoline-powered vehi
 
 ## Supported Vehicle Models
 
-For the list of vehicle models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/supported-manufacturers) page. We are always adding support for more so if you see a vehicle that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
+For the list of vehicle models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/devices-and-oems) page. We are always adding support for more so if you see a vehicle that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
 
 ## Vehicle Data Model
 

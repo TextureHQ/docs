@@ -1,10 +1,17 @@
+import { BackLink } from '@components/BackLink';
+import { Subtitle } from '@components/Subtitle';
+
+<BackLink to="/integrations/manufacturers/devices-and-oems" label="Devices & OEMs" />
+
 # Inverters
+
+<Subtitle>Solar energy conversion with power output and grid interaction</Subtitle>
 
 An inverter on the Texture Platform is a cloud-connected solar inverter. We support a variety of solar inverter manufacturers and models, and are always adding more.
 
 ## Supported inverters
 
-For the list of vehicle models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/supported-manufacturers) page. We are always adding support for more so if you see a inverter that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
+For the list of vehicle models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/devices-and-oems) page. We are always adding support for more so if you see a inverter that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
 
 ## Inverter Data Model
 

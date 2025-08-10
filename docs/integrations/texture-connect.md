@@ -8,42 +8,100 @@ toc_max_heading_level: 5
 
 # Texture Connect
 
-Texture Connect is the name of the flow through which your end users can go through to establish a connection to their devices via Texture. 
+import { Subtitle } from '@components/Subtitle';
+
+<Subtitle>Authorize consumer device connections through secure OAuth flows</Subtitle>
+
+**Texture Connect** enables your customers to securely authorize access to their energy devices through OAuth flows. This is the primary method for connecting individual consumer devices like home batteries, EVs, and smart thermostats to your application. 
 
 ![Connect Flow Screenshot](/img/connect-intro-desktop.png)
 
-Currently, we support 3 different methods for connecting a device to the Texture platform via the Connect flow.
+## How It Works
 
-1. Link creation via Texture API (see [our open source examples](https://github.com/TextureHQ/examples/tree/main/connect))
-1. Texture Connect SDK [JavaScript](https://www.npmjs.com/package/@texturehq/connect-sdk), [React](https://www.npmjs.com/package/@texturehq/react-connect-sdk), or [React Native](https://www.npmjs.com/package/@texturehq/react-native-connect-sdk)
-1. Directly via the Texture Dashboard ([Direct link to the Connect Flow](https://dashboard.texturehq.com/sources?tab=Connect+Links))
+When a customer connects their device through Texture Connect, they:
 
-The method you select depends on how you are looking to integrate the Texture platform into your own application and the level of effort you are able to provide for it.
+1. **Authorize Access** - Grant permission to access their device data through the manufacturer's OAuth flow
+2. **Complete Setup** - Provide contact information and device preferences
+3. **Receive Access** - Your application gets a scoped key to access their device data
 
-## Fields
+## Why Texture Connect is Different
 
-Using the Connect flow is the way you first introduce a device to the Texture platform and as a result, there are a series of fields you need to provide that will allow you track and manage the connected devices later. You will need to provide these items regardless of the manner in which you decide to connect the device.
+Texture Connect provides **customer-verified data accuracy** through our unique authorization flow, built on official OEM partnerships rather than reverse engineering or web scraping:
 
-| field          | required | details                                                                                                                                                                                                                                                                                                                                                   |
-|----------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `referenceId`  | no      | Any unique identifier to reference this customer in your system. Often a `userId`, an identifier for this device or this site. Anything that you can use to identify and find the connected device(s) later on your end. If an identifier of your own is not supplied we will generate one on your behalf of the form `texture-generated:<uuidv7>`                                                                                                                                         |
-| `tags`         | no       | An optional array of tags which can be used for grouping your devices. Could be some kind of identifier for a group on your end (like a groupId) or it could be any other way you group devices (e.g. by location `boston` or `connecticut` or  `flatiron`) whatever you think you may want to aggregate device data by or run batch controls on devices. These will be alterable later by API so you can add and remove tags later. |
-| `redirectUrl`  | yes      | This is the url where your user will be redirected after they complete the Connect flow. Generally a link into your application. Could be a web url (e.g. https://mycompany.com/app) or a deeplink into a mobile app (e.g. myapp://device/connected). Note the redirect url will have the `texture_scoped_key` appended to it as a query parameter which, depending on your use case, you may want to store in your app or in your own backend. See the docs for [Scoped Keys](/integrations/scoped-key) for more details. |
-| `clientName`   | no       | This is what will appear in our Connect flow as your company name which your end user will see. In the above screenshot the company name is "Energy Coffee" and this value would go there. If you do not specify a value here it will default to your Organization name, hence why it is optional. But your use case may be connecting devices on behalf of a client and so we include this as an option for maximum flexibility.                                                                 |                                                                                                                                                                   |
-| `manufacturerFilters`   | no       | An optional object allowing different filters to restrict or narrow down the manufacturers available in the connect flow.  <table><thead><tr><th>Name</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td>`manufacturers`</td><td>Restricts the manufacturers available to those specified in this list. If only 1 manufacturer is specified, the manufacturers selection/search page in the connect flow will be skipped.</td><td>`["enphase", "tesla"]`</td></tr><tr><td>`deviceTypes`</td><td>Restricts the manufacturers available to those that have devices available of the specified types.</td><td>`["battery"]`</td></tr></tbody></table>     
-| `customerInfo`   | no       | An optional object to allow passing in information related to the customer for which the connect link session is for. Information supplied here will pre-populate info in the customer collection form of the connect flow. If you supply a valid first name, last name, email, and location we will bypass this form for the customer. <table><thead><tr><th>Name</th><th>Description</th><th>Example</th></tr></thead><tbody><tr><td>`firstName`</td><td>The first name of the customer going through the connect flow.</td><td>`John`</td></tr><tr><td>`lastName`</td><td>The last name of the customer going through the connect flow</td><td>`Doe`</td></tr><tr><td>`email`</td><td>Email associated with the customer going through the connect flow.</td><td>`example@example.com`</td></tr><tr><td>`phone`</td><td>Phone number associated with the customer going through the connect flow.</td><td>`555-555-0100`</td></tr><tr><td>`location`</td><td>A nested object that houses information related to the customer site or location. If this is supplied, then all fields must be supplied, partial information is not accepted. More details on structure can be found in the [API Reference](/api)</td><td><br />```{"streetOne": "1600 Pennsylvania Avenue NW", "city": "Washington","state": "DC", "postalCode": "20500", "country": "US" }```</td></tr></tbody></table>                                                                                                                                                                              |
-| `customerId`   | no       | An existing identifier for a customer of yours in the Texture platform. If this is supplied, it takes priority over any information supplied in the optional `customerInfo` object. When you create a connect link a `customerId` will be returned identifying the customer the connect link is for. This returned identifier can be used or provided in this field later to create another connect link for the customer.                                                                                                                                                                             |
+### Customer-Confirmed Information
+
+During the Connect flow, customers actively confirm their:
+- **Contact Information** - Name, email, phone number
+- **Site Details** - Physical address and location data
+- **Device Preferences** - Which devices to connect and access permissions
+
+This customer verification ensures that the [Sites](/platform-concepts/sites) and [Contacts](/platform-concepts/contacts) created in your Texture workspace contain **accurate, up-to-date information** that customers have explicitly confirmed.
+
+### Automatic Data Resolution
+
+Once customers complete the flow, Texture automatically:
+- Creates or updates Contact records with verified customer information
+- Creates or updates Site records with confirmed location data
+- Links connected devices to the appropriate Site and Contact
+- Provides you with clean, structured data ready for your energy management applications
+
+This approach ensures reliable, high-quality data that you can trust for your energy management applications.
+
+## Integration Methods
+
+Choose the integration method that best fits your application:
+
+### 1. **Texture Connect SDK** (Recommended)
+Easiest way to get started with pre-built components:
+- **[JavaScript/TypeScript](https://www.npmjs.com/package/@texturehq/connect-sdk)** - For web applications
+- **[React](https://www.npmjs.com/package/@texturehq/react-connect-sdk)** - For React applications  
+- **[React Native](https://www.npmjs.com/package/@texturehq/react-native-connect-sdk)** - For mobile apps
+
+### 2. **Texture API**
+For custom implementations with full control over the flow. See [our open source examples](https://github.com/TextureHQ/examples/tree/main/connect).
+
+### 3. **Dashboard Direct Links**
+For testing or manual connections via the [Texture Dashboard](https://dashboard.texturehq.com/sources?tab=Connect+Links).
+
+## Configuration Fields
+
+When creating a Texture Connect session, you'll need to provide these configuration fields to track and manage the connected devices:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `redirectUrl` | Yes | This is the url where your user will be redirected after they complete the Connect flow. Generally a link into your application. Could be a web url (e.g. https://mycompany.com/app) or a deeplink into a mobile app (e.g. myapp://device/connected). Note the redirect url will have the `texture_scoped_key` appended to it as a query parameter which, depending on your use case, you may want to store in your app or in your own backend. See the docs for [Scoped Keys](/integrations/scoped-key) for more details. |
+| `referenceId` | No | Any unique identifier to reference this customer in your system. Often a `userId`, an identifier for this device or this site. Anything that you can use to identify and find the connected device(s) later on your end. If an identifier of your own is not supplied we will generate one on your behalf of the form `texture-generated:<uuidv7>`. |
+| `tags` | No | An optional array of tags which can be used for grouping your devices. Could be some kind of identifier for a group on your end (like a groupId) or it could be any other way you group devices (e.g. by location `boston` or `connecticut` or `flatiron`) whatever you think you may want to aggregate device data by or run batch controls on devices. These will be alterable later by API so you can add and remove tags later. |
+| `clientName` | No | This is what will appear in our Connect flow as your company name which your end user will see. In the above screenshot the company name is "Energy Coffee" and this value would go there. If you do not specify a value here it will default to your Organization name, hence why it is optional. But your use case may be connecting devices on behalf of a client and so we include this as an option for maximum flexibility. |
+| `customerId` | No | An existing identifier for a customer of yours in the Texture platform. If this is supplied, it takes priority over any information supplied in the optional `customerInfo` object. When you create a connect link a `customerId` will be returned identifying the customer the connect link is for. This returned identifier can be used or provided in this field later to create another connect link for the customer. |
+
+### Advanced Configuration Objects
+
+#### `manufacturerFilters`
+
+An optional object allowing different filters to restrict or narrow down the manufacturers available in the connect flow.
+
+| Property | Description | Example |
+|----------|-------------|---------|
+| `manufacturers` | Restricts the manufacturers available to those specified in this list. If only 1 manufacturer is specified, the manufacturers selection/search page in the connect flow will be skipped. | `["enphase", "tesla"]` |
+| `deviceTypes` | Restricts the manufacturers available to those that have devices available of the specified types. | `["battery"]` |
+
+#### `customerInfo`
+
+An optional object to allow passing in information related to the customer for which the connect link session is for. Information supplied here will pre-populate info in the customer collection form of the connect flow. If you supply a valid first name, last name, email, and location we will bypass this form for the customer.
+
+| Property | Description | Example |
+|----------|-------------|---------|
+| `firstName` | The first name of the customer going through the connect flow. | `"John"` |
+| `lastName` | The last name of the customer going through the connect flow. | `"Doe"` |
+| `email` | Email associated with the customer going through the connect flow. | `"example@example.com"` |
+| `phone` | Phone number associated with the customer going through the connect flow. | `"555-555-0100"` |
+| `location` | A nested object that houses information related to the customer site or location. If this is supplied, then all fields must be supplied, partial information is not accepted. More details on structure can be found in the [API Reference](/api). | `{"streetOne": "1600 Pennsylvania Avenue NW", "city": "Washington","state": "DC", "postalCode": "20500", "country": "US"}` |
 
 
-## Link Creation via Texture API
+## Quick Start: Texture Connect SDK
 
-Link creation can be done via the Texture API using one of your [API Keys ](/api/keys).
-
-[Visit our API Reference](/api) to learn more about creating connections.
-
-## Texture Connect SDK
-
-Our Connect SDK provides a bit less configurability, but is the easiest way to get started with connecting devices to the Texture platform for your Organization.
+The Texture Connect SDK is the easiest way to get started with consumer device connections. It provides pre-built components that handle the OAuth flow for you.
 
 ### Installation
 
@@ -247,10 +305,14 @@ import { TextureConnect } from '@texturehq/react-native-connect-sdk';
 
 Check out some examples in our [open source repository](https://github.com/TextureHQ/examples/tree/main/connect).
 
-> 📘 What if I have the user or device credentials already?
+## Advanced: Texture API
+
+For custom implementations with full control over the flow, use the Texture API directly. [Visit our API Reference](/api) to learn more about creating connections.
+
+## Alternative: Direct Credentials
+
+> 📘 **Already have customer credentials?**
 > 
-> Some manufacturers and devices require this authentication flow to be completed by end users to connect to the device and others do not which is why we provide this flow. 
+> If you already have customer credentials or direct access to manufacturer APIs, we can work with you to ingest those credentials directly. This bypasses the OAuth flow entirely.
 > 
-> However, it is quite possible that you already have user credentials or you have direct access to credentials through the manufacturer. 
-> 
-> We can work with you directly to ingest those credentials or use your credentials with the manufacturer, please contact us and we can help!
+> [Contact us](https://www.texturehq.com/contact-us) to discuss direct credential integration options.

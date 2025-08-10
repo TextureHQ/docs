@@ -131,11 +131,11 @@ All devices share these common concepts:
 
 We have detailed data models for each device type:
 
-- [Batteries](/platform-concepts/data-models/batteries)
-- [Chargers](/platform-concepts/data-models/chargers)  
-- [Electric Vehicles](/platform-concepts/data-models/vehicles)
-- [Inverters](/platform-concepts/data-models/inverters)
-- [Thermostats](/platform-concepts/data-models/thermostats)
+- [Batteries](/integrations/data-models/batteries)
+- [Chargers](/integrations/data-models/chargers)  
+- [Electric Vehicles](/integrations/data-models/vehicles)
+- [Inverters](/integrations/data-models/inverters)
+- [Thermostats](/integrations/data-models/thermostats)
 
 ## Device Details in the Dashboard
 
@@ -241,6 +241,6 @@ This is especially useful for time-of-use strategies, demand response, or temper
 - **Explore the [API Reference](/api)** for device endpoints (GET, POST, DELETE, etc.).
 - **Tag & Schedule** your devices for hands-off automation.
 - **Monitor Activity** for real-time device updates and logs.
-- **Check Supported Devices** in our [Supported Manufacturers](/integrations/manufacturers/supported-manufacturers) list.
+- **Check Supported Devices** in our [Supported Manufacturers](/integrations/manufacturers/devices-and-oems) list.
 
 With **Devices** on Texture, you get a powerful, centralized way to manage all your energy assets—collecting real-time data, sending commands, and building advanced energy solutions on top of a unified platform.

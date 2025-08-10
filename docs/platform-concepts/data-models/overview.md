@@ -24,8 +24,8 @@ There are a few concepts that are common to all devices:
 - [Commands](/platform-concepts/commands) - The information that is sent from the Texture Platform to the device to make it do something. Not all devices support commands, but many do and we have tried to make commands as consistent as possible across device types
 
 We have breakout pages with details on the data model for each Device Type:
-- [Batteries](/platform-concepts/data-models/batteries)
-- [Chargers](/platform-concepts/data-models/chargers)
-- [Electric Vehicles](/platform-concepts/data-models/vehicles)
-- [Inverters](/platform-concepts/data-models/inverters)
-- [Thermostats](/platform-concepts/data-models/thermostats)
+- [Batteries](/integrations/data-models/batteries)
+- [Chargers](/integrations/data-models/chargers)
+- [Electric Vehicles](/integrations/data-models/vehicles)
+- [Inverters](/integrations/data-models/inverters)
+- [Thermostats](/integrations/data-models/thermostats)

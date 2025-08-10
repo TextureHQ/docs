@@ -1,10 +1,17 @@
+import { BackLink } from '@components/BackLink';
+import { Subtitle } from '@components/Subtitle';
+
+<BackLink to="/integrations/manufacturers/devices-and-oems" label="Devices & OEMs" />
+
 # Thermostats
+
+<Subtitle>HVAC control systems with temperature settings and operating modes</Subtitle>
 
 A thermostat on the Texture Platform is a cloud-connected smart thermostat. We support a variety of thermostat manufacturers and models, and are always adding more. 
 
 ## Supported Thermostats
 
-For the list of vehicle models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/supported-manufacturers) page. We are always adding support for more so if you see a smart thermostat that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
+For the list of vehicle models we currently support on the Texture Platform, see the [Supported Devices](/integrations/manufacturers/devices-and-oems) page. We are always adding support for more so if you see a smart thermostat that you would like to see on platform, please [contact us](https://www.texturehq.com/contact-us) and let us know.
 
 ## Thermostat Data Model
 
