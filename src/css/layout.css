@@ -19,6 +19,14 @@ body {
   overflow-x: hidden;
 }
 
+/* Additional overflow control for main content only */
+.theme-doc-markdown,
+.container-fluid,
+.col {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 /* ==========================================================================
    CONTENT AREA PADDING & LAYOUT
    ========================================================================== */
