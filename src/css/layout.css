@@ -101,6 +101,24 @@ body {
   }
 }
 
+/* Fix mobile sidebar navigation issues */
+@media (max-width: 996px) {
+  /* Hide the problematic "Back to main menu" button in mobile sidebar */
+  .navbar-sidebar .navbar-sidebar__back {
+    display: none !important;
+  }
+
+  /* Alternative: if you want to keep it but fix the styling */
+  /*
+  .navbar-sidebar .navbar-sidebar__back {
+    margin: 0 !important;
+    padding: 0.5rem 1rem !important;
+    width: auto !important;
+    font-size: 0.875rem !important;
+  }
+  */
+}
+
 /* ==========================================================================
    RESPONSIVE PADDING ADJUSTMENTS
    ========================================================================== */
