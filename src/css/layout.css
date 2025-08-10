@@ -68,6 +68,40 @@ body {
 }
 
 /* ==========================================================================
+   MOBILE NAVIGATION FIXES
+   ========================================================================== */
+
+/* Mobile search - just show icon, hide input */
+@media (max-width: 996px) {
+  [class*="navbarSearchContainer"] {
+    width: 40px !important;
+    max-width: 40px !important;
+    overflow: hidden;
+  }
+
+  /* Hide search input on mobile but keep it functional */
+  [class*="navbarSearchContainer"] input[type="search"],
+  [class*="navbarSearchContainer"] input[type="text"] {
+    opacity: 0 !important;
+    width: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    position: absolute !important;
+    pointer-events: none !important;
+  }
+
+  /* Keep search icon visible and clickable */
+  [class*="navbarSearchContainer"] svg {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: auto;
+    cursor: pointer;
+  }
+}
+
+/* ==========================================================================
    RESPONSIVE PADDING ADJUSTMENTS
    ========================================================================== */
 
