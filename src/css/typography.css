@@ -407,14 +407,16 @@ h6,
 /* Markdown specific link styling only */
 .markdown a:not(.welcome-card-link):not(.welcome-card__link) {
   color: var(--link-color);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(68, 74, 225, 0.7);
+  text-decoration: underline;
+  text-decoration-color: rgba(68, 74, 225, 0.7);
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
   transition: all 0.2s ease;
 }
 
 .markdown a:not(.welcome-card-link):not(.welcome-card__link):hover {
   color: var(--link-hover-color);
-  border-bottom-color: rgba(68, 74, 225, 1);
+  text-decoration-color: rgba(68, 74, 225, 1);
 }
 
 /* Hide anchor link icons */

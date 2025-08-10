@@ -139,18 +139,13 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
                             <div className="app-info">
                               {app.logo?.url ? (
                                 <img
-                                  src={`${PAYLOAD_CMS_URL}${app.logo.url
-                                    .split("/")
-                                    .map((segment) =>
-                                      encodeURIComponent(segment)
-                                    )
-                                    .join("/")}`}
+                                  src={`${PAYLOAD_CMS_URL}${app.logo.url}`}
                                   alt={app.logo.alt || `${app.name} logo`}
                                   className="app-logo"
-                                  onLoad={(e) =>
-                                    (e.currentTarget.style.display =
-                                      "inline-block")
-                                  }
+                                  onError={(e) => {
+                                    // Hide the image if it fails to load
+                                    e.currentTarget.style.display = "none";
+                                  }}
                                 />
                               ) : null}
                               <a
@@ -186,15 +181,13 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
                       <div className="app-card-header">
                         {app.logo?.url ? (
                           <img
-                            src={`${PAYLOAD_CMS_URL}${app.logo.url
-                              .split("/")
-                              .map((segment) => encodeURIComponent(segment))
-                              .join("/")}`}
+                            src={`${PAYLOAD_CMS_URL}${app.logo.url}`}
                             alt={app.logo.alt || `${app.name} logo`}
                             className="app-card-logo"
-                            onLoad={(e) =>
-                              (e.currentTarget.style.display = "inline-block")
-                            }
+                            onError={(e) => {
+                              // Hide the image if it fails to load
+                              e.currentTarget.style.display = "none";
+                            }}
                           />
                         ) : null}
                         <a
@@ -359,6 +352,7 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
             height: 48px;
             border-radius: 6px;
             object-fit: contain;
+            display: inline-block;
             border: 1px solid #e5e7eb;
             background-color: #ffffff;
           }
@@ -370,10 +364,15 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
             text-decoration: none;
             min-width: 0;
             word-wrap: break-word;
+            text-decoration-skip-ink: none;
+            text-underline-offset: 2px;
+            line-height: 1.4;
+            display: inline;
           }
 
           .app-card-name:hover {
             color: #3b82f6;
+            text-decoration: underline;
           }
 
           .app-card-details {
@@ -439,7 +438,7 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
           height: 48px;
           border-radius: 6px;
           object-fit: contain;
-          display: none;
+          display: inline-block;
           border: 1px solid #e5e7eb;
           background-color: #ffffff;
         }
@@ -449,10 +448,15 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
           text-decoration: none;
           font-weight: 700;
           transition: color 0.2s ease;
+          text-decoration-skip-ink: none;
+          text-underline-offset: 2px;
+          line-height: 1.4;
+          display: inline;
         }
 
         .app-link:hover {
           color: #3b82f6;
+          text-decoration: underline;
         }
 
         .support-level-badge {

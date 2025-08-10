@@ -448,10 +448,15 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
             text-decoration: none;
             min-width: 0;
             word-wrap: break-word;
+            text-decoration-skip-ink: none;
+            text-underline-offset: 2px;
+            line-height: 1.4;
+            display: inline;
           }
 
           .manufacturer-card-name:hover {
             color: #3b82f6;
+            text-decoration: underline;
           }
 
           .manufacturer-card-details {
@@ -546,10 +551,15 @@ const StaticManufacturersList: React.FC<StaticManufacturersListProps> = ({
           text-decoration: none;
           font-weight: 700;
           transition: color 0.2s ease;
+          text-decoration-skip-ink: none;
+          text-underline-offset: 2px;
+          line-height: 1.4;
+          display: inline;
         }
 
         .manufacturer-link:hover {
           color: #3b82f6;
+          text-decoration: underline;
         }
 
         .support-level-badge {
