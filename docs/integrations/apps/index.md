@@ -5,10 +5,15 @@ sidebar_position: 1
 ---
 
 import StaticAppsList from '@site/src/components/StaticAppsList';
+import { Subtitle } from '@components/Subtitle';
 
 # Apps
 
+<Subtitle>Extend platform capabilities through third-party integrations</Subtitle>
+
 **Apps** are integrations with third-party services that expand the functionality, data, and capabilities of the Texture Platform. By enabling an App (often by providing the relevant API key or OAuth credentials), you can seamlessly connect external services or datasets to Texture and leverage them across your Sites, Devices, and more.
+
+Whether you need weather data for energy optimization, CRM integration for customer management, or utility data for comprehensive site analysis, Texture's App ecosystem provides the building blocks to create a unified energy management solution.
 
 ## Why Apps?
 
