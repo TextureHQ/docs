@@ -149,10 +149,8 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
                                 />
                               ) : null}
                               <a
-                                href={app.learn_more_url || "#"}
+                                href={`/integrations/apps/${app.slug}`}
                                 className="app-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
                               >
                                 {app.name}
                               </a>
@@ -191,10 +189,8 @@ const StaticAppsList: React.FC<StaticAppsListProps> = ({ className }) => {
                           />
                         ) : null}
                         <a
-                          href={app.learn_more_url || "#"}
+                          href={`/integrations/apps/${app.slug}`}
                           className="app-card-name"
-                          target="_blank"
-                          rel="noopener noreferrer"
                         >
                           {app.name}
                         </a>

@@ -234,7 +234,7 @@ This is especially useful for time-of-use strategies, demand response, or temper
 - **Privacy & Security**
   - Manage API keys carefully and set appropriate role-based access control.
 - **Integration**
-  - Combine with [Apps](/platform-concepts/apps) (e.g., UtilityAPI, Enode) to automatically sync new devices from third-party accounts.
+  - Combine with [Apps](/integrations/apps) (e.g., UtilityAPI, Enode) to automatically sync new devices from third-party accounts.
 
 ## Next Steps
 

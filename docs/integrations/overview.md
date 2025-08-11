@@ -50,7 +50,7 @@ import { DynamicCounts } from '@site/src/components/DynamicCounts';
       </div>
     </Link>
 
-    <Link className="featured-card-link" to="/platform-concepts/apps">
+    <Link className="featured-card-link" to="/integrations/apps">
       <div className="featured-card apps-card">
                 <div className="featured-card-header">
           <h3>Apps</h3>

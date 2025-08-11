@@ -1,15 +1,14 @@
 ---
+id: apps
+title: Apps
+sidebar_position: 1
 ---
+
+import StaticAppsList from '@site/src/components/StaticAppsList';
 
 # Apps
 
-import { Subtitle } from '@components/Subtitle';
-
-<Subtitle>Extend platform capabilities through third-party integrations</Subtitle>
-
-**Apps** are integrations with third-party services that expand the functionality, data, and capabilities of the Texture Platform. By enabling an App (often by providing **the** **relevant** API key or OAuth credentials), you can seamlessly connect external services or datasets to Texture and leverage them across your Sites, Devices, and more.
-
----
+**Apps** are integrations with third-party services that expand the functionality, data, and capabilities of the Texture Platform. By enabling an App (often by providing the relevant API key or OAuth credentials), you can seamlessly connect external services or datasets to Texture and leverage them across your Sites, Devices, and more.
 
 ## Why Apps?
 
@@ -20,7 +19,9 @@ Apps transform Texture into a comprehensive energy management platform:
 - **Faster Onboarding** — Once an App is enabled, Texture automatically handles syncing, reconciling, and updating data at regular intervals
 - **Modular Setup** — Pick and choose only the integrations you need by enabling individual Apps
 
----
+## Available Apps
+
+<StaticAppsList />
 
 ## App Integration Process
 
@@ -33,16 +34,6 @@ Each App in Texture has its own configuration dialog. Typically you'll:
 3. **Configure Additional Options** (e.g., default permissions, region filters)
 
 Once saved, Texture starts syncing or sending data automatically, depending on the App.
-
----
-
-## Available Apps
-
-import StaticAppsList from '@site/src/components/StaticAppsList';
-
-<StaticAppsList />
-
----
 
 ## Next Steps
 

@@ -120,4 +120,4 @@ Have a specific destination requirement? Contact our team to discuss custom inte
 - Configure your first destination using our detailed guides: [Webhooks](/platform-concepts/destinations/webhooks), [Email](/platform-concepts/destinations/email), [SMS](/platform-concepts/destinations/sms), [Kafka](/platform-concepts/destinations/kafka)
 - Learn about [Events](/platform-concepts/events) to understand the data you'll receive
 - Explore [Commands](/platform-concepts/commands) for bidirectional system integration
-- Review [Apps](/platform-concepts/apps) for additional data sources to include in your destinations
+- Review [Apps](/integrations/apps) for additional data sources to include in your destinations

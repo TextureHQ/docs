@@ -88,7 +88,7 @@ const sidebars: SidebarsConfig = {
         "integrations/overview",
         "integrations/manufacturers/devices-and-oems",
         "integrations/texture-connect",
-        "platform-concepts/apps",
+        "integrations/apps/apps",
         "platform-concepts/standards",
         "integrations/scoped-key",
         "integrations/migration",
@@ -366,6 +366,161 @@ const sidebars: SidebarsConfig = {
         {
           type: "doc",
           id: "integrations/manufacturers/volvo",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/60-hertz",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/also-energy",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/arcadia",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/aurora-solar",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/bayouEnergy",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/deck",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/derapi",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/eg4-electronics",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/eli",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/enode",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/enphase:installer-access",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/franklinwh:grid-services",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/hubspot",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/leap",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/myTexture",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/nationalWeatherService",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/openWeather",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/palmetto-ei",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/salesforce",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/savant",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/shadowPower",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/shovels",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/smartcar",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/solaredge:grid-services",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/solaredge:monitoring-api",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/tesla:grid-services",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/tomorrowIo",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/utilityapi",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/verdigris",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/wattcarbon",
+          className: "hidden",
+        },
+        {
+          type: "doc",
+          id: "integrations/apps/watttime",
           className: "hidden",
         },
       ],

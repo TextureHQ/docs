@@ -35,11 +35,11 @@ Weather signals provide critical context for energy generation and consumption p
 
 | Signal | Source | Description |
 |--------|--------|-------------|
-| **Weather Conditions** | [National Weather Service (NWS)](/platform-concepts/apps) | Current weather data for real-time energy optimization and operational insights |
-| **Global Weather Data** | [OpenWeather](/platform-concepts/apps) | Worldwide current weather conditions for efficiency optimization and generation alignment |
+| **Weather Conditions** | [National Weather Service (NWS)](/integrations/apps) | Current weather data for real-time energy optimization and operational insights |
+| **Global Weather Data** | [OpenWeather](/integrations/apps) | Worldwide current weather conditions for efficiency optimization and generation alignment |
 
 :::tip Advanced Weather Data
-For customers requiring more sophisticated weather insights, the [Tomorrow.io app](/platform-concepts/apps) provides hyper-local weather data with advanced forecasting capabilities for enhanced energy operations optimization.
+For customers requiring more sophisticated weather insights, the [Tomorrow.io app](/integrations/apps) provides hyper-local weather data with advanced forecasting capabilities for enhanced energy operations optimization.
 :::
 
 ### Carbon Emissions
@@ -48,7 +48,7 @@ Track and optimize for environmental impact with real-time emissions data.
 
 | Signal | Source | Description |
 |--------|--------|-------------|
-| **Marginal CO2 Emissions** | [WattTime](/platform-concepts/apps) | Real-time carbon intensity data to optimize consumption for cleaner electricity use |
+| **Marginal CO2 Emissions** | [WattTime](/integrations/apps) | Real-time carbon intensity data to optimize consumption for cleaner electricity use |
 
 :::note Data Usage Terms
 Due to partnership agreements, raw marginal carbon emissions data cannot be shared directly. Instead, Texture calculates emissions metrics by combining WattTime data with your energy data, providing valuable insights while respecting data partner terms.
@@ -58,7 +58,7 @@ Due to partnership agreements, raw marginal carbon emissions data cannot be shar
 
 ## Signal Integration
 
-Signals are automatically integrated through our [Apps](/platform-concepts/apps) ecosystem:
+Signals are automatically integrated through our [Apps](/integrations/apps) ecosystem:
 
 - **WattTime App**: Provides marginal carbon emissions data with utility-level granularity
 - **OpenWeather App**: Delivers global weather data for energy optimization
