@@ -50,7 +50,7 @@ Sites can be created in five main ways:
 
 ### 5. Data Source Connections
 
-- Tools like [Arcadia or UtilityAPI](./apps.md) sync address data.
+- Tools like [Arcadia or UtilityAPI](/integrations/apps) sync address data.
 - Texture auto-creates a Site for each location and links all synced data.
 
 :::caution

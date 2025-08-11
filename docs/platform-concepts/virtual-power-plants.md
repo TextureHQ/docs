@@ -40,7 +40,7 @@ While Texture provides the foundational technology for operating VPPs, many oper
 
 #### Leap Energy Integration
 
-Through the [Leap Energy](./apps.md#leap) App, VPP operators can:
+Through the [Leap Energy](/integrations/apps/leap) App, VPP operators can:
 - Access multiple demand response programs and energy markets
 - Receive dispatches and automatically translate them to device commands
 - Submit enrollment information and track participation
@@ -48,7 +48,7 @@ Through the [Leap Energy](./apps.md#leap) App, VPP operators can:
 
 #### Shadow Power Integration
 
-The [Shadow Power](./apps.md#shadow-power) App enables VPP operators to:
+The [Shadow Power](/integrations/apps/shadowPower) App enables VPP operators to:
 - Monetize behind-the-meter flexibility
 - Access wholesale energy markets
 - Optimize asset dispatch based on market conditions

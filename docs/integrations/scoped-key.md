@@ -15,7 +15,7 @@ After a user successfully goes through the Connect flow and connects their accou
 
 ### Using the Texture Connect SDK
 
-If you are using the [Texture Connect SDK](/integrations/texture-connect#texture-connect-sdk), then the scoped key will be returned to your application in the `onSuccess` handler.
+If you are using the [Texture Connect SDK](/integrations/texture-connect), then the scoped key will be returned to your application in the `onSuccess` handler.
 
 ### Using Direct API Integration
 

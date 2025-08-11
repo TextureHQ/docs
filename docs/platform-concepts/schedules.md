@@ -176,7 +176,7 @@ Each rule in the `rules` array contains:
 
 ### Response Objects
 
-**DeviceSchedule**
+### DeviceSchedule {#deviceschedule}
 
 The `DeviceSchedule` response includes the original schedule data plus database-enriched information about active and future schedules. See the [API Reference](/api) for complete schema details.
 

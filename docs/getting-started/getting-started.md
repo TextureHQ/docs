@@ -32,7 +32,7 @@ Texture offers flexible ways to connect energy devices based on your use case:
 
 Ideal for residential deployments or when device owners need to grant access:
 
-1. Generate a Texture Connect link using our [API](/api#tag/Connections) or [SDKs](/getting-started/quickstart#javascript-sdk)
+1. Generate a Texture Connect link using our [API](/api) or [SDKs](/getting-started/quickstart)
 2. Send this link to your users or embed it in your application
 3. Users will authenticate with their device manufacturer accounts
 4. Devices appear in your Texture account once connected
@@ -50,7 +50,7 @@ Ideal for installer-managed systems or commercial deployments:
 Once devices are connected, you can:
 
 1. **View device data** in the Dashboard to verify proper integration
-2. **Fetch device telemetry** through our [API](/api#tag/Devices)
+2. **Fetch device telemetry** through our [API](/api)
 3. **Send commands** to devices individually or in batches
 4. **Configure webhooks** to receive real-time event notifications
 

@@ -18,16 +18,16 @@ Texture's API provides a standardized interface to interact with any supported e
 
 | Resource | Description |
 |----------|-------------|
-| [Devices](/api#/paths/devices/get) | Get device information, telemetry, and device history |
-| [Device Commands](/api#/paths/devices-id--commands/post) | Send operations to specific devices |
-| [Sites](/api#/paths/sites/get) | Manage physical locations with associated devices and weather data |
-| [Customers](/api#/paths/customers/get) | Create and manage customer records |
-| [Connections](/api#/paths/connections/post) | Create device connection flows for end users |
-| [Programs](/api#/paths/programs/get) | Access energy program definitions |
-| [Enrollments](/api#/paths/programInstances-instanceId--enrollments/get) | Manage program enrollments |
-| [Metrics](/api#/paths/metrics-storage/get) | Access aggregated metrics (consumption, production, storage, etc.) |
-| [Leads](/api#/paths/leads/post) | Create and manage leads for energy programs |
-| [Commands](/api#/paths/commands-id/get) | Specialized device commands for batteries, thermostats, etc. |
+| [Devices](/api) | Get device information, telemetry, and device history |
+| [Device Commands](/api) | Send operations to specific devices |
+| [Sites](/api) | Manage physical locations with associated devices and weather data |
+| [Customers](/api) | Create and manage customer records |
+| [Connections](/api) | Create device connection flows for end users |
+| [Programs](/api) | Access energy program definitions |
+| [Enrollments](/api) | Manage program enrollments |
+| [Metrics](/api) | Access aggregated metrics (consumption, production, storage, etc.) |
+| [Leads](/api) | Create and manage leads for energy programs |
+| [Commands](/api) | Specialized device commands for batteries, thermostats, etc.) |
 
 ## Using the API
 
