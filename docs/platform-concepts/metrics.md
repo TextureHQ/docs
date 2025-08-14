@@ -101,11 +101,11 @@ const data = await response.json();
 
 ### Energy Storage
 
-Energy Storage measures the average amount of energy stored in a battery in watt-hours (Wh) during a specific time period. This metric only applies to battery devices.
+Energy Storage measures the amount of energy stored in a battery in watt-hours (Wh). This metric reports the latest charge for each time period. This metric only applies to battery devices.
 
 **Data Characteristics:**
 - **Unit**: Watt-hours (Wh)
-- **Aggregation**: Each time bucket contains the average energy stored during that period
+- **Aggregation**: Each time bucket contains the latest charge value for that period
 - **Continuity**: This metric typically provides continuous data as long as the battery is operational
 
 **API Reference:**
@@ -277,7 +277,7 @@ You can use the `filterRangeRelative` parameter to specify a time range relative
 When requesting metrics with different window sizes, the data is aggregated as follows:
 
 - **Sum Aggregation**: Consumption, Production, Emissions, Generation
-- **Average Aggregation**: Storage
+- **Latest Value Aggregation**: Storage
 
 For example, when requesting hourly data for a day, you'll receive 24 data points, each containing the appropriate aggregation for that hour.
 
@@ -287,7 +287,7 @@ You can group metrics by site using the `groupBy=SITE` parameter along with `fil
 :::tip
 **Data Freshness**
 
-Metrics data is typically available within 5-15 minutes of collection, depending on device type and connection status. For real-time monitoring, consider using the [Events API](/platform-concepts/events) for immediate device state changes.
+Consumption, production, generation, and storage metrics are available with minimal latency. Emissions data relies on data sync jobs and may have some lag. For immediate device state changes, consider using the [Events API](/platform-concepts/events).
 :::
 
 ---
