@@ -60,4 +60,4 @@ Common issues and solutions for device integrations:
 ## Need a Different Device?
 
 - **Manufacturers**: Want to see your devices supported? [Contact us](https://www.texturehq.com/contact-us)
-- **Customers**: Need a specific manufacturer or device? [Submit a request](https://texture.atlassian.net/servicedesk/customer/portal/2/group/3/create/13) 
+- **Customers**: Need a specific manufacturer or device? Or a device type we don't support today? [Submit a request](https://texture.atlassian.net/servicedesk/customer/portal/2/group/3/create/13) 
