@@ -14,9 +14,9 @@ import { BackLink } from '@components/BackLink';
     {/* App Logo and Title */}
     <div className="app-header-section">
       <div className="app-logo-container">
-        <img 
-        src="https://device.cms.texture.energy/logo/enode.svg" 
-        alt="Enode logo" 
+        <img
+        src="https://device.cms.texture.energy/logo/enode.svg"
+        alt="Enode logo"
         className="app-logo"
       />
       </div>
@@ -24,19 +24,19 @@ import { BackLink } from '@components/BackLink';
         <h1 className="app-title">Enode</h1>
         <div className="app-meta">
           <span className="app-category">Device Data</span>
-          <span className="status-tag status-tag--development">In Development</span>
+          <span className="status-tag status-tag--planned">Planned</span>
         </div>
       </div>
     </div>
-    
+
     {/* App Description */}
     <div className="app-description-section">
       <p className="app-description">Enode develops energy device integration APIs, smart home connectivity platforms, and IoT energy management solutions. The company provides software infrastructure that connects electric vehicles, charging stations, heat pumps, and energy storage systems. Their platforms enable third-party applications to monitor and control energy devices for residential, commercial, and fleet applications across various technology segments.</p>
     </div>
-    
+
     {/* Quick Actions */}
     <div className="app-actions-section">
-      
+
       <div className="app-action-item">
         <a href="https://developers.enode.com/docs/getting-started" target="_blank" rel="noopener noreferrer" className="app-external-link">
           <span className="app-external-link-text">Visit Enode Website</span>
@@ -47,7 +47,7 @@ import { BackLink } from '@components/BackLink';
           </svg>
         </a>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -272,7 +272,7 @@ import { BackLink } from '@components/BackLink';
   .table-of-contents__link {
     visibility: hidden !important;
   }
-  
+
   .table-of-contents__left-border {
     visibility: hidden !important;
   }
@@ -342,6 +342,3 @@ This app requires the following configuration fields:
 - **Client ID** (Text) - Required
 
 - **Client Secret** (Secret) - Required
-
-
-

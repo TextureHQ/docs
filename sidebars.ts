@@ -410,11 +410,6 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: "doc",
-          id: "integrations/apps/eli",
-          className: "hidden",
-        },
-        {
-          type: "doc",
           id: "integrations/apps/enode",
           className: "hidden",
         },

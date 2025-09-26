@@ -14,9 +14,9 @@ import { BackLink } from '@components/BackLink';
     {/* App Logo and Title */}
     <div className="app-header-section">
       <div className="app-logo-container">
-        <img 
-        src="https://device.cms.texture.energy/logo/SolarEdge%20Vector%20Icon.svg" 
-        alt="SolarEdge logo" 
+        <img
+        src="https://device.cms.texture.energy/logo/SolarEdge%20Vector%20Icon.svg"
+        alt="SolarEdge logo"
         className="app-logo"
       />
       </div>
@@ -24,19 +24,19 @@ import { BackLink } from '@components/BackLink';
         <h1 className="app-title">SolarEdge</h1>
         <div className="app-meta">
           <span className="app-category">Grid Services</span>
-          <span className="status-tag status-tag--development">In Development</span>
+          <span className="status-tag status-tag--production">Production Ready</span>
         </div>
       </div>
     </div>
-    
+
     {/* App Description */}
     <div className="app-description-section">
       <p className="app-description">SolarEdge develops smart inverter platforms, energy monitoring software, and power optimization solutions for solar installations. The company provides advanced inverter technology, energy storage integration, and comprehensive monitoring systems. Their platforms optimize solar energy production, enable grid services, and provide detailed performance analytics for residential, commercial, and utility-scale solar applications across global markets.</p>
     </div>
-    
+
     {/* Quick Actions */}
     <div className="app-actions-section">
-      
+
       <div className="app-action-item">
         <a href="https://www.solaredge.com/" target="_blank" rel="noopener noreferrer" className="app-external-link">
           <span className="app-external-link-text">Visit SolarEdge Website</span>
@@ -47,7 +47,7 @@ import { BackLink } from '@components/BackLink';
           </svg>
         </a>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -272,7 +272,7 @@ import { BackLink } from '@components/BackLink';
   .table-of-contents__link {
     visibility: hidden !important;
   }
-  
+
   .table-of-contents__left-border {
     visibility: hidden !important;
   }
@@ -346,6 +346,3 @@ This app requires the following configuration fields:
 - **Certificate (PEM format)** (Text) - Required
 
 - **Private Key (PEM format)** (Text) - Required
-
-
-

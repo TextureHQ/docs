@@ -14,9 +14,9 @@ import { BackLink } from '@components/BackLink';
     {/* App Logo and Title */}
     <div className="app-header-section">
       <div className="app-logo-container">
-        <img 
-        src="https://device.cms.texture.energy/logo/bayou-energy.svg" 
-        alt="Bayou Energy logo" 
+        <img
+        src="https://device.cms.texture.energy/logo/bayou-energy.svg"
+        alt="Bayou Energy logo"
         className="app-logo"
       />
       </div>
@@ -24,19 +24,19 @@ import { BackLink } from '@components/BackLink';
         <h1 className="app-title">Bayou Energy</h1>
         <div className="app-meta">
           <span className="app-category">Utility Data</span>
-          <span className="status-tag status-tag--development">In Development</span>
+          <span className="status-tag status-tag--production">Production Ready</span>
         </div>
       </div>
     </div>
-    
+
     {/* App Description */}
     <div className="app-description-section">
       <p className="app-description">Bayou Energy provides energy procurement services, utility bill management platforms, and cost optimization solutions for commercial and industrial energy consumers. The company develops energy purchasing strategies, contract negotiation services, and bill analysis systems. Their platforms help businesses reduce energy costs, manage supply contracts, and optimize energy procurement across deregulated markets in various commercial segments.</p>
     </div>
-    
+
     {/* Quick Actions */}
     <div className="app-actions-section">
-      
+
       <div className="app-action-item">
         <a href="https://www.bayou.energy/" target="_blank" rel="noopener noreferrer" className="app-external-link">
           <span className="app-external-link-text">Visit Bayou Energy Website</span>
@@ -47,7 +47,7 @@ import { BackLink } from '@components/BackLink';
           </svg>
         </a>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -272,7 +272,7 @@ import { BackLink } from '@components/BackLink';
   .table-of-contents__link {
     visibility: hidden !important;
   }
-  
+
   .table-of-contents__left-border {
     visibility: hidden !important;
   }
@@ -340,6 +340,3 @@ This app requires the following configuration fields:
 
 
 - **API key** (Text) - Required
-
-
-

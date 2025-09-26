@@ -14,9 +14,9 @@ import { BackLink } from '@components/BackLink';
     {/* App Logo and Title */}
     <div className="app-header-section">
       <div className="app-logo-container">
-        <img 
-        src="https://device.cms.texture.energy/logo/utility-api.svg" 
-        alt="UtilityAPI logo" 
+        <img
+        src="https://device.cms.texture.energy/logo/utility-api.svg"
+        alt="UtilityAPI logo"
         className="app-logo"
       />
       </div>
@@ -24,19 +24,19 @@ import { BackLink } from '@components/BackLink';
         <h1 className="app-title">UtilityAPI</h1>
         <div className="app-meta">
           <span className="app-category">Utility Data</span>
-          <span className="status-tag status-tag--development">In Development</span>
+          <span className="status-tag status-tag--production">Production Ready</span>
         </div>
       </div>
     </div>
-    
+
     {/* App Description */}
     <div className="app-description-section">
       <p className="app-description">UtilityAPI provides utility data integration services, energy consumption analytics platforms, and smart meter data access solutions. The company develops APIs that securely connect utility billing systems with third-party energy applications. Their platforms enable solar installers, energy service providers, and software developers to access customer energy data for system design, efficiency analysis, and energy management applications.</p>
     </div>
-    
+
     {/* Quick Actions */}
     <div className="app-actions-section">
-      
+
       <div className="app-action-item">
         <a href="https://www.utilityapi.com/" target="_blank" rel="noopener noreferrer" className="app-external-link">
           <span className="app-external-link-text">Visit UtilityAPI Website</span>
@@ -47,7 +47,7 @@ import { BackLink } from '@components/BackLink';
           </svg>
         </a>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -272,7 +272,7 @@ import { BackLink } from '@components/BackLink';
   .table-of-contents__link {
     visibility: hidden !important;
   }
-  
+
   .table-of-contents__left-border {
     visibility: hidden !important;
   }
@@ -342,6 +342,3 @@ This app requires the following configuration fields:
 - **API Key** (Text) - Required
 
 - **Connect URL** (Text) - Optional
-
-
-
