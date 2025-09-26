@@ -14,9 +14,9 @@ import { BackLink } from '@components/BackLink';
     {/* App Logo and Title */}
     <div className="app-header-section">
       <div className="app-logo-container">
-        <img 
-        src="https://device.cms.texture.energy/logo/%20Enphase%20Vector%20Icon.svg" 
-        alt="Enphase logo" 
+        <img
+        src="https://device.cms.texture.energy/logo/%20Enphase%20Vector%20Icon.svg"
+        alt="Enphase logo"
         className="app-logo"
       />
       </div>
@@ -24,19 +24,19 @@ import { BackLink } from '@components/BackLink';
         <h1 className="app-title">Enphase</h1>
         <div className="app-meta">
           <span className="app-category">Grid Services</span>
-          <span className="status-tag status-tag--planned">Planned</span>
+          <span className="status-tag status-tag--production">Production Ready</span>
         </div>
       </div>
     </div>
-    
+
     {/* App Description */}
     <div className="app-description-section">
       <p className="app-description">Enphase Energy provides solar monitoring software, energy management platforms, and smart grid integration tools for residential and commercial solar systems. The company develops comprehensive energy monitoring, system optimization, and grid-interactive solutions. Their Enlighten platform enables real-time solar performance tracking, energy consumption analysis, and smart home integration across various residential and commercial market segments.</p>
     </div>
-    
+
     {/* Quick Actions */}
     <div className="app-actions-section">
-      
+
       <div className="app-action-item">
         <a href="https://www.enphase.com" target="_blank" rel="noopener noreferrer" className="app-external-link">
           <span className="app-external-link-text">Visit Enphase Website</span>
@@ -47,7 +47,7 @@ import { BackLink } from '@components/BackLink';
           </svg>
         </a>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -272,7 +272,7 @@ import { BackLink } from '@components/BackLink';
   .table-of-contents__link {
     visibility: hidden !important;
   }
-  
+
   .table-of-contents__left-border {
     visibility: hidden !important;
   }
@@ -331,7 +331,3 @@ import { BackLink } from '@components/BackLink';
 ## Description
 
 Access Grid Services enabling grid export with utility-level control.
-
-
-
-

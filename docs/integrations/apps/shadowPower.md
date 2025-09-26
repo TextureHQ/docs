@@ -14,9 +14,9 @@ import { BackLink } from '@components/BackLink';
     {/* App Logo and Title */}
     <div className="app-header-section">
       <div className="app-logo-container">
-        <img 
-        src="https://device.cms.texture.energy/logo/shadow.svg" 
-        alt="Shadow Power logo" 
+        <img
+        src="https://device.cms.texture.energy/logo/shadow.svg"
+        alt="Shadow Power logo"
         className="app-logo"
       />
       </div>
@@ -24,19 +24,19 @@ import { BackLink } from '@components/BackLink';
         <h1 className="app-title">Shadow Power</h1>
         <div className="app-meta">
           <span className="app-category">Market Access</span>
-          <span className="status-tag status-tag--production">Production Ready</span>
+          <span className="status-tag status-tag--planned">Planned</span>
         </div>
       </div>
     </div>
-    
+
     {/* App Description */}
     <div className="app-description-section">
       <p className="app-description">ShadowPower develops energy market access platforms, distributed resource aggregation software, and grid services coordination systems. The company provides virtual power plant technology, demand response platforms, and energy trading solutions. Their systems enable residential and commercial energy resources to participate in wholesale energy markets and grid service programs across various utility market segments.</p>
     </div>
-    
+
     {/* Quick Actions */}
     <div className="app-actions-section">
-      
+
       <div className="app-action-item">
         <a href="https://www.shadowpower.com" target="_blank" rel="noopener noreferrer" className="app-external-link">
           <span className="app-external-link-text">Visit Shadow Power Website</span>
@@ -47,7 +47,7 @@ import { BackLink } from '@components/BackLink';
           </svg>
         </a>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -272,7 +272,7 @@ import { BackLink } from '@components/BackLink';
   .table-of-contents__link {
     visibility: hidden !important;
   }
-  
+
   .table-of-contents__left-border {
     visibility: hidden !important;
   }
@@ -340,6 +340,3 @@ This app requires the following configuration fields:
 
 
 - **API key** (Text) - Required
-
-
-
