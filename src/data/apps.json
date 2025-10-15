@@ -384,44 +384,6 @@
     "about": "EG4 develops lithium battery systems, solar inverters, and energy storage solutions for residential and commercial applications. The company produces all-in-one inverter systems, battery management platforms, and grid-interactive energy storage hardware. Their products integrate solar generation, battery storage, and smart energy management capabilities for off-grid and grid-tied applications across various market segments."
   },
   {
-    "id": "6716c09496ac0a457b52dca5",
-    "slug": "eli",
-    "name": "Eli",
-    "category": "rebatesAndIncentives",
-    "description": "View eligible energy incentives on your Sites to unlock and capture value for you or your customers with ease.",
-    "logo": {
-      "id": "67167ddb07bfd8d186147fb5",
-      "alt": "Eli logo",
-      "filename": "eli.svg",
-      "mimeType": "image/svg+xml",
-      "filesize": 2324,
-      "width": 267,
-      "height": 267,
-      "sizes": {
-        "thumbnail": {
-          "url": null
-        },
-        "card": {
-          "url": null
-        },
-        "tablet": {
-          "url": null
-        }
-      },
-      "createdAt": "2024-10-21T16:14:19.731Z",
-      "updatedAt": "2024-10-21T16:14:19.731Z",
-      "url": "/logo/eli.svg"
-    },
-    "support_level": "planned",
-    "is_included": false,
-    "learn_more_url": "https://www.eli.build/",
-    "configurationFields": [],
-    "createdAt": "2024-10-21T20:59:00.069Z",
-    "updatedAt": "2025-07-24T15:51:10.982Z",
-    "is_featured_on_home_page": false,
-    "about": "Eli provides energy data analytics platforms, consumption monitoring software, and optimization tools for residential and commercial energy users. The company develops smart metering integration, energy usage tracking, and efficiency recommendation systems. Their platforms help consumers understand energy consumption patterns, identify savings opportunities, and optimize energy usage across residential and small commercial market segments."
-  },
-  {
     "id": "67ab7920e95f644d335e3d7c",
     "slug": "enode",
     "name": "Enode",
