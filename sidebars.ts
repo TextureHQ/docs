@@ -39,6 +39,7 @@ const sidebars: SidebarsConfig = {
         "platform-concepts/workspaces",
         "platform-concepts/sites",
         "platform-concepts/devices",
+        "platform-concepts/alerts",
         "platform-concepts/contacts",
         "platform-concepts/metrics",
         "platform-concepts/events",
