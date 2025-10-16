@@ -190,11 +190,6 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: "doc",
-          id: "integrations/manufacturers/enelx",
-          className: "hidden",
-        },
-        {
-          type: "doc",
           id: "integrations/manufacturers/enphase",
           className: "hidden",
         },
