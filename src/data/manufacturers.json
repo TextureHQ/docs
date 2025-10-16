@@ -1930,6 +1930,105 @@
     "supported_device_types": ["charger", "battery"]
   },
   {
+    "id": "6602ef080c3669c8ce19c1f5",
+    "slug": "enelx",
+    "name": "Enel X",
+    "logo": {
+      "id": "6602e9980c3669c8ce19bf0f",
+      "alt": "enel-x-logo",
+      "filename": "Enel X.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 1774,
+      "width": 5263,
+      "height": 1418,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-03-26T15:28:24.843Z",
+      "updatedAt": "2024-03-26T15:28:31.482Z",
+      "url": "/logo/Enel X.svg"
+    },
+    "support_level": "production",
+    "createdAt": "2024-03-26T15:51:36.284Z",
+    "updatedAt": "2025-07-24T15:44:05.322Z",
+    "icon": {
+      "id": "667b04b243849cb1f9ca3d24",
+      "alt": "enel-x-logo-icon",
+      "filename": " Enel X Icon.png",
+      "mimeType": "image/png",
+      "filesize": 146418,
+      "width": 2500,
+      "height": 2500,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "width": 400,
+          "height": 300,
+          "mimeType": "image/png",
+          "filesize": 14146,
+          "filename": " Enel X Icon-400x300.png",
+          "url": "/logo/ Enel X Icon-400x300.png"
+        },
+        "card": {
+          "width": 768,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 49189,
+          "filename": " Enel X Icon-768x1024.png",
+          "url": "/logo/ Enel X Icon-768x1024.png"
+        },
+        "tablet": {
+          "width": 1024,
+          "height": 1024,
+          "mimeType": "image/png",
+          "filesize": 56049,
+          "filename": " Enel X Icon-1024x1024.png",
+          "url": "/logo/ Enel X Icon-1024x1024.png"
+        }
+      },
+      "createdAt": "2024-06-25T17:56:02.156Z",
+      "updatedAt": "2024-06-25T17:56:02.156Z",
+      "url": "/logo/ Enel X Icon.png"
+    },
+    "vector_icon": {
+      "id": "667b007643849cb1f9ca3532",
+      "alt": "enel-x-logo-vector-icon",
+      "filename": " Enel X Vector Icon.svg",
+      "mimeType": "image/svg+xml",
+      "filesize": 761,
+      "width": 2500,
+      "height": 2500,
+      "sizes": {
+        "thumbnail": {
+          "url": null
+        },
+        "card": {
+          "url": null
+        },
+        "tablet": {
+          "url": null
+        }
+      },
+      "createdAt": "2024-06-25T17:37:58.178Z",
+      "updatedAt": "2024-06-25T17:37:58.178Z",
+      "url": "/logo/ Enel X Vector Icon.svg"
+    },
+    "about": "Enel X develops demand response platforms, energy storage systems, and smart grid solutions for commercial, industrial, and utility-scale applications. The company provides energy management software, battery storage platforms, and grid optimization services. Their systems enable businesses and utilities to optimize energy consumption, participate in energy markets, and integrate renewable energy sources across various commercial and utility market segments.",
+    "description_html": "",
+    "documentation_html": "",
+    "is_featured_on_home_page": false,
+    "supported_device_types": ["charger"]
+  },
+  {
     "id": "6602ef1f0c3669c8ce19c211",
     "slug": "enphase",
     "name": "Enphase",
