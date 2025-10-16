@@ -63,7 +63,7 @@ sidebar_position: 3
 
 import { BackLink } from '@components/BackLink';
 
-<BackLink to="/integrations/manufacturers" label="Supported Manufacturers" />
+<BackLink to="/integrations/manufacturers/devices-and-oems" label="Devices & OEMs" />
 
 # ${manufacturer.name}
 
