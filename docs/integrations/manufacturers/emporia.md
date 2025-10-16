@@ -5,7 +5,7 @@ sidebar_position: 3
 
 import { BackLink } from '@components/BackLink';
 
-<BackLink to="/integrations/manufacturers/devices-and-oems" label="Devices & OEMs" />
+<BackLink to="/integrations/manufacturers/devices-and-oems" label="Back to Supported Manufacturers" />
 
 # Emporia
 
