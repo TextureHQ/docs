@@ -6731,7 +6731,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.7, axios@npm:^1.7.4, axios@npm:^1.9.0":
+"axios@npm:^1.12.0":
+  version: 1.12.2
+  resolution: "axios@npm:1.12.2"
+  dependencies:
+    follow-redirects: "npm:^1.15.6"
+    form-data: "npm:^4.0.4"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: 10c0/80b063e318cf05cd33a4d991cea0162f3573481946f9129efb7766f38fde4c061c34f41a93a9f9521f02b7c9565ccbc197c099b0186543ac84a24580017adfed
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.6.7, axios@npm:^1.9.0":
   version: 1.9.0
   resolution: "axios@npm:1.9.0"
   dependencies:
@@ -8802,7 +8813,7 @@ __metadata:
     "@texturehq/events": "npm:1.6.2"
     "@types/swagger-ui-react": "npm:^4.18.3"
     "@vercel/analytics": "npm:^1.5.0"
-    axios: "npm:^1.7.4"
+    axios: "npm:^1.12.0"
     buffer: "npm:^6.0.3"
     clsx: "npm:^2.0.0"
     docusaurus-plugin-sass: "npm:^0.2.5"
@@ -9816,7 +9827,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"form-data@npm:^4.0.0":
+"form-data@npm:^4.0.0, form-data@npm:^4.0.4":
   version: 4.0.4
   resolution: "form-data@npm:4.0.4"
   dependencies:
