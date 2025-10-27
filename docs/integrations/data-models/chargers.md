@@ -15,7 +15,7 @@ For the list of vehicle models we currently support on the Texture Platform, see
 
 ## Charger Data Model
 
-Below is a sample payload from a charger on the Texture Platform. This happens to be an EnelX JuiceBox:
+Below is a sample payload from a charger on the Texture Platform. This sample shows a ChargePoint Home Flex charger:
 
 ```js
 {
@@ -26,8 +26,8 @@ Below is a sample payload from a charger on the Texture Platform. This happens t
       "description": "Sets the operating mode of the charger."
     }
   ],
-  "manufacturer": "enelx",
-  "model": "enelx:juicebox",
+  "manufacturer": "chargepoint",
+  "model": "chargepoint:homeflex",
   "modelYear": null,
   "name": "garage",
   "referenceId": "dadsas",
