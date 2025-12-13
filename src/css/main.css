@@ -41,3 +41,6 @@
 
 /* Import Integrations Page Styles */
 @import "./integrations.css";
+
+/* Import Manufacturer/OEM Page Styles */
+@import "./manufacturer.css";

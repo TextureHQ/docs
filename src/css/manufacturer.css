@@ -1,0 +1,404 @@
+/**
+ * Manufacturer/OEM Page Styles
+ *
+ * Styles for individual manufacturer pages like Audi, Tesla, etc.
+ * These styles provide proper mobile responsiveness for the hero card layout.
+ */
+
+/* Hero Card Container */
+.manufacturer-hero-card {
+  background: var(--ifm-card-background-color);
+  border: 1px solid #9ca3af;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+/* Desktop Grid Layout */
+.manufacturer-hero-desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: stretch;
+}
+
+/* Left Column - Details Section */
+.manufacturer-details-section {
+  border-right: 1px solid #d1d5db;
+  background: #f8fcff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Logo Container */
+.manufacturer-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  padding: 24px 24px 0 24px;
+}
+
+.manufacturer-logo-wrapper {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  flex-shrink: 0;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.manufacturer-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.manufacturer-logo-placeholder {
+  width: 160px;
+  height: 80px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* Details Grid */
+.manufacturer-details-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0 24px 24px 24px;
+}
+
+.manufacturer-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 12px;
+}
+
+.manufacturer-detail-row:last-child {
+  border-bottom: none;
+}
+
+.manufacturer-detail-label {
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.manufacturer-detail-value {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 14px;
+  text-align: right;
+}
+
+.manufacturer-website-link {
+  color: #444ae1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: text-decoration 0.2s ease;
+}
+
+.manufacturer-website-link:hover {
+  text-decoration: underline;
+}
+
+/* Device Types Row */
+.device-types-row {
+  align-items: flex-start;
+  padding: 16px 0;
+}
+
+.device-types-value {
+  text-align: right;
+  max-width: 60%;
+  line-height: 1.4;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Right Column - About Section */
+.manufacturer-about-section {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.manufacturer-about-title {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.manufacturer-about-description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* Status Tag Styles */
+.status-tag {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.status-tag--production {
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+.status-tag--development {
+  background-color: #fffbeb;
+  color: #92400e;
+}
+
+.status-tag--planned {
+  background-color: #f5f3ff;
+  color: #5b21b6;
+}
+
+.status-tag--blocked {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+/* Tablet - stack layout */
+@media (max-width: 996px) {
+  .manufacturer-hero-desktop {
+    grid-template-columns: 1fr;
+  }
+
+  .manufacturer-details-section {
+    border-right: none;
+    border-bottom: 1px solid #d1d5db;
+  }
+
+  .manufacturer-about-section {
+    padding: 24px;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .manufacturer-hero-card {
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  .manufacturer-hero-desktop {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .manufacturer-details-section {
+    border-right: none;
+    border-bottom: 1px solid #d1d5db;
+    border-radius: 0;
+  }
+
+  .manufacturer-logo-container {
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .manufacturer-logo-wrapper {
+    width: 160px;
+    height: 100px;
+    padding: 16px;
+  }
+
+  .manufacturer-details-grid {
+    padding: 0 20px 20px 20px;
+  }
+
+  .manufacturer-detail-row {
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .manufacturer-detail-label {
+    font-size: 13px;
+  }
+
+  .manufacturer-detail-value {
+    font-size: 13px;
+  }
+
+  .device-types-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .device-types-value {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .manufacturer-about-section {
+    padding: 20px;
+  }
+
+  .manufacturer-about-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .manufacturer-about-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .manufacturer-hero-card {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .manufacturer-logo-container {
+    padding: 16px 16px 0 16px;
+    margin-bottom: 16px;
+  }
+
+  .manufacturer-logo-wrapper {
+    width: 140px;
+    height: 90px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .manufacturer-details-grid {
+    padding: 0 16px 16px 16px;
+  }
+
+  .manufacturer-detail-row {
+    padding: 8px 0;
+  }
+
+  .manufacturer-detail-label {
+    font-size: 12px;
+  }
+
+  .manufacturer-detail-value {
+    font-size: 12px;
+  }
+
+  .status-tag {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  .manufacturer-about-section {
+    padding: 16px;
+  }
+
+  .manufacturer-about-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .manufacturer-about-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] .manufacturer-hero-card {
+  background: #1f1f2e;
+  border-color: #4b5563;
+}
+
+[data-theme="dark"] .manufacturer-details-section {
+  background: #171724;
+  border-right-color: #4b5563;
+  border-bottom-color: #4b5563;
+}
+
+[data-theme="dark"] .manufacturer-logo-wrapper {
+  background: #ffffff;
+  border-color: #e5e7eb;
+}
+
+[data-theme="dark"] .manufacturer-detail-row {
+  border-bottom-color: #4b5563;
+}
+
+[data-theme="dark"] .manufacturer-detail-label {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .manufacturer-detail-value {
+  color: #f3f4f6;
+}
+
+[data-theme="dark"] .manufacturer-website-link {
+  color: #a5b4fc;
+}
+
+[data-theme="dark"] .manufacturer-website-link:hover {
+  color: #c7d2fe;
+}
+
+[data-theme="dark"] .manufacturer-about-section {
+  background: #1f1f2e;
+}
+
+[data-theme="dark"] .manufacturer-about-title {
+  color: #f3f4f6;
+}
+
+[data-theme="dark"] .manufacturer-about-description {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .manufacturer-logo-placeholder {
+  background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+  color: #d1d5db;
+}
+
+/* Dark mode status tags */
+[data-theme="dark"] .status-tag--production {
+  background-color: #064e3b;
+  color: #6ee7b7;
+}
+
+[data-theme="dark"] .status-tag--development {
+  background-color: #78350f;
+  color: #fbbf24;
+}
+
+[data-theme="dark"] .status-tag--planned {
+  background-color: #4c1d95;
+  color: #c4b5fd;
+}
+
+[data-theme="dark"] .status-tag--blocked {
+  background-color: #7f1d1d;
+  color: #fca5a5;
+}
