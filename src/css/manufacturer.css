@@ -188,12 +188,13 @@
 /* Tablet - stack layout */
 @media (max-width: 996px) {
   .manufacturer-hero-desktop {
-    grid-template-columns: 1fr;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .manufacturer-details-section {
-    border-right: none;
-    border-bottom: 1px solid #d1d5db;
+    border-right: none !important;
+    border-bottom: 1px solid #d1d5db !important;
   }
 
   .manufacturer-about-section {
@@ -209,14 +210,15 @@
   }
 
   .manufacturer-hero-desktop {
-    grid-template-columns: 1fr;
-    gap: 0;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .manufacturer-details-section {
-    border-right: none;
-    border-bottom: 1px solid #d1d5db;
+    border-right: none !important;
+    border-bottom: 1px solid #d1d5db !important;
     border-radius: 0;
+    width: 100% !important;
   }
 
   .manufacturer-logo-container {
@@ -278,6 +280,15 @@
   .manufacturer-hero-card {
     border-radius: 8px;
     margin-bottom: 20px;
+  }
+
+  .manufacturer-hero-desktop {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .manufacturer-details-section {
+    width: 100% !important;
   }
 
   .manufacturer-logo-container {
