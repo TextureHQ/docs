@@ -128,14 +128,39 @@
     bottom: 2.5px;
   }
 
-  /* Adjust search button for mobile */
+  /* Adjust search button for mobile - icon only, no background */
   .DocSearch-Button {
     width: 40px;
     height: 40px;
     padding: 8px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .DocSearch-Button:hover {
+    background-color: var(--navbar-toggle-hover-bg);
+    border: none;
+    box-shadow: none;
+  }
+
+  .DocSearch-Button:focus {
+    box-shadow: none;
+    border: none;
+  }
+
+  .DocSearch-Button .DocSearch-Button-Container {
+    margin-right: 0;
   }
 
   .DocSearch-Button-Placeholder {
+    display: none;
+  }
+
+  .DocSearch-Button-Keys {
     display: none;
   }
 }
@@ -156,6 +181,12 @@
   }
 
   .DocSearch-Button {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+
+  .clean-btn {
     width: 36px;
     height: 36px;
     padding: 6px;
