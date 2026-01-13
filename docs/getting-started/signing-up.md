@@ -69,4 +69,22 @@ The invited member will receive an email with instructions to set up their accou
 
 ![Team Invitation Process](https://i.ibb.co/MffFvTD/add-members.png)
 
-That’s it! Now you are ready to access Texture’s API and start integration our API Keys into your system. If you run into any issues during our platform onboarding, please reach out to our team [here](https://www.texturehq.com/contact-us).
+## Organization Security
+
+### Multi-Factor Authentication (MFA)
+
+Organizations can require Multi-Factor Authentication for all members to add an extra layer of security during login. When MFA is enabled for an organization:
+
+- During login, members will be prompted to enter a 6-digit verification code sent to their email
+- Members must provide this code to complete the authentication process
+- If a user belongs to multiple organizations and **any one** of them requires MFA, the user will be prompted for MFA verification on every login
+
+To enable MFA for your organization, go to **Settings > Organization** and toggle on the MFA requirement. This helps protect your organization's data and ensures only verified team members can access the platform.
+
+### Security & Compliance
+
+The Texture platform is built to SOC 2 standards, demonstrating our commitment to security, availability, and confidentiality. We can share our SOC 2 Type 1 certification upon request—please [contact our team](https://www.texturehq.com/contact-us) to learn more.
+
+---
+
+That's it! Now you are ready to access Texture's API and start integrating our API Keys into your system. If you run into any issues during our platform onboarding, please reach out to our team [here](https://www.texturehq.com/contact-us).
