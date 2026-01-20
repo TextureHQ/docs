@@ -253,7 +253,7 @@ These events can be used by other systems to react to enrollment changes.
 ## Common Use Cases
 
 ### Program Eligibility Screening
-- Bulk import of **Candidate** enrollments
+- Bulk import of **Candidate** enrollments (see [Bulk Import Guide](/integrations/bulk-import))
 - Automated evaluation to **Eligible** or **Ineligible**
 - Notification to eligible customers
 
