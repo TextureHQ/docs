@@ -25,20 +25,12 @@ Once both steps are complete, Texture automatically pulls device performance, en
 ### Important Considerations
 
 :::warning Homeowner-Owned Sites
-If a homeowner owns the site, they must onboard their device through [Texture Connect](/integrations/texture-connect) rather than through your Integration Hub or bulk import list.
-:::
-
-:::note Optional Device IDs
-The device ID field is completely optional if you are bulk creating Connect links to share with your members.
-:::
-
-:::warning Case Sensitivity
-The `manufacturerSlugs` field is extremely case sensitive and must be specified exactly as shown in the data dictionary below or the upload will fail.
+If a homeowner owns the site, they should onboard their device through [Texture Connect](/integrations/texture-connect) rather than through your Integration Hub or bulk import list.
 :::
 
 ## Data Dictionary
 
-### Contact Record
+### Contact related fields
 
 | Field | Required | Notes |
 |-------|----------|-------|
@@ -47,38 +39,40 @@ The `manufacturerSlugs` field is extremely case sensitive and must be specified 
 | `email` | Optional | We prefer a unique email for validation, but you can use a TPO or company-generated email like `dev@company.com` |
 | `phone` | Optional | Contact phone number |
 
-### Site Record
+### Site related fields
 
 | Field | Required | Notes |
 |-------|----------|-------|
 | `streetOne` | Required | Street address |
+| `streetTwo` | Optional | Apartment, suite, unit, etc. |
 | `city` | Required | City name |
 | `state` | Required | State abbreviation |
 | `postalCode` | Required | ZIP or postal code |
+| `country` | Optional | Country code (defaults to US) |
 
-### Device Record
+### Device related fields
 
 | Field | Required | Notes |
 |-------|----------|-------|
-| `manufacturerSlugs` | Required | Must be exactly one of: `tesla`, `enphase`, `solaredge`, `eg4`, `franklinwh` |
-| `serialNumber` | Required | See manufacturer-specific requirements below |
+| `manufacturerSlugs` | Required | Must be exactly one of: `tesla`, `enphase`, `solaredge-monitoring-api`, `eg4-electronics`, `franklinwh` |
+| `systemIdentifier` | Required | See manufacturer-specific requirements below |
 
-### Serial Number Requirements by Manufacturer
+### System Identifier Requirements by Manufacturer
 
-| Manufacturer | Serial Number Format |
+| Manufacturer | System Identifier Format |
 |--------------|---------------------|
-| `tesla` | DIN, Site UUID |
+| `tesla` | DIN or Site UUID |
 | `enphase` | Site ID |
-| `solaredge` | Site ID |
-| `eg4` | Inverter serial number |
-| `franklinwh` | aGate |
+| `solaredge-monitoring-api` | Site ID |
+| `eg4-electronics` | Inverter serial number |
+| `franklinwh` | aGate serial number |
 
-### Additional Variables (Optional)
+### Additional Variables
 
 | Field | Required | Notes |
 |-------|----------|-------|
-| `tags` | Optional | Arbitrary labels that create logical device groupings for batch operations. [Read more](/platform-concepts/devices#tags) |
-| `referenceId` | Optional | Backreference to your system—typically a `userId`, `accountId`, or `siteId`. Note: The `referenceId` applies to the entire connection: site, contact, and device(s). |
+| `referenceId` | Required | Backreference to your system—typically a `userId`, `accountId`, or `siteId`. This identifier is used to prevent duplicate customer creation and is tied to created sites and devices. |
+| `tags` | Optional | Arbitrary labels that create logical device groupings for batch operations. |
 
 ## Performing a Bulk Import
 
@@ -88,7 +82,7 @@ Download the bulk import template and populate it with your site, customer, and 
 
 ### Step 2: Upload to Texture
 
-In Texture, navigate to **Integration Hub → Bulk Import** and upload your prepared file.
+In Texture, click **Integration Hub** in the left sidebar, then navigate to **Bulk Import** and upload your prepared file.
 
 ### Step 3: Review validation results
 
@@ -118,11 +112,11 @@ Review the error message in Texture. The most common validation errors are:
 
 #### manufacturerSlugs not specified correctly
 
-The field is case sensitive and must match exactly: `tesla`, `enphase`, `solaredge`, `eg4`, or `franklinwh`. Using `Tesla`, `TESLA`, or any other variation will cause the upload to fail.
+The field is case sensitive and must match exactly: `tesla`, `enphase`, `solaredge-monitoring-api`, `eg4-electronics`, or `franklinwh`. Using `Tesla`, `TESLA`, `solaredge`, `eg4`, or any other variation will cause the upload to fail.
 
 #### Invalid address
 
-Ensure all required address fields (`streetOne`, `city`, `state`, `postalCode`) are complete and properly formatted.
+Ensure all required address fields (`streetOne`, `streetTwo`, `city`, `state`, `postalCode`, `country`) are complete and properly formatted.
 
 #### Address undiscoverable in Mapbox
 

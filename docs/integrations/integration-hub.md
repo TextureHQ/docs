@@ -20,8 +20,8 @@ Data onboarding is a two-step process:
 
 Once both steps are complete, Texture automatically pulls device performance, energy usage, and program enrollment data on a recurring basis—no manual updates required.
 
-:::note Homeowner-Owned Devices
-If a homeowner owns the site, they must onboard their device through [Texture Connect](/integrations/texture-connect) rather than through your Integration Hub.
+:::warning Homeowner-Owned Sites
+If a homeowner owns the site, they should onboard their device through [Texture Connect](/integrations/texture-connect) rather than through your Integration Hub or bulk import list.
 :::
 
 This guide covers integration setup. For Grid Services programs or custom requirements, contact your Implementation team.
@@ -53,11 +53,13 @@ After the initial load, Texture maintains:
 
 ### Where to Find Your Data
 
-Synced devices appear in your [Devices](/platform-concepts/devices), [Sites](/platform-concepts/sites), and [Customers](/platform-concepts/contacts) views and become available to query via the Texture API. You can subscribe to specific [destinations](/platform-concepts/destinations/destinations) (like webhooks or events) to get real-time updates on newly discovered devices.
+Synced devices appear in your [Devices](/platform-concepts/devices), [Sites](/platform-concepts/sites), and [Customers](/platform-concepts/contacts) views and become available to query via the Texture API. You can subscribe to specific [destinations](/platform-concepts/destinations) (like webhooks or events) to get real-time updates on newly discovered devices.
 
 ## Tesla PowerHub
 
 Connect Tesla devices to monitor energy production, consumption, and status. For Grid Services programs, PowerHub must be configured for control operations—your Implementation team will handle this setup.
+
+**PowerHub Portal**: [https://powerhub.energy.tesla.com/](https://powerhub.energy.tesla.com/)
 
 ### Prerequisites
 
@@ -67,32 +69,28 @@ Connect Tesla devices to monitor energy production, consumption, and status. For
 
 ### Setup
 
-**Time estimate**: 10 minutes
-
 #### Step 1: Whitelist Texture IP addresses
 
-In PowerHub, navigate to **Access & Security → API Access** and add these IPs to your allowlist:
+In PowerHub, navigate to **Access & Security → API Access** and add the required Texture IP addresses to your allowlist. You can find these IP addresses in the Texture Dashboard when setting up your Tesla PowerHub integration.
 
-- `3.135.142.110/32`
-- `18.190.18.242/32`
-- `52.14.47.201/32`
-
-This ensures Texture can securely connect to your PowerHub instance. Contact your Texture team if you need assistance with IP whitelisting.
+Contact your Texture team if you need assistance with IP whitelisting.
 
 #### Step 2: Generate API credentials
 
-Still in API Access, create a new client credential. You'll receive:
+In the API Access section, click **Add Client Credential**. You'll need to configure:
+
+- **Name**: Enter a descriptive name (e.g., "Texture Access")
+- **Role**: Select **Writer** if you need control/grid services access, or **Viewer** for monitoring only
+- **Expiration**: Select the expiration date (maximum 1 year from creation date)
+
+After creating the credential, you'll receive:
 
 - Client ID
 - Client Secret
 
-:::warning Keep Credentials Secure
-These credentials provide full access to your PowerHub data. Store them securely.
-:::
-
 #### Step 3: Configure in Texture
 
-In Texture, go to **Integrations → Integration Hub → Tesla** and enter:
+In Texture, click **Integration Hub** in the left sidebar, then select **Tesla** and enter:
 
 - Client ID
 - Client Secret
@@ -118,15 +116,13 @@ Connect FranklinWH home energy systems to monitor battery and solar performance.
 
 ### Setup
 
-**Time estimate**: 5 minutes
-
 #### Step 1: Obtain credentials
 
 Request CP (Client Partner) and CK (Client Key) credentials from FranklinWH. If Texture is managing your implementation, your team will provide these directly.
 
 #### Step 2: Configure in Texture
 
-In Texture, go to **Integrations → Integration Hub → FranklinWH** and enter:
+In Texture, click **Integration Hub** in the left sidebar, then select **FranklinWH** and enter:
 
 - CP
 - CK
@@ -143,6 +139,8 @@ Click **Connect**. Texture validates credentials immediately and begins syncing 
 
 Connect SolarEdge systems to track production and site performance. SolarEdge uses account-level API keys for third-party platform access.
 
+**Monitoring Portal**: [https://monitoring.solaredge.com/](https://monitoring.solaredge.com/)
+
 ### Prerequisites
 
 - SolarEdge Monitoring Portal account with owner access
@@ -150,15 +148,13 @@ Connect SolarEdge systems to track production and site performance. SolarEdge us
 
 ### Setup
 
-**Time estimate**: 5 minutes
-
 #### Step 1: Generate API key
 
 In the SolarEdge Monitoring Portal, navigate to **My Account → Company Details → API Access** and copy your API key.
 
 #### Step 2: Configure in Texture
 
-In Texture, go to **Integrations → Integration Hub → SolarEdge** and enter your API key.
+In Texture, click **Integration Hub** in the left sidebar, then select **SolarEdge** and enter your API key.
 
 Click **Connect**. Texture validates the key and begins syncing site and inverter data.
 
@@ -172,15 +168,16 @@ Click **Connect**. Texture validates the key and begins syncing site and inverte
 
 Connect Enphase energy systems to Texture. Enphase uses OAuth-based authentication through their developer platform.
 
+**Developer Portal**: [https://developer-v4.enphase.com/](https://developer-v4.enphase.com/)  
+**Enlighten Dashboard**: [https://enlighten.enphaseenergy.com/](https://enlighten.enphaseenergy.com/)
+
 ### Prerequisites
 
-- Enphase Developer account (create at [developer.enphase.com](https://developer.enphase.com))
+- Enphase Developer account
 - Enphase developer application (created in the developer portal)
 - Enphase Enlighten account credentials
 
 ### Setup
-
-**Time estimate**: 10 minutes
 
 #### Step 1: Create or select your application
 
@@ -192,7 +189,7 @@ In the Enphase Developer Portal, create a new application or select an existing 
 
 #### Step 2: Configure in Texture
 
-In Texture, go to **Integrations → Integration Hub → Enphase** and enter:
+In Texture, click **Integration Hub** in the left sidebar, then select **Enphase** and enter:
 
 - API Key
 - Client ID
@@ -221,15 +218,13 @@ Connect SMA inverters to monitor solar production and system health. SMA integra
 
 ### Setup
 
-**Time estimate**: 5 minutes
-
 #### Step 1: Receive credentials from Texture
 
 Your Texture Implementation team will generate a unique Client ID and Client Secret for your SMA integration. You'll receive these credentials directly from Texture.
 
 #### Step 2: Configure in Texture
 
-In Texture, go to **Integrations → Integration Hub → SMA** and enter:
+In Texture, click **Integration Hub** in the left sidebar, then select **SMA** and enter:
 
 - Client ID (provided by Texture)
 - Client Secret (provided by Texture)
