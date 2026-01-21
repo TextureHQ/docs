@@ -314,7 +314,7 @@ Once the user follows the link or is prompted to set up their device, they will 
 
 ## Viewing Customer Device Information
 
-Go the the [Texture Dashboard](https://app.texturehq.com).
+Go to the [Texture Dashboard](https://app.texturehq.com).
 
 ### Customers
 Click "Customers" to see customers that have connected a device.
