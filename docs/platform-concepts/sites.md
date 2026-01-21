@@ -20,7 +20,7 @@ Sites are foundational objects in Texture. They enable:
 - **Aggregated Metrics** — Summarize total energy consumption, production, storage, and emissions.
 - **Geolocation Context** — Automatically assign ISO, utility, and marginal carbon intensity.
 - **Data Enrichment** — Integrate with tools like Arcadia or Shovels to ingest bills, permits, and intervals.
-- **Unified Access** — Visualize in the [Dashboard](https://dashboard.texturehq.com) or query via [API](/api).
+- **Unified Access** — Visualize in the [Dashboard](https://app.texturehq.com) or query via [API](/api).
 
 ---
 

@@ -31,7 +31,7 @@ Texture's API provides a standardized interface to interact with any supported e
 
 ## Using the API
 
-Our API follows REST principles with JSON payloads and standard HTTP methods. Authentication is performed using API keys which you can generate in the [Dashboard](https://dashboard.texturehq.com/developer).
+Our API follows REST principles with JSON payloads and standard HTTP methods. Authentication is performed using API keys which you can generate in the [Dashboard](https://app.texturehq.com), within the Developer section.
 
 ```bash
 # Example: Get a list of your devices

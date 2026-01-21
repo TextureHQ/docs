@@ -10,7 +10,7 @@ This guide provides a clear roadmap to start building with Texture's energy devi
 
 ## Step 1: Create Your Account
 
-1. Sign up at [dashboard.texturehq.com](https://dashboard.texturehq.com)
+1. Sign up at [app.texturehq.com](https://app.texturehq.com)
 2. Create your Organization
 3. Texture will automatically create Production and Sandbox workspaces for you
 

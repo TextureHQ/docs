@@ -9,7 +9,7 @@ Texture makes your energy systems visible, responsive, and connected—without r
  
 ## Step 1: Create your account
 
-[Register your account](https://dashboard.texturehq.com/sign-up) with a company or entity specific email address. We strongly recommend avoiding the use of personal email addresses. This helps us create a more secure experience and support associating you with your Organization.
+[Register your account](https://app.texturehq.com/signin) with a company or entity specific email address. We strongly recommend avoiding the use of personal email addresses. This helps us create a more secure experience and support associating you with your Organization.
 
 ![Sign Up Screenshot](https://i.giphy.com/fTnNtMJpeGMcjKxJVm.webp)
 

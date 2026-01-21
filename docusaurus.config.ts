@@ -175,7 +175,7 @@ const config: Config = {
         },
         { to: "/api", label: "API Reference", position: "left" },
         {
-          href: "https://dashboard.texturehq.com",
+          href: "https://app.texturehq.com",
           label: "Dashboard",
           position: "right",
         },
