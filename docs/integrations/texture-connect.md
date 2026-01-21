@@ -61,7 +61,7 @@ Easiest way to get started with pre-built components:
 For custom implementations with full control over the flow. See [our open source examples](https://github.com/TextureHQ/examples/tree/main/connect).
 
 ### 3. **Dashboard Direct Links**
-For testing or manual connections via the [Texture Dashboard](https://app.texturehq.com) and navigate to the Connect section.
+For testing or manual connections, use the [Texture Dashboard](https://app.texturehq.com) and navigate to the Connect section.
 
 ## Configuration Fields
 
