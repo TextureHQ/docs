@@ -49,7 +49,7 @@ We receive data on a 5 or 15 minute interval for each device (limited by manufac
 
 Once we receive that telemetry data, we leverage a distributed event streaming platform internally to move that data, transform it, warehouse it, and run aggregations against it. 
 
-All of this is seamless to anyone leveraging the Texture platform so you should be able to see clean and up-to-date data for all energy devices in your network in your [Texture Dashboard](https://dashboard.texturehq.com) or via the [Texture API](/api).
+All of this is seamless to anyone leveraging the Texture platform so you should be able to see clean and up-to-date data for all energy devices in your network in your [Texture Dashboard](https://app.texturehq.com) or via the [Texture API](/api).
 
 ## Data Engineering
 
@@ -74,7 +74,7 @@ We are constantly adding more signals to the platform so that you can get a comp
 
 ## Searchability
 
-In addition to all of the Data Engineering work we perform for you, we also maintain robust search capabilities sitting atop Elasticsearch allowing you to slice and dice to sort, filter, group, and search for devices in your [Texture Dashboard](https://dashboard.texturehq.com) or via the [Texture API](/api).
+In addition to all of the Data Engineering work we perform for you, we also maintain robust search capabilities sitting atop Elasticsearch allowing you to slice and dice to sort, filter, group, and search for devices in your [Texture Dashboard](https://app.texturehq.com) or via the [Texture API](/api).
 
 This is yet another powerful capability that we believe almost any company in our industry can leverage but most will not build themselves because it is not a core competency. 
 

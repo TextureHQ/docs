@@ -24,7 +24,7 @@ There are three ways to generate a link:
 ### Texture API and SDK
 
 #### Get Your API Key
-Go to the [Texture Dashboard Developer tab](https://dashboard.texturehq.com/developer) to obtain an API key
+Go to the [Texture Dashboard](https://app.texturehq.com) and click the Developer sidebar link to obtain an API key
 
 #### Generate a link
 
@@ -280,7 +280,7 @@ import { TextureConnect } from '@texturehq/react-native-connect-sdk';
 
 ### Texture Dashboard
 
-1. Go to the [Texture Dashboard](https://dashboard.texturehq.com/home).
+1. Go to the [Texture Dashboard](https://app.texturehq.com).
 2. Enter the user's information.
 3. Click submit.
 
@@ -314,7 +314,7 @@ Once the user follows the link or is prompted to set up their device, they will 
 
 ## Viewing Customer Device Information
 
-Go the the [Texture Dashboard](https://dashboard.texturehq.com/home).
+Go to the [Texture Dashboard](https://app.texturehq.com).
 
 ### Customers
 Click "Customers" to see customers that have connected a device.
