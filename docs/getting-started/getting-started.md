@@ -28,7 +28,7 @@ Take a few minutes to familiarize yourself with the Texture Dashboard:
 
 Texture offers flexible ways to connect energy devices based on your use case:
 
-### Option A: Use Texture Connect (for End-User Devices)
+### Option A: Texture Connect (for Individual Consumer Devices)
 
 Ideal for residential deployments or when device owners need to grant access:
 
@@ -37,13 +37,33 @@ Ideal for residential deployments or when device owners need to grant access:
 3. Users will authenticate with their device manufacturer accounts
 4. Devices appear in your Texture account once connected
 
-### Option B: Direct Integration (for Commercial/Fleet Deployments)
+**Best for**: Homeowner-owned devices, consumer-facing applications, OAuth-based connections
 
-Ideal for installer-managed systems or commercial deployments:
+Learn more: [Texture Connect](/integrations/texture-connect)
 
-1. Contact us through the Dashboard chat to set up direct integrations
-2. Provide your installer credentials for supported manufacturers
-3. We'll help configure the appropriate authentication for your devices
+### Option B: Integration Hub + Bulk Import (for Fleet/Commercial Deployments)
+
+Ideal for installer-managed systems or commercial fleets:
+
+1. Use [Bulk Import](/integrations/bulk-import) to upload your portfolio of sites, customers, and device IDs at scale
+2. Configure [Integration Hub](/integrations/integration-hub) with your OEM credentials to enable automatic data syncing
+3. Texture automatically pulls device data on a recurring basis
+
+**Best for**: Installer-managed fleets, commercial deployments, third-party aggregator portfolios
+
+Learn more: [Integration Hub](/integrations/integration-hub) and [Bulk Import](/integrations/bulk-import)
+
+### Option C: Industry Standards (for Utility/Grid Operator Integration)
+
+Ideal for utility-scale deployments or grid integration:
+
+1. Contact us through the Dashboard chat to discuss your requirements
+2. We'll help configure standards-based integrations (IEEE 2030.5, OpenADR, etc.)
+3. Enable secure, scalable grid coordination
+
+**Best for**: Utilities, grid operators, large-scale DERMS deployments
+
+Learn more: [Industry Standards](/platform-concepts/standards)
 
 ## Step 4: Start Using Device Data and Controls
 

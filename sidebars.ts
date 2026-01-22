@@ -89,6 +89,8 @@ const sidebars: SidebarsConfig = {
         "integrations/overview",
         "integrations/manufacturers/devices-and-oems",
         "integrations/texture-connect",
+        "integrations/integration-hub",
+        "integrations/bulk-import",
         "integrations/apps/apps",
         "platform-concepts/standards",
         "integrations/scoped-key",

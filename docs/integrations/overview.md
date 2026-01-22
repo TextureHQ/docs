@@ -127,8 +127,8 @@ import { DynamicCounts } from '@site/src/components/DynamicCounts';
     </div>
 
     <div className="start-option">
-      <h4>Bulk device onboarding or fleet management</h4>
-      <a href="/integrations/manufacturers/devices-and-oems" className="start-button">Explore Devices & OEMs</a>
+      <h4>Fleet device onboarding or installer-managed systems</h4>
+      <a href="/integrations/bulk-import" className="start-button">Get Started with Bulk Import</a>
     </div>
 
     <div className="start-option">

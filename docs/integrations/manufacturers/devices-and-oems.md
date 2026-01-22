@@ -22,9 +22,9 @@ Browse our supported manufacturers below to find devices for your energy managem
 
 For individual consumer devices (like home batteries, EVs, or thermostats), use [Texture Connect](/integrations/texture-connect) to securely connect customer accounts through OAuth. This enables customers to authorize access to their devices while maintaining control over their data.
 
-### Fleet Devices: OEM APIs
+### Fleet Devices: Integration Hub
 
-For owned fleets of devices (like utility-scale batteries or commercial EV chargers), use direct OEM APIs to onboard devices in bulk. This provides programmatic access for large-scale deployments and enterprise management.
+For installer-managed fleets or commercial deployments, use [Integration Hub](/integrations/integration-hub) to configure your OEM credentials and [Bulk Import](/integrations/bulk-import) to onboard devices at scale. This provides programmatic access for large-scale deployments and enterprise management.
 
 ### Device Management Features
 
